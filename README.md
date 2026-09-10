@@ -24,25 +24,22 @@
     /advanced-c1/
     /professor-c2/
   /french/
-    /beginner-a1/
-    /elementary-a2/
-    /intermediate-b1/
-    /upper-intermediate-b2/
-    /advanced-c1/
-    /professor-c2/
   /italian/
   /russian/
   /greek/
 /marathons/
   /speaking-marathon-30-days/
+  /pronunciation-bootcamp/
+    /levels/
+    /js/
   /vocabulary-marathon-500-words/
   /grammar-intensive-14-days/
-  /pronunciation-bootcamp/
 /teacher-guides/
   /lesson-plans/
   /game-based-learning/
   /assessment-tools/
 /student-workbooks/
+  /data/
   /worksheets/
   /answer-keys/
   /progress-trackers/
@@ -50,7 +47,26 @@
   /templates/
   /styles/
 /templates/
+  /curriculum/
+  /grammar/
+  /vocabulary/
+  /communication/
 ```
+
+---
+
+## 🗺️ Multi-Stage Migration Plan from COSYlanguages
+
+To systematically decouple and migrate all manuals, marathons, and curriculums from `COSYlanguages`, the migration is structured into logical stages:
+
+- **Stage 1 (Completed): Simple & Self-Contained Resources**
+  - French Pronunciation Marathon suite (`marathons/pronunciation-bootcamp/`) including levels A0–C2 and engine JS.
+  - Core curriculum, grammar, vocabulary, communication, and lesson plan templates (`templates/`, `teacher-guides/lesson-plans/`).
+  - Student workbook datasets (`student-workbooks/data/workbook_data.js`).
+- **Stage 2: Core Language Curriculums**
+  - Migration of structured CEFR curriculum schemas and JSON datasets for all supported languages (`curriculum/` from COSYlanguages into `curriculums/`).
+- **Stage 3: Language Manuals, Grammar References & Vocabulary Datasets**
+  - Full migration of standalone language manuals (`manuals/`), monolingual grammar references (`grammar/`), and thematic vocabulary datasets (`vocabulary/`).
 
 ---
 
