@@ -63,8 +63,8 @@ To systematically decouple and migrate all manuals, marathons, and curriculums f
   - French Pronunciation Marathon suite (`marathons/pronunciation-bootcamp/`) including levels A0–C2 and engine JS.
   - Core curriculum, grammar, vocabulary, communication, and lesson plan templates (`templates/`, `teacher-guides/lesson-plans/`).
   - Student workbook datasets (`student-workbooks/data/workbook_data.js`).
-- **Stage 2: Core Language Curriculums**
-  - Migration of structured CEFR curriculum schemas and JSON datasets for all supported languages (`curriculum/` from COSYlanguages into `curriculums/`).
+- **Stage 2 (Completed): Core Language Curriculums**
+  - Migration of structured CEFR curriculum schemas and JSON datasets for all supported languages (`curriculum/` from COSYlanguages into `curriculums/`), covering 14 target languages (`en`, `fr`, `de`, `es`, `it`, `el`, `ru`, `pt`, `hy`, `ka`, `tt`, `ba`, `cv`, `br`) across general, spoken, exam, professional, travelling, and relocation course tracks.
 - **Stage 3: Language Manuals, Grammar References & Vocabulary Datasets**
   - Full migration of standalone language manuals (`manuals/`), monolingual grammar references (`grammar/`), and thematic vocabulary datasets (`vocabulary/`).
 
