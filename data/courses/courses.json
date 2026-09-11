@@ -1,0 +1,309 @@
+{
+  "course_types": [
+    {
+      "id": "general",
+      "label": "General",
+      "description": "Standard General CEFR curriculum focusing on integrated grammar, vocabulary, and communication skills."
+    },
+    {
+      "id": "spoken",
+      "label": "Spoken",
+      "description": "Conversational practice and spoken fluency track."
+    },
+    {
+      "id": "exam",
+      "label": "Exam Prep",
+      "description": "Exam preparation track targeting international language certification exams."
+    },
+    {
+      "id": "travelling",
+      "label": "Travelling",
+      "description": "Language skills for travel, navigation, tourism, and real-world interactions."
+    },
+    {
+      "id": "professional",
+      "label": "Professional",
+      "description": "Business and career-focused language communication.",
+      "verticals": [
+        {
+          "id": "it",
+          "label": "Information Technology"
+        },
+        {
+          "id": "marketing",
+          "label": "Marketing & Content"
+        },
+        {
+          "id": "career",
+          "label": "Career, Resumes & Interviews"
+        }
+      ]
+    },
+    {
+      "id": "relocation",
+      "label": "Relocation",
+      "description": "Practical language for moving, housing, and settling in a new country."
+    }
+  ],
+  "languages": [
+    {
+      "iso": "ba",
+      "name": "Bashkir",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "br",
+      "name": "Breton",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "de",
+      "name": "German",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "el",
+      "name": "Greek",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1"
+        ]
+      }
+    },
+    {
+      "iso": "en",
+      "name": "English",
+      "course_types_available": [
+        "general",
+        "spoken",
+        "exam",
+        "travelling",
+        "professional",
+        "relocation"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "spoken": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "exam": [
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "travelling": [
+          "A1",
+          "A2",
+          "B1"
+        ],
+        "professional": [
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "relocation": [
+          "A2",
+          "B1",
+          "B2",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "es",
+      "name": "Spanish",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "fr",
+      "name": "French",
+      "course_types_available": [
+        "general",
+        "spoken",
+        "travelling",
+        "professional"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "spoken": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "travelling": [
+          "A1",
+          "A2",
+          "B1"
+        ],
+        "professional": [
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ]
+      }
+    },
+    {
+      "iso": "hy",
+      "name": "Armenian",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "it",
+      "name": "Italian",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1"
+        ]
+      }
+    },
+    {
+      "iso": "ka",
+      "name": "Georgian",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "pt",
+      "name": "Portuguese",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    },
+    {
+      "iso": "ru",
+      "name": "Russian",
+      "course_types_available": [
+        "general",
+        "spoken",
+        "travelling",
+        "professional"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "spoken": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "travelling": [
+          "A1",
+          "A2",
+          "B1"
+        ],
+        "professional": [
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ]
+      }
+    },
+    {
+      "iso": "tt",
+      "name": "Tatar",
+      "course_types_available": [
+        "general"
+      ],
+      "levels_available": {
+        "general": [
+          "A1",
+          "C1"
+        ]
+      }
+    }
+  ]
+}

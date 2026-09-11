@@ -1,4 +1,10 @@
 /**
+ * SUPERSEDED / DEPRECATED:
+ * As of September 11, 2026, WORKBOOK_TOPICS in this file has been superseded
+ * by modular JSON files in student-workbooks/data/workbooks/{lang}/{level}.json.
+ * Please refer to student-workbooks/data/workbooks/ for active topic datasets.
+ */
+/**
  * WORKBOOK DATA : exercises, grammar blocks & homework
  */
 
