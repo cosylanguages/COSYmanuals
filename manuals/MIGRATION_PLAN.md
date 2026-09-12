@@ -1,4 +1,5 @@
 # `manuals/` Migration Plan & Architecture Blueprint
+> **Sync Note (September 2026)**: `curriculums/en/general/A1.json` was re-synced on September 12, 2026, updating all missing `ageAdaptation` and `growingTask` fields from the source repository. Recommendation for Stage 2 owner: Introduce a lightweight synchronization tracking process (e.g., adding a `"last synced from commit <hash>"` metadata field per migrated curriculum file) so silent staleness can be easily detected in the future across repositories without shared Git history.
 > **Status**: Proposed Migration Plan (No files modified or moved in this task)
 > **Date**: March 2025
 > **Target Goal**: Restructure `manuals/` from a hybrid flat/legacy directory structure into a standardized, ISO language-coded hierarchy (`manuals/<language-code>/{grammar,vocabulary,communication}/<level>/`).
