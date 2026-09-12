@@ -1,0 +1,79 @@
+/* Shared Visual Genome - Motion Utilities */
+
+@keyframes keyframe-flip {
+  0% { transform: perspective(400deg) rotateY(0deg); }
+  50% { transform: perspective(400deg) rotateY(90deg); }
+  100% { transform: perspective(400deg) rotateY(0deg); }
+}
+
+@keyframes keyframe-slide-chain {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes keyframe-burst {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.15); opacity: 1; }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes keyframe-reel-spin {
+  0% { transform: translateY(-100%) scaleY(1.1); opacity: 0.5; }
+  50% { transform: translateY(10%) scaleY(0.95); }
+  100% { transform: translateY(0) scaleY(1); opacity: 1; }
+}
+
+@keyframes keyframe-unfurl {
+  0% { transform: scaleY(0); transform-origin: top; opacity: 0; }
+  100% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+}
+
+@keyframes keyframe-pin-drop {
+  0% { transform: translateY(-100px) scale(0.8); opacity: 0; }
+  60% { transform: translateY(10px) scale(1.05); opacity: 1; }
+  80% { transform: translateY(-4px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes keyframe-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.motion-flip {
+  animation: keyframe-flip var(--motion-duration-med, 300ms) ease-in-out;
+  backface-visibility: visible;
+}
+
+.motion-slide-chain {
+  animation: keyframe-slide-chain var(--motion-duration-med, 300ms) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.motion-burst {
+  animation: keyframe-burst var(--motion-duration-med, 300ms) cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.motion-reel-spin {
+  animation: keyframe-reel-spin var(--motion-duration-fast, 150ms) cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.motion-unfurl {
+  animation: keyframe-unfurl var(--motion-duration-slow, 500ms) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.motion-pin-drop {
+  animation: keyframe-pin-drop var(--motion-duration-slow, 500ms) cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-flip,
+  .motion-slide-chain,
+  .motion-burst,
+  .motion-reel-spin,
+  .motion-unfurl,
+  .motion-pin-drop {
+    animation: keyframe-fade var(--motion-duration-fast, 150ms) ease-in-out !important;
+    transform: none !important;
+  }
+}
