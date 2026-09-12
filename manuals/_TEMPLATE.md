@@ -171,3 +171,35 @@ This template defines the standard internal structure for all COSYlanguages manu
 </body>
 </html>
 ```
+
+---
+
+## Print & Offline Manual Adaptation Blueprint (`manuals/<lang>/print/`)
+
+For contracted teachers and offline self-study students, each language manual directory should include a dedicated `print/` directory:
+```
+manuals/<lang>/print/
+├── print.css     # Dedicated print media stylesheet
+└── index.html    # Consolidated print/offline reference booklet
+```
+
+### Key Requirements for Print/Offline Manuals:
+
+1. **Print Stylesheet (`print.css`) Guidelines**:
+   - **Page Setup**: `@page { size: A4 portrait; margin: 20mm 15mm 20mm 15mm; }`
+   - **Interactive Element Suppression**: `@media print` must hide `#cosy-nav`, `.sd-sticky-header`, `.quiz-panel`, `.ccq-panel`, `.checklist`, score counters, and reset buttons (`display: none !important;`).
+   - **Page-Break Friendly**: Headings (`h1`, `h2`, `h3`) must use `page-break-after: avoid;`. Table wraps and rule callout boxes (`.table-wrap`, `.box`) must use `page-break-inside: avoid;`.
+   - **High-Contrast Typography**: Force background to pure white `#ffffff` and text to high-contrast dark gray/black `#111111` for crisp black-and-white printouts.
+
+2. **Offline Notes Block**:
+   Include a `.print-teacher-notes` dashed handwriting box at the bottom of major print units so teachers or students can jot down notes during live offline lessons.
+
+3. **COSYplatform Single-Sourcing Callout**:
+   Every topic in the print/offline booklet should include a short reference link pointing back to COSYplatform:
+   ```html
+   <div class="box platform-link">
+     <strong>📖 Full Interactive Lesson:</strong>
+     See this unit's complete interactive lesson on <a href="https://cosyplatform.com/courses/<lang>/<level>/<topic-slug>">COSYplatform</a>.
+   </div>
+   <!-- TODO: Verify COSYplatform lesson availability for <lang> <level> <topic-slug> -->
+   ```
