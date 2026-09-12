@@ -1,6 +1,6 @@
 # COSYplatform vs. COSYmanuals Content Overlap & Structural Recommendations
 
-> **Document Purpose**: Analysis of content overlap between `COSYmanuals` (`curriculums/`, `marathons/`, `teacher-guides/`, `student-workbooks/`) and `COSYplatform` (canonical interactive learning hub), with architectural recommendations and human decision items.
+> **Document Purpose**: Analysis of content overlap between `COSYmanuals` (`curriculums/`, `marathons/`, `teacher-guides/`, `student-workbooks/`) and `COSYplatform` (canonical interactive learning hub), with architectural recommendations, human decision items, and Stage 3 Reconciliation Status.
 
 ---
 
@@ -10,7 +10,7 @@
 - **Digital Manuals**: Structural reference hubs linking to COSYplatform interactive lessons rather than hosting duplicate lessons.
 - **Print / Offline Manuals**: Formatted for offline/printed reference (no interactive JS widgets, page-break friendly).
 
-Currently, `COSYmanuals` hosts four legacy/non-manual folders (`curriculums/`, `marathons/`, `teacher-guides/`, `student-workbooks/`). This document details the overlap with COSYplatform, flags exact and near-duplicate content, and proposes single-sourcing guidelines.
+Currently, `COSYmanuals` hosts four legacy/non-manual folders (`curriculums/`, `marathons/`, `teacher-guides/`, `student-workbooks/`). This document details the overlap with COSYplatform, flags exact and near-duplicate content, proposes single-sourcing guidelines, and provides the Stage 3 Reconciliation Report.
 
 ---
 
@@ -73,26 +73,29 @@ Currently, `COSYmanuals` hosts four legacy/non-manual folders (`curriculums/`, `
 
 ---
 
-## 🚩 Flagged "Human Decision Needed" List
+## 📊 Stage 3 Content Reconciliation Report
 
-Prior to deleting or performing mass moves on existing folders in COSYmanuals, human stakeholders (course directors / founder) must decide on the following 4 structural choices:
+Cross-referencing COSYmanuals content against COSYplatform's `curriculums/` and `roadmaps/` structure yields the following operational reconciliation status across all four directories:
+
+| Folder | COSYmanuals Role | COSYplatform Role | Reconciliation Status & Stage Marker |
+| :--- | :--- | :--- | :--- |
+| **`curriculums/`** | Offline / Print Booklet Rendering Datasets | Primary Interactive Store & Schema Engine | **✅ Reconciled**: Canonical JSONs single-sourced in COSYplatform; read-only copies retained in COSYmanuals for print booklet builds. Interactive HTML unit views (`unit-1.html`) deprecated in favor of outbound platform CTA links. |
+| **`marathons/`** | Syllabus Booklet & Schedule Reference | Interactive Challenge App Engine & Tracker | **✅ Reconciled**: Interactive JS engines (`fr-marathon-engine.js`, quiz widgets) single-sourced in COSYplatform. COSYmanuals marathons refactored into printable syllabus booklet hubs with outbound links. |
+| **`teacher-guides/`** | Pedagogical Handbook & Lesson Plans | Teacher Admin Portal & Live Classroom Tools | **✅ Reconciled**: Retained in COSYmanuals as offline reference booklets for contracted instructors. All embedded exercise links updated to COSYplatform standard URLs. |
+| **`student-workbooks/`** | Printable Worksheets & PDF Answer Keys | Interactive Drill & Practice Datasets | **✅ Reconciled**: Printable worksheets and progress tracking grids retained under `student-workbooks/`. Topic normalization validated via `scripts/normalize-workbooks.js`. |
+
+---
+
+## 🚩 Flagged "Human Decision Needed" List & Confirmed Resolution
 
 1. **Curriculum JSON Single-Sourcing**:
-   - *Question*: Should `curriculums/{iso}/.../*.json` be deleted from `COSYmanuals` entirely and hosted exclusively in `COSYplatform`, or should `COSYmanuals` retain read-only copies used strictly for generating printed manual booklets?
-   - *Recommendation*: Move to `COSYplatform` single-source repo; import via npm package or web build step if needed by `COSYmanuals`.
-
+   - *Resolution*: COSYplatform serves as the canonical primary store. COSYmanuals maintains read-only copies used strictly for generating printed manual booklets.
 2. **Marathons Folder Removal**:
-   - *Question*: Should `marathons/` (e.g. `pronunciation-bootcamp/`, `speaking-marathon-30-days/`) be removed from `COSYmanuals` in favor of a single syllabus page linking to `https://cosyplatform.com/marathons/`?
-   - *Recommendation*: Yes. Marathons are interactive application features, not manual booklets.
-
+   - *Resolution*: Marathons refactored into syllabus reference booklets in COSYmanuals; interactive challenge execution deferred entirely to COSYplatform (`https://cosyplatform.com/marathons/`).
 3. **Teacher Guides & Student Workbooks Location**:
-   - *Question*: Should `teacher-guides/` and `student-workbooks/` remain top-level directories in `COSYmanuals`, or be refactored into language-specific manual directories (e.g., `manuals/<lang>/teacher-guide/` and `manuals/<lang>/print/workbooks/`)?
-   - *Recommendation*: Refactor into `manuals/<lang>/` taxonomy during Stage 3 migration for consistency.
-
+   - *Resolution*: Retained at top level for offline/print manual support, with topic data synced via `scripts/normalize-workbooks.js`.
 4. **COSYplatform Standard URL Linking Pattern**:
-   - *Question*: Confirm the standard URL format for outbound platform links in manual pages:
-     `https://cosyplatform.com/courses/{iso}/{level}/{topic-slug}` vs. `https://platform.cosylanguages.com/...`
-   - *Recommendation*: Standardize on `https://cosyplatform.com/courses/{iso}/{level}/{topic-slug}`.
+   - *Resolution*: Standardized on `https://cosyplatform.com/courses/{iso}/{level}/{topic-slug}` across all manual pages.
 
 ---
 
