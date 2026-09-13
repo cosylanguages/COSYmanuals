@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Day 8: Modals of Obligation & Permission (Must vs Have To vs Should) — English Grammar Intensive · COSY</title>
+<meta name="description" content="Day 8 of English Grammar Intensive: Master Modals of Obligation, Advice, and Permission with CELTA elicitation, CCQs, and exercises.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,44 +13,156 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #f7fafc; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #1a365d, #2b6cb0); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
+  :root {
+    --g-primary: #1a365d;
+    --g-accent: #2b6cb0;
+    --g-light: #ebf8ff;
+    --g-border: #bee3f8;
+  }
+  body { font-family: 'Nunito', system-ui, -apple-system, sans-serif; color: #2d3748; background-color: #f7fafc; line-height: 1.65; }
+  .sd-sticky-header { position: sticky; top: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .sd-jump-links { display: flex; gap: 0.75rem; overflow-x: auto; padding: 0.75rem 1.5rem; white-space: nowrap; max-width: 1000px; margin: 0 auto; }
+  .sd-jump-link { color: #1a365d; text-decoration: none; font-weight: 700; font-size: 0.88rem; padding: 0.3rem 0.75rem; border-radius: 6px; background: #ebf8ff; }
+  .sd-jump-link:hover { background: #1a365d; color: #ffffff; }
+  .day-hero { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: #ffffff; padding: 3rem 1.5rem 2rem; text-align: center; border-bottom: 4px solid #63b3ed; }
+  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #ebf8ff; border-left: 4px solid #2b6cb0; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .celta-stage { background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+  .stage-badge { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 50px; display: inline-block; margin-bottom: 0.75rem; }
+  .celta-stage h2 { color: #1a365d; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e6fffa; border-left: 4px solid #319795; padding: 1rem; border-radius: 6px; }
+  .box-b { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-list { line-height: 1.8; padding-left: 1.25rem; }
+  .ccq-list li { margin-bottom: 1rem; }
+  .practice-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
+  details { background: #ebf8ff; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; cursor: pointer; }
+  details summary { font-weight: 700; color: #1a365d; }
+  .nav-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+  .nav-btn { background: #2b6cb0; color: #ffffff; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; }
+  .nav-btn:hover { background: #1a365d; }
 </style>
 </head>
 <body data-lang-theme="en">
 
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← English Hub</a>
+    <a href="#stage1" class="sd-jump-link">Stage 1 · Elicitation</a>
+    <a href="#stage2" class="sd-jump-link">Stage 2 · The Rule</a>
+    <a href="#stage3" class="sd-jump-link">Stage 3 · CCQs</a>
+    <a href="#stage4" class="sd-jump-link">Stage 4 · Practice</a>
+  </nav>
+</header>
+
 <header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇧 Day 8 / 14 · Grammar Intensive</span>
-  </div>
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">DAY 8 / 14 · GRAMMAR INTENSIVE</span>
   <h1>Modals of Obligation & Permission (Must vs Have To vs Should)</h1>
-  <p style="color:#ebf8ff; max-width:700px; margin:0.5rem auto 1rem;">Internal vs external obligation, advice, and prohibition.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Print Day 8
-  </button>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#ebf8ff;">Master internal personal feeling vs. external law/rule obligation vs. recommended advice.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Print Day 8 Lesson</button>
 </header>
 
 <main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 1 · Core Contrast</span>
-    <h2>1. Understanding the Difference</h2>
-    <div class="rule-card">
-      <strong>💡 Key Principle:</strong> Internal vs external obligation, advice, and prohibition.
+
+  <!-- STAGE 1: ELICITATION -->
+  <section id="stage1" class="celta-stage">
+    <span class="stage-badge">Stage 1 · Elicitation</span>
+    <h2>Compare these three statements about work:</h2>
+    <div style="background:#ebf8ff; border-left:4px solid #2b6cb0; padding:1rem; border-radius:6px; font-size:1.1rem; margin:1rem 0;">
+      1. "I <strong>must call</strong> my mother tonight." (Personal feeling)<br>
+      2. "I <strong>have to wear</strong> a uniform at work." (Company rule)<br>
+      3. "You <strong>should take</strong> an aspirin for your headache." (Good advice)
+    </div>
+    <p><strong>Notice the source of authority:</strong> Statement 1 comes from inside the speaker. Statement 2 comes from an outside authority/rule. Statement 3 is a friendly recommendation!</p>
+  </section>
+
+  <!-- STAGE 2: THE RULE -->
+  <section id="stage2" class="celta-stage">
+    <span class="stage-badge">Stage 2 · The Rule</span>
+    <h2>Core Rule: Authority Source & Negative Shifts</h2>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#234e52;">Must vs Have To (Positive Obligation)</h4>
+        <p style="margin:0;"><strong>Must + V1:</strong> Internal obligation felt by the speaker (personal duty).</p>
+        <p style="margin:0.5rem 0 0;"><strong>Have to + V1:</strong> External obligation imposed by laws, rules, or circumstances.</p>
+        <p style="margin:0.5rem 0 0;"><strong>Should + V1:</strong> Advice or moral recommendation (not mandatory).</p>
+      </div>
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#2b6cb0;">Mustn't vs Don't Have To (CRITICAL SHIFT!)</h4>
+        <p style="margin:0;"><strong>Mustn't (Must not):</strong> PROHIBITION — It is forbidden / illegal!</p>
+        <p style="margin:0.5rem 0 0;"><strong>Don't / Doesn't have to:</strong> NO OBLIGATION — You can if you want, but it's not necessary.</p>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Critical Warning: "Mustn't" means DO NOT DO IT (forbidden!). "Don't have to" means OPTIONAL (no necessity)!
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../a0-a2.html" style="color:#1a365d; text-decoration:none; font-weight:700;">← Module Overview</a>
-      <a href="../index.html" style="background:#2b6cb0; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Grammar Hub 🇬🇧</a>
-    </div>
+  <!-- STAGE 3: CCQS -->
+  <section id="stage3" class="celta-stage">
+    <span class="stage-badge">Stage 3 · Concept Check Questions (CCQs)</span>
+    <ol class="ccq-list">
+      <li>
+        <strong>Question:</strong> "You mustn't park here." Is it allowed if I pay money?
+        <br><em>Answer:</em> No! It is strictly prohibited and illegal.
+      </li>
+      <li>
+        <strong>Question:</strong> "You don't have to pay for the museum today." Is it forbidden to pay, or is it free?
+        <br><em>Answer:</em> It is free! There is no obligation to pay.
+      </li>
+      <li>
+        <strong>Question:</strong> What is the past tense of "must" and "have to"?
+        <br><em>Answer:</em> Both become <strong>had to</strong> in the past! ("Yesterday I had to work late.")
+      </li>
+      <li>
+        <strong>Question:</strong> "You should see a doctor." Is the speaker forcing you, or giving advice?
+        <br><em>Answer:</em> Giving friendly recommendation/advice.
+      </li>
+    </ol>
   </section>
+
+  <!-- STAGE 4: PRACTICE -->
+  <section id="stage4" class="celta-stage">
+    <span class="stage-badge">Stage 4 · Guided & Free Practice</span>
+    <h2>Complete the Sentences (must / have to / should / mustn't / don't have to)</h2>
+
+    <div class="practice-item">
+      1. You _____ smoke in the hospital. It is strictly against the law.
+    </div>
+    <div class="practice-item">
+      2. Tomorrow is Sunday! I _____ wake up early.
+    </div>
+    <div class="practice-item">
+      3. In the UK, drivers _____ drive on the left side of the road.
+    </div>
+    <div class="practice-item">
+      4. You look very exhausted. I think you _____ go to bed early tonight.
+    </div>
+    <div class="practice-item">
+      5. I _____ remember to buy a birthday card for my sister before I go home.
+    </div>
+
+    <details>
+      <summary>🔍 Click to Reveal Answer Key & Explanations</summary>
+      <ol style="margin-top:0.5rem; padding-left:1.2rem; line-height:1.7;">
+        <li><strong>mustn't</strong> — Strict prohibition / illegal act.</li>
+        <li><strong>don't have to</strong> — Lack of necessity (optional on Sunday).</li>
+        <li><strong>have to</strong> — External law / national regulation.</li>
+        <li><strong>should</strong> — Friendly advice / recommendation based on appearance.</li>
+        <li><strong>must</strong> — Internal personal resolution felt strongly by the speaker.</li>
+      </ol>
+    </details>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="day-7.html" class="nav-btn">← Day 7: Used To</a>
+    <a href="day-9.html" class="nav-btn">Next Lesson: Day 9 →</a>
+  </footer>
+
 </main>
+
 </body>
 </html>

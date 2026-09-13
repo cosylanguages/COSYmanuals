@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Day 3: Past Simple vs Present Perfect — English Grammar Intensive · COSY</title>
+<meta name="description" content="Day 3 of English Grammar Intensive: Master Past Simple vs Present Perfect with CELTA elicitation, CCQs, and exercises.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,44 +13,160 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #f7fafc; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #1a365d, #2b6cb0); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
+  :root {
+    --g-primary: #1a365d;
+    --g-accent: #2b6cb0;
+    --g-light: #ebf8ff;
+    --g-border: #bee3f8;
+  }
+  body { font-family: 'Nunito', system-ui, -apple-system, sans-serif; color: #2d3748; background-color: #f7fafc; line-height: 1.65; }
+  .sd-sticky-header { position: sticky; top: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .sd-jump-links { display: flex; gap: 0.75rem; overflow-x: auto; padding: 0.75rem 1.5rem; white-space: nowrap; max-width: 1000px; margin: 0 auto; }
+  .sd-jump-link { color: #1a365d; text-decoration: none; font-weight: 700; font-size: 0.88rem; padding: 0.3rem 0.75rem; border-radius: 6px; background: #ebf8ff; }
+  .sd-jump-link:hover { background: #1a365d; color: #ffffff; }
+  .day-hero { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: #ffffff; padding: 3rem 1.5rem 2rem; text-align: center; border-bottom: 4px solid #63b3ed; }
+  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #ebf8ff; border-left: 4px solid #2b6cb0; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .celta-stage { background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+  .stage-badge { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 50px; display: inline-block; margin-bottom: 0.75rem; }
+  .celta-stage h2 { color: #1a365d; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e6fffa; border-left: 4px solid #319795; padding: 1rem; border-radius: 6px; }
+  .box-b { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-list { line-height: 1.8; padding-left: 1.25rem; }
+  .ccq-list li { margin-bottom: 1rem; }
+  .practice-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
+  details { background: #ebf8ff; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; cursor: pointer; }
+  details summary { font-weight: 700; color: #1a365d; }
+  .nav-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+  .nav-btn { background: #2b6cb0; color: #ffffff; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; }
+  .nav-btn:hover { background: #1a365d; }
 </style>
 </head>
 <body data-lang-theme="en">
 
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← English Hub</a>
+    <a href="#stage1" class="sd-jump-link">Stage 1 · Elicitation</a>
+    <a href="#stage2" class="sd-jump-link">Stage 2 · The Rule</a>
+    <a href="#stage3" class="sd-jump-link">Stage 3 · CCQs</a>
+    <a href="#stage4" class="sd-jump-link">Stage 4 · Practice</a>
+  </nav>
+</header>
+
 <header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇧 Day 3 / 14 · Grammar Intensive</span>
-  </div>
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">DAY 3 / 14 · GRAMMAR INTENSIVE</span>
   <h1>Past Simple vs Present Perfect</h1>
-  <p style="color:#ebf8ff; max-width:700px; margin:0.5rem auto 1rem;">Finished action in a finished time vs. past actions connected to the present.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Print Day 3
-  </button>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#ebf8ff;">Master finished action in a finished time vs. past actions connected to the present/life experience.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Print Day 3 Lesson</button>
 </header>
 
 <main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 1 · Core Contrast</span>
-    <h2>1. Understanding the Difference</h2>
-    <div class="rule-card">
-      <strong>💡 Key Principle:</strong> Finished action in a finished time vs. past actions connected to the present.
+
+  <!-- STAGE 1: ELICITATION -->
+  <section id="stage1" class="celta-stage">
+    <span class="stage-badge">Stage 1 · Elicitation</span>
+    <h2>Consider these two statements:</h2>
+    <div style="background:#ebf8ff; border-left:4px solid #2b6cb0; padding:1rem; border-radius:6px; font-size:1.1rem; margin:1rem 0;">
+      A: "I <strong>lost</strong> my keys yesterday."<br>
+      B: "I <strong>have lost</strong> my keys!"
+    </div>
+    <p><strong>Which sentence implies you are still looking for your keys right now?</strong> In sentence A, the time (yesterday) is finished. In sentence B, the result is active right now (I cannot open my door!).</p>
+  </section>
+
+  <!-- STAGE 2: THE RULE -->
+  <section id="stage2" class="celta-stage">
+    <span class="stage-badge">Stage 2 · The Rule</span>
+    <h2>Core Rule: Finished Time Box vs. Open Door to Present</h2>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#234e52;">Past Simple (V2)</h4>
+        <p style="margin:0;">Finished action in a specific, finished time period. The connection to now is broken.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><strong>Finished Time Words:</strong> yesterday, last year, in 2019, 3 days ago, when I was young.</li>
+          <li><em>Example: I visited Rome in 2019. (Specific finished date)</em></li>
+        </ul>
+      </div>
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#2b6cb0;">Present Perfect (have/has + V3)</h4>
+        <p style="margin:0;">Life experiences (time unmentioned), unfinished time periods (today, this week), or past actions with present result.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><strong>Open Time Words:</strong> ever, never, already, yet, so far, recently, since, for.</li>
+          <li><em>Example: I have visited Rome three times. (In my life so far)</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Memory Trick: Specific past time word (yesterday, ago, in 2020)? → MUST use Past Simple. Unfinished time or life experience? → Present Perfect keeps the door open!
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../a0-a2.html" style="color:#1a365d; text-decoration:none; font-weight:700;">← Module Overview</a>
-      <a href="../index.html" style="background:#2b6cb0; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Grammar Hub 🇬🇧</a>
-    </div>
+  <!-- STAGE 3: CCQS -->
+  <section id="stage3" class="celta-stage">
+    <span class="stage-badge">Stage 3 · Concept Check Questions (CCQs)</span>
+    <ol class="ccq-list">
+      <li>
+        <strong>Question:</strong> Is "I have lived in Spain for 5 years" finished or ongoing?
+        <br><em>Answer:</em> Ongoing! You moved there 5 years ago and you still live in Spain today.
+      </li>
+      <li>
+        <strong>Question:</strong> Is "I lived in Spain for 5 years" finished or ongoing?
+        <br><em>Answer:</em> Finished! You do not live in Spain anymore.
+      </li>
+      <li>
+        <strong>Question:</strong> Can we say "I have seen him yesterday"?
+        <br><em>Answer:</em> No! "Yesterday" is a finished past time word, so you must say "I saw him yesterday."
+      </li>
+      <li>
+        <strong>Question:</strong> "She has broken her leg." Can she walk normally right now?
+        <br><em>Answer:</em> No, because Present Perfect emphasizes the current present result (her leg is currently broken/in a cast).
+      </li>
+    </ol>
   </section>
+
+  <!-- STAGE 4: PRACTICE -->
+  <section id="stage4" class="celta-stage">
+    <span class="stage-badge">Stage 4 · Guided & Free Practice</span>
+    <h2>Complete the Sentences (Past Simple vs Present Perfect)</h2>
+
+    <div class="practice-item">
+      1. I _____ (never / see) a live opera in my life.
+    </div>
+    <div class="practice-item">
+      2. Shakespeare _____ (write) over 30 plays in his lifetime.
+    </div>
+    <div class="practice-item">
+      3. Ouch! I _____ (just / cut) my finger! It's bleeding.
+    </div>
+    <div class="practice-item">
+      4. They _____ (finish) the report two hours ago.
+    </div>
+    <div class="practice-item">
+      5. How long _____ (you / know) your best friend?
+    </div>
+
+    <details>
+      <summary>🔍 Click to Reveal Answer Key & Explanations</summary>
+      <ol style="margin-top:0.5rem; padding-left:1.2rem; line-height:1.7;">
+        <li><strong>have never seen</strong> — Life experience with "never".</li>
+        <li><strong>wrote</strong> — Shakespeare's life is finished; completed historical past.</li>
+        <li><strong>have just cut</strong> — Action just completed with immediate present result ("It's bleeding").</li>
+        <li><strong>finished</strong> — Specific finished time marker ("two hours ago").</li>
+        <li><strong>have you known</strong> — Unfinished state continuing up to the present.</li>
+      </ol>
+    </details>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="day-2.html" class="nav-btn">← Day 2: Present Simple</a>
+    <a href="day-4.html" class="nav-btn">Next Lesson: Day 4 →</a>
+  </footer>
+
 </main>
+
 </body>
 </html>

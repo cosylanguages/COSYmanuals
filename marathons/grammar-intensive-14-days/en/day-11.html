@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Day 11: Passive Voice vs Active Voice & Get-Passive — English Grammar Intensive · COSY</title>
+<meta name="description" content="Day 11 of English Grammar Intensive: Master Passive Voice vs Active Voice and Get-Passive with CELTA elicitation, CCQs, and exercises.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,44 +13,166 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #f7fafc; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #1a365d, #2b6cb0); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
+  :root {
+    --g-primary: #1a365d;
+    --g-accent: #2b6cb0;
+    --g-light: #ebf8ff;
+    --g-border: #bee3f8;
+  }
+  body { font-family: 'Nunito', system-ui, -apple-system, sans-serif; color: #2d3748; background-color: #f7fafc; line-height: 1.65; }
+  .sd-sticky-header { position: sticky; top: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .sd-jump-links { display: flex; gap: 0.75rem; overflow-x: auto; padding: 0.75rem 1.5rem; white-space: nowrap; max-width: 1000px; margin: 0 auto; }
+  .sd-jump-link { color: #1a365d; text-decoration: none; font-weight: 700; font-size: 0.88rem; padding: 0.3rem 0.75rem; border-radius: 6px; background: #ebf8ff; }
+  .sd-jump-link:hover { background: #1a365d; color: #ffffff; }
+  .day-hero { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: #ffffff; padding: 3rem 1.5rem 2rem; text-align: center; border-bottom: 4px solid #63b3ed; }
+  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #ebf8ff; border-left: 4px solid #2b6cb0; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .celta-stage { background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+  .stage-badge { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 50px; display: inline-block; margin-bottom: 0.75rem; }
+  .celta-stage h2 { color: #1a365d; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e6fffa; border-left: 4px solid #319795; padding: 1rem; border-radius: 6px; }
+  .box-b { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-list { line-height: 1.8; padding-left: 1.25rem; }
+  .ccq-list li { margin-bottom: 1rem; }
+  .practice-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
+  details { background: #ebf8ff; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; cursor: pointer; }
+  details summary { font-weight: 700; color: #1a365d; }
+  .nav-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+  .nav-btn { background: #2b6cb0; color: #ffffff; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; }
+  .nav-btn:hover { background: #1a365d; }
 </style>
 </head>
 <body data-lang-theme="en">
 
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← English Hub</a>
+    <a href="#stage1" class="sd-jump-link">Stage 1 · Elicitation</a>
+    <a href="#stage2" class="sd-jump-link">Stage 2 · The Rule</a>
+    <a href="#stage3" class="sd-jump-link">Stage 3 · CCQs</a>
+    <a href="#stage4" class="sd-jump-link">Stage 4 · Practice</a>
+  </nav>
+</header>
+
 <header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇧 Day 11 / 14 · Grammar Intensive</span>
-  </div>
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">DAY 11 / 14 · GRAMMAR INTENSIVE</span>
   <h1>Passive Voice vs Active Voice & Get-Passive</h1>
-  <p style="color:#ebf8ff; max-width:700px; margin:0.5rem auto 1rem;">Focusing on the receiver of the action vs. the agent.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Print Day 11
-  </button>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#ebf8ff;">Master focusing on the receiver of the action vs. the doer/agent, formal passive, and informal get-passive.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Print Day 11 Lesson</button>
 </header>
 
 <main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 1 · Core Contrast</span>
-    <h2>1. Understanding the Difference</h2>
-    <div class="rule-card">
-      <strong>💡 Key Principle:</strong> Focusing on the receiver of the action vs. the agent.
+
+  <!-- STAGE 1: ELICITATION -->
+  <section id="stage1" class="celta-stage">
+    <span class="stage-badge">Stage 1 · Elicitation</span>
+    <h2>Read these two news headlines:</h2>
+    <div style="background:#ebf8ff; border-left:4px solid #2b6cb0; padding:1rem; border-radius:6px; font-size:1.1rem; margin:1rem 0;">
+      Active: "Someone <strong>stole</strong> a famous painting from the museum last night."<br>
+      Passive: "A famous painting <strong>was stolen</strong> from the museum last night."
+    </div>
+    <p><strong>Why use the passive?</strong> Because the stolen painting is the main topic of interest, and the exact thief ("someone") is either unknown, obvious, or unimportant!</p>
+  </section>
+
+  <!-- STAGE 2: THE RULE -->
+  <section id="stage2" class="celta-stage">
+    <span class="stage-badge">Stage 2 · The Rule</span>
+    <h2>Core Rule: BE + V3 (Past Participle)</h2>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#234e52;">Standard Passive (BE + V3)</h4>
+        <p style="margin:0;">The object of the active sentence becomes the subject of the passive sentence.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><em>Present Simple: Coffee <strong>is grown</strong> in Colombia.</em></li>
+          <li><em>Past Simple: The letter <strong>was sent</strong> yesterday.</em></li>
+          <li><em>Agent: Use <strong>by + doer</strong> only if necessary (e.g. by Shakespeare).</em></li>
+        </ul>
+      </div>
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#2b6cb0;">Informal Get-Passive (GET + V3)</h4>
+        <p style="margin:0;">Used in spoken English for accidental, unexpected, or sudden events.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><em>Example: He <strong>got injured</strong> playing football.</em></li>
+          <li><em>Example: Watch out or you will <strong>get fired</strong>!</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Memory Trick: Active = Doer does Action to Receiver. Passive = Receiver gets Action done to them (BE + V3)!
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../a0-a2.html" style="color:#1a365d; text-decoration:none; font-weight:700;">← Module Overview</a>
-      <a href="../index.html" style="background:#2b6cb0; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Grammar Hub 🇬🇧</a>
-    </div>
+  <!-- STAGE 3: CCQS -->
+  <section id="stage3" class="celta-stage">
+    <span class="stage-badge">Stage 3 · Concept Check Questions (CCQs)</span>
+    <ol class="ccq-list">
+      <li>
+        <strong>Question:</strong> In "The bridge was built in 1890," do we know or care who the individual construction workers were?
+        <br><em>Answer:</em> No, the focus is on the bridge itself and its construction date.
+      </li>
+      <li>
+        <strong>Question:</strong> What is the passive form of "They are repairing the road"?
+        <br><em>Answer:</em> "The road <strong>is being repaired</strong>" (Present Continuous Passive: is/are + being + V3).
+      </li>
+      <li>
+        <strong>Question:</strong> When do we include "by [agent]" in a passive sentence?
+        <br><em>Answer:</em> Only when the doer is important or specific information (e.g., "Hamlet was written <strong>by Shakespeare</strong>").
+      </li>
+      <li>
+        <strong>Question:</strong> Is "My phone got stolen" formal or informal?
+        <br><em>Answer:</em> Informal spoken English (using the Get-passive).
+      </li>
+    </ol>
   </section>
+
+  <!-- STAGE 4: PRACTICE -->
+  <section id="stage4" class="celta-stage">
+    <span class="stage-badge">Stage 4 · Guided & Free Practice</span>
+    <h2>Convert the Active sentences into Passive Voice</h2>
+
+    <div class="practice-item">
+      1. Active: Millions of people read this newspaper every day.<br>
+      Passive: This newspaper _____ by millions of people every day.
+    </div>
+    <div class="practice-item">
+      2. Active: The architect designed the new city hall.<br>
+      Passive: The new city hall _____ by the architect.
+    </div>
+    <div class="practice-item">
+      3. Active: They will announce the winner tomorrow.<br>
+      Passive: The winner _____ tomorrow.
+    </div>
+    <div class="practice-item">
+      4. Active: Someone has stolen my bicycle!<br>
+      Passive: My bicycle _____!
+    </div>
+    <div class="practice-item">
+      5. Active: A dog bit him during his morning run. (Use Get-passive)<br>
+      Passive: He _____ during his morning run.
+    </div>
+
+    <details>
+      <summary>🔍 Click to Reveal Answer Key & Explanations</summary>
+      <ol style="margin-top:0.5rem; padding-left:1.2rem; line-height:1.7;">
+        <li><strong>is read</strong> — Present Simple passive (`is + V3`).</li>
+        <li><strong>was designed</strong> — Past Simple passive (`was + V3`).</li>
+        <li><strong>will be announced</strong> — Future Simple passive (`will be + V3`).</li>
+        <li><strong>has been stolen</strong> — Present Perfect passive (`has been + V3`).</li>
+        <li><strong>got bitten</strong> — Informal Get-passive (`got + V3`).</li>
+      </ol>
+    </details>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="day-10.html" class="nav-btn">← Day 10: Rel Clauses</a>
+    <a href="day-12.html" class="nav-btn">Next Lesson: Day 12 →</a>
+  </footer>
+
 </main>
+
 </body>
 </html>
