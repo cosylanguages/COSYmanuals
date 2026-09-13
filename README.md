@@ -79,9 +79,11 @@ To systematically decouple and migrate all manuals, marathons, and curriculums f
 
 ---
 
-## 🔗 COSY Ecosystem Integration & Practice Links
+## 🔗 Relationship to COSYplatform & Ecosystem Integration
 
-All manuals integrate directly with other COSY ecosystem repositories. Every page includes practice resource links that open in new tabs (`target="_blank"`):
+COSYmanuals serves as the digital and printable reference manual suite across all language courses. Per ecosystem architecture policy, interactive CCQ quizzes, graded exercises, and live practice modules are single-sourced in COSYplatform rather than duplicated inside manual topic modules. Manual pages reference live practice activities via direct lesson callout links (`https://cosylanguages.github.io/COSYplatform/student.html?...`) while keeping static reference tables, vocabulary lists, and grammar explanations fully intact for standalone digital reading and printing.
+
+Every manual page integrates directly with other COSY ecosystem repositories via external links that open in new tabs (`target="_blank"`):
 
 - 🎮 **[COSYgames](https://cosylanguages.github.io/COSYgames/):** Vocabulary challenges, grammar quizzes, and interactive games.
 - 🛠️ **[COSYtools](https://cosylanguages.github.io/COSYtools/):** Dictionary lookups, verb conjugation tables, and phonetic guides.
