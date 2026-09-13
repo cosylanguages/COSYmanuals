@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🇫🇷 Marathon de Prononciation Française — Hub Général & Annexes (A0 → C2) · COSY</title>
-<meta name="description" content="Hub général du Marathon de Prononciation Française : choisissez votre niveau (A0-A1 à C2), découvrez la philosophie 1 règle = 1 image et explorez nos annexes complètes de fréquence.">
+<title>🇫🇷 Marathon de Prononciation Française — Bootcamp 7 Jours & Annexes (A0 → C2) · COSY</title>
+<meta name="description" content="Bootcamp de prononciation française en 7 jours pour débutants et faux-débutants. Apprenez à déchiffrer le français sans jargon, et retrouvez notre cours complet A0-C2.">
 <link rel="stylesheet" href="../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../shared/styles/base.css">
 <link rel="stylesheet" href="../../shared/styles/components.css">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="../../shared/styles/lang-pages.css">
 <link rel="stylesheet" href="../../shared/styles/lang-accents.css">
 <link rel="stylesheet" href="../../shared/styles/mobile.css">
+<link rel="stylesheet" href="../../shared/styles/print.css">
 <style>
   :root {
     --mp-primary: #1e5631;
@@ -129,6 +130,69 @@
     border-bottom: 2px solid #d8f3dc;
   }
 
+  /* Bootcamp Days Grid */
+  .bootcamp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .bootcamp-card {
+    background: #ffffff;
+    border: 2px solid #74c69d;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+  }
+
+  .bootcamp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(45, 106, 79, 0.12);
+  }
+
+  .bootcamp-day-num {
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .bootcamp-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1b4332;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .bootcamp-card-desc {
+    font-size: 0.92rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+
+  .bootcamp-card-btn {
+    background: #2d6a4f;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .bootcamp-card-btn:hover {
+    background: #1b4332;
+  }
+
   /* Level Cards Grid */
   .level-cards-grid {
     display: grid;
@@ -222,7 +286,6 @@
   .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
   .mp-table th { background: #f0fdf4; color: #1b4332; }
 
-  /* Mnemonic Box */
   .mnemonic-box {
     background: #fff8e1;
     border-left: 4px solid #f57f17;
@@ -236,33 +299,6 @@
     color: #795548;
     font-size: 1.05rem;
   }
-
-  /* 5 Families grid */
-  .families-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.25rem;
-  }
-
-  .family-card {
-    background: #f7fcf8;
-    border: 1px solid #c8e6c9;
-    border-radius: 10px;
-    padding: 1.25rem;
-  }
-
-  .family-card h4 {
-    margin: 0 0 0.5rem 0;
-    color: #1b4332;
-    font-size: 1.1rem;
-  }
-
-  .family-card p {
-    margin: 0;
-    font-size: 0.92rem;
-    color: #4a5568;
-  }
 </style>
 </head>
 <body data-lang-theme="fr">
@@ -273,8 +309,8 @@
 <header class="sd-sticky-header">
   <nav class="sd-jump-links" aria-label="Sommaire du marathon">
     <a href="index.html" class="sd-jump-link">← Hub FR</a>
-    <a href="pronunciation.html" class="sd-jump-link">← Prononciation</a>
-    <a href="#niveaux" class="sd-jump-link">🎯 Choisir son Niveau</a>
+    <a href="#bootcamp" class="sd-jump-link">⚡ Bootcamp 1 Semaine (Débutant)</a>
+    <a href="#niveaux" class="sd-jump-link">📚 Envie d'aller plus loin ? Cours complet A0→C2</a>
     <a href="#principes" class="sd-jump-link">💡 Philosophie & Astuces</a>
     <a href="#annexes" class="sd-jump-link">📊 Annexes de Fréquence</a>
   </nav>
@@ -283,21 +319,108 @@
 <header class="mp-hero">
   <div class="mp-badges">
     <span class="mp-badge">🇫🇷 Français Monolingue Accessible</span>
-    <span class="mp-badge">📐 1 Leçon = 1 Règle = 1 Image</span>
+    <span class="mp-badge">⚡ Bootcamp 7 Jours Complet</span>
     <span class="mp-badge">🎯 Sans jargon linguistique</span>
-    <span class="mp-badge">CECRL A0 → C2</span>
+    <span class="mp-badge">100% Autonome & Imprimable</span>
   </div>
-  <h1>🇫🇷 MARATHON DE PRONONCIATION FRANÇAISE</h1>
-  <p class="subtitle">Guide complet de lecture, prononciation et orthographe : des recettes de sons physiques aux pièges du français parlé spontané.</p>
+  <h1>🇫🇷 BOOTCAMP DE PRONONCIATION FRANÇAISE (1 SEMAINE)</h1>
+  <p class="subtitle">Un programme intensif guidé en 7 jours pour apprendre à déchiffrer et prononcer n'importe quel mot français du quotidien.</p>
+  <div style="margin-top: 1rem;">
+    <button type="button" class="print-btn no-print" onclick="window.print()" aria-label="Imprimer cette page">
+      🖨️ Imprimer cette page
+    </button>
+  </div>
 </header>
 
 <main class="mp-container">
 
-  <!-- CHOIX DU NIVEAU -->
-  <section id="niveaux" class="mp-section">
-    <h2>🎯 Sélectionnez votre niveau de marathon</h2>
+  <!-- PARCOURS PRINCIPAL: BOOTCAMP 7 JOURS -->
+  <section id="bootcamp" class="mp-section" style="border: 2px solid #2d6a4f; background: #fbfdfb;">
+    <h2>⚡ Parcours Recommandé : Bootcamp 1 Semaine (Jour 1 → Jour 7)</h2>
     <p>
-      Pour une expérience d'apprentissage fluide et adaptée à vos compétences, chaque niveau possède sa propre page dédiée. Les débutants A0 et A1 sont réunis sur une même page avec un accompagnement visuel renforcé.
+      Ce programme pas-à-pas est spécialement conçu pour les <strong>débutants et faux-débutants</strong>. En 7 sessions complètes (avec exercices guidés, explications claires et auto-diagnostic), vous maîtriserez les règles indispensables pour lire le français. Chaque fiche est 100% autonome et imprimable sans internet ni audio.
+    </p>
+
+    <div class="bootcamp-grid">
+
+      <!-- Day 1 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">JOUR 1 / 7</span>
+          <h3 class="bootcamp-card-title">Alphabet, Accents & Cédille</h3>
+          <p class="bootcamp-card-desc">Nom et son des 26 lettres, la magie des accents É vs. È/Ê, du tréma et le rôle du Ç.</p>
+        </div>
+        <a href="bootcamp/day-1.html" class="bootcamp-card-btn">Lancer le Jour 1 →</a>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">JOUR 2 / 7</span>
+          <h3 class="bootcamp-card-title">Consonnes finales & Doubles</h3>
+          <p class="bootcamp-card-desc">Sachez instantanément quelles lettres muettes se taisent et retenez le secret <strong>CaReFuL</strong>.</p>
+        </div>
+        <a href="bootcamp/day-2.html" class="bootcamp-card-btn">Lancer le Jour 2 →</a>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">JOUR 3 / 7</span>
+          <h3 class="bootcamp-card-title">C, G & Digrammes OU / OI / AU</h3>
+          <p class="bootcamp-card-desc">C et G dur vs. doux selon les voyelles, et les paires de voyelles indispensables.</p>
+        </div>
+        <a href="bootcamp/day-3.html" class="bootcamp-card-btn">Lancer le Jour 3 →</a>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">JOUR 4 / 7</span>
+          <h3 class="bootcamp-card-title">Voyelles Nasales (AN, ON, IN)</h3>
+          <p class="bootcamp-card-desc">Comment faire vibrer le nez et la règle d'or Voyelle + Consonne pour annuler la nasalisation.</p>
+        </div>
+        <a href="bootcamp/day-4.html" class="bootcamp-card-btn">Lancer le Jour 4 →</a>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">JOUR 5 / 7</span>
+          <h3 class="bootcamp-card-title">Digrammes Consonnes & Le H</h3>
+          <p class="bootcamp-card-desc">CH, PH, GN, QU, GU et la différence indispensable entre H muet et H aspiré.</p>
+        </div>
+        <a href="bootcamp/day-5.html" class="bootcamp-card-btn">Lancer le Jour 5 →</a>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">JOUR 6 / 7</span>
+          <h3 class="bootcamp-card-title">E caduc & Liaisons obligatoires</h3>
+          <p class="bootcamp-card-desc">Fluidifiez votre rythme oral : la chute du E instable et les 4 liaisons absolues au quotidien.</p>
+        </div>
+        <a href="bootcamp/day-6.html" class="bootcamp-card-btn">Lancer le Jour 6 →</a>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="bootcamp-card" style="grid-column: 1 / -1; background: #f0fdf4; border-color: #2e7d32;">
+        <div>
+          <span class="bootcamp-day-num" style="background: #2e7d32; color: #ffffff;">JOUR 7 / 7 — BILAN & EVALUATION</span>
+          <h3 class="bootcamp-card-title">Révision Transversale & Grand Texte de Lecture</h3>
+          <p class="bootcamp-card-desc">Mettez à l'épreuve l'ensemble des règles de la semaine dans un texte de lecture continu et passez votre auto-diagnostic final.</p>
+        </div>
+        <a href="bootcamp/day-7.html" class="bootcamp-card-btn" style="background: #1b4332;">Accéder au Bilan Final (Jour 7) →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION: COURS COMPLET A0 -> C2 -->
+  <section id="niveaux" class="mp-section">
+    <h2>📚 Envie d'aller plus loin ? Cours complet A0 → C2</h2>
+    <p>
+      Vous préférez consulter nos fiches encyclopédiques complètes classées par niveaux CECRL ? Retrouvez ci-dessous le répertoire exhaustif des 6 niveaux de référence :
     </p>
 
     <div class="level-cards-grid">
@@ -310,10 +433,10 @@
             <span class="level-badge-pill pill-a0a1">A0 - A1</span>
           </div>
           <p class="level-card-desc">
-            Pour les débutants complets. L'alphabet, les accents, les consonnes finales muettes (CaReFuL), le son U français et les nasales de base sans jargon.
+            Répertoire complet des fondations A0-A1 : alphabet, accents, consonnes finales (CaReFuL) et nasales en 8 unités détaillées.
           </p>
         </div>
-        <a href="levels/a0-a1.html" class="level-card-btn btn-a0a1">Accéder au Niveau A0-A1 →</a>
+        <a href="levels/a0-a1.html" class="level-card-btn btn-a0a1">Consulter le Niveau A0-A1 →</a>
       </div>
 
       <!-- Card A2 -->
@@ -324,10 +447,10 @@
             <span class="level-badge-pill pill-a2">A2</span>
           </div>
           <p class="level-card-desc">
-            Digrammes, trigrammes, semi-voyelles ([j], [w], [ɥ]), le H muet vs aspiré, et le groupe ILL avec ses 4 exceptions célèbres.
+            Digrammes, trigrammes, semi-voyelles ([j], [w], [ɥ]), le H muet vs aspiré, et le groupe ILL.
           </p>
         </div>
-        <a href="levels/a2.html" class="level-card-btn btn-a2">Accéder au Niveau A2 →</a>
+        <a href="levels/a2.html" class="level-card-btn btn-a2">Consulter le Niveau A2 →</a>
       </div>
 
       <!-- Card B1 -->
@@ -341,7 +464,7 @@
             Les 3 catégories de liaisons, les secrets du mot PLUS, la prononciation des chiffres (6, 10, 9) et la dénasalisation.
           </p>
         </div>
-        <a href="levels/b1.html" class="level-card-btn btn-b1">Accéder au Niveau B1 →</a>
+        <a href="levels/b1.html" class="level-card-btn btn-b1">Consulter le Niveau B1 →</a>
       </div>
 
       <!-- Card B2 -->
@@ -355,7 +478,7 @@
             Les consonnes muettes internes (sculpture, sept), les réductions du français parlé spontané (ch'sais pas) et l'assimilation.
           </p>
         </div>
-        <a href="levels/b2.html" class="level-card-btn btn-b2">Accéder au Niveau B2 →</a>
+        <a href="levels/b2.html" class="level-card-btn btn-b2">Consulter le Niveau B2 →</a>
       </div>
 
       <!-- Card C1 -->
@@ -369,7 +492,7 @@
             Le e muet en versification classique, la scansion alexandrine, la diérèse stylistique et les doublets étymologiques.
           </p>
         </div>
-        <a href="levels/c1.html" class="level-card-btn btn-c1">Accéder au Niveau C1 →</a>
+        <a href="levels/c1.html" class="level-card-btn btn-c1">Consulter le Niveau C1 →</a>
       </div>
 
       <!-- Card C2 -->
@@ -383,7 +506,7 @@
             La réforme orthographique de 1990, les règles probabilistes de lecture et l'orthographe inverse pour écrire ce qu'on entend.
           </p>
         </div>
-        <a href="levels/c2.html" class="level-card-btn btn-c2">Accéder au Niveau C2 →</a>
+        <a href="levels/c2.html" class="level-card-btn btn-c2">Consulter le Niveau C2 →</a>
       </div>
 
     </div>
@@ -450,7 +573,7 @@
 <footer class="site-footer" style="background: #1b4332; color: #d8f3dc; padding: 2.5rem 1.5rem; text-align: center; margin-top: 3rem;">
   <div style="max-width: 1100px; margin: 0 auto;">
     <p style="margin-bottom: 0.5rem; font-weight: 700; color: #ffffff;">COSYlanguages · Marathon de Prononciation Française</p>
-    <p style="margin-bottom: 1rem; font-size: 0.9rem;"><a href="index.html" style="color: #74c69d; text-decoration: none;">← Retour au Hub Français</a> | <a href="pronunciation.html" style="color: #74c69d; text-decoration: none;">Guide de Prononciation</a></p>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem;"><a href="index.html" style="color: #74c69d; text-decoration: none;">← Retour au Hub Français</a></p>
     <p style="font-size: 0.8rem; color: #b7e4c7;">© 2026 COSYlanguages. Tous droits réservés.</p>
   </div>
 </footer>

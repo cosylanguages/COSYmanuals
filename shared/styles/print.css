@@ -1,0 +1,204 @@
+/* COSYmanuals Shared Print Stylesheet
+   Reusable print system for manuals, marathons, and curriculums.
+*/
+
+/* Utility classes for screen media */
+.print-only {
+  display: none !important;
+}
+
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #ffffff;
+  color: #1b4332;
+  border: 1px solid #74c69d;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+
+.print-btn:hover {
+  background-color: #2d6a4f;
+  color: #ffffff;
+  border-color: #2d6a4f;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+
+  /* Utility classes in print mode */
+  .no-print,
+  .print-btn {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  /* 1. Body & Base Reset */
+  body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 2. Force all hidden / collapsed tab or accordion content to visible */
+  .tab-content,
+  .accordion-content,
+  .mp-section,
+  .unit,
+  .unit-card,
+  .day-card,
+  .collapsed,
+  .hidden,
+  [hidden],
+  [style*="display: none"],
+  [style*="display:none"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* 3. Remove Navigation Bars, Footers, and Interactive Controls */
+  #cosy-nav,
+  header.sd-sticky-header,
+  .sd-sticky-header,
+  .sd-jump-links,
+  .mp-unit-tabs-nav,
+  .level-nav-bar,
+  .unit-nav,
+  nav,
+  footer,
+  .site-footer,
+  footer.main-footer,
+  .practice-links,
+  .practice-cta-banner,
+  .lesson-check,
+  .quiz-panel,
+  .ccq-panel,
+  .quiz-reset,
+  .quiz-score,
+  button {
+    display: none !important;
+  }
+
+  /* 4. Layout & Containers */
+  .container,
+  .mp-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 5. Convert colored card backgrounds to white with 1pt dark border and black text */
+  .mp-hero,
+  .mp-section,
+  .lesson-sample,
+  .lesson-sample-header,
+  .lesson-sample-body,
+  .alphabet-card,
+  .mnemonic-box,
+  .beginner-notice,
+  .section-card,
+  .unit-card,
+  .notice-card,
+  .manual-meta,
+  .mp-field-box,
+  .certificate-box,
+  .box,
+  .card,
+  .mp-table th,
+  .mp-table td {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1pt solid #333333 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .mp-hero h1,
+  .mp-hero p,
+  .mp-hero .subtitle,
+  .lesson-sample-header h3,
+  h1, h2, h3, h4, h5, h6, p, span, li, td, th, div {
+    color: #000000 !important;
+  }
+
+  /* 6. Preserve small icon/emoji markers & tags as visual anchors */
+  .mp-badge,
+  .mp-field-tag,
+  .icon-marker,
+  .badge,
+  .emoji-marker {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1pt solid #333333 !important;
+    display: inline-block !important;
+    padding: 0.15rem 0.5rem !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+    page-break-inside: avoid;
+  }
+
+  /* 7. Page-break rules for numbered "Unité" or "Jour" */
+  .unit:not(:first-of-type),
+  .day-card:not(:first-of-type),
+  .mp-section:not(:first-of-type),
+  .unit-block:not(:first-of-type),
+  .topic-section:not(:first-of-type) {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  /* Prevent awkward page breaks inside cards, tables, and figures */
+  .lesson-sample,
+  .mnemonic-box,
+  .beginner-notice,
+  .unit-card,
+  .section-card,
+  tr,
+  figure,
+  svg {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* 8. IPA symbols websafe font stack fallback */
+  .ipa,
+  [class*="ipa"],
+  .phonetic {
+    font-family: "Lucida Sans Unicode", "Arial Unicode MS", "DejaVu Sans", "Segoe UI", sans-serif !important;
+  }
+
+  /* 9. Images, SVGs & Tables */
+  img, svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+}
