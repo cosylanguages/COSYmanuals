@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇷🇺 Марафон русской фонетики — 7-дневный Буткемп & Справочник A0→C2 · COSY</title>
+<meta name="description" content="7-дневный интенсив по русскому произношению и чтению: редукция гласных, оглушение/овончение, твердые и мягкие согласные, и ударение. 100% автономно и готово к печати.">
+<link rel="stylesheet" href="../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../shared/styles/base.css">
+<link rel="stylesheet" href="../../shared/styles/components.css">
+<link rel="stylesheet" href="../../shared/styles/layout.css">
+<link rel="stylesheet" href="../../shared/styles/lang-pages.css">
+<link rel="stylesheet" href="../../shared/styles/mobile.css">
+<link rel="stylesheet" href="../../shared/styles/print.css">
+<style>
+  :root {
+    --ru-primary: #9b2c2c;
+    --ru-primary-light: #fff5f5;
+    --ru-accent: #c53030;
+    --ru-border: #feb2b2;
+  }
+
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2d3748;
+    background-color: #fffaf0;
+    line-height: 1.65;
+  }
+
+  .mp-hero {
+    background: linear-gradient(135deg, #7b1113 0%, #9b2c2c 50%, #c53030 100%);
+    color: #ffffff;
+    padding: 3.5rem 1.5rem 2.5rem;
+    border-bottom: 4px solid #feb2b2;
+    text-align: center;
+  }
+
+  .mp-hero h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+  }
+
+  .mp-hero p.subtitle {
+    font-size: 1.2rem;
+    color: #fff5f5;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .mp-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .mp-badge {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .sd-jump-link {
+    color: #9b2c2c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #fff5f5;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .sd-jump-link:hover {
+    background: #9b2c2c;
+    color: #ffffff;
+  }
+
+  .mp-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .mp-section {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  }
+
+  .mp-section h2 {
+    color: #7b1113;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #feb2b2;
+  }
+
+  /* Bootcamp Days Grid */
+  .bootcamp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .bootcamp-card {
+    background: #ffffff;
+    border: 2px solid #feb2b2;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+  }
+
+  .bootcamp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(197, 48, 48, 0.12);
+  }
+
+  .bootcamp-day-num {
+    background: #fff5f5;
+    color: #c53030;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .bootcamp-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #7b1113;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .bootcamp-card-desc {
+    font-size: 0.92rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+
+  .bootcamp-card-btn {
+    background: #c53030;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .bootcamp-card-btn:hover {
+    background: #7b1113;
+  }
+
+  /* Level Cards Grid */
+  .level-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .level-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+  }
+
+  .level-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+
+  .level-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #7b1113;
+    margin: 0;
+  }
+
+  .level-badge-pill {
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .pill-a0a1 { background: #e3f2fd; color: #0d47a1; }
+  .pill-a2 { background: #e8f5e9; color: #1b5e20; }
+  .pill-b1 { background: #fff8e1; color: #f57f17; }
+  .pill-b2 { background: #fbe9e7; color: #bf360c; }
+  .pill-c1 { background: #f3e5f5; color: #4a148c; }
+  .pill-c2 { background: #eceff1; color: #263238; }
+
+  .level-card-desc {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+  }
+
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #fff5f5; color: #7b1113; }
+
+  .mnemonic-box {
+    background: #fff8e1;
+    border-left: 4px solid #f57f17;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .mnemonic-box h4 {
+    margin: 0 0 0.4rem 0;
+    color: #795548;
+    font-size: 1.05rem;
+  }
+</style>
+</head>
+<body data-lang-theme="ru">
+
+<nav id="cosy-nav"></nav>
+
+<!-- Sticky Navigation -->
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links" aria-label="Содержание марафона">
+    <a href="index.html" class="sd-jump-link">← Hub RU</a>
+    <a href="#bootcamp" class="sd-jump-link">⚡ 7-дневный Буткемп</a>
+    <a href="#niveaux" class="sd-jump-link">📚 Справочник A0→C2</a>
+    <a href="#top20" class="sd-jump-link">📊 Топ-20 правил</a>
+    <a href="#principes" class="sd-jump-link">💡 Мнемотехники</a>
+  </nav>
+</header>
+
+<header class="mp-hero">
+  <div class="mp-badges">
+    <span class="mp-badge">🇷🇺 Русская Фонетика & Чтение</span>
+    <span class="mp-badge">⚡ 7-дневный Интенсив</span>
+    <span class="mp-badge">🎯 Стандарты CELTA</span>
+    <span class="mp-badge">100% Автономно & Для печати</span>
+  </div>
+  <h1>🇷🇺 МАРАФОН РУССКОЙ ФОНЕТИКИ И ЧТЕНИЯ</h1>
+  <p class="subtitle">Пошаговый 7-дневный практический курс по чтению и произношению без сложной академической терминологии.</p>
+  <div style="margin-top: 1rem;">
+    <button type="button" class="print-btn no-print" onclick="window.print()" aria-label="Распечатать страницу" style="background:#ffffff; color:#7b1113; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
+      🖨️ Распечатать страницу
+    </button>
+  </div>
+</header>
+
+<main class="mp-container">
+
+  <!-- PRIMARY SECTION: 7-DAY BOOTCAMP ROUTE -->
+  <section id="bootcamp" class="mp-section" style="border: 2px solid #c53030; background: #fffaf0;">
+    <h2>⚡ Основной маршрут: 7-дневный Буткемп Русской Фонетики</h2>
+    <p>
+      Программа разработана для начинающих и продолжающих (A0–A2). За 7 занятий вы освоите правила редукции, парные согласные, твердые и мягкие звуки и научитесь читать любой русский текст с уверенностью.
+    </p>
+
+    <div class="bootcamp-grid">
+
+      <!-- Day 1 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ДЕНЬ 1 / 7</span>
+          <h3 class="bootcamp-card-title">Алфавит, Аллофоны О/А & Ударение</h3>
+          <p class="bootcamp-card-desc">33 буквы кириллицы, 1-я и 2-я степень редукции безударных гласных О/А (Аканье/Иканье).</p>
+        </div>
+        <a href="bootcamp/day-1.html" class="bootcamp-card-btn">Начать День 1 →</a>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ДЕНЬ 2 / 7</span>
+          <h3 class="bootcamp-card-title">Твердые и Мягкие Согласные (Ь / Ъ)</h3>
+          <p class="bootcamp-card-desc">Параллель 15 пар согласных, смягчение перед Е, Ё, И, Ю, Я и роль мягкого (Ь) и твердого (Ъ) знаков.</p>
+        </div>
+        <a href="bootcamp/day-2.html" class="bootcamp-card-btn">Начать День 2 →</a>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ДЕНЬ 3 / 7</span>
+          <h3 class="bootcamp-card-title">Звонкие и Глухие (Оглушение & Овончение)</h3>
+          <p class="bootcamp-card-desc">6 пар (Б-П, В-Ф, Г-К, Д-Т, Ж-Ш, З-С), оглушение в конце слова и регрессивная ассимиляция.</p>
+        </div>
+        <a href="bootcamp/day-3.html" class="bootcamp-card-btn">Начать День 3 →</a>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ДЕНЬ 4 / 7</span>
+          <h3 class="bootcamp-card-title">Непроизносимые Согласные & Сочетания</h3>
+          <p class="bootcamp-card-desc">Выпадение звуков в сочетаниях стн, здн, вств (солнце, здравствуйте), и чтение ЧТ, ЧН, ТСЯ/ТЬСЯ.</p>
+        </div>
+        <a href="bootcamp/day-4.html" class="bootcamp-card-btn">Начать День 4 →</a>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ДЕНЬ 5 / 7</span>
+          <h3 class="bootcamp-card-title">Грамматические Окончания (-ОГО/-ЕГО, -ИЙ)</h3>
+          <p class="bootcamp-card-desc">Чтение «Г» как [В] в окончаниях родительного падежа (-его/-ого), беглые гласные и окончания прилагательных.</p>
+        </div>
+        <a href="bootcamp/day-5.html" class="bootcamp-card-btn">Начать День 5 →</a>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ДЕНЬ 6 / 7</span>
+          <h3 class="bootcamp-card-title">Интонационные Контуры (ИК-1 — ИК-5)</h3>
+          <p class="bootcamp-card-desc">5 базовых интонаций русского предложения: повествование, вопрос, восклицание, перечисление.</p>
+        </div>
+        <a href="bootcamp/day-6.html" class="bootcamp-card-btn">Начать День 6 →</a>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="bootcamp-card" style="grid-column: 1 / -1; background: #fff5f5; border-color: #c53030;">
+        <div>
+          <span class="bootcamp-day-num" style="background: #c53030; color: #ffffff;">ДЕНЬ 7 / 7 — ИТОГОВЫЙ ПРАКТИКУМ</span>
+          <h3 class="bootcamp-card-title">Сплошной Текст Чтения & Самодиагностика</h3>
+          <p class="bootcamp-card-desc">Комплексная разметка текста со всеми правилами недели, проверкой ударений, оглушения и редукции.</p>
+        </div>
+        <a href="bootcamp/day-7.html" class="bootcamp-card-btn" style="background: #7b1113;">Перейти к Итоговому Дню 7 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION: A0 -> C2 -->
+  <section id="niveaux" class="mp-section">
+    <h2>📚 Справочный каталог уровня A0 → C2</h2>
+    <div class="level-cards-grid">
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Фундамент A0-A1</h3>
+          <span class="level-badge-pill pill-a0a1">A0 - A1</span>
+        </div>
+        <p class="level-card-desc">Алфавит, редукция О/А, оглушение на конце слова, мягкие и твердые гласные.</p>
+      </div>
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Базовый A2</h3>
+          <span class="level-badge-pill pill-a2">A2</span>
+        </div>
+        <p class="level-card-desc">Ассимиляция согласных, -ого/-его = [во/во], непроизносимые согласные, ИК-1 и ИК-2.</p>
+      </div>
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Средний B1</h3>
+          <span class="level-badge-pill pill-b1">B1</span>
+        </div>
+        <p class="level-card-desc">Подвижное ударение при склонении, редукция Е/Я (иканье), произношение предлогов с последующим словом.</p>
+      </div>
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Продвинутый B2-C2</h3>
+          <span class="level-badge-pill pill-b2">B2-C2</span>
+        </div>
+        <p class="level-card-desc">Орфоэпические нормы, сценическая речь, произношение заимствованных слов (детектив, теннис), стилистика.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP 20 RULES TABLE -->
+  <section id="top20" class="mp-section">
+    <h2>📊 Топ-20 фонетических правил русского языка</h2>
+    <table class="mp-table">
+      <thead>
+        <tr><th>№</th><th>Правило</th><th>Условия</th><th>Пример</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1</strong></td><td>Редукция О в первый предударный слог</td><td>О читается как [а]</td><td>вОда → [вада]</td></tr>
+        <tr><td><strong>2</strong></td><td>Оглушение звонких на конце слова</td><td>Б, В, Г, Д, Ж, З → П, Ф, К, Т, Ш, С</td><td>зуБ → [зуп], дуБ → [дуп]</td></tr>
+        <tr><td><strong>3</strong></td><td>Окончания -ОГО/-ЕГО</td><td>Г читается как [В]</td><td>его → [ево], большого → [бальшова]</td></tr>
+        <tr><td><strong>4</strong></td><td>Смягчение перед Е, Ё, И, Ю, Я</td><td>Согласный становится мягким</td><td>телефон → [т'елефон]</td></tr>
+        <tr><td><strong>5</strong></td><td>Сочетание ТСЯ / ТЬСЯ</td><td>Читается как долгий мягкий [цц]</td><td>учится → [учицца]</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="site-footer" style="background:#7b1113; color:#ffffff; padding:2.5rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="max-width:1100px; margin:0 auto;">
+    <p style="margin-bottom:0.5rem; font-weight:700; color:#ffffff;">COSYlanguages · Марафон Русской Фонетики</p>
+    <p style="margin-bottom:1rem; font-size:0.9rem;"><a href="index.html" style="color:#feb2b2; text-decoration:none;">← Вернуться в Хаб</a></p>
+    <p style="font-size:0.8rem; color:#fed7d7;">© 2026 COSYlanguages. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="../../js/data/languages.js"></script>
+<script src="../../js/core/engine.js"></script>
+<script src="../../js/core/i18n.js"></script>
+<script src="../../js/core/ui.js"></script>
+</body>
+</html>

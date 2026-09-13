@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇬🇷 Μαραθώνιος Ελληνικής Προφοράς — Bootcamp 7 Ημερών & Οδηγός Α0→C2 · COSY</title>
+<meta name="description" content="Εντατικό πρόγραμμα προφοράς, ανάγνωσης και ορθογραφίας της Νέας Ελληνικής σε 7 ημέρες. Πλήρως αυτόνομο και έτοιμο για εκτύπωση.">
+<link rel="stylesheet" href="../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../shared/styles/base.css">
+<link rel="stylesheet" href="../../shared/styles/components.css">
+<link rel="stylesheet" href="../../shared/styles/layout.css">
+<link rel="stylesheet" href="../../shared/styles/lang-pages.css">
+<link rel="stylesheet" href="../../shared/styles/mobile.css">
+<link rel="stylesheet" href="../../shared/styles/print.css">
+<style>
+  :root {
+    --el-primary: #005bae;
+    --el-primary-light: #e6f0fa;
+    --el-accent: #0072ce;
+    --el-border: #b3d7ff;
+  }
+
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 50%, #0072ce 100%);
+    color: #ffffff;
+    padding: 3.5rem 1.5rem 2.5rem;
+    border-bottom: 4px solid #b3d7ff;
+    text-align: center;
+  }
+
+  .mp-hero h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+  }
+
+  .mp-hero p.subtitle {
+    font-size: 1.2rem;
+    color: #e6f0fa;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .mp-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .mp-badge {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .sd-jump-link:hover {
+    background: #005bae;
+    color: #ffffff;
+  }
+
+  .mp-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .mp-section {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  }
+
+  .mp-section h2 {
+    color: #003366;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #b3d7ff;
+  }
+
+  .bootcamp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .bootcamp-card {
+    background: #ffffff;
+    border: 2px solid #66b2ff;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+  }
+
+  .bootcamp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 91, 174, 0.12);
+  }
+
+  .bootcamp-day-num {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .bootcamp-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #003366;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .bootcamp-card-desc {
+    font-size: 0.92rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+
+  .bootcamp-card-btn {
+    background: #005bae;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .bootcamp-card-btn:hover {
+    background: #003366;
+  }
+
+  .level-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .level-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .level-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+
+  .level-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #003366;
+    margin: 0;
+  }
+
+  .level-badge-pill {
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .pill-a0a1 { background: #e3f2fd; color: #0d47a1; }
+  .pill-a2 { background: #e8f5e9; color: #1b5e20; }
+  .pill-b1 { background: #fff8e1; color: #f57f17; }
+  .pill-b2 { background: #fbe9e7; color: #bf360c; }
+  .pill-c1 { background: #f3e5f5; color: #4a148c; }
+  .pill-c2 { background: #eceff1; color: #263238; }
+
+  .level-card-desc {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+  }
+
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+
+  .mnemonic-box {
+    background: #fff8e1;
+    border-left: 4px solid #f57f17;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .mnemonic-box h4 {
+    margin: 0 0 0.4rem 0;
+    color: #795548;
+    font-size: 1.05rem;
+  }
+</style>
+</head>
+<body data-lang-theme="el">
+
+<nav id="cosy-nav"></nav>
+
+<!-- Sticky Navigation -->
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links" aria-label="Περιεχόμενα Μαραθωνίου">
+    <a href="index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#bootcamp" class="sd-jump-link">⚡ Bootcamp 7 Ημερών</a>
+    <a href="#niveaux" class="sd-jump-link">📚 Κατάλογος Α0→C2</a>
+    <a href="#top20" class="sd-jump-link">📊 Τοπ-20 Κανόνες</a>
+    <a href="#principes" class="sd-jump-link">💡 Μνημονικοί Κανόνες</a>
+  </nav>
+</header>
+
+<header class="mp-hero">
+  <div class="mp-badges">
+    <span class="mp-badge">🇬🇷 Νέα Ελληνική Φωνητική</span>
+    <span class="mp-badge">⚡ Bootcamp 7 Ημερών</span>
+    <span class="mp-badge">🎯 Μονογλωσσικός Οδηγός</span>
+    <span class="mp-badge">100% Εκτυπώσιμο</span>
+  </div>
+  <h1>🇬🇷 ΜΑΡΑΘΩΝΙΟΣ ΕΛΛΗΝΙΚΗΣ ΠΡΟΦΟΡΑΣ & ΑΝΑΓΝΩΣΗΣ</h1>
+  <p class="subtitle">Πλήρης καθοδηγούμενος οδηγός ανάγνωσης, προφοράς και ορθογραφίας σε 7 ημέρες για αρχάριους και προχωρημένους.</p>
+  <div style="margin-top: 1rem;">
+    <button type="button" class="print-btn no-print" onclick="window.print()" aria-label="Εκτύπωση σελίδας" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
+      🖨️ Εκτύπωση σελίδας
+    </button>
+  </div>
+</header>
+
+<main class="mp-container">
+
+  <!-- PRIMARY SECTION: 7-DAY BOOTCAMP ROUTE -->
+  <section id="bootcamp" class="mp-section" style="border: 2px solid #005bae; background: #fbfdfb;">
+    <h2>⚡ Βασικό Μονοπάτι: Bootcamp Προφοράς 7 Ημερών</h2>
+    <p>
+      Αυτό το δομημένο πρόγραμμα 7 ημερών οδηγεί τους μαθητές από τα 24 γράμματα του ελληνικού αλφαβήτου στη φυσική ανάγνωση συνεχούς λόγου. Κάθε μάθημα ακολουθεί τα στάδια CELTA.
+    </p>
+
+    <div class="bootcamp-grid">
+
+      <!-- Day 1 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ΗΜΕΡΑ 1 / 7</span>
+          <h3 class="bootcamp-card-title">Αλφάβητο, Τόνος & Διαλυτικά</h3>
+          <p class="bootcamp-card-desc">24 γράμματα, ο τόνος (κανόνας προπαροξυτονίας), το τελικό ς, και η διαστολή των διαλυτικών (μαΐου, καΐκι).</p>
+        </div>
+        <a href="bootcamp/day-1.html" class="bootcamp-card-btn">Έναρξη Ημέρας 1 →</a>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ΗΜΕΡΑ 2 / 7</span>
+          <h3 class="bootcamp-card-title">Δίψηφα Φωνήεντα & Ιωτακισμός</h3>
+          <p class="bootcamp-card-desc">Οι συνδυασμοί αι (/e/), ει, οι, υι, ου και οι 6 τρόποι γραφής του ήχου /i/ (ι, η, υ, ει, οι, υι).</p>
+        </div>
+        <a href="bootcamp/day-2.html" class="bootcamp-card-btn">Έναρξη Ημέρας 2 →</a>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ΗΜΕΡΑ 3 / 7</span>
+          <h3 class="bootcamp-card-title">Οι Συνδυασμοί Αυ & Ευ (/av, af, ev, ef/)</h3>
+          <p class="bootcamp-card-desc">Πότε το αυ/ευ προφέρεται /av, ev/ (πριν από φωνήεν ή ηχηρό) και πότε /af, ef/ (πριν από άηχο σύμφωνο).</p>
+        </div>
+        <a href="bootcamp/day-3.html" class="bootcamp-card-btn">Έναρξη Ημέρας 3 →</a>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ΗΜΕΡΑ 4 / 7</span>
+          <h3 class="bootcamp-card-title">Δίψηφα Σύμφωνα (μπ, ντ, γκ, γγ, τσ, τζ)</h3>
+          <p class="bootcamp-card-desc">Αρχή λέξης vs. μέση λέξης (μπανάνα / λάμπα, ντομάτα / πέντε, γκολ / αγκάθι) και οι ήχοι τσ, τζ.</p>
+        </div>
+        <a href="bootcamp/day-4.html" class="bootcamp-card-btn">Έναρξη Ημέρας 4 →</a>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ΗΜΕΡΑ 5 / 7</span>
+          <h3 class="bootcamp-card-title">Μαλακά Γ / Χ, Τελικό -ν & Αφομοίωση</h3>
+          <p class="bootcamp-card-desc">Προφορά γ/χ πριν από ε, ι vs. α, ο, ου, κανόνες διατήρησης του τελικού -ν και ηχηροποίηση του σ (/z/).</p>
+        </div>
+        <a href="bootcamp/day-5.html" class="bootcamp-card-btn">Έναρξη Ημέρας 5 →</a>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="bootcamp-card">
+        <div>
+          <span class="bootcamp-day-num">ΗΜΕΡΑ 6 / 7</span>
+          <h3 class="bootcamp-card-title">Ορθογραφική Λογική & Ομόηχα</h3>
+          <p class="bootcamp-card-desc">Ρήματα σε -ω vs. ουσιαστικά σε -ο, παθητική φωνή -ται (/te/) vs. -τε, και διάκριση ομόηχων (πιο/ποιο, ή/η, που/πού).</p>
+        </div>
+        <a href="bootcamp/day-6.html" class="bootcamp-card-btn">Έναρξη Ημέρας 6 →</a>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="bootcamp-card" style="grid-column: 1 / -1; background: #e6f0fa; border-color: #005bae;">
+        <div>
+          <span class="bootcamp-day-num" style="background: #005bae; color: #ffffff;">ΗΜΕΡΑ 7 / 7 — ΤΕΛΙΚΟΣ ΑΠΟΛΟΓΙΣΜΟΣ</span>
+          <h3 class="bootcamp-card-title">Συνεχής Λόγος, Εγκλιτικά & Συνθετικό Κείμενο</h3>
+          <p class="bootcamp-card-desc">Διπλός τονισμός εγκλιτικών, ελληνικά σημεία στίξης (;, ·), ανάλυση παγίδων σε πλήρες κείμενο και αυτοδιαγνωστικό τεστ.</p>
+        </div>
+        <a href="bootcamp/day-7.html" class="bootcamp-card-btn" style="background: #003366;">Μετάβαση στην Ημέρα 7 (Τελικό Τεστ) →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION: CEFR LEVEL OVERVIEW CARDS (A0 -> C2) -->
+  <section id="niveaux" class="mp-section">
+    <h2>📚 Πλήρης Κατάλογος Αναφοράς Α0 → C2</h2>
+    <div class="level-cards-grid">
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Βάσεις A0-A1</h3>
+          <span class="level-badge-pill pill-a0a1">A0 - A1</span>
+        </div>
+        <p class="level-card-desc">24 γράμματα αλφαβήτου, δίψηφα φωνήεντα (αι, ει, οι, ου), τόνος, αυ/ευ, μπ, ντ, γκ, τσ, τζ.</p>
+      </div>
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Βασικό A2</h3>
+          <span class="level-badge-pill pill-a2">A2</span>
+        </div>
+        <p class="level-card-desc">Μαλακό γ/χ, διατήρηση τελικού -ν, διπλά σύμφωνα (Ελλάδα, γράμμα), καταλήξεις ρημάτων -ω / -ο.</p>
+      </div>
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Μεσαίο B1</h3>
+          <span class="level-badge-pill pill-b1">B1</span>
+        </div>
+        <p class="level-card-desc">Χασμωδία, συμπλέγματα συμφώνων (στ, σκ, σχ, φτ, χτ), ηχηροποίηση του σ πριν από ηχηρά, απόστροφος.</p>
+      </div>
+      <div class="level-card">
+        <div class="level-card-header">
+          <h3 class="level-card-title">Προχωρημένο B2-C2</h3>
+          <span class="level-badge-pill pill-b2">B2 - C2</span>
+        </div>
+        <p class="level-card-desc">Ιστορική ορθογραφία, ετυμολογία, λόγιες μορφές (καθαρεύουσα), αύξηση ρημάτων, ελληνική στίξη (;, ·).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP 20 RULES TABLE -->
+  <section id="top20" class="mp-section">
+    <h2>📊 Τοπ-20 Κανόνες Ελληνικής Φωνητικής & Αναγνωσης</h2>
+    <table class="mp-table">
+      <thead>
+        <tr><th>№</th><th>Κανόνας</th><th>Συνθήκη</th><th>Παράδειγμα</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1</strong></td><td>αι = /e/</td><td>Πάντα προφέρεται όπως το ε</td><td>αίμα, καιρός, παιδιά</td></tr>
+        <tr><td><strong>2</strong></td><td>ει, οι, υι = /i/</td><td>Ιωτακισμός (προφέρονται ως [i])</td><td>είμαι, οικογένεια, υιοθεσία</td></tr>
+        <tr><td><strong>3</strong></td><td>ου = /u/</td><td>Πάντα προφέρεται [u]</td><td>ουρανός, που, λουλούδι</td></tr>
+        <tr><td><strong>4</strong></td><td>αυ = /av/ ή /af/</td><td>/av/ πριν από ηχηρά/φωνήεν, /af/ πριν από άηχα</td><td>αύριο [avrio] / αυτό [afto]</td></tr>
+        <tr><td><strong>5</strong></td><td>ευ = /ev/ ή /ef/</td><td>/ev/ πριν από ηχηρά/φωνήεν, /ef/ πριν από άηχα</td><td>Ευρώπη [evropi] / ευχαριστώ [efxaristo]</td></tr>
+        <tr><td><strong>6</strong></td><td>μπ = /b/ ή /mb/</td><td>[b] στην αρχή, [mb] στη μέση</td><td>μπανάνα / λάμπα</td></tr>
+        <tr><td><strong>7</strong></td><td>ντ = /d/ ή /nd/</td><td>[d] στην αρχή, [nd] στη μέση</td><td>ντομάτα / πέντε</td></tr>
+        <tr><td><strong>8</strong></td><td>γκ = /g/ ή /ŋg/</td><td>[g] στην αρχή, [ŋg] στη μέση</td><td>γκολ / αγκάθι</td></tr>
+        <tr><td><strong>9</strong></td><td>τσ = /ts/, τζ = /dz/</td><td>Σύνθετοι ήχοι</td><td>τσάι, τζάμι</td></tr>
+        <tr><td><strong>10</strong></td><td>-ται = /te/</td><td>Γ' ενικό παθητικής φωνής</td><td>γράφεται [grafete]</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- LOGIC & MNEMONICS -->
+  <section id="principes" class="mp-section">
+    <h2>💡 Μνημονικοί Κανόνες & Ορθογραφική Λογική</h2>
+    <div class="mnemonic-box">
+      <h4>💡 Άηχα σύμφωνα για τους συνδυασμούς αυ / ευ (/af, ef/)</h4>
+      <p style="margin:0;">Τα άηχα σύμφωνα που τρέπουν το υ σε /f/ είναι: <strong>κ, π, τ, ξ, ψ, σ, φ, θ, χ</strong>.</p>
+    </div>
+
+    <div class="mnemonic-box" style="background:#e6f0fa; border-color:#005bae;">
+      <h4 style="color:#003366;">💡 Κανόνας Τονισμού (Προπαροξυτονία)</h4>
+      <p style="margin:0; color:#003366;">Ο τόνος στην ελληνική γλώσσα δεν μπορεί να πάει πιο πίσω από την <strong>τρίτη συλλαβή</strong> από το τέλος (<em>άν-θρω-πος</em>).</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2.5rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="max-width:1100px; margin:0 auto;">
+    <p style="margin-bottom:0.5rem; font-weight:700; color:#ffffff;">COSYlanguages · Μαραθώνιος Ελληνικής Προφοράς</p>
+    <p style="margin-bottom:1rem; font-size:0.9rem;"><a href="index.html" style="color:#66b2ff; text-decoration:none;">← Επιστροφή στο Κεντρικό Hub</a></p>
+    <p style="font-size:0.8rem; color:#b3d7ff;">© 2026 COSYlanguages. Όλα τα δικαιώματα διατηρούνται.</p>
+  </div>
+</footer>
+
+<script src="../../js/data/languages.js"></script>
+<script src="../../js/core/engine.js"></script>
+<script src="../../js/core/i18n.js"></script>
+<script src="../../js/core/ui.js"></script>
+</body>
+</html>
