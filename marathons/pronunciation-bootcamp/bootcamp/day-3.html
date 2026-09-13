@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jour 3 — C & G (dur/doux) & Digrammes OU/OI/AU/EAU · Bootcamp Prononciation COSY</title>
+<meta name="description" content="Bootcamp de prononciation française — Jour 3 : C et G (dur vs. doux), et les digrammes essentiels OU, OI, AU, EAU.">
+<link rel="stylesheet" href="../../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../../shared/styles/base.css">
+<link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="../../../shared/styles/lang-pages.css">
+<link rel="stylesheet" href="../../../shared/styles/lang-accents.css">
+<link rel="stylesheet" href="../../../shared/styles/mobile.css">
+<link rel="stylesheet" href="../../../shared/styles/print.css">
+<style>
+  :root {
+    --mp-primary: #1e5631;
+    --mp-primary-light: #e8f5e9;
+    --mp-accent: #2e7d32;
+    --mp-gold: #d4af37;
+    --mp-border: #c8e6c9;
+  }
+
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #fcfdfc;
+    line-height: 1.65;
+  }
+
+  .mp-hero {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #40916c 100%);
+    color: #ffffff;
+    padding: 2.5rem 1.5rem 2rem;
+    border-bottom: 4px solid #74c69d;
+    text-align: center;
+  }
+
+  .mp-hero h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  .mp-hero p.subtitle {
+    font-size: 1.1rem;
+    color: #d8f3dc;
+    max-width: 800px;
+    margin: 0 auto 1.25rem;
+  }
+
+  .mp-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .mp-badge {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sd-jump-links {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .sd-jump-link {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    background: #f0fdf4;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .sd-jump-link:hover, .sd-jump-link.active {
+    background: #2d6a4f;
+    color: #ffffff;
+  }
+
+  .mp-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  }
+
+  .celta-stage h2 {
+    color: #1b4332;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d8f3dc;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stage-tag {
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-size: 0.95rem;
+  }
+
+  .mp-table th, .mp-table td {
+    padding: 0.85rem 1rem;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .mp-table th {
+    background-color: #f0fdf4;
+    color: #1b4332;
+    font-weight: 700;
+  }
+
+  .mp-table tr:nth-child(even) {
+    background-color: #f9fbf9;
+  }
+
+  .mnemonic-box {
+    background: #fff8e1;
+    border-left: 4px solid #f57f17;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .mnemonic-box h4 {
+    margin: 0 0 0.4rem 0;
+    color: #795548;
+    font-size: 1.05rem;
+  }
+
+  .level-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0fdf4;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .level-nav-bar a {
+    color: #1b4332;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .phonetic-cue {
+    background: #f0fdf4;
+    border: 1px solid #b7e4c7;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    color: #1b4332;
+    margin-top: 0.4rem;
+  }
+</style>
+</head>
+<body data-lang-theme="fr">
+
+<nav id="cosy-nav"></nav>
+
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links" aria-label="Navigation Bootcamp">
+    <a href="../index.html" class="sd-jump-link">← Hub Bootcamp</a>
+    <a href="day-1.html" class="sd-jump-link">Jour 1</a>
+    <a href="day-2.html" class="sd-jump-link">Jour 2</a>
+    <a href="day-3.html" class="sd-jump-link active">Jour 3</a>
+    <a href="day-4.html" class="sd-jump-link">Jour 4</a>
+    <a href="day-5.html" class="sd-jump-link">Jour 5</a>
+    <a href="day-6.html" class="sd-jump-link">Jour 6</a>
+    <a href="day-7.html" class="sd-jump-link">Jour 7</a>
+  </nav>
+</header>
+
+<header class="mp-hero">
+  <div class="mp-badges">
+    <span class="mp-badge">⚡ Bootcamp 1 Semaine</span>
+    <span class="mp-badge">Jour 3 / 7</span>
+    <span class="mp-badge">Débutant & Faux-débutant</span>
+  </div>
+  <h1>Jour 3 — C & G (dur/doux) & Digrammes OU / OI / AU / EAU</h1>
+  <p class="subtitle">Comprenez comment les voyelles modifient C et G, et maîtrisez les combinaisons de voyelles les plus courantes.</p>
+  <div style="margin-top: 1rem;">
+    <button type="button" class="print-btn no-print" onclick="window.print()" aria-label="Imprimer cette page">
+      🖨️ Imprimer cette page
+    </button>
+  </div>
+</header>
+
+<main class="mp-container">
+
+  <!-- 1. ACCROCHE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 1</span> 🎯 Accroche (Warmer)</h2>
+    <p>
+      Lisez ces deux mots : <strong>« CAFÉ »</strong> et <strong>« CERISE »</strong>, puis <strong>« GARE »</strong> et <strong>« GIRAFE »</strong>.
+    </p>
+    <p>
+      Pourquoi la même lettre C produit-elle parfois un son de k [k] ou de s [s] ? Et pourquoi la lettre G sonne-t-elle tantôt comme dans <em>gâteau</em> [g] ou comme dans <em>jardin</em> [ʒ] ?
+    </p>
+  </section>
+
+  <!-- 2. ELICITATION -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 2</span> 🤔 Élicitation (Elicit)</h2>
+    <p>Regardez attentivement la voyelle qui suit directement les lettres C et G :</p>
+    <ul style="margin-bottom: 1rem;">
+      <li>Groupe 1 : <em>café, coco, cube</em> | <em>gare, gorge, legume</em> (Suivi de A, O, U)</li>
+      <li>Groupe 2 : <em>ceci, citron, cygne</em> | <em>gel, girafe, gym</em> (Suivi de E, I, Y)</li>
+    </ul>
+    <p><strong>À votre avis :</strong></p>
+    <ol>
+      <li>Quelles sont les voyelles qui rendent C et G <strong>DURS</strong> ([k] et [g]) ?</li>
+      <li>Quelles sont les voyelles qui rendent C et G <strong>DOUX</strong> ([s] et [ʒ]) ?</li>
+      <li>Que prononce-t-on quand on rencontre les duos de voyelles <em>OU</em>, <em>OI</em>, et <em>AU/EAU</em> ?</li>
+    </ol>
+  </section>
+
+  <!-- 3. EXPLICATION DE LA REGLE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 3</span> 📚 Explication de la Règle (Gabarit 14 Champs)</h2>
+
+    <div class="mp-12field-grid">
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">Définition</span>
+        <div class="mp-field-content">
+          La prononciation des consonnes C et G dépend totalement de la voyelle qui les suit. Par ailleurs, les digrammes de voyelles (OU, OI, AU/EAU) sont des combinaisons de deux ou trois lettres se lisant comme un son unique ou une semi-voyelle.
+        </div>
+      </div>
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">Règle C et G</span>
+        <div class="mp-field-content">
+          • <strong>Devant A, O, U = Son DUR !</strong> C ➔ [k] (<em>café, coca, cube</em>) | G ➔ [g] (<em>gâteau, golf, guitare</em> avec U muet).<br>
+          • <strong>Devant E, I, Y = Son DOUX !</strong> C ➔ [s] (<em>cela, ciel, cygne</em>) | G ➔ [ʒ] (<em>gel, gilet, gymnastique</em>).
+        </div>
+      </div>
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">Règle Digrammes de Voyelles</span>
+        <div class="mp-field-content">
+          • <strong>OU</strong> [u] : Lèvres très arrondies en avant, comme dans <em>loup, nous, vous</em>.<br>
+          • <strong>OI</strong> [wa] : Combinaison rapide du son "ou" + "a", comme dans <em>roi, moi, voiture</em>.<br>
+          • <strong>AU / EAU</strong> [o] : Son O pur fermé, lips arrondies, comme dans <em>auto, beau, eau, château</em>.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Pourquoi ?</span>
+        <div class="mp-field-content">
+          Les voyelles E, I, Y sont articulées à l'avant de la bouche, ce qui adoucit naturellement l'impact des consonnes C et G.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Comment reconnaître ?</span>
+        <div class="mp-field-content">
+          Regardez uniquement la lettre qui vient immédiatement APRÈS C ou G.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Exemples courants</span>
+        <div class="mp-field-content">
+          C dur : café, code | C doux : centre, cinema<br>
+          G dur : gare, gomme | G doux : genou, gilet<br>
+          Digrammes : loup [lu], noir [nwã/nwa], eau [o]
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Exceptions</span>
+        <div class="mp-field-content">
+          Pour garder le son doux devant A/O ➔ on ajoute E (ex: <em>mangeons</em> [mɑ̃ʒɔ̃]). Pour garder le son dur devant E/I ➔ on ajoute U (ex: <em>guitare</em> [gitaʁ]).
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Erreurs fréquentes</span>
+        <div class="mp-field-content">
+          Prononcer OI comme le "oi" anglais de "oil" au lieu du son [wa].
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Astuce mémorisation</span>
+        <div class="mp-field-content">
+          « CA-CO-CU claque [k], CE-CI-CY siffle [s] ! GA-GO-GU gronde [g], GE-GI-GY glisse [ʒ] ! »
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Fréquence</span>
+        <div class="mp-field-content">★★★★★ (Indispensable)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CCQ -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 4</span> ❓ CCQ (Questions de Vérification)</h2>
+    <p>Répondez à ces questions de vérification :</p>
+    <ol>
+      <li>
+        <strong>Dans le mot « guitare », prononce-t-on le U ? À quoi sert-il ?</strong>
+        <br><em>Réponse : Non, le U est muet ! Il sert uniquement à forcer la lettre G à rester DURE [g] devant le I.</em>
+      </li>
+      <li>
+        <strong>Quel son produit la lettre C dans le mot « cinéma » ? Pourquoi ?</strong>
+        <br><em>Réponse : Son doux [s], car elle est suivie d'un I.</em>
+      </li>
+      <li>
+        <strong>Comment prononce-t-on la forme « nous mangeons » ? Pourquoi y a-t-il un E entre G et O ?</strong>
+        <br><em>Réponse : [nu mɑ̃ʒɔ̃]. Le E sert à empêcher le G de devenir dur [g] devant la voyelle O.</em>
+      </li>
+      <li>
+        <strong>Quelle est la prononciation exacte du mot « oiseau » ?</strong>
+        <br><em>Réponse : [wazo] (oi = [wa], s entre 2 voyelles = [z], eau = [o]).</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 5. PRATIQUE GUIDEE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 5</span> 🏋️ Pratique Guidée (Drill)</h2>
+    <p>Lisez ce tableau de contrastes à voix haute avec les indices d'articulation :</p>
+    <table class="mp-table">
+      <thead>
+        <tr>
+          <th>Son Dur ([k] ou [g])</th>
+          <th>Phonétique & Articulation</th>
+          <th>Son Doux ([s] ou [ʒ])</th>
+          <th>Phonétique & Articulation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>car</strong></td>
+          <td>[kaʁ] — fond de gorge claque [k]</td>
+          <td><strong>ceci</strong></td>
+          <td>[səsi] — langue contre les dents [s]</td>
+        </tr>
+        <tr>
+          <td><strong>gare</strong></td>
+          <td>[gaʁ] — voix gronde en gorge [g]</td>
+          <td><strong>gel</strong></td>
+          <td>[ʒɛl] — souffle continu des lèvres [ʒ]</td>
+        </tr>
+        <tr>
+          <td><strong>loup</strong></td>
+          <td>[lu] — lèvres pincées très en avant [u]</td>
+          <td><strong>loi</strong></td>
+          <td>[lwa] — ouverture rapide de [w] à [a]</td>
+        </tr>
+        <tr>
+          <td><strong>beau</strong></td>
+          <td>[bo] — son O fermé rond [o]</td>
+          <td><strong>bateau</strong></td>
+          <td>[bato] — son O identique malgré 3 lettres</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 6. PRATIQUE LIBRE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 6</span> 🗣️ Pratique Libre (Production)</h2>
+    <p>Lisez ces phrases complexes de pratique orale à voix haute :</p>
+    <div style="background: #fdfbf7; border: 1px solid #f5e6d3; border-radius: 8px; padding: 1.25rem; font-size: 1.1rem; line-height: 2;">
+      1. Le <strong>garçon</strong> mange du <strong>gâteau</strong> au <strong>chocolat</strong> près de la <strong>gare</strong>.<br>
+      2. Le <strong>roi</strong> voit un <strong>beau</strong> <strong>bateau</strong> sur l'<strong>eau</strong> <strong>noire</strong>.<br>
+      3. <strong>Cécile</strong> joue de la <strong>guitare</strong> dans le <strong>grand</strong> <strong>jardin</strong>.
+    </div>
+  </section>
+
+  <!-- 7. ASTUCE A RETENIR -->
+  <section class="celta-stage" style="border-left: 6px solid #2d6a4f;">
+    <h2><span class="stage-tag">Étape 7</span> 💡 Astuce à Retenir</h2>
+    <div class="mnemonic-box">
+      <h4>💡 La règle d'or du Jour 3</h4>
+      <p style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #1b4332;">
+        « Devant A, O, U ➔ C et G sont durs (café, gare). Devant E, I, Y ➔ C et G sont doux (ceci, girafe). Et OI se lit toujours [wa] comme dans roi ! »
+      </p>
+    </div>
+  </section>
+
+  <div class="level-nav-bar">
+    <a href="day-2.html">← Jour 2 — Consonnes finales</a>
+    <a href="day-4.html">Jour 4 — Voyelles Nasales →</a>
+  </div>
+</main>
+
+<footer class="site-footer" style="background: #1b4332; color: #d8f3dc; padding: 2rem 1.5rem; text-align: center; margin-top: 3rem;">
+  <p>© 2026 COSYlanguages · Bootcamp Prononciation Jour 3</p>
+</footer>
+
+<script src="../../../js/data/languages.js"></script>
+<script src="../../../js/core/engine.js"></script>
+<script src="../../../js/core/i18n.js"></script>
+<script src="../../../js/core/ui.js"></script>
+</body>
+</html>

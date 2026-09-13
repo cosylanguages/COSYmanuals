@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jour 6 — E caduc & Liaisons obligatoires · Bootcamp Prononciation COSY</title>
+<meta name="description" content="Bootcamp de prononciation française — Jour 6 : La chute du E instable (E caduc) et les liaisons obligatoires indispensables.">
+<link rel="stylesheet" href="../../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../../shared/styles/base.css">
+<link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="../../../shared/styles/lang-pages.css">
+<link rel="stylesheet" href="../../../shared/styles/lang-accents.css">
+<link rel="stylesheet" href="../../../shared/styles/mobile.css">
+<link rel="stylesheet" href="../../../shared/styles/print.css">
+<style>
+  :root {
+    --mp-primary: #1e5631;
+    --mp-primary-light: #e8f5e9;
+    --mp-accent: #2e7d32;
+    --mp-gold: #d4af37;
+    --mp-border: #c8e6c9;
+  }
+
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #fcfdfc;
+    line-height: 1.65;
+  }
+
+  .mp-hero {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #40916c 100%);
+    color: #ffffff;
+    padding: 2.5rem 1.5rem 2rem;
+    border-bottom: 4px solid #74c69d;
+    text-align: center;
+  }
+
+  .mp-hero h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  .mp-hero p.subtitle {
+    font-size: 1.1rem;
+    color: #d8f3dc;
+    max-width: 800px;
+    margin: 0 auto 1.25rem;
+  }
+
+  .mp-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .mp-badge {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sd-jump-links {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .sd-jump-link {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    background: #f0fdf4;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .sd-jump-link:hover, .sd-jump-link.active {
+    background: #2d6a4f;
+    color: #ffffff;
+  }
+
+  .mp-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  }
+
+  .celta-stage h2 {
+    color: #1b4332;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d8f3dc;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stage-tag {
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-size: 0.95rem;
+  }
+
+  .mp-table th, .mp-table td {
+    padding: 0.85rem 1rem;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .mp-table th {
+    background-color: #f0fdf4;
+    color: #1b4332;
+    font-weight: 700;
+  }
+
+  .mp-table tr:nth-child(even) {
+    background-color: #f9fbf9;
+  }
+
+  .mnemonic-box {
+    background: #fff8e1;
+    border-left: 4px solid #f57f17;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .mnemonic-box h4 {
+    margin: 0 0 0.4rem 0;
+    color: #795548;
+    font-size: 1.05rem;
+  }
+
+  .level-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0fdf4;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .level-nav-bar a {
+    color: #1b4332;
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body data-lang-theme="fr">
+
+<nav id="cosy-nav"></nav>
+
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links" aria-label="Navigation Bootcamp">
+    <a href="../index.html" class="sd-jump-link">← Hub Bootcamp</a>
+    <a href="day-1.html" class="sd-jump-link">Jour 1</a>
+    <a href="day-2.html" class="sd-jump-link">Jour 2</a>
+    <a href="day-3.html" class="sd-jump-link">Jour 3</a>
+    <a href="day-4.html" class="sd-jump-link">Jour 4</a>
+    <a href="day-5.html" class="sd-jump-link">Jour 5</a>
+    <a href="day-6.html" class="sd-jump-link active">Jour 6</a>
+    <a href="day-7.html" class="sd-jump-link">Jour 7</a>
+  </nav>
+</header>
+
+<header class="mp-hero">
+  <div class="mp-badges">
+    <span class="mp-badge">⚡ Bootcamp 1 Semaine</span>
+    <span class="mp-badge">Jour 6 / 7</span>
+    <span class="mp-badge">Débutant & Faux-débutant</span>
+  </div>
+  <h1>Jour 6 — E caduc & Liaisons obligatoires</h1>
+  <p class="subtitle">Fluidifiez votre prononciation : apprenez quand le E s'efface naturellement et les 4 liaisons absolues à faire au quotidien.</p>
+  <div style="margin-top: 1rem;">
+    <button type="button" class="print-btn no-print" onclick="window.print()" aria-label="Imprimer cette page">
+      🖨️ Imprimer cette page
+    </button>
+  </div>
+</header>
+
+<main class="mp-container">
+
+  <!-- 1. ACCROCHE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 1</span> 🎯 Accroche (Warmer)</h2>
+    <p>
+      Écoutez mentalement un francophone dire : <strong>« Samedi »</strong> et <strong>« Les amis »</strong>.
+    </p>
+    <p>
+      Pourquoi dit-on souvent <em>« sam'di »</em> en ignorant le E central ? Et pourquoi la lettre S de <em>les</em> qui était muette au Jour 2 se remet-elle soudain à chanter comme un Z dans <em>les‿amis</em> [lezami] ?
+    </p>
+  </section>
+
+  <!-- 2. ELICITATION -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 2</span> 🤔 Élicitation (Elicit)</h2>
+    <p>Comparez ces exemples du quotidien :</p>
+    <ul style="margin-bottom: 1rem;">
+      <li>1. <em>samedi</em> [samdi], <em>boulangerie</em> [bulɑ̃ʒʁi], <em>petit déjeuner</em> [ptidøʒəne]</li>
+      <li>2. <em>les‿amis</em> [lezami], <em>un‿enfant</em> [œ̃nɑ̃fɑ̃], <em>mon‿hôtel</em> [mɔ̃nɔtɛl]</li>
+    </ul>
+    <p><strong>À votre avis :</strong></p>
+    <ol>
+      <li>Quand un E n'a pas d'accent et se trouve entre deux consonnes simples, que lui arrive-t-il dans le rythme de la phrase ?</li>
+      <li>Dans <em>les‿amis</em>, quelle consonne de liaison entendez-vous pour la lettre S finale ?</li>
+    </ol>
+  </section>
+
+  <!-- 3. EXPLICATION DE LA REGLE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 3</span> 📚 Explication de la Règle (Gabarit 14 Champs)</h2>
+    <div class="mp-12field-grid">
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">Définition</span>
+        <div class="mp-field-content">
+          Le <strong>E caduc</strong> (ou E instable) est un E sans accent qui peut disparaître à l'oral pour accélérer le rythme de la parole. La <strong>liaison obligatoire</strong> rattache la consonne finale d'un mot au mot suivant si celui-ci commence par une voyelle ou un H muet.
+        </div>
+      </div>
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">1. Règle du E Caduc (La Règle des 3 Consonnes)</span>
+        <div class="mp-field-content">
+          • Un E non accentué [ə] <strong>chute</strong> s'il n'est précédé que d'une seule consonne (ex: <em>samedi</em> ➔ [samdi], <em>la semaine</em> ➔ [lasmɛn]).<br>
+          • Un E <strong>se maintient</strong> obligatoire si sa chute obligerait à prononcer 3 consonnes d'affilée (ex: <em>mercredi</em> ➔ [mɛʁkʁədi], car r-k-r est imprononçable sans E !).
+        </div>
+      </div>
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">2. Les 4 Liaisons Obligatoires Absolues</span>
+        <div class="mp-field-content">
+          1. <strong>Déterminant + Nom :</strong> <em>les‿enfants</em> [lezɑ̃fɑ̃], <em>un‿ami</em> [œ̃nami], <em>mon‿hôtel</em> [mɔ̃nɔtɛl].<br>
+          2. <strong>Adjectif + Nom :</strong> <em>petit‿enfant</em> [pətitɑ̃fɑ̃], <em>deux‿heures</em> [døzœʁ].<br>
+          3. <strong>Pronom + Verbe :</strong> <em>ils‿ont</em> [ilzɔ̃], <em>vous‿habitez</em> [vuzabite].<br>
+          4. <strong>Après préposition 1 syllabe (dans, en, chez) :</strong> <em>chez‿elle</em> [ʃezɛl], <em>en‿Italie</em> [ɑ̃nitali].
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Sons des liaisons</span>
+        <div class="mp-field-content">
+          • <strong>S et X</strong> deviennent <strong>[z]</strong> (ex: <em>les‿amis</em> [lezami]).<br>
+          • <strong>T et D</strong> deviennent <strong>[t]</strong> (ex: <em>grand‿homme</em> [gʁɑ̃tɔm]).<br>
+          • <strong>N</strong> devient <strong>[n]</strong> (ex: <em>un‿ami</em> [œ̃nami]).
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Comment reconnaître ?</span>
+        <div class="mp-field-content">
+          Repérez les blocs grammaticaux indissociables (ex: le mot d'avant s'accroche directement au mot d'après).
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Exemples courants</span>
+        <div class="mp-field-content">
+          E caduc : sam'di, boulang'rie, j'te dis<br>
+          Liaison : vous‿avez [vuzave], nous‿avons [nuzavɔ̃]
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Exceptions</span>
+        <div class="mp-field-content">
+          Pas de liaison après la conjonction <strong>ET</strong> (ex: <em>un homme et / une femme</em> ➔ jamais de liaison sur ET !).
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Erreurs fréquentes</span>
+        <div class="mp-field-content">
+          Faire la liaison avec un son S dur (*les-s-amis ❌) au lieu du son [z] continu (*les-z-amis ✅).
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Astuce mémorisation</span>
+        <div class="mp-field-content">
+          « En liaison, le S et le X bourdonnent comme un Z ! Et la colle magique c'est Déterminant + Nom ! »
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Fréquence</span>
+        <div class="mp-field-content">★★★★★ (Indispensable)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CCQ -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 4</span> ❓ CCQ (Questions de Vérification)</h2>
+    <p>Répondez à ces questions de vérification :</p>
+    <ol>
+      <li>
+        <strong>Dans « les amis », quel son produit la lettre S lors de la liaison ?</strong>
+        <br><em>Réponse : Le son [z] (bourdonnement de l'abeille).</em>
+      </li>
+      <li>
+        <strong>Peut-on faire une liaison après le mot « et » dans « un père et un fils » ?</strong>
+        <br><em>Réponse : Non ! Le mot ET ne fait JAMAIS de liaison en français.</em>
+      </li>
+      <li>
+        <strong>Dans le mot « samedi », pourquoi le E s'efface-t-il souvent à l'oral ([samdi]) ?</strong>
+        <br><em>Réponse : Car il est précédé d'une seule consonne (M), la chute du E est donc facile à prononcer.</em>
+      </li>
+      <li>
+        <strong>Dans le mot « mercredi », peut-on effacer le E central (*merk-r-di) ? Why ?</strong>
+        <br><em>Réponse : Non ! La règle des 3 consonnes l'interdit car 3 consonnes d'affilée bloqueraient la bouche.</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 5. PRATIQUE GUIDEE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 5</span> 🏋️ Pratique Guidée (Drill)</h2>
+    <p>Lisez ces exercices de liaison et de E caduc à haute voix :</p>
+    <table class="mp-table">
+      <thead>
+        <tr>
+          <th>Mots séparés (sans liaison / E plein)</th>
+          <th>Phonétique</th>
+          <th>Phasé courant (Liaison‿ / E caduc)</th>
+          <th>Phonétique & Geste</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>les - arbres</strong></td>
+          <td>[le] [aʁbʁ]</td>
+          <td><strong>les‿arbres</strong></td>
+          <td>[lezaʁbʁ] — son Z fluide continu</td>
+        </tr>
+        <tr>
+          <td><strong>ils - ont</strong></td>
+          <td>[il] [ɔ̃]</td>
+          <td><strong>ils‿ont</strong></td>
+          <td>[ilzɔ̃] — liaison en Z (différent de <em>ils sont</em> [ilsɔ̃])</td>
+        </tr>
+        <tr>
+          <td><strong>sa-me-di</strong></td>
+          <td>[samədi]</td>
+          <td><strong>samedi</strong></td>
+          <td>[samdi] — chute fluide du E central</td>
+        </tr>
+        <tr>
+          <td><strong>chez - elle</strong></td>
+          <td>[ʃe] [ɛl]</td>
+          <td><strong>chez‿elle</strong></td>
+          <td>[ʃezɛl] — liaison Z obligatoire après préposition</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 6. PRATIQUE LIBRE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 6</span> 🗣️ Pratique Libre (Production)</h2>
+    <p>Lisez ces phrases de français fluide à voix haute :</p>
+    <div style="background: #fdfbf7; border: 1px solid #f5e6d3; border-radius: 8px; padding: 1.25rem; font-size: 1.1rem; line-height: 2;">
+      1. <strong>Les‿enfants</strong> habitent dans un <strong>petit‿appartement</strong>.<br>
+      2. Ce <strong>samedi</strong>, <strong>nous‿allons</strong> à la <strong>boulangerie</strong>.<br>
+      3. <strong>Ils‿ont</strong> deux <strong>beaux‿oiseaux</strong> et <strong>un‿arbre</strong> dans le jardin.
+    </div>
+  </section>
+
+  <!-- 7. ASTUCE A RETENIR -->
+  <section class="celta-stage" style="border-left: 6px solid #2d6a4f;">
+    <h2><span class="stage-tag">Étape 7</span> 💡 Astuce à Retenir</h2>
+    <div class="mnemonic-box">
+      <h4>💡 La règle d'or du Jour 6</h4>
+      <p style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #1b4332;">
+        « S et X à la liaison sonnent Z ! Déterminant + Nom = Liaison obligatoire absolue. Et le E non accentué s'efface si 1 seule consonne le précède ! »
+      </p>
+    </div>
+  </section>
+
+  <div class="level-nav-bar">
+    <a href="day-5.html">← Jour 5 — Consonnes & H</a>
+    <a href="day-7.html">Jour 7 — Révision & Bilan →</a>
+  </div>
+</main>
+
+<footer class="site-footer" style="background: #1b4332; color: #d8f3dc; padding: 2rem 1.5rem; text-align: center; margin-top: 3rem;">
+  <p>© 2026 COSYlanguages · Bootcamp Prononciation Jour 6</p>
+</footer>
+
+<script src="../../../js/data/languages.js"></script>
+<script src="../../../js/core/engine.js"></script>
+<script src="../../../js/core/i18n.js"></script>
+<script src="../../../js/core/ui.js"></script>
+</body>
+</html>

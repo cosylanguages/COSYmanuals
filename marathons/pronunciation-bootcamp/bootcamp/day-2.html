@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jour 2 — Consonnes finales & doubles · Bootcamp Prononciation COSY</title>
+<meta name="description" content="Bootcamp de prononciation française — Jour 2 : Consonnes finales muettes vs. prononcées (CaReFuL) et doubles consonnes.">
+<link rel="stylesheet" href="../../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../../shared/styles/base.css">
+<link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="../../../shared/styles/lang-pages.css">
+<link rel="stylesheet" href="../../../shared/styles/lang-accents.css">
+<link rel="stylesheet" href="../../../shared/styles/mobile.css">
+<link rel="stylesheet" href="../../../shared/styles/print.css">
+<style>
+  :root {
+    --mp-primary: #1e5631;
+    --mp-primary-light: #e8f5e9;
+    --mp-accent: #2e7d32;
+    --mp-gold: #d4af37;
+    --mp-border: #c8e6c9;
+  }
+
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #fcfdfc;
+    line-height: 1.65;
+  }
+
+  .mp-hero {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #40916c 100%);
+    color: #ffffff;
+    padding: 2.5rem 1.5rem 2rem;
+    border-bottom: 4px solid #74c69d;
+    text-align: center;
+  }
+
+  .mp-hero h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  .mp-hero p.subtitle {
+    font-size: 1.1rem;
+    color: #d8f3dc;
+    max-width: 800px;
+    margin: 0 auto 1.25rem;
+  }
+
+  .mp-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .mp-badge {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sd-jump-links {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .sd-jump-link {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    background: #f0fdf4;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .sd-jump-link:hover, .sd-jump-link.active {
+    background: #2d6a4f;
+    color: #ffffff;
+  }
+
+  .mp-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  }
+
+  .celta-stage h2 {
+    color: #1b4332;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d8f3dc;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stage-tag {
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-size: 0.95rem;
+  }
+
+  .mp-table th, .mp-table td {
+    padding: 0.85rem 1rem;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .mp-table th {
+    background-color: #f0fdf4;
+    color: #1b4332;
+    font-weight: 700;
+  }
+
+  .mp-table tr:nth-child(even) {
+    background-color: #f9fbf9;
+  }
+
+  .mnemonic-box {
+    background: #fff8e1;
+    border-left: 4px solid #f57f17;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .mnemonic-box h4 {
+    margin: 0 0 0.4rem 0;
+    color: #795548;
+    font-size: 1.05rem;
+  }
+
+  .level-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0fdf4;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .level-nav-bar a {
+    color: #1b4332;
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body data-lang-theme="fr">
+
+<nav id="cosy-nav"></nav>
+
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links" aria-label="Navigation Bootcamp">
+    <a href="../index.html" class="sd-jump-link">← Hub Bootcamp</a>
+    <a href="day-1.html" class="sd-jump-link">Jour 1</a>
+    <a href="day-2.html" class="sd-jump-link active">Jour 2</a>
+    <a href="day-3.html" class="sd-jump-link">Jour 3</a>
+    <a href="day-4.html" class="sd-jump-link">Jour 4</a>
+    <a href="day-5.html" class="sd-jump-link">Jour 5</a>
+    <a href="day-6.html" class="sd-jump-link">Jour 6</a>
+    <a href="day-7.html" class="sd-jump-link">Jour 7</a>
+  </nav>
+</header>
+
+<header class="mp-hero">
+  <div class="mp-badges">
+    <span class="mp-badge">⚡ Bootcamp 1 Semaine</span>
+    <span class="mp-badge">Jour 2 / 7</span>
+    <span class="mp-badge">Débutant & Faux-débutant</span>
+  </div>
+  <h1>Jour 2 — Consonnes finales (CaReFuL) & Doubles consonnes</h1>
+  <p class="subtitle">Sachez instantanément quelles lettres finales se prononcent et comment lire les consonnes doubles en français.</p>
+  <div style="margin-top: 1rem;">
+    <button type="button" class="print-btn no-print" onclick="window.print()" aria-label="Imprimer cette page">
+      🖨️ Imprimer me cette page
+    </button>
+  </div>
+</header>
+
+<main class="mp-container">
+
+  <!-- 1. ACCROCHE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 1</span> 🎯 Accroche (Warmer)</h2>
+    <p>
+      Lisez ces deux mots à voix haute : <strong>« PETIT »</strong> et <strong>« SAC »</strong>.
+    </p>
+    <p>
+      Pourquoi le <em>T</em> final de « petit » est-il complètement silencieux alors que le <em>C</em> final de « sac » claque fort dans la bouche ?
+    </p>
+  </section>
+
+  <!-- 2. ELICITATION -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 2</span> 🤔 Élicitation (Elicit)</h2>
+    <p>Examinez ces deux listes de mots français :</p>
+    <ul style="margin-bottom: 1rem;">
+      <li>Liste 1 : <em>un chat</em> [ʃa], <em>grand</em> [gʁɑ̃], <em>trop</em> [tʁo], <em>deux</em> [dø]</li>
+      <li>Liste 2 : <em>un bac</em> [bak], <em>la mer</em> [mɛʁ], <em>un chef</em> [ʃɛf], <em>un bal</em> [bal]</li>
+    </ul>
+    <p><strong>À votre avis :</strong></p>
+    <ol>
+      <li>Quelles consonnes finales s'entendent clairement dans la Liste 2 ? (Indice : retenez le mot anglais <em>CaReFuL</em> !)</li>
+      <li>Dans les mots avec consonne double comme <em>pomme</em> ou <em>classe</em>, prononce-t-on le son une fois ou deux fois ?</li>
+    </ol>
+  </section>
+
+  <!-- 3. EXPLICATION DE LA REGLE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 3</span> 📚 Explication de la Règle (Gabarit 14 Champs)</h2>
+    <div class="mp-12field-grid">
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">Définition</span>
+        <div class="mp-field-content">
+          En français, la majorité des consonnes situées à la toute fin d'un mot sont muettes. Toutefois, quatre consonnes principales font exception et se prononcent quasi systématiquement : <strong>C, R, F, L</strong>.
+        </div>
+      </div>
+      <div class="mp-field-box full-width">
+        <span class="mp-field-tag">Règle</span>
+        <div class="mp-field-content">
+          • <strong>Règle Mnémonique CaReFuL :</strong> Seules les consonnes <strong>C, R, F, L</strong> (et N/M nasaux) se prononcent en fin de mot (<em>bac, mer, chef, bal</em>).<br>
+          • <strong>Consonnes muettes ordinaires :</strong> -S, -T, -D, -P, -X, -Z ne se prononcent pas (<em>petit, grand, trop, prix</em>). Mnémonique : « <strong>S</strong>ale <strong>T</strong>able <strong>D</strong>e <strong>P</strong>etit <strong>X</strong>ylo <strong>Z</strong>éro ».<br>
+          • <strong>Doubles Consonnes (ll, ss, tt, mm, nn, pp, ff) :</strong> Elles se prononcent exactement comme une consonne simple ! Elles ne doublent pas la durée du son, mais forcent souvent la voyelle précédente à s'ouvrir (ex: <em>fille</em>, <em>classe</em>, <em>pomme</em>).
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Pourquoi ?</span>
+        <div class="mp-field-content">
+          L'évolution de la langue française au Moyen Âge a progressivement amorti et effacé les consonnes finales pour favoriser la fluidité des voyelles.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Comment reconnaître ?</span>
+        <div class="mp-field-content">
+          Regardez la dernière lettre du mot. Si c'est C, R, F ou L ➔ prononcez-la. Si c'est S, T, D, P, X, Z ➔ restez silencieux.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Exemples courants</span>
+        <div class="mp-field-content">
+          CaReFuL : sac [sak], sur [syʁ], neuf [nœf], fil [fil]<br>
+          Muettes : petit [pəti], lit [li], faux [fo], drap [dʁa]
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Contre-exemples</span>
+        <div class="mp-field-content">
+          Verbes en -ER (ex: <em>parler</em> [paʁle], <em>manger</em> [mɑ̃ʒe]) ➔ le R final est muet !
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Exceptions</span>
+        <div class="mp-field-content">
+          Mots d'emprunt ou courts : <em>bus</em> [bys], <em>six</em> [sis] (devant pause), <em>clef/clé</em>.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Erreurs fréquentes</span>
+        <div class="mp-field-content">
+          Prononcer le T de <em>petit</em> ou le S de <em>paris</em> comme en anglais.
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Astuce mémorisation</span>
+        <div class="mp-field-content">
+          « Sois <strong>CaReFuL</strong> avec la fin des mots français ! »
+        </div>
+      </div>
+      <div class="mp-field-box">
+        <span class="mp-field-tag">Fréquence</span>
+        <div class="mp-field-content">★★★★★ (Indispensable)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CCQ -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 4</span> ❓ CCQ (Questions de Vérification)</h2>
+    <p>Répondez à ces questions de vérification :</p>
+    <ol>
+      <li>
+        <strong>Dans le mot « petit », prononce-t-on la lettre T finale ? Pourquoi ?</strong>
+        <br><em>Réponse : Non, T ne fait pas partie du groupe mnémonique CaReFuL.</em>
+      </li>
+      <li>
+        <strong>Dans le mot « chef », le F s'entend-il ?</strong>
+        <br><em>Réponse : Oui ! F appartient aux consonnes CaReFuL.</em>
+      </li>
+      <li>
+        <strong>Dans le verbe « aimer », prononce-t-on le R final ?</strong>
+        <br><em>Réponse : Non ! C'est l'exception des verbes à l'infinitif en -er ([eme]).</em>
+      </li>
+      <li>
+        <strong>Dans le mot « classe », faut-il prononcer le « ss » deux fois plus long qu'un seul « s » ?</strong>
+        <br><em>Réponse : Non, une consonne double en français se prononce exactement comme un son consonne simple.</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 5. PRATIQUE GUIDEE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 5</span> 🏋️ Pratique Guidée (Drill)</h2>
+    <p>Lisez ces paires minimales à voix haute en articulant le silence ou la présence du son final :</p>
+    <table class="mp-table">
+      <thead>
+        <tr>
+          <th>Mot 1 (Consonne muette)</th>
+          <th>Phonétique & Geste</th>
+          <th>Mot 2 (Consonne prononcée CaReFuL)</th>
+          <th>Phonétique & Geste</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>plat</strong></td>
+          <td>[pla] — T muet, bouche reste ouverte</td>
+          <td><strong>parc</strong></td>
+          <td>[paʁk] — C claque en fin de bouche</td>
+        </tr>
+        <tr>
+          <td><strong>dos</strong></td>
+          <td>[do] — S muet, son O pur</td>
+          <td><strong>mer</strong></td>
+          <td>[mɛʁ] — R roulé/guttural final audible</td>
+        </tr>
+        <tr>
+          <td><strong>trop</strong></td>
+          <td>[tʁo] — P muet</td>
+          <td><strong>chef</strong></td>
+          <td>[ʃɛf] — F souffle en fin de mot</td>
+        </tr>
+        <tr>
+          <td><strong>haut</strong></td>
+          <td>[o] — T muet</td>
+          <td><strong>bol</strong></td>
+          <td>[bɔl] — L résonne contre les dents</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 6. PRATIQUE LIBRE -->
+  <section class="celta-stage">
+    <h2><span class="stage-tag">Étape 6</span> 🗣️ Pratique Libre (Production)</h2>
+    <p>Lisez ces phrases à voix haute sans prononcer les consonnes muettes inutiles :</p>
+    <div style="background: #fdfbf7; border: 1px solid #f5e6d3; border-radius: 8px; padding: 1.25rem; font-size: 1.1rem; line-height: 2;">
+      1. Le <strong>petit</strong> <strong>chat</strong> <strong>gris</strong> dort dans le <strong>sac</strong>.<br>
+      2. Un <strong>chef</strong> <strong>fort</strong> mange un <strong>repas</strong> <strong>chaud</strong> sur la <strong>mer</strong>.<br>
+      3. <strong>Paul</strong> aime <strong>parler</strong> dans la <strong>classe</strong> avec son <strong>ami</strong>.
+    </div>
+  </section>
+
+  <!-- 7. ASTUCE A RETENIR -->
+  <section class="celta-stage" style="border-left: 6px solid #2d6a4f;">
+    <h2><span class="stage-tag">Étape 7</span> 💡 Astuce à Retenir</h2>
+    <div class="mnemonic-box">
+      <h4>💡 La règle d'or du Jour 2</h4>
+      <p style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #1b4332;">
+        « Retenez <strong>CaReFuL</strong> : seules C, R, F, L parlent à la fin du mot ! Les autres consonnes finales (S, T, D, P, X, Z) se taisent. »
+      </p>
+    </div>
+  </section>
+
+  <div class="level-nav-bar">
+    <a href="day-1.html">← Jour 1 — Alphabet & Accents</a>
+    <a href="day-3.html">Jour 3 — C, G & Digrammes →</a>
+  </div>
+</main>
+
+<footer class="site-footer" style="background: #1b4332; color: #d8f3dc; padding: 2rem 1.5rem; text-align: center; margin-top: 3rem;">
+  <p>© 2026 COSYlanguages · Bootcamp Prononciation Jour 2</p>
+</footer>
+
+<script src="../../../js/data/languages.js"></script>
+<script src="../../../js/core/engine.js"></script>
+<script src="../../../js/core/i18n.js"></script>
+<script src="../../../js/core/ui.js"></script>
+</body>
+</html>
