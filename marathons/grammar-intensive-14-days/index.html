@@ -28,6 +28,9 @@
   .module-card h3 { color: #1a365d; margin-top: 0; font-size: 1.4rem; }
   .btn-module { background: #2b6cb0; color: #fff; text-decoration: none; padding: 0.65rem 1.2rem; border-radius: 8px; font-weight: 700; text-align: center; display: block; margin-top: 1rem; }
   .btn-module:hover { background: #1a365d; }
+  .day-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.75rem; margin-top: 1rem; }
+  .day-link { background: #ebf8ff; color: #1a365d; font-weight: 700; padding: 0.5rem; border-radius: 6px; text-align: center; text-decoration: none; border: 1px solid #bee3f8; font-size: 0.85rem; }
+  .day-link:hover { background: #2b6cb0; color: #fff; }
 </style>
 </head>
 <body data-lang-theme="en">
@@ -65,9 +68,68 @@
     </div>
   </div>
 
+  <!-- 14-Day Daily Lessons Index -->
   <section style="background:#fff; border-radius:12px; border:1px solid #e2e8f0; padding:2rem; margin-top:2.5rem;">
-    <h2 style="color:#1a365d; font-family:'Lora', serif; margin-top:0;">📊 Master JSON Dataset Available</h2>
-    <p>All 50+ A vs B English grammar confusions across levels A1 to C2 are single-sourced in <code>data/grammar/confusions_en.json</code> for seamless integration with visual guides, worksheets, and interactive cards.</p>
+    <h2 style="color:#1a365d; font-family:'Lora', serif; margin-top:0;">📅 14-Day English Grammar Intensive Schedule</h2>
+    <div style="margin-bottom:1.5rem;">
+      <h4 style="color:#2b6cb0; margin-bottom:0.5rem;">🇬🇧 English 14-Day Plan:</h4>
+      <div class="day-grid">
+        <a href="en/day-1.html" class="day-link">Day 1: Articles</a>
+        <a href="en/day-2.html" class="day-link">Day 2: Present Simple</a>
+        <a href="en/day-3.html" class="day-link">Day 3: Past vs Perf</a>
+        <a href="en/day-4.html" class="day-link">Day 4: Will vs Going To</a>
+        <a href="en/day-5.html" class="day-link">Day 5: Past Cont</a>
+        <a href="en/day-6.html" class="day-link">Day 6: Past Perfect</a>
+        <a href="en/day-7.html" class="day-link">Day 7: Used To</a>
+        <a href="en/day-8.html" class="day-link">Day 8: Modals</a>
+        <a href="en/day-9.html" class="day-link">Day 9: Conditionals</a>
+        <a href="en/day-10.html" class="day-link">Day 10: Rel Clauses</a>
+        <a href="en/day-11.html" class="day-link">Day 11: Passive Voice</a>
+        <a href="en/day-12.html" class="day-link">Day 12: Reported Speech</a>
+        <a href="en/day-13.html" class="day-link">Day 13: Gerunds</a>
+        <a href="en/day-14.html" class="day-link">Day 14: Inversion</a>
+      </div>
+    </div>
+
+    <div style="margin-bottom:1.5rem;">
+      <h4 style="color:#2d6a4f; margin-bottom:0.5rem;">🇫🇷 French 14-Day Plan:</h4>
+      <div class="day-grid">
+        <a href="fr/day-1.html" class="day-link">Jour 1: Tu / Vous</a>
+        <a href="fr/day-2.html" class="day-link">Jour 2: C'est / Il est</a>
+        <a href="fr/day-3.html" class="day-link">Jour 3: Articles</a>
+        <a href="fr/day-4.html" class="day-link">Jour 4: Futurs</a>
+        <a href="fr/day-5.html" class="day-link">Jour 5: PC / Imparfait</a>
+        <a href="fr/day-6.html" class="day-link">Jour 6: Savoir / Connaître</a>
+        <a href="fr/day-7.html" class="day-link">Jour 7: Durées</a>
+        <a href="fr/day-8.html" class="day-link">Jour 8: Relatifs</a>
+        <a href="fr/day-9.html" class="day-link">Jour 9: En / Y</a>
+        <a href="fr/day-10.html" class="day-link">Jour 10: Subjonctif</a>
+        <a href="fr/day-11.html" class="day-link">Jour 11: Si + Temps</a>
+        <a href="fr/day-12.html" class="day-link">Jour 12: Discours Indirect</a>
+        <a href="fr/day-13.html" class="day-link">Jour 13: Passif</a>
+        <a href="fr/day-14.html" class="day-link">Jour 14: Bilan Logique</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 style="color:#7b1113; margin-bottom:0.5rem;">🇷🇺 Russian 14-Day Plan:</h4>
+      <div class="day-grid">
+        <a href="ru/day-1.html" class="day-link">День 1: Это / Есть</a>
+        <a href="ru/day-2.html" class="day-link">День 2: Падежи</a>
+        <a href="ru/day-3.html" class="day-link">День 3: Где / Куда</a>
+        <a href="ru/day-4.html" class="day-link">День 4: Идти / Ходить</a>
+        <a href="ru/day-5.html" class="day-link">День 5: Ехать / Ездить</a>
+        <a href="ru/day-6.html" class="day-link">День 6: НСВ / СВ</a>
+        <a href="ru/day-7.html" class="day-link">День 7: Родительный</a>
+        <a href="ru/day-8.html" class="day-link">День 8: Дательный</a>
+        <a href="ru/day-9.html" class="day-link">День 9: Творительный</a>
+        <a href="ru/day-10.html" class="day-link">День 10: Приставки</a>
+        <a href="ru/day-11.html" class="day-link">День 11: Свой / Мой</a>
+        <a href="ru/day-12.html" class="day-link">День 12: Модальность</a>
+        <a href="ru/day-13.html" class="day-link">День 13: Учиться</a>
+        <a href="ru/day-14.html" class="day-link">День 14: Причастия</a>
+      </div>
+    </div>
   </section>
 
 </main>
