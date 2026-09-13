@@ -21,9 +21,9 @@
     .hero-box h1 { font-family: 'Lora', serif; font-size: 2.4rem; margin-bottom: 0.75rem; color: #fff; }
     .container { max-width: 1050px; margin: 2rem auto; padding: 0 1.5rem; }
     .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
-    .lang-card { background: #fff; border: 2px solid #bee3f8; border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
+    .lang-card { background: #fff; border: 2px solid #bee3f8; border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
     .lang-card h3 { font-size: 1.3rem; margin: 0.5rem 0; color: #1a365d; }
-    .btn-lang { background: #2b6cb0; color: #fff; text-decoration: none; padding: 0.65rem 1rem; border-radius: 8px; font-weight: 700; transition: background 0.2s; }
+    .btn-lang { background: #2b6cb0; color: #fff; text-decoration: none; padding: 0.55rem 0.85rem; border-radius: 6px; font-weight: 700; transition: background 0.2s; text-align: center; display: block; margin-top: 0.5rem; font-size: 0.9rem; }
     .btn-lang:hover { background: #1a365d; }
     .phase-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 1.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
     .phase-box h3 { color: #1a365d; margin-top: 0; font-family: 'Lora', serif; border-bottom: 2px solid #ebf8ff; padding-bottom: 0.5rem; }
@@ -35,7 +35,7 @@
 <header class="hero-box">
   <span style="background:rgba(255,255,255,0.2); padding:0.35rem 0.85rem; border-radius:50px; font-weight:700;">🗣️ COSY Fluency Accelerator</span>
   <h1>30-DAY SPEAK & THINK MARATHON</h1>
-  <p style="color:#ebf8ff; max-width:800px; margin:0.5rem auto 1.5rem; font-size:1.15rem;">How to Stop Mental Translation & Achieve Spontaneous Natural Speech in 30 Days.</p>
+  <p style="color:#ebf8ff; max-width:800px; margin:0.5rem auto 1.5rem; font-size:1.15rem;">How to Stop Mental Translation & Break the Intermediate Plateau Across All 30 Days.</p>
   <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
     🖨️ Print Marathon Guide
   </button>
@@ -43,38 +43,46 @@
 
 <main class="container">
 
-  <!-- LANGUAGE MODULE SELECTOR -->
+  <!-- LEVEL & LANGUAGE MODULE SELECTOR -->
   <section class="phase-box" style="border: 2px solid #2b6cb0; background: #fbfdfb;">
-    <h2>🌐 Select Your Language Marathon</h2>
-    <p>Choose your target language to start your 30-day monolingual thought & speech acceleration program:</p>
+    <h2>🌐 Select Level & Target Language</h2>
+    <p>Choose your level (A0–A2 Foundation or B1–B2 Intermediate Plateau Breakthrough) and target language:</p>
 
     <div class="card-grid">
+      <!-- English -->
       <div class="lang-card">
-        <span style="font-size: 2.5rem;">🇬🇧</span>
+        <span style="font-size: 2.2rem;">🇬🇧</span>
         <h3>English</h3>
-        <p style="font-size:0.9rem; color:#4a5568;">Stop translating from native language. Direct English inner monologue & fast circumlocution.</p>
-        <a href="en.html" class="btn-lang">Start English Marathon →</a>
+        <p style="font-size:0.85rem; color:#4a5568;">Stop translating from native language and build uninterrupted flow.</p>
+        <a href="a0-a2/en/day-1.html" class="btn-lang">A0–A2 Foundation (30 Days) →</a>
+        <a href="b1-b2/en/day-1.html" class="btn-lang" style="background:#1a365d;">B1–B2 Breakthrough (30 Days) →</a>
       </div>
 
+      <!-- French -->
       <div class="lang-card">
-        <span style="font-size: 2.5rem;">🇫🇷</span>
+        <span style="font-size: 2.2rem;">🇫🇷</span>
         <h3>Français</h3>
-        <p style="font-size:0.9rem; color:#4a5568;">Penser directement en français sans traduire mentalement. Expressions spontanées.</p>
-        <a href="fr.html" class="btn-lang">Démarrer le Marathon FR →</a>
+        <p style="font-size:0.85rem; color:#4a5568;">Penser directement en français sans traduire mentalement.</p>
+        <a href="a0-a2/fr/day-1.html" class="btn-lang">Fondations A0–A2 (30 Jours) →</a>
+        <a href="b1-b2/fr/day-1.html" class="btn-lang" style="background:#1b4332;">Déblocage B1–B2 (30 Jours) →</a>
       </div>
 
+      <!-- Russian -->
       <div class="lang-card">
-        <span style="font-size: 2.5rem;">🇷🇺</span>
+        <span style="font-size: 2.2rem;">🇷🇺</span>
         <h3>Русский</h3>
-        <p style="font-size:0.9rem; color:#4a5568;">Думать и говорить по-русски без внутреннего перевода. Прямой поток речи.</p>
-        <a href="ru.html" class="btn-lang">Начать Русский Марафон →</a>
+        <p style="font-size:0.85rem; color:#4a5568;">Думать и говорить по-русски без внутреннего перевода.</p>
+        <a href="a0-a2/ru/day-1.html" class="btn-lang">Фундамент A0–A2 (30 Дней) →</a>
+        <a href="b1-b2/ru/day-1.html" class="btn-lang" style="background:#7b1113;">Прорыв B1–B2 (30 Дней) →</a>
       </div>
 
+      <!-- Greek -->
       <div class="lang-card">
-        <span style="font-size: 2.5rem;">🇬🇷</span>
+        <span style="font-size: 2.2rem;">🇬🇷</span>
         <h3>Ελληνικά</h3>
-        <p style="font-size:0.9rem; color:#4a5568;">Σκέψου και μίλα απευθείας στα ελληνικά χωρίς εσωτερική μετάφραση.</p>
-        <a href="el.html" class="btn-lang">Ξεκινήστε τα Ελληνικά →</a>
+        <p style="font-size:0.85rem; color:#4a5568;">Σκέψου και μίλα απευθείας στα ελληνικά χωρίς εσωτερική μετάφραση.</p>
+        <a href="a0-a2/el/day-1.html" class="btn-lang">Βάσεις Α0–Α2 (30 Ημέρες) →</a>
+        <a href="b1-b2/el/day-1.html" class="btn-lang" style="background:#003366;">Plateau B1–B2 (30 Ημέρες) →</a>
       </div>
     </div>
   </section>
