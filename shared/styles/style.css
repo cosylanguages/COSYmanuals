@@ -22,6 +22,18 @@
   padding: 0;
 }
 
+/* Page Slide & Fade Entrance Transitions */
+@keyframes pageSlideAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(16px) scale(0.99);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
@@ -30,14 +42,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  animation: pageSlideAppear 0.35s cubic-bezier(0.16, 1, 0.3, 1) ease-out;
 }
 
-.container {
+.container, main, .main-content {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
   flex: 1;
+  animation: pageSlideAppear 0.4s cubic-bezier(0.16, 1, 0.3, 1) ease-out;
 }
 
 /* Header & Branding */
@@ -111,7 +125,7 @@ header.manual-header {
   margin-top: 1.25rem;
 }
 
-.marathon-card {
+.marathon-card, .section-card, .notice-card, .confusion-card, .phase-box, .stage-box {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
@@ -120,13 +134,14 @@ header.manual-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
   position: relative;
   overflow: hidden;
+  animation: pageSlideAppear 0.45s cubic-bezier(0.16, 1, 0.3, 1) ease-out;
 }
 
-.marathon-card:hover {
-  transform: translateY(-4px);
+.marathon-card:hover, .confusion-card:hover, .phase-box:hover {
+  transform: translateY(-4px) scale(1.005);
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-color);
 }
@@ -153,7 +168,7 @@ header.manual-header {
   flex-grow: 1;
 }
 
-.marathon-card-link {
+.marathon-card-link, .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -164,69 +179,15 @@ header.manual-header {
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-.marathon-card-link:hover {
+.marathon-card-link:hover, .btn:hover {
   background: var(--primary-hover);
-}
-
-/* Landing Page Card */
-.notice-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 2.5rem 2rem;
-  text-align: center;
-  max-width: 700px;
-  margin: 2rem auto;
-  border: 1px solid var(--border-color);
-}
-
-.notice-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.notice-title {
-  font-size: 1.75rem;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-}
-
-.notice-body {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: var(--primary-hover);
+  transform: translateY(-1px);
 }
 
 /* Section Cards */
-.section-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  padding: 1.75rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-}
-
 .section-card h2 {
   font-size: 1.35rem;
   margin-bottom: 0.5rem;
@@ -275,11 +236,12 @@ header.manual-header {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 .practice-links a:hover {
   background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
 }
 
 footer.main-footer {
