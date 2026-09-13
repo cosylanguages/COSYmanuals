@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jour 13: Voix Active vs Voix Passive & Se Faire — Marathon Grammaire Française · COSY</title>
+<title>Jour 13: Voix Active vs Passive & Se Faire — Marathon Grammaire Française · COSY</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -16,9 +16,18 @@
   .day-hero { background: linear-gradient(135deg, #1b4332, #2d6a4f); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
   .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
+  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
   .rule-card { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; border-radius: 6px; }
+  .box-b { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 1rem 1.25rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1.25rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-card { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.85rem; }
+  .practice-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+  .nav-flex { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .btn-nav { background: #2d6a4f; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+  .btn-nav-outline { border: 2px solid #2d6a4f; color: #1b4332; padding: 0.5rem 1.1rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
 </style>
 </head>
 <body data-lang-theme="fr">
@@ -28,28 +37,110 @@
     <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇫🇷 Jour 13 / 14 · Marathon Grammaire</span>
   </div>
   <h1>Voix Active vs Voix Passive & Se Faire</h1>
-  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Mettre en valeur le sujet agissant vs le bénéficiaire ou la victime.</p>
+  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Action accomplie par le sujet vs action subie + les alternatives du français parlé.</p>
   <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1b4332; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
     🖨️ Imprimer Jour 13
   </button>
 </header>
 
 <main class="day-container">
+
+  <!-- Étape 1: Élicitation -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 1 · Opposition Clé</span>
-    <h2>1. Comprendre la différence</h2>
+    <span class="stage-tag">Étape 1 · Élicitation</span>
+    <h2>Observez la perspective de l'action</h2>
+    <p>Comparez ces trois constructions :</p>
+    <div style="background:#f1f5f9; padding:1rem 1.25rem; border-radius:8px; font-style:italic; margin-bottom:1rem;">
+      <p style="margin:0 0 0.5rem;">💬 Active : « Le maire <strong>inaugure</strong> la nouvelle bibliothèque. »</p>
+      <p style="margin:0 0 0.5rem;">💬 Passive : « La nouvelle bibliothèque <strong>est inaugurée</strong> par le maire. »</p>
+      <p style="margin:0;">💬 Passive orale : « Il <strong>s'est fait</strong> arrêter par la police. »</p>
+    </div>
+    <p><strong>Question de réflexion :</strong> Qui fait l'action dans chaque phrase et comment le sujet grammaire change-t-il ?</p>
+  </section>
+
+  <!-- Étape 2: La règle -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 2 · La règle</span>
+    <h2>La règle d'or</h2>
     <div class="rule-card">
-      <strong>💡 Règle d'or :</strong> Mettre en valeur le sujet agissant vs le bénéficiaire ou la victime.
+      <strong>💡 Différence clé :</strong> Voix Active = Le sujet accompli l'action vs Voix Passive = Le sujet subit l'action (ÊTRE au temps voulu + participe passé accordé avec le sujet).
+    </div>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#1b5e20;">1. La Voix Passive classique</h4>
+        <p style="margin:0;">Formation : <strong>Auxiliaire ÊTRE (au temps actif) + Participe Passé (accordé avec le sujet) + PAR / DE + Complément d'agent</strong>.</p>
+        <p style="margin:0.5rem 0 0; font-style:italic; font-weight:600; color:#2e7d32;">Exemple : Les lettres ont été envoyées par la secrétaire.</p>
+      </div>
+
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#0d47a1;">2. Alternatives du Français Parlé</h4>
+        <p style="margin:0;">• <strong>Pronom ON</strong> (voix active impersonnelle) : <em>On a réparé ma voiture.</em><br>
+        • <strong>Se faire + Infinitif</strong> (passif subi/involontaire) : <em>Il s'est fait voler son vélo.</em></p>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Astuce mnémo : Au passif, l'auxiliaire ÊTRE porte le temps grammatical, et le participe passé s'accorde TOUJOURS avec le nouveau sujet !
     </div>
   </section>
 
+  <!-- Étape 3: CCQ -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../fr-a0-a2.html" style="color:#1b4332; text-decoration:none; font-weight:700;">← Aperçu du Module</a>
-      <a href="../index.html" style="background:#2d6a4f; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Hub Grammaire 🇫🇷</a>
+    <span class="stage-tag">Étape 3 · Vérification (CCQ)</span>
+    <h2>Concept Checking Questions</h2>
+
+    <div class="ccq-card">
+      <strong>1. Dans la phrase « Les décisions seront prises demain par le directeur », avec quel mot s'accorde « prises » ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 Avec le sujet féminin pluriel <strong>Les décisions</strong> (féminin pluriel → <em>prises</em>).</p>
+    </div>
+
+    <div class="ccq-card">
+      <strong>2. Quand utilise-t-on la préposition « DE » au lieu de « PAR » devant le complément d'agent ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 Avec les verbes de sentiment, de description ou d'état (ex: <em>être aimé de tous, être bordé de fleurs</em>).</p>
+    </div>
+
+    <div class="ccq-card">
+      <strong>3. Comment exprime-t-on plus naturellement à l'oral « Il a été mordu par un chien » ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 <strong>« Il s'est fait mordre par un chien »</strong> ou <strong>« Un chien l'a mordu »</strong>.</p>
     </div>
   </section>
+
+  <!-- Étape 4: Pratique -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 4 · Pratique</span>
+    <h2>Exercice d'application</h2>
+    <p>Mettez les phrases au passif ou choisissez l'option correcte :</p>
+
+    <div class="practice-card">
+      <p style="margin:0 0 0.75rem;">1. Ce roman célèbre ______ par Victor Hugo en 1831. (a écrit / a été écrit)</p>
+      <p style="margin:0 0 0.75rem;">2. Les marchandises ______ livrées par le transporteur demain matin. (seront / ont été)</p>
+      <p style="margin:0 0 0.75rem;">3. Mon frère s'est ______ voler son passeport à la gare. (fait / été)</p>
+      <p style="margin:0 0 0.75rem;">4. La professeur est très appréciée ______ tous ses étudiants. (par / de)</p>
+      <p style="margin:0;">5. Toutes les salles de classe ont été ______ d'ordinateurs récents. (équipé / équipées)</p>
+    </div>
+
+    <details style="margin-top:1rem; background:#e8f5e9; border:1px solid #c8e6c9; border-radius:8px; padding:0.85rem 1.25rem;">
+      <summary style="cursor:pointer; font-weight:700; color:#1b4332;">🔑 Voir le corrigé et les explications</summary>
+      <div style="margin-top:0.75rem; font-size:0.95rem; line-height:1.7;">
+        <p style="margin:0 0 0.3rem;">1. <strong>a été écrit</strong> — Passé composé du passif (action subie dans le passé).</p>
+        <p style="margin:0 0 0.3rem;">2. <strong>seront</strong> — Futur simple du passif avec l'indicateur "demain matin".</p>
+        <p style="margin:0 0 0.3rem;">3. <strong>fait</strong> — Structure orale réflexive passive "se faire + infinitif".</p>
+        <p style="margin:0 0 0.3rem;">4. <strong>de</strong> — Verbe de sentiment ("apprécié de").</p>
+        <p style="margin:0;">5. <strong>équipées</strong> — Accord du participe passé avec le sujet féminin pluriel "les salles".</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- Navigation -->
+  <section class="stage-box no-print">
+    <div class="nav-flex">
+      <a href="day-12.html" class="btn-nav-outline">← Jour 12 : Discours Indirect</a>
+      <a href="../fr-b1-b2.html" class="btn-nav-outline">Aperçu Module B1–B2</a>
+      <a href="day-14.html" class="btn-nav">Jour 14 : Bilan Logique →</a>
+    </div>
+  </section>
+
 </main>
 </body>
 </html>

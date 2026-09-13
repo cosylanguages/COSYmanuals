@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jour 14: Connecteurs Logiques & Bilan Synthétique — Marathon Grammaire Française · COSY</title>
+<title>Jour 14: Bilan Logique & Synthèse Globale — Marathon Grammaire Française · COSY</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -16,40 +16,125 @@
   .day-hero { background: linear-gradient(135deg, #1b4332, #2d6a4f); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
   .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
+  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
   .rule-card { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .practice-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+  .nav-flex { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .btn-nav { background: #2d6a4f; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+  .btn-nav-outline { border: 2px solid #2d6a4f; color: #1b4332; padding: 0.5rem 1.1rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+  .check-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.75rem; margin: 1rem 0; }
+  .check-item { background: #f1f5f9; padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; border-left: 3px solid #2d6a4f; }
 </style>
 </head>
 <body data-lang-theme="fr">
 
 <header class="day-hero">
   <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇫🇷 Jour 14 / 14 · Marathon Grammaire</span>
+    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🏆 Jour 14 / 14 · Marathon Grammaire</span>
   </div>
-  <h1>Connecteurs Logiques & Bilan Synthétique</h1>
-  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Exprimer la cause, la conséquence, l'opposition et évaluation finale.</p>
+  <h1>Bilan Logique & Grand Test de Synthèse</h1>
+  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Évaluez votre maîtrise globale à travers 13 défis couvrant l'intégralité du parcours.</p>
   <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1b4332; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Imprimer Jour 14
+    🖨️ Imprimer Jour 14 (Bilan)
   </button>
 </header>
 
 <main class="day-container">
+
+  <!-- Étape 1: Élicitation & Récapitulatif -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 1 · Opposition Clé</span>
-    <h2>1. Comprendre la différence</h2>
-    <div class="rule-card">
-      <strong>💡 Règle d'or :</strong> Exprimer la cause, la conséquence, l'opposition et évaluation finale.
+    <span class="stage-tag">Étape 1 · Auto-Évaluation</span>
+    <h2>Félicitations pour votre parcours !</h2>
+    <p>Pendant 13 jours, vous avez analysé et débloqué les 13 paires de confusions les plus courantes du français. Voici la carte complète des notions maîtrisées :</p>
+
+    <div class="check-grid">
+      <div class="check-item">Jour 1 : Tu vs Vous</div>
+      <div class="check-item">Jour 2 : C'est vs Il est</div>
+      <div class="check-item">Jour 3 : Articles (un/le/du)</div>
+      <div class="check-item">Jour 4 : Futurs (proche/simple)</div>
+      <div class="check-item">Jour 5 : Passé Composé vs Imparfait</div>
+      <div class="check-item">Jour 6 : Savoir vs Connaître</div>
+      <div class="check-item">Jour 7 : Durées (depuis/pendant/pour)</div>
+      <div class="check-item">Jour 8 : Pronoms Relatifs (qui/que/dont/où)</div>
+      <div class="check-item">Jour 9 : Pronoms En vs Y</div>
+      <div class="check-item">Jour 10 : Indicatif vs Subjonctif</div>
+      <div class="check-item">Jour 11 : Si + Temps (Hypothèses)</div>
+      <div class="check-item">Jour 12 : Discours Indirect</div>
+      <div class="check-item">Jour 13 : Voix Passive & Se Faire</div>
     </div>
   </section>
 
+  <!-- Étape 2: La méthode -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../fr-a0-a2.html" style="color:#1b4332; text-decoration:none; font-weight:700;">← Aperçu du Module</a>
-      <a href="../index.html" style="background:#2d6a4f; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Hub Grammaire 🇫🇷</a>
+    <span class="stage-tag">Étape 2 · La règle de méthode</span>
+    <h2>Les 3 réflexes d'une grammaire fluide</h2>
+    <div class="rule-card">
+      <strong>💡 La méthode COSY en 3 étapes :</strong>
+      <ol style="margin:0.5rem 0 0; padding-left:1.2rem;">
+        <li><strong>Identifier le type d'opposition :</strong> S'agit-il d'un choix de structure (C'est/Il est), de temps (PC/Imparfait) ou de perspective sociale (Tu/Vous) ?</li>
+        <li><strong>Repérer les indices du contexte :</strong> Prépositions (<em>de, à</em>), marqueurs temporels (<em>depuis, hier, demain</em>), ou verbes déclencheurs (<em>vouloir que, savoir que</em>).</li>
+        <li><strong>Appliquer l'astuce mnémo :</strong> Révoquer la règle formelle et faire confiance au réflexe automatisé lors des étapes 1 à 13.</li>
+      </ol>
     </div>
   </section>
+
+  <!-- Étape 3: Test cumulatif (13 questions) -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 3 · Vérification (Grand Test)</span>
+    <h2>Grand Test Cumulatif (13 Défis)</h2>
+    <p>Choisissez la forme correcte pour chaque phrase (1 question par jour d'apprentissage) :</p>
+
+    <div class="practice-card">
+      <p style="margin:0 0 0.75rem;"><strong>1 (Jour 1) :</strong> Excusez-moi Monsieur, est-ce que ______ avez une minute ? (tu / vous)</p>
+      <p style="margin:0 0 0.75rem;"><strong>2 (Jour 2) :</strong> Regarde Marie, ______ une excellente avocate. (c'est / elle est)</p>
+      <p style="margin:0 0 0.75rem;"><strong>3 (Jour 3) :</strong> Le matin, je ne bois jamais ______ café sans sucre. (du / de)</p>
+      <p style="margin:0 0 0.75rem;"><strong>4 (Jour 4) :</strong> Attention ! La tasse ______ tomber de la table ! (va / tombera)</p>
+      <p style="margin:0 0 0.75rem;"><strong>5 (Jour 5) :</strong> Hier, pendant que je ______, le téléphone a sonné. (dormais / ai dormi)</p>
+      <p style="margin:0 0 0.75rem;"><strong>6 (Jour 6) :</strong> Est-ce que tu ______ la capitale de l'Italie ? (sais / connais)</p>
+      <p style="margin:0 0 0.75rem;"><strong>7 (Jour 7) :</strong> J'habite dans cet appartement ______ trois ans. (depuis / pendant)</p>
+      <p style="margin:0 0 0.75rem;"><strong>8 (Jour 8) :</strong> C'est le projet ______ je t'ai parlé hier soir. (que / dont)</p>
+      <p style="margin:0 0 0.75rem;"><strong>9 (Jour 9) :</strong> Tu vas à la boulangerie ? — Oui, j'______ vais tout de suite. (en / y)</p>
+      <p style="margin:0 0 0.75rem;"><strong>10 (Jour 10) :</strong> Il est indispensable que vous ______ prêts à l'heure. (soyez / êtes)</p>
+      <p style="margin:0 0 0.75rem;"><strong>11 (Jour 11) :</strong> Si j'avais assez d'argent, j'______ un voyage au Japon. (achèterai / achèterais)</p>
+      <p style="margin:0 0 0.75rem;"><strong>12 (Jour 12) :</strong> Paul m'a assuré qu'il ______ le lendemain. (partait / partira)</p>
+      <p style="margin:0 0 0.75rem;"><strong>13 (Jour 13) :</strong> La nouvelle loi a été ______ par le Parlement. (votée / voté)</p>
+    </div>
+  </section>
+
+  <!-- Étape 4: Corrigé et Bilan -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 4 · Pratique & Corrigé</span>
+    <h2>Corrigé Général et Auto-Bilan de Score</h2>
+    <details open style="background:#e8f5e9; border:1px solid #c8e6c9; border-radius:8px; padding:1rem 1.25rem;">
+      <summary style="cursor:pointer; font-weight:700; color:#1b4332; font-size:1.05rem;">🔑 Corrigé Général et Explications (13/13)</summary>
+      <div style="margin-top:0.85rem; font-size:0.95rem; line-height:1.75;">
+        <p style="margin:0 0 0.4rem;"><strong>1. vous</strong> — Politesse envers un inconnu (Jour 1 : Tu vs Vous).</p>
+        <p style="margin:0 0 0.4rem;"><strong>2. C'est</strong> — Suivi de l'article "une" (Jour 2 : C'est vs Il est).</p>
+        <p style="margin:0 0 0.4rem;"><strong>3. de</strong> — Négation stricte "jamais de" (Jour 3 : Articles).</p>
+        <p style="margin:0 0 0.4rem;"><strong>4. va</strong> — Danger imminent et immédiat (Jour 4 : Futurs).</p>
+        <p style="margin:0 0 0.4rem;"><strong>5. dormais</strong> — Action de fond à l'imparfait interrompue (Jour 5 : PC vs Imparfait).</p>
+        <p style="margin:0 0 0.4rem;"><strong>6. connais</strong> — Suivi d'un nom direct de ville/lieu (Jour 6 : Savoir vs Connaître).</p>
+        <p style="margin:0 0 0.4rem;"><strong>7. depuis</strong> — Action commencée au passé et toujours vraie au présent (Jour 7 : Durées).</p>
+        <p style="margin:0 0 0.4rem;"><strong>8. dont</strong> — Verbe "parler DE" quelque chose (Jour 8 : Pronoms Relatifs).</p>
+        <p style="margin:0 0 0.4rem;"><strong>9. y</strong> — Pronom de lieu ("à la boulangerie") (Jour 9 : Pronoms En vs Y).</p>
+        <p style="margin:0 0 0.4rem;"><strong>10. soyez</strong> — Subjonctif après "Il est indispensable que" (Jour 10 : Indicatif vs Subjonctif).</p>
+        <p style="margin:0 0 0.4rem;"><strong>11. achèterais</strong> — Si + Imparfait → Conditionnel Présent (Jour 11 : Si + Temps).</p>
+        <p style="margin:0 0 0.4rem;"><strong>12. partait</strong> — Concordance au passé au discours indirect (Jour 12 : Discours Indirect).</p>
+        <p style="margin:0;"><strong>13. votée</strong> — Accord du participe passé avec le sujet féminin "La nouvelle loi" (Jour 13 : Voix Passive).</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- Navigation -->
+  <section class="stage-box no-print">
+    <div class="nav-flex">
+      <a href="day-13.html" class="btn-nav-outline">← Jour 13 : Passif & Se Faire</a>
+      <a href="../fr-b1-b2.html" class="btn-nav-outline">Aperçu Module B1–B2</a>
+      <a href="../index.html" class="btn-nav">🏆 Hub Grammaire 🇫🇷</a>
+    </div>
+  </section>
+
 </main>
 </body>
 </html>

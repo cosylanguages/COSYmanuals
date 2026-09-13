@@ -16,9 +16,18 @@
   .day-hero { background: linear-gradient(135deg, #1b4332, #2d6a4f); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
   .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
+  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
   .rule-card { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; border-radius: 6px; }
+  .box-b { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 1rem 1.25rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1.25rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-card { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.85rem; }
+  .practice-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+  .nav-flex { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .btn-nav { background: #2d6a4f; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+  .btn-nav-outline { border: 2px solid #2d6a4f; color: #1b4332; padding: 0.5rem 1.1rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
 </style>
 </head>
 <body data-lang-theme="fr">
@@ -28,28 +37,113 @@
     <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇫🇷 Jour 12 / 14 · Marathon Grammaire</span>
   </div>
   <h1>Discours Direct vs Discours Indirect</h1>
-  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Rapporter des paroles directement ou avec concordance des temps.</p>
+  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Rapporter des paroles et maîtriser la concordance des temps au passé.</p>
   <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1b4332; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
     🖨️ Imprimer Jour 12
   </button>
 </header>
 
 <main class="day-container">
+
+  <!-- Étape 1: Élicitation -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 1 · Opposition Clé</span>
-    <h2>1. Comprendre la différence</h2>
+    <span class="stage-tag">Étape 1 · Élicitation</span>
+    <h2>Observez la transformation des paroles</h2>
+    <p>Comparez ces trois manières de rapporter les paroles de Marc :</p>
+    <div style="background:#f1f5f9; padding:1rem 1.25rem; border-radius:8px; font-style:italic; margin-bottom:1rem;">
+      <p style="margin:0 0 0.5rem;">💬 1. Discours Direct : Marc dit : « Je <strong>suis</strong> fatigué. »</p>
+      <p style="margin:0 0 0.5rem;">💬 2. Indirect au présent : Marc dit qu'il <strong>est</strong> fatigué.</p>
+      <p style="margin:0;">💬 3. Indirect au passé : Marc a dit qu'il <strong>était</strong> fatigué.</p>
+    </div>
+    <p><strong>Question de réflexion :</strong> Pourquoi le verbe de la parole rapportée passe-t-il à l'imparfait dans l'exemple 3 ?</p>
+  </section>
+
+  <!-- Étape 2: La règle -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 2 · La règle</span>
+    <h2>La règle d'or</h2>
     <div class="rule-card">
-      <strong>💡 Règle d'or :</strong> Rapporter des paroles directement ou avec concordance des temps.
+      <strong>💡 Différence clé :</strong> Discours Direct = Citations exactes entre guillemets vs Discours Indirect = Proposition rapportée avec ajustement des pronoms et recul des temps si le verbe introducteur est au passé.
+    </div>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#1b5e20;">1. Verbe introducteur au Présent</h4>
+        <p style="margin:0;">Aucun changement de temps verbal dans la subordonnée :<br>
+        <em>Il affirme : « Je viens. » → Il affirme qu'il vient.</em></p>
+        <p style="margin:0.5rem 0 0; font-style:italic; font-weight:600; color:#2e7d32;">Seuls les pronoms changent (je → il).</p>
+      </div>
+
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#0d47a1;">2. Verbe introducteur au Passé</h4>
+        <p style="margin:0;">Règle de concordance des temps :<br>
+        • <strong>Présent → Imparfait</strong> (<em>a dit qu'il venait</em>)<br>
+        • <strong>Passé composé → Plus-que-parfait</strong> (<em>a dit qu'il était venu</em>)<br>
+        • <strong>Futur simple → Conditionnel présent</strong> (<em>a dit qu'il viendrait</em>)</p>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Astuce mnémo : Verbe introducteur au passé = le temps du verbe rapporté recule automatiquement d'un cran dans le passé !
     </div>
   </section>
 
+  <!-- Étape 3: CCQ -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../fr-a0-a2.html" style="color:#1b4332; text-decoration:none; font-weight:700;">← Aperçu du Module</a>
-      <a href="../index.html" style="background:#2d6a4f; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Hub Grammaire 🇫🇷</a>
+    <span class="stage-tag">Étape 3 · Vérification (CCQ)</span>
+    <h2>Concept Checking Questions</h2>
+
+    <div class="ccq-card">
+      <strong>1. Transposez au discours indirect : Paul a affirmé : « J'ai fini mes devoirs. »</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 Paul a affirmé qu'il <strong>avait fini</strong> ses devoirs (Passé composé → Plus-que-parfait).</p>
+    </div>
+
+    <div class="ccq-card">
+      <strong>2. Que devient la question « Est-ce que tu viens ? » après « Il m'a demandé... » ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 Il m'a demandé <strong>si je venais</strong> (Est-ce que → Si + Imparfait).</p>
+    </div>
+
+    <div class="ccq-card">
+      <strong>3. Si le verbe introducteur est au présent (« Elle annonce que... »), doit-on modifier le temps de la phrase ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 <strong>Non !</strong> La concordance au passé ne s'applique que si le verbe introducteur est un temps du passé.</p>
     </div>
   </section>
+
+  <!-- Étape 4: Pratique -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 4 · Pratique</span>
+    <h2>Exercice d'application</h2>
+    <p>Complétez les phrases au discours indirect au passé :</p>
+
+    <div class="practice-card">
+      <p style="margin:0 0 0.75rem;">1. Pierre a dit : « Je voyagerai en Italie l'été prochain. » → Pierre a dit qu'il ______ en Italie l'été suivant. (voyagera / voyagerait)</p>
+      <p style="margin:0 0 0.75rem;">2. « Où habites-tu ? » → Elle m'a demandé où j'______. (habite / habitais)</p>
+      <p style="margin:0 0 0.75rem;">3. « Nous avons acheté une nouvelle voiture. » → Ils ont raconté qu'ils ______ une nouvelle voiture. (ont acheté / avaient acheté)</p>
+      <p style="margin:0 0 0.75rem;">4. « Je suis prêt à partir. » → Marc nous a assuré qu'il ______ prêt à partir. (est / était)</p>
+      <p style="margin:0;">5. « Est-ce que vous voulez un café ? » → La serveuse a demandé ______ nous voulions un café. (que / si)</p>
+    </div>
+
+    <details style="margin-top:1rem; background:#e8f5e9; border:1px solid #c8e6c9; border-radius:8px; padding:0.85rem 1.25rem;">
+      <summary style="cursor:pointer; font-weight:700; color:#1b4332;">🔑 Voir le corrigé et les explications</summary>
+      <div style="margin-top:0.75rem; font-size:0.95rem; line-height:1.7;">
+        <p style="margin:0 0 0.3rem;">1. <strong>voyagerait</strong> — Futur simple → Conditionnel présent au passé.</p>
+        <p style="margin:0 0 0.3rem;">2. <strong>habitais</strong> — Présent → Imparfait.</p>
+        <p style="margin:0 0 0.3rem;">3. <strong>avaient acheté</strong> — Passé composé → Plus-que-parfait.</p>
+        <p style="margin:0 0 0.3rem;">4. <strong>était</strong> — Présent du verbe être → Imparfait.</p>
+        <p style="margin:0;">5. <strong>si</strong> — Transposition d'une question fermée ("Est-ce que" devient "si").</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- Navigation -->
+  <section class="stage-box no-print">
+    <div class="nav-flex">
+      <a href="day-11.html" class="btn-nav-outline">← Jour 11 : Si + Temps</a>
+      <a href="../fr-b1-b2.html" class="btn-nav-outline">Aperçu Module B1–B2</a>
+      <a href="day-13.html" class="btn-nav">Jour 13 : Passif & Se Faire →</a>
+    </div>
+  </section>
+
 </main>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jour 8: Pronoms Relatifs (Qui vs Que vs Dont vs Où) — Marathon Grammaire Française · COSY</title>
+<title>Jour 8: Pronoms Relatifs (Qui, Que, Dont, Où) — Marathon Grammaire Française · COSY</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -16,9 +16,18 @@
   .day-hero { background: linear-gradient(135deg, #1b4332, #2d6a4f); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
   .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
+  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+  .stage-tag { background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem; }
   .rule-card { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem 1.25rem; border-radius: 6px; }
+  .box-b { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 1rem 1.25rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1.25rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-card { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.85rem; }
+  .practice-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+  .nav-flex { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .btn-nav { background: #2d6a4f; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+  .btn-nav-outline { border: 2px solid #2d6a4f; color: #1b4332; padding: 0.5rem 1.1rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
 </style>
 </head>
 <body data-lang-theme="fr">
@@ -27,29 +36,114 @@
   <div style="margin-bottom: 0.5rem;">
     <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇫🇷 Jour 8 / 14 · Marathon Grammaire</span>
   </div>
-  <h1>Pronoms Relatifs (Qui vs Que vs Dont vs Où)</h1>
-  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Sujet vs COD vs complément avec de vs lieu / temps.</p>
+  <h1>Pronoms Relatifs (Qui, Que, Dont, Où)</h1>
+  <p style="color:#d8f3dc; max-width:700px; margin:0.5rem auto 1rem;">Lier deux propositions selon la fonction grammaticale du mot remplacé.</p>
   <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1b4332; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
     🖨️ Imprimer Jour 8
   </button>
 </header>
 
 <main class="day-container">
+
+  <!-- Étape 1: Élicitation -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 1 · Opposition Clé</span>
-    <h2>1. Comprendre la différence</h2>
+    <span class="stage-tag">Étape 1 · Élicitation</span>
+    <h2>Observez les 4 pronoms relatifs</h2>
+    <p>Comparez le rôle des mots en gras :</p>
+    <div style="background:#f1f5f9; padding:1rem 1.25rem; border-radius:8px; font-style:italic; margin-bottom:1rem;">
+      <p style="margin:0 0 0.4rem;">💬 1. C'est l'homme <strong>qui</strong> parle anglais. (Sujet)</p>
+      <p style="margin:0 0 0.4rem;">💬 2. C'est le livre <strong>que</strong> je lis. (Objet Direct)</p>
+      <p style="margin:0 0 0.4rem;">💬 3. C'est le projet <strong>dont</strong> je rêve. (Rêver DE)</p>
+      <p style="margin:0;">💬 4. C'est le restaurant <strong>où</strong> nous avons dîné. (Lieu)</p>
+    </div>
+    <p><strong>Question de réflexion :</strong> Qu'est-ce qui détermine le choix entre <em>qui, que, dont</em> et <em>où</em> ?</p>
+  </section>
+
+  <!-- Étape 2: La règle -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 2 · La règle</span>
+    <h2>La règle d'or</h2>
     <div class="rule-card">
-      <strong>💡 Règle d'or :</strong> Sujet vs COD vs complément avec de vs lieu / temps.
+      <strong>💡 Différence clé :</strong> Le pronom relatif dépend de sa fonction dans la phrase secondaire : Sujet (QUI), Objet direct (QUE), Complément avec 'DE' (DONT), Lieu/Temps (OÙ).
+    </div>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.4rem; color:#1b5e20;">QUI (Sujet du verbe)</h4>
+        <p style="margin:0;">Est suivi directement d'un verbe.<br><em>Exemple : Le médecin qui travaille ici est excellent.</em></p>
+        <h4 style="margin:0.8rem 0 0.4rem; color:#1b5e20;">QUE / QU' (Objet Direct)</h4>
+        <p style="margin:0;">Est suivi d'un sujet + verbe.<br><em>Exemple : Le gâteau que tu as fait est délicieux.</em></p>
+      </div>
+
+      <div class="box-b">
+        <h4 style="margin:0 0 0.4rem; color:#0d47a1;">DONT (Remplace DE + nom)</h4>
+        <p style="margin:0;">Pour verbes/expressions avec <strong>DE</strong> (parler de, avoir besoin de, être fier de).<br><em>Exemple : La voiture dont j'ai besoin.</em></p>
+        <h4 style="margin:0.8rem 0 0.4rem; color:#0d47a1;">OÙ (Lieu ou Temps)</h4>
+        <p style="margin:0;">Remplace un endroit géographique ou une date/moment.<br><em>Exemple : L'année où je suis né. / La ville où j'habite.</em></p>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Astuce mnémo : De → DONT. Lieu ou Temps → OÙ. Sujet → QUI. Objet → QUE.
     </div>
   </section>
 
+  <!-- Étape 3: CCQ -->
   <section class="stage-box">
-    <span class="stage-tag">Étape CELTA 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../fr-a0-a2.html" style="color:#1b4332; text-decoration:none; font-weight:700;">← Aperçu du Module</a>
-      <a href="../index.html" style="background:#2d6a4f; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Hub Grammaire 🇫🇷</a>
+    <span class="stage-tag">Étape 3 · Vérification (CCQ)</span>
+    <h2>Concept Checking Questions</h2>
+
+    <div class="ccq-card">
+      <strong>1. Dans la phrase « Le film ___ est au cinéma », le mot recherché est-il sujet ou complément du verbe « est » ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 <strong>Sujet</strong>, donc on utilise <strong>QUI</strong> (<em>« Le film qui est au cinéma »</em>).</p>
+    </div>
+
+    <div class="ccq-card">
+      <strong>2. Le verbe « avoir envie » nécessite-t-il la préposition DE ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 <strong>Oui !</strong> (avoir envie DE quelque chose). On utilise donc <strong>DONT</strong> : <em>« Le voyage dont j'ai envie »</em>.</p>
+    </div>
+
+    <div class="ccq-card">
+      <strong>3. Pour indiquer un jour précis (« Le jour ___ nous nous sommes rencontrés »), quel pronom choisit-on ?</strong>
+      <p style="margin:0.3rem 0 0; color:#2d6a4f;">👉 <strong>OÙ</strong> (complément de temps).</p>
     </div>
   </section>
+
+  <!-- Étape 4: Pratique -->
+  <section class="stage-box">
+    <span class="stage-tag">Étape 4 · Pratique</span>
+    <h2>Exercice d'application</h2>
+    <p>Complétez chaque phrase avec <strong>qui, que, dont</strong> ou <strong>où</strong> :</p>
+
+    <div class="practice-card">
+      <p style="margin:0 0 0.75rem;">1. C'est un professeur ______ explique très bien les règles de grammaire. (qui / que / dont)</p>
+      <p style="margin:0 0 0.75rem;">2. La maison ______ j'ai achetée se trouve au bord de la mer. (qui / que / dont)</p>
+      <p style="margin:0 0 0.75rem;">3. C'est une étudiante ______ je suis très fier. (que / dont / où)</p>
+      <p style="margin:0 0 0.75rem;">4. Voici le village ______ mes grands-parents ont grandi. (dont / où / que)</p>
+      <p style="margin:0;">5. Je me rappelle exactement le moment ______ la panne d'électricité s'est produite. (où / dont / qui)</p>
+    </div>
+
+    <details style="margin-top:1rem; background:#e8f5e9; border:1px solid #c8e6c9; border-radius:8px; padding:0.85rem 1.25rem;">
+      <summary style="cursor:pointer; font-weight:700; color:#1b4332;">🔑 Voir le corrigé et les explications</summary>
+      <div style="margin-top:0.75rem; font-size:0.95rem; line-height:1.7;">
+        <p style="margin:0 0 0.3rem;">1. <strong>qui</strong> — Sujet du verbe "explique".</p>
+        <p style="margin:0 0 0.3rem;">2. <strong>que</strong> — Objet direct du verbe "acheter" (j'ai acheté la maison).</p>
+        <p style="margin:0 0 0.3rem;">3. <strong>dont</strong> — Verbe prépositionnel (être fier DE quelqu'un).</p>
+        <p style="margin:0 0 0.3rem;">4. <strong>où</strong> — Lieu géographique (le village).</p>
+        <p style="margin:0;">5. <strong>où</strong> — Indication temporelle (le moment).</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- Navigation -->
+  <section class="stage-box no-print">
+    <div class="nav-flex">
+      <a href="day-7.html" class="btn-nav-outline">← Jour 7 : Durées</a>
+      <a href="../fr-b1-b2.html" class="btn-nav-outline">Aperçu Module B1–B2</a>
+      <a href="day-9.html" class="btn-nav">Jour 9 : Pronoms En vs Y →</a>
+    </div>
+  </section>
+
 </main>
 </body>
 </html>
