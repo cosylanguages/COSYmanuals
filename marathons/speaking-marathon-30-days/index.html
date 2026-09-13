@@ -3,185 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>30-Day Speaking Marathon | COSYmanuals</title>
-  <link rel="stylesheet" href="../../shared/styles/style.css">
+  <title>🧠 30-Day Speak & Think Marathon — Stop Mental Translation | COSYmanuals</title>
+  <link rel="stylesheet" href="../../shared/styles/tokens.css">
+  <link rel="stylesheet" href="../../shared/styles/base.css">
+  <link rel="stylesheet" href="../../shared/styles/components.css">
+  <link rel="stylesheet" href="../../shared/styles/layout.css">
+  <link rel="stylesheet" href="../../shared/styles/mobile.css">
+  <link rel="stylesheet" href="../../shared/styles/print.css">
+  <style>
+    :root {
+      --st-primary: #1a365d;
+      --st-accent: #2b6cb0;
+      --st-light: #ebf8ff;
+    }
+    body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #f7fafc; line-height: 1.65; }
+    .hero-box { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: #fff; padding: 3.5rem 1.5rem 2.5rem; text-align: center; border-bottom: 4px solid #63b3ed; }
+    .hero-box h1 { font-family: 'Lora', serif; font-size: 2.4rem; margin-bottom: 0.75rem; color: #fff; }
+    .container { max-width: 1050px; margin: 2rem auto; padding: 0 1.5rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+    .lang-card { background: #fff; border: 2px solid #bee3f8; border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
+    .lang-card h3 { font-size: 1.3rem; margin: 0.5rem 0; color: #1a365d; }
+    .btn-lang { background: #2b6cb0; color: #fff; text-decoration: none; padding: 0.65rem 1rem; border-radius: 8px; font-weight: 700; transition: background 0.2s; }
+    .btn-lang:hover { background: #1a365d; }
+    .phase-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 1.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    .phase-box h3 { color: #1a365d; margin-top: 0; font-family: 'Lora', serif; border-bottom: 2px solid #ebf8ff; padding-bottom: 0.5rem; }
+    .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  </style>
 </head>
-<body>
-  <header class="manual-header">
-    <div class="header-content">
-      <a href="../../index.html" class="logo-badge">📖 COSYmanuals</a>
-      <span class="private-tag">30-Day Intensive Marathon</span>
-    </div>
-  </header>
+<body data-lang-theme="en">
 
-  <main class="container">
-    <section class="manual-meta">
-      <h1>🎙️ 30-Day Speaking Marathon</h1>
-      <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Daily Oral Fluency & Confidence Builder</p>
+<header class="hero-box">
+  <span style="background:rgba(255,255,255,0.2); padding:0.35rem 0.85rem; border-radius:50px; font-weight:700;">🗣️ COSY Fluency Accelerator</span>
+  <h1>30-DAY SPEAK & THINK MARATHON</h1>
+  <p style="color:#ebf8ff; max-width:800px; margin:0.5rem auto 1.5rem; font-size:1.15rem;">How to Stop Mental Translation & Achieve Spontaneous Natural Speech in 30 Days.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
+    🖨️ Print Marathon Guide
+  </button>
+</header>
 
-      <div class="meta-grid">
-        <div class="meta-item">
-          <strong>Duration</strong>
-          <span>30 Days</span>
-        </div>
-        <div class="meta-item">
-          <strong>Daily Time</strong>
-          <span>10-15 Minutes</span>
-        </div>
-        <div class="meta-item">
-          <strong>Target Skill</strong>
-          <span>Spontaneous Speaking & Pitch</span>
-        </div>
-        <div class="meta-item">
-          <strong>Practice Integration</strong>
-          <span>COSYgames Speaking Challenges</span>
-        </div>
+<main class="container">
+
+  <!-- LANGUAGE MODULE SELECTOR -->
+  <section class="phase-box" style="border: 2px solid #2b6cb0; background: #fbfdfb;">
+    <h2>🌐 Select Your Language Marathon</h2>
+    <p>Choose your target language to start your 30-day monolingual thought & speech acceleration program:</p>
+
+    <div class="card-grid">
+      <div class="lang-card">
+        <span style="font-size: 2.5rem;">🇬🇧</span>
+        <h3>English</h3>
+        <p style="font-size:0.9rem; color:#4a5568;">Stop translating from native language. Direct English inner monologue & fast circumlocution.</p>
+        <a href="en.html" class="btn-lang">Start English Marathon →</a>
       </div>
-    </section>
 
-    <!-- Goals and Milestones -->
-    <section class="section-card">
-      <h2>🏆 Marathon Goals & Milestones</h2>
-      <p>Transform your speaking confidence by completing one 2-minute oral response or dialogue challenge each day for 30 consecutive days.</p>
-      <ul style="margin-left: 1.5rem; margin-top: 0.75rem;">
-        <li><strong>Days 1-10:</strong> Personal Stories & Daily Routines (Overcoming hesitancy)</li>
-        <li><strong>Days 11-20:</strong> Expressing Opinions & Debates (Structuring arguments)</li>
-        <li><strong>Days 21-30:</strong> Advanced Problem Solving & Storytelling (Mastering flow and intonation)</li>
-      </ul>
-    </section>
-
-    <!-- Progress Tracker -->
-    <section class="section-card">
-      <h2>📊 Daily Progress Tracker</h2>
-      <div class="progress-container">
-        <div class="progress-bar-bg">
-          <div class="progress-bar-fill" id="marathonProgressFill" style="width: 10%;"></div>
-        </div>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);" id="marathonProgressText">3 of 30 Days Completed (10%)</p>
+      <div class="lang-card">
+        <span style="font-size: 2.5rem;">🇫🇷</span>
+        <h3>Français</h3>
+        <p style="font-size:0.9rem; color:#4a5568;">Penser directement en français sans traduire mentalement. Expressions spontanées.</p>
+        <a href="fr.html" class="btn-lang">Démarrer le Marathon FR →</a>
       </div>
-    </section>
 
-    <!-- Daily Schedule & Prompts -->
-    <section class="section-card">
-      <h2>📅 30-Day Speaking Schedule</h2>
-      <ul class="task-list">
-        <li class="task-item">
-          <input type="checkbox" id="d1" checked>
-          <div style="flex: 1;">
-            <strong>Day 1: Introduce Yourself Like a Pro</strong>
-            <p>Record a 60-second elevator pitch about who you are, your hobbies, and your language goals.</p>
-            <a href="https://cosylanguages.github.io/COSYgames/" target="_blank" style="font-size: 0.85rem; color: var(--primary-color);">Practice Voice Warmup on COSYgames 🎮</a>
-          </div>
-        </li>
-
-        <li class="task-item">
-          <input type="checkbox" id="d2" checked>
-          <div style="flex: 1;">
-            <strong>Day 2: Describe Your Favorite Place</strong>
-            <p>Use sensory adjectives (vibrant, serene, bustling) to describe a location you love visiting.</p>
-            <a href="https://cosylanguages.github.io/COSYgames/" target="_blank" style="font-size: 0.85rem; color: var(--primary-color);">Play Descriptive Word Challenge on COSYgames 🎮</a>
-          </div>
-        </li>
-
-        <li class="task-item">
-          <input type="checkbox" id="d3" checked>
-          <div style="flex: 1;">
-            <strong>Day 3: Unexpected Situations</strong>
-            <p>Tell a story about a time when plans changed at the last minute and how you handled it.</p>
-            <a href="https://cosylanguages.github.io/COSYgames/" target="_blank" style="font-size: 0.85rem; color: var(--primary-color);">Play Story Spinner on COSYgames 🎮</a>
-          </div>
-        </li>
-
-        <li class="task-item">
-          <input type="checkbox" id="d4">
-          <div style="flex: 1;">
-            <strong>Day 4: Tech in Everyday Life</strong>
-            <p>Speak for 90 seconds on whether social media brings people closer together or further apart.</p>
-            <a href="https://cosylanguages.github.io/COSYgames/" target="_blank" style="font-size: 0.85rem; color: var(--primary-color);">Practice Debates on COSYgames 🎮</a>
-          </div>
-        </li>
-
-        <li class="task-item">
-          <input type="checkbox" id="d5">
-          <div style="flex: 1;">
-            <strong>Day 5: Recommending a Film or Book</strong>
-            <p>Convince a friend to watch your favorite movie without spoiling the ending.</p>
-            <a href="https://cosylanguages.github.io/COSYgames/" target="_blank" style="font-size: 0.85rem; color: var(--primary-color);">Play Pitch Master on COSYgames 🎮</a>
-          </div>
-        </li>
-
-        <li class="task-item">
-          <input type="checkbox" id="d6">
-          <div style="flex: 1;">
-            <strong>Days 6 to 30: Daily Micro-Prompts</strong>
-            <p>Unlock new daily prompts each morning in your student portal or teacher feedback sessions.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Community Leaderboard -->
-    <section class="section-card">
-      <h2>🏆 Student & Teacher Leaderboard</h2>
-      <p style="margin-bottom: 1rem;">Track daily streaks and voice note submissions across contracted study cohorts:</p>
-      <table style="width: 100%; border-collapse: collapse; text-align: left;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border-color); background: #f1f5f9;">
-            <th style="padding: 0.75rem;">Rank</th>
-            <th style="padding: 0.75rem;">Participant</th>
-            <th style="padding: 0.75rem;">Current Streak</th>
-            <th style="padding: 0.75rem;">Points</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid var(--border-color);">
-            <td style="padding: 0.75rem;">🥇 1</td>
-            <td style="padding: 0.75rem;">Elena R.</td>
-            <td style="padding: 0.75rem;">28 Days</td>
-            <td style="padding: 0.75rem;">2,800 pts</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border-color);">
-            <td style="padding: 0.75rem;">🥈 2</td>
-            <td style="padding: 0.75rem;">Marco S.</td>
-            <td style="padding: 0.75rem;">25 Days</td>
-            <td style="padding: 0.75rem;">2,500 pts</td>
-          </tr>
-          <tr>
-            <td style="padding: 0.75rem;">🥉 3</td>
-            <td style="padding: 0.75rem;">Sofia K.</td>
-            <td style="padding: 0.75rem;">22 Days</td>
-            <td style="padding: 0.75rem;">2,200 pts</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Completion Certificate -->
-    <section class="section-card">
-      <h2>📜 Completion Certificate</h2>
-      <div class="certificate-box">
-        <h3 style="color: var(--primary-color); letter-spacing: 0.05em;">CERTIFICATE OF FLUENCY EXCELLENCE</h3>
-        <p style="margin-top: 0.75rem;">This certificate is proudly awarded to</p>
-        <h2 style="margin: 0.75rem 0; font-size: 1.8rem; color: #1e293b;">[Participant Name]</h2>
-        <p>for successfully completing the <strong>30-Day Intensive Speaking Marathon</strong> and demonstrating commitment to spoken language mastery.</p>
-        <p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">COSYlanguages Contracted Learning Program</p>
+      <div class="lang-card">
+        <span style="font-size: 2.5rem;">🇷🇺</span>
+        <h3>Русский</h3>
+        <p style="font-size:0.9rem; color:#4a5568;">Думать и говорить по-русски без внутреннего перевода. Прямой поток речи.</p>
+        <a href="ru.html" class="btn-lang">Начать Русский Марафон →</a>
       </div>
-    </section>
 
-    <!-- Shared Footer Component -->
-    <div class="practice-links">
-      <h4>Practice This Content:</h4>
-      <div class="practice-links-grid">
-        <a href="https://cosylanguages.github.io/COSYgames/" target="_blank">🎮 Play Games</a>
-        <a href="https://cosylanguages.github.io/COSYtools/" target="_blank">🛠️ Reference Tools</a>
-        <a href="https://cosylanguages.github.io/COSYworld/" target="_blank">🌍 Apply in COSY World</a>
-        <a href="https://cosylanguages.github.io/COSYlanguages/" target="_blank">🏠 Main Hub</a>
+      <div class="lang-card">
+        <span style="font-size: 2.5rem;">🇬🇷</span>
+        <h3>Ελληνικά</h3>
+        <p style="font-size:0.9rem; color:#4a5568;">Σκέψου και μίλα απευθείας στα ελληνικά χωρίς εσωτερική μετάφραση.</p>
+        <a href="el.html" class="btn-lang">Ξεκινήστε τα Ελληνικά →</a>
       </div>
     </div>
-  </main>
+  </section>
 
-  <footer class="main-footer">
-    <p>&copy; COSYlanguages. Private Manual Resource.</p>
-  </footer>
+  <!-- METHODOLOGY: HOW TO STOP MENTAL TRANSLATION -->
+  <section class="phase-box">
+    <h2>🧠 The 3-Phase Method: How to Stop Translating in Your Mind</h2>
+    <p>Mental translation creates a 1.5–3 second speech delay and causes constant hesitation. This marathon uses cognitive speech retraining in 3 distinct 10-day phases:</p>
+
+    <div style="margin-top: 1.25rem;">
+      <div style="background:#ebf8ff; border-left:4px solid #2b6cb0; padding:1rem; border-radius:6px; margin-bottom:1rem;">
+        <h4 style="margin:0 0 0.4rem; color:#1a365d;">Phase 1 (Days 1–10): Direct Concept Association & Inner Monologue</h4>
+        <p style="margin:0; font-size:0.95rem;">Connect objects, emotions, and actions directly to target language words without passing through your native language intermediate step. Practice live self-commentary.</p>
+      </div>
+
+      <div style="background:#e6fffa; border-left:4px solid #319795; padding:1rem; border-radius:6px; margin-bottom:1rem;">
+        <h4 style="margin:0 0 0.4rem; color:#234e52;">Phase 2 (Days 11–20): Rapid Circumlocution & Synonyms</h4>
+        <p style="margin:0; font-size:0.95rem;">When you get stuck or forget a word, <strong>NEVER pause to translate</strong>. Explain the concept using simple target language words, antonyms, or descriptions.</p>
+      </div>
+
+      <div style="background:#fff8e1; border-left:4px solid #f57f17; padding:1rem; border-radius:6px;">
+        <h4 style="margin:0 0 0.4rem; color:#795548;">Phase 3 (Days 21–30): Uninterrupted Flow & Spontaneous Monologues</h4>
+        <p style="margin:0; font-size:0.95rem;">Build long-form speaking endurance (2 to 5 minutes) on unscripted complex topics, debates, and future plans with zero pause allowance.</p>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Golden Rule of Fluency: An imperfect target language word spoken immediately is 10x better than a perfect native-translated word spoken with a 3-second pause!
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" style="background:#1a365d; color:#ffffff; padding:2.5rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="max-width:1000px; margin:0 auto;">
+    <p style="margin-bottom:0.5rem; font-weight:700; color:#ffffff;">COSYlanguages · 30-Day Speak & Think Marathon</p>
+    <p style="margin-bottom:1rem; font-size:0.9rem;"><a href="../../index.html" style="color:#63b3ed; text-decoration:none;">← Return to Main Repository Index</a></p>
+    <p style="font-size:0.8rem; color:#bee3f8;">© 2026 COSYlanguages. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
