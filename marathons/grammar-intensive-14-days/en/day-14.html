@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Day 14: Inversion, Cleft Sentences & Final Capstone Evaluation — English Grammar Intensive · COSY</title>
+<title>Day 14: Inversion, Cleft Sentences & Cumulative Synthesis — English Grammar Intensive · COSY</title>
+<meta name="description" content="Day 14 of English Grammar Intensive: Master Inversion, Cleft Sentences, and complete a 13-topic cumulative synthesis review.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,44 +13,228 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #f7fafc; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #1a365d, #2b6cb0); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
+  :root {
+    --g-primary: #1a365d;
+    --g-accent: #2b6cb0;
+    --g-light: #ebf8ff;
+    --g-border: #bee3f8;
+  }
+  body { font-family: 'Nunito', system-ui, -apple-system, sans-serif; color: #2d3748; background-color: #f7fafc; line-height: 1.65; }
+  .sd-sticky-header { position: sticky; top: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .sd-jump-links { display: flex; gap: 0.75rem; overflow-x: auto; padding: 0.75rem 1.5rem; white-space: nowrap; max-width: 1000px; margin: 0 auto; }
+  .sd-jump-link { color: #1a365d; text-decoration: none; font-weight: 700; font-size: 0.88rem; padding: 0.3rem 0.75rem; border-radius: 6px; background: #ebf8ff; }
+  .sd-jump-link:hover { background: #1a365d; color: #ffffff; }
+  .day-hero { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: #ffffff; padding: 3rem 1.5rem 2rem; text-align: center; border-bottom: 4px solid #63b3ed; }
+  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #ebf8ff; border-left: 4px solid #2b6cb0; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .celta-stage { background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+  .stage-badge { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 50px; display: inline-block; margin-bottom: 0.75rem; }
+  .celta-stage h2 { color: #1a365d; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e6fffa; border-left: 4px solid #319795; padding: 1rem; border-radius: 6px; }
+  .box-b { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-list { line-height: 1.8; padding-left: 1.25rem; }
+  .ccq-list li { margin-bottom: 1rem; }
+  .practice-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
+  details { background: #ebf8ff; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; cursor: pointer; }
+  details summary { font-weight: 700; color: #1a365d; }
+  .nav-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+  .nav-btn { background: #2b6cb0; color: #ffffff; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; }
+  .nav-btn:hover { background: #1a365d; }
 </style>
 </head>
 <body data-lang-theme="en">
 
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← English Hub</a>
+    <a href="#stage1" class="sd-jump-link">Stage 1 · Elicitation</a>
+    <a href="#stage2" class="sd-jump-link">Stage 2 · Inversion Rules</a>
+    <a href="#stage3" class="sd-jump-link">Stage 3 · CCQs</a>
+    <a href="#stage4" class="sd-jump-link">Stage 4 · Practice</a>
+    <a href="#stage5" class="sd-jump-link">Stage 5 · Capstone Synthesis</a>
+  </nav>
+</header>
+
 <header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇧 Day 14 / 14 · Grammar Intensive</span>
-  </div>
-  <h1>Inversion, Cleft Sentences & Final Capstone Evaluation</h1>
-  <p style="color:#ebf8ff; max-width:700px; margin:0.5rem auto 1rem;">Advanced emphasis structures, sentence focus, and continuous diagnostic reading.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Print Day 14
-  </button>
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">DAY 14 / 14 · GRAMMAR INTENSIVE</span>
+  <h1>Inversion, Cleft Sentences & Cumulative Synthesis</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#ebf8ff;">Master advanced emphasis structures and complete the 13-day marathon capstone evaluation.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Print Day 14 Lesson</button>
 </header>
 
 <main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 1 · Core Contrast</span>
-    <h2>1. Understanding the Difference</h2>
-    <div class="rule-card">
-      <strong>💡 Key Principle:</strong> Advanced emphasis structures, sentence focus, and continuous diagnostic reading.
+
+  <!-- STAGE 1: ELICITATION -->
+  <section id="stage1" class="celta-stage">
+    <span class="stage-badge">Stage 1 · Elicitation</span>
+    <h2>Compare standard emphasis with advanced rhetorical focus:</h2>
+    <div style="background:#ebf8ff; border-left:4px solid #2b6cb0; padding:1rem; border-radius:6px; font-size:1.1rem; margin:1rem 0;">
+      Standard: "I have rarely seen such dramatic scenery."<br>
+      Inversion: "<strong>Rarely have I seen</strong> such dramatic scenery."<br>
+      Cleft Sentence: "<strong>It was the scenic view that</strong> took my breath away."
+    </div>
+    <p><strong>Notice the structure:</strong> Inverted sentences place a negative or limiting adverb at the front, creating question word order (Auxiliary + Subject + Verb) for dramatic emphasis!</p>
+  </section>
+
+  <!-- STAGE 2: THE RULE -->
+  <section id="stage2" class="celta-stage">
+    <span class="stage-badge">Stage 2 · The Rule</span>
+    <h2>Core Rule: Question Word Order After Negative Adverbs</h2>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#234e52;">Grammatical Inversion</h4>
+        <p style="margin:0;">Negative / Limiting Adverb + Auxiliary Verb + Subject + Main Verb.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><strong>Triggers:</strong> <em>Seldom, Rarely, Never, Hardly... when, No sooner... than, Under no circumstances, Not only... but also</em>.</li>
+          <li><em>Example: Never have I heard such nonsense!</em></li>
+        </ul>
+      </div>
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#2b6cb0;">Cleft Sentences</h4>
+        <p style="margin:0;">Split a single clause into two clauses to isolate and highlight a specific detail.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><strong>It-Cleft:</strong> <em>It was John who broke the window.</em></li>
+          <li><strong>Wh-Cleft:</strong> <em>What I need right now is a hot cup of tea.</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Memory Trick: Negative Adverb in front? Pretend it's a question! (Adverb + Auxiliary + Subject + Verb).
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../a0-a2.html" style="color:#1a365d; text-decoration:none; font-weight:700;">← Module Overview</a>
-      <a href="../index.html" style="background:#2b6cb0; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Grammar Hub 🇬🇧</a>
-    </div>
+  <!-- STAGE 3: CCQS -->
+  <section id="stage3" class="celta-stage">
+    <span class="stage-badge">Stage 3 · Concept Check Questions (CCQs)</span>
+    <ol class="ccq-list">
+      <li>
+        <strong>Question:</strong> Is "Seldom I go there" grammatically correct?
+        <br><em>Answer:</em> No! Fronted "Seldom" requires inversion: "Seldom <strong>do I go</strong> there."
+      </li>
+      <li>
+        <strong>Question:</strong> In "No sooner had he arrived than the rain started," which word connects the second clause?
+        <br><em>Answer:</em> <strong>than</strong> (not "when")! "No sooner... than".
+      </li>
+      <li>
+        <strong>Question:</strong> Why do writers use cleft sentences and inversion?
+        <br><em>Answer:</em> For dramatic emphasis, contrast, formal speech, and highlighting key information.
+      </li>
+      <li>
+        <strong>Question:</strong> What follows "Under no circumstances"?
+        <br><em>Answer:</em> Inverted auxiliary word order (e.g. "Under no circumstances <strong>should you touch</strong> this wire").
+      </li>
+    </ol>
   </section>
+
+  <!-- STAGE 4: PRACTICE -->
+  <section id="stage4" class="celta-stage">
+    <span class="stage-badge">Stage 4 · Guided Practice (Inversion & Clefts)</span>
+    <h2>Rewrite using the prompt word in parentheses:</h2>
+
+    <div class="practice-item">
+      1. I have never seen such dedication. (Never)<br>
+      Rewrite: _____
+    </div>
+    <div class="practice-item">
+      2. She had hardly sat down when the doorbell rang. (Hardly)<br>
+      Rewrite: _____
+    </div>
+    <div class="practice-item">
+      3. You must not leave the room under any circumstances. (Under no circumstances)<br>
+      Rewrite: _____
+    </div>
+    <div class="practice-item">
+      4. I only want a peaceful night's sleep. (What)<br>
+      Rewrite: _____
+    </div>
+
+    <details>
+      <summary>🔍 Click to Reveal Answer Key & Explanations</summary>
+      <ol style="margin-top:0.5rem; padding-left:1.2rem; line-height:1.7;">
+        <li><strong>Never have I seen such dedication.</strong> — Negative fronting requires `have I seen`.</li>
+        <li><strong>Hardly had she sat down when the doorbell rang.</strong> — Inverted Past Perfect with `Hardly... when`.</li>
+        <li><strong>Under no circumstances must you / should you leave the room.</strong> — Prepositional negative fronting.</li>
+        <li><strong>What I want is a peaceful night's sleep.</strong> — Wh-cleft sentence for focus.</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- STAGE 5: CAPSTONE SYNTHESIS EVALUATION -->
+  <section id="stage5" class="celta-stage" style="border: 2px solid #2b6cb0; background: #faf5ff;">
+    <span class="stage-badge" style="background:#6b46c1; color:#ffffff;">Stage 5 🎓 Cumulative 14-Day Synthesis Capstone</span>
+    <h2 style="color:#4c1d95;">Full Marathon Master Diagnostics (Days 1–13)</h2>
+    <p>Test your mastery across every grammar confusion pair learned in this 14-day intensive course!</p>
+
+    <div class="practice-item">
+      <strong>Day 1 (Articles):</strong> He bought _____ university degree in _____ UK. (a / an / the / Ø)
+    </div>
+    <div class="practice-item">
+      <strong>Day 2 (Present Tenses):</strong> She usually _____ (teach) French, but this term she _____ (study) Spanish.
+    </div>
+    <div class="practice-item">
+      <strong>Day 3 (Past vs Perf):</strong> I _____ (live) in Berlin in 2018, but I _____ (live) in Munich since 2021.
+    </div>
+    <div class="practice-item">
+      <strong>Day 4 (Future):</strong> Look at those dark clouds! It _____ (rain).
+    </div>
+    <div class="practice-item">
+      <strong>Day 5 (Past Continuous):</strong> I _____ (read) a novel when the lights suddenly _____ (go) out.
+    </div>
+    <div class="practice-item">
+      <strong>Day 6 (Past Perfect):</strong> By the time the police arrived, the burglar _____ (escape).
+    </div>
+    <div class="practice-item">
+      <strong>Day 7 (Used To / Would):</strong> When we were kids, my grandfather _____ (tell) us stories, but he _____ (live) in a different town.
+    </div>
+    <div class="practice-item">
+      <strong>Day 8 (Modals):</strong> You _____ smoke inside the library! It is strictly illegal.
+    </div>
+    <div class="practice-item">
+      <strong>Day 9 (Conditionals):</strong> If I had known about the party yesterday, I _____ (attend) it.
+    </div>
+    <div class="practice-item">
+      <strong>Day 10 (Rel Clauses):</strong> The car _____ my father bought last week is very fast.
+    </div>
+    <div class="practice-item">
+      <strong>Day 11 (Passive Voice):</strong> Active: "They built this castle in 1450." → Passive: "This castle _____ in 1450."
+    </div>
+    <div class="practice-item">
+      <strong>Day 12 (Reported Speech):</strong> Direct: "I am going home today." → Reported: He said that he _____ home _____.
+    </div>
+    <div class="practice-item">
+      <strong>Day 13 (Gerunds/Infinitives):</strong> Please stop _____ (make) so much noise! I am trying _____ (concentrate).
+    </div>
+
+    <details style="background:#f3e8ff;">
+      <summary style="color:#4c1d95;">🏆 Click to Reveal Complete Synthesis Answer Key & Explanations</summary>
+      <ol style="margin-top:0.5rem; padding-left:1.2rem; line-height:1.7; color:#2d3748;">
+        <li><strong>a / the</strong> — "a university" (/j/ sound) and "the UK" (country with political union).</li>
+        <li><strong>teaches / is studying</strong> — Habitual baseline vs temporary term focus.</li>
+        <li><strong>lived / have lived</strong> — Finished year (2018) vs open period from 2021 up to present (`since`).</li>
+        <li><strong>is going to rain</strong> — Immediate physical visual evidence.</li>
+        <li><strong>was reading / went</strong> — Continuous background action interrupted by sudden event.</li>
+        <li><strong>had escaped</strong> — Action completed prior to police arrival.</li>
+        <li><strong>would tell (or used to tell) / used to live</strong> — Action (tell) accepts would/used to; State verb (live) requires `used to`.</li>
+        <li><strong>mustn't</strong> — Strict prohibition / illegal act.</li>
+        <li><strong>would have attended</strong> — 3rd conditional past regret.</li>
+        <li><strong>that / which / Ø</strong> — Defining relative clause object pronoun.</li>
+        <li><strong>was built</strong> — Past Simple passive (`was + V3`).</li>
+        <li><strong>was going / that day</strong> — Present continuous backshifted to Past Continuous + time adjustment.</li>
+        <li><strong>making / to concentrate</strong> — Stop doing an activity (`V-ing`) + Try attempting a task (`to + V1`).</li>
+      </ol>
+    </details>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="day-13.html" class="nav-btn">← Day 13: Gerunds</a>
+    <a href="../index.html" class="nav-btn">Grammar Hub 🇬🇧</a>
+  </footer>
+
 </main>
+
 </body>
 </html>
