@@ -1,0 +1,126 @@
+{
+  "title": "Master Guide to Confusing English Grammar Usage (A vs B)",
+  "language": "en",
+  "levels": {
+    "a0_a2": [
+      {
+        "id": "a-vs-an",
+        "level": "A0-A1",
+        "point": "a vs an",
+        "core_difference": "Use 'a' before consonant sounds; use 'an' before vowel sounds.",
+        "usage_a": "Use 'a' when the next word begins with a consonant sound (e.g. a car, a university /j-sound/).",
+        "usage_b": "Use 'an' when the next word begins with a vowel sound (e.g. an apple, an hour /silent h/).",
+        "examples": ["I bought a car yesterday.", "She has an apple in her bag.", "He studied at a university.", "We waited for an hour."],
+        "quick_logic": "Listen to the first sound, not the first letter.",
+        "common_mistakes": ["❌ a hour → ✓ an hour", "❌ an university → ✓ a university"],
+        "memory_trick": "Sound determines the article: Vowel sound = AN, Consonant sound = A."
+      },
+      {
+        "id": "a-vs-the",
+        "level": "A0-A1",
+        "point": "a / an vs the vs zero article (Ø)",
+        "core_difference": "a/an = non-specific singular countable; the = specific/known; Ø = general plural/uncountable.",
+        "usage_a": "Use a/an when introducing something for the first time or any one of a category.",
+        "usage_b": "Use the when both speaker and listener know exactly which specific item is meant.",
+        "examples": ["I saw a dog in the park.", "The dog was barking at me.", "Ø Dogs are loyal animals."],
+        "quick_logic": "Ask 'Which one?' → If clear, use THE. If general/any, use A/AN or Ø.",
+        "common_mistakes": ["❌ I like the dogs in general. → ✓ I like dogs."],
+        "memory_trick": "First time = A/AN, Second time = THE."
+      },
+      {
+        "id": "present-simple-vs-continuous",
+        "level": "A0-A1",
+        "point": "Present Simple vs Present Continuous",
+        "core_difference": "Present Simple = habits, routines, facts. Present Continuous = actions happening right now or temporary situations.",
+        "usage_a": "Present Simple for permanent truths and regular habits (always, usually, every day).",
+        "usage_b": "Present Continuous for active events happening right now or temporary phases (this week, currently).",
+        "examples": ["She works in London.", "She is working from home this week.", "Water boils at 100°C."],
+        "quick_logic": "Routine/Permanent = Simple. Right now/Temporary = Continuous.",
+        "common_mistakes": ["❌ I am knowing him. → ✓ I know him. (Stative verbs don't take continuous)"],
+        "memory_trick": "Always/Usually → Simple. Right now → Continuous."
+      },
+      {
+        "id": "past-simple-vs-present-perfect",
+        "level": "A2",
+        "point": "Past Simple vs Present Perfect",
+        "core_difference": "Past Simple = finished action in a finished time. Present Perfect = past action connected to the present.",
+        "usage_a": "Past Simple with specific finished time markers (yesterday, last year, in 2020, ago).",
+        "usage_b": "Present Perfect for life experiences, unfinished time (today, this week), or present results.",
+        "examples": ["I visited Rome in 2019.", "I have visited Rome three times.", "She lost her keys yesterday.", "She has lost her keys (she doesn't have them now)."],
+        "quick_logic": "Finished time word? → Past Simple. Connection to now? → Present Perfect.",
+        "common_mistakes": ["❌ I have seen him yesterday. → ✓ I saw him yesterday."],
+        "memory_trick": "Yesterday closes the door (Past Simple). Present Perfect keeps the door open."
+      },
+      {
+        "id": "will-vs-going-to",
+        "level": "A2",
+        "point": "Will vs Be Going To",
+        "core_difference": "Will = instant decisions/promises/predictions. Going to = prior plans/intentions & evidence-based predictions.",
+        "usage_a": "Use 'will' when deciding on the spot or offering help.",
+        "usage_b": "Use 'going to' when a plan was made before speaking or when present evidence points to the outcome.",
+        "examples": ["The phone is ringing. I'll get it!", "Look at those dark clouds! It's going to rain.", "We are going to buy a new car next month."],
+        "quick_logic": "Decided now? → WILL. Decided before / Evidence now? → GOING TO.",
+        "common_mistakes": ["❌ I decided yesterday. I will visit him tomorrow. → ✓ I am going to visit him."],
+        "memory_trick": "Will = Instant Spark. Going to = Pre-planned Path."
+      }
+    ],
+    "b1_b2": [
+      {
+        "id": "past-simple-vs-past-continuous",
+        "level": "B1",
+        "point": "Past Simple vs Past Continuous",
+        "core_difference": "Past Continuous = background action in progress. Past Simple = interrupting event.",
+        "usage_a": "Past Continuous sets the background scene (was walking, were studying).",
+        "usage_b": "Past Simple expresses completed actions that happen in sequence or interrupt.",
+        "examples": ["I was cooking dinner when the phone rang.", "While we were sleeping, it started to snow."],
+        "quick_logic": "Long background action = Continuous. Short interrupting event = Simple.",
+        "common_mistakes": ["❌ When I was arriving, he spoke. → ✓ When I arrived, he was speaking."],
+        "memory_trick": "Continuous is the movie background, Simple is the sudden strike."
+      },
+      {
+        "id": "used-to-vs-would",
+        "level": "B1",
+        "point": "Used to vs Would (Past Habits & States)",
+        "core_difference": "Used to works for both past states and habits. Would ONLY works for repeated past actions.",
+        "usage_a": "Used to for past states (live, have, be, like) and repeated past actions that no longer happen.",
+        "usage_b": "Would for repeated nostalgic past actions only (never for past states).",
+        "examples": ["I used to live in Paris. (State)", "Every summer, we would go camping by the lake. (Repeated action)"],
+        "quick_logic": "State verb (live, be, have)? → MUST use Used to. Action verb? → Can use Used to or Would.",
+        "common_mistakes": ["❌ I would live in London when I was young. → ✓ I used to live in London."],
+        "memory_trick": "Would needs action; Used to takes both state and action."
+      },
+      {
+        "id": "conditionals-1-2-3",
+        "level": "B1-B2",
+        "point": "Conditionals (1st vs 2nd vs 3rd vs Mixed)",
+        "core_difference": "1st = real future; 2nd = unreal present/hypothetical; 3rd = unreal past regret.",
+        "usage_a": "1st Conditional (If + Present, Will + V): real future possibilities.",
+        "usage_b": "2nd Conditional (If + Past Simple, Would + V): imaginary/unreal present situations.",
+        "usage_c": "3rd Conditional (If + Past Perfect, Would have + V3): unreal past events that cannot change.",
+        "examples": [
+          "If it rains tomorrow, we will stay home. (1st)",
+          "If I won the lottery today, I would buy an island. (2nd)",
+          "If I had studied harder last year, I would have passed the exam. (3rd)"
+        ],
+        "quick_logic": "Real future = 1st. Unreal present = 2nd. Unreal past = 3rd.",
+        "common_mistakes": ["❌ If I would win, I will buy... → ✓ If I win, I will buy..."],
+        "memory_trick": "Step back in time for higher irreality: Present → Past → Past Perfect."
+      },
+      {
+        "id": "defining-vs-non-defining-relative",
+        "level": "B2",
+        "point": "Defining vs Non-Defining Relative Clauses",
+        "core_difference": "Defining = essential information (no commas, 'that' allowed). Non-defining = extra info (commas required, no 'that').",
+        "usage_a": "Defining relative clauses identify exactly which person or thing is being talked about.",
+        "usage_b": "Non-defining relative clauses add extra commentary that could be dropped without breaking core meaning.",
+        "examples": [
+          "The car that I bought last week is very fast. (Defining)",
+          "My brother, who lives in Sydney, is a doctor. (Non-defining)"
+        ],
+        "quick_logic": "Drop the clause: does the sentence lose its identity? If yes → Defining (no commas). If no → Non-defining (commas).",
+        "common_mistakes": ["❌ My father, that is 60, retired. → ✓ My father, who is 60, retired."],
+        "memory_trick": "Commas hug extra information. 'That' hates commas!"
+      }
+    ]
+  }
+}

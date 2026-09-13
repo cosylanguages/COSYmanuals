@@ -1,0 +1,131 @@
+{
+  "title": "Guide Master des Confusions Grammaticales en Français (A vs B)",
+  "language": "fr",
+  "levels": {
+    "a0_a2": [
+      {
+        "id": "tu-vs-vous",
+        "level": "A0-A1",
+        "point": "Tu vs Vous",
+        "core_difference": "Tu = informal singular; Vous = formal singular OR plural.",
+        "usage_a": "Utilisez 'tu' pour une personne familière ou un ami (tutoiement).",
+        "usage_b": "Utilisez 'vous' pour s'adresser à plusieurs personnes ou pour marquer le respect/la politesse.",
+        "examples": ["Tu vas bien, Thomas ?", "Vous allez bien, Monsieur ?", "Vous venez tous demain ?"],
+        "quick_logic": "Proximité sociale = TU. Distance sociale ou Pluriel = VOUS.",
+        "common_mistakes": ["❌ Tu êtes français ? → ✓ Tu es français ? / Vous êtes français ?"],
+        "memory_trick": "Tu = Tutoiement amical. Vous = Vouvoiement de politesse ou Pluriel."
+      },
+      {
+        "id": "c-est-vs-il-est",
+        "level": "A0-A1",
+        "point": "C'est vs Il est / Elle est",
+        "core_difference": "C'est + nom déterminé / appreciation; Il/Elle est + adjectif / profession sans article.",
+        "usage_a": "C'est + nom déterminé (C'est mon frère) ou appreciation générale (C'est beau).",
+        "usage_b": "Il/Elle est + adjectif qualificatif ou profession sans article (Il est médecin).",
+        "examples": ["C'est un bon médecin.", "Elle est médecin.", "C'est intéressant.", "Il est intéressant."],
+        "quick_logic": "Article (un/mon/le) devant le nom? → C'EST. Adjectif seul ou profession sans article? → IL/ELLE EST.",
+        "common_mistakes": ["❌ Il est un médecin. → ✓ C'est un médecin. / Il est médecin."],
+        "memory_trick": "C'est aime les articles (un/le/mon). Il est aime les adjectifs nus."
+      },
+      {
+        "id": "savoir-vs-connaitre",
+        "level": "A0-A1",
+        "point": "Savoir vs Connaître",
+        "core_difference": "Savoir + verbe/proposition (compétence/fait); Connaître + nom (familiarité avec lieu/personne).",
+        "usage_a": "Savoir + infinitif (Savoir faire quelque chose) ou + que/qui/où (Savoir un fait).",
+        "usage_b": "Connaître + nom direct (personne, ville, livre, sujet). Jamais suivi d'un verbe!",
+        "examples": ["Je sais nager.", "Je sais que tu viens.", "Je connais Paris.", "Je connais cette actrice."],
+        "quick_logic": "Suivi d'un verbe ou de 'que'? → SAVOIR. Suivi d'un nom propre ou lieu? → CONNAÎTRE.",
+        "common_mistakes": ["❌ Je connais nager. → ✓ Je sais nager.", "❌ Je sais cette femme. → ✓ Je connais cette femme."],
+        "memory_trick": "Savoir s'associe à l'action. Connaître s'associe aux personnes et aux lieux."
+      },
+      {
+        "id": "passe-compose-vs-imparfait",
+        "level": "A2",
+        "point": "Passé Composé vs Imparfait",
+        "core_difference": "Passé composé = événement ponctuel/achevé; Imparfait = description/habitude/décor.",
+        "usage_a": "Passé composé pour les actions précises, soudaines et terminées dans le passé.",
+        "usage_b": "Imparfait pour les habitudes du passé, les descriptions de décor ou les actions en cours.",
+        "examples": ["Il pleuvait quand Marie est arrivée.", "Tous les dimanches, nous mangions chez ma grand-mère.", "J'ai acheté une voiture hier."],
+        "quick_logic": "Décor/Habitude = Imparfait. Action ponctuelle/Changement = Passé composé.",
+        "common_mistakes": ["❌ Hier, j'imparfaitai. → ✓ Hier, j'ai mangé."],
+        "memory_trick": "L'imparfait est le film en arrière-plan; le passé composé est le coup de théâtre!"
+      },
+      {
+        "id": "futur-proche-vs-futur-simple",
+        "level": "A2",
+        "point": "Futur Proche vs Futur Simple",
+        "core_difference": "Futur proche = intention/événement imminent; Futur simple = prédiction/promesse/officiel.",
+        "usage_a": "Futur proche (Aller + Infinitif) pour les décisions imminentes ou intentions de conversation.",
+        "usage_b": "Futur simple (Verbe + -ai, -as, -a...) pour les projets lointains, promesses et style écrit.",
+        "examples": ["Je vais partir dans 5 minutes.", "Un jour, je visiterai le Japon.", "Il va pleuvoir (regarde les nuages)."],
+        "quick_logic": "Imminent / Conversation = Futur proche. Formel / Lointain = Futur simple.",
+        "common_mistakes": ["❌ Dans 2 secondes je partirai. → ✓ Je vais partir."],
+        "memory_trick": "Futur proche = Action imminente. Futur simple = Horizon lointain."
+      }
+    ],
+    "b1_b2": [
+      {
+        "id": "indicatif-vs-subjonctif",
+        "level": "B1",
+        "point": "Indicatif vs Subjonctif",
+        "core_difference": "Indicatif = réalité, certitude, fait constaté; Subjonctif = doute, volonté, émotion, nécessité.",
+        "usage_a": "Indicatif après les verbes de certitude et de constatation (Je sais que, Je pense que).",
+        "usage_b": "Subjonctif après la volonté, la nécessité, le doute et l'émotion (Il faut que, Je veux que, Je doute que).",
+        "examples": ["Je sais qu'il est là.", "Il faut qu'il soit là.", "Je pense qu'elle réussira.", "Je ne pense pas qu'elle réussisse."],
+        "quick_logic": "Fait / Certitude = Indicatif. Volonté / Doute / Émotion / Nécessité = Subjonctif.",
+        "common_mistakes": ["❌ Je veux que tu viens. → ✓ Je veux que tu viennes."],
+        "memory_trick": "L'indicatif décrit le monde réel. Le subjonctif exprime l'esprit et le désir."
+      },
+      {
+        "id": "depuis-vs-pendant-vs-pour",
+        "level": "B1",
+        "point": "Depuis vs Pendant vs Pour",
+        "core_difference": "Depuis = encore vrai maintenant; Pendant = durée terminée/délimitée; Pour = durée future prévue.",
+        "usage_a": "Depuis pour une action commencée dans le passé et qui continue dans le présent.",
+        "usage_b": "Pendant pour une durée complète et délimitée (passée ou future).",
+        "usage_c": "Pour pour une durée future prévue (uniquement avec des projets).",
+        "examples": ["J'habite ici depuis 3 ans. (J'y habite encore)", "J'ai dormi pendant 8 heures. (C'est fini)", "Je pars à Paris pour 3 jours. (Projet futur)"],
+        "quick_logic": "Encore en cours? → DEPUIS. Durée totale terminée? → PENDANT. Durée future prévue? → POUR.",
+        "common_mistakes": ["❌ J'habite ici pour 3 ans (pour le passé). → ✓ J'habite ici depuis 3 ans."],
+        "memory_trick": "Depuis garde le présent vivant. Pendant ferme la parenthèse."
+      },
+      {
+        "id": "qui-vs-que-vs-dont-vs-ou",
+        "level": "B1-B2",
+        "point": "Pronoms Relatifs (Qui vs Que vs Dont vs Où)",
+        "core_difference": "Qui = sujet; Que = COD; Dont = complément avec 'de'; Où = lieu/temps.",
+        "usage_a": "Qui remplace le sujet du verbe suivant (La personne qui parle).",
+        "usage_b": "Que remplace le complément d'objet direct COD (Le livre que je lis).",
+        "usage_c": "Dont remplace un complément introduit par 'de' (Le livre dont je parle / parler de).",
+        "usage_d": "Où remplace un complément de lieu ou de temps (La ville où j'habite / le jour où...).",
+        "examples": [
+          "C'est l'homme qui a téléphoné.",
+          "C'est le film que j'ai vu hier.",
+          "C'est la maison dont j'ai toujours rêvé (rêver de).",
+          "C'est le pays où je suis né."
+        ],
+        "quick_logic": "Cherchez le rôle grammatical : Sujet = QUI, COD = QUE, De + Nom = DONT, Lieu/Temps = OÙ.",
+        "common_mistakes": ["❌ Le livre que j'ai besoin. → ✓ Le livre dont j'ai besoin (avoir besoin de)."],
+        "memory_trick": "De → DONT. Lieu → OÙ. Sujet → QUI. Objet → QUE."
+      },
+      {
+        "id": "conditionnel-vs-futur",
+        "level": "B2",
+        "point": "Conditionnel vs Futur",
+        "core_difference": "Futur = certitude / prédiction; Conditionnel = hypothèse / politesse / fait incertain.",
+        "usage_a": "Futur simple pour les faits futurs certains ou les promesses.",
+        "usage_b": "Conditionnel présent pour les hypothèses (Si + Imparfait), demandes polies, ou infos journalistiques non confirmées.",
+        "examples": [
+          "Demain, je visiterai le musée.",
+          "Si j'avais le temps, je visiterai le musée (Conditionnel).",
+          "Je voudrais un café, s'il vous plaît (Politesse).",
+          "Le président serait en voyage (Info non confirmée)."
+        ],
+        "quick_logic": "Réel / Futur = Futur simple. Si + Imparfait / Politesse = Conditionnel.",
+        "common_mistakes": ["❌ Si j'aurais le temps... → ✓ Si j'avais le temps, je viendrais."],
+        "memory_trick": "Les 'si' n'aiment pas les 'rai' ! (Si + imparfait → conditionnel)."
+      }
+    ]
+  }
+}
