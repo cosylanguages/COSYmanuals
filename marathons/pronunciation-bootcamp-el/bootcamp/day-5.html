@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ημέρα 5: Μαλακά Γ / Χ, Τελικό -ν & Αφομοίωση — Bootcamp Ελληνικής Προφοράς · COSY</title>
+<title>🇬🇷 Ημέρα 5 — Μαλακά Γ/Χ, Τελικό -ν & Αφομοίωση · Bootcamp Ελληνικής Προφοράς · COSY</title>
+<meta name="description" content="Ημέρα 5 του 7ήμερου Bootcamp Ελληνικής Προφοράς: Μαλακή προφορά των γ/χ πριν από ε/ι, κανόνες διατήρησης του τελικού -ν, και ηχηροποίηση του σ (/z/).">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,47 +13,250 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2c3e50; background: #f4f8fb; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #003366, #005bae); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
-  .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e6f0fa; color: #005bae; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #e6f0fa; border-left: 4px solid #005bae; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  :root {
+    --el-primary: #003366;
+    --el-accent: #005bae;
+    --el-light: #e6f0fa;
+    --el-border: #b3d7ff;
+  }
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sd-jump-link:hover { background: #005bae; color: #ffffff; }
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b3d7ff;
+  }
+  .mp-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+  .mp-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .stage-badge {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .celta-stage h2 { color: #003366; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+  .rule-card {
+    background: #f4f8fb;
+    border-left: 4px solid #005bae;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .rule-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+  .hint-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
 </style>
 </head>
 <body data-lang-theme="el">
 
-<header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇷 Ημέρα 5 / 7 · Στάδιο CELTA: Φωνητικά Περιβάλλοντα</span>
-  </div>
-  <h1>Μαλακά Γ / Χ, Τελικό -ν & Αφομοίωση</h1>
-  <p style="color:#e6f0fa; max-width:700px; margin:0.5rem auto 1rem;">Μάθετε την επίδραση των μπροστινών φωνηέντων στα γ/χ και τους κανόνες του τελικού -ν.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Εκτύπωση Ημέρας 5
-  </button>
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#warmer" class="sd-jump-link">1. Προθέρμανση</a>
+    <a href="#elicit" class="sd-jump-link">2. Εισαγωγή</a>
+    <a href="#explanation" class="sd-jump-link">3. Κανόνες & Πίνακας</a>
+    <a href="#ccq" class="sd-jump-link">4. Ερωτήσεις CCQ</a>
+    <a href="#drill" class="sd-jump-link">5. Καθοδηγούμενη Άσκηση</a>
+    <a href="#freepractice" class="sd-jump-link">6. Ελεύθερη Ανάγνωση</a>
+    <a href="#takeaway" class="sd-jump-link">7. Σύνοψη</a>
+  </nav>
 </header>
 
-<main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 1 · Μαλακό γ και χ</span>
-    <h2>1. Πριν από ε, ι vs. α, ο, ου</h2>
-    <p>Τα γράμματα γ και χ αποκτούν πιο μπροστινή, μαλακή προφορά πριν από ήχους /e/ και /i/.</p>
+<header class="mp-hero">
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">ΗΜΕΡΑ 5 / 7 · ΦΩΝΗΤΙΚΑ ΠΕΡΙΒΑΛΛΟΝΤΑ & ΑΦΟΜΟΙΩΣΗ</span>
+  <h1>Ημέρα 5 — Μαλακά Γ / Χ, Τελικό -ν & Αφομοίωση</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#e6f0fa;">Μάθετε την επίδραση των φωνηέντων ε/ι στα γ/χ, τους κανόνες του τελικού -ν, και την ηχηροποίηση του σ σε /z/.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Εκτύπωση Ημέρας 5</button>
+</header>
+
+<main class="mp-container">
+
+  <!-- STAGE 1: WARMER -->
+  <section id="warmer" class="celta-stage">
+    <span class="stage-badge">Στάδιο 1 🎯 Προθέρμανση</span>
+    <h2>Διαβάστε αυτές τις λέξεις δυνατά:</h2>
+    <div style="text-align:center; font-size:1.6rem; font-weight:800; color:#003366; margin:1rem 0;">
+      « γάλα » [gala] &nbsp; vs. &nbsp; « γέρος » [jeros]
+      <br><span style="font-size:1.3rem;">« τον πατέρα » [ton patera] &nbsp; vs. &nbsp; « το(ν) φίλο » [to filo]</span>
+    </div>
+    <p>Γιατί το <strong>γ</strong> αλλάζει ήχο όταν ακολουθεί <em>ε</em> ή <em>ι</em>; Και γιατί το <strong>-ν</strong> στο άρθρο <em>τον/την</em> μερικές φορές μένει και μερικές φορές εξαφανίζεται;</p>
+  </section>
+
+  <!-- STAGE 2: ELICITATION -->
+  <section id="elicit" class="celta-stage">
+    <span class="stage-badge">Στάδιο 2 🤔 Εισαγωγή & Παρατήρηση</span>
+    <h2>Συγκρίνετε τα τρία φωνητικά φαινόμενα:</h2>
+    <ul style="font-size:1.1rem; line-height:1.8;">
+      <li><strong>1. Μαλακό Γ / Χ (Πριν από ε, ι):</strong>
+        <br>• γ<strong>ά</strong>λα [ɣala] (σκληρό) vs. γ<strong>έ</strong>ρος [ʝeros] / γ<strong>η</strong> [ʝi] (μαλακό [j]).
+        <br>• χ<strong>α</strong>ρά [xara] (σκληρό) vs. χ<strong>έ</strong>ρι [çeri] / χ<strong>ι</strong>όνι [çoni] (μαλακό [ç]).
+      </li>
+      <li><strong>2. Διατήρηση Τελικού -ν (τον, την, δεν, μην):</strong>
+        <br>• το<strong>ν</strong> <strong>π</strong>ατέρα, τη<strong>ν</strong> <strong>κ</strong>όρη, δε<strong>ν</strong> <strong>τ</strong>ρέχω (ακολουθεί φωνήεν ή κ, π, τ, ξ, ψ, μπ, ντ, γκ).
+        <br>• το <strong>φ</strong>ίλο, τη <strong>θ</strong>άλασσα, δε <strong>γ</strong>ράφω (ακολουθεί τριβόμενο σύμφωνο φ, θ, χ, β, δ, γ, σ, ζ, λ, μ, ν, ρ).
+      </li>
+      <li><strong>3. Ηχηροποίηση του Σίγμα (σ → /z/):</strong>
+        <br>• <strong>σ</strong>πίτι [spiti] (/s/) vs. κό<strong>σ</strong>μος [kosmos] (/z/), τει<strong>σ</strong>μό [tismos] (/z/).
+      </li>
+    </ul>
+  </section>
+
+  <!-- STAGE 3: EXPLANATION -->
+  <section id="explanation" class="celta-stage">
+    <span class="stage-badge">Στάδιο 3 📖 Κανόνες & Πίνακες</span>
+
     <div class="rule-card">
-      <strong>💡 Παραδείγματα:</strong>
-      <br>• γέρος [ʝeros], γη [ʝi] vs. γάλα [ɣala], γόνατο [ɣonato]
-      <br>• χέρι [çeri], χιόνι [çoni] vs. χαρά [xara], χώρος [xoros]
+      <h3>1. Μαλακά vs. Σκληρά Γ και Χ</h3>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Γράμμα</th><th>Σκληρή Προφορά (Πριν από α, ο, ου)</th><th>Μαλακή Προφορά (Πριν από ε, ι)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Γ γ</strong></td>
+            <td><strong>/ɣ/</strong> (υπερωικό τριβόμενο: γάλα, γόνατο, γούνα)</td>
+            <td><strong>/ʝ/</strong> (ουρανικό: γέρος, γη, γιατρός)</td>
+          </tr>
+          <tr>
+            <td><strong>Χ χ</strong></td>
+            <td><strong>/x/</strong> (σκληρό χ: χαρά, χρόνος, χωριό)</td>
+            <td><strong>/ç/</strong> (μαλακό χ: χέρι, χιόνι, χείλι)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. Κανόνας Τελικού -ν (τον, την, έναν, δεν, μην)</h2>
+    <p>Το τελικό <strong>-ν</strong> διατηρείται υποχρεωτικά όταν η επόμενη λέξη αρχίζει από:</p>
+    <ul>
+      <li><strong>Φωνήεν:</strong> τον <u>ά</u>νθρωπο, την <u>ε</u>ικόνα, δεν <u>έ</u>χω.</li>
+      <li><strong>Στιγμιαίο σύμφωνο (κ, π, τ, ξ, ψ):</strong> τον <u>π</u>ατέρα, την <u>κ</u>όρη, δεν <u>τ</u>ρέχω.</li>
+      <li><strong>Δίψηφο σύμφωνο (μπ, ντ, γκ):</strong> τον <u>μπ</u>αμπά, την <u>ντ</u>ομάτα.</li>
+    </ul>
+    <p>Αντίθετα, το τελικό -ν <strong>χάνεται</strong> πριν από τριβόμενα και υγρά σύμφωνα (β, γ, δ, ζ, θ, κλπ.): <em>το φίλο, τη δασκάλα, δε θέλω</em>.</p>
+    <div class="hint-box">
+      <strong>💡 Εξαίρεση:</strong> Στο αρσενικό άρθρο <strong>τον</strong> και στην αντωνυμία <strong>αυτόν</strong>, η δημοτική γραμματική συνιστά πλέον τη διατήρηση του -ν για την αποφυγή σύγχυσης με το ουδέτερο <strong>το</strong>!
+    </div>
+
+    <h2>3. Ηχηροποίηση του Σίγμα (σ → /z/)</h2>
+    <p>Όταν το <strong>σ</strong> βρίσκεται πριν από ηχηρό σύμφωνο (β, γ, δ, μ, ν, ρ, μπ, ντ, γκ), προφέρεται αυτόματα ως <strong>/z/</strong>:</p>
+    <ul>
+      <li>κό<strong>σ</strong>μος [kozmos], <strong>σ</strong>βήνω [zvino], <strong>σ</strong>μαράγδι [zmaragdi]</li>
+      <li>το<strong>ς</strong> δίνω [toz dino], τι<strong>ς</strong> μέρες [tiz meres]</li>
+    </ul>
+  </section>
+
+  <!-- STAGE 4: CCQ -->
+  <section id="ccq" class="celta-stage">
+    <span class="stage-badge">Stage 4 ❓ Ερωτήσεις Ελέγχου Κατανόησης (CCQs)</span>
+    <ol style="line-height:1.8;">
+      <li><strong>Ερώτηση:</strong> Πώς προφέρεται το γράμμα χ στη λέξη "χέρι" σε σύγκριση με τη λέξη "χαρά";
+        <br><em>Απάντηση: Στο "χέρι" είναι μαλακό /ç/ επειδή ακολουθεί ε, ενώ στο "χαρά" είναι σκληρό /x/ επειδή ακολουθεί α.</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Γράφουμε "δεν πιστεύω" ή "δε πιστεύω";
+        <br><em>Απάντηση: "δεν πιστεύω", επειδή η επόμενη λέξη αρχίζει από π (στιγμιαίο σύμφωνο).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Πώς προφέρεται το σ στη λέξη "κόσμος";
+        <br><em>Απάντηση: Προφέρεται /z/ (kozmos) επειδή ακολουθεί το ηχηρό σύμφωνο μ.</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5: GUIDED DRILL -->
+  <section id="drill" class="celta-stage">
+    <span class="stage-badge">Stage 5 🏋️ Καθοδηγούμενη Άσκηση (Φωνητική Προσαρμογή)</span>
+    <p>Διαβάστε τις παρακάτω φράσεις δυνατά, εφαρμόζοντας τους κανόνες αφομοίωσης:</p>
+    <table class="mp-table">
+      <thead>
+        <tr><th>Γραπτή Μορφή</th><th>Φωνητική Προφορά IPA</th><th>Φαινόμενο</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>γάλα [gala] vs. γέρος [jeros]</td><td>/ɣala/ vs. /ʝeros/</td><td>Σκληρό γ vs. Μαλακό γ</td></tr>
+        <tr><td>τον πατέρα</td><td>[ton patera]</td><td>Διατήρηση -ν πριν από π</td></tr>
+        <tr><td>τη θάλασσα</td><td>[ti thalassa]</td><td>Αποβολή -ν πριν από θ</td></tr>
+        <tr><td>σβήνω φως</td><td>[zvino fos]</td><td>Ηχηροποίηση σ → /z/ πριν από β</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- STAGE 6: FREE PRACTICE -->
+  <section id="freepractice" class="celta-stage">
+    <span class="stage-badge">Stage 6 📖 Ελεύθερη Ανάγνωση</span>
+    <p>Διαβάστε το κείμενο δυνατά. Προσέξτε τα μαλακά γ/χ, τη διατήρηση του -ν και την προφορά του σ:</p>
+    <div style="background:#f4f8fb; padding:1.25rem; border-radius:8px; border:1px solid #e2e8f0; font-size:1.1rem; line-height:1.8;">
+      1. Ο <strong>γιατρός</strong> κρατάει το <strong>χέρι</strong> του <strong>γέρου</strong> στο νοσοκομείο.<br>
+      2. <strong>Δεν</strong> θέλω να χάσω <strong>τον</strong> <strong>κ</strong>αφέ μου, αλλά βλέπω <strong>τη</strong> <strong>θ</strong>άλασσα.<br>
+      3. Όλος ο <strong>κόσμος</strong> κοιτάζει το <strong>σμαράγδι</strong> που <strong>σβήνει</strong> στο σκοτάδι.
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 2 · Πλοήγηση</span>
-    <div style="display:flex; justify-between; align-items:center;">
-      <a href="day-4.html" style="color:#005bae; text-decoration:none; font-weight:700;">← Ημέρα 4</a>
-      <a href="day-6.html" style="background:#005bae; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Ημέρα 6 →</a>
+  <!-- STAGE 7: TAKEAWAY -->
+  <section id="takeaway" class="celta-stage" style="background:#e6f0fa; border-color:#b3d7ff;">
+    <span class="stage-badge" style="background:#005bae; color:#ffffff;">Stage 7 🔑 Σύνοψη Ημέρας 5</span>
+    <h2>Χρυσός Κανόνας της Ημέρας 5:</h2>
+    <div style="font-size:1.15rem; font-weight:700; color:#003366;">
+      γ/χ = μαλακά (/ʝ/, /ç/) πριν από ε/ι, το τελικό -ν μένει πριν από φωνήεντα & κ, π, τ, ξ, ψ, μπ, ντ, γκ, και το σ ηχηροποιείται σε /z/ πριν από ηχηρά!
     </div>
   </section>
+
 </main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="display:flex; justify-content:space-between; max-width:1000px; margin:0 auto 1rem; padding:0 1.5rem;">
+    <a href="day-4.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">← Ημέρα 4</a>
+    <a href="day-6.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">Ημέρα 6 →</a>
+  </div>
+  <p>© 2026 COSYlanguages · Bootcamp Ελληνικής Προφοράς · Ημέρα 5</p>
+</footer>
+
 </body>
 </html>

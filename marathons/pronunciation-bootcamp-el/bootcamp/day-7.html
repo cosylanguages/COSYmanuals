@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ημέρα 7: Συνεχής Λόγος & Τελικό Τεστ — Bootcamp Ελληνικής Προφοράς · COSY</title>
+<title>🇬🇷 Ημέρα 7 — Συνεχής Λόγος, Εγκλιτικά & Τελικό Τεστ · Bootcamp Ελληνικής Προφοράς · COSY</title>
+<meta name="description" content="Ημέρα 7 του 7ήμερου Bootcamp Ελληνικής Προφοράς: Διπλός τονισμός εγκλιτικών, ελληνικά σημεία στίξης (;, ·), ανάλυση παγίδων σε πλήρες κείμενο και τελικό τεστ.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,52 +13,261 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2c3e50; background: #f4f8fb; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #003366, #005bae); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
-  .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e6f0fa; color: #005bae; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #e6f0fa; border-left: 4px solid #005bae; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  :root {
+    --el-primary: #003366;
+    --el-accent: #005bae;
+    --el-light: #e6f0fa;
+    --el-border: #b3d7ff;
+  }
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sd-jump-link:hover { background: #005bae; color: #ffffff; }
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b3d7ff;
+  }
+  .mp-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+  .mp-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .stage-badge {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .celta-stage h2 { color: #003366; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+  .rule-card {
+    background: #f4f8fb;
+    border-left: 4px solid #005bae;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .rule-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+  .hint-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
 </style>
 </head>
 <body data-lang-theme="el">
 
-<header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇷 Ημέρα 7 / 7 · Τελικό Τεστ & Αξιολόγηση</span>
-  </div>
-  <h1>Συνεχής Λόγος & Τελικό Τεστ</h1>
-  <p style="color:#e6f0fa; max-width:700px; margin:0.5rem auto 1rem;">Εφαρμόστε όλους τους κανόνες της εβδομάδας σε ένα πλήρες κείμενο ανάγνωσης.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Εκτύπωση Ημέρας 7
-  </button>
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#warmer" class="sd-jump-link">1. Προθέρμανση</a>
+    <a href="#elicit" class="sd-jump-link">2. Εισαγωγή</a>
+    <a href="#explanation" class="sd-jump-link">3. Κανόνες & Πίνακας</a>
+    <a href="#ccq" class="sd-jump-link">4. Ερωτήσεις CCQ</a>
+    <a href="#drill" class="sd-jump-link">5. Καθοδηγούμενη Άσκηση</a>
+    <a href="#freepractice" class="sd-jump-link">6. Ελεύθερη Ανάγνωση</a>
+    <a href="#takeaway" class="sd-jump-link">7. Σύνοψη</a>
+  </nav>
 </header>
 
-<main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 1 · Συνθετικό Κείμενο</span>
-    <h2>1. Κείμενο Αναγνώρισης Φωνητικών Παγίδων</h2>
-    <p style="font-size:1.1rem; font-style:italic; background:#e6f0fa; padding:1.25rem; border-radius:8px;">
-      «Καλημέρα! Σήμερα ο καιρός είναι πολύ όμορφος στην Αθήνα. Θέλω να πάω στο αεροδρόμιο για να υποδεχτώ έναν καλό μου φίλο από την Ευρώπη. Ευχαριστώ πολύ για τη βοήθειά σας!»
-    </p>
+<header class="mp-hero">
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">ΗΜΕΡΑ 7 / 7 · ΣΥΝΕΧΗΣ ΛΟΓΟΣ & ΤΕΛΙΚΟ ΤΕΣΤ</span>
+  <h1>Ημέρα 7 — Συνεχής Λόγος, Εγκλιτικά & Τελικό Τεστ</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#e6f0fa;">Εφαρμόστε όλους τους κανόνες της εβδομάδας: διπλός τονισμός εγκλιτικών, ελληνική στίξη (;, ·) και συνθετική ανάγνωση.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Εκτύπωση Ημέρας 7</button>
+</header>
+
+<main class="mp-container">
+
+  <!-- STAGE 1: WARMER -->
+  <section id="warmer" class="celta-stage">
+    <span class="stage-badge">Στάδιο 1 🎯 Προθέρμανση</span>
+    <h2>Διαβάστε αυτή τη φράση δυνατά:</h2>
+    <div style="text-align:center; font-size:1.6rem; font-weight:800; color:#003366; margin:1rem 0;">
+      « ο δάσκαλός μου » [o dás-ka-lós mu]
+    </div>
+    <p>Γιατί η λέξη <strong>δάσκαλος</strong> αποκτά <strong>δεύτερο τόνο</strong> στη λήγουσα όταν προσθέτουμε την αντωνυμία <em>μου</em>; Καλώς ήρθατε στον κανόνα της <strong>έγκλισης του τόνου</strong>!</p>
+  </section>
+
+  <!-- STAGE 2: ELICITATION -->
+  <section id="elicit" class="celta-stage">
+    <span class="stage-badge">Στάδιο 2 🤔 Εισαγωγή & Παρατήρηση</span>
+    <h2>Συγκρίνετε τα τρία φαινόμενα συνεχούς λόγου:</h2>
+    <ul style="font-size:1.1rem; line-height:1.8;">
+      <li><strong>1. Έγκλιση Τόνου (Διπλός Τόνος):</strong>
+        <br>• <strong>ό</strong>νομα (3η συλλαβή) + μου → το <strong>ό</strong>νο-μ<strong>ά</strong> μου (παίρνει 2ο τόνο στη λήγουσα!).
+        <br>• <strong>μή</strong>λο (2η συλλαβή) + μου → το <strong>μή</strong>λο μου (δεν αλλάζει, 2η συλλαβή).
+      </li>
+      <li><strong>2. Ελληνική Στίξη:</strong>
+        <br>• Το ελληνικό ερωτηματικό είναι το ερωτηματικό <strong>;</strong> (semicolon).
+        <br>• Η ελληνική άνω τελεία είναι η κουκκίδα <strong>·</strong> (upper dot).
+      </li>
+      <li><strong>3. Φωνητική Συνέχειες (Sandhi):</strong>
+        <br>• <em>δεν μπορώ</em> [dem boro], <em>στην πόλη</em> [stim poli].
+      </li>
+    </ul>
+  </section>
+
+  <!-- STAGE 3: EXPLANATION -->
+  <section id="explanation" class="celta-stage">
+    <span class="stage-badge">Στάδιο 3 📖 Κανόνες & Πίνακας</span>
+
     <div class="rule-card">
-      <strong>🔎 Αναλυτικός Φωνητικός Ελεγχος:</strong>
-      <br>1. <em>καιρός / είναι</em> → αι = /e/, ει = /i/.
-      <br>2. <em>αεροδρόμιο</em> → ο = /o/, τόνος στην προπαραλήγουσα.
-      <br>3. <em>Ευρώπη / ευχαριστώ</em> → ευ = /ev/ (πριν από ρ) / ευ = /ef/ (πριν από χ).
-      <br>4. <em>έναν καλό / την Ευρώπη</em> → τελικό -ν διατηρείται πριν από κ και φωνήεν.
+      <h3>1. Ο Κανόνας της Έγκλισης του Τόνου</h3>
+      <p>Όταν μια λέξη τονίζεται στην <strong>προπαραλήγουσα</strong> (3η συλλαβή από το τέλος) και ακολουθείται από αδύνατο τύπο προσωπικής αντωνυμίας (μου, σου, του, της, μας, σας, τους), αποκτά <strong>δεύτερο τόνο στην τελευταία συλλαβή (λήγουσα)</strong> για να μην παραβιαστεί ο κανόνας της τρισυλλαβίας:</p>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Αρχική Λέξη</th><th>Με Εγκλιτικό</th><th>Προφορά IPA</th><th>Εξήγηση</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>όνομα</strong> (3η συλλαβή)</td>
+            <td>το <strong>όνομά μου</strong></td>
+            <td>[to o-no-ma mu]</td>
+            <td>Αποκτά 2ο τόνο στο -μά για να μην απέχει ο τόνος 4 συλλαβές!</td>
+          </tr>
+          <tr>
+            <td><strong>δάσκαλος</strong> (3η συλλαβή)</td>
+            <td>ο <strong>δάσκαλός μας</strong></td>
+            <td>[o das-ka-los mas]</td>
+            <td>Δεύτερος τόνος στη λήγουσα (-λός).</td>
+          </tr>
+          <tr>
+            <td><strong>βιβλίο</strong> (2η συλλαβή)</td>
+            <td>το <strong>βιβλίο μου</strong></td>
+            <td>[to viv-li-o mu]</td>
+            <td>Κανένας 2ος τόνος, ο αρχικός τόνος είναι στη 2η συλλαβή.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. Ελληνικά Σημεία Στίξης</h2>
+    <p>Η ελληνική γλώσσα χρησιμοποιεί δύο ιδιαίτερα σημεία στίξης που διαφέρουν από το λατινικό αλφάβητο:</p>
+    <ul>
+      <li><strong>Ερωτηματικό (;):</strong> Στην ελληνική γραφή, το ερωτηματικό μοιάζει με το αγγλικό semicolon <strong>;</strong> (π.χ. <em>Πού μένεις;</em>).</li>
+      <li><strong>Άνω Τελεία (·):</strong> Χρησιμοποιείται ως ενδιάμεση παύση (όπως η διπλή τελεία : ή το semicolon), τοποθετούμενη στο πάνω μέρος της γραμμής (π.χ. <em>Ήρθα· αλλά δεν σε βρήκα.</em>).</li>
+    </ul>
+  </section>
+
+  <!-- STAGE 4: CCQ -->
+  <section id="ccq" class="celta-stage">
+    <span class="stage-badge">Stage 4 ❓ Ερωτήσεις Ελέγχου Κατανόησης (CCQs)</span>
+    <ol style="line-height:1.8;">
+      <li><strong>Ερώτηση:</strong> Γιατί η λέξη "αυτοκίνητο" παίρνει 2ο τόνο στο "το αυτοκίνητό μου";
+        <br><em>Απάντηση: Επειδή τονίζεται στην προπαραλήγουσα (-κί-). Με την προσθήκη του "μου", ο τόνος θα απείχε 4 συλλαβές, οπότε προστίθεται 2ος τόνος στη λήγουσα (-τό).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Ποιο σύμβολο χρησιμοποιούμε για το ερωτηματικό στα ελληνικά;
+        <br><em>Απάντηση: Το σύμβολο ";" (semicolon).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Παίρνει 2ος τόνος η φράση "το σπίτι μου";
+        <br><em>Απάντηση: Όχι, γιατί το "σπίτι" τονίζεται στην παραλήγουσα (2η συλλαβή), οπότε δεν παραβιάζεται ο κανόνας τρισυλλαβίας.</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5: GUIDED DRILL -->
+  <section id="drill" class="celta-stage">
+    <span class="stage-badge">Stage 5 🏋️ Καθοδηγούμενη Άσκηση (Εγκλιτικός Τονισμός)</span>
+    <p>Διαβάστε τις παρακάτω φράσεις δυνατά με τον σωστό διπλό τονισμό:</p>
+    <table class="mp-table">
+      <thead>
+        <tr><th>Αρχική Φράση</th><th>Με Εγκλιτικό (Διπλός Τόνος)</th><th>Ρυθμός Ανάγνωσης</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ο πρόεδρος</td><td>ο <strong>πρόεδρός</strong> μας</td><td>πρό-ε-δρός μας (διπλή έξαρση φωνής)</td></tr>
+        <tr><td>το πρόβλημα</td><td>το <strong>πρόβλημά</strong> σου</td><td>πρό-βλη-μά σου</td></tr>
+        <tr><td>η τηλεόραση</td><td>η <strong>τηλεόρασή</strong> της</td><td>τη-λε-ό-ρα-σή της</td></tr>
+        <tr><td>το αυτοκίνητο</td><td>το <strong>αυτοκίνητό</strong> τους</td><td>αυ-το-κί-νη-τό τους</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- STAGE 6: FREE PRACTICE & FINAL TEST -->
+  <section id="freepractice" class="celta-stage">
+    <span class="stage-badge">Stage 6 📖 Ελεύθερη Ανάγνωση & Τελικό Συνθετικό Κείμενο</span>
+    <p>Διαβάστε το παρακάτω συνθετικό κείμενο. Περιέχει <strong>όλες τις φωνητικές παγίδες</strong> που μάθαμε κατά τη διάρκεια του 7ήμερου bootcamp:</p>
+
+    <div style="background:#f4f8fb; padding:1.5rem; border-radius:8px; border:2px solid #005bae; font-size:1.1rem; line-height:1.8; margin:1rem 0;">
+      « <strong>Καλημέρα</strong>! Σήμερα ο <strong>καιρός</strong> είναι πολύ <strong>όμορφος</strong> στην Αθήνα.
+      Θέλω να πάω στο <strong>αεροδρόμιο</strong> για να υποδεχτώ <strong>τον</strong> <strong>καλό</strong> μου φίλο από την <strong>Ευρώπη</strong>.
+      <strong>Πού</strong> είναι το <strong>αυτοκίνητό</strong> μου;
+      <strong>Ευχαριστώ</strong> πολύ για τη βοήθειά σας<strong>;</strong> »
+    </div>
+
+    <div class="rule-card">
+      <h3>🔎 Αναλυτικός Φωνητικός Έλεγχος Κειμένου:</h3>
+      <ol style="margin:0; padding-left:1.25rem;">
+        <li><em>καιρός / είναι:</em> αι = /e/, ει = /i/ (Δίψηφα φωνήεντα & Ιωτακισμός).</li>
+        <li><em>Ευρώπη:</em> ευ = /ev/ (πριν από ρ, ηχηρό σύμφωνο).</li>
+        <li><em>ευχαριστώ:</em> ευ = /ef/ (πριν από χ, άηχο σύμφωνο).</li>
+        <li><em>τον καλό:</em> το τελικό -ν διατηρείται πριν από κ (στιγμιαίο σύμφωνο).</li>
+        <li><em>Πού:</em> παίρνει τόνο επειδή είναι ερωτηματικό (where).</li>
+        <li><em>αυτοκίνητό μου:</em> διπλός τόνος λόγω έγκλισης (προπαροξυτονία + μου).</li>
+        <li><em>σας;:</em> το ελληνικό ερωτηματικό στο τέλος!</li>
+      </ol>
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 2 · Ολοκλήρωση</span>
-    <p>🎉 Συγχαρητήρια! Ολοκληρώσατε με επιτυχία το 7ήμερο bootcamp ελληνικής προφοράς!</p>
-    <div style="margin-top:1.5rem; display:flex; justify-between; align-items:center;">
-      <a href="day-6.html" style="color:#005bae; text-decoration:none; font-weight:700;">← Ημέρα 6</a>
-      <a href="../index.html" style="background:#003366; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Επιστροφή στο Κεντρικό Hub 🇬🇷</a>
+  <!-- STAGE 7: TAKEAWAY -->
+  <section id="takeaway" class="celta-stage" style="background:#e6f0fa; border-color:#b3d7ff;">
+    <span class="stage-badge" style="background:#005bae; color:#ffffff;">Stage 7 🔑 Σύνοψη Bootcamp & Τελικό Takeaway</span>
+    <h2>🎉 Συγχαρητήρια! Ολοκληρώσατε το 7ήμερο Bootcamp Ελληνικής Προφοράς!</h2>
+    <div style="font-size:1.15rem; font-weight:700; color:#003366; margin-top:0.75rem;">
+      Χρυσός Κανόνας Ημέρας 7: Στις προπαροξύτονες λέξεις η έγκλιση προσθέτει 2ο τόνο στη λήγουσα (το όνομά μου), το ερωτηματικό γράφεται ;, και τώρα κατέχετε πλήρως τους κανόνες ανάγνωσης της Νέας Ελληνικής!
     </div>
   </section>
+
 </main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="display:flex; justify-content:space-between; max-width:1000px; margin:0 auto 1rem; padding:0 1.5rem;">
+    <a href="day-6.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">← Ημέρα 6</a>
+    <a href="../index.html" style="color:#ffffff; background:#005bae; padding:0.4rem 1rem; border-radius:6px; text-decoration:none; font-weight:700;">Επιστροφή στο Hub EL 🇬🇷</a>
+  </div>
+  <p>© 2026 COSYlanguages · Bootcamp Ελληνικής Προφοράς · Ημέρα 7</p>
+</footer>
+
 </body>
 </html>

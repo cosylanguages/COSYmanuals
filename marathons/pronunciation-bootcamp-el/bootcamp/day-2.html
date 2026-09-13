@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ημέρα 2: Δίψηφα Φωνήεντα & Ιωτακισμός — Bootcamp Ελληνικής Προφοράς · COSY</title>
+<title>🇬🇷 Ημέρα 2 — Δίψηφα Φωνήεντα & Ιωτακισμός · Bootcamp Ελληνικής Προφοράς · COSY</title>
+<meta name="description" content="Ημέρα 2 του 7ήμερου Bootcamp Ελληνικής Προφοράς: Δίψηφα φωνήεντα (αι, ει, οι, υι, ου) και οι 6 διαφορετικοί τρόποι γραφής του ήχου /i/ (Ιωτακισμός).">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,51 +13,239 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2c3e50; background: #f4f8fb; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #003366, #005bae); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
-  .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e6f0fa; color: #005bae; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #e6f0fa; border-left: 4px solid #005bae; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
-  .practice-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-  .practice-table th, .practice-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; }
-  .practice-table th { background: #e6f0fa; color: #003366; }
+  :root {
+    --el-primary: #003366;
+    --el-accent: #005bae;
+    --el-light: #e6f0fa;
+    --el-border: #b3d7ff;
+  }
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sd-jump-link:hover { background: #005bae; color: #ffffff; }
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b3d7ff;
+  }
+  .mp-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+  .mp-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .stage-badge {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .celta-stage h2 { color: #003366; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+  .rule-card {
+    background: #f4f8fb;
+    border-left: 4px solid #005bae;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .rule-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+  .hint-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
 </style>
 </head>
 <body data-lang-theme="el">
 
-<header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇷 Ημέρα 2 / 7 · Στάδιο CELTA: Ιωτακισμός</span>
-  </div>
-  <h1>Δίψηφα Φωνήεντα & Ιωτακισμός</h1>
-  <p style="color:#e6f0fa; max-width:700px; margin:0.5rem auto 1rem;">Μάθετε τους συνδυασμούς φωνηέντων και τις 6 διαφορετικές γραφές του ήχου /i/.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Εκτύπωση Ημέρας 2
-  </button>
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#warmer" class="sd-jump-link">1. Προθέρμανση</a>
+    <a href="#elicit" class="sd-jump-link">2. Εισαγωγή</a>
+    <a href="#explanation" class="sd-jump-link">3. Κανόνες & Πίνακας</a>
+    <a href="#ccq" class="sd-jump-link">4. Ερωτήσεις CCQ</a>
+    <a href="#drill" class="sd-jump-link">5. Καθοδηγούμενη Άσκηση</a>
+    <a href="#freepractice" class="sd-jump-link">6. Ελεύθερη Ανάγνωση</a>
+    <a href="#takeaway" class="sd-jump-link">7. Σύνοψη</a>
+  </nav>
 </header>
 
-<main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 1 · Ιωτακισμός</span>
-    <h2>1. Οι 6 Γραφές του /i/</h2>
-    <p>Στη νέα ελληνική, οι γραφές <strong>ι, η, υ, ει, οι, υι</strong> προφέρονται όλες ως ένας καθαρός ήχος [i].</p>
+<header class="mp-hero">
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">ΗΜΕΡΑ 2 / 7 · ΦΩΝΗΕΝΤΑ & ΙΩΤΑΚΙΣΜΟΣ</span>
+  <h1>Ημέρα 2 — Δίψηφα Φωνήεντα & Ιωτακισμός</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#e6f0fa;">Μάθετε τους συνδυασμούς φωνηέντων (αι, ει, οι, υι, ου) και τους 6 τρόπους γραφής του ήχου /i/.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Εκτύπωση Ημέρας 2</button>
+</header>
+
+<main class="mp-container">
+
+  <!-- STAGE 1: WARMER -->
+  <section id="warmer" class="celta-stage">
+    <span class="stage-badge">Στάδιο 1 🎯 Προθέρμανση</span>
+    <h2>Διαβάστε αυτές τις λέξεις δυνατά:</h2>
+    <div style="text-align:center; font-size:1.6rem; font-weight:800; color:#003366; margin:1rem 0;">
+      « νίκη » &nbsp; • &nbsp; « ήλιος » &nbsp; • &nbsp; « τύχη » &nbsp; • &nbsp; « είμαι » &nbsp; • &nbsp; « οικογένεια »
+    </div>
+    <p>Προσέξατε κάτι περίεργο; Παρά τις διαφορετικές γραφές (<strong>ι, η, υ, ει, οι</strong>), όλες αυτές οι λέξεις περιέχουν τον <strong>ίδιο ακριβώς ήχο /i/</strong>! Αυτό το φαινόμενο ονομάζεται <strong>Ιωτακισμός</strong>.</p>
+  </section>
+
+  <!-- STAGE 2: ELICITATION -->
+  <section id="elicit" class="celta-stage">
+    <span class="stage-badge">Στάδιο 2 🤔 Εισαγωγή & Παρατήρηση</span>
+    <h2>Συγκρίνετε τα παρακάτω φωνηεντικά ζεύγη:</h2>
+    <ul style="font-size:1.1rem; line-height:1.8;">
+      <li><strong>Ομάδα Α (Ήχος /e/):</strong> <strong>αι</strong>θουσα, <strong>αι</strong>μα, κ<strong>αι</strong>ρος — το δίψηφο <em>αι</em> ακούγεται ακριβώς όπως το απλό <em>ε</em>.</li>
+      <li><strong>Ομάδα Β (Ήχος /u/):</strong> <strong>ου</strong>ρανος, λ<strong>ου</strong>λ<strong>ου</strong>δι, π<strong>ου</strong> — το <em>ου</em> είναι ο μόνος τρόπος γραφής του ήχου [u].</li>
+      <li><strong>Ομάδα Γ (Ήχος /i/):</strong> φ<strong>ι</strong>λος, <strong>η</strong>λιος, φ<strong>υ</strong>ση, <strong>ει</strong>μαι, <strong>οι</strong>κος — 5 διαφορετικές γραφές για τον ίδιο ήχο [i]!</li>
+    </ul>
+    <p><strong>Συμπέρασμα:</strong> Στη Νέα Ελληνική, δύο γράμματα μαζί μπορούν να σχηματίσουν έναν απλό φωνηεντικό ήχο (δίψηφα φωνήεντα).</p>
+  </section>
+
+  <!-- STAGE 3: EXPLANATION -->
+  <section id="explanation" class="celta-stage">
+    <span class="stage-badge">Στάδιο 3 📖 Κανόνες & Πίνακες</span>
+
     <div class="rule-card">
-      <strong>💡 Δίψηφα Φωνήεντα:</strong>
-      <br>• <strong>αι</strong> = [e] (<em>αίμα, καιρός</em>)
-      <br>• <strong>ει, οι, υι</strong> = [i] (<em>είμαι, οικογένεια, υιοθεσία</em>)
-      <br>• <strong>ου</strong> = [u] (<em>ουρανός, που</em>)
+      <h3>1. Πίνακας Δίψηφων Φωνηέντων</h3>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Δίψηφο</th><th>Ήχος IPA</th><th>Προφορά</th><th>Παραδείγματα</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>αι</strong></td><td>/e/</td><td>Όπως το <strong>ε</strong> (έψιλον)</td><td>αίμα [ema], καιρός [keros], παιδί [pedi]</td></tr>
+          <tr><td><strong>ει</strong></td><td>/i/</td><td>Όπως το <strong>ι</strong> (γιώτα)</td><td>είμαι [imi], εικόνα [ikona], κλείνω [klino]</td></tr>
+          <tr><td><strong>οι</strong></td><td>/i/</td><td>Όπως το <strong>ι</strong> (γιώτα)</td><td>οικογένεια [ikogenia], oίκος [ikos]</td></tr>
+          <tr><td><strong>υι</strong></td><td>/i/</td><td>Όπως το <strong>ι</strong> (γιώτα) (σπάνιο)</td><td>υιοθεσία [iothesia], υιός [ios]</td></tr>
+          <tr><td><strong>ου</strong></td><td>/u/</td><td>Καθαρό [u] (όπως στο "moon")</td><td>ουρανός [uranos], που [pu], βουνό [vuno]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. Ο Ιωτακισμός: Οι 6 Γραφές του Ήχου /i/</h2>
+    <p>Λόγω της ιστορικής εξέλιξης της ελληνικής γλώσσας, 6 διαφορετικές γραφές συμπίπτουν στην ίδια σύγχρονη προφορά [i]:</p>
+
+    <table class="mp-table">
+      <thead>
+        <tr><th>Γραφή</th><th>Γραμματικός Ρόλος / Χρήση</th><th>Παράδειγμα</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Ι ι</strong></td><td>Βασικό γράμμα / ουδέτερα σε -ι</td><td>σπίτι [spiti], φίλος [filos]</td></tr>
+        <tr><td><strong>Η η</strong></td><td>Θηλυκά ουσιαστικά σε -η</td><td>νίκη [niki], ψυχή [psichi]</td></tr>
+        <tr><td><strong>Υ υ</strong></td><td>Ουδέτερα σε -υ / ρίζες λέξεων</td><td>ξύλο [xilo], τύχη [tichi]</td></tr>
+        <tr><td><strong>ΕΙ ει</strong></td><td>Κατάληξη ρημάτων -ει (γ' ενικό)</td><td>γράφει [grafi], έχει [echi]</td></tr>
+        <tr><td><strong>ΟΙ οι</strong></td><td>Πληθυντικός αρσενικών (οι)</td><td>οι άνθρωποι [i anthropi]</td></tr>
+        <tr><td><strong>ΥΙ υι</strong></td><td>Λόγιες/ειδικές λέξεις</td><td>υιοθετώ [iotheto]</td></tr>
+      </tbody>
+    </table>
+
+    <div class="hint-box">
+      <strong>💡 Μνημονικός Κανόνας:</strong> Στην προφορά δεν υπάρχει καμία απολύτως διαφορά ανάμεσα στα ι, η, υ, ει, οι, υι. Όλα προφέρονται [i]! Η διαφορά είναι μόνο στην ορθογραφία.
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 2 · Πλοήγηση</span>
-    <div style="display:flex; justify-between; align-items:center;">
-      <a href="day-1.html" style="color:#005bae; text-decoration:none; font-weight:700;">← Ημέρα 1</a>
-      <a href="day-3.html" style="background:#005bae; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Ημέρα 3 →</a>
+  <!-- STAGE 4: CCQ -->
+  <section id="ccq" class="celta-stage">
+    <span class="stage-badge">Stage 4 ❓ Ερωτήσεις Ελέγχου Κατανόησης (CCQs)</span>
+    <ol style="line-height:1.8;">
+      <li><strong>Ερώτηση:</strong> Πώς προφέρεται το δίψηφο φωνήεν "αι" στη λέξη "καιρός";
+        <br><em>Απάντηση: Προφέρεται ως /e/ (κε-ρός), ακριβώς όπως το γράμμα έψιλον (ε).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Υπάρχει διαφορά στην προφορά των λέξεων "σήκω" (verb) και "σύκο" (fig)?
+        <br><em>Απάντηση: Καμία διαφορά στην προφορά! Και οι δύο ακούγονται ακριβώς [siko] λόγω του ιωτακισμού.</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Ποιος είναι ο μόνος συνδυασμός που παράγει τον ήχο [u] (ου);
+        <br><em>Απάντηση: Το δίψηφο "ου" (π.χ. ουρανός, που).</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5: GUIDED DRILL -->
+  <section id="drill" class="celta-stage">
+    <span class="stage-badge">Stage 5 🏋️ Καθοδηγούμενη Άσκηση (Αντίθεση Φωνηέντων)</span>
+    <p>Διαβάστε τα παρακάτω ζεύγη δυνατά, εστιάζοντας στην καθαρή προφορά των φωνηέντων:</p>
+    <table class="mp-table">
+      <thead>
+        <tr><th>Λέξη Α</th><th>Λέξη Β</th><th>Φωνητική Σύγκριση</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>καιρός [ke-ros] (/e/)</td><td>κλείνω [kli-no] (/i/)</td><td>Ήχος /e/ (αι) vs. Ήχος /i/ (ει)</td></tr>
+        <tr><td>μέρος [me-ros] (/e/)</td><td>μοίρα [mi-ra] (/i/)</td><td>Απλό ε (/e/) vs. Δίψηφο οι (/i/)</td></tr>
+        <tr><td>πόλη [po-li] (/i/)</td><td>πουλί [pu-li] (/u/)</td><td>Ήχος /i/ (η, ι) vs. Ήχος /u/ (ου)</td></tr>
+        <tr><td>γράφει [gra-fi] (/i/)</td><td>γράφουσι [gra-fu-si] (/u/)</td><td>Κατάληξη -ει (/i/) vs. -ου (/u/)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- STAGE 6: FREE PRACTICE -->
+  <section id="freepractice" class="celta-stage">
+    <span class="stage-badge">Stage 6 📖 Ελεύθερη Ανάγνωση</span>
+    <p>Διαβάστε τις προτάσεις δυνατά. Εντοπίστε τα δίψηφα φωνήεντα και τις διάφορες γραφές του /i/:</p>
+    <div style="background:#f4f8fb; padding:1.25rem; border-radius:8px; border:1px solid #e2e8f0; font-size:1.1rem; line-height:1.8;">
+      1. <strong>Είμαι</strong> πολύ ευτυχισμένος που <strong>έχουμε</strong> μια καλή <strong>οικογένεια</strong>.<br>
+      2. Ο <strong>καιρός</strong> είναι <strong>ωραίος</strong> και τα <strong>παιδιά</strong> παίζουν στο <strong>βουνό</strong>.<br>
+      3. <strong>Οι</strong> φίλοι μας <strong>μένουν</strong> σε ένα <strong>όμορφο</strong> σπίτι κοντά στη <strong>θάλασσα</strong>.
     </div>
   </section>
+
+  <!-- STAGE 7: TAKEAWAY -->
+  <section id="takeaway" class="celta-stage" style="background:#e6f0fa; border-color:#b3d7ff;">
+    <span class="stage-badge" style="background:#005bae; color:#ffffff;">Stage 7 🔑 Σύνοψη Ημέρας 2</span>
+    <h2>Χρυσός Κανόνας της Ημέρας 2:</h2>
+    <div style="font-size:1.15rem; font-weight:700; color:#003366;">
+      αι = /e/, ου = /u/, ενώ τα ι, η, υ, ει, οι, υι προφέρονται ΟΛΑ ως ένας καθαρός ήχος /i/ (Ιωτακισμός)!
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="display:flex; justify-content:space-between; max-width:1000px; margin:0 auto 1rem; padding:0 1.5rem;">
+    <a href="day-1.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">← Ημέρα 1</a>
+    <a href="day-3.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">Ημέρα 3 →</a>
+  </div>
+  <p>© 2026 COSYlanguages · Bootcamp Ελληνικής Προφοράς · Ημέρα 2</p>
+</footer>
+
 </body>
 </html>
