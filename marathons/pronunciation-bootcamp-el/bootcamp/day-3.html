@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ημέρα 3: Οι Συνδυασμοί Αυ / Ευ (/av, af, ev, ef/) — Bootcamp Ελληνικής Προφοράς · COSY</title>
+<title>🇬🇷 Ημέρα 3 — Συνδυασμοί Αυ & Ευ (/av, af, ev, ef/) · Bootcamp Ελληνικής Προφοράς · COSY</title>
+<meta name="description" content="Ημέρα 3 του 7ήμερου Bootcamp Ελληνικής Προφοράς: Πότε το υ στους συνδυασμούς αυ και ευ προφέρεται /v/ (ηχηρό) και πότε /f/ (άηχο).">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,49 +13,243 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2c3e50; background: #f4f8fb; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #003366, #005bae); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
-  .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e6f0fa; color: #005bae; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #e6f0fa; border-left: 4px solid #005bae; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
-  .practice-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-  .practice-table th, .practice-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; }
-  .practice-table th { background: #e6f0fa; color: #003366; }
+  :root {
+    --el-primary: #003366;
+    --el-accent: #005bae;
+    --el-light: #e6f0fa;
+    --el-border: #b3d7ff;
+  }
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sd-jump-link:hover { background: #005bae; color: #ffffff; }
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b3d7ff;
+  }
+  .mp-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+  .mp-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .stage-badge {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .celta-stage h2 { color: #003366; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+  .rule-card {
+    background: #f4f8fb;
+    border-left: 4px solid #005bae;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .rule-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+  .hint-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
 </style>
 </head>
 <body data-lang-theme="el">
 
-<header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇷 Ημέρα 3 / 7 · Στάδιο CELTA: Δίψηφα Αυ / Ευ</span>
-  </div>
-  <h1>Οι Συνδυασμοί Αυ / Ευ (/av, af, ev, ef/)</h1>
-  <p style="color:#e6f0fa; max-width:700px; margin:0.5rem auto 1rem;">Μάθετε πότε το υ προφέρεται ως [v] και πότε ως [f].</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Εκτύπωση Ημέρας 3
-  </button>
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#warmer" class="sd-jump-link">1. Προθέρμανση</a>
+    <a href="#elicit" class="sd-jump-link">2. Εισαγωγή</a>
+    <a href="#explanation" class="sd-jump-link">3. Κανόνες & Πίνακας</a>
+    <a href="#ccq" class="sd-jump-link">4. Ερωτήσεις CCQ</a>
+    <a href="#drill" class="sd-jump-link">5. Καθοδηγούμενη Άσκηση</a>
+    <a href="#freepractice" class="sd-jump-link">6. Ελεύθερη Ανάγνωση</a>
+    <a href="#takeaway" class="sd-jump-link">7. Σύνοψη</a>
+  </nav>
 </header>
 
-<main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 1 · Ο Κανόνας</span>
-    <h2>1. Φωνήεν ή Ηχηρό vs. Άηχο Σύμφωνο</h2>
+<header class="mp-hero">
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">ΗΜΕΡΑ 3 / 7 · ΣΥΝΔΥΑΣΜΟΙ ΑΥ & ΕΥ</span>
+  <h1>Ημέρα 3 — Οι Συνδυασμοί Αυ & Ευ (/av, af, ev, ef/)</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#e6f0fa;">Μάθετε πότε το υ στους συνδυασμούς αυ/ευ μετατρέπεται σε σύμφωνο [v] (ηχηρό) ή [f] (άηχο).</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Εκτύπωση Ημέρας 3</button>
+</header>
+
+<main class="mp-container">
+
+  <!-- STAGE 1: WARMER -->
+  <section id="warmer" class="celta-stage">
+    <span class="stage-badge">Στάδιο 1 🎯 Προθέρμανση</span>
+    <h2>Διαβάστε αυτά τα δύο ζεύγη δυνατά:</h2>
+    <div style="text-align:center; font-size:1.6rem; font-weight:800; color:#003366; margin:1rem 0;">
+      « αύριο » [av-rio] &nbsp; vs. &nbsp; « αυτό » [af-to]
+      <br><span style="font-size:1.3rem;">« Ευρώπη » [ev-ro-pi] &nbsp; vs. &nbsp; « ευχαριστώ » [ef-cha-ri-sto]</span>
+    </div>
+    <p>Γιατί το γράμμα <strong>υ</strong> στη λέξη <em>αύριο</em> ακούγεται σαν <strong>[v]</strong>, ενώ στη λέξη <em>αυτό</em> ακούγεται σαν <strong>[f]</strong>; Ο επόμενος φθόγγος καθορίζει τα πάντα!</p>
+  </section>
+
+  <!-- STAGE 2: ELICITATION -->
+  <section id="elicit" class="celta-stage">
+    <span class="stage-badge">Στάδιο 2 🤔 Εισαγωγή & Παρατήρηση</span>
+    <h2>Συγκρίνετε το περιβάλλον που ακολουθεί το υ:</h2>
+    <ul style="font-size:1.1rem; line-height:1.8;">
+      <li><strong>Ομάδα Α (Ακολουθεί φωνήεν ή ηχηρό σύμφωνο):</strong>
+        <br>• αύ<strong>ρ</strong>ιο [avrio] (ακολουθεί ρ) &nbsp;• αυ<strong>λ</strong>ή [avli] (ακολουθεί λ) &nbsp;• Ευ<strong>ρ</strong>ώπη [evropi] (ακολουθεί ρ)
+        <br><em>→ Το υ προφέρεται ως ηχηρό [v]!</em>
+      </li>
+      <li><strong>Ομάδα Β (Ακολουθεί άηχο σύμφωνο):</strong>
+        <br>• αυ<strong>τ</strong>ό [afto] (ακολουθεί τ) &nbsp;• ευ<strong>χ</strong>αριστώ [efcharisto] (ακολουθεί χ) &nbsp;• ευ<strong>τ</strong>υχία [eftichia] (ακολουθεί τ)
+        <br><em>→ Το υ προφέρεται ως άηχο [f]!</em>
+      </li>
+    </ul>
+    <p><strong>Συμπέρασμα:</strong> Το γράμμα υ στους συνδυασμούς αυ/ευ δεν προφέρεται ως φωνήεν [i], αλλά ως σύμφωνο ([v] ή [f]).</p>
+  </section>
+
+  <!-- STAGE 3: EXPLANATION -->
+  <section id="explanation" class="celta-stage">
+    <span class="stage-badge">Στάδιο 3 📖 Κανόνες & Πίνακας</span>
+
     <div class="rule-card">
-      <strong>💡 Κανόνας Αυ & Ευ:</strong>
-      <br>• Προφέρονται <strong>/av/</strong> & <strong>/ev/</strong> όταν ακολουθεί φωνήεν ή ηχηρό σύμφωνο (β, γ, δ, ζ, λ, μ, ν, ρ): <em>αύριο, αυλή, Ευρώπη, εύκολος</em>.
-      <br>• Προφέρονται <strong>/af/</strong> & <strong>/ef/</strong> όταν ακολουθεί άηχο σύμφωνο (κ, π, τ, ξ, ψ, σ, φ, θ, χ): <em>αυτό, αυτός, ευχαριστώ, ευτυχία</em>.
+      <h3>1. Ο Κανόνας Προφοράς των Αυ & Ευ</h3>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Συνδυασμός</th><th>Περιβάλλον (Τι ακολουθεί)</th><th>Ήχος IPA</th><th>Παραδείγματα</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>αυ / ευ</strong></td>
+            <td><strong>Φωνήεν</strong> ή <strong>Ηχηρό σύμφωνο</strong> (β, γ, δ, ζ, λ, μ, ν, ρ)</td>
+            <td><strong>/av/</strong> & <strong>/ev/</strong></td>
+            <td>αύριο [avrio], αυλή [avli], Ευρώπη [evropi], ευαγγέλιο [evangelio]</td>
+          </tr>
+          <tr>
+            <td><strong>αυ / ευ</strong></td>
+            <td><strong>Άηχο σύμφωνο</strong> (κ, π, τ, ξ, ψ, σ, φ, θ, χ)</td>
+            <td><strong>/af/</strong> & <strong>/ef/</strong></td>
+            <td>αυτό [afto], αυστηρός [afstiros], ευχαριστώ [efcharisto], εύκολος [efkolos]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mnemonic-box" style="background:#fff8e1; border-left:4px solid #f57f17; padding:1rem; border-radius:6px; margin:1rem 0;">
+      <h4 style="margin:0 0 0.5rem; color:#795548;">💡 Μνημονικός Κανόνας για τα Άηχα Σύμφωνα (/af, ef/)</h4>
+      <p style="margin:0;">Τα άηχα σύμφωνα που τρέπουν το υ σε <strong>/f/</strong> είναι 9: <strong>κ, π, τ, ξ, ψ, σ, φ, θ, χ</strong> (σκεφτείτε τη φράση: <em>«ΚάΠοΤε ΞέΨυχες Στον ΦόΒο Θα Χαθείς»</em>).</p>
+    </div>
+
+    <h2>2. Ο Σπάνιος Συνδυασμός Ηυ (/iv/ / /if/)</h2>
+    <p>Σε ορισμένες λόγιες ή αρχαιοπρεπείς λέξεις συναντάμε και το σύμπλεγμα <strong>ηυ</strong>:</p>
+    <ul>
+      <li>Πριν από ηχηρά/φωνήεντα → <strong>/iv/</strong>: <em>ηύρα [ivra]</em></li>
+      <li>Πριν από άηχα → <strong>/if/</strong>: <em>ηύξησε [ifaxise]</em></li>
+    </ul>
+  </section>
+
+  <!-- STAGE 4: CCQ -->
+  <section id="ccq" class="celta-stage">
+    <span class="stage-badge">Stage 4 ❓ Ερωτήσεις Ελέγχου Κατανόησης (CCQs)</span>
+    <ol style="line-height:1.8;">
+      <li><strong>Ερώτηση:</strong> Πώς προφέρεται το σύμπλεγμα "αυ" στη λέξη "αύριο";
+        <br><em>Απάντηση: /av/ (άβριο), επειδή ακολουθεί το ηχηρό σύμφωνο ρ.</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Πώς προφέρεται το σύμπλεγμα "ευ" στη λέξη "ευχαριστώ";
+        <br><em>Απάντηση: /ef/ (εφχαριστώ), επειδή ακολουθεί το άηχο σύμφωνο χ.</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Προφέρεται ποτέ το γράμμα υ στη λέξη "αυτός" ως φωνήεν [i];
+        <br><em>Απάντηση: Όχι! Στο αυ/ευ το υ προφέρεται πάντα ως σύμφωνο ([v] ή [f]), ποτέ ως [i].</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5: GUIDED DRILL -->
+  <section id="drill" class="celta-stage">
+    <span class="stage-badge">Stage 5 🏋️ Καθοδηγούμενη Άσκηση (Αντίθεση /v/ vs. /f/)</span>
+    <p>Διαβάστε τα παρακάτω ζεύγη δυνατά, προσέχοντας τη μετάβαση από το ηχηρό [v] στο άηχο [f]:</p>
+    <table class="mp-table">
+      <thead>
+        <tr><th>Ηχηρή Προφορά (/av/, /ev/)</th><th>Άηχη Προφορά (/af/, /ef/)</th><th>Σύγκριση Φθόγγου</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>αύριο [av-rio]</td><td>αυτό [af-to]</td><td>[v] πριν από ρ vs. [f] πριν από τ</td></tr>
+        <tr><td>αυλή [av-li]</td><td>αυστηρός [af-sti-ros]</td><td>[v] πριν από λ vs. [f] πριν από σ</td></tr>
+        <tr><td>Ευρώπη [ev-ro-pi]</td><td>ευχαριστώ [ef-cha-ri-sto]</td><td>[v] πριν από ρ vs. [f] πριν από χ</td></tr>
+        <tr><td>ευλογία [ev-lo-gi-a]</td><td>ευτυχία [ef-ti-chi-a]</td><td>[v] πριν από λ vs. [f] πριν από τ</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- STAGE 6: FREE PRACTICE -->
+  <section id="freepractice" class="celta-stage">
+    <span class="stage-badge">Stage 6 📖 Ελεύθερη Ανάγνωση</span>
+    <p>Διαβάστε τις προτάσεις δυνατά. Εντοπίστε τα αυ/ευ και εφαρμόστε τον σωστό κανόνα (/v/ ή /f/):</p>
+    <div style="background:#f4f8fb; padding:1.25rem; border-radius:8px; border:1px solid #e2e8f0; font-size:1.1rem; line-height:1.8;">
+      1. <strong>Αύριο</strong> το πρωί θα ταξιδέψουμε στην <strong>Ευρώπη</strong>.<br>
+      2. <strong>Αυτός</strong> ο άνθρωπος μας είπε <strong>ευχαριστώ</strong> για τη βοήθεια.<br>
+      3. Η <strong>αυλή</strong> του σπιτιού είναι πολύ <strong>εύμορφη</strong> και καθαρή.
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 2 · Πλοήγηση</span>
-    <div style="display:flex; justify-between; align-items:center;">
-      <a href="day-2.html" style="color:#005bae; text-decoration:none; font-weight:700;">← Ημέρα 2</a>
-      <a href="day-4.html" style="background:#005bae; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Ημέρα 4 →</a>
+  <!-- STAGE 7: TAKEAWAY -->
+  <section id="takeaway" class="celta-stage" style="background:#e6f0fa; border-color:#b3d7ff;">
+    <span class="stage-badge" style="background:#005bae; color:#ffffff;">Stage 7 🔑 Σύνοψη Ημέρας 3</span>
+    <h2>Χρυσός Κανόνας της Ημέρας 3:</h2>
+    <div style="font-size:1.15rem; font-weight:700; color:#003366;">
+      Αυ / Ευ = /av, ev/ πριν από φωνήεν ή ηχηρό (β, γ, δ, ζ, λ, μ, ν, ρ), αλλά /af, ef/ πριν από άηχο (κ, π, τ, ξ, ψ, σ, φ, θ, χ)!
     </div>
   </section>
+
 </main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="display:flex; justify-content:space-between; max-width:1000px; margin:0 auto 1rem; padding:0 1.5rem;">
+    <a href="day-2.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">← Ημέρα 2</a>
+    <a href="day-4.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">Ημέρα 4 →</a>
+  </div>
+  <p>© 2026 COSYlanguages · Bootcamp Ελληνικής Προφοράς · Ημέρα 3</p>
+</footer>
+
 </body>
 </html>

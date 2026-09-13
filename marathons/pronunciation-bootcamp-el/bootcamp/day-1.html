@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ημέρα 1: Αλφάβητο, Τόνος & Διαλυτικά — Bootcamp Ελληνικής Προφοράς · COSY</title>
+<title>🇬🇷 Ημέρα 1 — Αλφάβητο, Τόνος & Διαλυτικά · Bootcamp Ελληνικής Προφοράς · COSY</title>
+<meta name="description" content="Ημέρα 1 του 7ήμερου Bootcamp Ελληνικής Προφοράς: Τα 24 γράμματα, ο κανόνας τονισμού (προπαροξυτονία), το τελικό ς και η χρήση των διαλυτικών.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,115 +13,263 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2c3e50; background: #f4f8fb; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #003366, #005bae); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
-  .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e6f0fa; color: #005bae; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #e6f0fa; border-left: 4px solid #005bae; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
-  .practice-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-  .practice-table th, .practice-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; }
-  .practice-table th { background: #e6f0fa; color: #003366; }
+  :root {
+    --el-primary: #003366;
+    --el-accent: #005bae;
+    --el-light: #e6f0fa;
+    --el-border: #b3d7ff;
+  }
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sd-jump-link:hover { background: #005bae; color: #ffffff; }
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b3d7ff;
+  }
+  .mp-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+  .mp-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .stage-badge {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .celta-stage h2 { color: #003366; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+  .rule-card {
+    background: #f4f8fb;
+    border-left: 4px solid #005bae;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .rule-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+  .hint-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
 </style>
 </head>
 <body data-lang-theme="el">
 
-<header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇷 Ημέρα 1 / 7 · Στάδιο CELTA: Βάσεις & Αλφάβητο</span>
-  </div>
-  <h1>Αλφάβητο, Τόνος & Διαλυτικά</h1>
-  <p style="color:#e6f0fa; max-width:700px; margin:0.5rem auto 1rem;">Μάθετε τα 24 γράμματα, τους κανόνες τονισμού και τη χρήση των διαλυτικών.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Εκτύπωση Ημέρας 1
-  </button>
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#warmer" class="sd-jump-link">1. Προθέρμανση</a>
+    <a href="#elicit" class="sd-jump-link">2. Εισαγωγή</a>
+    <a href="#explanation" class="sd-jump-link">3. Κανόνες & Πίνακας</a>
+    <a href="#ccq" class="sd-jump-link">4. Ερωτήσεις CCQ</a>
+    <a href="#drill" class="sd-jump-link">5. Καθοδηγούμενη Άσκηση</a>
+    <a href="#freepractice" class="sd-jump-link">6. Ελεύθερη Ανάγνωση</a>
+    <a href="#takeaway" class="sd-jump-link">7. Σύνοψη</a>
+  </nav>
 </header>
 
-<main class="day-container">
+<header class="mp-hero">
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">ΗΜΕΡΑ 1 / 7 · ΒΑΣΕΙΣ & ΑΛΦΑΒΗΤΟ</span>
+  <h1>Ημέρα 1 — Αλφάβητο, Τόνος & Διαλυτικά</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#e6f0fa;">Μάθετε τα 24 γράμματα του ελληνικού αλφαβήτου, τους κανόνες τονισμού (προπαροξυτονία), τη διάκριση σ/ς και τη χρήση των διαλυτικών.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Εκτύπωση Ημέρας 1</button>
+</header>
 
-  <!-- Stage 1 -->
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 1 · Προθέρμανση</span>
-    <h2>1. Τα 24 Γράμματα του Ελληνικού Αλφαβήτου</h2>
+<main class="mp-container">
 
-    <h3>Πλήρης Πίνακας Ελληνικού Αλφαβήτου (24 Γράμματα)</h3>
-    <table class="practice-table">
-      <thead>
-        <tr><th>Γράμμα</th><th>Όνομα</th><th>Ήχος</th><th>Παράδειγμα</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>Α α</strong></td><td>άλφα</td><td>/a/</td><td>αγορά [agora]</td></tr>
-        <tr><td><strong>Β β</strong></td><td>βήτα</td><td>/v/</td><td>βιβλίο [vivlio]</td></tr>
-        <tr><td><strong>Γ γ</strong></td><td>γάμμα</td><td>/ɣ/ / /ʝ/</td><td>γάλα [gala]</td></tr>
-        <tr><td><strong>Δ δ</strong></td><td>δέλτα</td><td>/ð/</td><td>δρόμος [dromos]</td></tr>
-        <tr><td><strong>Ε ε</strong></td><td>έψιλον</td><td>/e/</td><td>ένα [ena]</td></tr>
-        <tr><td><strong>Ζ ζ</strong></td><td>ζήτα</td><td>/z/</td><td>ζωή [zoi]</td></tr>
-        <tr><td><strong>Η η</strong></td><td>ήτα</td><td>/i/</td><td>ήλιος [ilios]</td></tr>
-        <tr><td><strong>Θ θ</strong></td><td>θήτα</td><td>/θ/</td><td>θέατρο [theatro]</td></tr>
-        <tr><td><strong>Ι ι</strong></td><td>γιώτα</td><td>/i/</td><td>ιστορία [istoria]</td></tr>
-        <tr><td><strong>Κ κ</strong></td><td>κάππα</td><td>/k/</td><td>καφέ [kafe]</td></tr>
-        <tr><td><strong>Λ λ</strong></td><td>λάμδα</td><td>/l/</td><td>λεμόνι [lemoni]</td></tr>
-        <tr><td><strong>Μ μ</strong></td><td>μι</td><td>/m/</td><td>μητέρα [mitera]</td></tr>
-        <tr><td><strong>Ν ν</strong></td><td>νι</td><td>/n/</td><td>νερό [nero]</td></tr>
-        <tr><td><strong>Ξ ξ</strong></td><td>ξι</td><td>/ks/</td><td>ξένος [xenos]</td></tr>
-        <tr><td><strong>Ο ο</strong></td><td>όμικρον</td><td>/o/</td><td>όνομα [onoma]</td></tr>
-        <tr><td><strong>Π π</strong></td><td>πι</td><td>/p/</td><td>πόλη [poli]</td></tr>
-        <tr><td><strong>Ρ ρ</strong></td><td>ρο</td><td>/r/</td><td>ρόδο [rodo]</td></tr>
-        <tr><td><strong>Σ σ / ς</strong></td><td>σίγμα</td><td>/s/ / /z/</td><td>σπίτι [spiti] / φως [fos]</td></tr>
-        <tr><td><strong>Τ τ</strong></td><td>ταυ</td><td>/t/</td><td>τραπέζι [trapezi]</td></tr>
-        <tr><td><strong>Υ υ</strong></td><td>ύψιλον</td><td>/i/</td><td>ύπνος [ipnos]</td></tr>
-        <tr><td><strong>Φ φ</strong></td><td>φι</td><td>/f/</td><td>φίλος [filos]</td></tr>
-        <tr><td><strong>Χ χ</strong></td><td>χι</td><td>/x/ / /ç/</td><td>χαρά [chara]</td></tr>
-        <tr><td><strong>Ψ ψ</strong></td><td>ψι</td><td>/ps/</td><td>ψωμί [psomi]</td></tr>
-        <tr><td><strong>Ω ω</strong></td><td>ωμέγα</td><td>/o/</td><td>ώρα [ora]</td></tr>
-      </tbody>
-    </table>
+  <!-- STAGE 1: WARMER -->
+  <section id="warmer" class="celta-stage">
+    <span class="stage-badge">Στάδιο 1 🎯 Προθέρμανση</span>
+    <h2>Διαβάστε αυτές τις λέξεις δυνατά:</h2>
+    <div style="text-align:center; font-size:1.6rem; font-weight:800; color:#003366; margin:1rem 0;">
+      « καιρός » &nbsp; vs. &nbsp; « καΐκι »
+    </div>
+    <p>Γιατί η λέξη <strong>καιρός</strong> προφέρεται με έναν ήχο <em>/e/</em> (κε-ρός), ενώ η λέξη <strong>καΐκι</strong> προφέρεται με δύο ξεχωριστές συλλαβές <em>/ka-iki/</em>; Αυτή είναι η δύναμη των <strong>διαλυτικών (¨)</strong>!</p>
+  </section>
 
-    <p>Η νέα ελληνική έχει 24 γράμματα: 7 φωνήεντα (α, ε, η, ι, ο, υ, ω) και 17 σύμφωνα.</p>
+  <!-- STAGE 2: ELICITATION -->
+  <section id="elicit" class="celta-stage">
+    <span class="stage-badge">Στάδιο 2 🤔 Εισαγωγή & Παρατήρηση</span>
+    <h2>Συγκρίνετε τα παρακάτω ζεύγη:</h2>
+    <ul style="font-size:1.1rem; line-height:1.8;">
+      <li><strong>Ομάδα Α (Θέση Τόνου):</strong> <strong>ά</strong>ν-θρω-πος (τόνος στην 3η συλλαβή από το τέλος) vs. αν-θρώ-που (ο τόνος μετακινείται στη 2η συλλαβή!).</li>
+      <li><strong>Ομάδα Β (Μορφή Σίγμα):</strong> <strong>σ</strong>πί-τι (σ στην αρχή/μέση) vs. φω<strong>ς</strong> (ς αποκλειστικά στο τέλος).</li>
+      <li><strong>Ομάδα Γ (Διαλυτικά):</strong> Μ<strong>αϊ</strong>ου (μα-ΐ-ου) vs. κ<strong>αί</strong>ω (κέ-ω).</li>
+    </ul>
+    <p><strong>Παρατηρήστε το μοτίβο:</strong> Στην ελληνική γλώσσα, ο τόνος δεν μπορεί να πάει πιο πίσω από την 3η συλλαβή από το τέλος (κανόνας προπαροξυτονίας), το σίγμα αλλάζει μορφή στο τέλος της λέξης (ς), και τα διαλυτικά εμποδίζουν τα φωνήεντα να συγχωνευτούν.</p>
+  </section>
+
+  <!-- STAGE 3: EXPLANATION -->
+  <section id="explanation" class="celta-stage">
+    <span class="stage-badge">Στάδιο 3 📖 Κανόνες & Πλήρης Πίνακας</span>
+
     <div class="rule-card">
-      <strong>💡 Το Σίγμα (σ / ς):</strong>
-      Το γράμμα σίγμα γράφεται <strong>σ</strong> στην αρχή ή στη μέση της λέξης (<em>σπίτι, μέσα</em>) και <strong>ς</strong> αποκλειστικά στο τέλος (<em>φως, μας</em>).
+      <h3>Πλήρης Πίνακας Ελληνικού Αλφαβήτου (24 Γράμματα)</h3>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Γράμμα</th><th>Όνομα</th><th>Διεθνές Φωνητικό (IPA)</th><th>Παράδειγμα</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Α α</strong></td><td>άλφα</td><td>/a/</td><td>αγορά [agora]</td></tr>
+          <tr><td><strong>Β β</strong></td><td>βήτα</td><td>/v/</td><td>βιβλίο [vivlio]</td></tr>
+          <tr><td><strong>Γ γ</strong></td><td>γάμμα</td><td>/ɣ/ (πριν από α, ο, ου) / /ʝ/ (πριν από ε, ι)</td><td>γάλα [gala], γέρος [jeros]</td></tr>
+          <tr><td><strong>Δ δ</strong></td><td>δέλτα</td><td>/ð/ (όπως το th στο english "this")</td><td>δρόμος [dromos]</td></tr>
+          <tr><td><strong>Ε ε</strong></td><td>έψιλον</td><td>/e/</td><td>ένα [ena]</td></tr>
+          <tr><td><strong>Ζ ζ</strong></td><td>ζήτα</td><td>/z/</td><td>ζωή [zoi]</td></tr>
+          <tr><td><strong>Η η</strong></td><td>ήτα</td><td>/i/</td><td>ήλιος [ilios]</td></tr>
+          <tr><td><strong>Θ θ</strong></td><td>θήτα</td><td>/θ/ (όπως το th στο english "think")</td><td>θέατρο [theatro]</td></tr>
+          <tr><td><strong>Ι ι</strong></td><td>γιώτα</td><td>/i/</td><td>ιστορία [istoria]</td></tr>
+          <tr><td><strong>Κ κ</strong></td><td>κάππα</td><td>/k/</td><td>καφέ [kafe]</td></tr>
+          <tr><td><strong>Λ λ</strong></td><td>λάμδα</td><td>/l/</td><td>λεμόνι [lemoni]</td></tr>
+          <tr><td><strong>Μ μ</strong></td><td>μι</td><td>/m/</td><td>μητέρα [mitera]</td></tr>
+          <tr><td><strong>Ν ν</strong></td><td>νι</td><td>/n/</td><td>νερό [nero]</td></tr>
+          <tr><td><strong>Ξ ξ</strong></td><td>ξι</td><td>/ks/</td><td>ξένος [xenos]</td></tr>
+          <tr><td><strong>Ο ο</strong></td><td>όμικρον</td><td>/o/</td><td>όνομα [onoma]</td></tr>
+          <tr><td><strong>Π π</strong></td><td>πι</td><td>/p/</td><td>πόλη [poli]</td></tr>
+          <tr><td><strong>Ρ ρ</strong></td><td>ρο</td><td>/r/</td><td>ρόδο [rodo]</td></tr>
+          <tr><td><strong>Σ σ / ς</strong></td><td>σίγμα</td><td>/s/ (ή /z/ πριν από ηχηρά σύμφωνα)</td><td>σπίτι [spiti], φως [fos]</td></tr>
+          <tr><td><strong>Τ τ</strong></td><td>ταυ</td><td>/t/</td><td>τραπέζι [trapezi]</td></tr>
+          <tr><td><strong>Υ υ</strong></td><td>ύψιλον</td><td>/i/</td><td>ύπνος [ipnos]</td></tr>
+          <tr><td><strong>Φ φ</strong></td><td>φι</td><td>/f/</td><td>φίλος [filos]</td></tr>
+          <tr><td><strong>Χ χ</strong></td><td>χι</td><td>/x/ (πριν από α, ο, ου) / /ç/ (πριν από ε, ι)</td><td>χαρά [chara], χέρι [cheri]</td></tr>
+          <tr><td><strong>Ψ ψ</strong></td><td>ψι</td><td>/ps/</td><td>ψωμί [psomi]</td></tr>
+          <tr><td><strong>Ω ω</strong></td><td>ωμέγα</td><td>/o/</td><td>ώρα [ora]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>1. Ο Κανόνας Τονισμού (Προπαροξυτονία)</h2>
+    <p>Στη Νέα Ελληνική, κάθε πολυσύλλαβη λέξη έχει έναν τόνο. Ο τόνος τοποθετείται πάνω στο φωνήεν της τονισμένης συλλαβής.</p>
+    <div class="rule-card">
+      <h3>Χρυσός Κανόνας Τονισμού</h3>
+      <p>Ο τόνος <strong>δεν μπορεί ποτέ</strong> να μπει πιο πίσω από την <strong>τρίτη συλλαβή από το τέλος</strong> (προπαραλήγουσα):</p>
+      <ul>
+        <li><strong>ά-νθρω-πος</strong> (3 συλλαβές από το τέλος — σωστό)</li>
+        <li>Όταν η λέξη μεγαλώνει στη γενική: <strong>αν-θρώ-που</strong> (ο τόνος κατεβαίνει στη 2η συλλαβή γιατί η λήγουσα -που είναι μακρά).</li>
+      </ul>
+    </div>
+
+    <h2>2. Το Γράμμα Σίγμα (σ vs. ς)</h2>
+    <p>Το σίγμα είναι το μόνο γράμμα με δύο μικρές μορφές:</p>
+    <ul>
+      <li><strong>σ (αρχικό/μεσαίο):</strong> Γράφεται στην αρχή ή στη μέση της λέξης (<em>σπίτι, μέλισσα, σοφία</em>).</li>
+      <li><strong>ς (τελικό):</strong> Γράφεται αποκλειστικά στο τέλος της λέξης (<em>φως, άνθρωπος, καλός</em>).</li>
+    </ul>
+
+    <h2>3. Τα Διαλυτικά (¨)</h2>
+    <p>Τα διαλυτικά μπαίνουν πάνω από το <strong>ι</strong> ή το <strong>υ</strong> (ϊ, ϋ) για να δείξουν ότι δύο συνεχόμενα φωνήεντα πρέπει να προφερθούν <strong>ξεχωριστά</strong> και όχι ως δίψηφο φωνήεν:</p>
+    <ul>
+      <li><strong>καιρός</strong> [ke-ros] (το <em>αι</em> προφέρεται /e/)</li>
+      <li><strong>καΐκι</strong> [ka-i-ki] (τα διαλυτικά διασπούν το <em>αι</em> σε δύο φωνήεντα: /a/ + /i/)</li>
+      <li><strong>μαΐου</strong> [ma-i-u], <strong>γαϊδούρι</strong> [ga-i-du-ri]</li>
+    </ul>
+
+    <div class="hint-box">
+      <strong>💡 Σημείωση:</strong> Αν το πρώτο φωνήεν τονίζεται (π.χ. <em>γάιδαρος</em>), τα διαλυτικά δεν είναι απαραίτητα γιατί ο τόνος ήδη διασπά το σύμπλεγμα!
     </div>
   </section>
 
-  <!-- Stage 2 -->
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 2 · Παρουσίαση Κανόνα</span>
-    <h2>2. Ο Τόνος & Τα Διαλυτικά</h2>
-    <p>Ο τόνος τοποθετείται στη φωνήεν της τονισμένης συλλαβής. Δεν μπορεί να πάει πιο πίσω από την τρίτη συλλαβή από το τέλος.</p>
-    <table class="practice-table">
+  <!-- STAGE 4: CCQ -->
+  <section id="ccq" class="celta-stage">
+    <span class="stage-badge">Stage 4 ❓ Ερωτήσεις Ελέγχου Κατανόησης (CCQs)</span>
+    <ol style="line-height:1.8;">
+      <li><strong>Ερώτηση:</strong> Μπορεί μια ελληνική λέξη να τονιστεί στην 4η συλλαβή από το τέλος (π.χ. *ά-νθρω-πο-σι);
+        <br><em>Απάντηση: Όχι. Ο τόνος στην ελληνική γλώσσα δεν πάει ποτέ πιο πίσω από την 3η συλλαβή (προπαραλήγουσα).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Πότε χρησιμοποιούμε το ς αντί για το σ;
+        <br><em>Απάντηση: Μόνο στο τέλος της λέξης (π.χ. φως, φίλος). Στην αρχή και στη μέση χρησιμοποιούμε πάντα το σ.</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Τι άλλαγμα προκαλούν τα διαλυτικά στη λέξη "μαΐου";
+        <br><em>Απάντηση: Εμποδίζουν το "αι" από το να ακουστεί ως /e/, επιβάλλοντας ξεχωριστή προφορά των δύο φωνηέντων (/a-i/).</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5: GUIDED DRILL -->
+  <section id="drill" class="celta-stage">
+    <span class="stage-badge">Stage 5 🏋️ Καθοδηγούμενη Άσκηση (Αντίθεση Ήχων)</span>
+    <p>Διαβάστε τα παρακάτω ζεύγη δυνατά, προσέχοντας τη θέση του τόνου και τα διαλυτικά:</p>
+    <table class="mp-table">
       <thead>
-        <tr><th>Φαινόμενο</th><th>Κανόνας</th><th>Παράδειγμα</th></tr>
+        <tr><th>Χωρίς Διαλυτικά / Απλός Τόνος</th><th>Με Διαλυτικά / Αλλαγή Τόνου</th><th>Φωνητική Διαφορά</th></tr>
       </thead>
       <tbody>
-        <tr><td>Τόνος</td><td>Έως την προπαραλήγουσα</td><td>άνθρωπος, τηλέφωνο</td></tr>
-        <tr><td>Διαλυτικά</td><td>Διαχωρίζουν δύο φωνήεντα</td><td>μαΐου, καΐκι, γαϊδούρι</td></tr>
+        <tr><td>καιρός [ke-ros]</td><td>καΐκι [ka-i-ki]</td><td>Ήχος /e/ → Δύο συλλαβές /a-i/</td></tr>
+        <tr><td>μάιος [ma-jos]</td><td>μαΐου [ma-i-u]</td><td>Ένας τόνος στο α → Διαλυτικά στο ϊ</td></tr>
+        <tr><td>νόμος [no-mos]</td><td>νομός [no-mos]</td><td>Τόνος στην αρχή (law) → Τόνος στο τέλος (prefecture)</td></tr>
+        <tr><td>σπίτι [spi-ti]</td><td>φως [fos]</td><td>Μεσαίο σ → Τελικό ς</td></tr>
       </tbody>
     </table>
   </section>
 
-  <!-- Stage 3 -->
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 3 · Πρακτική</span>
-    <h2>3. Ασκήσεις Ανάγνωσης</h2>
-    <ul>
-      <li>νερό [neró]</li>
-      <li>άνθρωπος [ánθropos]</li>
-      <li>μαΐου [ma-í-u]</li>
-    </ul>
+  <!-- STAGE 6: FREE PRACTICE -->
+  <section id="freepractice" class="celta-stage">
+    <span class="stage-badge">Stage 6 📖 Ελεύθερη Ανάγνωση</span>
+    <p>Διαβάστε τις προτάσεις δυνατά. Αναγνωρίστε τη θέση του τόνου, το τελικό ς και τα διαλυτικά:</p>
+    <div style="background:#f4f8fb; padding:1.25rem; border-radius:8px; border:1px solid #e2e8f0; font-size:1.1rem; line-height:1.8;">
+      1. Ο <strong>άνθρωπος</strong> ταξιδεύει με το <strong>καΐκι</strong> τον μήνα <strong>Μάιο</strong>.<br>
+      2. Το <strong>φως</strong> του ήλιου είναι λαμπερό στην <strong>αγορά</strong>.<br>
+      3. Ο <strong>φίλος</strong> μας έγραψε μια ωραία <strong>ιστορία</strong> για τη <strong>ζωή</strong>.
+    </div>
   </section>
 
-  <!-- Stage 4 -->
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 4 · Ανακεφαλαίωση</span>
-    <div style="display:flex; justify-between; align-items:center;">
-      <a href="../index.html" style="color:#005bae; text-decoration:none; font-weight:700;">← Πίσω στο Hub</a>
-      <a href="day-2.html" style="background:#005bae; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Ημέρα 2 →</a>
+  <!-- STAGE 7: TAKEAWAY -->
+  <section id="takeaway" class="celta-stage" style="background:#e6f0fa; border-color:#b3d7ff;">
+    <span class="stage-badge" style="background:#005bae; color:#ffffff;">Stage 7 🔑 Σύνοψη Ημέρας 1</span>
+    <h2>Χρυσός Κανόνας της Ημέρας 1:</h2>
+    <div style="font-size:1.15rem; font-weight:700; color:#003366;">
+      Ο τόνος δεν πάει πιο πίσω από την 3η συλλαβή (άνθρωπος), το σίγμα γράφεται ς στο τέλος της λέξης (φως), και τα διαλυτικά (¨) εμποδίζουν τα φωνήεντα να ενωθούν σε έναν ήχο (καΐκι)!
     </div>
   </section>
 
 </main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
+  <p>© 2026 COSYlanguages · Bootcamp Ελληνικής Προφοράς · Ημέρα 1</p>
+</footer>
 
 </body>
 </html>

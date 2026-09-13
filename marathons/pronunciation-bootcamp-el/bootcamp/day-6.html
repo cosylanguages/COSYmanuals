@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ημέρα 6: Ορθογραφική Λογική & Ομόηχα — Bootcamp Ελληνικής Προφοράς · COSY</title>
+<title>🇬🇷 Ημέρα 6 — Ορθογραφική Λογική & Ομόηχα · Bootcamp Ελληνικής Προφοράς · COSY</title>
+<meta name="description" content="Ημέρα 6 του 7ήμερου Bootcamp Ελληνικής Προφοράς: Γραμματικές καταλήξεις (-ω/-ο, -ται/-τε, -ει/-οι) και πλήρης οδηγός διακρίσεων ομόηχων (πιο/ποιο, ή/η, που/πού).">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,47 +13,311 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2c3e50; background: #f4f8fb; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #003366, #005bae); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
-  .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #e6f0fa; color: #005bae; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #e6f0fa; border-left: 4px solid #005bae; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  :root {
+    --el-primary: #003366;
+    --el-accent: #005bae;
+    --el-light: #e6f0fa;
+    --el-border: #b3d7ff;
+  }
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: #2c3e50;
+    background-color: #f4f8fb;
+    line-height: 1.65;
+  }
+  .sd-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sd-jump-links {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sd-jump-link {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    background: #e6f0fa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sd-jump-link:hover { background: #005bae; color: #ffffff; }
+  .mp-hero {
+    background: linear-gradient(135deg, #003366 0%, #005bae 100%);
+    color: #ffffff;
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #b3d7ff;
+  }
+  .mp-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+  .mp-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+  .celta-stage {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .stage-badge {
+    background: #e6f0fa;
+    color: #005bae;
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .celta-stage h2 { color: #003366; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
+  .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+  .mp-table th { background: #e6f0fa; color: #003366; }
+  .rule-card {
+    background: #f4f8fb;
+    border-left: 4px solid #005bae;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .rule-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+  .hint-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
 </style>
 </head>
 <body data-lang-theme="el">
 
-<header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇷 Ημέρα 6 / 7 · Στάδιο CELTA: Μορφολογία & Ορθογραφία</span>
-  </div>
-  <h1>Ορθογραφική Λογική & Ομόηχα</h1>
-  <p style="color:#e6f0fa; max-width:700px; margin:0.5rem auto 1rem;">Μάθετε πώς η γραμματική καθορίζει τη σωστή γραφή των ομόηχων λέξεων.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Εκτύπωση Ημέρας 6
-  </button>
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← Hub EL</a>
+    <a href="#warmer" class="sd-jump-link">1. Προθέρμανση</a>
+    <a href="#elicit" class="sd-jump-link">2. Εισαγωγή</a>
+    <a href="#explanation" class="sd-jump-link">3. Κανόνες & Πίνακες</a>
+    <a href="#ccq" class="sd-jump-link">4. Ερωτήσεις CCQ</a>
+    <a href="#drill" class="sd-jump-link">5. Καθοδηγούμενη Άσκηση</a>
+    <a href="#freepractice" class="sd-jump-link">6. Ελεύθερη Ανάγνωση</a>
+    <a href="#takeaway" class="sd-jump-link">7. Σύνοψη</a>
+  </nav>
 </header>
 
-<main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 1 · Γραμματικές Καταλήξεις</span>
-    <h2>1. Ρήματα vs. Ουσιαστικά & Παθητική Φωνή</h2>
+<header class="mp-hero">
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">ΗΜΕΡΑ 6 / 7 · ΜΟΡΦΟΛΟΓΙΑ & ΟΜΟΗΧΑ</span>
+  <h1>Ημέρα 6 — Ορθογραφική Λογική & Ομόηχα</h1>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#e6f0fa;">Μάθετε πώς η γραμματική καθορίζει τη γραφή των καταλήξεων (-ω/-ο, -ται/-τε, -ει/-οι) και των ομόηχων ζευγών (πιο/ποιο, ή/η, που/πού).</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#003366; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Εκτύπωση Ημέρας 6</button>
+</header>
+
+<main class="mp-container">
+
+  <!-- STAGE 1: WARMER -->
+  <section id="warmer" class="celta-stage">
+    <span class="stage-badge">Στάδιο 1 🎯 Προθέρμανση</span>
+    <h2>Διαβάστε αυτές τις προτάσεις δυνατά:</h2>
+    <div style="text-align:center; font-size:1.5rem; font-weight:800; color:#003366; margin:1rem 0;">
+      « Πού είσαι; » &nbsp; vs. &nbsp; « Το σπίτι που μένω »
+      <br><span style="font-size:1.3rem;">« Ποιο βιβλίο θέλεις; » &nbsp; vs. &nbsp; « Θέλω πιο πολύ καφέ »</span>
+    </div>
+    <p>Στον προφορικό λόγο, οι λέξεις <strong>πού</strong> και <strong>που</strong> (ή <strong>ποιο</strong> και <strong>πιο</strong>) ακούγονται 100% αδιαφόρετες! Πώς η γραμματική και ο τόνος καθορίζουν τη σωστή γραφή;</p>
+  </section>
+
+  <!-- STAGE 2: ELICITATION -->
+  <section id="elicit" class="celta-stage">
+    <span class="stage-badge">Στάδιο 2 🤔 Εισαγωγή & Παρατήρηση</span>
+    <h2>Συγκρίνετε τις δύο μεγάλες κατηγορίες ορθογραφικής λογικής:</h2>
+    <ul style="font-size:1.1rem; line-height:1.8;">
+      <li><strong>1. Γραμματικές Καταλήξεις (Ρήματα vs. Ουσιαστικά):</strong>
+        <br>• <em>-ω vs. -ο:</em> Εγώ γράφ<strong>ω</strong> (ρήμα) vs. Το βιβλί<strong>ο</strong> (ουδέτερο ουσιαστικό).
+        <br>• <em>-ται vs. -τε:</em> Αυτός γράφε<strong>ται</strong> (παθητική φωνή /te/) vs. Εσείς γράφε<strong>τε</strong> (β' πληθυντικό /te/).
+        <br>• <em>-ει vs. -οι:</em> Αυτός γράφ<strong>ει</strong> (γ' ενικό /i/) vs. <strong>Οι</strong> φίλ<strong>οι</strong> (πληθυντικός αρσενικών /i/).
+      </li>
+      <li><strong>2. Τρία Βασικά Ομόηχα Ζεύγη:</strong>
+        <br>• <em>πιο vs. ποιο:</em> <strong>πιο</strong> καλά (συγκριτικό επίρρημα) vs. <strong>ποιο</strong> βιβλίο; (ερωτηματική αντωνυμία).
+        <br>• <em>ή vs. η:</em> Καφέ <strong>ή</strong> τσάι; (σύνδεσμος "or") vs. <strong>η</strong> θάλασσα (θηλυκό άρθρο "the").
+        <br>• <em>πού vs. που:</em> <strong>Πού</strong> μένεις; (ερωτηματικό "where") vs. Το παιδί <strong>που</strong> βλέπω (αναφορικό "that/who").
+      </li>
+    </ul>
+  </section>
+
+  <!-- STAGE 3: EXPLANATION -->
+  <section id="explanation" class="celta-stage">
+    <span class="stage-badge">Στάδιο 3 📖 Κανόνες & Πλήρεις Πίνακες</span>
+
+    <h2>1. Ορθογραφική Λογική Γραμματικών Καταλήξεων</h2>
+
     <div class="rule-card">
-      <strong>💡 Βασικές Διακρίσεις:</strong>
-      <br>• <strong>-ω vs. -ο:</strong> Ρήματα σε -ω (<em>γράφω, μένω</em>) vs. ουσιαστικά/επίθετα σε -ο (<em>το βιβλίο, καλό</em>).
-      <br>• <strong>-ται vs. -τε:</strong> Γ' ενικό παθητικής φωνής -ται (<em>γράφεται</em> /te/) vs. Β' πληθυντικό -τε (<em>γράφετε</em> /te/).
-      <br>• <strong>-ει vs. -οι:</strong> Γ' ενικό ρήματος -ει (<em>γράφει</em> /i/) vs. πληθυντικός αρσενικών -οι (<em>οι φίλοι</em> /i/).
+      <h3>Πίνακας 1: Ρήματα vs. Ουσιαστικά / Επίθετα</h3>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Κατάληξη</th><th>Γραμματικός Ρόλος</th><th>Ήχος IPA</th><th>Παραδείγματα</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>-ω</strong></td>
+            <td>Α' πρόσωπο ενικού ρημάτων (εγώ)</td>
+            <td>/o/</td>
+            <td>γράφ<strong>ω</strong>, μέν<strong>ω</strong>, αγαπ<strong>ώ</strong></td>
+          </tr>
+          <tr>
+            <td><strong>-ο</strong></td>
+            <td>Ουδέτερα ουσιαστικά & επίθετα</td>
+            <td>/o/</td>
+            <td>το βιβλί<strong>ο</strong>, το νερό, καλό παιδί</td>
+          </tr>
+          <tr>
+            <td><strong>-ται</strong></td>
+            <td>Γ' ενικό παθητικής φωνής ρημάτων</td>
+            <td>/te/</td>
+            <td>γράφεται [grafete], φαίνεται, έρχεται</td>
+          </tr>
+          <tr>
+            <td><strong>-τε</strong></td>
+            <td>Β' πληθυντικό ενεργητικής & παθητικής</td>
+            <td>/te/</td>
+            <td>γράφετε [grafete], μένετε, έρχεστε</td>
+          </tr>
+          <tr>
+            <td><strong>-ει</strong></td>
+            <td>Γ' ενικό ενεργητικής φωνής ρημάτων</td>
+            <td>/i/</td>
+            <td>αυτός γράφ<strong>ει</strong>, τρέχ<strong>ει</strong>, έχ<strong>ει</strong></td>
+          </tr>
+          <tr>
+            <td><strong>-οι</strong></td>
+            <td>Ονομαστική πληθυντικού αρσενικών</td>
+            <td>/i/</td>
+            <td><strong>οι</strong> φίλ<strong>οι</strong>, <strong>οι</strong> άνθρωπ<strong>οι</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. Τα 3 Βασικά Ομόηχα Ζεύγη της Ελληνικής</h2>
+
+    <div class="rule-card">
+      <h3>Πίνακας 2: Ανάλυση Ομόηχων Ζευγών</h3>
+      <table class="mp-table">
+        <thead>
+          <tr><th>Ζεύγος</th><th>Μορφή</th><th>Γραμματικός Ρόλος & Σημασία</th><th>Παράδειγμα</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2"><strong>πιο / ποιο</strong></td>
+            <td><strong>πιο</strong></td>
+            <td>Συγκριτικό επίρρημα ("more")</td>
+            <td>Είναι <strong>πιο</strong> ψηλός από εμένα.</td>
+          </tr>
+          <tr>
+            <td><strong>ποιο</strong></td>
+            <td>Ερωτηματική αντωνυμία ("which")</td>
+            <td><strong>Ποιο</strong> βιβλίο διαβάζεις;</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>ή / η</strong></td>
+            <td><strong>ή</strong> (με τόνο)</td>
+            <td>Διαζευκτικός σύνδεσμος ("or")</td>
+            <td>Θέλεις καφέ <strong>ή</strong> τσάι;</td>
+          </tr>
+          <tr>
+            <td><strong>η</strong> (χωρίς τόνο)</td>
+            <td>Θηλυκό οριστικό άρθρο ("the")</td>
+            <td><strong>Η</strong> μητέρα είναι στο σπίτι.</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>που / πού</strong></td>
+            <td><strong>πού</strong> (με τόνο)</td>
+            <td>Ερωτηματικό επίρρημα ("where")</td>
+            <td><strong>Πού</strong> πηγαίνεις; <strong>Πού</strong> είναι το κλειδί;</td>
+          </tr>
+          <tr>
+            <td><strong>που</strong> (χωρίς τόνο)</td>
+            <td>Αναφορική αντωνυμία / σύνδεσμος ("that/who/which")</td>
+            <td>Το βιβλίο <strong>που</strong> διάβασα ήταν ωραίο.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="hint-box">
+      <strong>💡 Χρυσός Κανόνας Τονισμού στα Ομόηχα:</strong> Οι λέξεις <strong>πού</strong> (where) και <strong>πώς</strong> (how) παίρνουν <strong>πάντα τόνο</strong> όταν χρησιμοποιούνται σε ευθείες ή εμμεσες ερωτήσεις! Ο διαζευκτικός σύνδεσμος <strong>ή</strong> (or) παίρνει επίσης πάντα τόνο για να διακρίνεται από το θηλυκό άρθρο <strong>η</strong> (the).
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">Στάδιο 2 · Πλοήγηση</span>
-    <div style="display:flex; justify-between; align-items:center;">
-      <a href="day-5.html" style="color:#005bae; text-decoration:none; font-weight:700;">← Ημέρα 5</a>
-      <a href="day-7.html" style="background:#005bae; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Ημέρα 7 →</a>
+  <!-- STAGE 4: CCQ -->
+  <section id="ccq" class="celta-stage">
+    <span class="stage-badge">Stage 4 ❓ Ερωτήσεις Ελέγχου Κατανόησης (CCQs)</span>
+    <ol style="line-height:1.8;">
+      <li><strong>Ερώτηση:</strong> Πώς γράφεται η πρόταση "Εγώ γράφ..." και "Το βιβλί...";
+        <br><em>Απάντηση: Εγώ γράφω (με -ω, επειδή είναι ρήμα) και Το βιβλίο (με -ο, επειδή είναι ουδέτερο ουσιαστικό).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Ποια είναι η διαφορά στην προφορά και στη γραφή ανάμεσα στο "γράφεται" και στο "γράφετε";
+        <br><em>Απάντηση: Η προφορά είναι 100% ίδια (/grafete/). Στη γραφή, το -ται είναι γ' ενικό παθητικής (γράφεται) ενώ το -τε είναι β' πληθυντικό (γράφετε).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Πότε βάζουμε τόνο στο "που" και στο "η";
+        <br><em>Απάντηση: Βάζουμε τόνο όταν είναι ερώτηση "πού;" (where) και όταν είναι διαζευκτικό "ή" (or).</em>
+      </li>
+      <li><strong>Ερώτηση:</strong> Πώς διακρίνουμε το "πιο" από το "ποιο";
+        <br><em>Απάντηση: Το "πιο" σημαίνει "more" (πιο καλός), ενώ το "ποιο" είναι ερωτηματικό "which" (ποιο σπίτι;).</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5: GUIDED DRILL -->
+  <section id="drill" class="celta-stage">
+    <span class="stage-badge">Stage 5 🏋️ Καθοδηγούμενη Άσκηση (Διάκριση Ομόηχων & Καταλήξεων)</span>
+    <p>Συμπληρώστε νοερά τη σωστή γραφή για τα παρακάτω ομόηχα ζεύγη και διαβάστε δυνατά:</p>
+    <table class="mp-table">
+      <thead>
+        <tr><th>Προφορικός Ήχος</th><th>Επιλογή Α (Γραμματική Α)</th><th>Επιλογή Β (Γραμματική Β)</th><th>Πλαίσιο Χρήσης</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>[pu]</td><td><strong>πού</strong> (ερώτηση)</td><td><strong>που</strong> (αναφορικό)</td><td>— <strong>Πού</strong> είναι το αυτοκίνητο <strong>που</strong> αγόρασες;</td></tr>
+        <tr><td>[pio]</td><td><strong>πιο</strong> (συγκριτικό)</td><td><strong>ποιο</strong> (ερωτηματικό)</td><td>— <strong>Ποιο</strong> είναι το <strong>πιο</strong> γρήγορο τρένο;</td></tr>
+        <tr><td>[i]</td><td><strong>ή</strong> (or)</td><td><strong>η</strong> (the)</td><td>— <strong>Η</strong> Μαρία θέλει νερό <strong>ή</strong> χυμό;</td></tr>
+        <tr><td>[grafete]</td><td>γράφ<strong>εται</strong> (3rd sg. passive)</td><td>γράφ<strong>ετε</strong> (2nd pl.)</td><td>— Αυτό το όνομα γράφ<strong>εται</strong> εύκολα, γι' αυτό το γράφ<strong>ετε</strong> σωστά.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- STAGE 6: FREE PRACTICE -->
+  <section id="freepractice" class="celta-stage">
+    <span class="stage-badge">Stage 6 📖 Ελεύθερη Ανάγνωση</span>
+    <p>Διαβάστε το κείμενο δυνατά. Εξηγήστε την ορθογραφική λογική των υπογραμμισμένων λέξεων:</p>
+    <div style="background:#f4f8fb; padding:1.25rem; border-radius:8px; border:1px solid #e2e8f0; font-size:1.1rem; line-height:1.8;">
+      1. <strong>Πού</strong> είναι το σχολείο <strong>που</strong> φοιτούν <strong>οι</strong> μαθητές;<br>
+      2. <strong>Ποιο</strong> είναι το <strong>πιο</strong> ωραίο βιβλί<strong>ο</strong> που διαβάζ<strong>ω</strong> αυτόν τον καιρό;<br>
+      3. <strong>Η</strong> δασκάλα ρώτησε αν θέλε<strong>τε</strong> να μάθε<strong>τε</strong> πώς γράφε<strong>ται</strong> αυτή <strong>η</strong> λέξη.
     </div>
   </section>
+
+  <!-- STAGE 7: TAKEAWAY -->
+  <section id="takeaway" class="celta-stage" style="background:#e6f0fa; border-color:#b3d7ff;">
+    <span class="stage-badge" style="background:#005bae; color:#ffffff;">Stage 7 🔑 Σύνοψη Ημέρας 6</span>
+    <h2>Χρυσός Κανόνας της Ημέρας 6:</h2>
+    <div style="font-size:1.15rem; font-weight:700; color:#003366;">
+      Τα ρήματα θέλουν -ω/-ει/-ται, τα ουσιαστικά -ο/-οι, οι ερωτήσεις θέλουν πού/ποιο/πώς με τόνο, και το ή (or) παίρνει πάντα τόνο για να διακρίνεται από το η (the)!
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer" style="background:#003366; color:#ffffff; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
+  <div style="display:flex; justify-content:space-between; max-width:1000px; margin:0 auto 1rem; padding:0 1.5rem;">
+    <a href="day-5.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">← Ημέρα 5</a>
+    <a href="day-7.html" style="color:#b3d7ff; text-decoration:none; font-weight:700;">Ημέρα 7 →</a>
+  </div>
+  <p>© 2026 COSYlanguages · Bootcamp Ελληνικής Προφοράς · Ημέρα 6</p>
+</footer>
+
 </body>
 </html>
