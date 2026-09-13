@@ -12,13 +12,35 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
+  :root {
+    --g-primary: #7b1113;
+    --g-primary-light: #fff5f5;
+    --g-accent: #c53030;
+    --g-border: #feb2b2;
+  }
   body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #fffaf0; line-height: 1.65; }
   .day-hero { background: linear-gradient(135deg, #7b1113, #c53030); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
   .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #fff5f5; color: #c53030; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #fff5f5; border-left: 4px solid #c53030; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #feb2b2; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+  .stage-tag { background: #fff5f5; color: #c53030; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #fff5f5; border-left: 4px solid #c53030; padding: 1rem; border-radius: 6px; }
+  .box-b { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.75rem 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-list { background: #f7fafc; border: 1px dashed #cbd5e0; padding: 1rem 1.5rem; border-radius: 8px; margin-top: 1rem; }
+  .ccq-item { margin-bottom: 0.75rem; }
+  .ccq-q { font-weight: 700; color: #2d3748; }
+  .ccq-a { color: #4a5568; font-style: italic; margin-top: 0.2rem; }
+  .quiz-item { background: #f7fafc; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #edf2f7; }
+  details.answer-key summary { cursor: pointer; font-weight: 700; color: #7b1113; outline: none; padding: 0.5rem; background: #fff5f5; border-radius: 6px; display: inline-block; }
+  details.answer-key { margin-top: 1.5rem; }
+  .answer-content { background: #edf2f7; padding: 1rem; border-radius: 6px; margin-top: 0.5rem; }
+  .nav-flex { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .nav-btn { background: #7b1113; color: #fff; text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
+  .nav-btn:hover { background: #c53030; }
+  .nav-btn-sec { color: #7b1113; text-decoration: none; font-weight: 700; font-size: 0.9rem; padding: 0.5rem 1rem; border: 1px solid #7b1113; border-radius: 6px; }
+  .nav-btn-sec:hover { background: #fff5f5; }
 </style>
 </head>
 <body data-lang-theme="ru">
@@ -35,21 +57,115 @@
 </header>
 
 <main class="day-container">
+
+  <!-- Stage 1 -->
   <section class="stage-box">
-    <span class="stage-tag">Этап CELTA 1 · Главное Отличие</span>
-    <h2>1. Понимание правила</h2>
-    <div class="rule-card">
-      <strong>💡 Главный принцип:</strong> Местонахождение (где?) vs направление движения (куда?).
+    <span class="stage-tag">Этап CELTA 1 · Элицитация</span>
+    <h2>1. Сравните концепцию пространства и движения</h2>
+    <p>Обратите внимание на значение предлогов с разными падежами:</p>
+    <div style="background:#fff5f5; padding:1rem; border-radius:8px; font-style:italic; margin-top:0.5rem;">
+      <p style="margin:0 0 0.5rem;">A: — <strong>Где</strong> ты? — Я <strong>в парке</strong> / <strong>на работе</strong>.</p>
+      <p style="margin:0;">B: — <strong>Куда</strong> ты идёшь? — Я иду <strong>в парк</strong> / <strong>на работу</strong>.</p>
+    </div>
+    <p style="margin-top:1rem;">Слова <em>в</em> и <em>на</em> одинаковые, но падежи существительных полностью меняют смысл: статика или движение к цели!</p>
+  </section>
+
+  <!-- Stage 2 -->
+  <section class="stage-box">
+    <span class="stage-tag">Этап CELTA 2 · Правило и Логика</span>
+    <h2>2. Правило: Где? (Предложный) vs Куда? (Винительный)</h2>
+    <p><strong>Главное правило:</strong> Вопрос <strong>Где?</strong> требует Предложный падеж (обычно окончание -е). Вопрос <strong>Куда?</strong> требует Винительный падеж направления.</p>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h3 style="margin:0 0 0.5rem; color:#7b1113;">ГДЕ? — Предложный падеж</h3>
+        <p style="margin:0;">Статическое местонахождение объекта. Движение отсутствует или происходит внутри объекта.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><em>Я работаю в школе (где?).</em></li>
+          <li><em>Мы отдыхаем на море (где?).</em></li>
+          <li><em>Книга лежит на столе (где?).</em></li>
+        </ul>
+      </div>
+      <div class="box-b">
+        <h3 style="margin:0 0 0.5rem; color:#2b6cb0;">КУДА? — Винительный падеж</h3>
+        <p style="margin:0;">Динамическое движение извне по направлению к цели/объекту.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><em>Я иду в школу (куда?).</em></li>
+          <li><em>Мы едем на море (куда?).</em></li>
+          <li><em>Я кладу книгу на стол (куда?).</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Мнемотехника: <strong>Где? (Предложный)</strong> — дом стоячий (статика). <strong>Куда? (Винительный)</strong> — стрела летящая (вектор движения).
     </div>
   </section>
 
+  <!-- Stage 3 -->
   <section class="stage-box">
-    <span class="stage-tag">Этап CELTA 2 · Навигация</span>
-    <div style="display:flex; justify-between; align-items:center;">
-      <a href="../ru-a0-a2.html" style="color:#7b1113; text-decoration:none; font-weight:700;">← Обзор Модуля</a>
-      <a href="../index.html" style="background:#c53030; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Хаб Грамматики 🇷🇺</a>
+    <span class="stage-tag">Этап CELTA 3 · CCQ (Вопросы на понимание)</span>
+    <h2>3. Проверьте своё понимание</h2>
+    <div class="ccq-list">
+      <div class="ccq-item">
+        <div class="ccq-q">Q1: Предложение «Я гуляю в парке» описывает статику в месте или движение по направлению к парку?</div>
+        <div class="ccq-a">✓ Ответ: Статическое нахождение внутри места (Где? → Предложный падеж).</div>
+      </div>
+      <div class="ccq-item">
+        <div class="ccq-q">Q2: Какой вопрос мы задаём к предложению «Мы едем на выставку»?</div>
+        <div class="ccq-a">✓ Ответ: Вопрос «Куда?» (Направление → Винительный падеж).</div>
+      </div>
+      <div class="ccq-item">
+        <div class="ccq-q">Q3: Какое окончание будет у слова «аптека» при ответе на вопрос «Куда?» (Винительный падеж)?</div>
+        <div class="ccq-a">✓ Ответ: Окончание -у («в аптеку»).</div>
+      </div>
     </div>
   </section>
+
+  <!-- Stage 4 -->
+  <section class="stage-box">
+    <span class="stage-tag">Этап CELTA 4 · Практика</span>
+    <h2>4. Упражнения</h2>
+    <p>Раскройте скобки, выбирая Предложный (Где?) или Винительный (Куда?) падеж:</p>
+
+    <div class="quiz-item">
+      1. Завтра мы идём в (театр) __________.
+    </div>
+    <div class="quiz-item">
+      2. Вчера вечером я был в (театр) __________.
+    </div>
+    <div class="quiz-item">
+      3. Студенты спешат на (лекция) __________.
+    </div>
+    <div class="quiz-item">
+      4. Преподаватель уже сидит в (аудитория) __________.
+    </div>
+    <div class="quiz-item">
+      5. Кот попрыгал на (диван) __________.
+    </div>
+
+    <details class="answer-key">
+      <summary>🔑 Показать ответы</summary>
+      <div class="answer-content">
+        <ol style="margin:0; padding-left:1.2rem;">
+          <li>театр (Куда? - Винительный п.)</li>
+          <li>театре (Где? - Предложный п.)</li>
+          <li>лекцию (Куда? - Винительный п.)</li>
+          <li>аудитории (Где? - Предложный п., на -ия → -ии)</li>
+          <li>диван (Куда? - Винительный п.)</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- Navigation -->
+  <section class="stage-box" style="margin-bottom:0;">
+    <div class="nav-flex">
+      <a href="day-2.html" class="nav-btn-sec">← День 2: Падежи</a>
+      <a href="day-4.html" class="nav-btn">День 4: Идти vs Ходить →</a>
+    </div>
+  </section>
+
 </main>
 </body>
 </html>
