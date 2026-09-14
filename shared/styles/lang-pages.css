@@ -1,0 +1,41 @@
+/* COSYmanuals Language Themes & Manual Overrides */
+
+/* English (en) */
+body[data-lang-theme="en"], [data-lang="en"] {
+  --lang-primary: #1a365d;
+  --lang-accent: #2b6cb0;
+  --lang-light: #ebf8ff;
+  --lang-border: #bee3f8;
+}
+
+/* French (fr) */
+body[data-lang-theme="fr"], [data-lang="fr"] {
+  --lang-primary: #1e3a8a;
+  --lang-accent: #2563eb;
+  --lang-light: #eff6ff;
+  --lang-border: #bfdbfe;
+}
+
+/* Russian (ru) */
+body[data-lang-theme="ru"], [data-lang="ru"] {
+  --lang-primary: #881337;
+  --lang-accent: #e11d48;
+  --lang-light: #fff1f2;
+  --lang-border: #fecdd3;
+}
+
+/* Greek (el) */
+body[data-lang-theme="el"], [data-lang="el"] {
+  --lang-primary: #0c4a6e;
+  --lang-accent: #0284c7;
+  --lang-light: #f0f9ff;
+  --lang-border: #bae6fd;
+}
+
+/* Italian (it) */
+body[data-lang-theme="it"], [data-lang="it"] {
+  --lang-primary: #14532d;
+  --lang-accent: #16a34a;
+  --lang-light: #f0fdf4;
+  --lang-border: #bbf7d0;
+}
