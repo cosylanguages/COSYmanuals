@@ -257,6 +257,28 @@
     flex-grow: 1;
   }
 
+  .level-card-btn {
+    display: block;
+    text-align: center;
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .btn-a0a1 { background: #e3f2fd; color: #0d47a1; }
+  .btn-a0a1:hover { background: #bbdefb; }
+  .btn-a2 { background: #e8f5e9; color: #1b5e20; }
+  .btn-a2:hover { background: #c8e6c9; }
+  .btn-b1 { background: #fff8e1; color: #f57f17; }
+  .btn-b1:hover { background: #ffecb3; }
+  .btn-b2 { background: #fbe9e7; color: #bf360c; }
+  .btn-b2:hover { background: #ffccbc; }
+  .btn-c1 { background: #f3e5f5; color: #4a148c; }
+  .btn-c1:hover { background: #e1bee7; }
+  .btn-c2 { background: #eceff1; color: #263238; }
+  .btn-c2:hover { background: #cfd8dc; }
+
   .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
   .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
   .mp-table th { background: #ebf8ff; color: #1a365d; }
@@ -311,7 +333,7 @@
 
   <!-- PRIMARY SECTION: 7-DAY BOOTCAMP ROUTE -->
   <section id="bootcamp" class="mp-section" style="border: 2px solid #2b6cb0; background: #fbfdfb;">
-    <h2>⚡ Primary Learning Path: 7-Day Pronunciation Bootcamp</h2>
+    <h2>⚡ Primary Learning Path: 7-Day Intensive Bootcamp</h2>
     <p>
       This step-by-step 7-day marathon takes beginners and false-beginners from basic letter sounds to fluent connected reading. Each lesson uses physical mouth position cues, zero audio reliance, high-contrast print styles, and strict CELTA stages.
     </p>
@@ -393,7 +415,7 @@
 
   <!-- SECONDARY SECTION: CEFR LEVEL OVERVIEW CARDS (A0 -> C2) -->
   <section id="niveaux" class="mp-section">
-    <h2>📚 Complete A0 → C2 Reference Directory</h2>
+    <h2>📚 Level Reference Guide A0 → C2</h2>
     <p>
       Explore our comprehensive CEFR-structured reference guide covering every rule pattern, spelling convention, and etymology breakdown across all proficiency levels:
     </p>
@@ -411,7 +433,7 @@
             Alphabet sounds, CVC short vowels, Magic E long vowels, silent letters (kn, wr, mb), basic digraphs (sh, ch, th, ph, wh, ng), and basic plurals/verb endings.
           </p>
         </div>
-        <div style="font-size:0.85rem; color:#2b6cb0; font-weight:700;">Covered in Bootcamp Days 1–3</div>
+        <a href="levels/a0-a1.html" class="level-card-btn btn-a0a1">Explore Level A0-A1 →</a>
       </div>
 
       <!-- Card A2 -->
@@ -425,7 +447,7 @@
             1-1-1 consonant doubling, Y to I rule, dropping silent E, R-controlled vowels (ER, IR, UR), Soft C / Soft G rules, and suffix pronunciations (-tion, -sion, -ly).
           </p>
         </div>
-        <div style="font-size:0.85rem; color:#2b6cb0; font-weight:700;">Covered in Bootcamp Days 2–5</div>
+        <a href="levels/a2.html" class="level-card-btn btn-a2">Explore Level A2 →</a>
       </div>
 
       <!-- Card B1 -->
@@ -439,7 +461,7 @@
             Schwa /ə/, 2-syllable noun vs. verb stress shift, multi-syllable suffix stress, open vs. closed syllables, 3 past -ED rules, S voicing, and OUGH patterns.
           </p>
         </div>
-        <div style="font-size:0.85rem; color:#2b6cb0; font-weight:700;">Covered in Bootcamp Days 4–6</div>
+        <a href="levels/b1.html" class="level-card-btn btn-b1">Explore Level B1 →</a>
       </div>
 
       <!-- Card B2 -->
@@ -453,7 +475,7 @@
             Latin/Greek suffix stress, ti/ci/si = /ʃ/ or /ʒ/, qu/-que patterns, advanced silent letters (bt, ps, pn, sc), -able vs. -ible logic, connected speech linking & T-flapping.
           </p>
         </div>
-        <div style="font-size:0.85rem; color:#2b6cb0; font-weight:700;">Covered in Bootcamp Day 7 & Advanced Reference</div>
+        <a href="levels/b2.html" class="level-card-btn btn-b2">Explore Level B2 →</a>
       </div>
 
       <!-- Card C1 -->
@@ -467,7 +489,7 @@
             Etymology-based spelling (Greek ch=/k/, French ch=/ʃ/, Latin -tion, Germanic hard g), rare vowel patterns (ei after c, ey), UK vs. US stress variants, homographs.
           </p>
         </div>
-        <div style="font-size:0.85rem; color:#2b6cb0; font-weight:700;">Advanced Reference Module</div>
+        <a href="levels/c1.html" class="level-card-btn btn-c1">Explore Level C1 →</a>
       </div>
 
       <!-- Card C2 -->
@@ -481,7 +503,7 @@
             Rare silent letters (-bt, -gn, -alm), complete irregular plurals & verbs, UK vs. US spelling variants (analyse/analyze, centre/center), and rare consonant clusters.
           </p>
         </div>
-        <div style="font-size:0.85rem; color:#2b6cb0; font-weight:700;">Proficiency Reference Module</div>
+        <a href="levels/c2.html" class="level-card-btn btn-c2">Explore Level C2 →</a>
       </div>
 
     </div>
@@ -556,9 +578,6 @@
   </div>
 </footer>
 
-<script src="../../js/data/languages.js"></script>
-<script src="../../js/core/engine.js"></script>
-<script src="../../js/core/i18n.js"></script>
-<script src="../../js/core/ui.js"></script>
+
 </body>
 </html>

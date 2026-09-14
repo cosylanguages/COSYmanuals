@@ -245,6 +245,28 @@
     flex-grow: 1;
   }
 
+  .level-card-btn {
+    display: block;
+    text-align: center;
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .btn-a0a1 { background: #e3f2fd; color: #0d47a1; }
+  .btn-a0a1:hover { background: #bbdefb; }
+  .btn-a2 { background: #e8f5e9; color: #1b5e20; }
+  .btn-a2:hover { background: #c8e6c9; }
+  .btn-b1 { background: #fff8e1; color: #f57f17; }
+  .btn-b1:hover { background: #ffecb3; }
+  .btn-b2 { background: #fbe9e7; color: #bf360c; }
+  .btn-b2:hover { background: #ffccbc; }
+  .btn-c1 { background: #f3e5f5; color: #4a148c; }
+  .btn-c1:hover { background: #e1bee7; }
+  .btn-c2 { background: #eceff1; color: #263238; }
+  .btn-c2:hover { background: #cfd8dc; }
+
   .mp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
   .mp-table th, .mp-table td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
   .mp-table th { background: #fff5f5; color: #7b1113; }
@@ -299,7 +321,7 @@
 
   <!-- PRIMARY SECTION: 7-DAY BOOTCAMP ROUTE -->
   <section id="bootcamp" class="mp-section" style="border: 2px solid #c53030; background: #fffaf0;">
-    <h2>⚡ Основной маршрут: 7-дневный Буткемп Русской Фонетики</h2>
+    <h2>⚡ Основной маршрут: 7-дневный Интенсивный Буткемп</h2>
     <p>
       Программа разработана для начинающих и продолжающих (A0–A2). За 7 занятий вы освоите правила редукции, парные согласные, твердые и мягкие звуки и научитесь читать любой русский текст с уверенностью.
     </p>
@@ -381,35 +403,79 @@
 
   <!-- SECONDARY SECTION: A0 -> C2 -->
   <section id="niveaux" class="mp-section">
-    <h2>📚 Справочный каталог уровня A0 → C2</h2>
+    <h2>📚 Справочный гид по уровням A0 → C2</h2>
+    <p>Полное справочное руководство по уровням CECRL с описанием всех правил чтения и фонетических особенностей:</p>
     <div class="level-cards-grid">
-      <div class="level-card">
-        <div class="level-card-header">
-          <h3 class="level-card-title">Фундамент A0-A1</h3>
-          <span class="level-badge-pill pill-a0a1">A0 - A1</span>
+      <!-- Card A0-A1 -->
+      <div class="level-card card-a0a1">
+        <div>
+          <div class="level-card-header">
+            <h3 class="level-card-title">Фундамент A0-A1</h3>
+            <span class="level-badge-pill pill-a0a1">A0 - A1</span>
+          </div>
+          <p class="level-card-desc">Алфавит, редукция О/А, оглушение на конце слова, мягкие и твердые гласные.</p>
         </div>
-        <p class="level-card-desc">Алфавит, редукция О/А, оглушение на конце слова, мягкие и твердые гласные.</p>
+        <a href="levels/a0-a1.html" class="level-card-btn btn-a0a1">Открыть Уровень A0-A1 →</a>
       </div>
-      <div class="level-card">
-        <div class="level-card-header">
-          <h3 class="level-card-title">Базовый A2</h3>
-          <span class="level-badge-pill pill-a2">A2</span>
+
+      <!-- Card A2 -->
+      <div class="level-card card-a2">
+        <div>
+          <div class="level-card-header">
+            <h3 class="level-card-title">Базовый A2</h3>
+            <span class="level-badge-pill pill-a2">A2</span>
+          </div>
+          <p class="level-card-desc">Ассимиляция согласных, -ого/-его = [во/во], непроизносимые согласные, ИК-1 и ИК-2.</p>
         </div>
-        <p class="level-card-desc">Ассимиляция согласных, -ого/-его = [во/во], непроизносимые согласные, ИК-1 и ИК-2.</p>
+        <a href="levels/a2.html" class="level-card-btn btn-a2">Открыть Уровень A2 →</a>
       </div>
-      <div class="level-card">
-        <div class="level-card-header">
-          <h3 class="level-card-title">Средний B1</h3>
-          <span class="level-badge-pill pill-b1">B1</span>
+
+      <!-- Card B1 -->
+      <div class="level-card card-b1">
+        <div>
+          <div class="level-card-header">
+            <h3 class="level-card-title">Средний B1</h3>
+            <span class="level-badge-pill pill-b1">B1</span>
+          </div>
+          <p class="level-card-desc">Подвижное ударение при склонении, редукция Е/Я (иканье), произношение предлогов с последующим словом.</p>
         </div>
-        <p class="level-card-desc">Подвижное ударение при склонении, редукция Е/Я (иканье), произношение предлогов с последующим словом.</p>
+        <a href="levels/b1.html" class="level-card-btn btn-b1">Открыть Уровень B1 →</a>
       </div>
-      <div class="level-card">
-        <div class="level-card-header">
-          <h3 class="level-card-title">Продвинутый B2-C2</h3>
-          <span class="level-badge-pill pill-b2">B2-C2</span>
+
+      <!-- Card B2 -->
+      <div class="level-card card-b2">
+        <div>
+          <div class="level-card-header">
+            <h3 class="level-card-title">Выше среднего B2</h3>
+            <span class="level-badge-pill pill-b2">B2</span>
+          </div>
+          <p class="level-card-desc">Сложные случаи оглушения/озвончения, беглые гласные, орфоэпические нормы и интонационные конструкции.</p>
         </div>
-        <p class="level-card-desc">Орфоэпические нормы, сценическая речь, произношение заимствованных слов (детектив, теннис), стилистика.</p>
+        <a href="levels/b2.html" class="level-card-btn btn-b2">Открыть Уровень B2 →</a>
+      </div>
+
+      <!-- Card C1 -->
+      <div class="level-card card-c1">
+        <div>
+          <div class="level-card-header">
+            <h3 class="level-card-title">Продвинутый C1</h3>
+            <span class="level-badge-pill pill-c1">C1</span>
+          </div>
+          <p class="level-card-desc">Сценическая речь, произношение заимствованных слов (детектив, теннис), логическое ударение и риторика.</p>
+        </div>
+        <a href="levels/c1.html" class="level-card-btn btn-c1">Открыть Уровень C1 →</a>
+      </div>
+
+      <!-- Card C2 -->
+      <div class="level-card card-c2">
+        <div>
+          <div class="level-card-header">
+            <h3 class="level-card-title">Свободный C2</h3>
+            <span class="level-badge-pill pill-c2">C2</span>
+          </div>
+          <p class="level-card-desc">Историческая фонетика, редкие звуковые сочетательные процессы, поэтическая ритмика и диалектные нормы.</p>
+        </div>
+        <a href="levels/c2.html" class="level-card-btn btn-c2">Открыть Уровень C2 →</a>
       </div>
     </div>
   </section>
@@ -441,9 +507,6 @@
   </div>
 </footer>
 
-<script src="../../js/data/languages.js"></script>
-<script src="../../js/core/engine.js"></script>
-<script src="../../js/core/i18n.js"></script>
-<script src="../../js/core/ui.js"></script>
+
 </body>
 </html>
