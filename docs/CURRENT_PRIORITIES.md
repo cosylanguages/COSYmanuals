@@ -15,9 +15,9 @@ This document synthesizes and prioritizes the active open items across `manuals/
 ## 🔴 P0: Immediate / High-Priority Operational Blockers
 
 ### 1. Stage 3 Migration Completion & COSYlanguages Cleanup Flagging (DUP-001)
-- **Status**: Migration complete in COSYmanuals; cleanup pending in COSYlanguages.
-- **Action**: All 14 ISO language manuals (`ba`, `br`, `cv`, `de`, `el`, `en`, `es`, `fr`, `hy`, `it`, `ka`, `pt`, `ru`, `tt`) have been ingested and structured under `manuals/<iso>/{grammar,vocabulary}/<level>/` in COSYmanuals.
-- **Flagged Cleanup Items for COSYlanguages**: Flag legacy duplicate folders (`COSYlanguages/manuals/*`, `COSYlanguages/reference-grammar/*`, `COSYlanguages/grammar/*`) for deletion in COSYlanguages' own post-migration cleanup task.
+- **Status**: Completed in COSYmanuals (March 2025); cleanup pending in COSYlanguages.
+- **Action**: All 14 ISO language manuals (`ba`, `br`, `cv`, `de`, `el`, `en`, `es`, `fr`, `hy`, `it`, `ka`, `pt`, `ru`, `tt`) have been ingested and structured under `manuals/<iso>/{grammar,vocabulary,communication}/<level>/` in COSYmanuals. Index pages created, residual link repairs finished, legacy PDFs added, and status docs updated.
+- **Flagged Cleanup Items for COSYlanguages**: Flag legacy duplicate folders (`COSYlanguages/manuals/*`) for deletion in COSYlanguages' own post-migration cleanup task. Note that `COSYlanguages/reference-grammar/` and `COSYlanguages/curriculum/` remain in active use by COSYlanguages.
 
 ### 2. Standardized COSYplatform Callout Banners Rollout
 - **Status**: In Progress across migrated topic pages.

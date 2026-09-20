@@ -1,6 +1,6 @@
-# COSYmanuals Migration Status & Stage 3 Completion Plan
+# COSYmanuals Migration Status & Stage 3 Completion Report
 
-> **Document Purpose**: Technical status report and roadmap for Stage 3 of the COSY ecosystem migration — documenting the completion of manual content migration into the standardized ISO taxonomy under `manuals/` and flagging legacy copies in COSYlanguages for deletion.
+> **Document Purpose**: Technical status report documenting the complete migration of manual booklets into the standardized ISO taxonomy under `manuals/` in COSYmanuals (Completed March 2025).
 
 ---
 
@@ -14,93 +14,124 @@ Access to COSYmanuals is strictly link-only and never exposed via public website
 
 ---
 
-## Current Repository Inventory & Audit Summary
+## Stage 3 Final Audit Report (March 2025)
 
-Based on `manuals/AUDIT.md` and `manuals/MIGRATION_PLAN.md`:
+The following audit table reflects the final audit state against the source `COSYlanguages` repository:
 
-### Total Scope
-- **Languages Covered (14 ISO codes)**: `en` (English), `fr` (French), `it` (Italian), `es` (Spanish), `pt` (Portuguese), `de` (German), `ru` (Russian), `el` (Greek), `tt` (Tatar), `ba` (Bashkir), `br` (Breton), `cv` (Chuvash), `hy` (Armenian), `ka` (Georgian).
-- **File Inventory**: Over 900 topic pages, index portals, shared assets, and template files completely reorganized under `manuals/`.
-
-### Standardized Target Structure
-All manuals follow the strict 4-level deep directory convention:
+```text
+iso  type          lvl source real pages  missing in COSYmanuals
+ba   grammar       a1                 29                       0
+ba   grammar       a2                  4                       0
+ba   vocabulary    a1                 15                       0
+ba   vocabulary    a2                  4                       0
+br   grammar       a1                 20                       0
+br   grammar       a2                  4                       0
+br   vocabulary    a1                 26                       0
+br   vocabulary    a2                  2                       0
+cv   grammar       a1                 31                       0
+cv   grammar       a2                  4                       0
+cv   vocabulary    a1                 15                       0
+cv   vocabulary    a2                  4                       0
+de   grammar       a1                 27                       0
+de   vocabulary    a1                 32                       0
+el   grammar       a1                 62                       0
+el   vocabulary    a1                 30                       0
+en   communication a1                 21                       0
+en   communication a2                 21                       0
+en   communication b1                 60                       0
+en   communication b2                 21                       0
+en   communication c1                 21                       0
+en   communication c2                 16                       0
+en   grammar       a1                 66                       0
+en   grammar       a2                 56                       0
+en   grammar       b1                 60                       0
+en   grammar       b2                 50                       0
+en   grammar       c1                 28                       0
+en   grammar       c2                 22                       0
+en   vocabulary    a1                 96                       0
+en   vocabulary    a2                 35                       0
+en   vocabulary    b1                 43                       0
+en   vocabulary    b2                 33                       0
+en   vocabulary    c1                 36                       0
+en   vocabulary    c2                 19                       0
+es   grammar       a1                 26                       0
+es   grammar       a2                 14                       0
+es   vocabulary    a1                 32                       0
+es   vocabulary    a2                  7                       0
+fr   communication a1                 21                       0
+fr   communication a2                 21                       0
+fr   communication b1                 21                       0
+fr   communication b2                 21                       0
+fr   communication c1                 21                       0
+fr   communication c2                 21                       0
+fr   grammar       a1                209                       0
+fr   grammar       a2                206                       0
+fr   grammar       b1                247                       0
+fr   grammar       b2                203                       0
+fr   grammar       c1                130                       0
+fr   grammar       c2                122                       0
+fr   vocabulary    a1                 77                       0
+fr   vocabulary    a2                  8                       0
+fr   vocabulary    b1                  7                       0
+fr   vocabulary    b2                  6                       0
+fr   vocabulary    c1                  5                       0
+fr   vocabulary    c2                  6                       0
+hy   grammar       a1                 30                       0
+hy   grammar       a2                  4                       0
+hy   vocabulary    a1                 15                       0
+hy   vocabulary    a2                  4                       0
+it   grammar       a1                 34                       0
+it   grammar       a2                 14                       0
+it   vocabulary    a1                 32                       0
+it   vocabulary    a2                  7                       0
+ka   grammar       a1                 29                       0
+ka   grammar       a2                  4                       0
+ka   vocabulary    a1                 15                       0
+ka   vocabulary    a2                  4                       0
+pt   grammar       a1                 27                       0
+pt   grammar       a2                 14                       0
+pt   vocabulary    a1                 32                       0
+pt   vocabulary    a2                  7                       0
+ru   communication a1                 21                       0
+ru   communication a2                 21                       0
+ru   communication b1                 21                       0
+ru   communication b2                 21                       0
+ru   communication c1                 22                       0
+ru   communication c2                 22                       0
+ru   grammar       a1                126                       0
+ru   grammar       a2                 46                       0
+ru   grammar       b1                 46                       0
+ru   grammar       b2                 35                       0
+ru   grammar       c1                 29                       0
+ru   grammar       c2                 21                       0
+ru   vocabulary    a1                 45                       0
+ru   vocabulary    a2                  8                       0
+ru   vocabulary    b1                  7                       0
+ru   vocabulary    b2                  6                       0
+ru   vocabulary    c1                  5                       0
+ru   vocabulary    c2                  5                       0
+tt   grammar       a2                  4                       0
+tt   vocabulary    a2                  4                       0
+ALL                                 3231                       0
 ```
-manuals/
-├── <iso_lang_code>/
-│   ├── index.html
-│   ├── {grammar,vocabulary,communication}/
-│   │   └── <level>/             # e.g., a1, a2, b1, b2, c1, c2
-│   │       ├── index.html
-│   │       ├── part-1.html ... part-N.html
-│   │       ├── appendix.html
-│   │       ├── assets/
-│   │       │   ├── app.js
-│   │       │   └── style.css
-│   │       └── topics/
-│   │           └── <topic-slug>.html
-│   └── print/
-│       ├── print.css
-│       └── index.html
-```
 
 ---
 
-## Stage 3 Completion Status: Content Move Executed
+## Migration Steps & Pull Requests Overview
 
-Stage 3 content migration is **✅ CONFIRMED COMPLETE** within COSYmanuals. All remaining standalone language manuals, monolingual grammar references, and thematic vocabulary datasets previously residing in COSYlanguages flat/legacy directories have been migrated and consolidated into `COSYmanuals/manuals/<iso>/{grammar,vocabulary}/<level>/`.
-
-> **Physical Repository Verification Note**:
-> All topic pages and section indices across all 14 supported ISO languages (`ba`, `br`, `cv`, `de`, `el`, `en`, `es`, `fr`, `hy`, `it`, `ka`, `pt`, `ru`, `tt`) are physically present in `COSYmanuals` under `manuals/<iso>/{grammar,vocabulary,communication}/<level>/`. With all source materials ingested and structured here, COSYmanuals has completed Stage 3 migration, and COSYlanguages can safely proceed with its own cleanup task (DUP-001) to remove its duplicate copies.
-
-### Key Executed Action Items:
-
-1. **Legacy Folder Restructuring**:
-   - Legacy flat folders and monolingual references have been migrated into canonical ISO directory paths:
-     - `grammaire-francaise/` ➔ `manuals/fr/grammar/a1/`
-     - `lexique-francais/` ➔ `manuals/fr/vocabulary/a1/`
-     - `elliniki-grammatiki/` ➔ `manuals/el/grammar/a1/`
-     - `leksilogio-ellinikon/` ➔ `manuals/el/vocabulary/a1/`
-     - `grammatika-russkogo-yazyka/` ➔ `manuals/ru/grammar/a1/`
-     - `leksika-russkogo-yazyka/` ➔ `manuals/ru/vocabulary/a1/`
-     - `deutsche-grammatik/` ➔ `manuals/de/grammar/a1/`
-     - `tatar-teli-grammatikasy/` & `tatar-teli-leksikasy/` ➔ `manuals/tt/{grammar,vocabulary}/a1/`
-     - Flat root redirects (e.g., `english-a0-a1.html`) ➔ `manuals/en/index-a0-a1.html`
-
-2. **Link & Relative Path Remediation**:
-   - Internal link references and relative asset paths (`../../../../css/...`, `assets/app.js`, `assets/style.css`) across all topic pages have been updated to respect the 4-level deep directory standard.
-
-3. **Single-Sourcing & Platform Callout Banners**:
-   - Outbound COSYplatform CTA banners (`https://cosyplatform.com/courses/{iso}/{level}/{topic-slug}`) integrated into digital manual hubs.
+1. **Content Migration PRs**:
+   - Ingested all 3,231 real manual topic pages across 14 ISO languages into standard directory structures (`manuals/<iso>/{grammar,vocabulary,communication}/<level>/`).
+   - Rewrote relative resource and style links to point to `shared/styles/`.
+2. **Index Pages, Residual Link Repairs & PDFs PR (`migrate/indexes-and-residuals`)**:
+   - Ingested source landing/index pages via `migrate --indexes`.
+   - Generated missing language/type index pages via `make-indexes`.
+   - Repaired relative links automatically (`verify --fix`) and hand-repaired residual links.
+   - Copied four legacy grammar manual PDFs (`el`, `en`, `it`, `ru`) into `manuals/<iso>/print/`.
+   - Logged unresolvable links requiring content decision in `docs/migration/LINKS_NEEDING_EDITOR.md`.
 
 ---
 
-## Migration Status Table
+## ℹ️ Scope Clarification: Reference Grammar & Curriculum Files
 
-| Language | ISO | Digital Manual Index | Grammar Topic Pages | Vocabulary Topic Pages | Print CSS / Offline PoC | Platform Linking Status |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| English | `en` | ✅ Ready (`manuals/en/`) | ✅ A1–C2 | ✅ A1–C2 | ✅ PoC Created (`manuals/en/print/`) | 🔄 In Progress |
-| French | `fr` | ✅ Ready (`manuals/fr/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Italian | `it` | ✅ Ready (`manuals/it/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Spanish | `es` | ✅ Ready (`manuals/es/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Portuguese | `pt` | ✅ Ready (`manuals/pt/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| German | `de` | ✅ Ready (`manuals/de/`) | ✅ A1 | ✅ A1 | ⏳ Pending Rollout | 🔄 In Progress |
-| Russian | `ru` | ✅ Ready (`manuals/ru/`) | ✅ A1 | ✅ A1 | ⏳ Pending Rollout | 🔄 In Progress |
-| Greek | `el` | ✅ Ready (`manuals/el/`) | ✅ A1 | ✅ A1 | ⏳ Pending Rollout | 🔄 In Progress |
-| Tatar | `tt` | ✅ Ready (`manuals/tt/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Bashkir | `ba` | ✅ Ready (`manuals/ba/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Breton | `br` | ✅ Ready (`manuals/br/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Chuvash | `cv` | ✅ Ready (`manuals/cv/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Armenian | `hy` | ✅ Ready (`manuals/hy/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-| Georgian | `ka` | ✅ Ready (`manuals/ka/`) | ✅ A1–A2 | ✅ A1–A2 | ⏳ Pending Rollout | 🔄 In Progress |
-
----
-
-## 🗑️ Flagged Post-Migration Cleanup Task for COSYlanguages (DUP-001)
-
-Per finding **DUP-001** ("Duplicate Manual & Reference Content Across Ecosystem"), content ingestion into `COSYmanuals` is complete. The following legacy paths in `COSYlanguages` are now flagged for deletion by the `COSYlanguages` repository maintainers as part of that repo's own cleanup task:
-
-1. **`COSYlanguages/manuals/`**: Delete all legacy flat/duplicated manuals folders in `COSYlanguages` now that `COSYmanuals` serves as the sole canonical host.
-2. **`COSYlanguages/reference-grammar/`**: Delete monolingual reference grammar JSONs and HTML views.
-3. **`COSYlanguages/grammar/`**: Delete legacy standalone grammar folders.
-
-> **Constraint Enforcement Notice**: No content inside `COSYlanguages` was modified or deleted during this migration task. COSYlanguages maintainers will execute the deletion using the flagged path manifest above once Stage 3 sign-off is confirmed.
+> **Important Ecosystem Note**:
+> The `reference-grammar/` and `curriculum/` directories in `COSYlanguages` were **NOT** part of the manual booklet migration. They contain dynamic JSON schemas and reference data actively consumed at runtime by application engines in `COSYlanguages`. They remain live in `COSYlanguages` and should **NOT** be deleted during manual cleanup tasks.
