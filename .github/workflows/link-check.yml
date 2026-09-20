@@ -1,0 +1,22 @@
+name: Link Check
+
+on:
+  pull_request:
+    paths:
+      - 'manuals/**'
+
+jobs:
+  verify-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Verify relative links against baseline
+        run: |
+          python3 scripts/cosy_manuals_migrate.py verify --baseline docs/migration/known_broken_links.json
