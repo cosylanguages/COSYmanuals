@@ -93,7 +93,7 @@ def page_title(s):
 def git_files(root, sub):
     """Tracked + untracked (non-ignored) files under `sub`, so uncommitted work is visible to audit/verify."""
     try:
-        out = subprocess.check_output(['git', '-C', root, 'ls-files', '--cached', '--others', '--exclude-standard', sub],
+        out = subprocess.check_output(['git', '-C', root, '-c', 'core.quotePath=false', 'ls-files', '--cached', '--others', '--exclude-standard', sub],
                                       stderr=subprocess.DEVNULL).decode()
         return sorted(set(f for f in out.split('\n') if f and os.path.exists(os.path.join(root, f))))
     except Exception:
@@ -111,8 +111,13 @@ def classify(rel):
     if len(p) < 3 or p[0] != 'manuals':
         return None
     x = p[1]
-    if x in ISOS and len(p) >= 5 and p[2] in TYPES and LEVEL_RE.fullmatch(p[3]):
-        return (x, p[2], p[3], '/'.join(p[4:]))
+    if x in ISOS and len(p) >= 4 and p[2] in TYPES:
+        if LEVEL_RE.fullmatch(p[3]):
+            if len(p) >= 5:
+                return (x, p[2], p[3], '/'.join(p[4:]))
+            return None
+        else:
+            return (x, p[2], 'a1', '/'.join(p[3:]))
     if x in LEGACY:
         return (LEGACY[x][0], LEGACY[x][1], 'a1', '/'.join(p[2:]))
     m = EN_LEVEL_FOLDER.fullmatch(x)
@@ -429,6 +434,86 @@ def cmd_verify(a):
                                                         for d, _, fs in os.walk(os.path.join(root, 'manuals')) for x in fs]
              if f.endswith('.html')]
     files = sorted(set(files))
+    if getattr(a, 'fix_stubs', False):
+        fixed = 0
+        for f in git_files(root, 'manuals'):
+            if not f.endswith('.html'):
+                continue
+            body = read(os.path.join(root, f))
+            if not is_stub(body):
+                continue
+            m_target = re.search(r'url\s*=\s*([^\"\' >]+)', body, re.I)
+            if not m_target:
+                continue
+            target = m_target.group(1)
+            pdir = os.path.dirname(f)
+            resolved = os.path.normpath(os.path.join(pdir, target)).replace(os.sep, '/')
+            if not os.path.exists(os.path.join(root, resolved)):
+                iso = f.split('/')[1]
+                if target.startswith(f'{iso}/'):
+                    new_target = target[len(iso)+1:]
+                    resolved2 = os.path.normpath(os.path.join(pdir, new_target)).replace(os.sep, '/')
+                    if os.path.exists(os.path.join(root, resolved2)):
+                        body2 = body.replace(target, new_target)
+                        with open(os.path.join(root, f), 'w', encoding='utf-8') as fh:
+                            fh.write(body2)
+                        fixed += 1
+        print(f'--fix-stubs: repaired {fixed} redirect stubs')
+        return cmd_verify(argparse.Namespace(**{**vars(a), 'fix_stubs': False}))
+
+    if getattr(a, 'relink', False):
+        relinked = 0
+        for f in git_files(root, 'manuals'):
+            if not f.endswith('.html'):
+                continue
+            path_f = os.path.join(root, f)
+            body = read(path_f)
+            if is_stub(body):
+                continue
+            pdir = os.path.dirname(f)
+
+            def relink_url(match):
+                u = match.group('url').strip()
+                if not u or SKIP.match(u):
+                    return match.group(0)
+                pu = urlsplit(u)
+                p = pu.path
+                if not p:
+                    return match.group(0)
+                resolved = os.path.normpath(os.path.join(pdir, p)).replace(os.sep, '/')
+                if os.path.exists(os.path.join(root, resolved)) or os.path.exists(os.path.join(root, resolved, 'index.html')):
+                    return match.group(0)
+
+                clean = re.sub(r'^(\.\./)+', '', resolved)
+                clean_manuals = clean if clean.startswith('manuals/') else ('manuals/' + clean)
+                mapped = map_source_target(clean_manuals)
+                if mapped and os.path.exists(os.path.join(root, mapped)):
+                    new_rel = os.path.relpath(mapped, pdir).replace(os.sep, '/')
+                    if pu.query: new_rel += '?' + pu.query
+                    if pu.fragment: new_rel += '#' + pu.fragment
+                    return f"{match.group('attr')}{match.group('q')}{new_rel}{match.group('q')}"
+
+                top = clean.split('/')[0]
+                extra_dirs = {'about', 'apps', 'notebook', 'placement-quiz.html', 'privacy.html'}
+                if resolved.startswith('../') or top in ROOT_DIRS or top in extra_dirs:
+                    abs_url = SITE + clean + (('?' + pu.query) if pu.query else '') + (('#' + pu.fragment) if pu.fragment else '')
+                    return f"{match.group('attr')}{match.group('q')}{abs_url}{match.group('q')}"
+                return match.group(0)
+
+            body2 = ATTR.sub(relink_url, body)
+            def add_target(m_a):
+                tag = m_a.group(0)
+                if SITE in tag and not re.search(r'\btarget\s*=', tag):
+                    return tag[:-1] + ' target="_blank" rel="noopener">'
+                return tag
+            body2 = re.sub(r'<a\b[^>]*>', add_target, body2)
+            if body2 != body:
+                with open(path_f, 'w', encoding='utf-8') as fh:
+                    fh.write(body2)
+                relinked += 1
+        print(f'--relink: rewritten references in {relinked} files')
+        return cmd_verify(argparse.Namespace(**{**vars(a), 'relink': False}))
+
     broken = collections.defaultdict(list)
     n = 0
     for f in files:
@@ -585,6 +670,8 @@ def main():
         if name == 'verify':
             p.add_argument('--top', type=int, default=25)
             p.add_argument('--fix', action='store_true', help='auto-repair broken refs that have exactly one same-basename match in the same language')
+            p.add_argument('--fix-stubs', action='store_true', help='repair redirect stubs whose target moved one folder down')
+            p.add_argument('--relink', action='store_true', help='rewrite COSYlanguages root-path links to absolute URLs and legacy hub names')
             p.add_argument('--json-out', help='write broken (page,target) pairs as JSON')
             p.add_argument('--baseline', help='JSON from an earlier --json-out; exit 1 only for NEW broken references')
         p.set_defaults(fn=fn)
