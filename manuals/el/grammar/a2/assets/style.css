@@ -1,0 +1,26 @@
+/* Greek A2 Grammar Module Custom Styles */
+@import url("../../../../../shared/styles/tokens.css");
+@import url("../../../../../shared/styles/base.css");
+@import url("../../../../../shared/styles/components.css");
+@import url("../../../../../shared/styles/layout.css">
+
+.outcome-banner {
+  background: var(--blue-50, #eff6ff);
+  border-left: 4px solid var(--blue-600, #2563eb);
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.mflip {
+  cursor: pointer;
+  background: var(--surface-card, #f8fafc);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+.mflip .right-line { display: none; }
+.mflip.flipped .wrong-line { display: none; }
+.mflip.flipped .right-line { display: block; }
+.mflip .hint { font-size: 0.85em; color: var(--text-muted, #64748b); font-style: italic; }
