@@ -6,6 +6,12 @@
 
 ## Executive Overview & Architectural System
 
+### Separation of Concerns Architecture
+In accordance with COSYlanguages content modularity:
+- **Vocabulary Taxonomy & Lexical Maps** (Pillar I / Section 1) reside in this visual dictionary master specification and corresponding vocabulary manuals (`manuals/en/vocabulary/b2/`).
+- **Grammar Knowledge Tree** (Pillar II / Section 2) resides in grammar manuals (`manuals/en/grammar/b2/`).
+- **Communication & Speaking Functions** (Pillar III / Section 3: debating, negotiating, presenting, persuasive rhetoric) are routed into dedicated communication curriculum specs (`curriculums/en/spoken/B2.json`) and manuals (`manuals/en/communication/b2/`).
+
 This master specification defines the encyclopedic upper-intermediate curriculum for the COSYlanguages B2 English ecosystem (unifying **B2.1** and **B2.2** CEFR sub-levels). At B2, learners transition from functional communication to operational fluency, persuasive rhetoric, academic discourse, corporate strategy, complex analytical writing, and domain-specific lexicon.
 
 The course is organized into **4 Integrated Architectural Pillars**:
