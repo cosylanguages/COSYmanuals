@@ -1,0 +1,84 @@
+{
+  "title": "Guida alle Confusione Grammaticali in Italiano (A vs B)",
+  "language": "it",
+  "levels": {
+    "a0_a2": [
+      {
+        "id": "essere-vs-avere",
+        "level": "A0-A1",
+        "point": "Essere vs Avere",
+        "core_difference": "Essere = stato, identità, descrizione; Avere = possesso, età, sensazioni fisiche.",
+        "usage_a": "Utilizzare 'essere' per descrivere chi si è, nazionalità, professione e stato d'animo (Sono italiano, Sono felice).",
+        "usage_b": "Utilizzare 'avere' per indicare possesso, età e bisogni fisici (Ho 25 anni, Ho fame, Ho un libro).",
+        "examples": [
+          "Io sono uno studente.",
+          "Io ho 20 anni e ho fame.",
+          "Marco è stanco.",
+          "Marco ha due cani."
+        ],
+        "quick_logic": "Identità / Descrizione = ESSERE. Età / Sensazione / Possesso = AVERE.",
+        "common_mistakes": [
+          "❌ Io sono 25 anni. → ✓ Io ho 25 anni.",
+          "❌ Io sono fame. → ✓ Io ho fame."
+        ],
+        "memory_trick": "In italiano l'età si 'ha' e le sensazioni (fame, sete, freddo) si 'hanno'!"
+      },
+      {
+        "id": "c-e-vs-ci-sono",
+        "level": "A0-A1",
+        "point": "C'è vs Ci sono",
+        "core_difference": "C'è = presenza/esistenza di un elemento singolare; Ci sono = presenza/esistenza di più elementi (plurale).",
+        "usage_a": "Utilizzare 'c'è' prima di sostantivi singolari.",
+        "usage_b": "Utilizzare 'ci sono' prima di sostantivi plurali.",
+        "examples": [
+          "C'è un libro sul tavolo.",
+          "Non c'è pane a casa.",
+          "Ci sono tre studenti in classe.",
+          "Ci sono molte cose da fare."
+        ],
+        "quick_logic": "Singolare? → C'È. Plurale? → CI SONO.",
+        "common_mistakes": [
+          "❌ C'è due libri sul tavolo. → ✓ Ci sono due libri sul tavolo."
+        ],
+        "memory_trick": "C'è uno solo. Ci sono due o più."
+      },
+      {
+        "id": "preposizioni-semplici-vs-articolate",
+        "level": "A1",
+        "point": "Preposizioni semplici vs Preposizioni articolate",
+        "core_difference": "Preposizione semplice = senza articolo (generale); Preposizione articolate = preposizione + articolo determinativo (specifico).",
+        "usage_a": "Usare la preposizione semplice davanti a nomi di città, nomi propri o espressioni indefinite (Vado a Roma, Vado in Italia).",
+        "usage_b": "Unire la preposizione all'articolo determinativo quando ci si riferisce a un oggetto/luogo specifico (Vado al bar, Nel libro).",
+        "examples": [
+          "Vado a scuola.",
+          "Vado alla scuola di lingua della città.",
+          "Il libro è in borsa.",
+          "Il libro è nella borsa rossa."
+        ],
+        "quick_logic": "Generale / Nomi propri = Semplice. Specifico con articolo = Articolata.",
+        "common_mistakes": [
+          "❌ Vado in il bar. → ✓ Vado al bar. / Vado nel bar."
+        ],
+        "memory_trick": "In + il = nel; A + la = alla. Unisci sempre preposizione e articolo!"
+      },
+      {
+        "id": "passato-prossimo-vs-imperfetto",
+        "level": "A2",
+        "point": "Passato Prossimo vs Imperfetto",
+        "core_difference": "Passato prossimo = azione conclusa e puntuale nel passato; Imperfetto = abitudine, descrizione o azione in corso nel passato.",
+        "usage_a": "Passato prossimo per eventi avvenuti in un momento preciso e completati.",
+        "usage_b": "Imperfetto per descrizioni di ambienti/stati d'animo, azioni abituali (da piccolo) o azioni di sfondo.",
+        "examples": [
+          "Ieri ho comprato un libro.",
+          "Da piccolo giocavo sempre al parco.",
+          "Mentre studiavo, è suonato il telefono."
+        ],
+        "quick_logic": "Azione puntuale / Conclusa = Passato prossimo. Sfondo / Abitudine = Imperfetto.",
+        "common_mistakes": [
+          "❌ Ieri studiavo due ore e ho finito. → ✓ Ieri ho studiato due ore e ho finito."
+        ],
+        "memory_trick": "L'imperfetto fa da cornice al quadro; il passato prossimo è il pennello che agisce!"
+      }
+    ]
+  }
+}
