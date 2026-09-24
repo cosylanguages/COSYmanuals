@@ -19,13 +19,13 @@ Currently, `COSYmanuals` hosts four legacy/non-manual folders (`curriculums/`, `
 ### 1. `curriculums/`
 - **Current Inventory in COSYmanuals**:
   - `curriculums/{iso}/{course_type}/{LEVEL}.json` (e.g., `en/general/A1.json`, `fr/spoken/B2.json`, `ru/general/A1.json`) - 75 canonical JSON curriculum datasets validated against `curriculums/_schema/curriculum.schema.json`.
-  - `curriculums/english/intermediate-b1/unit-1.html`, `index.html` - HTML lesson unit prototypes duplicating COSYplatform lesson views.
+  - `curriculums/english/intermediate-b1/unit-1.html`, `index.html` - Legacy HTML lesson unit prototypes (removed; content migrated to `curriculums/en/general/B1.json`).
   - `curriculums/en/general/*_VISUAL_DICTIONARY_MASTER_CURRICULUM.md` - Master curriculum markdown specs.
 - **COSYplatform Sibling Listing**:
   - `COSYplatform/curriculums/` hosts exact duplicate schema JSONs and lesson engine parsers.
 - **Overlap Flag**:
   - **EXACT DUPLICATE**: All `curriculums/{iso}/*.json` files match COSYplatform curriculum schemas.
-  - **NEAR-DUPLICATE**: `curriculums/english/intermediate-b1/unit-1.html` is an interactive unit view that duplicates COSYplatform's lesson renderer.
+  - **REMOVED PROTOTYPE**: `curriculums/english/intermediate-b1/unit-1.html` was removed and its unique content migrated.
 - **Recommendation**:
   - Canonical curriculum JSON files belong in **COSYplatform** (the primary data store for interactive learning).
   - COSYmanuals should either consume published platform JSONs or link directly to COSYplatform lesson pages rather than maintaining duplicate JSON/HTML files.

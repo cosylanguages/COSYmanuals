@@ -72,7 +72,7 @@ To systematically decouple and migrate all manuals, marathons, and curriculums f
 
 ## 🧭 How to Navigate Manuals
 
-1. **Curriculums:** Navigate to a specific language and level index page (e.g., `/curriculums/english/intermediate-b1/index.html`) to view course overview, prerequisites, unit breakdown, and progress tracking.
+1. **Curriculums:** Navigate to a specific language and level dataset (e.g., `/curriculums/en/general/B1.json`) to view course overview, prerequisites, unit breakdown, and lesson structures.
 2. **Units:** Each unit page (e.g., `unit-1.html`) provides unit objectives, key vocabulary, grammar points, speaking exercises, practice activities, homework assignments, and self-assessment checklists.
 3. **Marathons:** Access intensive challenge courses (e.g., `/marathons/speaking-marathon-30-days/index.html`) for daily schedules, streak trackers, leaderboards, and completion certificates.
 4. **Teacher Guides:** Access pedagogical strategies, lesson plan architecture, assessment rubrics, and online/offline best practices at `/teacher-guides/index.html`.
