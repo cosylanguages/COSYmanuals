@@ -5,7 +5,7 @@
   "units": [
     {
       "unit": 1,
-      "title": "Unit 1: Poetics, Literary Criticism & Narrative Hermeneutics",
+      "title": "Poetics, Literary Criticism & Narrative Hermeneutics",
       "lessons": [
         {
           "lesson": 1,
@@ -31,7 +31,7 @@
             "writing"
           ],
           "speaking_percent": 45,
-          "teacher_notes": "code: \"EN-C2-001\"\npronunciation: [{\"point\":\"Literary loanword stress & IPA\",\"explain\":\"Mastering stress and vowel quality in literary loanwords (e.g., Bil-dungs-ro-man, sy-nec-do-che).\",\"examples\":[{\"pattern\":\"synecdoche\",\"ipa\":\"/sɪˈnek.də.ki/\",\"word\":\"synecdoche\"}],\"visual\":\"📖\"}]\ncando: \"Can dissect narrative structures, rhetorical figures, and poetic cadences at a native-speaker literary level\"",
+          "teacher_notes": "code: \"EN-C2-001\"\npronunciation: [{\"point\":\"Literary loanword stress & IPA\",\"explain\":\"Mastering stress and vowel quality in literary loanwords (e.g., Bil-dungs-ro-man, sy-nec-do-che).\",\"examples\":[{\"pattern\":\"synecdoche\",\"ipa\":\"/s\u026a\u02c8nek.d\u0259.ki/\",\"word\":\"synecdoche\"}],\"visual\":\"\ud83d\udcd6\"}]\ncando: \"Can dissect narrative structures, rhetorical figures, and poetic cadences at a native-speaker literary level\"",
           "recycled": "Foundational communication & basic level vocabulary"
         },
         {
@@ -56,7 +56,7 @@
     },
     {
       "unit": 2,
-      "title": "Unit 2: Rhetoric, Oratory & Persuasive Stance",
+      "title": "Rhetoric, Oratory & Persuasive Stance",
       "lessons": [
         {
           "lesson": 1,
@@ -82,7 +82,7 @@
             "writing"
           ],
           "speaking_percent": 55,
-          "teacher_notes": "code: \"EN-C2-003\"\npronunciation: [{\"point\":\"Unconstrained oratorical prosody\",\"explain\":\"Utilizing deliberate pauses, nuclear stress, and pitch contours in formal keynote address delivery.\",\"examples\":[{\"pattern\":\"peroration\",\"ipa\":\"/ˌper.əˈreɪ.ʃən/\",\"word\":\"peroration\"}],\"visual\":\"🎙️\"}]\ncando: \"Can deliver unconstrained public addresses and utilize classical oratorical devices fluently\"",
+          "teacher_notes": "code: \"EN-C2-003\"\npronunciation: [{\"point\":\"Unconstrained oratorical prosody\",\"explain\":\"Utilizing deliberate pauses, nuclear stress, and pitch contours in formal keynote address delivery.\",\"examples\":[{\"pattern\":\"peroration\",\"ipa\":\"/\u02ccper.\u0259\u02c8re\u026a.\u0283\u0259n/\",\"word\":\"peroration\"}],\"visual\":\"\ud83c\udf99\ufe0f\"}]\ncando: \"Can deliver unconstrained public addresses and utilize classical oratorical devices fluently\"",
           "recycled": "Stylistic subject-verb inversion in narrative prose (On the hill stood the ancient ruin...), Chiasmus, parallelism, and rhythmic clause balance, Litotes"
         },
         {
@@ -111,7 +111,7 @@
     },
     {
       "unit": 3,
-      "title": "Unit 3: Philosophical Hermeneutics & Epistemological Critique",
+      "title": "Philosophical Hermeneutics & Epistemological Critique",
       "lessons": [
         {
           "lesson": 1,
@@ -162,7 +162,7 @@
     },
     {
       "unit": 4,
-      "title": "Unit 4: Executive Leadership & Boardroom Negotiations",
+      "title": "Executive Leadership & Boardroom Negotiations",
       "lessons": [
         {
           "lesson": 1,
@@ -215,7 +215,7 @@
     },
     {
       "unit": 5,
-      "title": "Unit 5: Legal Opinions, Constitutional Jurisprudence & Governance",
+      "title": "Legal Opinions, Constitutional Jurisprudence & Governance",
       "lessons": [
         {
           "lesson": 1,
@@ -266,7 +266,7 @@
     },
     {
       "unit": 6,
-      "title": "Unit 6: Cultural Erudition, Allusions & Metaphorical Networks",
+      "title": "Cultural Erudition, Allusions & Metaphorical Networks",
       "lessons": [
         {
           "lesson": 1,
@@ -317,7 +317,7 @@
     },
     {
       "unit": 7,
-      "title": "Unit 7: Precision & Nuance (Semantic Micro-Distinctions & Stance)",
+      "title": "Precision & Nuance (Semantic Micro-Distinctions & Stance)",
       "lessons": [
         {
           "lesson": 1,
@@ -343,7 +343,7 @@
             "writing"
           ],
           "speaking_percent": 55,
-          "teacher_notes": "code: \"EN-C2-013\"\npronunciation: [{\"point\":\"Connotative stress & phonostylistics\",\"explain\":\"Modulating pitch contour to signal pejorative vs laudatory semantic nuances.\",\"examples\":[{\"pattern\":\"specious argument\",\"ipa\":\"/ˈspiː.ʃəs/\",\"word\":\"specious\"}],\"visual\":\"🎯\"}]\ncando: \"Can select vocabulary with surgical precision to convey exact emotional connotation, register stance, and evaluative nuance\"",
+          "teacher_notes": "code: \"EN-C2-013\"\npronunciation: [{\"point\":\"Connotative stress & phonostylistics\",\"explain\":\"Modulating pitch contour to signal pejorative vs laudatory semantic nuances.\",\"examples\":[{\"pattern\":\"specious argument\",\"ipa\":\"/\u02c8spi\u02d0.\u0283\u0259s/\",\"word\":\"specious\"}],\"visual\":\"\ud83c\udfaf\"}]\ncando: \"Can select vocabulary with surgical precision to convey exact emotional connotation, register stance, and evaluative nuance\"",
           "recycled": "Seamless multi-register transformation across 6 registers (Informal, Corporate, Academic, Journalistic, Legal, Poetic), Polyphonic sentence rhythm and stylistic cadence control, Augury"
         },
         {
@@ -368,7 +368,7 @@
     },
     {
       "unit": 8,
-      "title": "Unit 8: Macroeconomic Derivatives, Game Theory & High-Stakes Finance",
+      "title": "Macroeconomic Derivatives, Game Theory & High-Stakes Finance",
       "lessons": [
         {
           "lesson": 1,
@@ -419,7 +419,7 @@
     },
     {
       "unit": 9,
-      "title": "Unit 9: Advanced Cybernetics, Quantum Computing & Digital Governance",
+      "title": "Advanced Cybernetics, Quantum Computing & Digital Governance",
       "lessons": [
         {
           "lesson": 1,
@@ -470,7 +470,7 @@
     },
     {
       "unit": 10,
-      "title": "Unit 10: Synthesis, Master Rhetoric & C2 Master Integration",
+      "title": "Synthesis, Master Rhetoric & C2 Master Integration",
       "lessons": [
         {
           "lesson": 1,
@@ -480,12 +480,12 @@
           "vocabulary": [
             "Prima facie",
             "De facto",
-            "Raison d'être",
+            "Raison d'\u00eatre",
             "Status quo",
             "Ad hoc",
             "Vice versa",
             "Carte blanche",
-            "Coup d'état",
+            "Coup d'\u00e9tat",
             "Magnum opus",
             "Zeitgeist"
           ],
@@ -520,7 +520,7 @@
           ],
           "speaking_percent": 80,
           "teacher_notes": "code: \"EN-C2-020\"\ncando: \"Demonstrates complete native-level fluency, unconstrained stylistic control, and cultural erudition across all English domains\"",
-          "recycled": "End-weight principle in complex technical and cybernetic discourse, Extraposition of clausal subjects (It is widely maintained across cybernetic circles that...), Coup d'état"
+          "recycled": "End-weight principle in complex technical and cybernetic discourse, Extraposition of clausal subjects (It is widely maintained across cybernetic circles that...), Coup d'\u00e9tat"
         }
       ]
     }

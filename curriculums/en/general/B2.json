@@ -5,7 +5,7 @@
   "units": [
     {
       "unit": 1,
-      "title": "Unit 1: Executive Communication & Advanced Debate",
+      "title": "Executive Communication & Advanced Debate",
       "lessons": [
         {
           "lesson": 1,
@@ -35,7 +35,7 @@
             "writing"
           ],
           "speaking_percent": 55,
-          "teacher_notes": "code: \"EN-B2-001\"\npronunciation: [{\"point\":\"Intonation in diplomatic hedging\",\"explain\":\"Using fall-rise intonation contours to soft-land controversial assertions and reserve judgment.\",\"examples\":[{\"pattern\":\"Admittedly, however...\",\"ipa\":\"/ədˈmɪt.ɪd.li haʊˈev.ər/\",\"word\":\"Admittedly\"}],\"visual\":\"🗣️\"}]\ncando: \"Can defend a complex position, nuance reservations, and chair executive debates fluently\"",
+          "teacher_notes": "code: \"EN-B2-001\"\npronunciation: [{\"point\":\"Intonation in diplomatic hedging\",\"explain\":\"Using fall-rise intonation contours to soft-land controversial assertions and reserve judgment.\",\"examples\":[{\"pattern\":\"Admittedly, however...\",\"ipa\":\"/\u0259d\u02c8m\u026at.\u026ad.li ha\u028a\u02c8ev.\u0259r/\",\"word\":\"Admittedly\"}],\"visual\":\"\ud83d\udde3\ufe0f\"}]\ncando: \"Can defend a complex position, nuance reservations, and chair executive debates fluently\"",
           "recycled": "Foundational communication & basic level vocabulary"
         },
         {
@@ -73,7 +73,7 @@
     },
     {
       "unit": 2,
-      "title": "Unit 2: Geopolitics, Global Economy & News Analysis",
+      "title": "Geopolitics, Global Economy & News Analysis",
       "lessons": [
         {
           "lesson": 1,
@@ -140,7 +140,7 @@
     },
     {
       "unit": 3,
-      "title": "Unit 3: Environmental Policy, Sustainability & Energy Transition",
+      "title": "Environmental Policy, Sustainability & Energy Transition",
       "lessons": [
         {
           "lesson": 1,
@@ -207,7 +207,7 @@
     },
     {
       "unit": 4,
-      "title": "Unit 4: Advanced Technology, AI Ethics & Cybersecurity Governance",
+      "title": "Advanced Technology, AI Ethics & Cybersecurity Governance",
       "lessons": [
         {
           "lesson": 1,
@@ -274,7 +274,7 @@
     },
     {
       "unit": 5,
-      "title": "Unit 5: Legal Frameworks, Human Rights & Civil Jurisprudence",
+      "title": "Legal Frameworks, Human Rights & Civil Jurisprudence",
       "lessons": [
         {
           "lesson": 1,
@@ -341,7 +341,7 @@
     },
     {
       "unit": 6,
-      "title": "Unit 6: Arts, Cultural Heritage & Aesthetic Critique",
+      "title": "Arts, Cultural Heritage & Aesthetic Critique",
       "lessons": [
         {
           "lesson": 1,
@@ -408,7 +408,7 @@
     },
     {
       "unit": 7,
-      "title": "Unit 7: Corporate Strategy, Management & Negotiations",
+      "title": "Corporate Strategy, Management & Negotiations",
       "lessons": [
         {
           "lesson": 1,
@@ -474,7 +474,7 @@
     },
     {
       "unit": 8,
-      "title": "Unit 8: Socio-Cultural Diversity, Migration & Intercultural Dynamics",
+      "title": "Socio-Cultural Diversity, Migration & Intercultural Dynamics",
       "lessons": [
         {
           "lesson": 1,
@@ -542,7 +542,7 @@
     },
     {
       "unit": 9,
-      "title": "Unit 9: Media Literacy, Crisis Communication & Public Relations",
+      "title": "Media Literacy, Crisis Communication & Public Relations",
       "lessons": [
         {
           "lesson": 1,
@@ -609,7 +609,7 @@
     },
     {
       "unit": 10,
-      "title": "Unit 10: Academic Research, Ethics & B2 Course Consolidation",
+      "title": "Academic Research, Ethics & B2 Course Consolidation",
       "lessons": [
         {
           "lesson": 1,

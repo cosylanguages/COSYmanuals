@@ -6,6 +6,12 @@
 
 ## Executive Overview & Architectural System
 
+### Separation of Concerns Architecture
+In accordance with COSYlanguages content modularity:
+- **Vocabulary Taxonomy & Lexical Maps** (Pillar I / Section 1) reside in this visual dictionary master specification and corresponding vocabulary manuals (`manuals/en/vocabulary/c1/`).
+- **Grammar Knowledge Tree** (Pillar II / Section 2) resides in grammar manuals (`manuals/en/grammar/c1/`).
+- **Communication & Speaking Functions** (Pillar III / Section 3: debating, negotiating, presenting, persuasive rhetoric) are routed into dedicated communication curriculum specs (`curriculums/en/spoken/C1.json`) and manuals (`manuals/en/communication/c1/`).
+
 This master specification defines the ultimate encyclopedic advanced curriculum for the COSYlanguages C1 English ecosystem (unifying **C1.1** and **C1.2** CEFR sub-levels). At C1, learners move beyond standard grammatical correctness into high-level stylistic control, lexical precision, register fluidity, discourse cohesion, rhetorical impact, and academic/professional literacy.
 
 The course is organized into **4 Integrated Architectural Pillars**:
