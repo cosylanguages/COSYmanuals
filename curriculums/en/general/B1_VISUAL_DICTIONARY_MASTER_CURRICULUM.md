@@ -8,6 +8,12 @@
 
 This master specification defines the ultimate encyclopedic curriculum for the COSYlanguages B1 English ecosystem (unifying **B1.1** and **B1.2** CEFR sub-levels). At B1, learners transition from functional communication to fluent self-expression, opinions, narrative accounts, workplace negotiations, academic preparation, and subtle register control.
 
+### Separation of Concerns Architecture
+In accordance with COSYlanguages content modularity:
+- **Vocabulary Taxonomy & Lexical Maps** (Section 1) reside in this visual dictionary master specification and corresponding vocabulary manuals (`manuals/en/vocabulary/b1/`).
+- **Grammar Knowledge Tree** (Section 2) resides in grammar manuals (`manuals/en/grammar/b1/`).
+- **Communication & Speaking Functions** (Section 3: debating, negotiating, presenting, polite requests) are routed into dedicated communication curriculum specs (`curriculums/en/spoken/B1.json`) and manuals (`manuals/en/communication/b1/`).
+
 Every unit is organized with rigorous architectural depth across **14 Lexical Dimensions**:
 1. **Core Nouns**, 2. **Essential Verbs**, 3. **Adjectives**, 4. **Adverbs**, 5. **Phrasal Verbs**, 6. **Collocations**, 7. **Fixed Expressions**, 8. **Sentence Starters**, 9. **Discourse Markers**, 10. **Synonyms & Antonyms**, 11. **Word Families & Affixation**, 12. **False Friends Callouts**, 13. **Register Control (Formal / Neutral / Informal)**, 14. **Pronunciation & Stress Alerts**, accompanied by authentic **Micro-Dialogues** and **Sentence Frames**.
 
