@@ -34,7 +34,7 @@ This document synthesizes and prioritizes the active open items across `manuals/
 ### 3. Single-Sourcing Curriculum & Marathon Engines
 - **Status**: Reconciliation Defined (`docs/PLATFORM_CONTENT_OVERLAP.md`).
 - **Action**:
-  - **Curriculums**: Retain canonical JSON datasets (`curriculums/{iso}/{course_type}/{LEVEL}.json`) in COSYplatform as primary store. Deprecate legacy interactive unit prototypes (`curriculums/english/intermediate-b1/unit-1.html`) in COSYmanuals in favor of outbound platform links.
+  - **Curriculums**: Retain canonical JSON datasets (`curriculums/{iso}/{course_type}/{LEVEL}.json`) in COSYplatform as primary store. Removed legacy interactive unit prototypes (`curriculums/english/intermediate-b1/unit-1.html`) in COSYmanuals after migrating content to canonical JSON and markdown specs.
   - **Marathons**: Single-source interactive marathon JS engines (`speaking-marathon-30-days`, `pronunciation-bootcamp`) in COSYplatform. Refactor marathon pages in COSYmanuals into printable syllabus booklets linking to COSYplatform.
 
 ---

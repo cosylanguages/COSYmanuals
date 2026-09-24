@@ -677,6 +677,9 @@ Every unit is organized with rigorous architectural depth across **14 Lexical Di
 ---
 
 - **Storytelling Framework:** Setting the scene (Past Continuous) ➔ Main event (Past Simple) ➔ Prior context (Past Perfect).
+  - *Warm-up Prompt:* Describe your favorite memory from primary school in 2 minutes. Focus on setting the scene using Past Continuous.
+  - *Roleplay Activity:* Interview a partner about a major life milestone (e.g., graduating, moving cities, or getting a first job).
+  - *Journal Writing Practice:* Write a 150-word journal entry describing an unexpected turn of events during a vacation or holiday in the past. Highlight 3 Past Continuous and 5 Past Simple verbs.
 - **Picture Description:** Foreground vs background, spatial prepositions, speculation (*must be, seems to be*).
 - **Debate & Discussion:** Stating claims, providing evidence, handling counterarguments, concluding.
 
