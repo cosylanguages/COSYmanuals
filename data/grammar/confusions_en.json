@@ -40,6 +40,26 @@
         "memory_trick": "Always/Usually → Simple. Right now → Continuous."
       },
       {
+        "id": "because-vs-so",
+        "level": "A0-A1",
+        "point": "because vs so",
+        "core_difference": "Use 'because' to state the reason/cause (Why?); use 'so' to state the result/effect (What happened next?).",
+        "usage_a": "Use 'because' followed by the cause/reason for an action.",
+        "usage_b": "Use 'so' followed by the outcome or result of a situation.",
+        "examples": [
+          "I stayed home because I was sick.",
+          "I was sick, so I stayed home.",
+          "She is happy because it's her birthday.",
+          "It's her birthday, so she is happy."
+        ],
+        "quick_logic": "Cause comes after 'because'. Result comes after 'so'.",
+        "common_mistakes": [
+          "❌ It was cold, because I put on my coat. → ✓ It was cold, so I put on my coat.",
+          "❌ I stayed home so I was tired. → ✓ I stayed home because I was tired."
+        ],
+        "memory_trick": "Because = Back to cause (Why?). So = So what happened next? (Result)."
+      },
+      {
         "id": "past-simple-vs-present-perfect",
         "level": "A2",
         "point": "Past Simple vs Present Perfect",
