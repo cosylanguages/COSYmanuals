@@ -6,9 +6,10 @@
 
 ## 🔒 Access Model & Privacy Notes
 
-- **Link-Only Access:** This repository is intentionally unlinked from public site navigation on the main hub. Access is granted exclusively via direct links shared by COSYlanguages or contracted instructors.
-- **Privacy Notice:** The landing page (`/index.html`) serves as an access boundary for uninvited visitors, explaining the direct-link model and pointing to the main contact hub.
-- **No Indexing / Public Directory:** Do not link this repository publicly on social media or public navigation menus.
+- **Link-Only Access:** Access is granted exclusively via direct links shared by COSYlanguages or contracted instructors.
+- **Free-Tier Access Control:** Managed via GitHub native repository collaborator permissions and an optional Cloudflare Worker gate checking `config/roster.example.json`.
+- **Zero Data Harvesting:** No personal data beyond GitHub account handles or opaque student IDs are stored.
+- **Detailed Documentation:** See [`docs/ACCESS_CONTROL.md`](./docs/ACCESS_CONTROL.md) for a full trade-off analysis between Option (a) Single Private Repo and Option (b) Per-Language Repositories.
 
 ---
 
@@ -85,7 +86,6 @@ All manuals integrate directly with other COSY ecosystem repositories. Every pag
 
 - 🎮 **[COSYgames](https://cosylanguages.github.io/COSYgames/):** Vocabulary challenges, grammar quizzes, and interactive games.
 - 🛠️ **[COSYtools](https://cosylanguages.github.io/COSYtools/):** Dictionary lookups, verb conjugation tables, and phonetic guides.
-- 🌍 **[COSYworld](https://cosylanguages.github.io/COSYworld/):** Contextual roleplays and immersive scenarios.
 - 🏠 **[COSYlanguages](https://cosylanguages.github.io/COSYlanguages/):** Main hub and contact point.
 
 ---

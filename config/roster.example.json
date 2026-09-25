@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "COSYmanuals Access Roster",
+  "description": "Zero-data-harvesting user roster for mapping teachers and students to target language manuals.",
+  "type": "object",
+  "properties": {
+    "teachers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "github_username": { "type": "string" },
+          "assigned_languages": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "ISO 639-1 language codes, e.g., ['en', 'fr']"
+          }
+        },
+        "required": ["github_username", "assigned_languages"]
+      }
+    },
+    "students": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "student_id": { "type": "string", "description": "Opaque student identifier" },
+          "assigned_manuals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "language": { "type": "string" },
+                "course_type": { "type": "string" },
+                "level": { "type": "string" }
+              },
+              "required": ["language", "course_type", "level"]
+            }
+          }
+        },
+        "required": ["student_id", "assigned_manuals"]
+      }
+    }
+  },
+  "required": ["teachers", "students"]
+}
