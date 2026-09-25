@@ -78,9 +78,11 @@ def generate_grammar_manual(curriculum_data):
 
 def generate_grammar_html(curriculum_data):
     if not isinstance(curriculum_data, dict): curriculum_data = {}
-    lang = str(curriculum_data.get("language") or "en").upper()
+    lang = str(curriculum_data.get("language") or "en").lower()
+    lang_upper = lang.upper()
     course_type = str(curriculum_data.get("course_type") or "general").title()
-    level = str(curriculum_data.get("level") or "A1").upper()
+    level = str(curriculum_data.get("level") or "A1").lower()
+    level_upper = level.upper()
     units = curriculum_data.get("units") or []
 
     unit_blocks = []
@@ -122,12 +124,18 @@ def generate_grammar_html(curriculum_data):
         </section>
         """)
 
+    # Check if a dedicated grammar textbook hub exists
+    textbook_link = f"../../grammar/{level}/index.html"
+    textbook_btn = ""
+    if os.path.exists(f"manuals/{lang}/grammar/{level}/index.html"):
+        textbook_btn = f'<a href="{textbook_link}" style="background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Textbook & Topic Lessons →</a>'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{lang} Grammar Manual — {course_type} ({level})</title>
+<title>{lang_upper} Grammar Manual — {course_type} ({level_upper})</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -146,11 +154,12 @@ def generate_grammar_html(curriculum_data):
       📖 COSYmanuals · Grammar Reference
     </span>
     <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
-      {lang} Grammar Manual — {course_type} ({level})
+      {lang_upper} Grammar Manual — {course_type} ({level_upper})
     </h1>
-    <p style="font-size:1.05rem; color:#475569; margin:0;">
+    <p style="font-size:1.05rem; color:#475569; margin:0 0 12px;">
       Complete interactive grammar rules, structural formulas, and teaching notes.
     </p>
+    {textbook_btn}
   </div>
 
   {"".join(unit_blocks)}
@@ -217,9 +226,11 @@ def generate_vocabulary_manual(curriculum_data):
 
 def generate_vocabulary_html(curriculum_data):
     if not isinstance(curriculum_data, dict): curriculum_data = {}
-    lang = str(curriculum_data.get("language") or "en").upper()
+    lang = str(curriculum_data.get("language") or "en").lower()
+    lang_upper = lang.upper()
     course_type = str(curriculum_data.get("course_type") or "general").title()
-    level = str(curriculum_data.get("level") or "A1").upper()
+    level = str(curriculum_data.get("level") or "A1").lower()
+    level_upper = level.upper()
     units = curriculum_data.get("units") or []
 
     unit_blocks = []
@@ -255,12 +266,17 @@ def generate_vocabulary_html(curriculum_data):
         </section>
         """)
 
+    textbook_link = f"../../vocabulary/{level}/index.html"
+    textbook_btn = ""
+    if os.path.exists(f"manuals/{lang}/vocabulary/{level}/index.html"):
+        textbook_btn = f'<a href="{textbook_link}" style="background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Vocabulary Textbook & Topic Lessons →</a>'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{lang} Vocabulary Manual — {course_type} ({level})</title>
+<title>{lang_upper} Vocabulary Manual — {course_type} ({level_upper})</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -279,11 +295,12 @@ def generate_vocabulary_html(curriculum_data):
       🗂️ COSYmanuals · Vocabulary Manual
     </span>
     <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
-      {lang} Vocabulary Manual — {course_type} ({level})
+      {lang_upper} Vocabulary Manual — {course_type} ({level_upper})
     </h1>
-    <p style="font-size:1.05rem; color:#475569; margin:0;">
+    <p style="font-size:1.05rem; color:#475569; margin:0 0 12px;">
       Structured thematic word lists, target expressions, and key phrases.
     </p>
+    {textbook_btn}
   </div>
 
   {"".join(unit_blocks)}
@@ -379,9 +396,11 @@ def generate_communication_manual(curriculum_data):
 
 def generate_communication_html(curriculum_data):
     if not isinstance(curriculum_data, dict): curriculum_data = {}
-    lang = str(curriculum_data.get("language") or "en").upper()
+    lang = str(curriculum_data.get("language") or "en").lower()
+    lang_upper = lang.upper()
     course_type = str(curriculum_data.get("course_type") or "general").title()
-    level = str(curriculum_data.get("level") or "A1").upper()
+    level = str(curriculum_data.get("level") or "A1").lower()
+    level_upper = level.upper()
     units = curriculum_data.get("units") or []
 
     unit_blocks = []
@@ -431,12 +450,17 @@ def generate_communication_html(curriculum_data):
         </section>
         """)
 
+    textbook_link = f"../../communication/{level}/index.html"
+    textbook_btn = ""
+    if os.path.exists(f"manuals/{lang}/communication/{level}/index.html"):
+        textbook_btn = f'<a href="{textbook_link}" style="background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Communication Textbook & Topic Lessons →</a>'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{lang} Communication Manual — {course_type} ({level})</title>
+<title>{lang_upper} Communication Manual — {course_type} ({level_upper})</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -455,11 +479,12 @@ def generate_communication_html(curriculum_data):
       💬 COSYmanuals · Communication & Practice
     </span>
     <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
-      {lang} Communication Manual — {course_type} ({level})
+      {lang_upper} Communication Manual — {course_type} ({level_upper})
     </h1>
-    <p style="font-size:1.05rem; color:#475569; margin:0;">
+    <p style="font-size:1.05rem; color:#475569; margin:0 0 12px;">
       Interactive dialogues, production tasks, and pedagogical adaptations.
     </p>
+    {textbook_btn}
   </div>
 
   {"".join(unit_blocks)}
@@ -501,16 +526,46 @@ def generate_student_index(curriculum_data):
     if not isinstance(curriculum_data, dict):
         curriculum_data = {}
 
-    lang = str(curriculum_data.get("language") or "en").upper()
+    lang = str(curriculum_data.get("language") or "en").lower()
+    lang_upper = lang.upper()
     course_type = str(curriculum_data.get("course_type") or "general").title()
-    level = str(curriculum_data.get("level") or "A1").upper()
+    level = str(curriculum_data.get("level") or "a1").lower()
+    level_upper = level.upper()
+
+    # Check for direct textbook links
+    grammar_tb = f"../../grammar/{level}/index.html" if os.path.exists(f"manuals/{lang}/grammar/{level}/index.html") else None
+    vocab_tb = f"../../vocabulary/{level}/index.html" if os.path.exists(f"manuals/{lang}/vocabulary/{level}/index.html") else None
+    comm_tb = f"../../communication/{level}/index.html" if os.path.exists(f"manuals/{lang}/communication/{level}/index.html") else None
+    print_hub = f"../../print/index.html" if os.path.exists(f"manuals/{lang}/print/index.html") else None
+
+    tb_links_html = ""
+    if grammar_tb or vocab_tb or comm_tb or print_hub:
+        extra_btns = []
+        if grammar_tb:
+          extra_btns.append(f'<a href="{grammar_tb}" style="display:inline-block; background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📘 Open Full Grammar Textbook Hub →</a>')
+        if vocab_tb:
+          extra_btns.append(f'<a href="{vocab_tb}" style="display:inline-block; background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Vocabulary Textbook Hub →</a>')
+        if comm_tb:
+          extra_btns.append(f'<a href="{comm_tb}" style="display:inline-block; background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">💬 Open Communication Hub →</a>')
+        if print_hub:
+          extra_btns.append(f'<a href="{print_hub}" style="display:inline-block; background:#0f172a; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">🖨️ Printable A4 Booklet Edition →</a>')
+
+        tb_links_html = f"""
+        <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:18px; margin-bottom:28px;">
+          <h3 style="margin-top:0; color:#1e293b; font-size:1.15rem;">📚 Full Interactive Level Textbooks & Lesson Pages:</h3>
+          <p style="font-size:0.9rem; color:#64748b; margin-bottom:12px;">Access the complete, topic-by-topic interactive textbooks for {lang_upper} {level_upper}:</p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            {"".join(extra_btns)}
+          </div>
+        </div>
+        """
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{lang} {course_type} Manual ({level}) · Student Portal</title>
+<title>{lang_upper} {course_type} Manual ({level_upper}) · Student Portal</title>
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -518,16 +573,16 @@ def generate_student_index(curriculum_data):
 </head>
 <body>
 
-<main class="container" style="max-width:760px; margin:2.5rem auto; padding:0 1.25rem;">
+<main class="container" style="max-width:800px; margin:2.5rem auto; padding:0 1.25rem;">
   <div class="page-head" style="margin-bottom:1.5rem;">
     <span class="eyebrow" style="background:#e2e8f0; font-size:0.85rem; padding:4px 10px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:8px;">
-      🎓 Student Course Manuals · {lang}
+      🎓 Student Course Manuals · {lang_upper}
     </span>
     <h1 style="font-size:2.2rem; color:#1e293b; margin:0.25rem 0 0.5rem; font-weight:700;">
-      {lang} {course_type} Course ({level})
+      {lang_upper} {course_type} Course ({level_upper})
     </h1>
     <p style="font-size:1.05rem; color:#475569; margin:0;">
-      Welcome to your course manual directory. Below you can access your 3 core study manuals for this level in full interactive HTML.
+      Welcome to your course manual directory. Below you can access your core study manuals, topic lesson pages, and print editions for this level.
     </p>
   </div>
 
@@ -535,6 +590,9 @@ def generate_student_index(curriculum_data):
     <strong>🎯 Student Direct Access:</strong> Keep this link saved for your live lessons and homework. Your teacher will assign specific sections from these manuals.
   </div>
 
+  {tb_links_html}
+
+  <h3 style="color:#0f172a; margin-bottom:12px; font-size:1.25rem;">📖 Derived Course Manuals ({level_upper}):</h3>
   <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-bottom:32px;">
     <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #1c8f56;">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">📖 Grammar</h3>
