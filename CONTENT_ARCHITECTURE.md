@@ -56,7 +56,7 @@ COSYmanuals/
 
 ## 3. CEFR Manual HTML Staging (CELTA Inductive Standard)
 
-All topic HTML pages under `manuals/<lang>/grammar/<level>/topics/` follow the strict 4-question, inductive CELTA discovery structure defined in `manuals/en/grammar/a1/GRAMMAR_STANDARD.md` (v3.0):
+All topic HTML pages under `manuals/<lang>/grammar/<level>/topics/` follow the strict 4-question, inductive CELTA discovery structure defined in `manuals/en/grammar/a1/GRAMMAR_STANDARD.md` (v3.0), and communication pages follow the standard defined in `manuals/en/communication/a1/COMMUNICATION_STANDARD.md`:
 
 1. **Vocabulary / Thematic Anchor**: Communicative context.
 2. **Situational Context Examples**: Character-driven example sentences.
