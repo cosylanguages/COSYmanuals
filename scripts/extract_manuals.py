@@ -3,16 +3,17 @@
 COSYmanuals Extraction Pipeline
 -------------------------------
 Extracts COSYplatform curriculum JSON datasets from `curriculums/<lang>/<course_type>/<level>.json`
-and produces derived, plain, versionable Markdown manual documents & student index HTML under:
+and produces derived Markdown manuals & rich HTML manual pages under:
   manuals/<lang>/<course_type>/<level>/
-    ├── grammar.md
-    ├── vocabulary.md
-    ├── communication.md
+    ├── grammar.md & grammar.html
+    ├── vocabulary.md & vocabulary.html
+    ├── communication.md & communication.html
     ├── README.md
     └── index.html
 """
 
 import json
+import html
 import os
 import sys
 from pathlib import Path
@@ -75,6 +76,95 @@ def generate_grammar_manual(curriculum_data):
     return "\n".join(lines)
 
 
+def generate_grammar_html(curriculum_data):
+    if not isinstance(curriculum_data, dict): curriculum_data = {}
+    lang = str(curriculum_data.get("language") or "en").upper()
+    course_type = str(curriculum_data.get("course_type") or "general").title()
+    level = str(curriculum_data.get("level") or "A1").upper()
+    units = curriculum_data.get("units") or []
+
+    unit_blocks = []
+    for unit in units:
+        if not isinstance(unit, dict): continue
+        unit_num = unit.get("unit", "")
+        unit_title = html.escape(str(unit.get("title") or ""))
+
+        lesson_blocks = []
+        for lesson in (unit.get("lessons") or []):
+            if not isinstance(lesson, dict): continue
+            les_num = lesson.get("lesson", "")
+            les_title = html.escape(str(lesson.get("title") or ""))
+            grammar_list = lesson.get("grammar") or []
+
+            grammar_html = ""
+            if grammar_list:
+                items_html = "".join([f"<li>{html.escape(str(g))}</li>" for q in grammar_list for g in ([q] if isinstance(q, str) else []) if g])
+                if items_html:
+                    grammar_html = f"<div style='margin-bottom:12px;'><strong>Grammar Focus Points:</strong><ul style='margin:6px 0 0 20px;'>{items_html}</ul></div>"
+
+            teacher_notes = lesson.get("teacher_notes")
+            notes_html = ""
+            if isinstance(teacher_notes, str) and teacher_notes.strip():
+                notes_html = f"<div style='background:#f8fafc; border-left:3px solid #1c8f56; padding:10px 14px; margin-top:8px; font-family:monospace; font-size:0.9rem; border-radius:4px;'>{html.escape(teacher_notes.strip())}</div>"
+
+            lesson_blocks.append(f"""
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
+              <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
+              {grammar_html}
+              {notes_html}
+            </div>
+            """)
+
+        unit_blocks.append(f"""
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#1c8f56; border-bottom:2px solid #cbd5e1; padding-bottom:6px; font-size:1.5rem;">Unit {unit_num}: {unit_title}</h2>
+          {"".join(lesson_blocks)}
+        </section>
+        """)
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{lang} Grammar Manual — {course_type} ({level})</title>
+<link rel="stylesheet" href="../../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../../shared/styles/base.css">
+<link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/layout.css">
+</head>
+<body>
+
+<main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
+    <a href="index.html" style="color:#1c8f56; text-decoration:none; font-weight:700;">&larr; Back to Student Course Hub</a>
+    <a href="grammar.md" style="color:#64748b; text-decoration:none; font-size:0.88rem;">📄 Download Markdown Version</a>
+  </div>
+
+  <div class="page-head" style="margin-bottom:2rem;">
+    <span class="eyebrow" style="background:#1c8f56; color:#ffffff; font-size:0.85rem; padding:4px 10px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:8px;">
+      📖 COSYmanuals · Grammar Reference
+    </span>
+    <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
+      {lang} Grammar Manual — {course_type} ({level})
+    </h1>
+    <p style="font-size:1.05rem; color:#475569; margin:0;">
+      Complete interactive grammar rules, structural formulas, and teaching notes.
+    </p>
+  </div>
+
+  {"".join(unit_blocks)}
+
+  <footer style="text-align:center; color:#94a3b8; font-size:0.85rem; border-top:1px solid #e2e8f0; padding-top:16px; margin-top:32px;">
+    &copy; COSYmanuals. Derived Interactive Grammar Textbook.
+  </footer>
+</main>
+
+</body>
+</html>
+"""
+
+
 def generate_vocabulary_manual(curriculum_data):
     if not isinstance(curriculum_data, dict):
         curriculum_data = {}
@@ -123,6 +213,89 @@ def generate_vocabulary_manual(curriculum_data):
                 lines.append("")
 
     return "\n".join(lines)
+
+
+def generate_vocabulary_html(curriculum_data):
+    if not isinstance(curriculum_data, dict): curriculum_data = {}
+    lang = str(curriculum_data.get("language") or "en").upper()
+    course_type = str(curriculum_data.get("course_type") or "general").title()
+    level = str(curriculum_data.get("level") or "A1").upper()
+    units = curriculum_data.get("units") or []
+
+    unit_blocks = []
+    for unit in units:
+        if not isinstance(unit, dict): continue
+        unit_num = unit.get("unit", "")
+        unit_title = html.escape(str(unit.get("title") or ""))
+
+        lesson_blocks = []
+        for lesson in (unit.get("lessons") or []):
+            if not isinstance(lesson, dict): continue
+            les_num = lesson.get("lesson", "")
+            les_title = html.escape(str(lesson.get("title") or ""))
+            vocab_list = lesson.get("vocabulary") or []
+
+            vocab_html = ""
+            if vocab_list:
+                pills = "".join([f"<span style='background:#f1f5f9; color:#0f172a; padding:4px 10px; border-radius:16px; font-family:monospace; font-weight:600; font-size:0.9rem;'>{html.escape(str(v))}</span> " for v in vocab_list if v])
+                if pills:
+                    vocab_html = f"<div style='display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;'>{pills}</div>"
+
+            lesson_blocks.append(f"""
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
+              <h4 style="margin:0 0 8px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
+              {vocab_html}
+            </div>
+            """)
+
+        unit_blocks.append(f"""
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#2563eb; border-bottom:2px solid #cbd5e1; padding-bottom:6px; font-size:1.5rem;">Unit {unit_num}: {unit_title}</h2>
+          {"".join(lesson_blocks)}
+        </section>
+        """)
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{lang} Vocabulary Manual — {course_type} ({level})</title>
+<link rel="stylesheet" href="../../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../../shared/styles/base.css">
+<link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/layout.css">
+</head>
+<body>
+
+<main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
+    <a href="index.html" style="color:#2563eb; text-decoration:none; font-weight:700;">&larr; Back to Student Course Hub</a>
+    <a href="vocabulary.md" style="color:#64748b; text-decoration:none; font-size:0.88rem;">📄 Download Markdown Version</a>
+  </div>
+
+  <div class="page-head" style="margin-bottom:2rem;">
+    <span class="eyebrow" style="background:#2563eb; color:#ffffff; font-size:0.85rem; padding:4px 10px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:8px;">
+      🗂️ COSYmanuals · Vocabulary Manual
+    </span>
+    <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
+      {lang} Vocabulary Manual — {course_type} ({level})
+    </h1>
+    <p style="font-size:1.05rem; color:#475569; margin:0;">
+      Structured thematic word lists, target expressions, and key phrases.
+    </p>
+  </div>
+
+  {"".join(unit_blocks)}
+
+  <footer style="text-align:center; color:#94a3b8; font-size:0.85rem; border-top:1px solid #e2e8f0; padding-top:16px; margin-top:32px;">
+    &copy; COSYmanuals. Derived Interactive Vocabulary Manual.
+  </footer>
+</main>
+
+</body>
+</html>
+"""
 
 
 def generate_communication_manual(curriculum_data):
@@ -204,6 +377,103 @@ def generate_communication_manual(curriculum_data):
     return "\n".join(lines)
 
 
+def generate_communication_html(curriculum_data):
+    if not isinstance(curriculum_data, dict): curriculum_data = {}
+    lang = str(curriculum_data.get("language") or "en").upper()
+    course_type = str(curriculum_data.get("course_type") or "general").title()
+    level = str(curriculum_data.get("level") or "A1").upper()
+    units = curriculum_data.get("units") or []
+
+    unit_blocks = []
+    for unit in units:
+        if not isinstance(unit, dict): continue
+        unit_num = unit.get("unit", "")
+        unit_title = html.escape(str(unit.get("title") or ""))
+
+        lesson_blocks = []
+        for lesson in (unit.get("lessons") or []):
+            if not isinstance(lesson, dict): continue
+            les_num = lesson.get("lesson", "")
+            les_title = html.escape(str(lesson.get("title") or ""))
+            growing_task = lesson.get("growingTask") or {}
+            age_adaptation = lesson.get("ageAdaptation") or {}
+
+            self_portrait = growing_task.get("selfPortrait")
+            dialogue = growing_task.get("dialogue")
+
+            comm_html = ""
+            if (isinstance(self_portrait, str) and self_portrait.strip()) or (isinstance(dialogue, str) and dialogue.strip()):
+                parts = []
+                if isinstance(self_portrait, str) and self_portrait.strip():
+                    parts.append(f"<p style='margin:0 0 8px;'><strong>Self-Portrait Task:</strong> {html.escape(self_portrait.strip())}</p>")
+                if isinstance(dialogue, str) and dialogue.strip():
+                    parts.append(f"<div style='background:#f8fafc; border-left:3px solid #4f46e5; padding:10px 14px; font-family:monospace; font-size:0.9rem; border-radius:4px;'>{html.escape(dialogue.strip())}</div>")
+                comm_html = f"<div style='margin-bottom:10px;'>{''.join(parts)}</div>"
+
+            adapt_html = ""
+            valid_adaptations = {g: a.strip() for g, a in age_adaptation.items() if isinstance(a, str) and a.strip()}
+            if valid_adaptations:
+                adapt_items = "".join([f"<li><strong>{html.escape(str(g)).title()}:</strong> {html.escape(a)}</li>" for g, a in valid_adaptations.items()])
+                adapt_html = f"<div style='font-size:0.88rem; color:#475569;'><strong>Age Adaptations:</strong><ul style='margin:4px 0 0 20px;'>{adapt_items}</ul></div>"
+
+            lesson_blocks.append(f"""
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
+              <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
+              {comm_html}
+              {adapt_html}
+            </div>
+            """)
+
+        unit_blocks.append(f"""
+        <section style="margin-bottom:32px;">
+          <h2 style="color:#4f46e5; border-bottom:2px solid #cbd5e1; padding-bottom:6px; font-size:1.5rem;">Unit {unit_num}: {unit_title}</h2>
+          {"".join(lesson_blocks)}
+        </section>
+        """)
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{lang} Communication Manual — {course_type} ({level})</title>
+<link rel="stylesheet" href="../../../shared/styles/tokens.css">
+<link rel="stylesheet" href="../../../shared/styles/base.css">
+<link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/layout.css">
+</head>
+<body>
+
+<main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
+    <a href="index.html" style="color:#4f46e5; text-decoration:none; font-weight:700;">&larr; Back to Student Course Hub</a>
+    <a href="communication.md" style="color:#64748b; text-decoration:none; font-size:0.88rem;">📄 Download Markdown Version</a>
+  </div>
+
+  <div class="page-head" style="margin-bottom:2rem;">
+    <span class="eyebrow" style="background:#4f46e5; color:#ffffff; font-size:0.85rem; padding:4px 10px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:8px;">
+      💬 COSYmanuals · Communication & Practice
+    </span>
+    <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
+      {lang} Communication Manual — {course_type} ({level})
+    </h1>
+    <p style="font-size:1.05rem; color:#475569; margin:0;">
+      Interactive dialogues, production tasks, and pedagogical adaptations.
+    </p>
+  </div>
+
+  {"".join(unit_blocks)}
+
+  <footer style="text-align:center; color:#94a3b8; font-size:0.85rem; border-top:1px solid #e2e8f0; padding-top:16px; margin-top:32px;">
+    &copy; COSYmanuals. Derived Interactive Communication Manual.
+  </footer>
+</main>
+
+</body>
+</html>
+"""
+
+
 def generate_readme(curriculum_data):
     if not isinstance(curriculum_data, dict):
         curriculum_data = {}
@@ -218,9 +488,9 @@ def generate_readme(curriculum_data):
     lines.append(f"This folder contains derived lesson manuals for **{lang.upper()} - {course_type.title()} - {level.upper()}**.")
     lines.append("")
     lines.append("## Available Manual Documents")
-    lines.append("- 📖 [`grammar.md`](./grammar.md) - Grammar rules, explanations, and structures.")
-    lines.append("- 🗂️ [`vocabulary.md`](./vocabulary.md) - Thematic vocabulary lists and key phrases.")
-    lines.append("- 💬 [`communication.md`](./communication.md) - Communicative tasks, dialogues, and adaptations.")
+    lines.append("- 📖 [`grammar.html`](./grammar.html) / [`grammar.md`](./grammar.md) - Grammar rules, explanations, and structures.")
+    lines.append("- 🗂️ [`vocabulary.html`](./vocabulary.html) / [`vocabulary.md`](./vocabulary.md) - Thematic vocabulary lists and key phrases.")
+    lines.append("- 💬 [`communication.html`](./communication.html) / [`communication.md`](./communication.md) - Communicative tasks, dialogues, and adaptations.")
     lines.append("")
     lines.append("---")
     lines.append("*Generated automatically by `scripts/extract_manuals.py` from COSYplatform curriculum files.*")
@@ -257,7 +527,7 @@ def generate_student_index(curriculum_data):
       {lang} {course_type} Course ({level})
     </h1>
     <p style="font-size:1.05rem; color:#475569; margin:0;">
-      Welcome to your course manual directory. Below you can access your 3 core study manuals for this level.
+      Welcome to your course manual directory. Below you can access your 3 core study manuals for this level in full interactive HTML.
     </p>
   </div>
 
@@ -269,19 +539,19 @@ def generate_student_index(curriculum_data):
     <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #1c8f56;">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">📖 Grammar</h3>
       <p style="font-size:0.9rem; color:#64748b; margin-bottom:14px;">Grammar rules, sentence formulas, and structural explanations.</p>
-      <a href="grammar.md" style="display:inline-block; background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Grammar Manual →</a>
+      <a href="grammar.html" style="display:inline-block; background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Grammar Manual →</a>
     </div>
 
     <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #2563eb;">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">🗂️ Vocabulary</h3>
       <p style="font-size:0.9rem; color:#64748b; margin-bottom:14px;">Thematic word lists, key phrases, and target expressions.</p>
-      <a href="vocabulary.md" style="display:inline-block; background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Vocabulary Manual →</a>
+      <a href="vocabulary.html" style="display:inline-block; background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Vocabulary Manual →</a>
     </div>
 
     <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #4f46e5;">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">💬 Communication</h3>
       <p style="font-size:0.9rem; color:#64748b; margin-bottom:14px;">Dialogues, speaking tasks, and interactive prompts.</p>
-      <a href="communication.md" style="display:inline-block; background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Communication Manual →</a>
+      <a href="communication.html" style="display:inline-block; background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Communication Manual →</a>
     </div>
   </div>
 
@@ -315,20 +585,32 @@ def process_curriculum_file(filepath):
     out_dir = Path("manuals") / str(lang) / str(course_type) / str(level).lower()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Write Grammar Manual
+    # Write Grammar Manual (.md and .html)
     grammar_content = generate_grammar_manual(data)
     with open(out_dir / "grammar.md", "w", encoding="utf-8") as f:
         f.write(grammar_content)
 
-    # Write Vocabulary Manual
+    grammar_html_content = generate_grammar_html(data)
+    with open(out_dir / "grammar.html", "w", encoding="utf-8") as f:
+        f.write(grammar_html_content)
+
+    # Write Vocabulary Manual (.md and .html)
     vocab_content = generate_vocabulary_manual(data)
     with open(out_dir / "vocabulary.md", "w", encoding="utf-8") as f:
         f.write(vocab_content)
 
-    # Write Communication Manual
+    vocab_html_content = generate_vocabulary_html(data)
+    with open(out_dir / "vocabulary.html", "w", encoding="utf-8") as f:
+        f.write(vocab_html_content)
+
+    # Write Communication Manual (.md and .html)
     comm_content = generate_communication_manual(data)
     with open(out_dir / "communication.md", "w", encoding="utf-8") as f:
         f.write(comm_content)
+
+    comm_html_content = generate_communication_html(data)
+    with open(out_dir / "communication.html", "w", encoding="utf-8") as f:
+        f.write(comm_html_content)
 
     # Write README
     readme_content = generate_readme(data)
