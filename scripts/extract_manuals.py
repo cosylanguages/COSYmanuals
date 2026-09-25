@@ -17,10 +17,15 @@ import sys
 from pathlib import Path
 
 def generate_grammar_manual(curriculum_data):
-    lang = curriculum_data.get("language", "en")
-    course_type = curriculum_data.get("course_type", "general")
-    level = curriculum_data.get("level", "A1")
-    units = curriculum_data.get("units", [])
+    if not isinstance(curriculum_data, dict):
+        curriculum_data = {}
+
+    lang = str(curriculum_data.get("language") or "en")
+    course_type = str(curriculum_data.get("course_type") or "general")
+    level = str(curriculum_data.get("level") or "A1")
+    units = curriculum_data.get("units")
+    if not isinstance(units, list):
+        units = []
 
     lines = []
     lines.append(f"# {lang.upper()} Grammar Manual — {course_type.title()} ({level.upper()})")
@@ -29,25 +34,37 @@ def generate_grammar_manual(curriculum_data):
     lines.append("")
 
     for unit in units:
-        unit_num = unit.get("unit")
-        unit_title = unit.get("title", "")
+        if not isinstance(unit, dict):
+            continue
+        unit_num = unit.get("unit", "")
+        unit_title = str(unit.get("title") or "")
         lines.append(f"## Unit {unit_num}: {unit_title}")
         lines.append("")
 
-        for lesson in unit.get("lessons", []):
-            les_num = lesson.get("lesson")
-            les_title = lesson.get("title", "")
-            grammar_list = lesson.get("grammar", [])
+        lessons = unit.get("lessons")
+        if not isinstance(lessons, list):
+            lessons = []
+
+        for lesson in lessons:
+            if not isinstance(lesson, dict):
+                continue
+            les_num = lesson.get("lesson", "")
+            les_title = str(lesson.get("title") or "")
+            grammar_list = lesson.get("grammar")
+            if not isinstance(grammar_list, list):
+                grammar_list = []
+
             lines.append(f"### Lesson {les_num}: {les_title}")
             lines.append("")
             if grammar_list:
                 lines.append("**Grammar Focus Points:**")
                 for item in grammar_list:
-                    lines.append(f"- {item}")
+                    if item:
+                        lines.append(f"- {item}")
                 lines.append("")
 
-            teacher_notes = lesson.get("teacher_notes", "")
-            if teacher_notes:
+            teacher_notes = lesson.get("teacher_notes")
+            if isinstance(teacher_notes, str) and teacher_notes.strip():
                 lines.append("**Teaching Notes & Rules:**")
                 lines.append("```text")
                 lines.append(teacher_notes.strip())
@@ -58,10 +75,15 @@ def generate_grammar_manual(curriculum_data):
 
 
 def generate_vocabulary_manual(curriculum_data):
-    lang = curriculum_data.get("language", "en")
-    course_type = curriculum_data.get("course_type", "general")
-    level = curriculum_data.get("level", "A1")
-    units = curriculum_data.get("units", [])
+    if not isinstance(curriculum_data, dict):
+        curriculum_data = {}
+
+    lang = str(curriculum_data.get("language") or "en")
+    course_type = str(curriculum_data.get("course_type") or "general")
+    level = str(curriculum_data.get("level") or "A1")
+    units = curriculum_data.get("units")
+    if not isinstance(units, list):
+        units = []
 
     lines = []
     lines.append(f"# {lang.upper()} Vocabulary Manual — {course_type.title()} ({level.upper()})")
@@ -70,31 +92,48 @@ def generate_vocabulary_manual(curriculum_data):
     lines.append("")
 
     for unit in units:
-        unit_num = unit.get("unit")
-        unit_title = unit.get("title", "")
+        if not isinstance(unit, dict):
+            continue
+        unit_num = unit.get("unit", "")
+        unit_title = str(unit.get("title") or "")
         lines.append(f"## Unit {unit_num}: {unit_title}")
         lines.append("")
 
-        for lesson in unit.get("lessons", []):
-            les_num = lesson.get("lesson")
-            les_title = lesson.get("title", "")
-            vocab_list = lesson.get("vocabulary", [])
+        lessons = unit.get("lessons")
+        if not isinstance(lessons, list):
+            lessons = []
+
+        for lesson in lessons:
+            if not isinstance(lesson, dict):
+                continue
+            les_num = lesson.get("lesson", "")
+            les_title = str(lesson.get("title") or "")
+            vocab_list = lesson.get("vocabulary")
+            if not isinstance(vocab_list, list):
+                vocab_list = []
+
             lines.append(f"### Lesson {les_num}: {les_title}")
             lines.append("")
             if vocab_list:
                 lines.append("**Target Vocabulary:**")
                 for item in vocab_list:
-                    lines.append(f"- `{item}`")
+                    if item:
+                        lines.append(f"- `{item}`")
                 lines.append("")
 
     return "\n".join(lines)
 
 
 def generate_communication_manual(curriculum_data):
-    lang = curriculum_data.get("language", "en")
-    course_type = curriculum_data.get("course_type", "general")
-    level = curriculum_data.get("level", "A1")
-    units = curriculum_data.get("units", [])
+    if not isinstance(curriculum_data, dict):
+        curriculum_data = {}
+
+    lang = str(curriculum_data.get("language") or "en")
+    course_type = str(curriculum_data.get("course_type") or "general")
+    level = str(curriculum_data.get("level") or "A1")
+    units = curriculum_data.get("units")
+    if not isinstance(units, list):
+        units = []
 
     lines = []
     lines.append(f"# {lang.upper()} Communication & Practice Manual — {course_type.title()} ({level.upper()})")
@@ -103,45 +142,74 @@ def generate_communication_manual(curriculum_data):
     lines.append("")
 
     for unit in units:
-        unit_num = unit.get("unit")
-        unit_title = unit.get("title", "")
+        if not isinstance(unit, dict):
+            continue
+        unit_num = unit.get("unit", "")
+        unit_title = str(unit.get("title") or "")
         lines.append(f"## Unit {unit_num}: {unit_title}")
         lines.append("")
 
-        for lesson in unit.get("lessons", []):
-            les_num = lesson.get("lesson")
-            les_title = lesson.get("title", "")
-            growing_task = lesson.get("growingTask", {})
-            age_adaptation = lesson.get("ageAdaptation", {})
+        lessons = unit.get("lessons")
+        if not isinstance(lessons, list):
+            lessons = []
+
+        for lesson in lessons:
+            if not isinstance(lesson, dict):
+                continue
+            les_num = lesson.get("lesson", "")
+            les_title = str(lesson.get("title") or "")
+
+            growing_task = lesson.get("growingTask")
+            if not isinstance(growing_task, dict):
+                growing_task = {}
+
+            age_adaptation = lesson.get("ageAdaptation")
+            if not isinstance(age_adaptation, dict):
+                age_adaptation = {}
 
             lines.append(f"### Lesson {les_num}: {les_title}")
             lines.append("")
 
-            if growing_task:
+            self_portrait = growing_task.get("selfPortrait")
+            dialogue = growing_task.get("dialogue")
+
+            has_self_portrait = isinstance(self_portrait, str) and bool(self_portrait.strip())
+            has_dialogue = isinstance(dialogue, str) and bool(dialogue.strip())
+
+            if has_self_portrait or has_dialogue:
                 lines.append("**Communicative Dialogue & Production Tasks:**")
                 lines.append("")
-                if "selfPortrait" in growing_task:
-                    lines.append(f"- **Self-Portrait**: {growing_task['selfPortrait']}")
-                if "dialogue" in growing_task:
+                if has_self_portrait:
+                    lines.append(f"- **Self-Portrait**: {self_portrait.strip()}")
+                if has_dialogue:
                     lines.append("- **Dialogue Practice**:")
                     lines.append("```text")
-                    lines.append(growing_task['dialogue'].strip())
+                    lines.append(dialogue.strip())
                     lines.append("```")
                 lines.append("")
 
-            if age_adaptation:
+            valid_adaptations = {
+                group: adapt.strip()
+                for group, adapt in age_adaptation.items()
+                if isinstance(adapt, str) and adapt.strip()
+            }
+
+            if valid_adaptations:
                 lines.append("**Pedagogical Adaptations:**")
-                for group, adaptation in age_adaptation.items():
-                    lines.append(f"- **{group.title()}**: {adaptation}")
+                for group, adaptation in valid_adaptations.items():
+                    lines.append(f"- **{str(group).title()}**: {adaptation}")
                 lines.append("")
 
     return "\n".join(lines)
 
 
 def generate_readme(curriculum_data):
-    lang = curriculum_data.get("language", "en")
-    course_type = curriculum_data.get("course_type", "general")
-    level = curriculum_data.get("level", "A1")
+    if not isinstance(curriculum_data, dict):
+        curriculum_data = {}
+
+    lang = str(curriculum_data.get("language") or "en")
+    course_type = str(curriculum_data.get("course_type") or "general")
+    level = str(curriculum_data.get("level") or "A1")
 
     lines = []
     lines.append(f"# {lang.upper()} {course_type.title()} Manual ({level.upper()})")
@@ -163,6 +231,10 @@ def process_curriculum_file(filepath):
     with open(path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    if not isinstance(data, dict):
+        print(f"Skipping {filepath}: Root is not a dict JSON object.")
+        return
+
     lang = data.get("language")
     course_type = data.get("course_type")
     level = data.get("level")
@@ -171,7 +243,7 @@ def process_curriculum_file(filepath):
         print(f"Skipping {filepath}: Missing language, course_type, or level metadata.")
         return
 
-    out_dir = Path("manuals") / lang / course_type / level.lower()
+    out_dir = Path("manuals") / str(lang) / str(course_type) / str(level).lower()
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Write Grammar Manual
