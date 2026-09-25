@@ -9,8 +9,15 @@ This document defines the content architecture, taxonomy, schema relationships, 
 `COSYmanuals` serves as the primary content authority for all language manuals, CEFR-aligned grammar topics, vocabulary guides, pronunciation bootcamps, and grammatical confusion datasets across the COSY ecosystem.
 
 The ecosystem separates concerns as follows:
-- **`COSYmanuals`**: Static HTML manuals, printable booklets, grammar standards, CCQ guidelines, and structured reference datasets (`data/grammar/`).
+- **`COSYmanuals`**: Single-source interactive textbooks, course manuals, printable booklets, grammar standards, CCQ guidelines, and structured reference datasets (`data/grammar/`).
 - **`COSYplatform`**: Interactive course engines, learner progress tracking, and runtime exercise delivery (linking back to `COSYmanuals` topics via canonical URLs).
+
+### Unified Manual & Interactive Textbook Architecture
+Previously, `COSYmanuals` maintained a distinction between "derived course manuals" (generated summaries under `manuals/<lang>/<course>/<level>/grammar.html`) and "interactive textbooks" (topic-by-topic CELTA lesson hubs under `manuals/<lang>/grammar/<level>/index.html`). To eliminate confusion and ensure students and teachers access a single unified course manual:
+
+1. **Single Source of Truth**: Student course hubs (`manuals/<lang>/<course>/<level>/index.html`) directly expose the interactive level textbook and topic lesson pages as the primary study manual.
+2. **Direct Topic Deep-Linking**: Generated unit lesson cards in manual views auto-resolve and deep-link directly to interactive CELTA topic lesson pages (`manuals/<lang>/grammar/<level>/topics/<topic-slug>.html`) matching curriculum codes or topics.
+3. **Identical Visual & Token Identity**: Course manuals, topic lesson pages, and print booklet hubs share the exact same canonical tokens (`shared/css/tokens.css`) and Academic Burgundy accent palette (`--cosy-manuals-accent: #6b202b`).
 
 ---
 

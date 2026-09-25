@@ -107,10 +107,10 @@ def generate_grammar_html(curriculum_data):
             teacher_notes = lesson.get("teacher_notes")
             notes_html = ""
             if isinstance(teacher_notes, str) and teacher_notes.strip():
-                notes_html = f"<div style='background:#f8fafc; border-left:3px solid #1c8f56; padding:10px 14px; margin-top:8px; font-family:monospace; font-size:0.9rem; border-radius:4px;'>{html.escape(teacher_notes.strip())}</div>"
+                notes_html = f"<div style='background: var(--cosy-color-cream, #fdfcf8); border-left:3px solid var(--cosy-manuals-accent, #6b202b); padding:10px 14px; margin-top:8px; font-family:monospace; font-size:0.9rem; border-radius:4px;'>{html.escape(teacher_notes.strip())}</div>"
 
             lesson_blocks.append(f"""
-            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
+            <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:16px; margin-bottom:14px; border-top:3px solid var(--cosy-manuals-accent, #6b202b);">
               <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
               {grammar_html}
               {notes_html}
@@ -119,7 +119,7 @@ def generate_grammar_html(curriculum_data):
 
         unit_blocks.append(f"""
         <section style="margin-bottom:32px;">
-          <h2 style="color:#1c8f56; border-bottom:2px solid #cbd5e1; padding-bottom:6px; font-size:1.5rem;">Unit {unit_num}: {unit_title}</h2>
+          <h2 style="color: var(--cosy-manuals-accent, #6b202b); border-bottom:2px solid #cbd5e1; padding-bottom:6px; font-size:1.5rem;">Unit {unit_num}: {unit_title}</h2>
           {"".join(lesson_blocks)}
         </section>
         """)
@@ -128,7 +128,7 @@ def generate_grammar_html(curriculum_data):
     textbook_link = f"../../grammar/{level}/index.html"
     textbook_btn = ""
     if os.path.exists(f"manuals/{lang}/grammar/{level}/index.html"):
-        textbook_btn = f'<a href="{textbook_link}" style="background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Textbook & Topic Lessons →</a>'
+        textbook_btn = f'<a href="{textbook_link}" style="background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Interactive Textbook & Topic Lessons →</a>'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -145,12 +145,12 @@ def generate_grammar_html(curriculum_data):
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
-    <a href="index.html" style="color:#1c8f56; text-decoration:none; font-weight:700;">&larr; Back to Student Course Hub</a>
+    <a href="index.html" style="color: var(--cosy-manuals-accent, #6b202b); text-decoration:none; font-weight:700;">&larr; Back to Student Course Hub</a>
     <a href="grammar.md" style="color:#64748b; text-decoration:none; font-size:0.88rem;">📄 Download Markdown Version</a>
   </div>
 
   <div class="page-head" style="margin-bottom:2rem;">
-    <span class="eyebrow" style="background:#1c8f56; color:#ffffff; font-size:0.85rem; padding:4px 10px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:8px;">
+    <span class="eyebrow" style="background: var(--cosy-manuals-accent-light, #f9edf0); color: var(--cosy-manuals-accent, #6b202b); border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22)); font-size:0.85rem; padding:4px 10px; border-radius:20px; font-weight:700; display:inline-block; margin-bottom:8px;">
       📖 COSYmanuals · Grammar Reference
     </span>
     <h1 style="font-size:2.2rem; color:#0f172a; margin:0.25rem 0 0.5rem; font-weight:700;">
@@ -164,8 +164,11 @@ def generate_grammar_html(curriculum_data):
 
   {"".join(unit_blocks)}
 
-  <footer style="text-align:center; color:#94a3b8; font-size:0.85rem; border-top:1px solid #e2e8f0; padding-top:16px; margin-top:32px;">
-    &copy; COSYmanuals. Derived Interactive Grammar Textbook.
+  <footer class="cosy-ecosystem-footer-note" role="contentinfo" aria-label="COSY Ecosystem Membership">
+    <div class="cosy-footer-note-inner">
+      <span class="cosy-footer-note-brand">🌐 Part of the COSY Family</span>
+      <span class="cosy-footer-note-desc">COSYmanuals · Direct Student Reference Manuals & Coursebooks</span>
+    </div>
   </footer>
 </main>
 
@@ -542,18 +545,18 @@ def generate_student_index(curriculum_data):
     if grammar_tb or vocab_tb or comm_tb or print_hub:
         extra_btns = []
         if grammar_tb:
-          extra_btns.append(f'<a href="{grammar_tb}" style="display:inline-block; background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📘 Open Full Grammar Textbook Hub →</a>')
+          extra_btns.append(f'<a href="{grammar_tb}" style="display:inline-block; background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📘 Open Interactive Grammar Textbook Hub →</a>')
         if vocab_tb:
-          extra_btns.append(f'<a href="{vocab_tb}" style="display:inline-block; background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Vocabulary Textbook Hub →</a>')
+          extra_btns.append(f'<a href="{vocab_tb}" style="display:inline-block; background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Interactive Vocabulary Textbook Hub →</a>')
         if comm_tb:
-          extra_btns.append(f'<a href="{comm_tb}" style="display:inline-block; background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">💬 Open Communication Hub →</a>')
+          extra_btns.append(f'<a href="{comm_tb}" style="display:inline-block; background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">💬 Open Communication Hub →</a>')
         if print_hub:
           extra_btns.append(f'<a href="{print_hub}" style="display:inline-block; background:#0f172a; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">🖨️ Printable A4 Booklet Edition →</a>')
 
         tb_links_html = f"""
-        <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:18px; margin-bottom:28px;">
-          <h3 style="margin-top:0; color:#1e293b; font-size:1.15rem;">📚 Full Interactive Level Textbooks & Lesson Pages:</h3>
-          <p style="font-size:0.9rem; color:#64748b; margin-bottom:12px;">Access the complete, topic-by-topic interactive textbooks for {lang_upper} {level_upper}:</p>
+        <div style="background: var(--cosy-color-cream, #fdfcf8); border:1px solid #cbd5e1; border-left:4px solid var(--cosy-manuals-accent, #6b202b); border-radius:10px; padding:18px; margin-bottom:28px;">
+          <h3 style="margin-top:0; color:#1e293b; font-size:1.15rem;">📚 Primary Interactive Course Manuals & Textbooks:</h3>
+          <p style="font-size:0.9rem; color:#64748b; margin-bottom:12px;">Access your unified, topic-by-topic interactive study manual for {lang_upper} {level_upper}:</p>
           <div style="display:flex; flex-wrap:wrap; gap:10px;">
             {"".join(extra_btns)}
           </div>
@@ -575,7 +578,7 @@ def generate_student_index(curriculum_data):
 
 <main class="container" style="max-width:800px; margin:2.5rem auto; padding:0 1.25rem;">
   <div class="page-head" style="margin-bottom:1.5rem;">
-    <span class="eyebrow" style="background:#e2e8f0; font-size:0.85rem; padding:4px 10px; border-radius:4px; font-weight:700; display:inline-block; margin-bottom:8px;">
+    <span class="eyebrow" style="background: var(--cosy-manuals-accent-light, #f9edf0); color: var(--cosy-manuals-accent, #6b202b); border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22)); font-size:0.85rem; padding:4px 10px; border-radius:20px; font-weight:700; display:inline-block; margin-bottom:8px;">
       🎓 Student Course Manuals · {lang_upper}
     </span>
     <h1 style="font-size:2.2rem; color:#1e293b; margin:0.25rem 0 0.5rem; font-weight:700;">
@@ -586,35 +589,38 @@ def generate_student_index(curriculum_data):
     </p>
   </div>
 
-  <div class="box outcome-banner" style="background:#f4fbf7; border-left:4px solid #1c8f56; padding:14px 18px; margin-bottom:24px; border-radius:6px;">
+  <div class="box outcome-banner" style="background: var(--cosy-color-cream, #fdfcf8); border: 1px solid var(--cosy-color-border, rgba(74, 107, 80, 0.12)); border-left: 4px solid var(--cosy-manuals-accent, #6b202b); padding: 14px 18px; margin-bottom: 24px; border-radius: var(--cosy-radius-sm, 8px);">
     <strong>🎯 Student Direct Access:</strong> Keep this link saved for your live lessons and homework. Your teacher will assign specific sections from these manuals.
   </div>
 
   {tb_links_html}
 
-  <h3 style="color:#0f172a; margin-bottom:12px; font-size:1.25rem;">📖 Derived Course Manuals ({level_upper}):</h3>
+  <h3 style="color:#0f172a; margin-bottom:12px; font-size:1.25rem;">📖 Syllabus & Topic Manual Reference Views ({level_upper}):</h3>
   <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-bottom:32px;">
-    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #1c8f56;">
+    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid var(--cosy-manuals-accent, #6b202b);">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">📖 Grammar</h3>
       <p style="font-size:0.9rem; color:#64748b; margin-bottom:14px;">Grammar rules, sentence formulas, and structural explanations.</p>
-      <a href="grammar.html" style="display:inline-block; background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Grammar Manual →</a>
+      <a href="grammar.html" style="display:inline-block; background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Grammar Syllabus →</a>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #2563eb;">
+    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid var(--cosy-manuals-accent, #6b202b);">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">🗂️ Vocabulary</h3>
       <p style="font-size:0.9rem; color:#64748b; margin-bottom:14px;">Thematic word lists, key phrases, and target expressions.</p>
-      <a href="vocabulary.html" style="display:inline-block; background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Vocabulary Manual →</a>
+      <a href="vocabulary.html" style="display:inline-block; background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Vocabulary Syllabus →</a>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid #4f46e5;">
+    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:18px; border-top:4px solid var(--cosy-manuals-accent, #6b202b);">
       <h3 style="margin-top:0; color:#1e293b; font-size:1.2rem;">💬 Communication</h3>
       <p style="font-size:0.9rem; color:#64748b; margin-bottom:14px;">Dialogues, speaking tasks, and interactive prompts.</p>
-      <a href="communication.html" style="display:inline-block; background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Communication Manual →</a>
+      <a href="communication.html" style="display:inline-block; background: var(--cosy-manuals-accent, #6b202b); color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">Open Communication Syllabus →</a>
     </div>
   </div>
 
-  <footer style="text-align:center; color:#94a3b8; font-size:0.85rem; border-top:1px solid #e2e8f0; padding-top:16px;">
-    &copy; COSYmanuals. Direct Student Course Resource.
+  <footer class="cosy-ecosystem-footer-note" role="contentinfo" aria-label="COSY Ecosystem Membership">
+    <div class="cosy-footer-note-inner">
+      <span class="cosy-footer-note-brand">🌐 Part of the COSY Family</span>
+      <span class="cosy-footer-note-desc">COSYmanuals · Direct Student Reference Manuals & Coursebooks</span>
+    </div>
   </footer>
 </main>
 
