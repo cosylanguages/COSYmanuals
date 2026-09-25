@@ -12,21 +12,21 @@
   align-items: center;
   gap: 0.4rem;
   background-color: #ffffff;
-  color: #1b4332;
-  border: 1px solid #74c69d;
+  color: var(--cosy-manuals-accent, #6b202b);
+  border: 1px solid var(--cosy-manuals-accent-soft, #8c3442);
   padding: 0.4rem 0.9rem;
-  border-radius: 6px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  border-radius: var(--cosy-radius-xs, 4px);
+  font-size: var(--cosy-font-size-sm, 0.88rem);
+  font-weight: var(--cosy-font-weight-bold, 700);
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   text-decoration: none;
 }
 
 .print-btn:hover {
-  background-color: #2d6a4f;
+  background-color: var(--cosy-manuals-accent, #6b202b);
   color: #ffffff;
-  border-color: #2d6a4f;
+  border-color: var(--cosy-manuals-accent, #6b202b);
 }
 
 @media print {
@@ -88,6 +88,7 @@
   footer,
   .site-footer,
   footer.main-footer,
+  .cosy-ecosystem-footer-note,
   .practice-links,
   .practice-cta-banner,
   .lesson-check,
