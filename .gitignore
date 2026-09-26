@@ -1,4 +1,5 @@
 node_modules/
+drafts/
 .cache/
 .env
 .env.local
