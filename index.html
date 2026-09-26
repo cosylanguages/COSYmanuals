@@ -3,52 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COSYmanuals - Private Manual & Marathon Repository</title>
+  <title>COSYmanuals - Public Manual Catalog & Learning Portal</title>
   <link rel="stylesheet" href="shared/styles/style.css">
   <link rel="stylesheet" href="shared/styles/print.css">
+  <!-- Supabase JS Client & Marked library for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    .catalog-filters {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+    .catalog-filters label {
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 0.9rem;
+    }
+    .catalog-filters select {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: 1px solid #cbd5e0;
+      background: #ffffff;
+      font-size: 0.95rem;
+      outline: none;
+    }
+    .manual-viewer-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+    .manual-viewer-content {
+      background: #ffffff;
+      width: 100%;
+      max-width: 900px;
+      max-height: 90vh;
+      border-radius: 12px;
+      overflow-y: auto;
+      padding: 2rem;
+      position: relative;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .manual-viewer-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #edf2f7;
+      border: none;
+      font-size: 1.5rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4a5568;
+    }
+    .manual-viewer-close:hover {
+      background: #e2e8f0;
+      color: #1a202c;
+    }
+    .markdown-body {
+      line-height: 1.6;
+      color: #2d3748;
+      margin-top: 1rem;
+    }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+      color: #1a202c;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .markdown-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    .markdown-body th, .markdown-body td {
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem 1rem;
+      text-align: left;
+    }
+    .markdown-body th {
+      background: #f7fafc;
+    }
+  </style>
 </head>
 <body>
   <header class="manual-header">
     <div class="header-content">
       <div class="logo-badge">
         <span>📖 COSYmanuals</span>
-        <span class="private-tag">Private Resource</span>
+        <span class="private-tag">Public Catalog & Gated Portal</span>
       </div>
+      <div id="auth-status" style="font-size: 0.85rem; color: #edf2f7;"></div>
     </div>
   </header>
 
   <main class="container">
     <div class="notice-card">
-      <div class="notice-icon">🔒</div>
-      <h1 class="notice-title">COSYlanguages Learning Portal</h1>
+      <div class="notice-icon">📚</div>
+      <h1 class="notice-title">COSYmanuals Public Catalog</h1>
       <p class="notice-body">
-        Welcome to the private manual & marathon directory. All learning materials are single-sourced, standalone, and printer-friendly.
+        Browse our catalog of language manuals, grammar references, and communication frames.
+        Metadata is open to everyone. Full manual content requires authentication via COSYlanguages.
       </p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="https://cosylanguages.github.io/COSYlanguages/" target="_blank" class="btn">Contact COSYlanguages</a>
+        <a href="https://cosylanguages.github.io/COSYlanguages/" target="_blank" class="btn">COSYlanguages Home</a>
       </div>
     </div>
 
-    <!-- Pronunciation Bootcamps (7-Day Intensive) -->
+    <!-- Public Catalog Section -->
     <section class="section-card" style="margin-top: 2rem;">
-      <h2>🗣️ Pronunciation Bootcamps (7-Day Intensive)</h2>
-      <p class="section-subtitle">CELTA-staged 7-day decoding marathons and complete A0–C2 phonetics reference directories.</p>
+      <h2>📖 Public Manual Catalog</h2>
+      <p class="section-subtitle">Select a manual to view details or read full content (login required for full content).</p>
+
+      <div class="catalog-filters">
+        <div>
+          <label for="filter-language">Language:</label>
+          <select id="filter-language">
+            <option value="all">All Languages</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 French</option>
+            <option value="de">🇩🇪 German</option>
+            <option value="ru">🇷🇺 Russian</option>
+            <option value="el">🇬🇷 Greek</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="filter-level">CEFR Level:</label>
+          <select id="filter-level">
+            <option value="all">All Levels</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="C1">C1</option>
+            <option value="C2">C2</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="catalog-grid" class="marathon-grid">
+        <!-- Catalog cards injected dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Interactive Marathons Section -->
+    <section class="section-card">
+      <h2>🗣️ Interactive Bootcamps & Marathons</h2>
+      <p class="section-subtitle">CELTA-staged decoding marathons, speaking challenges, and grammar confusions.</p>
 
       <div class="marathon-grid">
-        <!-- French -->
         <article class="marathon-card">
           <div>
             <div class="marathon-card-header">
               <span class="badge-lang">🇫🇷 French</span>
               <span class="badge-cefr level-pill-a0a1">A0 – C2</span>
             </div>
-            <h3>Marathon de Prononciation</h3>
-            <p>Master French decoding rules, CaReFuL final consonants, nasal vowels, e caduc, and liaisons.</p>
+            <h3>French Pronunciation Bootcamp</h3>
+            <p>Decoding rules, CaReFuL final consonants, nasal vowels, e caduc, and liaisons.</p>
           </div>
           <a href="marathons/pronunciation-bootcamp/index.html" class="marathon-card-link">Launch French Bootcamp →</a>
         </article>
 
-        <!-- English -->
         <article class="marathon-card">
           <div>
             <div class="marathon-card-header">
@@ -56,12 +190,11 @@
               <span class="badge-cefr level-pill-a0a1">A0 – C2</span>
             </div>
             <h3>English Pronunciation Marathon</h3>
-            <p>Magic E, R-controlled vowels, soft C/G, silent letter clusters, Schwa /ə/, and 1-1-1 doubling rules.</p>
+            <p>Magic E, R-controlled vowels, silent letter clusters, Schwa /ə/, and doubling rules.</p>
           </div>
           <a href="marathons/pronunciation-bootcamp-en/index.html" class="marathon-card-link">Launch English Bootcamp →</a>
         </article>
 
-        <!-- Russian -->
         <article class="marathon-card">
           <div>
             <div class="marathon-card-header">
@@ -69,12 +202,11 @@
               <span class="badge-cefr level-pill-a0a1">A0 – C2</span>
             </div>
             <h3>Марафон Русской Фонетики</h3>
-            <p>Russian Cyrillic, vowel reduction (Akan'ye/Ikan'ye), soft/hard palatalization, and voicing assimilation.</p>
+            <p>Russian Cyrillic, vowel reduction, soft/hard palatalization, and voicing assimilation.</p>
           </div>
           <a href="marathons/pronunciation-bootcamp-ru/index.html" class="marathon-card-link">Launch Russian Bootcamp →</a>
         </article>
 
-        <!-- Greek -->
         <article class="marathon-card">
           <div>
             <div class="marathon-card-header">
@@ -82,168 +214,204 @@
               <span class="badge-cefr level-pill-a0a1">A0 – C2</span>
             </div>
             <h3>Μαραθώνιος Ελληνικής Προφοράς</h3>
-            <p>Modern Greek alphabet, stress rules, iotacism (/i/), αυ/ευ transformation, and digraphs (μπ, ντ, γκ).</p>
+            <p>Modern Greek alphabet, stress rules, iotacism (/i/), and digraphs.</p>
           </div>
           <a href="marathons/pronunciation-bootcamp-el/index.html" class="marathon-card-link">Launch Greek Bootcamp →</a>
         </article>
       </div>
     </section>
-
-    <!-- Grammar Confusions Marathons (A vs B) -->
-    <section class="section-card">
-      <h2>⚡ Grammar Confusions Marathons (A vs B)</h2>
-      <p class="section-subtitle">Structured reference to confusing grammar choices organized by CEFR level with instant logic and memory tricks.</p>
-
-      <div class="marathon-grid">
-        <!-- Master Hub -->
-        <article class="marathon-card" style="grid-column: 1 / -1; background: #f8fafc; border-color: #63b3ed;">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🌐 All Languages</span>
-              <span class="badge-cefr level-pill-b1b2">A0 – B2 Master Hub</span>
-            </div>
-            <h3>Grammar Intensive Master Directory</h3>
-            <p>Access structured 14-day plans and master JSON datasets for English, French, and Russian grammar choices.</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/index.html" class="marathon-card-link" style="background: #1a365d;">Explore Master Grammar Hub →</a>
-        </article>
-
-        <!-- English A0-A2 -->
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇬🇧 English</span>
-              <span class="badge-cefr level-pill-a0a1">A0 – A2</span>
-            </div>
-            <h3>English Grammar Confusions (A0–A2)</h3>
-            <p>A vs An, Present Simple vs Continuous, Past Simple vs Present Perfect, Will vs Going To.</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/a0-a2.html" class="marathon-card-link">Open English A0–A2 →</a>
-        </article>
-
-        <!-- English B1-B2 -->
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇬🇧 English</span>
-              <span class="badge-cefr level-pill-b1b2">B1 – B2</span>
-            </div>
-            <h3>English Grammar Confusions (B1–B2)</h3>
-            <p>Past Continuous, Used To vs Would, Conditionals 1–3, Defining vs Non-Defining relative clauses.</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/b1-b2.html" class="marathon-card-link">Open English B1–B2 →</a>
-        </article>
-
-        <!-- French A0-A2 -->
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇫🇷 French</span>
-              <span class="badge-cefr level-pill-a0a1">A0 – A2</span>
-            </div>
-            <h3>Confusions Grammaticales (A0–A2)</h3>
-            <p>Tu vs Vous, C'est vs Il est, Savoir vs Connaître, Passé composé vs Imparfait.</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/fr-a0-a2.html" class="marathon-card-link">Open French A0–A2 →</a>
-        </article>
-
-        <!-- French B1-B2 -->
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇫🇷 French</span>
-              <span class="badge-cefr level-pill-b1b2">B1 – B2</span>
-            </div>
-            <h3>Confusions Grammaticales (B1–B2)</h3>
-            <p>Indicatif vs Subjonctif, Depuis vs Pendant vs Pour, Pronoms relatifs (Qui, Que, Dont, Où).</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/fr-b1-b2.html" class="marathon-card-link">Open French B1–B2 →</a>
-        </article>
-
-        <!-- Russian A0-A2 -->
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇷🇺 Russian</span>
-              <span class="badge-cefr level-pill-a0a1">A0 – A2</span>
-            </div>
-            <h3>Трудные Места Грамматики (A0–A2)</h3>
-            <p>Это vs Есть, В/На + Предложный vs Винительный, Идти vs Ходить, Делал vs Сделать.</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/ru-a0-a2.html" class="marathon-card-link">Open Russian A0–A2 →</a>
-        </article>
-
-        <!-- Russian B1-B2 -->
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇷🇺 Russian</span>
-              <span class="badge-cefr level-pill-b1b2">B1 – B2</span>
-            </div>
-            <h3>Трудные Места Грамматики (B1–B2)</h3>
-            <p>Родительный vs Винительный при отрицании, За/Под + Творительный, Глаголы движения с приставками.</p>
-          </div>
-          <a href="marathons/grammar-intensive-14-days/ru-b1-b2.html" class="marathon-card-link">Open Russian B1–B2 →</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- 30-Day Speak & Think Marathons -->
-    <section class="section-card">
-      <h2>🧠 30-Day Speak & Think Marathons</h2>
-      <p class="section-subtitle">Cognitive speech retraining modules designed to eliminate internal translation and break intermediate plateaus.</p>
-
-      <div class="marathon-grid">
-        <article class="marathon-card" style="grid-column: 1 / -1;">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇬🇧 🇫🇷 🇷🇺 🇬🇷 4 Languages</span>
-              <span class="badge-cefr level-pill-a0a1">A0 – B2 (240 Lessons)</span>
-            </div>
-            <h3>Speak & Think Without Translating Master Portal</h3>
-            <p>Direct concept association, rapid circumlocution, and 30-day continuous speaking tasks for English, French, Russian, and Greek across both Foundation (A0–A2) and Plateau Breakthrough (B1–B2) levels.</p>
-          </div>
-          <a href="marathons/speaking-marathon-30-days/index.html" class="marathon-card-link">Launch Speak & Think Portal →</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Curriculums & Level Manuals -->
-    <section class="section-card">
-      <h2>📘 Curriculums & Level Manuals</h2>
-      <div class="marathon-grid">
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🇬🇧 English</span>
-              <span class="badge-cefr level-pill-b1b2">B1</span>
-            </div>
-            <h3>English Intermediate B1 Curriculum</h3>
-            <p>Canonical course syllabus and lesson modules for B1 English mastery.</p>
-          </div>
-          <a href="curriculums/en/general/B1.json" class="marathon-card-link">View B1 Curriculum →</a>
-        </article>
-
-        <article class="marathon-card">
-          <div>
-            <div class="marathon-card-header">
-              <span class="badge-lang">🧑‍🏫 Teacher Resource</span>
-              <span class="badge-cefr level-pill-c1c2">Pedagogy</span>
-            </div>
-            <h3>Teacher Guides & Assessment Tools</h3>
-            <p>Lesson plan templates, assessment tools, and game-based learning guides.</p>
-          </div>
-          <a href="teacher-guides/index.html" class="marathon-card-link">Open Teacher Guides →</a>
-        </article>
-      </div>
-    </section>
   </main>
+
+  <!-- Modal for viewing full manual content -->
+  <div id="manual-viewer-modal" class="manual-viewer-modal" role="dialog" aria-modal="true">
+    <div class="manual-viewer-content">
+      <button id="manual-viewer-close" class="manual-viewer-close" aria-label="Close modal">&times;</button>
+      <div id="manual-viewer-header">
+        <h2 id="manual-viewer-title" style="margin-top: 0;">Manual Title</h2>
+        <div id="manual-viewer-badges" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;"></div>
+      </div>
+      <div id="manual-viewer-body" class="markdown-body">
+        <p>Loading manual content...</p>
+      </div>
+    </div>
+  </div>
 
   <footer class="cosy-ecosystem-footer-note" role="contentinfo" aria-label="COSY Ecosystem Membership">
     <div class="cosy-footer-note-inner">
       <span class="cosy-footer-note-brand">🌐 Part of the COSY Family</span>
-      <span class="cosy-footer-note-desc">COSYmanuals · Private Reference Manuals & Coursebooks for Online & Offline Lessons</span>
+      <span class="cosy-footer-note-desc">COSYmanuals · Public Catalog & Gated Reference Manuals</span>
     </div>
   </footer>
+
+  <script>
+    // Configuration & Supabase Initialization
+    const SUPABASE_URL = window.ENV_SUPABASE_URL || "https://your-supabase-project.supabase.co";
+    const SUPABASE_ANON_KEY = window.ENV_SUPABASE_ANON_KEY || "your-anon-key";
+
+    let supabaseClient = null;
+    if (typeof supabase !== 'undefined' && SUPABASE_URL && !SUPABASE_URL.includes("your-supabase-project")) {
+      supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+
+    let catalogItems = [];
+
+    const LOGIN_BASE_URL = "https://cosylanguages.github.io/COSYlanguages/login.html";
+
+    // Load Catalog Manifest
+    async function loadCatalog() {
+      try {
+        const res = await fetch('catalog/manifest.json');
+        if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+        catalogItems = await res.json();
+        renderCatalog();
+      } catch (err) {
+        console.error('Failed to load catalog manifest:', err);
+        document.getElementById('catalog-grid').innerHTML = '<p>Unable to load public catalog. Please try again later.</p>';
+      }
+    }
+
+    // Render Catalog Grid based on filters
+    function renderCatalog() {
+      const langFilter = document.getElementById('filter-language').value;
+      const levelFilter = document.getElementById('filter-level').value;
+      const grid = document.getElementById('catalog-grid');
+
+      const filtered = catalogItems.filter(item => {
+        const matchLang = (langFilter === 'all') || (item.language === langFilter);
+        const matchLevel = (levelFilter === 'all') || (item.level === levelFilter);
+        return matchLang && matchLevel;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #718096;">No manuals found matching selected criteria.</p>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => `
+        <article class="marathon-card">
+          <div>
+            <div class="marathon-card-header">
+              <span class="badge-lang">${getLanguageLabel(item.language)}</span>
+              <span class="badge-cefr level-pill-a0a1">${item.level}</span>
+            </div>
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.short_description)}</p>
+          </div>
+          <button onclick="handleViewManual('${item.id}')" class="marathon-card-link" style="border:none; cursor:pointer; width:100%; text-align:center;">
+            Read Manual →
+          </button>
+        </article>
+      `).join('');
+    }
+
+    function getLanguageLabel(lang) {
+      const labels = {
+        en: '🇬🇧 English',
+        fr: '🇫🇷 French',
+        de: '🇩🇪 German',
+        ru: '🇷🇺 Russian',
+        el: '🇬🇷 Greek',
+        es: '🇪🇸 Spanish',
+        it: '🇮🇹 Italian',
+        pt: '🇵🇹 Portuguese'
+      };
+      return labels[lang] || lang.toUpperCase();
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/[&<>"']/g, function(m) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+      });
+    }
+
+    // Handle Manual Click
+    async function handleViewManual(manualId) {
+      const item = catalogItems.find(i => i.id === manualId);
+
+      // Check auth state
+      let user = null;
+      if (supabaseClient) {
+        const { data } = await supabaseClient.auth.getSession();
+        user = data.session?.user || null;
+      }
+
+      if (!user) {
+        // Unauthenticated -> redirect to login with return target
+        const redirectUrl = `${LOGIN_BASE_URL}?redirect=${encodeURIComponent(manualId)}`;
+        window.location.href = redirectUrl;
+        return;
+      }
+
+      // Authenticated -> open modal and fetch content
+      openManualModal(item || { id: manualId, title: manualId });
+      fetchAndRenderManualContent(manualId);
+    }
+
+    function openManualModal(item) {
+      const modal = document.getElementById('manual-viewer-modal');
+      document.getElementById('manual-viewer-title').innerText = item.title || item.id;
+      document.getElementById('manual-viewer-badges').innerHTML = `
+        <span class="badge-lang">${getLanguageLabel(item.language || '')}</span>
+        <span class="badge-cefr level-pill-a0a1">${item.level || ''}</span>
+      `;
+      document.getElementById('manual-viewer-body').innerHTML = '<p>Loading manual content from Supabase...</p>';
+      modal.style.display = 'flex';
+    }
+
+    function closeManualModal() {
+      document.getElementById('manual-viewer-modal').style.display = 'none';
+    }
+
+    async function fetchAndRenderManualContent(manualId) {
+      const bodyContainer = document.getElementById('manual-viewer-body');
+
+      if (!supabaseClient) {
+        bodyContainer.innerHTML = '<p style="color: #c53030;">Supabase client not initialized or offline.</p>';
+        return;
+      }
+
+      try {
+        const { data, error } = await supabaseClient
+          .from('manual_content')
+          .select('markdown_content')
+          .eq('manual_id', manualId)
+          .single();
+
+        if (error || !data) {
+          bodyContainer.innerHTML = `<p style="color: #c53030;">Error loading manual content: ${error?.message || 'Content not found'}</p>`;
+          return;
+        }
+
+        if (typeof marked !== 'undefined') {
+          bodyContainer.innerHTML = marked.parse(data.markdown_content);
+        } else {
+          bodyContainer.innerHTML = `<pre>${escapeHtml(data.markdown_content)}</pre>`;
+        }
+      } catch (err) {
+        bodyContainer.innerHTML = `<p style="color: #c53030;">Unexpected error: ${err.message}</p>`;
+      }
+    }
+
+    // Event Listeners
+    document.getElementById('filter-language').addEventListener('change', renderCatalog);
+    document.getElementById('filter-level').addEventListener('change', renderCatalog);
+    document.getElementById('manual-viewer-close').addEventListener('click', closeManualModal);
+
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('manual-viewer-modal');
+      if (e.target === modal) closeManualModal();
+    });
+
+    // Check query params on load (e.g. ?manual=en-b1-grammar)
+    window.addEventListener('DOMContentLoaded', () => {
+      loadCatalog();
+      const params = new URLSearchParams(window.location.search);
+      const manualParam = params.get('manual') || params.get('redirect');
+      if (manualParam) {
+        setTimeout(() => handleViewManual(manualParam), 500);
+      }
+    });
+  </script>
 </body>
 </html>

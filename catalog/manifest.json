@@ -1,0 +1,37 @@
+[
+  {
+    "id": "en-b1-grammar",
+    "title": "English Intermediate B1 Grammar Manual",
+    "language": "en",
+    "level": "B1",
+    "short_description": "Comprehensive guide covering past continuous, used to vs would, conditionals, and relative clauses."
+  },
+  {
+    "id": "fr-a2-vocabulary",
+    "title": "French Elementary A2 Vocabulary Guide",
+    "language": "fr",
+    "level": "A2",
+    "short_description": "Essential thematic vocabulary modules for daily life, travel, and routines in French."
+  },
+  {
+    "id": "ru-a1-communication",
+    "title": "Russian Beginner A1 Communication & Speech Frames",
+    "language": "ru",
+    "level": "A1",
+    "short_description": "Real-world conversational frames, introductions, basic requests, and survival Russian."
+  },
+  {
+    "id": "de-b2-grammar",
+    "title": "German Upper-Intermediate B2 Grammar Reference",
+    "language": "de",
+    "level": "B2",
+    "short_description": "Advanced sentence structure, Konjunktiv II, passive voice, and complex prepositions."
+  },
+  {
+    "id": "el-a2-communication",
+    "title": "Greek Elementary A2 Spoken Communication",
+    "language": "el",
+    "level": "A2",
+    "short_description": "Practical dialogue structures, ordering food, directions, and social interaction frames."
+  }
+]

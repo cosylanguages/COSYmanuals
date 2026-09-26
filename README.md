@@ -1,107 +1,62 @@
 # COSYmanuals
 
-**COSYmanuals** is a private, direct-link accessible repository containing detailed curriculums, marathons, manuals, teacher guides, and student workbooks for contracted students and teachers of COSYlanguages.
+**COSYmanuals** is a public catalog and gated learning portal holding grammar, vocabulary, and communication manuals for students and teachers of COSYlanguages.
 
 ---
 
-## 🔒 Access Model & Privacy Notes
+## 🔒 Security & Privacy Rules
 
-- **Link-Only Access:** Access is granted exclusively via direct links shared by COSYlanguages or contracted instructors.
-- **Free-Tier Access Control:** Managed via GitHub native repository collaborator permissions and an optional Cloudflare Worker gate checking `config/roster.example.json`.
-- **Zero Data Harvesting:** No personal data beyond GitHub account handles or opaque student IDs are stored.
-- **Detailed Documentation:** See [`docs/ACCESS_CONTROL.md`](./docs/ACCESS_CONTROL.md) for a full trade-off analysis between Option (a) Single Private Repo and Option (b) Per-Language Repositories.
+> **IMPORTANT:** This repository's git history must **NEVER** contain manual body text, only public catalog metadata and app code.
+
+- **Public Catalog (`catalog/`):** Contains public metadata JSON files (`title`, `language`, `level`, `short_description`).
+- **Gated Content Storage (Supabase):** Full manual body text is stored exclusively in Supabase under the `manual_content` table with Row Level Security (RLS) policies.
+- **Local Drafts (`drafts/`):** Local Markdown draft files are strictly gitignored (`drafts/` in `.gitignore`) and published directly to Supabase via `scripts/publish_to_supabase.js`.
+- **Authentication:** Unauthenticated users browsing the public catalog are redirected to `https://cosylanguages.github.io/COSYlanguages/login.html?redirect=<manual-id>`. Authenticated users fetch content live from Supabase.
+
+---
+
+## 🚀 Publishing Manual Content to Supabase
+
+1. Create or edit local Markdown drafts inside `drafts/` (e.g. `drafts/en-b1-grammar.md`).
+2. Ensure you have a local `.env` file containing:
+   ```env
+   SUPABASE_URL=https://your-supabase-project.supabase.co
+   SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+   ```
+3. Run the local publisher script:
+   ```bash
+   node scripts/publish_to_supabase.js
+   ```
+4. DB Schema can be updated using `scripts/schema.sql`.
 
 ---
 
 ## 📂 Directory Structure
 
 ```text
-/curriculums/
-  /english/
-    /beginner-a1/
-    /elementary-a2/
-    /intermediate-b1/
-    /upper-intermediate-b2/
-    /advanced-c1/
-    /professor-c2/
-  /french/
-  /italian/
-  /russian/
-  /greek/
-/marathons/
-  /speaking-marathon-30-days/
-  /pronunciation-bootcamp/
-    /levels/
-    /js/
-  /vocabulary-marathon-500-words/
-  /grammar-intensive-14-days/
-/teacher-guides/
-  /lesson-plans/
-  /game-based-learning/
-  /assessment-tools/
-/student-workbooks/
-  /data/
-  /worksheets/
-  /answer-keys/
-  /progress-trackers/
-/shared/
-  /templates/
-  /styles/
-/templates/
-  /curriculum/
-  /grammar/
-  /vocabulary/
-  /communication/
+/catalog/                  # Public metadata JSON per manual (no body text)
+  manifest.json
+  en-b1-grammar.json
+  fr-a2-vocabulary.json
+  ...
+/drafts/                   # GITIGNORED local Markdown draft manuals
+/scripts/
+  publish_to_supabase.js   # Local publisher script for pushing drafts to Supabase
+  schema.sql               # Supabase database schema & RLS policies
+/curriculums/              # Course curriculums & CEFR level structures
+/marathons/                # Interactive bootcamps and marathons
+/teacher-guides/           # Pedagogical guides and lesson plans
+/shared/                   # Shared CSS styles, tokens, and templates
 ```
 
 ---
 
-## 🗺️ Multi-Stage Migration Plan from COSYlanguages
+## 🔗 COSY Ecosystem Integration
 
-To systematically decouple and migrate all manuals, marathons, and curriculums from `COSYlanguages`, the migration is structured into logical stages:
-
-- **Stage 1 (Completed): Simple & Self-Contained Resources**
-  - French Pronunciation Marathon suite (`marathons/pronunciation-bootcamp/`) including levels A0–C2 and engine JS.
-  - Core curriculum, grammar, vocabulary, communication, and lesson plan templates (`templates/`, `teacher-guides/lesson-plans/`).
-  - Student workbook datasets (`student-workbooks/data/workbook_data.js`).
-- **Stage 2 (Completed): Core Language Curriculums**
-  - Migration of structured CEFR curriculum schemas and JSON datasets for all supported languages (`curriculum/` from COSYlanguages into `curriculums/`), covering 14 target languages (`en`, `fr`, `de`, `es`, `it`, `el`, `ru`, `pt`, `hy`, `ka`, `tt`, `ba`, `cv`, `br`) across general, spoken, exam, professional, travelling, and relocation course tracks.
-- **Stage 3 (Completed March 2025): Language Manuals, Grammar References & Vocabulary Datasets**
-  - Full migration of standalone language manuals (`manuals/`), monolingual grammar references (`grammar/`), and thematic vocabulary datasets (`vocabulary/`) across 14 ISO languages into standard directory structures with index pages, link remediation, and legacy PDFs.
+- 🎮 **[COSYgames](https://cosylanguages.github.io/COSYgames/):** Interactive games and quizzes.
+- 🛠️ **[COSYtools](https://cosylanguages.github.io/COSYtools/):** Dictionaries, conjugation tables, phonetic guides.
+- 🏠 **[COSYlanguages](https://cosylanguages.github.io/COSYlanguages/):** Main platform and authentication hub.
 
 ---
 
-## 🧭 How to Navigate Manuals
-
-1. **Curriculums:** Navigate to a specific language and level dataset (e.g., `/curriculums/en/general/B1.json`) to view course overview, prerequisites, unit breakdown, and lesson structures.
-2. **Units:** Each unit page (e.g., `unit-1.html`) provides unit objectives, key vocabulary, grammar points, speaking exercises, practice activities, homework assignments, and self-assessment checklists.
-3. **Marathons:** Access intensive challenge courses (e.g., `/marathons/speaking-marathon-30-days/index.html`) for daily schedules, streak trackers, leaderboards, and completion certificates.
-4. **Teacher Guides:** Access pedagogical strategies, lesson plan architecture, assessment rubrics, and online/offline best practices at `/teacher-guides/index.html`.
-
----
-
-## 🔗 COSY Ecosystem Integration & Practice Links
-
-All manuals integrate directly with other COSY ecosystem repositories. Every page includes practice resource links that open in new tabs (`target="_blank"`):
-
-- 🎮 **[COSYgames](https://cosylanguages.github.io/COSYgames/):** Vocabulary challenges, grammar quizzes, and interactive games.
-- 🛠️ **[COSYtools](https://cosylanguages.github.io/COSYtools/):** Dictionary lookups, verb conjugation tables, and phonetic guides.
-- 🏠 **[COSYlanguages](https://cosylanguages.github.io/COSYlanguages/):** Main hub and contact point.
-
----
-
-## 🧑‍🏫 Integration Guide for Teachers
-
-- **Flipped Classroom:** Assign unit reading and COSYtools vocabulary lookups prior to live sessions.
-- **In-Class Application:** Use speaking prompts and COSYgames multiplayer mode during live lessons.
-- **Progress Tracking:** Encourage students to complete self-assessment checklists at the end of each unit.
-
----
-
-## 📩 Requesting New Content
-
-Contracted teachers and curriculum designers can request new units, marathons, or language tracks by contacting the COSYlanguages administrator or submitting a content request issue in the private repository management queue.
-
----
-
-*© COSYlanguages. Private and confidential resource.*
+*© COSYlanguages. Public Catalog & Secure Manual Repository.*
