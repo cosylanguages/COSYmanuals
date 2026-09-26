@@ -1,5 +1,5 @@
+node_modules/
+.cache/
 .env
 .env.local
-drafts/
-node_modules/
-.DS_Store
+*.log
