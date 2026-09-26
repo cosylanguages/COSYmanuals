@@ -1,0 +1,40 @@
+name: Migrate Topic Pages to Supabase Storage
+
+on:
+  workflow_dispatch:
+    inputs:
+      execute:
+        description: 'Execute live upload and deletion (set true for live run, false for dry run)'
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure Git Identity
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run Storage Migration
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ "${{ inputs.execute }}" = "true" ]; then
+            node scripts/migrate_topics_to_storage.js --execute
+          else
+            node scripts/migrate_topics_to_storage.js --dry-run
+          fi
