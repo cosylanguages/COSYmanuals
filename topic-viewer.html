@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topic Viewer · COSYmanuals</title>
+  <link rel="stylesheet" href="shared/styles/tokens.css">
+  <link rel="stylesheet" href="shared/styles/base.css">
+  <link rel="stylesheet" href="shared/styles/components.css">
+  <link rel="stylesheet" href="shared/styles/layout.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="shared/js/auth-guard.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-bg, #0f172a);
+      color: var(--color-text, #f8fafc);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background-color: #1e293b;
+      border-bottom: 1px solid #334155;
+    }
+    .back-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .viewer-title {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .status-card {
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 32px;
+      background-color: #1e293b;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      text-align: center;
+    }
+    .status-card h2 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+    .status-card p {
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    .status-card.error {
+      border-color: #f87171;
+    }
+    .status-card.error h2 {
+      color: #f87171;
+    }
+    #topic-frame {
+      width: 100%;
+      height: calc(100vh - 55px);
+      min-height: 600px;
+      border: none;
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a id="back-button" class="back-link" href="manuals/index.html">← Back to Manual</a>
+    <div id="viewer-title" class="viewer-title">Loading topic...</div>
+  </div>
+
+  <div id="status-container">
+    <div class="status-card">
+      <h2>Authenticating...</h2>
+      <p>Verifying session and fetching topic content from Supabase Storage.</p>
+    </div>
+  </div>
+
+  <iframe id="topic-frame" style="display:none;" title="Topic Content"></iframe>
+
+  <script>
+    (async function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const rawPath = urlParams.get('path');
+      const referrerFrom = urlParams.get('from');
+
+      const backButton = document.getElementById('back-button');
+      const viewerTitle = document.getElementById('viewer-title');
+      const statusContainer = document.getElementById('status-container');
+      const topicFrame = document.getElementById('topic-frame');
+
+      if (referrerFrom) {
+        backButton.href = referrerFrom;
+      }
+
+      if (!rawPath) {
+        renderError('Invalid Path', 'No topic path specified in the URL query parameters.');
+        return;
+      }
+
+      viewerTitle.textContent = rawPath;
+
+      // 1. Authenticate user
+      const authResult = await window.AuthGuard.checkAuth({ redirectOnFail: true });
+      if (!authResult.authenticated) {
+        renderError('Access Restricted', 'Authentication required. Redirecting to login...');
+        return;
+      }
+
+      const supabaseClient = window.AuthGuard.getClient();
+
+      // 2. Resolve storage key via manifest lookup
+      let storageKey = rawPath;
+      try {
+        const manifestRes = await fetch('data/manual-topics-manifest.json');
+        if (manifestRes.ok) {
+          const manifestData = await manifestRes.json();
+          if (manifestData && Array.isArray(manifestData.topics)) {
+            // Match against originalRepoPath or raw path
+            const match = manifestData.topics.find(t =>
+              t.originalRepoPath === rawPath ||
+              t.originalRepoPath === `manuals/${rawPath}` ||
+              t.storageKey === rawPath
+            );
+            if (match && match.storageKey) {
+              storageKey = match.storageKey;
+            }
+          }
+        }
+      } catch (e) {
+        console.warn('Manifest lookup failed, using path as-is:', e.message);
+      }
+
+      // 3. Download topic file from Supabase Storage
+      try {
+        const { data, error } = await supabaseClient
+          .storage
+          .from('manual-topics')
+          .download(storageKey);
+
+        if (error || !data) {
+          renderError('Not Found / Restricted', error ? error.message : 'Unable to load specified topic from storage.');
+          return;
+        }
+
+        const htmlText = await data.text();
+
+        // Hide status container, render iframe using srcdoc
+        statusContainer.style.display = 'none';
+        topicFrame.style.display = 'block';
+        topicFrame.srcdoc = htmlText;
+
+      } catch (err) {
+        renderError('Error Loading Topic', err.message || 'An unexpected error occurred.');
+      }
+
+      function renderError(title, message) {
+        statusContainer.innerHTML = `
+          <div class="status-card error">
+            <h2>${escapeHtml(title)}</h2>
+            <p>${escapeHtml(message)}</p>
+          </div>
+        `;
+      }
+
+      function escapeHtml(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+    })();
+  </script>
+</body>
+</html>
