@@ -85,6 +85,19 @@ header.manual-header {
   border-color: var(--cosy-manuals-accent, #6b202b);
 }
 
+/* Hero Header Contrast Overrides */
+.hero h1, .hero .lead, .hero p {
+  color: inherit;
+}
+
+.hero h1 {
+  text-shadow: none;
+}
+
+.hero {
+  --teal-500: #8fd6c4;
+}
+
 /* Page Headings & Titles */
 .page-head {
   margin-bottom: var(--cosy-space-lg, 24px);
