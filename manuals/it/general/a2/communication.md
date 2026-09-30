@@ -6,4 +6,15 @@
 
 ### Lesson 1: Passato prossimo con essere e avere
 
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-A2-001`
+- **Goal (Can-Do):** Sa raccontare un evento passato semplice
+- **Pronunciation Focus:**
+  - **Consonanti doppie**: Pronuncia distinta e allungata delle consonanti doppie.
+    - *Examples:* `fatto` /ˈfat.to/ / /ˈfa.to/
+
 ### Lesson 2: L'imperfetto indicativo
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-A2-002`
+- **Goal (Can-Do):** Sa descrivere un'abitudine passata

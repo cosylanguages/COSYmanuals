@@ -9,9 +9,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced scienza, tecnologia e società vocabulary and registers.
+
 ### Lesson 2: Scienza, Tecnologia e Società - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Scienza, Tecnologia e Società - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 2: Potere e Istituzioni
 
@@ -20,9 +32,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced potere e istituzioni vocabulary and registers.
+
 ### Lesson 2: Potere e Istituzioni - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Potere e Istituzioni - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 3: Strutture Sociali
 
@@ -31,9 +55,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced strutture sociali vocabulary and registers.
+
 ### Lesson 2: Strutture Sociali - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Strutture Sociali - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 4: Conoscenza e Verità
 
@@ -42,9 +78,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced conoscenza e verità vocabulary and registers.
+
 ### Lesson 2: Conoscenza e Verità - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Conoscenza e Verità - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 5: Discorso e Argomentazione
 
@@ -53,6 +101,18 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced discorso e argomentazione vocabulary and registers.
+
 ### Lesson 2: Discorso e Argomentazione - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Discorso e Argomentazione - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.

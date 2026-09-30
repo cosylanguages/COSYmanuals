@@ -9,9 +9,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced επιστήμη, τεχνολογία και κοινωνία vocabulary and registers.
+
 ### Lesson 2: Επιστήμη, Τεχνολογία και Κοινωνία - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Επιστήμη, Τεχνολογία και Κοινωνία - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 2: Εξουσία και Θεσμοί
 
@@ -20,9 +32,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced εξουσία και θεσμοί vocabulary and registers.
+
 ### Lesson 2: Εξουσία και Θεσμοί - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Εξουσία και Θεσμοί - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 3: Κοινωνικές Δομές
 
@@ -31,9 +55,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced κοινωνικές δομές vocabulary and registers.
+
 ### Lesson 2: Κοινωνικές Δομές - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Κοινωνικές Δομές - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 4: Γνώση και Αλήθεια
 
@@ -42,9 +78,21 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced γνώση και αλήθεια vocabulary and registers.
+
 ### Lesson 2: Γνώση και Αλήθεια - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Γνώση και Αλήθεια - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 5: Λόγος και Επιχειρηματολογία
 
@@ -53,6 +101,18 @@
 **Target Vocabulary:**
 - `C1 terminology`
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on advanced λόγος και επιχειρηματολογία vocabulary and registers.
+
 ### Lesson 2: Λόγος και Επιχειρηματολογία - Advanced Grammar
 
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
+
 ### Lesson 3: Λόγος και Επιχειρηματολογία - Seminar & Debate
+
+**Teaching Notes & Rules:**
+- **Notes:**
+  - Critical discussion and presentation skills.

@@ -5,3 +5,7 @@
 ## Unit 1: Unità 1: Padronanza stilistica e registro letterario
 
 ### Lesson 1: Retorica e figure retoriche della lingua italiana
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-C2-001`
+- **Goal (Can-Do):** Sa cogliere e utilizzare le sottigliezze culturali e stilistiche al livello madrelingua

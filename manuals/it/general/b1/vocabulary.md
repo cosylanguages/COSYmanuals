@@ -12,3 +12,7 @@
 - `Dubbio`
 - `Speranza`
 - `Ipotesi`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-B1-001`
+- **Goal (Can-Do):** Sa esprimere un'opinione personale con sfumature di dubbio

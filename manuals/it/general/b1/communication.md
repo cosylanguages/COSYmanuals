@@ -5,3 +5,7 @@
 ## Unit 1: Unità 1: Esprimere opinioni e dubbi
 
 ### Lesson 1: Il congiuntivo presente — Opinione e desiderio
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-B1-001`
+- **Goal (Can-Do):** Sa esprimere un'opinione personale con sfumature di dubbio

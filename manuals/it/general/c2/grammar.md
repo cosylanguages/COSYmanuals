@@ -10,7 +10,5 @@
 - Inversione sintattica stilistica
 
 **Teaching Notes & Rules:**
-```text
-code: "IT-C2-001"
-cando: "Sa cogliere e utilizzare le sottigliezze culturali e stilistiche al livello madrelingua"
-```
+- **Lesson Code:** `IT-C2-001`
+- **Goal (Can-Do):** Sa cogliere e utilizzare le sottigliezze culturali e stilistiche al livello madrelingua
