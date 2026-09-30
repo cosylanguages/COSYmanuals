@@ -7,9 +7,8 @@
 ### Lesson 1: Επιστήμη, Τεχνολογία και Κοινωνία - Vocabulary I
 
 **Teaching Notes & Rules:**
-```text
-Focus on advanced επιστήμη, τεχνολογία και κοινωνία vocabulary and registers.
-```
+- **Notes:**
+  - Focus on advanced επιστήμη, τεχνολογία και κοινωνία vocabulary and registers.
 
 ### Lesson 2: Επιστήμη, Τεχνολογία και Κοινωνία - Advanced Grammar
 
@@ -17,25 +16,22 @@ Focus on advanced επιστήμη, τεχνολογία και κοινωνία
 - Complex structures
 
 **Teaching Notes & Rules:**
-```text
-Focus on stylistic inversion and advanced connectors.
-```
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
 
 ### Lesson 3: Επιστήμη, Τεχνολογία και Κοινωνία - Seminar & Debate
 
 **Teaching Notes & Rules:**
-```text
-Critical discussion and presentation skills.
-```
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 2: Εξουσία και Θεσμοί
 
 ### Lesson 1: Εξουσία και Θεσμοί - Vocabulary I
 
 **Teaching Notes & Rules:**
-```text
-Focus on advanced εξουσία και θεσμοί vocabulary and registers.
-```
+- **Notes:**
+  - Focus on advanced εξουσία και θεσμοί vocabulary and registers.
 
 ### Lesson 2: Εξουσία και Θεσμοί - Advanced Grammar
 
@@ -43,25 +39,22 @@ Focus on advanced εξουσία και θεσμοί vocabulary and registers.
 - Complex structures
 
 **Teaching Notes & Rules:**
-```text
-Focus on stylistic inversion and advanced connectors.
-```
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
 
 ### Lesson 3: Εξουσία και Θεσμοί - Seminar & Debate
 
 **Teaching Notes & Rules:**
-```text
-Critical discussion and presentation skills.
-```
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 3: Κοινωνικές Δομές
 
 ### Lesson 1: Κοινωνικές Δομές - Vocabulary I
 
 **Teaching Notes & Rules:**
-```text
-Focus on advanced κοινωνικές δομές vocabulary and registers.
-```
+- **Notes:**
+  - Focus on advanced κοινωνικές δομές vocabulary and registers.
 
 ### Lesson 2: Κοινωνικές Δομές - Advanced Grammar
 
@@ -69,25 +62,22 @@ Focus on advanced κοινωνικές δομές vocabulary and registers.
 - Complex structures
 
 **Teaching Notes & Rules:**
-```text
-Focus on stylistic inversion and advanced connectors.
-```
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
 
 ### Lesson 3: Κοινωνικές Δομές - Seminar & Debate
 
 **Teaching Notes & Rules:**
-```text
-Critical discussion and presentation skills.
-```
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 4: Γνώση και Αλήθεια
 
 ### Lesson 1: Γνώση και Αλήθεια - Vocabulary I
 
 **Teaching Notes & Rules:**
-```text
-Focus on advanced γνώση και αλήθεια vocabulary and registers.
-```
+- **Notes:**
+  - Focus on advanced γνώση και αλήθεια vocabulary and registers.
 
 ### Lesson 2: Γνώση και Αλήθεια - Advanced Grammar
 
@@ -95,25 +85,22 @@ Focus on advanced γνώση και αλήθεια vocabulary and registers.
 - Complex structures
 
 **Teaching Notes & Rules:**
-```text
-Focus on stylistic inversion and advanced connectors.
-```
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
 
 ### Lesson 3: Γνώση και Αλήθεια - Seminar & Debate
 
 **Teaching Notes & Rules:**
-```text
-Critical discussion and presentation skills.
-```
+- **Notes:**
+  - Critical discussion and presentation skills.
 
 ## Unit 5: Λόγος και Επιχειρηματολογία
 
 ### Lesson 1: Λόγος και Επιχειρηματολογία - Vocabulary I
 
 **Teaching Notes & Rules:**
-```text
-Focus on advanced λόγος και επιχειρηματολογία vocabulary and registers.
-```
+- **Notes:**
+  - Focus on advanced λόγος και επιχειρηματολογία vocabulary and registers.
 
 ### Lesson 2: Λόγος και Επιχειρηματολογία - Advanced Grammar
 
@@ -121,13 +108,11 @@ Focus on advanced λόγος και επιχειρηματολογία vocabular
 - Complex structures
 
 **Teaching Notes & Rules:**
-```text
-Focus on stylistic inversion and advanced connectors.
-```
+- **Notes:**
+  - Focus on stylistic inversion and advanced connectors.
 
 ### Lesson 3: Λόγος και Επιχειρηματολογία - Seminar & Debate
 
 **Teaching Notes & Rules:**
-```text
-Critical discussion and presentation skills.
-```
+- **Notes:**
+  - Critical discussion and presentation skills.

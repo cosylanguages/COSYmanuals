@@ -12,3 +12,7 @@
 - `Sostenere`
 - `Affermare`
 - `Incontestabile`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-B2-001`
+- **Goal (Can-Do):** Sa difendere una posizione complessa in un dibattito

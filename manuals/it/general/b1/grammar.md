@@ -11,7 +11,5 @@
 - Spero che + congiuntivo
 
 **Teaching Notes & Rules:**
-```text
-code: "IT-B1-001"
-cando: "Sa esprimere un'opinione personale con sfumature di dubbio"
-```
+- **Lesson Code:** `IT-B1-001`
+- **Goal (Can-Do):** Sa esprimere un'opinione personale con sfumature di dubbio

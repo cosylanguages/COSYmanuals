@@ -16,7 +16,195 @@ import json
 import html
 import os
 import sys
+import logging
 from pathlib import Path
+
+logging.basicConfig(level=logging.WARNING)
+
+def parse_teacher_notes(text):
+    if not isinstance(text, str) or not text.strip():
+        return {'code': None, 'cando': None, 'pronunciation': [], 'leftover': ''}
+
+    code = None
+    cando = None
+    pronunciation = []
+    leftover_lines = []
+
+    lines = text.strip().splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if not line:
+            i += 1
+            continue
+
+        if line.startswith('code:'):
+            val = line[len('code:'):].strip().strip('"\'')
+            code = val
+            i += 1
+            continue
+
+        if line.startswith('cando:'):
+            val = line[len('cando:'):].strip().strip('"\'')
+            cando = val
+            i += 1
+            continue
+
+        if line.startswith('pronunciation:'):
+            p_text = line[len('pronunciation:'):].strip()
+            j_str = p_text
+            j_parsed = None
+            j_end_idx = i
+            for j in range(i, len(lines)):
+                if j > i:
+                    j_str += '\n' + lines[j].strip()
+                try:
+                    candidate = j_str.strip()
+                    if (candidate.startswith('"') and candidate.endswith('"')) or (candidate.startswith("'") and candidate.endswith("'")):
+                        candidate = candidate[1:-1]
+                    j_parsed = json.loads(candidate)
+                    j_end_idx = j
+                    break
+                except Exception:
+                    pass
+
+            if j_parsed is not None:
+                if isinstance(j_parsed, list):
+                    pronunciation = j_parsed
+                elif isinstance(j_parsed, dict):
+                    pronunciation = [j_parsed]
+                i = j_end_idx + 1
+                continue
+            else:
+                logging.warning(f"Failed to parse pronunciation JSON in teacher_notes: {p_text}")
+                leftover_lines.append(line)
+                i += 1
+                continue
+
+        leftover_lines.append(line)
+        i += 1
+
+    leftover = '\n'.join(leftover_lines).strip()
+    return {
+        'code': code,
+        'cando': cando,
+        'pronunciation': pronunciation,
+        'leftover': leftover
+    }
+
+def render_teacher_notes_html(notes):
+    parts = []
+    if notes.get('cando'):
+        parts.append(f'<div class="lesson-cando">🎯 <strong>I can:</strong> {html.escape(notes["cando"])}</div>')
+
+    pron = notes.get('pronunciation') or []
+    if pron:
+        pron_items = []
+        for item in pron:
+            if not isinstance(item, dict): continue
+            item_html = []
+            point = item.get('point')
+            if point:
+                item_html.append(f'<div class="lesson-pronunciation-point">🗣️ {html.escape(str(point))}</div>')
+            explain = item.get('explain')
+            if explain:
+                item_html.append(f'<div class="lesson-pronunciation-explain">{html.escape(str(explain))}</div>')
+
+            examples = item.get('examples') or []
+            minimal_pairs = item.get('minimalPairs') or []
+            alphabet = item.get('alphabet') or []
+
+            ex_pills = []
+            for ex in examples:
+                if isinstance(ex, dict):
+                    word = ex.get('word') or ex.get('pattern') or ''
+                    ipa = ex.get('ipa') or ''
+                    ex_pills.append(f'<span class="lesson-pronunciation-example"><strong>{html.escape(str(word))}</strong> {html.escape(str(ipa))}</span>')
+            for mp in minimal_pairs:
+                if isinstance(mp, dict):
+                    w1, p1 = mp.get('w1', ''), mp.get('p1', '')
+                    w2, p2 = mp.get('w2', ''), mp.get('p2', '')
+                    ex_pills.append(f'<span class="lesson-pronunciation-example">{html.escape(str(w1))} {html.escape(str(p1))} ↔ {html.escape(str(w2))} {html.escape(str(p2))}</span>')
+            for ab in alphabet:
+                if isinstance(ab, dict):
+                    l, ipa = ab.get('l', ''), ab.get('ipa', '')
+                    ex_pills.append(f'<span class="lesson-pronunciation-example"><strong>{html.escape(str(l))}</strong> {html.escape(str(ipa))}</span>')
+
+            if ex_pills:
+                item_html.append(f'<div class="lesson-pronunciation-examples">{" ".join(ex_pills)}</div>')
+
+            tip = item.get('tip') or item.get('extension')
+            if tip:
+                item_html.append(f'<div class="lesson-pronunciation-explain"><em>💡 {html.escape(str(tip))}</em></div>')
+
+            pron_items.append(f'<div class="lesson-pronunciation-item">{"".join(item_html)}</div>')
+
+        parts.append(f'<div class="lesson-pronunciation">{"".join(pron_items)}</div>')
+
+    if notes.get('leftover'):
+        parts.append(f'<div class="lesson-notes-extra">{html.escape(notes["leftover"])}</div>')
+
+    return "\n".join(parts)
+
+def render_teacher_notes_md(notes):
+    lines = []
+    if notes.get('code'):
+        lines.append(f'- **Lesson Code:** `{notes["code"]}`')
+    if notes.get('cando'):
+        lines.append(f'- **Goal (Can-Do):** {notes["cando"]}')
+
+    pron = notes.get('pronunciation') or []
+    if pron:
+        lines.append('- **Pronunciation Focus:**')
+        for item in pron:
+            if not isinstance(item, dict): continue
+            point = item.get('point') or ''
+            explain = item.get('explain') or ''
+            if point and explain:
+                lines.append(f'  - **{point}**: {explain}')
+            elif point:
+                lines.append(f'  - **{point}**')
+            elif explain:
+                lines.append(f'  - {explain}')
+
+            examples = item.get('examples') or []
+            minimal_pairs = item.get('minimalPairs') or []
+            alphabet = item.get('alphabet') or []
+
+            ex_strs = []
+            for ex in examples:
+                if isinstance(ex, dict):
+                    word = ex.get('word') or ex.get('pattern') or ''
+                    ipa = ex.get('ipa') or ''
+                    if word and ipa:
+                        ex_strs.append(f'`{word}` {ipa}')
+                    elif word:
+                        ex_strs.append(f'`{word}`')
+            for mp in minimal_pairs:
+                if isinstance(mp, dict):
+                    w1, p1 = mp.get('w1', ''), mp.get('p1', '')
+                    w2, p2 = mp.get('w2', ''), mp.get('p2', '')
+                    ex_strs.append(f'`{w1}` {p1} ↔ `{w2}` {p2}')
+            for ab in alphabet:
+                if isinstance(ab, dict):
+                    l, ipa = ab.get('l', ''), ab.get('ipa', '')
+                    ex_strs.append(f'`{l}` {ipa}')
+
+            if ex_strs:
+                lines.append(f'    - *Examples:* {", ".join(ex_strs)}')
+
+            tip = item.get('tip') or item.get('extension')
+            if tip:
+                lines.append(f'    - *Note:* {tip}')
+
+    if notes.get('leftover'):
+        lines.append('- **Notes:**')
+        for lo_line in notes['leftover'].splitlines():
+            if lo_line.strip():
+                lines.append(f'  - {lo_line.strip()}')
+
+    return '\n'.join(lines)
+
 
 def generate_grammar_manual(curriculum_data):
     if not isinstance(curriculum_data, dict):
@@ -67,11 +255,12 @@ def generate_grammar_manual(curriculum_data):
 
             teacher_notes = lesson.get("teacher_notes")
             if isinstance(teacher_notes, str) and teacher_notes.strip():
-                lines.append("**Teaching Notes & Rules:**")
-                lines.append("```text")
-                lines.append(teacher_notes.strip())
-                lines.append("```")
-                lines.append("")
+                notes = parse_teacher_notes(teacher_notes)
+                rendered_notes = render_teacher_notes_md(notes)
+                if rendered_notes:
+                    lines.append("**Teaching Notes & Rules:**")
+                    lines.append(rendered_notes)
+                    lines.append("")
 
     return "\n".join(lines)
 
@@ -111,12 +300,16 @@ def generate_grammar_html(curriculum_data, out_dir=None):
 
             teacher_notes = lesson.get("teacher_notes")
             notes_html = ""
+            code_badge = ""
             if isinstance(teacher_notes, str) and teacher_notes.strip():
-                notes_html = f"<div style='background:#f8fafc; border-left:3px solid #1c8f56; padding:10px 14px; margin-top:8px; font-family:monospace; font-size:0.9rem; border-radius:4px;'>{html.escape(teacher_notes.strip())}</div>"
+                notes = parse_teacher_notes(teacher_notes)
+                if notes.get("code"):
+                    code_badge = f' <span class="lesson-code-badge">{html.escape(notes["code"])}</span>'
+                notes_html = render_teacher_notes_html(notes)
 
             lesson_blocks.append(f"""
             <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
-              <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
+              <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}{code_badge}</h4>
               {grammar_html}
               {notes_html}
             </div>
@@ -129,7 +322,6 @@ def generate_grammar_html(curriculum_data, out_dir=None):
         </section>
         """)
 
-    # Check if a dedicated grammar textbook hub exists
     textbook_link = f"../../grammar/{level}/index.html"
     textbook_btn = ""
     if os.path.exists(f"manuals/{lang}/grammar/{level}/index.html"):
@@ -226,6 +418,15 @@ def generate_vocabulary_manual(curriculum_data):
                         lines.append(f"- `{item}`")
                 lines.append("")
 
+            teacher_notes = lesson.get("teacher_notes")
+            if isinstance(teacher_notes, str) and teacher_notes.strip():
+                notes = parse_teacher_notes(teacher_notes)
+                rendered_notes = render_teacher_notes_md(notes)
+                if rendered_notes:
+                    lines.append("**Teaching Notes & Rules:**")
+                    lines.append(rendered_notes)
+                    lines.append("")
+
     return "\n".join(lines)
 
 
@@ -262,10 +463,20 @@ def generate_vocabulary_html(curriculum_data, out_dir=None):
                 if pills:
                     vocab_html = f"<div style='display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;'>{pills}</div>"
 
+            teacher_notes = lesson.get("teacher_notes")
+            notes_html = ""
+            code_badge = ""
+            if isinstance(teacher_notes, str) and teacher_notes.strip():
+                notes = parse_teacher_notes(teacher_notes)
+                if notes.get("code"):
+                    code_badge = f' <span class="lesson-code-badge">{html.escape(notes["code"])}</span>'
+                notes_html = render_teacher_notes_html(notes)
+
             lesson_blocks.append(f"""
             <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
-              <h4 style="margin:0 0 8px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
+              <h4 style="margin:0 0 8px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}{code_badge}</h4>
               {vocab_html}
+              {notes_html}
             </div>
             """)
 
@@ -389,6 +600,15 @@ def generate_communication_manual(curriculum_data):
                     lines.append("```")
                 lines.append("")
 
+            teacher_notes = lesson.get("teacher_notes")
+            if isinstance(teacher_notes, str) and teacher_notes.strip():
+                notes = parse_teacher_notes(teacher_notes)
+                rendered_notes = render_teacher_notes_md(notes)
+                if rendered_notes:
+                    lines.append("**Teaching Notes & Rules:**")
+                    lines.append(rendered_notes)
+                    lines.append("")
+
             valid_adaptations = {
                 group: adapt.strip()
                 for group, adapt in age_adaptation.items()
@@ -444,6 +664,15 @@ def generate_communication_html(curriculum_data, out_dir=None):
                     parts.append(f"<div style='background:#f8fafc; border-left:3px solid #4f46e5; padding:10px 14px; font-family:monospace; font-size:0.9rem; border-radius:4px;'>{html.escape(dialogue.strip())}</div>")
                 comm_html = f"<div style='margin-bottom:10px;'>{''.join(parts)}</div>"
 
+            teacher_notes = lesson.get("teacher_notes")
+            notes_html = ""
+            code_badge = ""
+            if isinstance(teacher_notes, str) and teacher_notes.strip():
+                notes = parse_teacher_notes(teacher_notes)
+                if notes.get("code"):
+                    code_badge = f' <span class="lesson-code-badge">{html.escape(notes["code"])}</span>'
+                notes_html = render_teacher_notes_html(notes)
+
             adapt_html = ""
             valid_adaptations = {g: a.strip() for g, a in age_adaptation.items() if isinstance(a, str) and a.strip()}
             if valid_adaptations:
@@ -452,8 +681,9 @@ def generate_communication_html(curriculum_data, out_dir=None):
 
             lesson_blocks.append(f"""
             <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin-bottom:14px;">
-              <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}</h4>
+              <h4 style="margin:0 0 10px; color:#0f172a; font-size:1.1rem;">Lesson {les_num}: {les_title}{code_badge}</h4>
               {comm_html}
+              {notes_html}
               {adapt_html}
             </div>
             """)

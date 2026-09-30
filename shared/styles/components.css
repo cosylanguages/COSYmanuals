@@ -411,6 +411,84 @@ footer.main-footer, footer.site {
   margin-top: auto;
 }
 
+/* Lesson Teacher Notes Components */
+.lesson-code-badge {
+  background: var(--cosy-manuals-accent-light, #f9edf0);
+  color: var(--cosy-manuals-accent, #6b202b);
+  border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22));
+  font-size: var(--cosy-font-size-xs, 0.75rem);
+  font-weight: var(--cosy-font-weight-extrabold, 800);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--cosy-radius-full, 100px);
+  margin-left: var(--cosy-space-sm, 8px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lesson-cando {
+  background: var(--cosy-semantic-success-light, #e5f4ec);
+  border-left: 3px solid var(--cosy-semantic-success, #416b49);
+  color: var(--cosy-color-ink, #2a2a2a);
+  padding: var(--cosy-space-sm, 8px) var(--cosy-space-md, 12px);
+  margin-top: var(--cosy-space-sm, 8px);
+  border-radius: var(--cosy-radius-xs, 4px);
+  font-size: var(--cosy-font-size-sm, 0.875rem);
+}
+
+.lesson-pronunciation {
+  background: var(--cosy-color-surface, #ffffff);
+  border: 1px solid var(--cosy-color-border, rgba(74, 107, 80, 0.12));
+  border-radius: var(--cosy-radius-sm, 8px);
+  padding: var(--cosy-space-md, 12px);
+  margin-top: var(--cosy-space-sm, 8px);
+}
+
+.lesson-pronunciation-item {
+  margin-bottom: var(--cosy-space-sm, 8px);
+}
+
+.lesson-pronunciation-item:last-child {
+  margin-bottom: 0;
+}
+
+.lesson-pronunciation-point {
+  font-weight: var(--cosy-font-weight-bold, 700);
+  color: var(--cosy-color-ink, #2a2a2a);
+  font-size: var(--cosy-font-size-sm, 0.875rem);
+}
+
+.lesson-pronunciation-explain {
+  color: var(--cosy-color-ink-soft, #4a4a4a);
+  font-size: var(--cosy-font-size-sm, 0.875rem);
+  margin: 2px 0 6px;
+}
+
+.lesson-pronunciation-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cosy-space-xs, 6px);
+  margin-top: var(--cosy-space-xs, 4px);
+}
+
+.lesson-pronunciation-example {
+  background: var(--cosy-color-cream-dark, #f5ede0);
+  color: var(--cosy-color-ink, #2a2a2a);
+  padding: 2px 8px;
+  border-radius: var(--cosy-radius-xs, 4px);
+  font-size: var(--cosy-font-size-xs, 0.75rem);
+  font-family: var(--cosy-font-mono, monospace);
+}
+
+.lesson-notes-extra {
+  background: var(--cosy-color-cream, #fdfcf8);
+  border-left: 3px solid var(--cosy-color-border, rgba(74, 107, 80, 0.25));
+  padding: var(--cosy-space-sm, 8px) var(--cosy-space-md, 12px);
+  margin-top: var(--cosy-space-sm, 8px);
+  font-size: var(--cosy-font-size-sm, 0.875rem);
+  color: var(--cosy-color-ink-soft, #4a4a4a);
+  border-radius: var(--cosy-radius-xs, 4px);
+}
+
 /* Lighter-Touch Ecosystem Footer Note ("Part of the COSY Family") */
 .cosy-ecosystem-footer-note {
   background: var(--cosy-color-sage-deep, #233827);

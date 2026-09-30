@@ -11,7 +11,5 @@
 - Periodo ipotetico della possibilità
 
 **Teaching Notes & Rules:**
-```text
-code: "IT-B2-001"
-cando: "Sa difendere una posizione complessa in un dibattito"
-```
+- **Lesson Code:** `IT-B2-001`
+- **Goal (Can-Do):** Sa difendere una posizione complessa in un dibattito

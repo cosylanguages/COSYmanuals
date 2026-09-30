@@ -5,3 +5,7 @@
 ## Unit 1: Unità 1: Argomentazione e dibattito socio-culturale
 
 ### Lesson 1: Il congiuntivo passato e trapassato
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `IT-B2-001`
+- **Goal (Can-Do):** Sa difendere una posizione complessa in un dibattito
