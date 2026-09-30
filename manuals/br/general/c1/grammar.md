@@ -7,10 +7,8 @@
 ### Lesson 1: Klaskerezh ha Skiant - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-001"
-cando: "Gallout a ra priziout ha sinteziñ termenadurioù skiantel er c'hengor akademek uhel"
-```
+- **Lesson Code:** `BR-C1-001`
+- **Goal (Can-Do):** Gallout a ra priziout ha sinteziñ termenadurioù skiantel er c'hengor akademek uhel
 
 ### Lesson 2: Gramneg skiantel uhel ha Kemmañ-gerioù
 
@@ -19,10 +17,8 @@ cando: "Gallout a ra priziout ha sinteziñ termenadurioù skiantel er c'hengor a
 - Imoberioù an anv-verb hag ar verb-anv e frazennoù mellek (Kemmoù kemmadurioù uhel)
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-002"
-cando: "Gallout a ra implijout frammoù pasivel uhel ha kemmadurioù e testennoù akademek"
-```
+- **Lesson Code:** `BR-C1-002`
+- **Goal (Can-Do):** Gallout a ra implijout frammoù pasivel uhel ha kemmadurioù e testennoù akademek
 
 ### Lesson 3: Etikouriezh ha Teknologiezh - Staj/Seminar
 
@@ -31,20 +27,16 @@ cando: "Gallout a ra implijout frammoù pasivel uhel ha kemmadurioù e testenno�
 - Dizemglev diplomatel ha reizhañ ar gomz er breud akademek
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-003"
-cando: "Gallout a ra kemer perzh ha ren breudoù war an etik skiantel e brezhoneg uhel"
-```
+- **Lesson Code:** `BR-C1-003`
+- **Goal (Can-Do):** Gallout a ra kemer perzh ha ren breudoù war an etik skiantel e brezhoneg uhel
 
 ## Unit 2: Galloud, Strolladurioù ha Melestradurezh
 
 ### Lesson 1: Strolladurioù ha Melestradurezh - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-004"
-cando: "Gallout a ra implijout geriaoueg melestradurel ha politikel uhel e teulioù ofisiel"
-```
+- **Lesson Code:** `BR-C1-004`
+- **Goal (Can-Do):** Gallout a ra implijout geriaoueg melestradurel ha politikel uhel e teulioù ofisiel
 
 ### Lesson 2: Gwiraouriezh ha Politikerezh - Gramadeg Uhel
 
@@ -53,10 +45,8 @@ cando: "Gallout a ra implijout geriaoueg melestradurel ha politikel uhel e teuli
 - Rummad al lezenn e stil strizh ar pennadurezhioù
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-005"
-cando: "Gallout a ra skrivañ testennoù gwiraourel ha melestradurel e brezhoneg stil ofisiel"
-```
+- **Lesson Code:** `BR-C1-005`
+- **Goal (Can-Do):** Gallout a ra skrivañ testennoù gwiraourel ha melestradurel e brezhoneg stil ofisiel
 
 ### Lesson 3:  Adheñvelidigezh Melestradurel - Breud
 
@@ -65,20 +55,16 @@ cando: "Gallout a ra skrivañ testennoù gwiraourel ha melestradurel e brezhoneg
 - Ritorik ar gambr politikel ha goulennoù retorikel
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-006"
-cando: "Gallout a ra ren breudoù uhel war aozañ ar reizhiad demokratel ha bonreizhel"
-```
+- **Lesson Code:** `BR-C1-006`
+- **Goal (Can-Do):** Gallout a ra ren breudoù uhel war aozañ ar reizhiad demokratel ha bonreizhel
 
 ## Unit 3: Kevredigezh ha Kemmoù Demografel
 
 ### Lesson 1: Kevredadurezh ha Demografiezh - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-007"
-cando: "Gallout a ra dielfennañ kemmoù ar gevredigezh hag ar stadoù demografel e brezhoneg uhel"
-```
+- **Lesson Code:** `BR-C1-007`
+- **Goal (Can-Do):** Gallout a ra dielfennañ kemmoù ar gevredigezh hag ar stadoù demografel e brezhoneg uhel
 
 ### Lesson 2: Kevredadurezh - Gramadeg Uhel
 
@@ -87,10 +73,8 @@ cando: "Gallout a ra dielfennañ kemmoù ar gevredigezh hag ar stadoù demografe
 - Araogennoù kevrennek hag isordenerezh pounner (A-gaoz ma..., Diwar-bouez ma...)
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-008"
-cando: "Gallout a ra sevel eseoù kevredadel kentreizhet mat gante araogennoù kevrennek uhel"
-```
+- **Lesson Code:** `BR-C1-008`
+- **Goal (Can-Do):** Gallout a ra sevel eseoù kevredadel kentreizhet mat gante araogennoù kevrennek uhel
 
 ### Lesson 3: Politikerezh Kevredel ha Kêraouerezh - Seminar
 
@@ -99,20 +83,16 @@ cando: "Gallout a ra sevel eseoù kevredadel kentreizhet mat gante araogennoù k
 - Geriaoueg amprestet hag ehanadennoù e-pad ur gaozeadeg pounner
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-009"
-cando: "Gallout a ra prezegenniñ ha difenn e ali war politikerezh ar c'hêrioù ha reizhded ar gevredigezh"
-```
+- **Lesson Code:** `BR-C1-009`
+- **Goal (Can-Do):** Gallout a ra prezegenniñ ha difenn e ali war politikerezh ar c'hêrioù ha reizhded ar gevredigezh
 
 ## Unit 4: Gouziegezh, Epistemologiezh ha Gwirionez
 
 ### Lesson 1: Epistemologiezh ha Kognition - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-010"
-cando: "Gallout a ra kemmañ ha burutellañ meizadoù mezoniel uhel war ar wirionez hag ar oueziegezh"
-```
+- **Lesson Code:** `BR-C1-010`
+- **Goal (Can-Do):** Gallout a ra kemmañ ha burutellañ meizadoù mezoniel uhel war ar wirionez hag ar oueziegezh
 
 ### Lesson 2: Epistemologiezh - Gramadeg Uhel
 
@@ -121,10 +101,8 @@ cando: "Gallout a ra kemmañ ha burutellañ meizadoù mezoniel uhel war ar wirio
 - Kromelloù, pikoù-vir ha krommelloù skrid evit embann al liamm etre mennozhioù an aozer
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-011"
-cando: "Gallout a ra merkañ derez ar wirionez e skridoù prederouriezh gant pikoù-vir ha morfologiezh dereat"
-```
+- **Lesson Code:** `BR-C1-011`
+- **Goal (Can-Do):** Gallout a ra merkañ derez ar wirionez e skridoù prederouriezh gant pikoù-vir ha morfologiezh dereat
 
 ### Lesson 3: Mediaoù, Goude-Gwirionez ha Breud Kritikel - Seminar
 
@@ -133,20 +111,16 @@ cando: "Gallout a ra merkañ derez ar wirionez e skridoù prederouriezh gant pik
 - Diskouez gaouiezh retorikel ha burutellañ falzoù
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-012"
-cando: "Gallout a ra stourm en un doare kritikel a-enep an izweur hag al lojikoù faos"
-```
+- **Lesson Code:** `BR-C1-012`
+- **Goal (Can-Do):** Gallout a ra stourm en un doare kritikel a-enep an izweur hag al lojikoù faos
 
 ## Unit 5: Retorik, Komzoù ha Breuderezh
 
 ### Lesson 1: Retorik ha Kendrec'hiñ - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-013"
-cando: "Gallout a ra implijout binvioù retorikel hag ur geriaoueg kendrec'hus e brezhoneg flour"
-```
+- **Lesson Code:** `BR-C1-013`
+- **Goal (Can-Do):** Gallout a ra implijout binvioù retorikel hag ur geriaoueg kendrec'hus e brezhoneg flour
 
 ### Lesson 2: Retorik ha Kendrec'hiñ - Gramadeg Uhel
 
@@ -155,10 +129,8 @@ cando: "Gallout a ra implijout binvioù retorikel hag ur geriaoueg kendrec'hus e
 - Stagelloù retorikel ha liammoù skrid uhel (N'eus forzh penaos, Daoust da se, Mar kavan mat)
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-014"
-cando: "Gallout a ra sevel testennoù retorikel uhel karget gant stagelloù amzeriet flour"
-```
+- **Lesson Code:** `BR-C1-014`
+- **Goal (Can-Do):** Gallout a ra sevel testennoù retorikel uhel karget gant stagelloù amzeriet flour
 
 ### Lesson 3: Prezegenn Veur ha Taol-Rond - Seminar
 
@@ -167,20 +139,16 @@ cando: "Gallout a ra sevel testennoù retorikel uhel karget gant stagelloù amze
 - Ritm ha ton ar vouezh e diskouezadegoù meur
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-015"
-cando: "Gallout a ra distagañ prezegennoù meur ha sturiañ taolioù-rond micherel e brezhoneg uhel"
-```
+- **Lesson Code:** `BR-C1-015`
+- **Goal (Can-Do):** Gallout a ra distagañ prezegennoù meur ha sturiañ taolioù-rond micherel e brezhoneg uhel
 
 ## Unit 6: Ekonomiezh, Marc'hadoù Bedel ha Geopolitik
 
 ### Lesson 1: Makroekonomiezh ha Marc'hadoù - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-016"
-cando: "Gallout a ra priziout politikerioù makroekonomikel ha darvoudoù ar marc'hadoù bedel"
-```
+- **Lesson Code:** `BR-C1-016`
+- **Goal (Can-Do):** Gallout a ra priziout politikerioù makroekonomikel ha darvoudoù ar marc'hadoù bedel
 
 ### Lesson 2: Ekonomiezh ha Geopolitik - Gramadeg Uhel
 
@@ -189,10 +157,8 @@ cando: "Gallout a ra priziout politikerioù makroekonomikel ha darvoudoù ar mar
 - Anv-verb nominalaet er raklunioù bernioù-sifroù
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-017"
-cando: "Gallout a ra sevel dielfennadurioù ekonomikel ma 'vez implijet an anv-verb nominalaet ha frazennoù ijinet"
-```
+- **Lesson Code:** `BR-C1-017`
+- **Goal (Can-Do):** Gallout a ra sevel dielfennadurioù ekonomikel ma 'vez implijet an anv-verb nominalaet ha frazennoù ijinet
 
 ### Lesson 3:  Darempredoù Etrebroadel ha Kenwerzh - Breud
 
@@ -201,20 +167,16 @@ cando: "Gallout a ra sevel dielfennadurioù ekonomikel ma 'vez implijet an anv-v
 - Stratejiezhioù diplomatel evit ober konsesionoù e-pad ur breud micherel
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-018"
-cando: "Gallout a ra breudat war ar geopolitik, an emglevioù etrebroadel hag an harzoù-kenwerzh"
-```
+- **Lesson Code:** `BR-C1-018`
+- **Goal (Can-Do):** Gallout a ra breudat war ar geopolitik, an emglevioù etrebroadel hag an harzoù-kenwerzh
 
 ## Unit 7: Estetik, Burutellañ Sevenadurel ha C1 Master
 
 ### Lesson 1: Estetik ha Burutellerezh Arzh - Geriaoueg I
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-019"
-cando: "Gallout a ra sevel pennadoù burutellañ an arz hag al lennegezh e brezhoneg stil uhel"
-```
+- **Lesson Code:** `BR-C1-019`
+- **Goal (Can-Do):** Gallout a ra sevel pennadoù burutellañ an arz hag al lennegezh e brezhoneg stil uhel
 
 ### Lesson 2: Estetik - Gramadeg Uhel
 
@@ -223,10 +185,8 @@ cando: "Gallout a ra sevel pennadoù burutellañ an arz hag al lennegezh e brezh
 - Implij resis ar gerioù-liammañ hag an noansoù adanvennek
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-020"
-cando: "Gallout a ra skrivañ eseoù sevenadurel kaer ma 'vez mesket stil nominalaat ha frazennoù ritmet"
-```
+- **Lesson Code:** `BR-C1-020`
+- **Goal (Can-Do):** Gallout a ra skrivañ eseoù sevenadurel kaer ma 'vez mesket stil nominalaat ha frazennoù ritmet
 
 ### Lesson 3: Arnodennoù Mestr C1 ha Santezenn Hollek
 
@@ -234,7 +194,5 @@ cando: "Gallout a ra skrivañ eseoù sevenadurel kaer ma 'vez mesket stil nomina
 - Kevrennadur kentañ holl reolennoù gramadeg C1: pasiv uhel, kemmadurioù kempennet, anv-verb aozet, frammoù ijinet hag adstummañ retorikel
 
 **Teaching Notes & Rules:**
-```text
-code: "BR-C1-021"
-cando: "Gallout a ra prouiñ un doare da gomz ha da skrivañ e brezhoneg uhel (C1) war kement tachenn akademek, vicherel ha sevenadurel a zo"
-```
+- **Lesson Code:** `BR-C1-021`
+- **Goal (Can-Do):** Gallout a ra prouiñ un doare da gomz ha da skrivañ e brezhoneg uhel (C1) war kement tachenn akademek, vicherel ha sevenadurel a zo

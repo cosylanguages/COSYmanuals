@@ -7,10 +7,8 @@
 ### Lesson 1: Ciência e Investigação - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-001"
-cando: "Pode avaliar e sintetizar terminologia científica complexa em registos académicos formais"
-```
+- **Lesson Code:** `PT-C1-001`
+- **Goal (Can-Do):** Pode avaliar e sintetizar terminologia científica complexa em registos académicos formais
 
 ### Lesson 2: Ciência e Investigação - Gramática Avançada
 
@@ -19,10 +17,8 @@ cando: "Pode avaliar e sintetizar terminologia científica complexa em registos 
 - Voz passiva sintética e passiva de estado para imparcialidade e empacotamento de informação
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-002"
-cando: "Pode formular hipóteses qualificadas usando a passiva sintética e mecanismos de atenuação académica"
-```
+- **Lesson Code:** `PT-C1-002`
+- **Goal (Can-Do):** Pode formular hipóteses qualificadas usando a passiva sintética e mecanismos de atenuação académica
 
 ### Lesson 3: Ética Tecnológica e Política Científica - Seminário
 
@@ -31,20 +27,16 @@ cando: "Pode formular hipóteses qualificadas usando a passiva sintética e meca
 - Conjuntivo/Subjuntivo em orações concessivas avançadas (Por mais que se argumente..., Ainda que a tecnologia...)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-003"
-cando: "Pode liderar e intervir fluentemente em seminários sobre ética tecnológica e políticas de investigação"
-```
+- **Lesson Code:** `PT-C1-003`
+- **Goal (Can-Do):** Pode liderar e intervir fluentemente em seminários sobre ética tecnológica e políticas de investigação
 
 ## Unit 2: Poder e Instituições
 
 ### Lesson 1: Governação Institucional - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-004"
-cando: "Pode utilizar com precisão léxico político e institucional especializado em contextos formais"
-```
+- **Lesson Code:** `PT-C1-004`
+- **Goal (Can-Do):** Pode utilizar com precisão léxico político e institucional especializado em contextos formais
 
 ### Lesson 2: Direito e Política - Gramática Avançada
 
@@ -53,10 +45,8 @@ cando: "Pode utilizar com precisão léxico político e institucional especializ
 - Conjuntivo/Subjuntivo em orações integrantes relativas a ordens e leis (É imperativo que a lei seja ratificada)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-005"
-cando: "Pode redigir declarações institucionais formais utilizando estruturas de impessoalidade e conjuntivo imperativo"
-```
+- **Lesson Code:** `PT-C1-005`
+- **Goal (Can-Do):** Pode redigir declarações institucionais formais utilizando estruturas de impessoalidade e conjuntivo imperativo
 
 ### Lesson 3: Reforma Institucional e Democracia - Debate
 
@@ -65,20 +55,16 @@ cando: "Pode redigir declarações institucionais formais utilizando estruturas 
 - Perguntas retóricas e cadência do discurso parlamentar
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-006"
-cando: "Pode debater governação institucional e reformas políticas aplicando recursos de ênfase retórica"
-```
+- **Lesson Code:** `PT-C1-006`
+- **Goal (Can-Do):** Pode debater governação institucional e reformas políticas aplicando recursos de ênfase retórica
 
 ## Unit 3: Estruturas Sociais e Mudança
 
 ### Lesson 1: Sociologia e Demografia - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-007"
-cando: "Pode analisar transformações sociais e dinâmicas demográficas com terminologia sociológica rigorosa"
-```
+- **Lesson Code:** `PT-C1-007`
+- **Goal (Can-Do):** Pode analisar transformações sociais e dinâmicas demográficas com terminologia sociológica rigorosa
 
 ### Lesson 2: Sociologia e Demografia - Gramática Avançada
 
@@ -87,10 +73,8 @@ cando: "Pode analisar transformações sociais e dinâmicas demográficas com te
 - Conectores discursivos de gradação e concessão (Não obstante, Posto que, À luz de)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-008"
-cando: "Pode compor análises sociológicas coesas recorrendo a orações reduzidas e conectores discursivos avançados"
-```
+- **Lesson Code:** `PT-C1-008`
+- **Goal (Can-Do):** Pode compor análises sociológicas coesas recorrendo a orações reduzidas e conectores discursivos avançados
 
 ### Lesson 3: Política Social e Renovação Urbana - Seminário
 
@@ -99,20 +83,16 @@ cando: "Pode compor análises sociológicas coesas recorrendo a orações reduzi
 - Mecanismos subtis de tomada de palavra e gestão da conversação
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-009"
-cando: "Pode articular e defender pontos de vista complexos sobre desenvolvimento urbano e justiça social"
-```
+- **Lesson Code:** `PT-C1-009`
+- **Goal (Can-Do):** Pode articular e defender pontos de vista complexos sobre desenvolvimento urbano e justiça social
 
 ## Unit 4: Conhecimento, Epistemologia e Verdade
 
 ### Lesson 1: Epistemologia e Cognição - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-010"
-cando: "Pode avaliar conceitos epistemológicos, validação do saber e enviesamentos cognitivos"
-```
+- **Lesson Code:** `PT-C1-010`
+- **Goal (Can-Do):** Pode avaliar conceitos epistemológicos, validação do saber e enviesamentos cognitivos
 
 ### Lesson 2: Epistemologia e Cognição - Gramática Avançada
 
@@ -121,10 +101,8 @@ cando: "Pode avaliar conceitos epistemológicos, validação do saber e enviesam
 - Uso de pontuação avançada (travessões e parênteses) para incisos de comentário do autor
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-011"
-cando: "Pode expressar graus precisos de certeza epistémica e incluir comentários parentéticos refinados"
-```
+- **Lesson Code:** `PT-C1-011`
+- **Goal (Can-Do):** Pode expressar graus precisos de certeza epistémica e incluir comentários parentéticos refinados
 
 ### Lesson 3: Comunicação de Massas e Pós-Verdade - Seminário
 
@@ -133,20 +111,16 @@ cando: "Pode expressar graus precisos de certeza epistémica e incluir comentár
 - Identificação e desconstrução de falácias retóricas em debate público
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-012"
-cando: "Pode contestar falácias lógicas e debater criticamente o fenómeno da pós-verdade na esfera pública"
-```
+- **Lesson Code:** `PT-C1-012`
+- **Goal (Can-Do):** Pode contestar falácias lógicas e debater criticamente o fenómeno da pós-verdade na esfera pública
 
 ## Unit 5: Retórica, Discurso e Argumentação
 
 ### Lesson 1: Retórica e Persuasão - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-013"
-cando: "Pode aplicar recursos retóricos e vocabulário persuasivo de elevado nível formal"
-```
+- **Lesson Code:** `PT-C1-013`
+- **Goal (Can-Do):** Pode aplicar recursos retóricos e vocabulário persuasivo de elevado nível formal
 
 ### Lesson 2: Retórica e Persuasão - Gramática Avançada
 
@@ -155,10 +129,8 @@ cando: "Pode aplicar recursos retóricos e vocabulário persuasivo de elevado n�
 - Conectores discursivos formais de síntese e oposição (Nesta conformidade, Conquanto, Em todo o caso)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-014"
-cando: "Pode compor períodos sintáticos complexos com articuladores discursivos formais"
-```
+- **Lesson Code:** `PT-C1-014`
+- **Goal (Can-Do):** Pode compor períodos sintáticos complexos com articuladores discursivos formais
 
 ### Lesson 3: Discurso de Abertura e Painel - Seminário
 
@@ -167,20 +139,16 @@ cando: "Pode compor períodos sintáticos complexos com articuladores discursivo
 - Projeção e cadência na oratória formal
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-015"
-cando: "Pode proferir discursos estruturados e moderar debates profissionais complexos com elegância"
-```
+- **Lesson Code:** `PT-C1-015`
+- **Goal (Can-Do):** Pode proferir discursos estruturados e moderar debates profissionais complexos com elegância
 
 ## Unit 6: Economia, Mercados Globais e Geopolítica
 
 ### Lesson 1: Macroeconomia e Mercados - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-016"
-cando: "Pode avaliar políticas macroeconómicas, riscos sistémicos e dinâmicas dos mercados internacionais"
-```
+- **Lesson Code:** `PT-C1-016`
+- **Goal (Can-Do):** Pode avaliar políticas macroeconómicas, riscos sistémicos e dinâmicas dos mercados internacionais
 
 ### Lesson 2: Economia e Geopolítica - Gramática Avançada
 
@@ -189,10 +157,8 @@ cando: "Pode avaliar políticas macroeconómicas, riscos sistémicos e dinâmica
 - Nominalização e princípio da ponderação final na análise financeira
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-017"
-cando: "Pode elaborar previsões económicas detalhadas recorrendo a estruturas condicionais reduzidas de infinitivo"
-```
+- **Lesson Code:** `PT-C1-017`
+- **Goal (Can-Do):** Pode elaborar previsões económicas detalhadas recorrendo a estruturas condicionais reduzidas de infinitivo
 
 ### Lesson 3: Relações Internacionais e Comércio - Debate
 
@@ -201,20 +167,16 @@ cando: "Pode elaborar previsões económicas detalhadas recorrendo a estruturas 
 - Estratégias diplomáticas de concessão e reformulação de posições negociáveis
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-018"
-cando: "Pode liderar debates sobre política comercial internacional, sanções e estabilidade geopolítica"
-```
+- **Lesson Code:** `PT-C1-018`
+- **Goal (Can-Do):** Pode liderar debates sobre política comercial internacional, sanções e estabilidade geopolítica
 
 ## Unit 7: Estética, Crítica Cultural e Consolidação C1
 
 ### Lesson 1: Estética e Crítica de Arte - Vocabulário I
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-019"
-cando: "Pode formular críticas de arte refinadas e ensaios culturais em registos de elevada formalidade"
-```
+- **Lesson Code:** `PT-C1-019`
+- **Goal (Can-Do):** Pode formular críticas de arte refinadas e ensaios culturais em registos de elevada formalidade
 
 ### Lesson 2: Estética e Crítica Cultural - Gramática Avançada
 
@@ -223,10 +185,8 @@ cando: "Pode formular críticas de arte refinadas e ensaios culturais em registo
 - Colocação de modificadores adverbiais e adjetivos antepostos de matiz estético
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-020"
-cando: "Pode compor ensaios e recensões críticas de elevada elegância estilística"
-```
+- **Lesson Code:** `PT-C1-020`
+- **Goal (Can-Do):** Pode compor ensaios e recensões críticas de elevada elegância estilística
 
 ### Lesson 3: Exame de Domínio C1 e Consolidação Geral
 
@@ -234,7 +194,5 @@ cando: "Pode compor ensaios e recensões críticas de elevada elegância estilí
 - Síntese integradora da gramática C1: passiva sintética, conjuntivo imperativo, orações reduzidas, frases clivadas e condicionais de infinitivo
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-C1-021"
-cando: "Pode demonstrar capacidade operacional efetiva completa (C1) em contextos académicos, profissionais, económicos e culturais"
-```
+- **Lesson Code:** `PT-C1-021`
+- **Goal (Can-Do):** Pode demonstrar capacidade operacional efetiva completa (C1) em contextos académicos, profissionais, económicos e culturais

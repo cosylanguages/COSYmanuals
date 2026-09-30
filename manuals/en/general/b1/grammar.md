@@ -12,11 +12,11 @@
 - State verbs vs action verbs in continuous tenses
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-001"
-pronunciation: [{"point":"Weak forms of auxiliary verbs","explain":"Mastering weak forms of have/has/been in natural connected continuous tenses.","examples":[{"pattern":"have been working","ipa":"/həv bɪn ˈwɜː.kɪŋ/","word":"been"}],"visual":"🎵"}]
-cando: "Can discuss personality nuances, character growth, and emotional state using present perfect continuous"
-```
+- **Lesson Code:** `EN-B1-001`
+- **Goal (Can-Do):** Can discuss personality nuances, character growth, and emotional state using present perfect continuous
+- **Pronunciation Focus:**
+  - **Weak forms of auxiliary verbs**: Mastering weak forms of have/has/been in natural connected continuous tenses.
+    - *Examples:* `been` /həv bɪn ˈwɜː.kɪŋ/
 
 ### Lesson 2: Modals of Deduction & Speculation (Present & Past)
 
@@ -25,10 +25,8 @@ cando: "Can discuss personality nuances, character growth, and emotional state u
 - Modals of past deduction (must have been, can't have been, might have been)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-002"
-cando: "Can speculate about present situations and past behavior with varying degrees of certainty"
-```
+- **Lesson Code:** `EN-B1-002`
+- **Goal (Can-Do):** Can speculate about present situations and past behavior with varying degrees of certainty
 
 ## Unit 2: Work, Career & Recruitment
 
@@ -40,10 +38,8 @@ cando: "Can speculate about present situations and past behavior with varying de
 - Future in the Past (was going to, was due to, was about to)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-003"
-cando: "Can narrate detailed career progression and past professional milestones using past perfect forms"
-```
+- **Lesson Code:** `EN-B1-003`
+- **Goal (Can-Do):** Can narrate detailed career progression and past professional milestones using past perfect forms
 
 ### Lesson 2: Causative Passive (Have / Get Something Done)
 
@@ -52,10 +48,8 @@ cando: "Can narrate detailed career progression and past professional milestones
 - Passive voice with modal verbs (must be completed, should be reviewed)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-004"
-cando: "Can describe delegated tasks, professional services, and quality control procedures"
-```
+- **Lesson Code:** `EN-B1-004`
+- **Goal (Can-Do):** Can describe delegated tasks, professional services, and quality control procedures
 
 ## Unit 3: Media, Digital Life & Cybersecurity
 
@@ -66,10 +60,8 @@ cando: "Can describe delegated tasks, professional services, and quality control
 - Connectors of cause and result (consequently, therefore, due to, as a result)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-005"
-cando: "Can analyze digital media trends, debate online privacy, and structure complex written arguments with connectors"
-```
+- **Lesson Code:** `EN-B1-005`
+- **Goal (Can-Do):** Can analyze digital media trends, debate online privacy, and structure complex written arguments with connectors
 
 ### Lesson 2: Embedded Indirect Questions & Politeness
 
@@ -78,10 +70,8 @@ cando: "Can analyze digital media trends, debate online privacy, and structure c
 - Polite register shifts in online customer service
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-006"
-cando: "Can make complex technical enquiries and report digital issues politely using embedded indirect questions"
-```
+- **Lesson Code:** `EN-B1-006`
+- **Goal (Can-Do):** Can make complex technical enquiries and report digital issues politely using embedded indirect questions
 
 ## Unit 4: Ecology, Sustainability & Climate Action
 
@@ -93,10 +83,8 @@ cando: "Can make complex technical enquiries and report digital issues politely 
 - Mixed conditional intro (If we had protected wetlands then, we would have less flooding now)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-007"
-cando: "Can evaluate environmental policies and hypothesize past and present climate outcomes using complex conditionals"
-```
+- **Lesson Code:** `EN-B1-007`
+- **Goal (Can-Do):** Can evaluate environmental policies and hypothesize past and present climate outcomes using complex conditionals
 
 ### Lesson 2: Expressing Wishes & Regrets (Wish / If Only)
 
@@ -106,10 +94,8 @@ cando: "Can evaluate environmental policies and hypothesize past and present cli
 - Wish + Would for complaints about annoying habits
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-008"
-cando: "Can express environmental concerns, personal regrets, and policy desires using wish and if only"
-```
+- **Lesson Code:** `EN-B1-008`
+- **Goal (Can-Do):** Can express environmental concerns, personal regrets, and policy desires using wish and if only
 
 ## Unit 5: Health, Medical Care & Wellbeing
 
@@ -120,10 +106,8 @@ cando: "Can express environmental concerns, personal regrets, and policy desires
 - Needn't / didn't need to / needn't have done for lack of obligation
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-009"
-cando: "Can discuss medical diagnoses, treatment options, and urgent health precautions"
-```
+- **Lesson Code:** `EN-B1-009`
+- **Goal (Can-Do):** Can discuss medical diagnoses, treatment options, and urgent health precautions
 
 ### Lesson 2: -ed / -ing Adjectives & Verbs of the Senses
 
@@ -132,10 +116,8 @@ cando: "Can discuss medical diagnoses, treatment options, and urgent health prec
 - Verbs of the senses + adjective / + as if + clause (look, sound, feel, taste, smell)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-010"
-cando: "Can describe physical sensations, emotional states, and stress recovery strategies"
-```
+- **Lesson Code:** `EN-B1-010`
+- **Goal (Can-Do):** Can describe physical sensations, emotional states, and stress recovery strategies
 
 ## Unit 6: Travel Infrastructure, Visas & Mobility
 
@@ -146,10 +128,8 @@ cando: "Can describe physical sensations, emotional states, and stress recovery 
 - Future Perfect Simple (will have done) for actions completed before a future deadline
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-011"
-cando: "Can explain travel schedules, visa processing deadlines, and international travel logistics"
-```
+- **Lesson Code:** `EN-B1-011`
+- **Goal (Can-Do):** Can explain travel schedules, visa processing deadlines, and international travel logistics
 
 ### Lesson 2: Relative Clauses (Defining, Non-defining & Whose)
 
@@ -158,10 +138,8 @@ cando: "Can explain travel schedules, visa processing deadlines, and internation
 - Possessive relative pronoun whose for people and organizations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-012"
-cando: "Can describe travel destinations, expatriate experiences, and logistics using non-defining relative clauses"
-```
+- **Lesson Code:** `EN-B1-012`
+- **Goal (Can-Do):** Can describe travel destinations, expatriate experiences, and logistics using non-defining relative clauses
 
 ## Unit 7: Money, Personal Finance & Banking
 
@@ -172,10 +150,8 @@ cando: "Can describe travel destinations, expatriate experiences, and logistics 
 - Double comparatives (the more you invest, the higher the return)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-013"
-cando: "Can evaluate financial products, compare interest rates, and discuss budgeting strategies"
-```
+- **Lesson Code:** `EN-B1-013`
+- **Goal (Can-Do):** Can evaluate financial products, compare interest rates, and discuss budgeting strategies
 
 ### Lesson 2: Reporting Verbs & Reported Questions
 
@@ -184,10 +160,8 @@ cando: "Can evaluate financial products, compare interest rates, and discuss bud
 - Reported questions with word order shift and if/whether
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-014"
-cando: "Can report banking transactions, advise against financial scams, and file dispute claims"
-```
+- **Lesson Code:** `EN-B1-014`
+- **Goal (Can-Do):** Can report banking transactions, advise against financial scams, and file dispute claims
 
 ## Unit 8: Science, Robotics & Future Innovation
 
@@ -198,10 +172,8 @@ cando: "Can report banking transactions, advise against financial scams, and fil
 - Passive with modal verbs (must be tested, can be implemented)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-015"
-cando: "Can present scientific breakthroughs and technological innovations using passive voice structures"
-```
+- **Lesson Code:** `EN-B1-015`
+- **Goal (Can-Do):** Can present scientific breakthroughs and technological innovations using passive voice structures
 
 ### Lesson 2: Phrasal Verbs Grammar Patterns & Separation Rules
 
@@ -210,10 +182,8 @@ cando: "Can present scientific breakthroughs and technological innovations using
 - Three-part phrasal verbs (come up with, look forward to)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-016"
-cando: "Can explain scientific methods and technological troubleshooting using phrasal verb patterns"
-```
+- **Lesson Code:** `EN-B1-016`
+- **Goal (Can-Do):** Can explain scientific methods and technological troubleshooting using phrasal verb patterns
 
 ## Unit 9: Culture, Aesthetics & Performing Arts
 
@@ -224,10 +194,8 @@ cando: "Can explain scientific methods and technological troubleshooting using p
 - Wh-clefts for emphasis (What I appreciate most about the exhibition is...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-017"
-cando: "Can critique cultural exhibitions and express aesthetic judgments using cleft sentences for emphasis"
-```
+- **Lesson Code:** `EN-B1-017`
+- **Goal (Can-Do):** Can critique cultural exhibitions and express aesthetic judgments using cleft sentences for emphasis
 
 ### Lesson 2: Question Tags & Conversational Floor Management
 
@@ -236,10 +204,8 @@ cando: "Can critique cultural exhibitions and express aesthetic judgments using 
 - Interrupting politely and clarifying points
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-018"
-cando: "Can manage conversational floor, express artistic opinions, and check agreement in discussions"
-```
+- **Lesson Code:** `EN-B1-018`
+- **Goal (Can-Do):** Can manage conversational floor, express artistic opinions, and check agreement in discussions
 
 ## Unit 10: Ethics, Problem Solving & Critical Thinking
 
@@ -250,10 +216,8 @@ cando: "Can manage conversational floor, express artistic opinions, and check ag
 - In Case vs If / Provided that / As long as
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-019"
-cando: "Can evaluate ethical dilemmas, justify difficult decisions, and debate moral trade-offs"
-```
+- **Lesson Code:** `EN-B1-019`
+- **Goal (Can-Do):** Can evaluate ethical dilemmas, justify difficult decisions, and debate moral trade-offs
 
 ### Lesson 2: B1 General Course Master Review & Consolidation
 
@@ -261,7 +225,5 @@ cando: "Can evaluate ethical dilemmas, justify difficult decisions, and debate m
 - Comprehensive review of all B1 grammar systems: tenses, passives, conditionals, indirect speech, discourse connectors, and clefts
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B1-020"
-cando: "Can demonstrate full B1 independent language user competency across professional, academic, and social contexts"
-```
+- **Lesson Code:** `EN-B1-020`
+- **Goal (Can-Do):** Can demonstrate full B1 independent language user competency across professional, academic, and social contexts

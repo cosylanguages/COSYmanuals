@@ -11,7 +11,5 @@
 - Nuanced conditional clauses
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-C1-001"
-cando: "Can manage tax filings, pension transfers, and navigate civic rights effortlessly."
-```
+- **Lesson Code:** `EN-RLC-C1-001`
+- **Goal (Can-Do):** Can manage tax filings, pension transfers, and navigate civic rights effortlessly.

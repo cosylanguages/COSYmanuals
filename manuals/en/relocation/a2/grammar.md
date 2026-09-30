@@ -11,10 +11,8 @@
 - Questions with How much / When
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-A2-001"
-cando: "Can enquire about rental listings, understand lease conditions, and set up utilities."
-```
+- **Lesson Code:** `EN-RLC-A2-001`
+- **Goal (Can-Do):** Can enquire about rental listings, understand lease conditions, and set up utilities.
 
 ### Lesson 2: Registering Local Services & Banking
 
@@ -23,7 +21,5 @@ cando: "Can enquire about rental listings, understand lease conditions, and set 
 - I need to register...
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-A2-002"
-cando: "Can complete administrative tasks like opening a bank account and registering locally."
-```
+- **Lesson Code:** `EN-RLC-A2-002`
+- **Goal (Can-Do):** Can complete administrative tasks like opening a bank account and registering locally.

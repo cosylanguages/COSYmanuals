@@ -10,12 +10,14 @@
 - Verb "sein" (Präsens) — Aussagesätze
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-001"
-pronunciation: [{"point":"Das deutsche Alphabet","explain":"Deutsch hat 26 Buchstaben plus die Umlaute (Ä, Ö, Ü) und das Eszett (ß).","alphabet":[{"l":"A a","ipa":"/aː/"},{"l":"B b","ipa":"/beː/"},{"l":"C c","ipa":"/tseː/"},{"l":"D d","ipa":"/deː/"},{"l":"E e","ipa":"/eː/"},{"l":"F f","ipa":"/ɛf/"},{"l":"G g","ipa":"/ɡeː/"},{"l":"H h","ipa":"/haː/"},{"l":"I i","ipa":"/iː/"},{"l":"J j","ipa":"/jɔt/"},{"l":"K k","ipa":"/kaː/"},{"l":"L l","ipa":"/ɛl/"},{"l":"M m","ipa":"/ɛm/"},{"l":"N n","ipa":"/ɛn/"},{"l":"O o","ipa":"/oː/"},{"l":"P p","ipa":"/peː/"},{"l":"Q q","ipa":"/kuː/"},{"l":"R r","ipa":"/ɛʁ/"},{"l":"S s","ipa":"/ɛs/"},{"l":"T t","ipa":"/teː/"},{"l":"U u","ipa":"/uː/"},{"l":"V v","ipa":"/faʊ/"},{"l":"W w","ipa":"/veː/"},{"l":"X x","ipa":"/ɪks/"},{"l":"Y y","ipa":"/ˈʏpsilɔn/"},{"l":"Z z","ipa":"/tsɛt/"},{"l":"Ä ä","ipa":"/ɛː/"},{"l":"Ö ö","ipa":"/øː/"},{"l":"Ü ü","ipa":"/yː/"},{"l":"ß","ipa":"/ɛsˈtsɛt/"}],"extension":"Das deutsche Alphabet hat 26 Standardbuchstaben plus 4 Spezialzeichen: Ä, Ö, Ü und ß. Die Aussprache ist im Vergleich zum Englischen sehr konsistent.","visual":"🇩🇪🔤"}]
-cando: "Can greet people and say goodbye"
-hw: "Learn the alphabet and the special characters (Ä, Ö, Ü, ß)"
-```
+- **Lesson Code:** `DE-001`
+- **Goal (Can-Do):** Can greet people and say goodbye
+- **Pronunciation Focus:**
+  - **Das deutsche Alphabet**: Deutsch hat 26 Buchstaben plus die Umlaute (Ä, Ö, Ü) und das Eszett (ß).
+    - *Examples:* `A a` /aː/, `B b` /beː/, `C c` /tseː/, `D d` /deː/, `E e` /eː/, `F f` /ɛf/, `G g` /ɡeː/, `H h` /haː/, `I i` /iː/, `J j` /jɔt/, `K k` /kaː/, `L l` /ɛl/, `M m` /ɛm/, `N n` /ɛn/, `O o` /oː/, `P p` /peː/, `Q q` /kuː/, `R r` /ɛʁ/, `S s` /ɛs/, `T t` /teː/, `U u` /uː/, `V v` /faʊ/, `W w` /veː/, `X x` /ɪks/, `Y y` /ˈʏpsilɔn/, `Z z` /tsɛt/, `Ä ä` /ɛː/, `Ö ö` /øː/, `Ü ü` /yː/, `ß` /ɛsˈtsɛt/
+    - *Note:* Das deutsche Alphabet hat 26 Standardbuchstaben plus 4 Spezialzeichen: Ä, Ö, Ü und ß. Die Aussprache ist im Vergleich zum Englischen sehr konsistent.
+- **Notes:**
+  - hw: "Learn the alphabet and the special characters (Ä, Ö, Ü, ß)"
 
 ### Lesson 2: Wie heißt du?
 
@@ -23,12 +25,14 @@ hw: "Learn the alphabet and the special characters (Ä, Ö, Ü, ß)"
 - Verb "heißen" (Präsens)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-002"
-pronunciation: [{"point":"Umlaute und Sonderzeichen","explain":"Ä, Ö, Ü und ß sind typisch für die deutsche Sprache.","examples":[{"pattern":"ä","ipa":"/ɛː/","word":"Äpfel"},{"pattern":"ö","ipa":"/øː/","word":"Öl"},{"pattern":"ü","ipa":"/yː/","word":"Über"},{"pattern":"ß","ipa":"/s/","word":"heißen"}],"tip":"Das 'ß' wird wie ein scharfes 'S' ausgesprochen.","extension":"Umlaute verändern den Klang des Vokals. Wenn man keine Umlaute auf der Tastatur hat, kann man sie als ae, oe, ue umschreiben.","visual":"🥨"}]
-cando: "Can introduce themselves"
-hw: "Practice spelling your name using German letters"
-```
+- **Lesson Code:** `DE-002`
+- **Goal (Can-Do):** Can introduce themselves
+- **Pronunciation Focus:**
+  - **Umlaute und Sonderzeichen**: Ä, Ö, Ü und ß sind typisch für die deutsche Sprache.
+    - *Examples:* `Äpfel` /ɛː/, `Öl` /øː/, `Über` /yː/, `heißen` /s/
+    - *Note:* Das 'ß' wird wie ein scharfes 'S' ausgesprochen.
+- **Notes:**
+  - hw: "Practice spelling your name using German letters"
 
 ### Lesson 3: Zahlen 1-20
 
@@ -36,12 +40,13 @@ hw: "Practice spelling your name using German letters"
 - Nomen: Artikel (der, die, das) - Einführung
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-003"
-pronunciation: [{"point":"Zahlen und Wortakzent","explain":"Im Deutschen liegt der Akzent meist auf der ersten Silbe.","examples":[{"pattern":"eins","ipa":"/aɪns/","word":"eins"},{"pattern":"sieben","ipa":"/ˈziːbn̩/","word":"sieben"},{"pattern":"zwanzig","ipa":"/ˈtsvantsɪç/","word":"zwanzig"}]}]
-cando: "Can count from 1 to 20"
-hw: "Count things in your room in German"
-```
+- **Lesson Code:** `DE-003`
+- **Goal (Can-Do):** Can count from 1 to 20
+- **Pronunciation Focus:**
+  - **Zahlen und Wortakzent**: Im Deutschen liegt der Akzent meist auf der ersten Silbe.
+    - *Examples:* `eins` /aɪns/, `sieben` /ˈziːbn̩/, `zwanzig` /ˈtsvantsɪç/
+- **Notes:**
+  - hw: "Count things in your room in German"
 
 ### Lesson 4: Minimale Paare: CH-Laute
 
@@ -49,12 +54,14 @@ hw: "Count things in your room in German"
 - Satzbau: Subjekt-Verb-Objekt
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-004"
-pronunciation: [{"point":"Der CH-Laut (/ç/ vs /x/)","explain":"Nach hellen Vokalen (i, e) klingt 'ch' weich (/ç/), nach dunklen (a, o, u) hart (/x/).","minimalPairs":[{"w1":"ich","p1":"/ɪç/","w2":"ach","p2":"/ax/"},{"w1":"dich","p1":"/dɪç/","w2":"Dach","p2":"/dax/"},{"w1":"Kirche","p1":"/ˈkɪʁçə/","w2":"Küche","p2":"/ˈkʏçə/"}],"extension":"Der 'ch'-Laut ist charakteristisch für die deutsche Sprache. Er wird im Rachen gebildet, aber unterschiedlich weit hinten, je nachdem, welcher Vokal davor steht.","visual":"🗣️"}]
-cando: "Can distinguish between soft and hard \"ch\" sounds"
-hw: "Practice saying \"ich\" and \"ach\" correctly"
-```
+- **Lesson Code:** `DE-004`
+- **Goal (Can-Do):** Can distinguish between soft and hard \"ch\" sounds
+- **Pronunciation Focus:**
+  - **Der CH-Laut (/ç/ vs /x/)**: Nach hellen Vokalen (i, e) klingt 'ch' weich (/ç/), nach dunklen (a, o, u) hart (/x/).
+    - *Examples:* `ich` /ɪç/ ↔ `ach` /ax/, `dich` /dɪç/ ↔ `Dach` /dax/, `Kirche` /ˈkɪʁçə/ ↔ `Küche` /ˈkʏçə/
+    - *Note:* Der 'ch'-Laut ist charakteristisch für die deutsche Sprache. Er wird im Rachen gebildet, aber unterschiedlich weit hinten, je nachdem, welcher Vokal davor steht.
+- **Notes:**
+  - hw: "Practice saying \"ich\" and \"ach\" correctly"
 
 ### Lesson 5: Wichtige Phrasen
 
@@ -62,12 +69,13 @@ hw: "Practice saying \"ich\" and \"ach\" correctly"
 - Höfliche Bitten und Fragen
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-005"
-pronunciation: [{"point":"Satzmelodie bei Fragen","explain":"Bei Ja/Nein-Fragen steigt die Stimme am Ende an.","examples":[{"pattern":"Wie geht es?","ipa":"/viː ɡeːt ɛs?/","word":"Wie geht es?"},{"pattern":"Alles klar?","ipa":"/ˈaləs klaːɐ?/","word":"Alles klar?"}]}]
-cando: "Can use basic polite phrases"
-hw: "Use \"Entschuldigung\" and \"Danke\" today"
-```
+- **Lesson Code:** `DE-005`
+- **Goal (Can-Do):** Can use basic polite phrases
+- **Pronunciation Focus:**
+  - **Satzmelodie bei Fragen**: Bei Ja/Nein-Fragen steigt die Stimme am Ende an.
+    - *Examples:* `Wie geht es?` /viː ɡeːt ɛs?/, `Alles klar?` /ˈaləs klaːɐ?/
+- **Notes:**
+  - hw: "Use \"Entschuldigung\" and \"Danke\" today"
 
 ## Unit 1: Mein Alltag
 
@@ -77,12 +85,14 @@ hw: "Use \"Entschuldigung\" and \"Danke\" today"
 - Verb "sein" und "haben" im Präsens
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-01"
-pronunciation: [{"point":"Der Vokalneueinsatz (Glottal Stop)","explain":"Wörter, die mit einem Vokal beginnen, werden mit einem kleinen harten Einsatz gesprochen.","examples":[{"pattern":"Apfel","ipa":"/ˈʔapfl̩/","word":"Apfel"},{"pattern":"Eis","ipa":"/ˈʔaɪs/","word":"Eis"}],"extension":"Im Deutschen klingen Wörter, die mit Vokalen beginnen, oft 'abgehackt'. Das liegt an diesem Glottal-Stopp. Er ist kein Buchstabe, aber ein wichtiger Laut für den deutschen Rhythmus.","visual":"⏹️"}]
-cando: "Can introduce themselves and use basic verbs"
-hw: "Write 3 sentences about your job in German"
-```
+- **Lesson Code:** `DE-01`
+- **Goal (Can-Do):** Can introduce themselves and use basic verbs
+- **Pronunciation Focus:**
+  - **Der Vokalneueinsatz (Glottal Stop)**: Wörter, die mit einem Vokal beginnen, werden mit einem kleinen harten Einsatz gesprochen.
+    - *Examples:* `Apfel` /ˈʔapfl̩/, `Eis` /ˈʔaɪs/
+    - *Note:* Im Deutschen klingen Wörter, die mit Vokalen beginnen, oft 'abgehackt'. Das liegt an diesem Glottal-Stopp. Er ist kein Buchstabe, aber ein wichtiger Laut für den deutschen Rhythmus.
+- **Notes:**
+  - hw: "Write 3 sentences about your job in German"
 
 ### Lesson 2: Mein Beruf
 
@@ -90,10 +100,11 @@ hw: "Write 3 sentences about your job in German"
 - Berufe und Artikel
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-02"
-pronunciation: [{"point":"Auslautverhärtung","explain":"B, D und G am Ende eines Wortes werden wie P, T und K ausgesprochen.","examples":[{"pattern":"b -> p","ipa":"/ap/","word":"ab"},{"pattern":"d -> t","ipa":"/hant/","word":"Hand"},{"pattern":"g -> k","ipa":"/taːk/","word":"Tag"}],"extension":"Das ist einer der Gründe, warum Deutsch für manche 'hart' klingt. Wir machen weiche Konsonanten am Ende hart und stimmlos.","visual":"🔨"}]
-```
+- **Lesson Code:** `DE-02`
+- **Pronunciation Focus:**
+  - **Auslautverhärtung**: B, D und G am Ende eines Wortes werden wie P, T und K ausgesprochen.
+    - *Examples:* `ab` /ap/, `Hand` /hant/, `Tag` /taːk/
+    - *Note:* Das ist einer der Gründe, warum Deutsch für manche 'hart' klingt. Wir machen weiche Konsonanten am Ende hart und stimmlos.
 
 ### Lesson 3: Wo ich wohne
 
@@ -101,7 +112,8 @@ pronunciation: [{"point":"Auslautverhärtung","explain":"B, D und G am Ende eine
 - Wohnen und Präpositionen
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-03"
-pronunciation: [{"point":"Das 'R' im Deutschen","explain":"Am Wortanfang wird es im Rachen gerieben, am Ende fast wie ein 'A' ausgesprochen.","examples":[{"pattern":"r-","ipa":"/ʁɔt/","word":"rot"},{"pattern":"-er","ipa":"/ˈvɪndɐ/","word":"Winter"}],"extension":"Das vokalisierte 'r' am Ende (wie in 'Mutter', 'Bier') klingt fast wie ein kurzes 'a'. Das ist sehr wichtig für eine natürliche Aussprache.","visual":"🗣️"}]
-```
+- **Lesson Code:** `DE-03`
+- **Pronunciation Focus:**
+  - **Das 'R' im Deutschen**: Am Wortanfang wird es im Rachen gerieben, am Ende fast wie ein 'A' ausgesprochen.
+    - *Examples:* `rot` /ʁɔt/, `Winter` /ˈvɪndɐ/
+    - *Note:* Das vokalisierte 'r' am Ende (wie in 'Mutter', 'Bier') klingt fast wie ein kurzes 'a'. Das ist sehr wichtig für eine natürliche Aussprache.

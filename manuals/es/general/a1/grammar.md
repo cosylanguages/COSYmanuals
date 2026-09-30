@@ -10,12 +10,14 @@
 - Verbo "ser" (presente) — formas afirmativas
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-001"
-pronunciation: [{"point":"El Alfabeto Español","explain":"El español tiene 27 letras. La 'ñ' es única en nuestro alfabeto.","alphabet":[{"l":"A a","ipa":"/a/"},{"l":"B b","ipa":"/be/"},{"l":"C c","ipa":"/θe/"},{"l":"D d","ipa":"/de/"},{"l":"E e","ipa":"/e/"},{"l":"F f","ipa":"/efe/"},{"l":"G g","ipa":"/xe/"},{"l":"H h","ipa":"/atʃe/"},{"l":"I i","ipa":"/i/"},{"l":"J j","ipa":"/xota/"},{"l":"K k","ipa":"/ka/"},{"l":"L l","ipa":"/ele/"},{"l":"M m","ipa":"/eme/"},{"l":"N n","ipa":"/ene/"},{"l":"Ñ ñ","ipa":"/eɲe/"},{"l":"O o","ipa":"/o/"},{"l":"P p","ipa":"/pe/"},{"l":"Q q","ipa":"/ku/"},{"l":"R r","ipa":"/ere/"},{"l":"S s","ipa":"/ese/"},{"l":"T t","ipa":"/te/"},{"l":"U u","ipa":"/u/"},{"l":"V v","ipa":"/ube/"},{"l":"W w","ipa":"/ube doble/"},{"l":"X x","ipa":"/ekis/"},{"l":"Y y","ipa":"/i griega/"},{"l":"Z z","ipa":"/θeta/"}],"extension":"El español es un idioma con una correspondencia casi perfecta entre letras y sonidos. ¡Si sabes cómo se escribe, sabes cómo se pronuncia!","visual":"🇪🇸🔤"}]
-cando: "Can greet people and say goodbye"
-hw: "Learn the alphabet and the sound of Ñ"
-```
+- **Lesson Code:** `ES-001`
+- **Goal (Can-Do):** Can greet people and say goodbye
+- **Pronunciation Focus:**
+  - **El Alfabeto Español**: El español tiene 27 letras. La 'ñ' es única en nuestro alfabeto.
+    - *Examples:* `A a` /a/, `B b` /be/, `C c` /θe/, `D d` /de/, `E e` /e/, `F f` /efe/, `G g` /xe/, `H h` /atʃe/, `I i` /i/, `J j` /xota/, `K k` /ka/, `L l` /ele/, `M m` /eme/, `N n` /ene/, `Ñ ñ` /eɲe/, `O o` /o/, `P p` /pe/, `Q q` /ku/, `R r` /ere/, `S s` /ese/, `T t` /te/, `U u` /u/, `V v` /ube/, `W w` /ube doble/, `X x` /ekis/, `Y y` /i griega/, `Z z` /θeta/
+    - *Note:* El español es un idioma con una correspondencia casi perfecta entre letras y sonidos. ¡Si sabes cómo se escribe, sabes cómo se pronuncia!
+- **Notes:**
+  - hw: "Learn the alphabet and the sound of Ñ"
 
 ### Lesson 2: ¿Cómo te llamas?
 
@@ -23,12 +25,14 @@ hw: "Learn the alphabet and the sound of Ñ"
 - Verbo "llamarse" (presente)
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-002"
-pronunciation: [{"point":"Letras Especiales: LL, RR, H","explain":"En español, 'll' suena como 'y', 'rr' es vibrante, y la 'h' es siempre muda.","examples":[{"pattern":"ll","ipa":"/ʝ/","word":"calle"},{"pattern":"rr","ipa":"/r/","word":"perro"},{"pattern":"h","ipa":"-","word":"hola"}],"tip":"¡Nunca pronuncies la H en español!","extension":"La 'rr' requiere que la lengua vibre contra el paladar. La 'h' es puramente decorativa en la pronunciación moderna.","visual":"🐕"}]
-cando: "Can introduce themselves"
-hw: "Practice spelling your name in Spanish"
-```
+- **Lesson Code:** `ES-002`
+- **Goal (Can-Do):** Can introduce themselves
+- **Pronunciation Focus:**
+  - **Letras Especiales: LL, RR, H**: En español, 'll' suena como 'y', 'rr' es vibrante, y la 'h' es siempre muda.
+    - *Examples:* `calle` /ʝ/, `perro` /r/, `hola` -
+    - *Note:* ¡Nunca pronuncies la H en español!
+- **Notes:**
+  - hw: "Practice spelling your name in Spanish"
 
 ### Lesson 3: Números 1-20
 
@@ -36,12 +40,13 @@ hw: "Practice spelling your name in Spanish"
 - Género de los sustantivos (introducción)
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-003"
-pronunciation: [{"point":"Acento Prosódico","explain":"La mayoría de las palabras que terminan en vocal llevan el acento en la penúltima sílaba.","examples":[{"pattern":"uno","ipa":"/ˈu.no/","word":"uno"},{"pattern":"siete","ipa":"/ˈsje.te/","word":"siete"},{"pattern":"once","ipa":"/ˈon.θe/","word":"once"}]}]
-cando: "Can count from 1 to 20"
-hw: "Count objects in your house in Spanish"
-```
+- **Lesson Code:** `ES-003`
+- **Goal (Can-Do):** Can count from 1 to 20
+- **Pronunciation Focus:**
+  - **Acento Prosódico**: La mayoría de las palabras que terminan en vocal llevan el acento en la penúltima sílaba.
+    - *Examples:* `uno` /ˈu.no/, `siete` /ˈsje.te/, `once` /ˈon.θe/
+- **Notes:**
+  - hw: "Count objects in your house in Spanish"
 
 ### Lesson 4: Pares Mínimos: C, Z, S
 
@@ -49,12 +54,14 @@ hw: "Count objects in your house in Spanish"
 - Estructura básica de la oración
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-004"
-pronunciation: [{"point":"El Sonido /θ/ (Z y C)","explain":"En España, la 'z' y la 'c' (ante e, i) se pronuncian con la lengua entre los dientes.","minimalPairs":[{"w1":"casa","p1":"/ˈka.sa/","w2":"caza","p2":"/ˈka.θa/"},{"w1":"siento","p1":"/ˈsjen.to/","w2":"ciento","p2":"/ˈθjen.to/"},{"w1":"cocer","p1":"/ko.ˈθer/","w2":"coser","p2":"/ko.ˈser/"}],"extension":"Esta distinción es típica del español de España (Castellano). En gran parte de Latinoamérica, 's', 'c' y 'z' se pronuncian igual (/s/), lo que se llama 'seseo'.","visual":"👅"}]
-cando: "Can distinguish between S and Z/C sounds"
-hw: "Record yourself saying \"casa\" and \"caza\""
-```
+- **Lesson Code:** `ES-004`
+- **Goal (Can-Do):** Can distinguish between S and Z/C sounds
+- **Pronunciation Focus:**
+  - **El Sonido /θ/ (Z y C)**: En España, la 'z' y la 'c' (ante e, i) se pronuncian con la lengua entre los dientes.
+    - *Examples:* `casa` /ˈka.sa/ ↔ `caza` /ˈka.θa/, `siento` /ˈsjen.to/ ↔ `ciento` /ˈθjen.to/, `cocer` /ko.ˈθer/ ↔ `coser` /ko.ˈser/
+    - *Note:* Esta distinción es típica del español de España (Castellano). En gran parte de Latinoamérica, 's', 'c' y 'z' se pronuncian igual (/s/), lo que se llama 'seseo'.
+- **Notes:**
+  - hw: "Record yourself saying \"casa\" and \"caza\""
 
 ### Lesson 5: Frases de Cortesía
 
@@ -62,12 +69,13 @@ hw: "Record yourself saying \"casa\" and \"caza\""
 - Peticiones amables (Por favor, Gracias)
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-005"
-pronunciation: [{"point":"Entonación de Preguntas","explain":"En español, las preguntas tienen una entonación ascendente marcada.","examples":[{"pattern":"¿Cómo estás?","ipa":"/ˈko.mo es.ˈtas?/","word":"¿Cómo estás?"},{"pattern":"¿Qué tal?","ipa":"/ˈke ˈtal?/","word":"¿Qué tal?"}]}]
-cando: "Can use basic polite phrases"
-hw: "Use three polite phrases tomorrow"
-```
+- **Lesson Code:** `ES-005`
+- **Goal (Can-Do):** Can use basic polite phrases
+- **Pronunciation Focus:**
+  - **Entonación de Preguntas**: En español, las preguntas tienen una entonación ascendente marcada.
+    - *Examples:* `¿Cómo estás?` /ˈko.mo es.ˈtas?/, `¿Qué tal?` /ˈke ˈtal?/
+- **Notes:**
+  - hw: "Use three polite phrases tomorrow"
 
 ## Unit 1: Unidad 1: Mi Vida Diaria
 
@@ -77,12 +85,13 @@ hw: "Use three polite phrases tomorrow"
 - Verbo ser vs estar (introducción)
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-01"
-pronunciation: [{"point":"La letra G","explain":"La 'g' tiene un sonido suave (gato) y un sonido fuerte (gente).","examples":[{"pattern":"ga, go, gu","ipa":"/g/","word":"gato"},{"pattern":"ge, gi","ipa":"/x/","word":"gente"}]}]
-cando: "Can introduce themselves and their profession"
-hw: "Write 3 sentences about yourself using \"ser\""
-```
+- **Lesson Code:** `ES-01`
+- **Goal (Can-Do):** Can introduce themselves and their profession
+- **Pronunciation Focus:**
+  - **La letra G**: La 'g' tiene un sonido suave (gato) y un sonido fuerte (gente).
+    - *Examples:* `gato` /g/, `gente` /x/
+- **Notes:**
+  - hw: "Write 3 sentences about yourself using \"ser\""
 
 ### Lesson 2: Mi trabajo y oficina
 
@@ -90,10 +99,11 @@ hw: "Write 3 sentences about yourself using \"ser\""
 - Verbo tener + artículos indeterminados
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-02"
-pronunciation: [{"point":"La letra C","explain":"La 'c' suena como 'k' ante a, o, u, y como 'θ' (en España) ante e, i.","examples":[{"pattern":"ca, co, cu","ipa":"/k/","word":"casa"},{"pattern":"ce, ci","ipa":"/θ/","word":"cena"}],"tip":"¡Recuerda! 'Que, qui' suena como 'ke, ki'.","visual":"🏠🍴"}]
-```
+- **Lesson Code:** `ES-02`
+- **Pronunciation Focus:**
+  - **La letra C**: La 'c' suena como 'k' ante a, o, u, y como 'θ' (en España) ante e, i.
+    - *Examples:* `casa` /k/, `cena` /θ/
+    - *Note:* ¡Recuerda! 'Que, qui' suena como 'ke, ki'.
 
 ### Lesson 3: Mi casa y barrio
 
@@ -101,10 +111,11 @@ pronunciation: [{"point":"La letra C","explain":"La 'c' suena como 'k' ante a, o
 - Estar + preposiciones de lugar
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-03"
-pronunciation: [{"point":"La letra J y G fuerte","explain":"La 'j' y la 'g' (ante e, i) tienen un sonido fuerte desde la garganta.","examples":[{"pattern":"j","ipa":"/x/","word":"jardín"},{"pattern":"ge, gi","ipa":"/x/","word":"gimnasio"}],"extension":"Este sonido es muy característico del español. Imagina que estás limpiando tus gafas con el aliento.","visual":"😤"}]
-```
+- **Lesson Code:** `ES-03`
+- **Pronunciation Focus:**
+  - **La letra J y G fuerte**: La 'j' y la 'g' (ante e, i) tienen un sonido fuerte desde la garganta.
+    - *Examples:* `jardín` /x/, `gimnasio` /x/
+    - *Note:* Este sonido es muy característico del español. Imagina que estás limpiando tus gafas con el aliento.
 
 ### Lesson 4: Mi familia
 
@@ -112,7 +123,8 @@ pronunciation: [{"point":"La letra J y G fuerte","explain":"La 'j' y la 'g' (ant
 - Adjetivos posesivos
 
 **Teaching Notes & Rules:**
-```text
-code: "ES-04"
-pronunciation: [{"point":"La letra V vs B","explain":"En español, la 'v' y la 'b' se pronuncian exactamente igual.","minimalPairs":[{"w1":"vaca","p1":"/ˈba.ka/","w2":"baca","p2":"/ˈba.ka/"},{"w1":"vino","p1":"/ˈbi.no/","w2":"pino","p2":"/ˈpi.no/"}],"tip":"No muerdas el labio para la 'v'; usa ambos labios como con la 'b'.","visual":"👄"}]
-```
+- **Lesson Code:** `ES-04`
+- **Pronunciation Focus:**
+  - **La letra V vs B**: En español, la 'v' y la 'b' se pronuncian exactamente igual.
+    - *Examples:* `vaca` /ˈba.ka/ ↔ `baca` /ˈba.ka/, `vino` /ˈbi.no/ ↔ `pino` /ˈpi.no/
+    - *Note:* No muerdas el labio para la 'v'; usa ambos labios como con la 'b'.

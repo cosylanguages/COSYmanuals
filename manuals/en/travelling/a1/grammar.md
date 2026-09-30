@@ -11,10 +11,8 @@
 - Ticket / Passport / Luggage
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-001"
-cando: "Can navigate airport check-in, passport control, and luggage claim."
-```
+- **Lesson Code:** `EN-TRV-A1-001`
+- **Goal (Can-Do):** Can navigate airport check-in, passport control, and luggage claim.
 
 ### Lesson 2: Airport Check-in & Security Screenings
 
@@ -23,10 +21,8 @@ cando: "Can navigate airport check-in, passport control, and luggage claim."
 - I have / I don't have...
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-002"
-cando: "Can follow airport security instructions and answer basic check-in questions."
-```
+- **Lesson Code:** `EN-TRV-A1-002`
+- **Goal (Can-Do):** Can follow airport security instructions and answer basic check-in questions.
 
 ### Lesson 3: Luggage Claim & Flight Departure
 
@@ -35,10 +31,8 @@ cando: "Can follow airport security instructions and answer basic check-in quest
 - Which gate...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-003"
-cando: "Can identify flight information boards and locate baggage carousel."
-```
+- **Lesson Code:** `EN-TRV-A1-003`
+- **Goal (Can-Do):** Can identify flight information boards and locate baggage carousel.
 
 ### Lesson 4: Public Transit & Airport Express
 
@@ -47,10 +41,8 @@ cando: "Can identify flight information boards and locate baggage carousel."
 - Direct line / Transfer
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-004"
-cando: "Can purchase airport shuttle and public transit tickets."
-```
+- **Lesson Code:** `EN-TRV-A1-004`
+- **Goal (Can-Do):** Can purchase airport shuttle and public transit tickets.
 
 ## Unit 2: Hotel & Accommodations
 
@@ -61,10 +53,8 @@ cando: "Can purchase airport shuttle and public transit tickets."
 - Can I have...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-005"
-cando: "Can check into a hotel and request basic room amenities."
-```
+- **Lesson Code:** `EN-TRV-A1-005`
+- **Goal (Can-Do):** Can check into a hotel and request basic room amenities.
 
 ### Lesson 2: Room Amenities & Requests
 
@@ -73,10 +63,8 @@ cando: "Can check into a hotel and request basic room amenities."
 - Could I get extra...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-006"
-cando: "Can ask hotel staff for extra room items and basic services."
-```
+- **Lesson Code:** `EN-TRV-A1-006`
+- **Goal (Can-Do):** Can ask hotel staff for extra room items and basic services.
 
 ### Lesson 3: Breakfast & Hotel Facilities
 
@@ -85,10 +73,8 @@ cando: "Can ask hotel staff for extra room items and basic services."
 - Where is the...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-007"
-cando: "Can inquire about hotel facilities and breakfast hours."
-```
+- **Lesson Code:** `EN-TRV-A1-007`
+- **Goal (Can-Do):** Can inquire about hotel facilities and breakfast hours.
 
 ### Lesson 4: Hotel Check-Out & Storing Luggage
 
@@ -97,10 +83,8 @@ cando: "Can inquire about hotel facilities and breakfast hours."
 - Can I leave my bags here?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-008"
-cando: "Can complete hotel check-out process and request luggage storage."
-```
+- **Lesson Code:** `EN-TRV-A1-008`
+- **Goal (Can-Do):** Can complete hotel check-out process and request luggage storage.
 
 ## Unit 3: Dining Out & Ordering Food
 
@@ -111,10 +95,8 @@ cando: "Can complete hotel check-out process and request luggage storage."
 - To go / For here
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-009"
-cando: "Can order simple drinks and snacks at a cafe or fast food counter."
-```
+- **Lesson Code:** `EN-TRV-A1-009`
+- **Goal (Can-Do):** Can order simple drinks and snacks at a cafe or fast food counter.
 
 ### Lesson 2: Restaurant Reservations & Seating
 
@@ -123,10 +105,8 @@ cando: "Can order simple drinks and snacks at a cafe or fast food counter."
 - Do you have a table near...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-010"
-cando: "Can request a table at a restaurant for a group."
-```
+- **Lesson Code:** `EN-TRV-A1-010`
+- **Goal (Can-Do):** Can request a table at a restaurant for a group.
 
 ### Lesson 3: Ordering Meals & Dietary Preferences
 
@@ -135,10 +115,8 @@ cando: "Can request a table at a restaurant for a group."
 - I don't eat...
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-011"
-cando: "Can order main dishes and state basic dietary preferences."
-```
+- **Lesson Code:** `EN-TRV-A1-011`
+- **Goal (Can-Do):** Can order main dishes and state basic dietary preferences.
 
 ### Lesson 4: Asking for the Bill & Paying
 
@@ -147,10 +125,8 @@ cando: "Can order main dishes and state basic dietary preferences."
 - Do you accept card?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-012"
-cando: "Can ask for the check and pay for meals at a restaurant."
-```
+- **Lesson Code:** `EN-TRV-A1-012`
+- **Goal (Can-Do):** Can ask for the check and pay for meals at a restaurant.
 
 ## Unit 4: Getting Around & Asking Directions
 
@@ -161,10 +137,8 @@ cando: "Can ask for the check and pay for meals at a restaurant."
 - Is it far from here?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-013"
-cando: "Can identify main city landmarks and ask for their location."
-```
+- **Lesson Code:** `EN-TRV-A1-013`
+- **Goal (Can-Do):** Can identify main city landmarks and ask for their location.
 
 ### Lesson 2: Asking for & Giving Simple Directions
 
@@ -174,10 +148,8 @@ cando: "Can identify main city landmarks and ask for their location."
 - It is next to...
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-014"
-cando: "Can follow and give basic directional instructions on foot."
-```
+- **Lesson Code:** `EN-TRV-A1-014`
+- **Goal (Can-Do):** Can follow and give basic directional instructions on foot.
 
 ### Lesson 3: Taxis & Ride Hailing
 
@@ -186,10 +158,8 @@ cando: "Can follow and give basic directional instructions on foot."
 - How much will it cost to...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-015"
-cando: "Can tell a taxi driver a destination and ask about fare."
-```
+- **Lesson Code:** `EN-TRV-A1-015`
+- **Goal (Can-Do):** Can tell a taxi driver a destination and ask about fare.
 
 ### Lesson 4: Buying Train & Bus Tickets
 
@@ -198,10 +168,8 @@ cando: "Can tell a taxi driver a destination and ask about fare."
 - What platform...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-016"
-cando: "Can understand platform announcements and buy intercity transport tickets."
-```
+- **Lesson Code:** `EN-TRV-A1-016`
+- **Goal (Can-Do):** Can understand platform announcements and buy intercity transport tickets.
 
 ## Unit 5: Basic Travel Emergencies & Needs
 
@@ -212,10 +180,8 @@ cando: "Can understand platform announcements and buy intercity transport ticket
 - I have a headache / stomachache
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-017"
-cando: "Can describe simple ailments and buy over-the-counter medicine at a pharmacy."
-```
+- **Lesson Code:** `EN-TRV-A1-017`
+- **Goal (Can-Do):** Can describe simple ailments and buy over-the-counter medicine at a pharmacy.
 
 ### Lesson 2: Lost Items & Asking for Help
 
@@ -224,10 +190,8 @@ cando: "Can describe simple ailments and buy over-the-counter medicine at a phar
 - Can you help me?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-018"
-cando: "Can ask for assistance when an item is lost or misplaced."
-```
+- **Lesson Code:** `EN-TRV-A1-018`
+- **Goal (Can-Do):** Can ask for assistance when an item is lost or misplaced.
 
 ### Lesson 3: Currency Exchange & ATM Usage
 
@@ -236,10 +200,8 @@ cando: "Can ask for assistance when an item is lost or misplaced."
 - Where is the nearest ATM?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-019"
-cando: "Can exchange currency and locate ATMs."
-```
+- **Lesson Code:** `EN-TRV-A1-019`
+- **Goal (Can-Do):** Can exchange currency and locate ATMs.
 
 ### Lesson 4: Reporting Problems & Emergency Calls
 
@@ -248,7 +210,5 @@ cando: "Can exchange currency and locate ATMs."
 - There is an emergency
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A1-020"
-cando: "Can call emergency numbers and report urgent situations in simple words."
-```
+- **Lesson Code:** `EN-TRV-A1-020`
+- **Goal (Can-Do):** Can call emergency numbers and report urgent situations in simple words.

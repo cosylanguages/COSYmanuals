@@ -12,10 +12,8 @@
 - Nuances de concession et de restriction
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-001"
-cando: "Peut défendre une position complexe lors d'un débat et nuancer ses réserves"
-```
+- **Lesson Code:** `FR-B2-001`
+- **Goal (Can-Do):** Peut défendre une position complexe lors d'un débat et nuancer ses réserves
 
 ### Lesson 2: L'inversion du sujet après les adverbes de tête
 
@@ -24,10 +22,8 @@ cando: "Peut défendre une position complexe lors d'un débat et nuancer ses ré
 - Effets de style et registres sostenus
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-002"
-cando: "Peut manier les inversions stylistiques pour donner de l'impact à une argumentation orale ou écrite"
-```
+- **Lesson Code:** `FR-B2-002`
+- **Goal (Can-Do):** Peut manier les inversions stylistiques pour donner de l'impact à une argumentation orale ou écrite
 
 ### Lesson 3: Conditionnel passé et regret / reproche
 
@@ -36,10 +32,8 @@ cando: "Peut manier les inversions stylistiques pour donner de l'impact à une a
 - Exprimer le regret (J'aurais dû...), le reproche (Tu aurais pu...) et l'hypothèse irréelle du passé
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-003"
-cando: "Peut analyser des erreurs passées, exprimer des regrets circonstanciés et porter des jugements rétrospectifs"
-```
+- **Lesson Code:** `FR-B2-003`
+- **Goal (Can-Do):** Peut analyser des erreurs passées, exprimer des regrets circonstanciés et porter des jugements rétrospectifs
 
 ### Lesson 4: Structures d'atténuation et diplomatie du discours
 
@@ -48,10 +42,8 @@ cando: "Peut analyser des erreurs passées, exprimer des regrets circonstanciés
 - Adverbes et prépositions de modalisation (apparemment, en principe, à première vue)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-004"
-cando: "Peut intervenir dans une négociation délicate en utilisant les techniques d'atténuation diplomatique"
-```
+- **Lesson Code:** `FR-B2-004`
+- **Goal (Can-Do):** Peut intervenir dans une négociation délicate en utilisant les techniques d'atténuation diplomatique
 
 ### Lesson 5: Nominalization et style administratif / journalistique
 
@@ -60,10 +52,8 @@ cando: "Peut intervenir dans une négociation délicate en utilisant les techniq
 - Condensation de l'information pour les rapports et titres
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-005"
-cando: "Peut rédiger des synthèses d'information denses et adopter un style formel ou journalistique"
-```
+- **Lesson Code:** `FR-B2-005`
+- **Goal (Can-Do):** Peut rédiger des synthèses d'information denses et adopter un style formel ou journalistique
 
 ## Unit 2: Unité 2 : Géopolitique, mondialisation et institutions
 
@@ -74,10 +64,8 @@ cando: "Peut rédiger des synthèses d'information denses et adopter un style fo
 - Passif de chancellerie (Il a été convenu que...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-006"
-cando: "Peut comprendre des analyses de géopolitique et débattre des enjeux de gouvernance mondiale"
-```
+- **Lesson Code:** `FR-B2-006`
+- **Goal (Can-Do):** Peut comprendre des analyses de géopolitique et débattre des enjeux de gouvernance mondiale
 
 ### Lesson 2: Mondialisation des échanges et flux migratoires
 
@@ -86,10 +74,8 @@ cando: "Peut comprendre des analyses de géopolitique et débattre des enjeux de
 - Pronoms démonstratifs et possessifs complexes
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-007"
-cando: "Peut évaluer les retombées économiques et sociales de la mondialisation et des mouvements migratoires"
-```
+- **Lesson Code:** `FR-B2-007`
+- **Goal (Can-Do):** Peut évaluer les retombées économiques et sociales de la mondialisation et des mouvements migratoires
 
 ### Lesson 3: L'Union Européenne et ses politiques publiques
 
@@ -98,10 +84,8 @@ cando: "Peut évaluer les retombées économiques et sociales de la mondialisati
 - Tournures passives sans complément d'agent
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-008"
-cando: "Peut discuter du fonctionnement des institutions européennes et de l'impact des directives"
-```
+- **Lesson Code:** `FR-B2-008`
+- **Goal (Can-Do):** Peut discuter du fonctionnement des institutions européennes et de l'impact des directives
 
 ### Lesson 4: Conflits, médiation et maintien de la paix
 
@@ -110,10 +94,8 @@ cando: "Peut discuter du fonctionnement des institutions européennes et de l'im
 - Connecteurs de concessions avancés (Nonobstant, quoi qu'il en soit)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-009"
-cando: "Peut analyser la résolution de conflits internationaux et les interventions humanitaires"
-```
+- **Lesson Code:** `FR-B2-009`
+- **Goal (Can-Do):** Peut analyser la résolution de conflits internationaux et les interventions humanitaires
 
 ### Lesson 5: Droits de l'Homme et justice internationale
 
@@ -122,10 +104,8 @@ cando: "Peut analyser la résolution de conflits internationaux et les intervent
 - Structures de droit et d'imprescriptibilité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-010"
-cando: "Peut commenter des arrêts de justice internationale et discuter de la protection des libertés fondamentales"
-```
+- **Lesson Code:** `FR-B2-010`
+- **Goal (Can-Do):** Peut commenter des arrêts de justice internationale et discuter de la protection des libertés fondamentales
 
 ## Unit 3: Unité 3 : Économie, marché du travail et mutations
 
@@ -136,10 +116,8 @@ cando: "Peut commenter des arrêts de justice internationale et discuter de la p
 - Expressions de tendance et de fluctuation
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-011"
-cando: "Peut lire de la presse économique spécialisée et commenter l'évolution des indicateurs macroéconomiques"
-```
+- **Lesson Code:** `FR-B2-011`
+- **Goal (Can-Do):** Peut lire de la presse économique spécialisée et commenter l'évolution des indicateurs macroéconomiques
 
 ### Lesson 2: Ubérisation et nouveaux modèles d'emploi
 
@@ -148,10 +126,8 @@ cando: "Peut lire de la presse économique spécialisée et commenter l'évoluti
 - Gérondif de manière et de condition
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-012"
-cando: "Peut débattre des transformations du droit du travail face au développement des plateformes numériques"
-```
+- **Lesson Code:** `FR-B2-012`
+- **Goal (Can-Do):** Peut débattre des transformations du droit du travail face au développement des plateformes numériques
 
 ### Lesson 3: Économie sociale et solidaire (ESS)
 
@@ -160,10 +136,8 @@ cando: "Peut débattre des transformations du droit du travail face au développ
 - Mise en valeur par le pronom démonstratif neutre (Ce qui importe, c'est...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-013"
-cando: "Peut présenter le modèle d'une coopérative et argumenter la supériorité de l'impact social sur le profit"
-```
+- **Lesson Code:** `FR-B2-013`
+- **Goal (Can-Do):** Peut présenter le modèle d'une coopérative et argumenter la supériorité de l'impact social sur le profit
 
 ### Lesson 4: Inégalités salariales et redistribution des richesses
 
@@ -172,10 +146,8 @@ cando: "Peut présenter le modèle d'une coopérative et argumenter la supérior
 - Structures statistiques avancées
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-014"
-cando: "Peut discuter des politiques fiscales redistributives et analyser la répartition des richesses"
-```
+- **Lesson Code:** `FR-B2-014`
+- **Goal (Can-Do):** Peut discuter des politiques fiscales redistributives et analyser la répartition des richesses
 
 ### Lesson 5: Start-up, innovation et levées de fonds
 
@@ -184,10 +156,8 @@ cando: "Peut discuter des politiques fiscales redistributives et analyser la ré
 - Conditionnel pour les projections financières
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-015"
-cando: "Peut comprendre et délivrer un pitch d'entreprise persuasive auprès d'investisseurs potentiel"
-```
+- **Lesson Code:** `FR-B2-015`
+- **Goal (Can-Do):** Peut comprendre et délivrer un pitch d'entreprise persuasive auprès d'investisseurs potentiel
 
 ## Unit 4: Unité 4 : Culture, médias et critique artistique
 
@@ -198,10 +168,8 @@ cando: "Peut comprendre et délivrer un pitch d'entreprise persuasive auprès d'
 - Figures de style courantes (métaphore, métonymie, hyperbole)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-016"
-cando: "Peut rédiger une critique littéraire élaborée en identifiant les procédés stylistiques de l'auteur"
-```
+- **Lesson Code:** `FR-B2-016`
+- **Goal (Can-Do):** Peut rédiger une critique littéraire élaborée en identifiant les procédés stylistiques de l'auteur
 
 ### Lesson 2: Cinéma d'auteur vs Blockbusters
 
@@ -210,10 +178,8 @@ cando: "Peut rédiger une critique littéraire élaborée en identifiant les pro
 - Gradation adjectivale
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-017"
-cando: "Peut débattre des choix artistiques et de la ligne éditoriale au cinéma"
-```
+- **Lesson Code:** `FR-B2-017`
+- **Goal (Can-Do):** Peut débattre des choix artistiques et de la ligne éditoriale au cinéma
 
 ### Lesson 3: L'exception culturelle et les politiques d'État
 
@@ -222,10 +188,8 @@ cando: "Peut débattre des choix artistiques et de la ligne éditoriale au ciné
 - Style officiel des déclarations de politique culturelle
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-018"
-cando: "Peut argumenter en faveur de la protection de l'exception culturelle et de la création nationale"
-```
+- **Lesson Code:** `FR-B2-018`
+- **Goal (Can-Do):** Peut argumenter en faveur de la protection de l'exception culturelle et de la création nationale
 
 ### Lesson 4: Liberté de la presse et déontologie journalistique
 
@@ -234,10 +198,8 @@ cando: "Peut argumenter en faveur de la protection de l'exception culturelle et 
 - Discours rapporté complexe avec nuance de véracité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-019"
-cando: "Peut débattre des limites éthiques du journalisme d'investigation et du droit à l'information"
-```
+- **Lesson Code:** `FR-B2-019`
+- **Goal (Can-Do):** Peut débattre des limites éthiques du journalisme d'investigation et du droit à l'information
 
 ### Lesson 5: L'impact des plateformes de streaming sur la création
 
@@ -246,10 +208,8 @@ cando: "Peut débattre des limites éthiques du journalisme d'investigation et d
 - Connecteurs de conséquence logique avancée
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-020"
-cando: "Peut évaluer la transformation des modes de consommation culturelle liée aux géants du numérique"
-```
+- **Lesson Code:** `FR-B2-020`
+- **Goal (Can-Do):** Peut évaluer la transformation des modes de consommation culturelle liée aux géants du numérique
 
 ## Unit 5: Unité 5 : Sciences, éthique et biotechnologies
 
@@ -260,10 +220,8 @@ cando: "Peut évaluer la transformation des modes de consommation culturelle li�
 - Formes verbales passives et pronominales de responsabilité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-021"
-cando: "Peut débattre des enjeux bioéthiques liés aux manipulations génétiques avec rigueur terminologique"
-```
+- **Lesson Code:** `FR-B2-021`
+- **Goal (Can-Do):** Peut débattre des enjeux bioéthiques liés aux manipulations génétiques avec rigueur terminologique
 
 ### Lesson 2: Transhumanisme et augmentation de l'humain
 
@@ -272,10 +230,8 @@ cando: "Peut débattre des enjeux bioéthiques liés aux manipulations génétiq
 - Tournures hypothétiques du 3ème degré (Si l'homme avait su...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-022"
-cando: "Peut discuter des théories transhumanistes et évaluer les conséquences philosophiques sur la condition humaine"
-```
+- **Lesson Code:** `FR-B2-022`
+- **Goal (Can-Do):** Peut discuter des théories transhumanistes et évaluer les conséquences philosophiques sur la condition humaine
 
 ### Lesson 3: Intelligence artificielle et décision automatisée
 
@@ -284,10 +240,8 @@ cando: "Peut discuter des théories transhumanistes et évaluer les conséquence
 - Expression de la dépendance logique
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-023"
-cando: "Peut dénoncer les biais algorithmiques et réclamer une régulation éthique des systèmes automatisés"
-```
+- **Lesson Code:** `FR-B2-023`
+- **Goal (Can-Do):** Peut dénoncer les biais algorithmiques et réclamer une régulation éthique des systèmes automatisés
 
 ### Lesson 4: Écologie scientifique et effondrement (Collapsologie)
 
@@ -296,10 +250,8 @@ cando: "Peut dénoncer les biais algorithmiques et réclamer une régulation ét
 - Expressions de la certitude vs doute scientifique
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-024"
-cando: "Peut présenter les théories de la résilience et débattre des risques de rupture systémique globale"
-```
+- **Lesson Code:** `FR-B2-024`
+- **Goal (Can-Do):** Peut présenter les théories de la résilience et débattre des risques de rupture systémique globale
 
 ### Lesson 5: L'éthique de la recherche et le financement de la science
 
@@ -308,10 +260,8 @@ cando: "Peut présenter les théories de la résilience et débattre des risques
 - L'infinitif passé
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-025"
-cando: "Peut évaluer la neutralité des publications scientifiques et débattre des conflits d'intérêts"
-```
+- **Lesson Code:** `FR-B2-025`
+- **Goal (Can-Do):** Peut évaluer la neutralité des publications scientifiques et débattre des conflits d'intérêts
 
 ## Unit 6: Unité 6 : Éducation, jeunesse et mutations sociétales
 
@@ -322,10 +272,8 @@ cando: "Peut évaluer la neutralité des publications scientifiques et débattre
 - Propositions subordonnées complétives
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-026"
-cando: "Peut comparer l'organisation des universités dans le monde et défendre un projet d'études internationales"
-```
+- **Lesson Code:** `FR-B2-026`
+- **Goal (Can-Do):** Peut comparer l'organisation des universités dans le monde et défendre un projet d'études internationales
 
 ### Lesson 2: La jeunesse face à l'engagement politique et climatique
 
@@ -334,10 +282,8 @@ cando: "Peut comparer l'organisation des universités dans le monde et défendre
 - Rhetorical devices in youth advocacy
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-027"
-cando: "Peut analyser les nouvelles formes d'engagement des jeunes et débattre de l'abstention électorale"
-```
+- **Lesson Code:** `FR-B2-027`
+- **Goal (Can-Do):** Peut analyser les nouvelles formes d'engagement des jeunes et débattre de l'abstention électorale
 
 ### Lesson 3: Éducation aux médias et déconstruction des stéréotypes
 
@@ -346,10 +292,8 @@ cando: "Peut analyser les nouvelles formes d'engagement des jeunes et débattre 
 - Adverbes de nuance épistémique (vraisemblablement, présumément)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-028"
-cando: "Peut présenter un atelier d'éducation aux médias destiné à développer le discernement des étudiants"
-```
+- **Lesson Code:** `FR-B2-028`
+- **Goal (Can-Do):** Peut présenter un atelier d'éducation aux médias destiné à développer le discernement des étudiants
 
 ### Lesson 4: Apprentissage tout au long de la vie et reconversion
 
@@ -358,10 +302,8 @@ cando: "Peut présenter un atelier d'éducation aux médias destiné à dévelop
 - Expressions de transition de carrière
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-029"
-cando: "Peut élaborer un projet de reconversion professionnelle et justifier l'acquisition de nouvelles compétences"
-```
+- **Lesson Code:** `FR-B2-029`
+- **Goal (Can-Do):** Peut élaborer un projet de reconversion professionnelle et justifier l'acquisition de nouvelles compétences
 
 ### Lesson 5: Santé mentale des jeunes et pression sociale
 
@@ -370,10 +312,8 @@ cando: "Peut élaborer un projet de reconversion professionnelle et justifier l'
 - Nouns of emotional health and support
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-030"
-cando: "Peut sensibiliser aux problèmes de santé mentale chez les jeunes et évaluer l'efficacité des dispositifs d'aide"
-```
+- **Lesson Code:** `FR-B2-030`
+- **Goal (Can-Do):** Peut sensibiliser aux problèmes de santé mentale chez les jeunes et évaluer l'efficacité des dispositifs d'aide
 
 ## Unit 7: Unité 7 : Justice, système pénal et libertés publiques
 
@@ -384,10 +324,8 @@ cando: "Peut sensibiliser aux problèmes de santé mentale chez les jeunes et é
 - Vocabulaire juridique précis
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-031"
-cando: "Peut expliquer les étapes d'un procès et les rôles des différents acteurs de la justice"
-```
+- **Lesson Code:** `FR-B2-031`
+- **Goal (Can-Do):** Peut expliquer les étapes d'un procès et les rôles des différents acteurs de la justice
 
 ### Lesson 2: Incarcération vs Peines alternatives
 
@@ -396,10 +334,8 @@ cando: "Peut expliquer les étapes d'un procès et les rôles des différents ac
 - Conditionnel d'évaluation d'efficacité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-032"
-cando: "Peut débattre de la fonction de la peine et comparer l'efficacité de la prison aux peines alternatives"
-```
+- **Lesson Code:** `FR-B2-032`
+- **Goal (Can-Do):** Peut débattre de la fonction de la peine et comparer l'efficacité de la prison aux peines alternatives
 
 ### Lesson 3: Cybercriminalité et protection de la vie privée
 
@@ -408,10 +344,8 @@ cando: "Peut débattre de la fonction de la peine et comparer l'efficacité de l
 - Adverbes de modalité juridique
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-033"
-cando: "Peut analyser les risques de la cybercriminalité et discuter des mesures de protection légale"
-```
+- **Lesson Code:** `FR-B2-033`
+- **Goal (Can-Do):** Peut analyser les risques de la cybercriminalité et discuter des mesures de protection légale
 
 ### Lesson 4: La laïcité et la liberté de conscience
 
@@ -420,10 +354,8 @@ cando: "Peut analyser les risques de la cybercriminalité et discuter des mesure
 - Nuances de définition et de neutralité de l'État
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-034"
-cando: "Peut expliquer le principe de laïcité dans le modèle républicain français et en débattre sereinement"
-```
+- **Lesson Code:** `FR-B2-034`
+- **Goal (Can-Do):** Peut expliquer le principe de laïcité dans le modèle républicain français et en débattre sereinement
 
 ### Lesson 5: Désobéissance civile et lanceurs d'alerte
 
@@ -432,10 +364,8 @@ cando: "Peut expliquer le principe de laïcité dans le modèle républicain fra
 - Subjonctif de concession (Quoi qu'en dise la loi...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-035"
-cando: "Peut confronter les notions de légalité et de légitimité à travers le statut des lanceurs d'alerte"
-```
+- **Lesson Code:** `FR-B2-035`
+- **Goal (Can-Do):** Peut confronter les notions de légalité et de légitimité à travers le statut des lanceurs d'alerte
 
 ## Unit 8: Unité 8 : Urbanisme, architecture et aménagement du territoire
 
@@ -446,10 +376,8 @@ cando: "Peut confronter les notions de légalité et de légitimité à travers 
 - Passif à valeur d'état
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-036"
-cando: "Peut analyser les tensions entre métropoles dynamiques et zones rurales en perte de services"
-```
+- **Lesson Code:** `FR-B2-036`
+- **Goal (Can-Do):** Peut analyser les tensions entre métropoles dynamiques et zones rurales en perte de services
 
 ### Lesson 2: Gentrification et mixité sociale dans les quartiers
 
@@ -458,10 +386,8 @@ cando: "Peut analyser les tensions entre métropoles dynamiques et zones rurales
 - Subjonctif de souhait politique
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-037"
-cando: "Peut évaluer les effets de la gentrification et discuter des politiques de maintien de la mixité sociale"
-```
+- **Lesson Code:** `FR-B2-037`
+- **Goal (Can-Do):** Peut évaluer les effets de la gentrification et discuter des politiques de maintien de la mixité sociale
 
 ### Lesson 3: Architecture bioclimatique et écoquartiers
 
@@ -470,10 +396,8 @@ cando: "Peut évaluer les effets de la gentrification et discuter des politiques
 - Conditionnel de conception architecturale
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-038"
-cando: "Peut présenter le projet d'un écoquartier et vanter les qualités d'un bâtiment bioclimatique"
-```
+- **Lesson Code:** `FR-B2-038`
+- **Goal (Can-Do):** Peut présenter le projet d'un écoquartier et vanter les qualités d'un bâtiment bioclimatique
 
 ### Lesson 4: Transports durables et ville du quart d'heure
 
@@ -482,10 +406,8 @@ cando: "Peut présenter le projet d'un écoquartier et vanter les qualités d'un
 - Syntagmes adjectivaux de commodité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-039"
-cando: "Peut débattre du concept de la 'ville du quart d'heure' et réorganiser les temps de déplacement urbain"
-```
+- **Lesson Code:** `FR-B2-039`
+- **Goal (Can-Do):** Peut débattre du concept de la 'ville du quart d'heure' et réorganiser les temps de déplacement urbain
 
 ### Lesson 5: Preservation du patrimoine vs Modernisation
 
@@ -494,10 +416,8 @@ cando: "Peut débattre du concept de la 'ville du quart d'heure' et réorganiser
 - Subjonctif de concession
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-040"
-cando: "Peut confronter les partisans de la conservation stricte aux architectes contemporains lors d'un projet de rénovation"
-```
+- **Lesson Code:** `FR-B2-040`
+- **Goal (Can-Do):** Peut confronter les partisans de la conservation stricte aux architectes contemporains lors d'un projet de rénovation
 
 ## Unit 9: Unité 9 : Langue française, linguistique et mondialisation
 
@@ -508,10 +428,8 @@ cando: "Peut confronter les partisans de la conservation stricte aux architectes
 - Registre très soutenu
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-041"
-cando: "Peut comprendre les débats sur la norme linguistique en France et donner son avis sur les réformes de l'orthographe"
-```
+- **Lesson Code:** `FR-B2-041`
+- **Goal (Can-Do):** Peut comprendre les débats sur la norme linguistique en France et donner son avis sur les réformes de l'orthographe
 
 ### Lesson 2: Les anglicismes et la défense de la langue française
 
@@ -520,10 +438,8 @@ cando: "Peut comprendre les débats sur la norme linguistique en France et donne
 - Lois linguistiques (Loi Toubon)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-042"
-cando: "Peut repérer les anglicismes dans le discours professionnel ou public et proposer des équivalents français recommandés"
-```
+- **Lesson Code:** `FR-B2-042`
+- **Goal (Can-Do):** Peut repérer les anglicismes dans le discours professionnel ou public et proposer des équivalents français recommandés
 
 ### Lesson 3: L'écriture inclusive et le genre dans la langue
 
@@ -532,10 +448,8 @@ cando: "Peut repérer les anglicismes dans le discours professionnel ou public e
 - Point médian et débats grammaticaux
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-043"
-cando: "Peut expliquer les enjeux politiques et grammaticaux de l'écriture inclusive et exprimer sa position"
-```
+- **Lesson Code:** `FR-B2-043`
+- **Goal (Can-Do):** Peut expliquer les enjeux politiques et grammaticaux de l'écriture inclusive et exprimer sa position
 
 ### Lesson 4: Argot, verlan et français parlé des jeunes
 
@@ -544,10 +458,8 @@ cando: "Peut expliquer les enjeux politiques et grammaticaux de l'écriture incl
 - Passage du registre familier au registre soutenu
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-044"
-cando: "Peut décoder les expressions familières et le verlan et adapter son registre de langue au contexte"
-```
+- **Lesson Code:** `FR-B2-044`
+- **Goal (Can-Do):** Peut décoder les expressions familières et le verlan et adapter son registre de langue au contexte
 
 ### Lesson 5: Plurilinguisme et politiques linguistiques de la Francophonie
 
@@ -556,10 +468,8 @@ cando: "Peut décoder les expressions familières et le verlan et adapter son re
 - Discours institutionnel
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-045"
-cando: "Peut argumenter en faveur du plurilinguisme et présenter la stratégie linguistique de l'OIF"
-```
+- **Lesson Code:** `FR-B2-045`
+- **Goal (Can-Do):** Peut argumenter en faveur du plurilinguisme et présenter la stratégie linguistique de l'OIF
 
 ## Unit 10: Unité 10 : Synthèse B2, essai argumentatif et certification
 
@@ -570,10 +480,8 @@ cando: "Peut argumenter en faveur du plurilinguisme et présenter la stratégie 
 - Connecteurs de transition avancés
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-046"
-cando: "Peut rédiger un essai argumentatif fluide et problématisé de 250 mots répondant exactement aux exigences du DELF B2"
-```
+- **Lesson Code:** `FR-B2-046`
+- **Goal (Can-Do):** Peut rédiger un essai argumentatif fluide et problématisé de 250 mots répondant exactement aux exigences du DELF B2
 
 ### Lesson 2: Méthodologie de la compréhension écrite et orale B2
 
@@ -582,10 +490,8 @@ cando: "Peut rédiger un essai argumentatif fluide et problématisé de 250 mots
 - Techniques de prise de notes rapides
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-047"
-cando: "Peut dégager l'attitude, l'humeur et l'implicite d'un locuteur dans un document audio ou écrit complexe"
-```
+- **Lesson Code:** `FR-B2-047`
+- **Goal (Can-Do):** Peut dégager l'attitude, l'humeur et l'implicite d'un locuteur dans un document audio ou écrit complexe
 
 ### Lesson 3: Préparation à l'épreuve de production orale du DELF B2
 
@@ -594,10 +500,8 @@ cando: "Peut dégager l'attitude, l'humeur et l'implicite d'un locuteur dans un 
 - Débat d'idées avec l'examinateur : défendre son point de vue et réagir
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-048"
-cando: "Peut soutenir un exposé oral structuré de 10 minutes et soutenir un débat contradictoire avec aisance"
-```
+- **Lesson Code:** `FR-B2-048`
+- **Goal (Can-Do):** Peut soutenir un exposé oral structuré de 10 minutes et soutenir un débat contradictoire avec aisance
 
 ### Lesson 4: Perfectionnement grammatical et pièges de la langue B2
 
@@ -606,10 +510,8 @@ cando: "Peut soutenir un exposé oral structuré de 10 minutes et soutenir un d�
 - Autocorrection rapide
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-049"
-cando: "Peut repérer et corriger ses propres erreurs grammaticales pour atteindre une grande exactitude linguistique"
-```
+- **Lesson Code:** `FR-B2-049`
+- **Goal (Can-Do):** Peut repérer et corriger ses propres erreurs grammaticales pour atteindre une grande exactitude linguistique
 
 ### Lesson 5: Examen bilan et certification du niveau B2 (DELF B2)
 
@@ -617,7 +519,5 @@ cando: "Peut repérer et corriger ses propres erreurs grammaticales pour atteind
 - Évaluation globale de toutes les compétences du niveau B2 (Indépendance et utilisateur avancé)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B2-050"
-cando: "Démontre une indépendance linguistique complète (niveau B2 / DELF B2) permettant d'étudier, travailler et débattre avec aisance dans tout le monde francophone"
-```
+- **Lesson Code:** `FR-B2-050`
+- **Goal (Can-Do):** Démontre une indépendance linguistique complète (niveau B2 / DELF B2) permettant d'étudier, travailler et débattre avec aisance dans tout le monde francophone
