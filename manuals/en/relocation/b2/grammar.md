@@ -11,10 +11,8 @@
 - Complex conditional requirements
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-B2-001"
-cando: "Can handle complex residency applications, visa renewals, and legal documentation."
-```
+- **Lesson Code:** `EN-RLC-B2-001`
+- **Goal (Can-Do):** Can handle complex residency applications, visa renewals, and legal documentation.
 
 ### Lesson 2: Property Purchase & Mortgage Negotiation
 
@@ -23,7 +21,5 @@ cando: "Can handle complex residency applications, visa renewals, and legal docu
 - Financial comparatives
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-B2-002"
-cando: "Can negotiate property purchases, mortgages, and legal contracts with advisors."
-```
+- **Lesson Code:** `EN-RLC-B2-002`
+- **Goal (Can-Do):** Can negotiate property purchases, mortgages, and legal contracts with advisors.

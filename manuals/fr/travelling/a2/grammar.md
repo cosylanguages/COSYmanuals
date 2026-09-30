@@ -11,10 +11,8 @@
 - Est-ce qu'il y a un retard prévu ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-001"
-cando: "Peut se renseigner sur les retards, échanger un billet et vérifier les correspondances."
-```
+- **Lesson Code:** `FR-TRV-A2-001`
+- **Goal (Can-Do):** Peut se renseigner sur les retards, échanger un billet et vérifier les correspondances.
 
 ### Lesson 2: Correspondances manquées et réémission de billets
 
@@ -23,10 +21,8 @@ cando: "Peut se renseigner sur les retards, échanger un billet et vérifier les
 - Y a-t-il des places disponibles sur le prochain vol ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-002"
-cando: "Peut faire réémettre son billet et solliciter une prise en charge en cas de correspondance manquée."
-```
+- **Lesson Code:** `FR-TRV-A2-002`
+- **Goal (Can-Do):** Peut faire réémettre son billet et solliciter une prise en charge en cas de correspondance manquée.
 
 ### Lesson 3: Location de voiture et conduite à l'étranger
 
@@ -35,10 +31,8 @@ cando: "Peut faire réémettre son billet et solliciter une prise en charge en c
 - Le kilométrage est-il illimité ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-003"
-cando: "Peut prendre possession d'une voiture de location et vérifier les conditions de contrat."
-```
+- **Lesson Code:** `FR-TRV-A2-003`
+- **Goal (Can-Do):** Peut prendre possession d'une voiture de location et vérifier les conditions de contrat.
 
 ### Lesson 4: Voyages en train grande vitesse et car interurbain
 
@@ -47,10 +41,8 @@ cando: "Peut prendre possession d'une voiture de location et vérifier les condi
 - Dans quelle voiture se trouve mon siège ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-004"
-cando: "Peut trouver son siège réservé et voyager sereinement en train ou en car longue distance."
-```
+- **Lesson Code:** `FR-TRV-A2-004`
+- **Goal (Can-Do):** Peut trouver son siège réservé et voyager sereinement en train ou en car longue distance.
 
 ## Unit 2: Réclamations et séjours sur mesure
 
@@ -61,10 +53,8 @@ cando: "Peut trouver son siège réservé et voyager sereinement en train ou en 
 - Serait-il possible de changer pour une chambre plus calme ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-005"
-cando: "Peut signaler un dysfonctionnement dans sa chambre et demander poliment un changement."
-```
+- **Lesson Code:** `FR-TRV-A2-005`
+- **Goal (Can-Do):** Peut signaler un dysfonctionnement dans sa chambre et demander poliment un changement.
 
 ### Lesson 2: Réservation de meublés et hébergements atypiques
 
@@ -73,10 +63,8 @@ cando: "Peut signaler un dysfonctionnement dans sa chambre et demander poliment 
 - Existe-t-il une procédure d'arrivée autonome ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-006"
-cando: "Peut communiquer avec l'hôte d'un meublé de tourisme et suivre les consignes d'arrivée."
-```
+- **Lesson Code:** `FR-TRV-A2-006`
+- **Goal (Can-Do):** Peut communiquer avec l'hôte d'un meublé de tourisme et suivre les consignes d'arrivée.
 
 ### Lesson 3: Demande de départ tardif et services annexes
 
@@ -85,10 +73,8 @@ cando: "Peut communiquer avec l'hôte d'un meublé de tourisme et suivre les con
 - Combien facturez-vous pour le service de... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-007"
-cando: "Peut négocier un horaire de départ flexible et se renseigner sur les services de l'hôtel."
-```
+- **Lesson Code:** `FR-TRV-A2-007`
+- **Goal (Can-Do):** Peut négocier un horaire de départ flexible et se renseigner sur les services de l'hôtel.
 
 ### Lesson 4: Contester une erreur sur la facture d'hôtel
 
@@ -97,10 +83,8 @@ cando: "Peut négocier un horaire de départ flexible et se renseigner sur les s
 - Je n'ai pas consommé cet article du minibar
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-008"
-cando: "Peut vérifier une facture d'hôtel détaillée et clarifier calmement les montants litigieux."
-```
+- **Lesson Code:** `FR-TRV-A2-008`
+- **Goal (Can-Do):** Peut vérifier une facture d'hôtel détaillée et clarifier calmement les montants litigieux.
 
 ## Unit 3: Gastronomie régionale et marchés locaux
 
@@ -111,10 +95,8 @@ cando: "Peut vérifier une facture d'hôtel détaillée et clarifier calmement l
 - Je suis allergique à...
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-009"
-cando: "Peut commander des plats régionaux, indiquer ses besoins diététiques et payer."
-```
+- **Lesson Code:** `FR-TRV-A2-009`
+- **Goal (Can-Do):** Peut commander des plats régionaux, indiquer ses besoins diététiques et payer.
 
 ### Lesson 2: Exprimer des restrictions et allergies alimentaires
 
@@ -123,10 +105,8 @@ cando: "Peut commander des plats régionaux, indiquer ses besoins diététiques 
 - Pouvez-vous préparer ce plat sans... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-010"
-cando: "Peut poser des questions précises sur la composition des plats au restaurant."
-```
+- **Lesson Code:** `FR-TRV-A2-010`
+- **Goal (Can-Do):** Peut poser des questions précises sur la composition des plats au restaurant.
 
 ### Lesson 3: Faire ses courses aux marchés locaux et halles
 
@@ -135,10 +115,8 @@ cando: "Peut poser des questions précises sur la composition des plats au resta
 - Puis-je gouter un morceau ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-011"
-cando: "Peut acheter des produits locaux sur les marchés en plein air et demander à goûter."
-```
+- **Lesson Code:** `FR-TRV-A2-011`
+- **Goal (Can-Do):** Peut acheter des produits locaux sur les marchés en plein air et demander à goûter.
 
 ### Lesson 4: Usages du pourboire et partage de l'addition
 
@@ -147,10 +125,8 @@ cando: "Peut acheter des produits locaux sur les marchés en plein air et demand
 - Le service est-il inclus dans le prix ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-012"
-cando: "Peut gérer le règlement d'un repas en groupe et appliquer les coutumes locales de pourboire."
-```
+- **Lesson Code:** `FR-TRV-A2-012`
+- **Goal (Can-Do):** Peut gérer le règlement d'un repas en groupe et appliquer les coutumes locales de pourboire.
 
 ## Unit 4: Visites culturelles et excursions locales
 
@@ -161,10 +137,8 @@ cando: "Peut gérer le règlement d'un repas en groupe et appliquer les coutumes
 - L'entrée est-elle incluse dans ce pass ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-013"
-cando: "Peut acheter des pass culturels et demander des informations sur les tarifs réduits."
-```
+- **Lesson Code:** `FR-TRV-A2-013`
+- **Goal (Can-Do):** Peut acheter des pass culturels et demander des informations sur les tarifs réduits.
 
 ### Lesson 2: Participer à une visite guidée à pied
 
@@ -173,10 +147,8 @@ cando: "Peut acheter des pass culturels et demander des informations sur les tar
 - Combien de temps dure la visite ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-014"
-cando: "Peut suivre une visite guidée et demander des précisions sur le déroulement du parcours."
-```
+- **Lesson Code:** `FR-TRV-A2-014`
+- **Goal (Can-Do):** Peut suivre une visite guidée et demander des précisions sur le déroulement du parcours.
 
 ### Lesson 3: Demander des conseils secrets aux habitants
 
@@ -185,10 +157,8 @@ cando: "Peut suivre une visite guidée et demander des précisions sur le dérou
 - Où les habitants ont-ils l'habitude d'aller ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-015"
-cando: "Peut demander aux habitants leurs bonnes adresses locales authentiques."
-```
+- **Lesson Code:** `FR-TRV-A2-015`
+- **Goal (Can-Do):** Peut demander aux habitants leurs bonnes adresses locales authentiques.
 
 ### Lesson 4: Explorer les quartiers et étiquette photographique
 
@@ -197,10 +167,8 @@ cando: "Peut demander aux habitants leurs bonnes adresses locales authentiques."
 - Pourriez-vous nous prendre en photo ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-016"
-cando: "Peut demander poliment l'autorisation de photographier ou solliciter quelqu'un pour une photo de groupe."
-```
+- **Lesson Code:** `FR-TRV-A2-016`
+- **Goal (Can-Do):** Peut demander poliment l'autorisation de photographier ou solliciter quelqu'un pour une photo de groupe.
 
 ## Unit 5: Santé, météo et petits imprévus
 
@@ -211,10 +179,8 @@ cando: "Peut demander poliment l'autorisation de photographier ou solliciter que
 - Faut-il une ordonnance pour ce médicament ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-017"
-cando: "Peut expliquer ses symptômes dans un centre médical et comprendre les conseils d'un médecin."
-```
+- **Lesson Code:** `FR-TRV-A2-017`
+- **Goal (Can-Do):** Peut expliquer ses symptômes dans un centre médical et comprendre les conseils d'un médecin.
 
 ### Lesson 2: Faire opposition sur une carte bancaire perdue
 
@@ -223,10 +189,8 @@ cando: "Peut expliquer ses symptômes dans un centre médical et comprendre les 
 - Comment puis-je recevoir un virement d'urgence ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-018"
-cando: "Peut contacter le service d'opposition bancaire pour bloquer une carte perdue ou volée."
-```
+- **Lesson Code:** `FR-TRV-A2-018`
+- **Goal (Can-Do):** Peut contacter le service d'opposition bancaire pour bloquer une carte perdue ou volée.
 
 ### Lesson 3: Adapter ses activités à la météo et aux fermetures
 
@@ -235,10 +199,8 @@ cando: "Peut contacter le service d'opposition bancaire pour bloquer une carte p
 - Quelles activités en intérieur proposez-vous ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-019"
-cando: "Peut ajuster son programme de visite en cas d'intempéries ou d'imprévus."
-```
+- **Lesson Code:** `FR-TRV-A2-019`
+- **Goal (Can-Do):** Peut ajuster son programme de visite en cas d'intempéries ou d'imprévus.
 
 ### Lesson 4: Déclaration au bureau des objets trouvés et police touristique
 
@@ -247,7 +209,5 @@ cando: "Peut ajuster son programme de visite en cas d'intempéries ou d'imprévu
 - Je souhaite effectuer une déclaration de perte
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A2-020"
-cando: "Peut remplir une déclaration de perte auprès des services de gare ou de la police touristique."
-```
+- **Lesson Code:** `FR-TRV-A2-020`
+- **Goal (Can-Do):** Peut remplir une déclaration de perte auprès des services de gare ou de la police touristique.

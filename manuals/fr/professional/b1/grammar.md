@@ -11,11 +11,10 @@
 - Futur proche pour organiser des rendez-vous
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-001"
-cando: "Peut rédiger des courriels professionnels simples et structurés avec les formules de politesse adéquates."
-domain_hints: "Éducation : Courriels aux étudiants ; Juridique : Suivi de dossier ; Médical : Prise de RDV patient ; Informatique : Tickets de support ; Commerce : Devis client ; BTP/Artisanat : Demandes de matériaux ; Métiers d'art : Confirmation de commande."
-```
+- **Lesson Code:** `FR-PRO-B1-001`
+- **Goal (Can-Do):** Peut rédiger des courriels professionnels simples et structurés avec les formules de politesse adéquates.
+- **Notes:**
+  - domain_hints: "Éducation : Courriels aux étudiants ; Juridique : Suivi de dossier ; Médical : Prise de RDV patient ; Informatique : Tickets de support ; Commerce : Devis client ; BTP/Artisanat : Demandes de matériaux ; Métiers d'art : Confirmation de commande."
 
 ### Lesson 2: Demandes de renseignements et relances écrites
 
@@ -24,11 +23,10 @@ domain_hints: "Éducation : Courriels aux étudiants ; Juridique : Suivi de doss
 - Questions indirectes (Je voulais savoir si...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-002"
-cando: "Peut faire une demande d'information et relancer un interlocuteur professionnel avec courtoisie."
-domain_hints: "Éducation : Renseignements sur les cours ; Juridique : Demandes de pièces ; Médical : Suivi de résultats ; Informatique : Statut de bug ; Commerce : Relance fournisseurs ; BTP : Accès au chantier ; Métiers d'art : Commandes de fournitures."
-```
+- **Lesson Code:** `FR-PRO-B1-002`
+- **Goal (Can-Do):** Peut faire une demande d'information et relancer un interlocuteur professionnel avec courtoisie.
+- **Notes:**
+  - domain_hints: "Éducation : Renseignements sur les cours ; Juridique : Demandes de pièces ; Médical : Suivi de résultats ; Informatique : Statut de bug ; Commerce : Relance fournisseurs ; BTP : Accès au chantier ; Métiers d'art : Commandes de fournitures."
 
 ### Lesson 3: Rédaction de notes de service et comptes-rendus simples
 
@@ -37,11 +35,10 @@ domain_hints: "Éducation : Renseignements sur les cours ; Juridique : Demandes 
 - Mise en page par puces et phrases impératives
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-003"
-cando: "Peut rédiger une note d'information interne ou un compte-rendu de réunion synthétique."
-domain_hints: "Éducation : Notes de service de la faculté ; Juridique : Synthèses de réunions ; Médical : Consignes de service hospitalier ; Informatique : Notes de maintenance ; Commerce : Notes internes ; BTP : Consignes de sécurité ; Métiers d'art : Règles d'atelier."
-```
+- **Lesson Code:** `FR-PRO-B1-003`
+- **Goal (Can-Do):** Peut rédiger une note d'information interne ou un compte-rendu de réunion synthétique.
+- **Notes:**
+  - domain_hints: "Éducation : Notes de service de la faculté ; Juridique : Synthèses de réunions ; Médical : Consignes de service hospitalier ; Informatique : Notes de maintenance ; Commerce : Notes internes ; BTP : Consignes de sécurité ; Métiers d'art : Règles d'atelier."
 
 ### Lesson 4: Messages d'absence, retards et excuses professionnelles
 
@@ -50,11 +47,10 @@ domain_hints: "Éducation : Notes de service de la faculté ; Juridique : Synth�
 - Phrases conditionnelles pour proposer une alternative (En cas d'urgence, contactez...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-004"
-cando: "Peut configurer un message automatique d'absence et formuler des excuses professionnelles en cas de retard."
-domain_hints: "Éducation : Report de cours ; Juridique : Report d'audience ; Médical : Décalage de consultation ; Informatique : Interruption de service ; Commerce : Retard de livraison ; BTP : Délais météo ; Métiers d'art : Délais de fabrication."
-```
+- **Lesson Code:** `FR-PRO-B1-004`
+- **Goal (Can-Do):** Peut configurer un message automatique d'absence et formuler des excuses professionnelles en cas de retard.
+- **Notes:**
+  - domain_hints: "Éducation : Report de cours ; Juridique : Report d'audience ; Médical : Décalage de consultation ; Informatique : Interruption de service ; Commerce : Retard de livraison ; BTP : Délais météo ; Métiers d'art : Délais de fabrication."
 
 ## Unit 2: Réunions & Collaboration d'équipe
 
@@ -65,11 +61,10 @@ domain_hints: "Éducation : Report de cours ; Juridique : Report d'audience ; M�
 - Verbes modaux pour proposer des actions (devoir, pouvoir, falloir)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-005"
-cando: "Peut présenter l'avancement de ses tâches et intervenir sur l'ordre du jour d'une réunion."
-domain_hints: "Éducation : Réunions de département ; Juridique : Revues de dossiers ; Médical : Transmissions de garde ; Informatique : Standups quotidiens ; Commerce : Points de vente ; BTP : Briefings de chantier ; Métiers d'art : Préparation d'expositions."
-```
+- **Lesson Code:** `FR-PRO-B1-005`
+- **Goal (Can-Do):** Peut présenter l'avancement de ses tâches et intervenir sur l'ordre du jour d'une réunion.
+- **Notes:**
+  - domain_hints: "Éducation : Réunions de département ; Juridique : Revues de dossiers ; Médical : Transmissions de garde ; Informatique : Standups quotidiens ; Commerce : Points de vente ; BTP : Briefings de chantier ; Métiers d'art : Préparation d'expositions."
 
 ### Lesson 2: Demander des précisions et interrompre avec politesse
 
@@ -78,11 +73,10 @@ domain_hints: "Éducation : Réunions de département ; Juridique : Revues de do
 - Formules d'interruption courtoises (Puis-je me permettre d'intervenir, Est-il possible de préciser)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-006"
-cando: "Peut demander des éclaircissements et interrompre poliment un collègue durant une réunion."
-domain_hints: "Éducation : Questions en séminaire ; Juridique : Débriefings de cabinet ; Médical : Visites médicales ; Informatique : Revues d'architecture ; Commerce : Appels clients ; BTP : Réunions de sous-traitance ; Métiers d'art : Consultations d'artisans."
-```
+- **Lesson Code:** `FR-PRO-B1-006`
+- **Goal (Can-Do):** Peut demander des éclaircissements et interrompre poliment un collègue durant une réunion.
+- **Notes:**
+  - domain_hints: "Éducation : Questions en séminaire ; Juridique : Débriefings de cabinet ; Médical : Visites médicales ; Informatique : Revues d'architecture ; Commerce : Appels clients ; BTP : Réunions de sous-traitance ; Métiers d'art : Consultations d'artisans."
 
 ### Lesson 3: Exprimer l'accord, le désaccord et faire des suggestions
 
@@ -91,11 +85,10 @@ domain_hints: "Éducation : Questions en séminaire ; Juridique : Débriefings d
 - Proposer des alternatives (Pourquoi ne pas..., Et si nous...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-007"
-cando: "Peut exprimer son accord ou désaccord partiel et formuler des propositions constructives."
-domain_hints: "Éducation : Élaboration de maquettes pédagogiques ; Juridique : Choix de stratégie ; Médical : Choix de traitements ; Informatique : Choix de technologies ; Commerce : Stratégie de vente ; BTP : Ajustements de plans ; Métiers d'art : Choix de matériaux."
-```
+- **Lesson Code:** `FR-PRO-B1-007`
+- **Goal (Can-Do):** Peut exprimer son accord ou désaccord partiel et formuler des propositions constructives.
+- **Notes:**
+  - domain_hints: "Éducation : Élaboration de maquettes pédagogiques ; Juridique : Choix de stratégie ; Médical : Choix de traitements ; Informatique : Choix de technologies ; Commerce : Stratégie de vente ; BTP : Ajustements de plans ; Métiers d'art : Choix de matériaux."
 
 ### Lesson 4: Prise de notes et relevé de décisions
 
@@ -104,11 +97,10 @@ domain_hints: "Éducation : Élaboration de maquettes pédagogiques ; Juridique 
 - Obligation future (La tâche devra être réalisée avant le...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-008"
-cando: "Peut prendre des notes efficaces et rédiger un relevé de décisions clair."
-domain_hints: "Éducation : Comptes-rendus de conseil de classe ; Juridique : Notes d'audience ; Médical : Transmissions médicales ; Informatique : Retrospectives de sprint ; Commerce : Relevés de décisions commerciales ; BTP : Rapports de visite de chantier ; Métiers d'art : Fiches de fabrication."
-```
+- **Lesson Code:** `FR-PRO-B1-008`
+- **Goal (Can-Do):** Peut prendre des notes efficaces et rédiger un relevé de décisions clair.
+- **Notes:**
+  - domain_hints: "Éducation : Comptes-rendus de conseil de classe ; Juridique : Notes d'audience ; Médical : Transmissions médicales ; Informatique : Retrospectives de sprint ; Commerce : Relevés de décisions commerciales ; BTP : Rapports de visite de chantier ; Métiers d'art : Fiches de fabrication."
 
 ## Unit 3: Présentations & Prise de parole
 
@@ -119,11 +111,10 @@ domain_hints: "Éducation : Comptes-rendus de conseil de classe ; Juridique : No
 - Présent de l'indicatif pour présenter l'entreprise ou le projet
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-009"
-cando: "Peut introduire et structurer une présentation courte ou un cours introductif avec des connecteurs."
-domain_hints: "Éducation : Cours magistraux introductifs ; Juridique : Présentations de cas ; Médical : Exposés de prévention ; Informatique : Présentations de fonctionnalités ; Commerce : Démos produits ; BTP : Sensibilisation à la sécurité ; Métiers d'art : Présentations d'ateliers."
-```
+- **Lesson Code:** `FR-PRO-B1-009`
+- **Goal (Can-Do):** Peut introduire et structurer une présentation courte ou un cours introductif avec des connecteurs.
+- **Notes:**
+  - domain_hints: "Éducation : Cours magistraux introductifs ; Juridique : Présentations de cas ; Médical : Exposés de prévention ; Informatique : Présentations de fonctionnalités ; Commerce : Démos produits ; BTP : Sensibilisation à la sécurité ; Métiers d'art : Présentations d'ateliers."
 
 ### Lesson 2: Présenter des chiffres, graphiques et données de recherche
 
@@ -132,11 +123,10 @@ domain_hints: "Éducation : Cours magistraux introductifs ; Juridique : Présent
 - Prépositions de comparaison et de quantité (une hausse de 5 %, s'élever à)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-010"
-cando: "Peut commenter des données chiffrées simples et expliquer l'évolution d'un graphique."
-domain_hints: "Éducation : Statistiques de réussite ; Juridique : Données du contentieux ; Médical : Données d'essais cliniques ; Informatique : Métriques de performance ; Commerce : Graphiques de vente ; BTP : Évolution du coût des matériaux ; Métiers d'art : Tendances des ventes d'œuvres."
-```
+- **Lesson Code:** `FR-PRO-B1-010`
+- **Goal (Can-Do):** Peut commenter des données chiffrées simples et expliquer l'évolution d'un graphique.
+- **Notes:**
+  - domain_hints: "Éducation : Statistiques de réussite ; Juridique : Données du contentieux ; Médical : Données d'essais cliniques ; Informatique : Métriques de performance ; Commerce : Graphiques de vente ; BTP : Évolution du coût des matériaux ; Métiers d'art : Tendances des ventes d'œuvres."
 
 ### Lesson 3: Expliquer un processus de travail ou protocole de laboratoire
 
@@ -145,11 +135,10 @@ domain_hints: "Éducation : Statistiques de réussite ; Juridique : Données du 
 - Voix passive pour décrire un processus opérationnel
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-011"
-cando: "Peut expliquer étape par étape une méthode de travail, un protocole de labo ou une procédure."
-domain_hints: "Éducation : Protocoles d'expériences en TP ; Juridique : Procédures de dépôt ; Médical : Protocoles de soins ; Informatique : Pipelines de déploiement ; Commerce : Processus de commande ; BTP : Étapes de câblage ; Métiers d meuble/céramique : Étapes de cuisson."
-```
+- **Lesson Code:** `FR-PRO-B1-011`
+- **Goal (Can-Do):** Peut expliquer étape par étape une méthode de travail, un protocole de labo ou une procédure.
+- **Notes:**
+  - domain_hints: "Éducation : Protocoles d'expériences en TP ; Juridique : Procédures de dépôt ; Médical : Protocoles de soins ; Informatique : Pipelines de déploiement ; Commerce : Processus de commande ; BTP : Étapes de câblage ; Métiers d meuble/céramique : Étapes de cuisson."
 
 ### Lesson 4: Gérer les questions du public et l'interaction de classe
 
@@ -158,11 +147,10 @@ domain_hints: "Éducation : Protocoles d'expériences en TP ; Juridique : Procé
 - Expressions d'engagement conditionnel (Si vous souhaitez plus de détails, je peux vous envoyer...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-012"
-cando: "Peut répondre aux questions simples du public ou des étudiants à la fin d'une présentation."
-domain_hints: "Éducation : Questions d'étudiants ; Juridique : Questions de clients ; Médical : Questions de familles de patients ; Informatique : Retours d'utilisateurs ; Commerce : Questions d'acheteurs ; BTP : Inquiétudes de riverains ; Métiers d'art : Questions de visiteurs d'exposition."
-```
+- **Lesson Code:** `FR-PRO-B1-012`
+- **Goal (Can-Do):** Peut répondre aux questions simples du public ou des étudiants à la fin d'une présentation.
+- **Notes:**
+  - domain_hints: "Éducation : Questions d'étudiants ; Juridique : Questions de clients ; Médical : Questions de familles de patients ; Informatique : Retours d'utilisateurs ; Commerce : Questions d'acheteurs ; BTP : Inquiétudes de riverains ; Métiers d'art : Questions de visiteurs d'exposition."
 
 ## Unit 4: Négociation, Persuasion & Résolution de problèmes
 
@@ -173,11 +161,10 @@ domain_hints: "Éducation : Questions d'étudiants ; Juridique : Questions de cl
 - Expressions quantitatives et budgétaires
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-013"
-cando: "Peut négocier une remise tarifaire, des honoraires ou des conditions de livraison simples."
-domain_hints: "Éducation : Tarifs de cours particuliers ; Juridique : Honoraires de conseil ; Médical : Coûts de matériel médical ; Informatique : Licences de logiciels ; Commerce : Tarifs gros ; BTP : Taux de sous-traitance ; Métiers d'art : Prix des matières premières."
-```
+- **Lesson Code:** `FR-PRO-B1-013`
+- **Goal (Can-Do):** Peut négocier une remise tarifaire, des honoraires ou des conditions de livraison simples.
+- **Notes:**
+  - domain_hints: "Éducation : Tarifs de cours particuliers ; Juridique : Honoraires de conseil ; Médical : Coûts de matériel médical ; Informatique : Licences de logiciels ; Commerce : Tarifs gros ; BTP : Taux de sous-traitance ; Métiers d'art : Prix des matières premières."
 
 ### Lesson 2: Formuler des propositions et des contre-offres de prestation
 
@@ -186,11 +173,10 @@ domain_hints: "Éducation : Tarifs de cours particuliers ; Juridique : Honoraire
 - Comparatifs de valeur (beaucoup plus avantageux, légèrement plus cher)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-014"
-cando: "Peut présenter une offre initiale et négocier une contre-proposition raisonnable."
-domain_hints: "Éducation : Subventions de recherche ; Juridique : Modallités d'accord à l'amiable ; Médical : Location d'équipements ; Informatique : Périmètres de projet ; Commerce : Contrats de prestation ; BTP : Délais de chantier ; Métiers d'art : Commandes sur-mesure."
-```
+- **Lesson Code:** `FR-PRO-B1-014`
+- **Goal (Can-Do):** Peut présenter une offre initiale et négocier une contre-proposition raisonnable.
+- **Notes:**
+  - domain_hints: "Éducation : Subventions de recherche ; Juridique : Modallités d'accord à l'amiable ; Médical : Location d'équipements ; Informatique : Périmètres de projet ; Commerce : Contrats de prestation ; BTP : Délais de chantier ; Métiers d'art : Commandes sur-mesure."
 
 ### Lesson 3: Gérer les réclamations et désaccords au travail
 
@@ -199,11 +185,10 @@ domain_hints: "Éducation : Subventions de recherche ; Juridique : Modallités d
 - Imparfait pour poser le contexte d'un problème
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-015"
-cando: "Peut répondre calmement à un client mécontent ou résoudre un litige mineur entre collègues."
-domain_hints: "Éducation : Inquiétudes de parents d'élèves ; Juridique : Litiges de facturation ; Médical : Délais d'attente ; Informatique : Signalements de bugs ; Commerce : Service après-vente ; BTP : Malfaçons mineures ; Métiers d'art : Retouches de créations."
-```
+- **Lesson Code:** `FR-PRO-B1-015`
+- **Goal (Can-Do):** Peut répondre calmement à un client mécontent ou résoudre un litige mineur entre collègues.
+- **Notes:**
+  - domain_hints: "Éducation : Inquiétudes de parents d'élèves ; Juridique : Litiges de facturation ; Médical : Délais d'attente ; Informatique : Signalements de bugs ; Commerce : Service après-vente ; BTP : Malfaçons mineures ; Métiers d'art : Retouches de créations."
 
 ### Lesson 4: Conclure un accord et valider les modalités du contrat
 
@@ -212,11 +197,10 @@ domain_hints: "Éducation : Inquiétudes de parents d'élèves ; Juridique : Lit
 - Futur simple pour prendre des engagements fermes
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-016"
-cando: "Peut finaliser un accord commercial et en récapituler les termes par écrit ou à l'oral."
-domain_hints: "Éducation : Conventions de stage ; Juridique : Mandats de représentation ; Médical : Consentements éclairés ; Informatique : Validation de livrables ; Commerce : Signatures de contrats ; BTP : Procès-verbaux de réception ; Métiers d'art : Contrats de galerie."
-```
+- **Lesson Code:** `FR-PRO-B1-016`
+- **Goal (Can-Do):** Peut finaliser un accord commercial et en récapituler les termes par écrit ou à l'oral.
+- **Notes:**
+  - domain_hints: "Éducation : Conventions de stage ; Juridique : Mandats de représentation ; Médical : Consentements éclairés ; Informatique : Validation de livrables ; Commerce : Signatures de contrats ; BTP : Procès-verbaux de réception ; Métiers d'art : Contrats de galerie."
 
 ## Unit 5: Réseautage, Colloques & Relations professionnelles
 
@@ -227,11 +211,10 @@ domain_hints: "Éducation : Conventions de stage ; Juridique : Mandats de repré
 - Présent de continuité pour parler de l'activité actuelle
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-017"
-cando: "Peut accueillir un visiteur professionnel, faire la conversation autour du café et montrer les locaux."
-domain_hints: "Éducation : Chercheurs invités ; Juridique : Clients au cabinet ; Médical : Visiteurs de clinique ; Informatique : Consultants externes ; Commerce : Invités au siège ; BTP : Inspecteurs de chantier ; Métiers d'art : Collectionneurs à l'atelier."
-```
+- **Lesson Code:** `FR-PRO-B1-017`
+- **Goal (Can-Do):** Peut accueillir un visiteur professionnel, faire la conversation autour du café et montrer les locaux.
+- **Notes:**
+  - domain_hints: "Éducation : Chercheurs invités ; Juridique : Clients au cabinet ; Médical : Visiteurs de clinique ; Informatique : Consultants externes ; Commerce : Invités au siège ; BTP : Inspecteurs de chantier ; Métiers d'art : Collectionneurs à l'atelier."
 
 ### Lesson 2: Se présenter lors d'un salon professionnel ou colloque
 
@@ -240,11 +223,10 @@ domain_hints: "Éducation : Chercheurs invités ; Juridique : Clients au cabinet
 - Passé composé avec depuis / pendant pour le parcours pro
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-018"
-cando: "Peut se présenter succinctement lors d'un salon professionnel ou colloque et échanger ses coordonnées."
-domain_hints: "Éducation : Colloques universitaires ; Juridique : Congrès du barreau ; Médical : Congrès médicaux ; Informatique : Sommets de développeurs ; Commerce : Salons professionnels ; BTP : Foires du bâtiment ; Métiers d'art : Salons de création."
-```
+- **Lesson Code:** `FR-PRO-B1-018`
+- **Goal (Can-Do):** Peut se présenter succinctement lors d'un salon professionnel ou colloque et échanger ses coordonnées.
+- **Notes:**
+  - domain_hints: "Éducation : Colloques universitaires ; Juridique : Congrès du barreau ; Médical : Congrès médicaux ; Informatique : Sommets de développeurs ; Commerce : Salons professionnels ; BTP : Foires du bâtiment ; Métiers d'art : Salons de création."
 
 ### Lesson 3: Créer du lien et respecter les usages professionnels
 
@@ -253,11 +235,10 @@ domain_hints: "Éducation : Colloques universitaires ; Juridique : Congrès du b
 - Formules de politesse et règles de savoir-vivre en entreprise
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-019"
-cando: "Peut adapter son niveau de langue (tu/vous) et faire preuve de savoir-vivre dans le monde des affaires."
-domain_hints: "Éducation : Échanges internationaux ; Juridique : Dossiers transfrontaliers ; Médical : Relations soignants-soignés ; Informatique : Équipes multiculturelles ; Commerce : Clients internationaux ; BTP : Équipes de chantier internationales ; Métiers d'art : Expositions à l'étranger."
-```
+- **Lesson Code:** `FR-PRO-B1-019`
+- **Goal (Can-Do):** Peut adapter son niveau de langue (tu/vous) et faire preuve de savoir-vivre dans le monde des affaires.
+- **Notes:**
+  - domain_hints: "Éducation : Échanges internationaux ; Juridique : Dossiers transfrontaliers ; Médical : Relations soignants-soignés ; Informatique : Équipes multiculturelles ; Commerce : Clients internationaux ; BTP : Équipes de chantier internationales ; Métiers d'art : Expositions à l'étranger."
 
 ### Lesson 4: Organiser et décaler un déjeuner d'affaires ou rendez-vous
 
@@ -266,11 +247,10 @@ domain_hints: "Éducation : Échanges internationaux ; Juridique : Dossiers tran
 - Prépositions de temps et de lieu
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-020"
-cando: "Peut planifier, modifier ou décaler un rendez-vous professionnel, un cours ou un déjeuner d'affaires."
-domain_hints: "Éducation : Permanences d'enseignants ; Juridique : Rendez-vous clients ; Médical : RDV de suivi ; Informatique : Appels de démo ; Commerce : Déjeuners clients ; BTP : Visites de chantier ; Métiers d'art : RDV en galerie."
-```
+- **Lesson Code:** `FR-PRO-B1-020`
+- **Goal (Can-Do):** Peut planifier, modifier ou décaler un rendez-vous professionnel, un cours ou un déjeuner d'affaires.
+- **Notes:**
+  - domain_hints: "Éducation : Permanences d'enseignants ; Juridique : Rendez-vous clients ; Médical : RDV de suivi ; Informatique : Appels de démo ; Commerce : Déjeuners clients ; BTP : Visites de chantier ; Métiers d'art : RDV en galerie."
 
 ## Unit 6: Recrutement, CV, Entretiens & Évaluation
 
@@ -281,11 +261,10 @@ domain_hints: "Éducation : Permanences d'enseignants ; Juridique : Rendez-vous 
 - Groupes nominaux synthétiques pour les compétences
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-021"
-cando: "Peut rédiger un CV ou profil académique clair en français valorisant son parcours et ses compétences."
-domain_hints: "Éducation : Titres et travaux d'enseignement ; Juridique : Stages en cabinet ; Médical : Internat et gardes ; Informatique : Projets et technologies ; Commerce : Résultats commerciaux ; BTP : Habilitations et chantiers ; Métiers d'art : Portfolio et expositions."
-```
+- **Lesson Code:** `FR-PRO-B1-021`
+- **Goal (Can-Do):** Peut rédiger un CV ou profil académique clair en français valorisant son parcours et ses compétences.
+- **Notes:**
+  - domain_hints: "Éducation : Titres et travaux d'enseignement ; Juridique : Stages en cabinet ; Médical : Internat et gardes ; Informatique : Projets et technologies ; Commerce : Résultats commerciaux ; BTP : Habilitations et chantiers ; Métiers d'art : Portfolio et expositions."
 
 ### Lesson 2: Rédiger une lettre de motivation convaincante
 
@@ -294,11 +273,10 @@ domain_hints: "Éducation : Titres et travaux d'enseignement ; Juridique : Stage
 - Passé composé et présent pour relier ses expériences au poste visé
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-022"
-cando: "Peut rédiger une lettre de motivation simple récapitulant son intérêt pour un poste ou un projet de recherche."
-domain_hints: "Éducation : Postes d'enseignant-chercheur ; Juridique : Postes de juriste ; Médical : Postes de praticien ; Informatique : Postes de développeur ; Commerce : Postes de chef de produit ; BTP : Postes de conducteur de travaux ; Métiers d'art : Résidences d'artistes."
-```
+- **Lesson Code:** `FR-PRO-B1-022`
+- **Goal (Can-Do):** Peut rédiger une lettre de motivation simple récapitulant son intérêt pour un poste ou un projet de recherche.
+- **Notes:**
+  - domain_hints: "Éducation : Postes d'enseignant-chercheur ; Juridique : Postes de juriste ; Médical : Postes de praticien ; Informatique : Postes de développeur ; Commerce : Postes de chef de produit ; BTP : Postes de conducteur de travaux ; Métiers d'art : Résidences d'artistes."
 
 ### Lesson 3: Entretien d'embauche : présenter son parcours et ses atouts
 
@@ -307,11 +285,10 @@ domain_hints: "Éducation : Postes d'enseignant-chercheur ; Juridique : Postes d
 - Mettre en valeur ses qualités (Je suis reconnu pour ma rigueur, mes points forts sont...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-023"
-cando: "Peut répondre aux questions classiques d'un entretien d'embauche sur son expérience et ses points forts."
-domain_hints: "Éducation : Expérience pédagogique ; Juridique : Pratique du droit ; Médical : Expérience clinique ; Informatique : Projets informatiques ; Commerce : Réalisations de ventes ; BTP : Chantiers gérés ; Métiers d'art : Techniques maîtrisées."
-```
+- **Lesson Code:** `FR-PRO-B1-023`
+- **Goal (Can-Do):** Peut répondre aux questions classiques d'un entretien d'embauche sur son expérience et ses points forts.
+- **Notes:**
+  - domain_hints: "Éducation : Expérience pédagogique ; Juridique : Pratique du droit ; Médical : Expérience clinique ; Informatique : Projets informatiques ; Commerce : Réalisations de ventes ; BTP : Chantiers gérés ; Métiers d'art : Techniques maîtrisées."
 
 ### Lesson 4: Préparer son entretien annuel d'évaluation et fixer des objectifs
 
@@ -320,8 +297,7 @@ domain_hints: "Éducation : Expérience pédagogique ; Juridique : Pratique du d
 - Formulations pour recevoir et donner des retours constructifs
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-PRO-B1-024"
-cando: "Peut échanger lors de son entretien annuel d'évaluation, faire le bilan de l'année et fixer ses objectifs."
-domain_hints: "Éducation : Évaluations d'enseignants ; Juridique : Bilans d'avocats collaborateurs ; Médical : Évaluations de compétences médicales ; Informatique : Revues de code et de niveau ; Commerce : Bilans de ventes ; BTP : Bilans de sécurité et qualité ; Métiers d'art : Évaluations de production d'atelier."
-```
+- **Lesson Code:** `FR-PRO-B1-024`
+- **Goal (Can-Do):** Peut échanger lors de son entretien annuel d'évaluation, faire le bilan de l'année et fixer ses objectifs.
+- **Notes:**
+  - domain_hints: "Éducation : Évaluations d'enseignants ; Juridique : Bilans d'avocats collaborateurs ; Médical : Évaluations de compétences médicales ; Informatique : Revues de code et de niveau ; Commerce : Bilans de ventes ; BTP : Bilans de sécurité et qualité ; Métiers d'art : Évaluations de production d'atelier."

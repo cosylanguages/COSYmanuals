@@ -11,10 +11,8 @@
 - Describing symptoms in past simple
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-B1-001"
-cando: "Can schedule medical appointments, describe symptoms, and handle prescriptions."
-```
+- **Lesson Code:** `EN-RLC-B1-001`
+- **Goal (Can-Do):** Can schedule medical appointments, describe symptoms, and handle prescriptions.
 
 ### Lesson 2: School Enrollment & Neighborhood Life
 
@@ -23,7 +21,5 @@ cando: "Can schedule medical appointments, describe symptoms, and handle prescri
 - Comparatives for area amenities
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-RLC-B1-002"
-cando: "Can navigate school registration for family and interact with local council services."
-```
+- **Lesson Code:** `EN-RLC-B1-002`
+- **Goal (Can-Do):** Can navigate school registration for family and interact with local council services.

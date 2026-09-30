@@ -7,10 +7,8 @@
 ### Lesson 1: Wissenschaft & Forschung - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-001"
-cando: "Kann komplexe wissenschaftliche Begriffe und methodische Ansätze im akademischen Kontext präzise anwenden"
-```
+- **Lesson Code:** `DE-C1-001`
+- **Goal (Can-Do):** Kann komplexe wissenschaftliche Begriffe und methodische Ansätze im akademischen Kontext präzise anwenden
 
 ### Lesson 2: Wissenschaft & Forschung - Höhere Grammatik
 
@@ -19,10 +17,8 @@ cando: "Kann komplexe wissenschaftliche Begriffe und methodische Ansätze im aka
 - Erweiterte Partizipialattribute (die von den Forschern durchgeführte Studie)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-002"
-cando: "Kann Passiv-Ersatzformen und erweiterte Partizipialattribute in akademischen Fachtexten stilistisch gewandt nutzen"
-```
+- **Lesson Code:** `DE-C1-002`
+- **Goal (Can-Do):** Kann Passiv-Ersatzformen und erweiterte Partizipialattribute in akademischen Fachtexten stilistisch gewandt nutzen
 
 ### Lesson 3: Ethik in Technologie & Forschung - Seminar
 
@@ -31,20 +27,16 @@ cando: "Kann Passiv-Ersatzformen und erweiterte Partizipialattribute in akademis
 - Konjunktiv I in der indirekten Redewiedergabe bei Fachbeiträgen
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-003"
-cando: "Kann an akademischen Debatten über technologische Ethik und Forschungspolitik gewandt teilnehmen"
-```
+- **Lesson Code:** `DE-C1-003`
+- **Goal (Can-Do):** Kann an akademischen Debatten über technologische Ethik und Forschungspolitik gewandt teilnehmen
 
 ## Unit 2: Macht, Staat & Institutionen
 
 ### Lesson 1: Institutionelle Governance - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-004"
-cando: "Kann staatsrechtliche und politische Fachbegriffe in offiziellen Reden und Schriften korrekt verwenden"
-```
+- **Lesson Code:** `DE-C1-004`
+- **Goal (Can-Do):** Kann staatsrechtliche und politische Fachbegriffe in offiziellen Reden und Schriften korrekt verwenden
 
 ### Lesson 2: Recht & Politik - Höhere Grammatik
 
@@ -53,10 +45,8 @@ cando: "Kann staatsrechtliche und politische Fachbegriffe in offiziellen Reden u
 - Verbalisierung und Nominalisierung im amtlichen Stil (Funktionsverbgefüge: in Erwägung ziehen, zur Anwendung bringen)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-005"
-cando: "Kann Funktionsverbgefüge und amtsdefinierte Formulierungen in amtlichen und juristischen Fachtexten einsetzen"
-```
+- **Lesson Code:** `DE-C1-005`
+- **Goal (Can-Do):** Kann Funktionsverbgefüge und amtsdefinierte Formulierungen in amtlichen und juristischen Fachtexten einsetzen
 
 ### Lesson 3: Staatsrecht & Reformen - Debatte
 
@@ -65,20 +55,16 @@ cando: "Kann Funktionsverbgefüge und amtsdefinierte Formulierungen in amtlichen
 - Konditionalsätze mit Konjunktiv II ohne 'wenn' (Sollte die Reform verabschiedet werden...)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-006"
-cando: "Kann parlamentarische Debatten und institutionelle Reformen mit gewandter Rhetorik führen"
-```
+- **Lesson Code:** `DE-C1-006`
+- **Goal (Can-Do):** Kann parlamentarische Debatten und institutionelle Reformen mit gewandter Rhetorik führen
 
 ## Unit 3: Gesellschaftsstrukturen & Wandel
 
 ### Lesson 1: Soziologie & Demografie - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-007"
-cando: "Kann gesellschaftliche Veränderungsprozesse und soziologische Phänomene präzise analysieren"
-```
+- **Lesson Code:** `DE-C1-007`
+- **Goal (Can-Do):** Kann gesellschaftliche Veränderungsprozesse und soziologische Phänomene präzise analysieren
 
 ### Lesson 2: Soziologie & Demografie - Höhere Grammatik
 
@@ -87,10 +73,8 @@ cando: "Kann gesellschaftliche Veränderungsprozesse und soziologische Phänomen
 - Genitivattributierung und erweiterte Präpositionalgefüge (kraft, zwecks, anhand, angesichts)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-008"
-cando: "Kann soziologische Analysen mit komplexen Genitivgefügen und kohärenten Konjunktionaladverbien formulieren"
-```
+- **Lesson Code:** `DE-C1-008`
+- **Goal (Can-Do):** Kann soziologische Analysen mit komplexen Genitivgefügen und kohärenten Konjunktionaladverbien formulieren
 
 ### Lesson 3: Sozialpolitik & Stadtentwicklung - Seminar
 
@@ -99,20 +83,16 @@ cando: "Kann soziologische Analysen mit komplexen Genitivgefügen und kohärente
 - Modalpartikeln in nuancierten Diskussionen (ja, doch, eben, halt, wohl)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-009"
-cando: "Kann Diskussionen über Stadtentwicklung und Sozialpolitik nuanciert und überzeugend moderieren"
-```
+- **Lesson Code:** `DE-C1-009`
+- **Goal (Can-Do):** Kann Diskussionen über Stadtentwicklung und Sozialpolitik nuanciert und überzeugend moderieren
 
 ## Unit 4: Erkenntnis, Wissen & Wahrheit
 
 ### Lesson 1: Epistemologie & Kognition - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-010"
-cando: "Kann erkenntnistheoretische Konzepte und kognitive Verzerrungen akademisch reflektieren"
-```
+- **Lesson Code:** `DE-C1-010`
+- **Goal (Can-Do):** Kann erkenntnistheoretische Konzepte und kognitive Verzerrungen akademisch reflektieren
 
 ### Lesson 2: Epistemologie & Kognition - Höhere Grammatik
 
@@ -121,10 +101,8 @@ cando: "Kann erkenntnistheoretische Konzepte und kognitive Verzerrungen akademis
 - Substantivierte Adjektive und Partizipien mit komplexen Erweiterungen (das zu Bedenkende, das Erreichte)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-011"
-cando: "Kann Abstufungen von Gewissheit und Unsicherheit mittels Modalkonstruktionen und Substantivierungen ausdrücken"
-```
+- **Lesson Code:** `DE-C1-011`
+- **Goal (Can-Do):** Kann Abstufungen von Gewissheit und Unsicherheit mittels Modalkonstruktionen und Substantivierungen ausdrücken
 
 ### Lesson 3: Medienethik & Wahrheitsbegriff - Debatte
 
@@ -133,20 +111,16 @@ cando: "Kann Abstufungen von Gewissheit und Unsicherheit mittels Modalkonstrukti
 - Redemittel zur Aufdeckung rhetorischer Trugschlüsse
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-012"
-cando: "Kann Fehlschlüsse in Argumentationen identifizieren und das Phänomen der Desinformation fundiert debattieren"
-```
+- **Lesson Code:** `DE-C1-012`
+- **Goal (Can-Do):** Kann Fehlschlüsse in Argumentationen identifizieren und das Phänomen der Desinformation fundiert debattieren
 
 ## Unit 5: Rhetorik, Diskurs & Argumentation
 
 ### Lesson 1: Rhetorik & Überzeugungskunst - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-013"
-cando: "Kann rhetorische Mittel und argumentative Strukturen in Reden gezielt einsetzen"
-```
+- **Lesson Code:** `DE-C1-013`
+- **Goal (Can-Do):** Kann rhetorische Mittel und argumentative Strukturen in Reden gezielt einsetzen
 
 ### Lesson 2: Rhetorik & Überzeugungskunst - Höhere Grammatik
 
@@ -155,10 +129,8 @@ cando: "Kann rhetorische Mittel und argumentative Strukturen in Reden gezielt ei
 - Adverbiale Verknüpfungen des Vergleichs und des Gegensatzes (angefangen bei... bis hin zu..., ungeachtet dessen)
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-014"
-cando: "Kann komplexe Periodsätze mit präzisen Unterordnungen und rhetorischen Mittelbänden verfassen"
-```
+- **Lesson Code:** `DE-C1-014`
+- **Goal (Can-Do):** Kann komplexe Periodsätze mit präzisen Unterordnungen und rhetorischen Mittelbänden verfassen
 
 ### Lesson 3: Keynote & Podiumsdiskussion - Seminar
 
@@ -167,20 +139,16 @@ cando: "Kann komplexe Periodsätze mit präzisen Unterordnungen und rhetorischen
 - Formeln zur Konsensbildung und Kompromissfindung
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-015"
-cando: "Kann freie Hauptreferate halten und vielschichtige Podiumsdiskussionen souverän leiten"
-```
+- **Lesson Code:** `DE-C1-015`
+- **Goal (Can-Do):** Kann freie Hauptreferate halten und vielschichtige Podiumsdiskussionen souverän leiten
 
 ## Unit 6: Ökonomie, Weltmärkte & Geopolitik
 
 ### Lesson 1: Makroökonomie & Finanzmärkte - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-016"
-cando: "Kann volkswirtschaftliche Zusammenhänge und Finanzmarktanalysen auf hohem Fachniveau erörtern"
-```
+- **Lesson Code:** `DE-C1-016`
+- **Goal (Can-Do):** Kann volkswirtschaftliche Zusammenhänge und Finanzmarktanalysen auf hohem Fachniveau erörtern
 
 ### Lesson 2: Ökonomie & Geopolitik - Höhere Grammatik
 
@@ -189,10 +157,8 @@ cando: "Kann volkswirtschaftliche Zusammenhänge und Finanzmarktanalysen auf hoh
 - Passivvarianten mit 'gehören' und 'bekommen/kriegen' im wirtschaftlichen Fachdiskurs
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-017"
-cando: "Kann differenzierte Wirtschaftsprognosen unter Verwendung unechter Konditionalsätze verfassen"
-```
+- **Lesson Code:** `DE-C1-017`
+- **Goal (Can-Do):** Kann differenzierte Wirtschaftsprognosen unter Verwendung unechter Konditionalsätze verfassen
 
 ### Lesson 3: Internationale Handelspolitik - Debatte
 
@@ -201,20 +167,16 @@ cando: "Kann differenzierte Wirtschaftsprognosen unter Verwendung unechter Kondi
 - Diplomatische Verhandlungsführung und Strategische Zugeständnisse
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-018"
-cando: "Kann geopolitische Krisen und internationale Handelsbeziehungen strategisch und sprachlich präzise debattieren"
-```
+- **Lesson Code:** `DE-C1-018`
+- **Goal (Can-Do):** Kann geopolitische Krisen und internationale Handelsbeziehungen strategisch und sprachlich präzise debattieren
 
 ## Unit 7: Ästhetik, Kulturkritik & C1-Konsolidierung
 
 ### Lesson 1: Ästhetik & Kunstkritik - Wortschatz I
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-019"
-cando: "Kann anspruchsvolle Kunstkritiken und kulturtheoretische Essays verfassen und erörtern"
-```
+- **Lesson Code:** `DE-C1-019`
+- **Goal (Can-Do):** Kann anspruchsvolle Kunstkritiken und kulturtheoretische Essays verfassen und erörtern
 
 ### Lesson 2: Ästhetik & Kulturkritik - Höhere Grammatik
 
@@ -223,10 +185,8 @@ cando: "Kann anspruchsvolle Kunstkritiken und kulturtheoretische Essays verfasse
 - Präpositionale Attribute und freie Adverbiale zur Verfeinerung von Beschreibungstexten
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-020"
-cando: "Kann stilistisch hochelegante Rezensionen und kulturkritische Essays verfassen"
-```
+- **Lesson Code:** `DE-C1-020`
+- **Goal (Can-Do):** Kann stilistisch hochelegante Rezensionen und kulturkritische Essays verfassen
 
 ### Lesson 3: C1-Meisterprüfung & Gesamtkonsolidierung
 
@@ -234,7 +194,5 @@ cando: "Kann stilistisch hochelegante Rezensionen und kulturkritische Essays ver
 - Synthese aller C1-Grammatikpfeiler: Passiv-Ersatzformen, erweiterte Partizipialattribute, Funktionsverbgefüge, Konjunktiv I/II, Periodik und unechte Konditionale
 
 **Teaching Notes & Rules:**
-```text
-code: "DE-C1-021"
-cando: "Kann eine vollständige und flüssige sprachliche Handlungsfähigkeit auf C1-Niveau in allen wissenschaftlichen, gesellschaftlichen und beruflichen Feldern nachweisen"
-```
+- **Lesson Code:** `DE-C1-021`
+- **Goal (Can-Do):** Kann eine vollständige und flüssige sprachliche Handlungsfähigkeit auf C1-Niveau in allen wissenschaftlichen, gesellschaftlichen und beruflichen Feldern nachweisen

@@ -12,11 +12,11 @@
 - Formation régulières et verbes fréquents
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-001"
-pronunciation: [{"point":"La nasalisation","explain":"Distinguer clairement les voyelles nasales [ɑ̃], [ɔ̃], [ɛ̃].","examples":[{"pattern":"un bon vin blanc","ipa":"/œ̃ bɔ̃ vɛ̃ blɑ̃/","word":"vin"}],"visual":"🎵"}]
-cando: "Peut exprimer la nécessité et des volontés nuancées"
-```
+- **Lesson Code:** `FR-B1-001`
+- **Goal (Can-Do):** Peut exprimer la nécessité et des volontés nuancées
+- **Pronunciation Focus:**
+  - **La nasalisation**: Distinguer clairement les voyelles nasales [ɑ̃], [ɔ̃], [ɛ̃].
+    - *Examples:* `vin` /œ̃ bɔ̃ vɛ̃ blɑ̃/
 
 ### Lesson 2: L'expression de la cause et de la conséquence
 
@@ -25,10 +25,8 @@ cando: "Peut exprimer la nécessité et des volontés nuancées"
 - Donc / C'est pourquoi / En conséquence
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-002"
-cando: "Peut structurer un raisonnement logique simple et expliquer les causes/conséquences"
-```
+- **Lesson Code:** `FR-B1-002`
+- **Goal (Can-Do):** Peut structurer un raisonnement logique simple et expliquer les causes/conséquences
 
 ### Lesson 3: L'expression de l'opposition et de la concession
 
@@ -37,10 +35,8 @@ cando: "Peut structurer un raisonnement logique simple et expliquer les causes/c
 - Bien que + subjonctif (introduction simple)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-003"
-cando: "Peut opposer deux idées et faire des concessions simples dans un débat"
-```
+- **Lesson Code:** `FR-B1-003`
+- **Goal (Can-Do):** Peut opposer deux idées et faire des concessions simples dans un débat
 
 ### Lesson 4: Le subjonctif de sentiment et d'émotion
 
@@ -49,10 +45,8 @@ cando: "Peut opposer deux idées et faire des concessions simples dans un débat
 - C'est dommage que / Avoir peur que (+ ne explétif)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-004"
-cando: "Peut exprimer ses réactions sentimentales et émotionnelles face à un événement"
-```
+- **Lesson Code:** `FR-B1-004`
+- **Goal (Can-Do):** Peut exprimer ses réactions sentimentales et émotionnelles face à un événement
 
 ### Lesson 5: Exprimer l'hypothèse irréelle au présent (Si + Imparfait -> Conditionnel)
 
@@ -61,10 +55,8 @@ cando: "Peut exprimer ses réactions sentimentales et émotionnelles face à un 
 - Usage pour imaginer un monde différent ou donner un conseil courtois
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-005"
-cando: "Peut formuler des hypothèses sur le présent et donner des conseils nuancés"
-```
+- **Lesson Code:** `FR-B1-005`
+- **Goal (Can-Do):** Peut formuler des hypothèses sur le présent et donner des conseils nuancés
 
 ## Unit 2: Unité 2 : Modulateurs de discours et débat d'idées
 
@@ -75,10 +67,8 @@ cando: "Peut formuler des hypothèses sur le présent et donner des conseils nua
 - Douter que + subjonctif / Il me semble que + indicatif
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-006"
-cando: "Peut exprimer la certitude et le doute avec le subjonctif et l'indicatif"
-```
+- **Lesson Code:** `FR-B1-006`
+- **Goal (Can-Do):** Peut exprimer la certitude et le doute avec le subjonctif et l'indicatif
 
 ### Lesson 2: Les connecteurs logiques de l'argumentation
 
@@ -88,10 +78,8 @@ cando: "Peut exprimer la certitude et le doute avec le subjonctif et l'indicatif
 - En fin de compte / Pour conclure
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-007"
-cando: "Peut structurer un monologue ou un débat fluide à l'aide de connecteurs de discours"
-```
+- **Lesson Code:** `FR-B1-007`
+- **Goal (Can-Do):** Peut structurer un monologue ou un débat fluide à l'aide de connecteurs de discours
 
 ### Lesson 3: Le plus-que-parfait et la chronologie du passé
 
@@ -100,10 +88,8 @@ cando: "Peut structurer un monologue ou un débat fluide à l'aide de connecteur
 - Antériorité d'une action passée par rapport à une autre
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-008"
-cando: "Peut raconter des histoires en respectant la chronologie précise et l'antériorité au passé"
-```
+- **Lesson Code:** `FR-B1-008`
+- **Goal (Can-Do):** Peut raconter des histoires en respectant la chronologie précise et l'antériorité au passé
 
 ### Lesson 4: Pronoms relatifs composés (Lequel, auquel, duquel)
 
@@ -112,10 +98,8 @@ cando: "Peut raconter des histoires en respectant la chronologie précise et l'a
 - Contractions avec à (auquel) et de (duquel)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-009"
-cando: "Peut rédiger des phrases complexes élégantes en utilisant les pronoms relatifs composés"
-```
+- **Lesson Code:** `FR-B1-009`
+- **Goal (Can-Do):** Peut rédiger des phrases complexes élégantes en utilisant les pronoms relatifs composés
 
 ### Lesson 5: Le discours rapporté au passé et concordance des temps
 
@@ -124,10 +108,8 @@ cando: "Peut rédiger des phrases complexes élégantes en utilisant les pronoms
 - Changements des indicateurs temporels (hier -> la veille, demain -> le lendemain)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-010"
-cando: "Peut rendre compte fidèlement de propos entendus lors d'une réunion ou conférence"
-```
+- **Lesson Code:** `FR-B1-010`
+- **Goal (Can-Do):** Peut rendre compte fidèlement de propos entendus lors d'une réunion ou conférence
 
 ## Unit 3: Unité 3 : Travail, recrutement et monde professionnel
 
@@ -138,10 +120,8 @@ cando: "Peut rendre compte fidèlement de propos entendus lors d'une réunion ou
 - Expressions du but et des objectifs professionnels (afin de, dans le but de)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-011"
-cando: "Peut rédiger un CV clair et une lettre de motivation adaptée à un poste cerné"
-```
+- **Lesson Code:** `FR-B1-011`
+- **Goal (Can-Do):** Peut rédiger un CV clair et une lettre de motivation adaptée à un poste cerné
 
 ### Lesson 2: Réussir un entretien d'embauche
 
@@ -150,10 +130,8 @@ cando: "Peut rédiger un CV clair et une lettre de motivation adaptée à un pos
 - Réponses nuancées aux questions pièges
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-012"
-cando: "Peut présenter son parcours et argumenter ses qualités lors d'un entretien de recrutement"
-```
+- **Lesson Code:** `FR-B1-012`
+- **Goal (Can-Do):** Peut présenter son parcours et argumenter ses qualités lors d'un entretien de recrutement
 
 ### Lesson 3: Conflits au travail et négociation
 
@@ -162,10 +140,8 @@ cando: "Peut présenter son parcours et argumenter ses qualités lors d'un entre
 - Structures de concession (Je comprends votre point de vue, toutefois...)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-013"
-cando: "Peut exprimer un désaccord professionnel avec diplomatie et négocier une solution"
-```
+- **Lesson Code:** `FR-B1-013`
+- **Goal (Can-Do):** Peut exprimer un désaccord professionnel avec diplomatie et négocier une solution
 
 ### Lesson 4: Gestion de projet et animation de réunion
 
@@ -174,10 +150,8 @@ cando: "Peut exprimer un désaccord professionnel avec diplomatie et négocier u
 - Tournures d'animation de parole
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-014"
-cando: "Peut mener une réunion de travail, donner la parole et faire la synthèse des décisions"
-```
+- **Lesson Code:** `FR-B1-014`
+- **Goal (Can-Do):** Peut mener une réunion de travail, donner la parole et faire la synthèse des décisions
 
 ### Lesson 5: Télétravail, ergonomie et équilibre vie pro / vie perso
 
@@ -186,10 +160,8 @@ cando: "Peut mener une réunion de travail, donner la parole et faire la synthè
 - Verbes pronominaux à sens passif (cela se fait, ça s'explique)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-015"
-cando: "Peut débattre des nouveaux modes de travail et exprimer ses besoins d'organisation"
-```
+- **Lesson Code:** `FR-B1-015`
+- **Goal (Can-Do):** Peut débattre des nouveaux modes de travail et exprimer ses besoins d'organisation
 
 ## Unit 4: Unité 4 : Médias, société de l'information et réseaux
 
@@ -200,10 +172,8 @@ cando: "Peut débattre des nouveaux modes de travail et exprimer ses besoins d'o
 - Vocabulaire de la nuance et de la subjectivité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-016"
-cando: "Peut lire de la presse d'opinion et repérer le degré d'objectivité d'un article"
-```
+- **Lesson Code:** `FR-B1-016`
+- **Goal (Can-Do):** Peut lire de la presse d'opinion et repérer le degré d'objectivité d'un article
 
 ### Lesson 2: Émissions de radio, podcasts et débats télévisés
 
@@ -212,10 +182,8 @@ cando: "Peut lire de la presse d'opinion et repérer le degré d'objectivité d'
 - Mise en relief (C'est... qui / C'est... que)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-017"
-cando: "Peut suivre un débat médiatique et synthétiser les principaux arguments échangés"
-```
+- **Lesson Code:** `FR-B1-017`
+- **Goal (Can-Do):** Peut suivre un débat médiatique et synthétiser les principaux arguments échangés
 
 ### Lesson 3: Fake news et liberté d'expression
 
@@ -224,10 +192,8 @@ cando: "Peut suivre un débat médiatique et synthétiser les principaux argumen
 - Expressions de restriction (ne... que, seulement)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-018"
-cando: "Peut discuter des dangers de la désinformation et défendre l'esprit critique"
-```
+- **Lesson Code:** `FR-B1-018`
+- **Goal (Can-Do):** Peut discuter des dangers de la désinformation et défendre l'esprit critique
 
 ### Lesson 4: Publicité, marketing et société de consommation
 
@@ -236,10 +202,8 @@ cando: "Peut discuter des dangers de la désinformation et défendre l'esprit cr
 - Structures d'incitation (inciter à, pousser à)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-019"
-cando: "Peut décoder le message d'une campagne publicitaire et exprimer son recul face aux marques"
-```
+- **Lesson Code:** `FR-B1-019`
+- **Goal (Can-Do):** Peut décoder le message d'une campagne publicitaire et exprimer son recul face aux marques
 
 ### Lesson 5: Cinéma, séries et critiques culturelles
 
@@ -248,10 +212,8 @@ cando: "Peut décoder le message d'une campagne publicitaire et exprimer son rec
 - Adverbes d'opinion et de jugement
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-020"
-cando: "Peut rédiger une critique de film ou de série nuancée et la partager dans un club de discussion"
-```
+- **Lesson Code:** `FR-B1-020`
+- **Goal (Can-Do):** Peut rédiger une critique de film ou de série nuancée et la partager dans un club de discussion
 
 ## Unit 5: Unité 5 : Écologie, transition énergétique et planète
 
@@ -262,10 +224,8 @@ cando: "Peut rédiger une critique de film ou de série nuancée et la partager 
 - Pronom 'en' de quantité et de provenance environnementale
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-021"
-cando: "Peut exposer les causes et conséquences des dérèglements climatiques à l'échelle globale"
-```
+- **Lesson Code:** `FR-B1-021`
+- **Goal (Can-Do):** Peut exposer les causes et conséquences des dérèglements climatiques à l'échelle globale
 
 ### Lesson 2: Énergies renouvelables vs Énergies fossiles
 
@@ -274,10 +234,8 @@ cando: "Peut exposer les causes et conséquences des dérèglements climatiques 
 - Infinitive de comparaison
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-022"
-cando: "Peut comparer le bilan environnemental de différentes sources d'énergie"
-```
+- **Lesson Code:** `FR-B1-022`
+- **Goal (Can-Do):** Peut comparer le bilan environnemental de différentes sources d'énergie
 
 ### Lesson 3: La biodiversité et la protection des espèces
 
@@ -286,10 +244,8 @@ cando: "Peut comparer le bilan environnemental de différentes sources d'énergi
 - Pronoms relatifs où et dont
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-023"
-cando: "Peut sensibiliser au respect de la faune et de la flore et aux risques d'extinction"
-```
+- **Lesson Code:** `FR-B1-023`
+- **Goal (Can-Do):** Peut sensibiliser au respect de la faune et de la flore et aux risques d'extinction
 
 ### Lesson 4: Éco-citoyenneté et zéro déchet
 
@@ -298,10 +254,8 @@ cando: "Peut sensibiliser au respect de la faune et de la flore et aux risques d
 - Impératif de sensibilisation
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-024"
-cando: "Peut décrire ses pratiques écoresponsables quotidiennes et donner des conseils zéro déchet"
-```
+- **Lesson Code:** `FR-B1-024`
+- **Goal (Can-Do):** Peut décrire ses pratiques écoresponsables quotidiennes et donner des conseils zéro déchet
 
 ### Lesson 5: Ville durable et mobilités douces
 
@@ -310,10 +264,8 @@ cando: "Peut décrire ses pratiques écoresponsables quotidiennes et donner des 
 - Adjectifs et prépositions de projet urbain
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-025"
-cando: "Peut débattre des choix d'aménagement urbain et de la réduction de la voiture en ville"
-```
+- **Lesson Code:** `FR-B1-025`
+- **Goal (Can-Do):** Peut débattre des choix d'aménagement urbain et de la réduction de la voiture en ville
 
 ## Unit 6: Unité 6 : Société, vivre-ensemble et citoyenneté
 
@@ -324,10 +276,8 @@ cando: "Peut débattre des choix d'aménagement urbain et de la réduction de la
 - Noms de métiers au féminin et écriture inclusive
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-026"
-cando: "Peut discuter des inégalités de genre et proposer des pistes pour faire évoluer les mentalités"
-```
+- **Lesson Code:** `FR-B1-026`
+- **Goal (Can-Do):** Peut discuter des inégalités de genre et proposer des pistes pour faire évoluer les mentalités
 
 ### Lesson 2: Système éducatif et nouveaux modes d'apprentissage
 
@@ -336,10 +286,8 @@ cando: "Peut discuter des inégalités de genre et proposer des pistes pour fair
 - Constructions impersonnelles (il s'avère que, il est reconnu que)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-027"
-cando: "Peut comparer différents systèmes scolaires et donner son avis sur les méthodes d'enseignement"
-```
+- **Lesson Code:** `FR-B1-027`
+- **Goal (Can-Do):** Peut comparer différents systèmes scolaires et donner son avis sur les méthodes d'enseignement
 
 ### Lesson 3: Engagement bénévole et vie associative
 
@@ -348,10 +296,8 @@ cando: "Peut comparer différents systèmes scolaires et donner son avis sur les
 - Pronoms personnels toniques de solidarité
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-028"
-cando: "Peut présenter les objectifs d'une association caritative et expliquer sa motivation à s'engager"
-```
+- **Lesson Code:** `FR-B1-028`
+- **Goal (Can-Do):** Peut présenter les objectifs d'une association caritative et expliquer sa motivation à s'engager
 
 ### Lesson 4: Démocratie participative et citoyenneté
 
@@ -360,10 +306,8 @@ cando: "Peut présenter les objectifs d'une association caritative et expliquer 
 - Expressions de droit et de devoir
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-029"
-cando: "Peut comprendre le fonctionnement d'un débat citoyen et donner des propositions pour la collectivité"
-```
+- **Lesson Code:** `FR-B1-029`
+- **Goal (Can-Do):** Peut comprendre le fonctionnement d'un débat citoyen et donner des propositions pour la collectivité
 
 ### Lesson 5: Multiculturalisme et diversité culturelle
 
@@ -372,10 +316,8 @@ cando: "Peut comprendre le fonctionnement d'un débat citoyen et donner des prop
 - Relatifs 'ce dont', 'ce à quoi'
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-030"
-cando: "Peut valoriser l'apport des différentes cultures dans la société et discuter du vivre-ensemble"
-```
+- **Lesson Code:** `FR-B1-030`
+- **Goal (Can-Do):** Peut valoriser l'apport des différentes cultures dans la société et discuter du vivre-ensemble
 
 ## Unit 7: Unité 7 : Art, patrimoine et créativité
 
@@ -386,10 +328,8 @@ cando: "Peut valoriser l'apport des différentes cultures dans la société et d
 - Adjectifs de sensation et de forme
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-031"
-cando: "Peut commenter un tableau ou une sculpture et exprimer ce qu'elle lui inspire"
-```
+- **Lesson Code:** `FR-B1-031`
+- **Goal (Can-Do):** Peut commenter un tableau ou une sculpture et exprimer ce qu'elle lui inspire
 
 ### Lesson 2: Patrimoine architectural et histoire des villes
 
@@ -398,10 +338,8 @@ cando: "Peut commenter un tableau ou une sculpture et exprimer ce qu'elle lui in
 - Pronoms relatifs composés d'emplacement
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-032"
-cando: "Peut présenter le patrimoine d'une région ou d'une ville historique à un visiteur"
-```
+- **Lesson Code:** `FR-B1-032`
+- **Goal (Can-Do):** Peut présenter le patrimoine d'une région ou d'une ville historique à un visiteur
 
 ### Lesson 3: Musique, genres et festivals
 
@@ -410,10 +348,8 @@ cando: "Peut présenter le patrimoine d'une région ou d'une ville historique à
 - Nuances d'intensité sonore et d'ambiance
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-033"
-cando: "Peut parler de sa musique préférée et décrire l'ambiance d'un festival"
-```
+- **Lesson Code:** `FR-B1-033`
+- **Goal (Can-Do):** Peut parler de sa musique préférée et décrire l'ambiance d'un festival
 
 ### Lesson 4: Littérature et récits de fiction
 
@@ -422,10 +358,8 @@ cando: "Peut parler de sa musique préférée et décrire l'ambiance d'un festiv
 - Marqueurs de narration littéraire
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-034"
-cando: "Peut comprendre la trame d'un extrait de roman et donner son avis sur le style de l'auteur"
-```
+- **Lesson Code:** `FR-B1-034`
+- **Goal (Can-Do):** Peut comprendre la trame d'un extrait de roman et donner son avis sur le style de l'auteur
 
 ### Lesson 5: Artisanat d'art et savoir-faire traditionnel
 
@@ -434,10 +368,8 @@ cando: "Peut comprendre la trame d'un extrait de roman et donner son avis sur le
 - Subjonctif pour la préservation des traditions
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-035"
-cando: "Peut expliquer la fabrication d'un objet artisanal et valoriser les métiers d'art"
-```
+- **Lesson Code:** `FR-B1-035`
+- **Goal (Can-Do):** Peut expliquer la fabrication d'un objet artisanal et valoriser les métiers d'art
 
 ## Unit 8: Unité 8 : Économie, argent et modes de consommation
 
@@ -448,10 +380,8 @@ cando: "Peut expliquer la fabrication d'un objet artisanal et valoriser les mét
 - Pourcentages et statistiques simples
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-036"
-cando: "Peut analyser l'évolution de ses dépenses et discuter des problèmes de pouvoir d'achat"
-```
+- **Lesson Code:** `FR-B1-036`
+- **Goal (Can-Do):** Peut analyser l'évolution de ses dépenses et discuter des problèmes de pouvoir d'achat
 
 ### Lesson 2: Économie collaborative et seconde main
 
@@ -460,10 +390,8 @@ cando: "Peut analyser l'évolution de ses dépenses et discuter des problèmes d
 - Constructions de troc et d'échange
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-037"
-cando: "Peut vendre ou acheter un bien de seconde main en ligne et négocier le prix"
-```
+- **Lesson Code:** `FR-B1-037`
+- **Goal (Can-Do):** Peut vendre ou acheter un bien de seconde main en ligne et négocier le prix
 
 ### Lesson 3: Monnaies virtuelles et paiements électroniques
 
@@ -472,10 +400,8 @@ cando: "Peut vendre ou acheter un bien de seconde main en ligne et négocier le 
 - Expressions de sécurité et de prudence
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-038"
-cando: "Peut échanger sur la dématérialisation de l'argent et la sécurité des paiements sur Internet"
-```
+- **Lesson Code:** `FR-B1-038`
+- **Goal (Can-Do):** Peut échanger sur la dématérialisation de l'argent et la sécurité des paiements sur Internet
 
 ### Lesson 4: Micro-crédit et entrepreneuriat social
 
@@ -484,10 +410,8 @@ cando: "Peut échanger sur la dématérialisation de l'argent et la sécurité d
 - Gérondif pour exprimer le moyen d'entreprendre
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-039"
-cando: "Peut présenter une initiative entrepreneuriale solidaire et convaincre des investisseurs"
-```
+- **Lesson Code:** `FR-B1-039`
+- **Goal (Can-Do):** Peut présenter une initiative entrepreneuriale solidaire et convaincre des investisseurs
 
 ### Lesson 5: Commerce équitable et consommation éthique
 
@@ -496,10 +420,8 @@ cando: "Peut présenter une initiative entrepreneuriale solidaire et convaincre 
 - Slogan et persuasion
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-040"
-cando: "Peut défendre l'importance du commerce équitable et lire les labels éthiques"
-```
+- **Lesson Code:** `FR-B1-040`
+- **Goal (Can-Do):** Peut défendre l'importance du commerce équitable et lire les labels éthiques
 
 ## Unit 9: Unité 9 : Sciences, innovations et futur
 
@@ -510,10 +432,8 @@ cando: "Peut défendre l'importance du commerce équitable et lire les labels é
 - Passif pour décrire le fonctionnement des algorithmes
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-041"
-cando: "Peut débattre des avantages et des dérives de l'intelligence artificielle dans la vie courante"
-```
+- **Lesson Code:** `FR-B1-041`
+- **Goal (Can-Do):** Peut débattre des avantages et des dérives de l'intelligence artificielle dans la vie courante
 
 ### Lesson 2: Conquête spatiale et recherche scientifique
 
@@ -522,10 +442,8 @@ cando: "Peut débattre des avantages et des dérives de l'intelligence artificie
 - Pronom Y de lieu spatial
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-042"
-cando: "Peut comprendre un reportage scientifique sur l'exploration spatiale et exprimer sa fascination ou réserve"
-```
+- **Lesson Code:** `FR-B1-042`
+- **Goal (Can-Do):** Peut comprendre un reportage scientifique sur l'exploration spatiale et exprimer sa fascination ou réserve
 
 ### Lesson 3: Progrès médicaux et génétique
 
@@ -534,10 +452,8 @@ cando: "Peut comprendre un reportage scientifique sur l'exploration spatiale et 
 - Nécessité de réglementation (Il convient que + subjonctif)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-043"
-cando: "Peut discuter des questions éthiques soulevées par la recherche génétique et médicale"
-```
+- **Lesson Code:** `FR-B1-043`
+- **Goal (Can-Do):** Peut discuter des questions éthiques soulevées par la recherche génétique et médicale
 
 ### Lesson 4: Transports du futur et hyperloop
 
@@ -546,10 +462,8 @@ cando: "Peut discuter des questions éthiques soulevées par la recherche géné
 - Comparatifs d'efficience
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-044"
-cando: "Peut présenter une innovation technologique de transport et évaluer sa faisabilité"
-```
+- **Lesson Code:** `FR-B1-044`
+- **Goal (Can-Do):** Peut présenter une innovation technologique de transport et évaluer sa faisabilité
 
 ### Lesson 5: L'éthique de la technologie et la protection de la vie privée
 
@@ -558,10 +472,8 @@ cando: "Peut présenter une innovation technologique de transport et évaluer sa
 - Subjonctif de restriction et de doute
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-045"
-cando: "Peut défendre le droit à la confidentialité numérique et argumenter en faveur d'une régulation"
-```
+- **Lesson Code:** `FR-B1-045`
+- **Goal (Can-Do):** Peut défendre le droit à la confidentialité numérique et argumenter en faveur d'une régulation
 
 ## Unit 10: Unité 10 : Francophonie, voyages et synthèse B1
 
@@ -572,10 +484,8 @@ cando: "Peut défendre le droit à la confidentialité numérique et argumenter 
 - Expressions de fierté et de diversité linguistique
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-046"
-cando: "Peut apprécier la richesse de la langue française à travers ses espaces francophones (Québec, Afrique, Suisse, Belgique...)"
-```
+- **Lesson Code:** `FR-B1-046`
+- **Goal (Can-Do):** Peut apprécier la richesse de la langue française à travers ses espaces francophones (Québec, Afrique, Suisse, Belgique...)
 
 ### Lesson 2: Voyages immersifs et tourisme responsable
 
@@ -584,10 +494,8 @@ cando: "Peut apprécier la richesse de la langue française à travers ses espac
 - Gerondif pour raconter des rencontres en cours de route
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-047"
-cando: "Peut concevoir un projet de voyage immersif et responsable en zone francophone"
-```
+- **Lesson Code:** `FR-B1-047`
+- **Goal (Can-Do):** Peut concevoir un projet de voyage immersif et responsable en zone francophone
 
 ### Lesson 3: Rédaction d'un essai argumentatif structuré
 
@@ -596,10 +504,8 @@ cando: "Peut concevoir un projet de voyage immersif et responsable en zone franc
 - Structuring introduction, development and conclusion
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-048"
-cando: "Peut rédiger un texte argumentatif clair et structuré en suivant les méthodologies d'examen du DELF B1"
-```
+- **Lesson Code:** `FR-B1-048`
+- **Goal (Can-Do):** Peut rédiger un texte argumentatif clair et structuré en suivant les méthodologies d'examen du DELF B1
 
 ### Lesson 4: Préparation à l'épreuve orale du DELF B1
 
@@ -608,10 +514,8 @@ cando: "Peut rédiger un texte argumentatif clair et structuré en suivant les m
 - Emploi spontané du subjonctif et du conditionnel
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-049"
-cando: "Peut présenter un exposé clair de 3 minutes et défendre sa position face aux questions d'un examinateur"
-```
+- **Lesson Code:** `FR-B1-049`
+- **Goal (Can-Do):** Peut présenter un exposé clair de 3 minutes et défendre sa position face aux questions d'un examinateur
 
 ### Lesson 5: Examen bilan et certification du niveau B1
 
@@ -619,7 +523,5 @@ cando: "Peut présenter un exposé clair de 3 minutes et défendre sa position f
 - Évaluation globale de toutes les structures B1 (Subjonctif, Conditionnel, Discours rapporté, Pronoms complexes, Connecteurs)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-B1-050"
-cando: "Démontre une autonomie linguistique complète du niveau B1 intermédiaire (DELF B1) dans les contextes personnels, sociaux, professionnels et académiques"
-```
+- **Lesson Code:** `FR-B1-050`
+- **Goal (Can-Do):** Démontre une autonomie linguistique complète du niveau B1 intermédiaire (DELF B1) dans les contextes personnels, sociaux, professionnels et académiques

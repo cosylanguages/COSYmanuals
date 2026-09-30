@@ -11,12 +11,12 @@
 - Verb "to be" positive intro
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-001"
-pronunciation: [{"point":"The English Alphabet","explain":"English has 26 letters but many more sounds. Start with the names of the letters.","visual":"🔤"}]
-cando: "Can greet people, say goodbye, and spell name aloud"
-hw: "Learn the alphabet song and practice spelling your full name"
-```
+- **Lesson Code:** `A1-001`
+- **Goal (Can-Do):** Can greet people, say goodbye, and spell name aloud
+- **Pronunciation Focus:**
+  - **The English Alphabet**: English has 26 letters but many more sounds. Start with the names of the letters.
+- **Notes:**
+  - hw: "Learn the alphabet song and practice spelling your full name"
 
 ### Lesson 2: To be — I am, you are (positive & negative)
 
@@ -25,12 +25,12 @@ hw: "Learn the alphabet song and practice spelling your full name"
 - Apostrophe for contractions
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-002"
-pronunciation: [{"point":"Contractions","explain":"I am -> I'm, You are -> You're","visual":"💬"}]
-cando: "Can introduce oneself and state identity using I am / You are"
-hw: "Write 5 sentences using I am and You are"
-```
+- **Lesson Code:** `A1-002`
+- **Goal (Can-Do):** Can introduce oneself and state identity using I am / You are
+- **Pronunciation Focus:**
+  - **Contractions**: I am -> I'm, You are -> You're
+- **Notes:**
+  - hw: "Write 5 sentences using I am and You are"
 
 ### Lesson 3: Meeting someone for the first time
 
@@ -39,12 +39,12 @@ hw: "Write 5 sentences using I am and You are"
 - To be in simple greetings
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-003"
-pronunciation: [{"point":"Rising/falling intonation in questions","explain":"How are you? (falling), Are you OK? (rising)","visual":"🗣️"}]
-cando: "Can engage in a basic first-meeting dialogue"
-hw: "Practice first-meeting dialogue with a study partner"
-```
+- **Lesson Code:** `A1-003`
+- **Goal (Can-Do):** Can engage in a basic first-meeting dialogue
+- **Pronunciation Focus:**
+  - **Rising/falling intonation in questions**: How are you? (falling), Are you OK? (rising)
+- **Notes:**
+  - hw: "Practice first-meeting dialogue with a study partner"
 
 ### Lesson 4: Spoken course lesson: Hello, who are you?
 
@@ -53,12 +53,12 @@ hw: "Practice first-meeting dialogue with a study partner"
 - Imperatives (listen, repeat)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-004"
-pronunciation: [{"point":"Polite intonation","explain":"Expressing warmth in greetings","visual":"🎙️"}]
-cando: "Can fluently exchange spontaneous greetings in spoken English"
-hw: "Record a 30-second greeting audio message"
-```
+- **Lesson Code:** `A1-004`
+- **Goal (Can-Do):** Can fluently exchange spontaneous greetings in spoken English
+- **Pronunciation Focus:**
+  - **Polite intonation**: Expressing warmth in greetings
+- **Notes:**
+  - hw: "Record a 30-second greeting audio message"
 
 ### Lesson 5: Unit 1 exam & review
 
@@ -67,11 +67,10 @@ hw: "Record a 30-second greeting audio message"
 - Question formation with "to be"
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-005"
-cando: "Can demonstrate mastery of Unit 1 greetings, alphabet, and I/you to be forms"
-hw: "Complete Unit 1 review worksheet"
-```
+- **Lesson Code:** `A1-005`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 1 greetings, alphabet, and I/you to be forms
+- **Notes:**
+  - hw: "Complete Unit 1 review worksheet"
 
 ## Unit 2: Where are you from? — Countries & nationalities
 
@@ -81,12 +80,12 @@ hw: "Complete Unit 1 review worksheet"
 - Capital letters for countries, nationalities & languages
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-006"
-pronunciation: [{"point":"Nationality word stress","explain":"Note stress shifts: Chi-na -> Chi-NESE, I-ta-ly -> I-TA-li-an","visual":"🌍"}]
-cando: "Can name major countries, nationalities, and languages"
-hw: "List 10 countries and their corresponding nationality adjectives"
-```
+- **Lesson Code:** `A1-006`
+- **Goal (Can-Do):** Can name major countries, nationalities, and languages
+- **Pronunciation Focus:**
+  - **Nationality word stress**: Note stress shifts: Chi-na -> Chi-NESE, I-ta-ly -> I-TA-li-an
+- **Notes:**
+  - hw: "List 10 countries and their corresponding nationality adjectives"
 
 ### Lesson 2: To be — he/she/it is · They are · Questions
 
@@ -95,12 +94,12 @@ hw: "List 10 countries and their corresponding nationality adjectives"
 - Questions: Where is he from?
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-007"
-pronunciation: [{"point":"Weak forms of is/are","explain":"He's / She's / They're pronunciation","visual":"📌"}]
-cando: "Can ask and answer questions about origin using third person to be forms"
-hw: "Write 5 Q&A pairs asking where famous people are from"
-```
+- **Lesson Code:** `A1-007`
+- **Goal (Can-Do):** Can ask and answer questions about origin using third person to be forms
+- **Pronunciation Focus:**
+  - **Weak forms of is/are**: He's / She's / They're pronunciation
+- **Notes:**
+  - hw: "Write 5 Q&A pairs asking where famous people are from"
 
 ### Lesson 3: Talking about where people are from
 
@@ -108,11 +107,10 @@ hw: "Write 5 Q&A pairs asking where famous people are from"
 - Present simple "live in" / "come from" vs "to be from"
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-008"
-cando: "Can state origin, residence, and spoken languages"
-hw: "Write a short paragraph describing where you and a friend come from"
-```
+- **Lesson Code:** `A1-008`
+- **Goal (Can-Do):** Can state origin, residence, and spoken languages
+- **Notes:**
+  - hw: "Write a short paragraph describing where you and a friend come from"
 
 ### Lesson 4: Spoken course lesson: Where are you from?
 
@@ -120,11 +118,10 @@ hw: "Write a short paragraph describing where you and a friend come from"
 - Wh- question intonation (Where are you from?)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-009"
-cando: "Can converse comfortably about origin, city of residence, and languages spoken"
-hw: "Record a roleplay dialogue asking a partner about their origin"
-```
+- **Lesson Code:** `A1-009`
+- **Goal (Can-Do):** Can converse comfortably about origin, city of residence, and languages spoken
+- **Notes:**
+  - hw: "Record a roleplay dialogue asking a partner about their origin"
 
 ### Lesson 5: Unit 2 exam & review
 
@@ -132,11 +129,10 @@ hw: "Record a roleplay dialogue asking a partner about their origin"
 - Review of "to be" (all persons) & origin questions
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-010"
-cando: "Can demonstrate mastery of Unit 2 country/nationality vocabulary and origin questions"
-hw: "Complete Unit 2 review assessment"
-```
+- **Lesson Code:** `A1-010`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 2 country/nationality vocabulary and origin questions
+- **Notes:**
+  - hw: "Complete Unit 2 review assessment"
 
 ## Unit 3: My family — People & relationships
 
@@ -147,12 +143,12 @@ hw: "Complete Unit 2 review assessment"
 - Singular and plural nouns (-s, -es, irregular children)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-011"
-pronunciation: [{"point":"Plural -s sounds","explain":"/s/, /z/, and /ɪz/ plural endings (e.g., cats /s/, dogs /z/, buses /ɪz/)","visual":"👨‍👩‍👧‍👦"}]
-cando: "Can name family members and state their ages"
-hw: "Draw a simple family tree with names and ages"
-```
+- **Lesson Code:** `A1-011`
+- **Goal (Can-Do):** Can name family members and state their ages
+- **Pronunciation Focus:**
+  - **Plural -s sounds**: /s/, /z/, and /ɪz/ plural endings (e.g., cats /s/, dogs /z/, buses /ɪz/)
+- **Notes:**
+  - hw: "Draw a simple family tree with names and ages"
 
 ### Lesson 2: Possessive adjectives — my, your, his, her, our, their
 
@@ -161,12 +157,12 @@ hw: "Draw a simple family tree with names and ages"
 - 's for possession
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-012"
-pronunciation: [{"point":"Possessive 's vs is","explain":"John's car (possession) vs John's tall (is)","visual":"🔑"}]
-cando: "Can express ownership and family relationships using possessive adjectives and 's"
-hw: "Write 6 sentences using my, his, her, our, their, and possessive 's"
-```
+- **Lesson Code:** `A1-012`
+- **Goal (Can-Do):** Can express ownership and family relationships using possessive adjectives and 's
+- **Pronunciation Focus:**
+  - **Possessive 's vs is**: John's car (possession) vs John's tall (is)
+- **Notes:**
+  - hw: "Write 6 sentences using my, his, her, our, their, and possessive 's"
 
 ### Lesson 3: Talking about your family
 
@@ -174,11 +170,10 @@ hw: "Write 6 sentences using my, his, her, our, their, and possessive 's"
 - Describing people with "to be" + adjective and "have/has got" / "have/has"
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-013"
-cando: "Can describe family relationships, marital status, and physical traits"
-hw: "Write a 5-sentence description of your family"
-```
+- **Lesson Code:** `A1-013`
+- **Goal (Can-Do):** Can describe family relationships, marital status, and physical traits
+- **Notes:**
+  - hw: "Write a 5-sentence description of your family"
 
 ### Lesson 4: Spoken course lesson: Tell me about your family
 
@@ -186,11 +181,10 @@ hw: "Write a 5-sentence description of your family"
 - Wh- questions about family ("How many brothers do you have?")
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-014"
-cando: "Can discuss family members and their occupations in spoken dialogue"
-hw: "Record a short monologue introducing your family"
-```
+- **Lesson Code:** `A1-014`
+- **Goal (Can-Do):** Can discuss family members and their occupations in spoken dialogue
+- **Notes:**
+  - hw: "Record a short monologue introducing your family"
 
 ### Lesson 5: Unit 3 exam & review
 
@@ -198,11 +192,10 @@ hw: "Record a short monologue introducing your family"
 - Review of possessive adjectives, possessive 's, and plurals
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-015"
-cando: "Can demonstrate mastery of Unit 3 family terms, numbers, and possessives"
-hw: "Complete Unit 3 review assessment"
-```
+- **Lesson Code:** `A1-015`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 3 family terms, numbers, and possessives
+- **Notes:**
+  - hw: "Complete Unit 3 review assessment"
 
 ## Unit 4: My home — Rooms, furniture & location
 
@@ -212,12 +205,12 @@ hw: "Complete Unit 3 review assessment"
 - Prepositions of place (in, on, under, next to, behind, in front of)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-016"
-pronunciation: [{"point":"Preposition stress","explain":"Prepositions are usually unstressed in connected speech","visual":"🏡"}]
-cando: "Can name rooms, basic furniture, and describe location using prepositions of place"
-hw: "Describe the positions of 5 objects in your bedroom"
-```
+- **Lesson Code:** `A1-016`
+- **Goal (Can-Do):** Can name rooms, basic furniture, and describe location using prepositions of place
+- **Pronunciation Focus:**
+  - **Preposition stress**: Prepositions are usually unstressed in connected speech
+- **Notes:**
+  - hw: "Describe the positions of 5 objects in your bedroom"
 
 ### Lesson 2: There is / there are — positive, negative, questions
 
@@ -226,12 +219,12 @@ hw: "Describe the positions of 5 objects in your bedroom"
 - singular vs plural
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-017"
-pronunciation: [{"point":"There's contraction","explain":"There is -> There's /ðeəz/","visual":"🛋️"}]
-cando: "Can describe contents of a room using there is / there are"
-hw: "Write 5 sentences about what is in your living room"
-```
+- **Lesson Code:** `A1-017`
+- **Goal (Can-Do):** Can describe contents of a room using there is / there are
+- **Pronunciation Focus:**
+  - **There's contraction**: There is -> There's /ðeəz/
+- **Notes:**
+  - hw: "Write 5 sentences about what is in your living room"
 
 ### Lesson 3: Describing your home
 
@@ -239,11 +232,10 @@ hw: "Write 5 sentences about what is in your living room"
 - Adjectives for opinion and size with "to be" and "there is/are"
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-018"
-cando: "Can evaluate and describe characteristics of living spaces"
-hw: "Write a short email describing your home to a penpal"
-```
+- **Lesson Code:** `A1-018`
+- **Goal (Can-Do):** Can evaluate and describe characteristics of living spaces
+- **Notes:**
+  - hw: "Write a short email describing your home to a penpal"
 
 ### Lesson 4: Spoken course lesson: Your perfect home
 
@@ -251,11 +243,10 @@ hw: "Write a short email describing your home to a penpal"
 - Expressing basic preferences ("I like...", "It has got...")
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-019"
-cando: "Can describe a dream home and express spatial preferences in conversation"
-hw: "Describe your dream home in a spoken recording"
-```
+- **Lesson Code:** `A1-019`
+- **Goal (Can-Do):** Can describe a dream home and express spatial preferences in conversation
+- **Notes:**
+  - hw: "Describe your dream home in a spoken recording"
 
 ### Lesson 5: Unit 4 exam & review
 
@@ -263,11 +254,10 @@ hw: "Describe your dream home in a spoken recording"
 - Review of there is/are, prepositions of place, and home vocabulary
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-020"
-cando: "Can demonstrate mastery of Unit 4 home vocabulary, prepositions, and there is/are"
-hw: "Complete Unit 4 review assessment"
-```
+- **Lesson Code:** `A1-020`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 4 home vocabulary, prepositions, and there is/are
+- **Notes:**
+  - hw: "Complete Unit 4 review assessment"
 
 ## Unit 5: My day — Daily routine & time
 
@@ -278,12 +268,12 @@ hw: "Complete Unit 4 review assessment"
 - Time prepositions (at 7 o'clock, in the morning)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-021"
-pronunciation: [{"point":"Verb linking in daily routines","explain":"get up -> /ɡet.ʌp/, wake up -> /weɪk.ʌp/","visual":"⏰"}]
-cando: "Can describe morning and evening routine actions and tell time"
-hw: "Write down your daily timetable with times"
-```
+- **Lesson Code:** `A1-021`
+- **Goal (Can-Do):** Can describe morning and evening routine actions and tell time
+- **Pronunciation Focus:**
+  - **Verb linking in daily routines**: get up -> /ɡet.ʌp/, wake up -> /weɪk.ʌp/
+- **Notes:**
+  - hw: "Write down your daily timetable with times"
 
 ### Lesson 2: Present simple — I / you / we / they (affirmative, negative, questions)
 
@@ -292,12 +282,12 @@ hw: "Write down your daily timetable with times"
 - Frequency adverbs: always, usually, sometimes, never
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-022"
-pronunciation: [{"point":"Frequency adverb position","explain":"Adverbs of frequency go BEFORE main verbs, but AFTER verb to be","visual":"📅"}]
-cando: "Can describe habits and routine frequency using Present Simple I/you/we/they forms"
-hw: "Write 5 sentences about your weekly habits using frequency adverbs"
-```
+- **Lesson Code:** `A1-022`
+- **Goal (Can-Do):** Can describe habits and routine frequency using Present Simple I/you/we/they forms
+- **Pronunciation Focus:**
+  - **Frequency adverb position**: Adverbs of frequency go BEFORE main verbs, but AFTER verb to be
+- **Notes:**
+  - hw: "Write 5 sentences about your weekly habits using frequency adverbs"
 
 ### Lesson 3: Talking about your daily routine
 
@@ -306,11 +296,10 @@ hw: "Write 5 sentences about your weekly habits using frequency adverbs"
 - Sequence words (first, then, after that, finally)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-023"
-cando: "Can connect routine events chronologically using sequence markers"
-hw: "Write a 6-sentence paragraph describing a typical weekday"
-```
+- **Lesson Code:** `A1-023`
+- **Goal (Can-Do):** Can connect routine events chronologically using sequence markers
+- **Notes:**
+  - hw: "Write a 6-sentence paragraph describing a typical weekday"
 
 ### Lesson 4: Spoken course lesson: A day in my life
 
@@ -318,11 +307,10 @@ hw: "Write a 6-sentence paragraph describing a typical weekday"
 - Wh- questions in Present Simple ("What time do you wake up?")
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-024"
-cando: "Can interview a partner about their daily schedule and present a summary"
-hw: "Record a monologue describing a day in your life"
-```
+- **Lesson Code:** `A1-024`
+- **Goal (Can-Do):** Can interview a partner about their daily schedule and present a summary
+- **Notes:**
+  - hw: "Record a monologue describing a day in your life"
 
 ### Lesson 5: Unit 5 exam & review
 
@@ -330,11 +318,10 @@ hw: "Record a monologue describing a day in your life"
 - Review of Present Simple I/you/we/they, frequency adverbs, and time prepositions
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-025"
-cando: "Can demonstrate mastery of Unit 5 Present Simple routines and time expressions"
-hw: "Complete Unit 5 review assessment"
-```
+- **Lesson Code:** `A1-025`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 5 Present Simple routines and time expressions
+- **Notes:**
+  - hw: "Complete Unit 5 review assessment"
 
 ## Unit 6: Food & drink — Eating, shopping & preferences
 
@@ -345,12 +332,12 @@ hw: "Complete Unit 5 review assessment"
 - How much / How many intro
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-026"
-pronunciation: [{"point":"Some/any pronunciation","explain":"Unstressed /səm/ and /'eni/ in sentences","visual":"🍎"}]
-cando: "Can list food and drink items and use some/any correctly with countables/uncountables"
-hw: "Categorize 15 food items into countable vs uncountable"
-```
+- **Lesson Code:** `A1-026`
+- **Goal (Can-Do):** Can list food and drink items and use some/any correctly with countables/uncountables
+- **Pronunciation Focus:**
+  - **Some/any pronunciation**: Unstressed /səm/ and /'eni/ in sentences
+- **Notes:**
+  - hw: "Categorize 15 food items into countable vs uncountable"
 
 ### Lesson 2: Present simple — he/she/it: the third person -s rule
 
@@ -359,12 +346,12 @@ hw: "Categorize 15 food items into countable vs uncountable"
 - Spelling rules: -es, -ies
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-027"
-pronunciation: [{"point":"3rd person -s endings","explain":"/s/, /z/, /ɪz/ (e.g. cooks /s/, plays /z/, teaches /ɪz/)","visual":"🍳"}]
-cando: "Can describe someone else's food habits using 3rd person Present Simple -s rules"
-hw: "Write 5 sentences about what a friend or family member eats and drinks"
-```
+- **Lesson Code:** `A1-027`
+- **Goal (Can-Do):** Can describe someone else's food habits using 3rd person Present Simple -s rules
+- **Pronunciation Focus:**
+  - **3rd person -s endings**: /s/, /z/, /ɪz/ (e.g. cooks /s/, plays /z/, teaches /ɪz/)
+- **Notes:**
+  - hw: "Write 5 sentences about what a friend or family member eats and drinks"
 
 ### Lesson 3: Talking about food preferences
 
@@ -373,11 +360,10 @@ hw: "Write 5 sentences about what a friend or family member eats and drinks"
 - Adjectives for taste and food quality
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-028"
-cando: "Can express likes, dislikes, and food preferences with reasons"
-hw: "Write 5 sentences about foods you love, like, and hate"
-```
+- **Lesson Code:** `A1-028`
+- **Goal (Can-Do):** Can express likes, dislikes, and food preferences with reasons
+- **Notes:**
+  - hw: "Write 5 sentences about foods you love, like, and hate"
 
 ### Lesson 4: Spoken course lesson: My favourite meal
 
@@ -385,11 +371,10 @@ hw: "Write 5 sentences about foods you love, like, and hate"
 - Polite requests with "Would like" / "Can I have" in café/restaurant contexts
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-029"
-cando: "Can order food and drink politely in a restaurant or café dialogue"
-hw: "Record a café ordering dialogue with a partner"
-```
+- **Lesson Code:** `A1-029`
+- **Goal (Can-Do):** Can order food and drink politely in a restaurant or café dialogue
+- **Notes:**
+  - hw: "Record a café ordering dialogue with a partner"
 
 ### Lesson 5: Unit 6 exam & review
 
@@ -397,11 +382,10 @@ hw: "Record a café ordering dialogue with a partner"
 - Review of 3rd person Present Simple, countable/uncountable, and some/any
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-030"
-cando: "Can demonstrate mastery of Unit 6 food vocabulary, 3rd person Present Simple, and ordering phrases"
-hw: "Complete Unit 6 review assessment"
-```
+- **Lesson Code:** `A1-030`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 6 food vocabulary, 3rd person Present Simple, and ordering phrases
+- **Notes:**
+  - hw: "Complete Unit 6 review assessment"
 
 ## Unit 7: Work & study — Jobs, places & abilities
 
@@ -412,12 +396,12 @@ hw: "Complete Unit 6 review assessment"
 - Present Simple for professions ("I work as a...", "She works in...")
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-031"
-pronunciation: [{"point":"Article a/an before jobs","explain":"a doctor /ə ˈdɒk.tə/ vs an engineer /ən ˌen.dʒɪˈnɪə/","visual":"💼"}]
-cando: "Can state occupations, workplaces, and study subjects"
-hw: "List 10 occupations with a or an correctly applied"
-```
+- **Lesson Code:** `A1-031`
+- **Goal (Can-Do):** Can state occupations, workplaces, and study subjects
+- **Pronunciation Focus:**
+  - **Article a/an before jobs**: a doctor /ə ˈdɒk.tə/ vs an engineer /ən ˌen.dʒɪˈnɪə/
+- **Notes:**
+  - hw: "List 10 occupations with a or an correctly applied"
 
 ### Lesson 2: Can / can't — ability and possibility
 
@@ -426,12 +410,12 @@ hw: "List 10 occupations with a or an correctly applied"
 - Infinitive after modal verbs
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-032"
-pronunciation: [{"point":"Can vs can't stress","explain":"Unstressed can /kən/ vs stressed can't /kɑːnt/ or /kænt/","visual":"💪"}]
-cando: "Can express physical and technical abilities using can and can't"
-hw: "Write 5 sentences about what you can do and 3 things you can't do"
-```
+- **Lesson Code:** `A1-032`
+- **Goal (Can-Do):** Can express physical and technical abilities using can and can't
+- **Pronunciation Focus:**
+  - **Can vs can't stress**: Unstressed can /kən/ vs stressed can't /kɑːnt/ or /kænt/
+- **Notes:**
+  - hw: "Write 5 sentences about what you can do and 3 things you can't do"
 
 ### Lesson 3: Talking about your job and abilities
 
@@ -440,11 +424,10 @@ hw: "Write 5 sentences about what you can do and 3 things you can't do"
 - Adjective + preposition (good at, interested in)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-033"
-cando: "Can describe work tasks, responsibilities, and skill sets"
-hw: "Write a short profile describing your job or ideal career"
-```
+- **Lesson Code:** `A1-033`
+- **Goal (Can-Do):** Can describe work tasks, responsibilities, and skill sets
+- **Notes:**
+  - hw: "Write a short profile describing your job or ideal career"
 
 ### Lesson 4: Spoken course lesson: What do you do?
 
@@ -452,11 +435,10 @@ hw: "Write a short profile describing your job or ideal career"
 - Questions about work and abilities ("What do you do?", "Can you...?")
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-034"
-cando: "Can discuss career, workplace, and skills during a job intro dialogue"
-hw: "Record a 1-minute audio response introducing your job and skills"
-```
+- **Lesson Code:** `A1-034`
+- **Goal (Can-Do):** Can discuss career, workplace, and skills during a job intro dialogue
+- **Notes:**
+  - hw: "Record a 1-minute audio response introducing your job and skills"
 
 ### Lesson 5: Unit 7 exam & review
 
@@ -464,11 +446,10 @@ hw: "Record a 1-minute audio response introducing your job and skills"
 - Review of can/can't, job articles, and work collocations
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-035"
-cando: "Can demonstrate mastery of Unit 7 job vocabulary, modal can/can't, and workplace phrases"
-hw: "Complete Unit 7 review assessment"
-```
+- **Lesson Code:** `A1-035`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 7 job vocabulary, modal can/can't, and workplace phrases
+- **Notes:**
+  - hw: "Complete Unit 7 review assessment"
 
 ## Unit 8: My city — Places, transport & directions
 
@@ -478,12 +459,12 @@ hw: "Complete Unit 7 review assessment"
 - Prepositions of motion & direction (to, from, across, past, through)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-036"
-pronunciation: [{"point":"Compound noun stress in city places","explain":"SUPER-market, BUS stop, TRAIN station","visual":"🚌"}]
-cando: "Can identify city locations and modes of transport"
-hw: "Draw a neighborhood map and label 8 public places"
-```
+- **Lesson Code:** `A1-036`
+- **Goal (Can-Do):** Can identify city locations and modes of transport
+- **Pronunciation Focus:**
+  - **Compound noun stress in city places**: SUPER-market, BUS stop, TRAIN station
+- **Notes:**
+  - hw: "Draw a neighborhood map and label 8 public places"
 
 ### Lesson 2: Imperatives & directions + question words review
 
@@ -492,12 +473,12 @@ hw: "Draw a neighborhood map and label 8 public places"
 - Question words: What/Where/Who/When/How...
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-037"
-pronunciation: [{"point":"Directional imperative intonation","explain":"Clear, decisive stress on verb and direction (Turn LEFT, Go STRAIGHT)","visual":"🗺️"}]
-cando: "Can give and follow simple directional instructions using imperatives"
-hw: "Write directions from your house to the nearest bus stop"
-```
+- **Lesson Code:** `A1-037`
+- **Goal (Can-Do):** Can give and follow simple directional instructions using imperatives
+- **Pronunciation Focus:**
+  - **Directional imperative intonation**: Clear, decisive stress on verb and direction (Turn LEFT, Go STRAIGHT)
+- **Notes:**
+  - hw: "Write directions from your house to the nearest bus stop"
 
 ### Lesson 3: Getting around the city
 
@@ -506,11 +487,10 @@ hw: "Write directions from your house to the nearest bus stop"
 - Modal verbs for travel info
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-038"
-cando: "Can inquire about transport prices, travel times, and ticket purchases"
-hw: "Write a 5-exchange dialogue buying a train ticket"
-```
+- **Lesson Code:** `A1-038`
+- **Goal (Can-Do):** Can inquire about transport prices, travel times, and ticket purchases
+- **Notes:**
+  - hw: "Write a 5-exchange dialogue buying a train ticket"
 
 ### Lesson 4: Spoken course lesson: Getting around
 
@@ -518,11 +498,10 @@ hw: "Write a 5-exchange dialogue buying a train ticket"
 - Functional dialogue language for asking and giving directions politely
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-039"
-cando: "Can perform spoken direction-asking dialogues with natural fluency"
-hw: "Record a directions dialogue roleplay"
-```
+- **Lesson Code:** `A1-039`
+- **Goal (Can-Do):** Can perform spoken direction-asking dialogues with natural fluency
+- **Notes:**
+  - hw: "Record a directions dialogue roleplay"
 
 ### Lesson 5: Unit 8 exam & review
 
@@ -530,11 +509,10 @@ hw: "Record a directions dialogue roleplay"
 - Review of imperatives, prepositions of movement, and city question forms
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-040"
-cando: "Can demonstrate mastery of Unit 8 city places, transport terms, and direction imperatives"
-hw: "Complete Unit 8 review assessment"
-```
+- **Lesson Code:** `A1-040`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 8 city places, transport terms, and direction imperatives
+- **Notes:**
+  - hw: "Complete Unit 8 review assessment"
 
 ## Unit 9: Free time — Hobbies, sports & opinions
 
@@ -545,12 +523,12 @@ hw: "Complete Unit 8 review assessment"
 - Gradable scale of interest
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-041"
-pronunciation: [{"point":"-ing suffix pronunciation","explain":"Soft /ɪŋ/ ending without hard /ɡ/ sound","visual":"⚽"}]
-cando: "Can talk about hobbies and sports using verb + -ing forms"
-hw: "Write 5 sentences about your hobbies using love, like, don't mind, hate"
-```
+- **Lesson Code:** `A1-041`
+- **Goal (Can-Do):** Can talk about hobbies and sports using verb + -ing forms
+- **Pronunciation Focus:**
+  - **-ing suffix pronunciation**: Soft /ɪŋ/ ending without hard /ɡ/ sound
+- **Notes:**
+  - hw: "Write 5 sentences about your hobbies using love, like, don't mind, hate"
 
 ### Lesson 2: Present continuous — am/is/are + -ing
 
@@ -559,12 +537,12 @@ hw: "Write 5 sentences about your hobbies using love, like, don't mind, hate"
 - Present simple vs continuous contrast
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-042"
-pronunciation: [{"point":"Auxiliary be in Present Continuous","explain":"I'm working, She's reading, They're playing","visual":"📸"}]
-cando: "Can describe actions happening right now using Present Continuous"
-hw: "Look out the window and write 5 sentences about what people are doing now"
-```
+- **Lesson Code:** `A1-042`
+- **Goal (Can-Do):** Can describe actions happening right now using Present Continuous
+- **Pronunciation Focus:**
+  - **Auxiliary be in Present Continuous**: I'm working, She's reading, They're playing
+- **Notes:**
+  - hw: "Look out the window and write 5 sentences about what people are doing now"
 
 ### Lesson 3: Talking about hobbies and what you're doing
 
@@ -573,11 +551,10 @@ hw: "Look out the window and write 5 sentences about what people are doing now"
 - Connecting words (because, so, but)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-043"
-cando: "Can distinguish between routine hobbies and immediate activities in discourse"
-hw: "Write 4 contrast sentences (e.g., I usually play tennis, but today I am swimming)"
-```
+- **Lesson Code:** `A1-043`
+- **Goal (Can-Do):** Can distinguish between routine hobbies and immediate activities in discourse
+- **Notes:**
+  - hw: "Write 4 contrast sentences (e.g., I usually play tennis, but today I am swimming)"
 
 ### Lesson 4: Spoken course lesson: What do you do for fun?
 
@@ -585,11 +562,10 @@ hw: "Write 4 contrast sentences (e.g., I usually play tennis, but today I am swi
 - Basic opinion phrases ("I think that...", "In my opinion...")
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-044"
-cando: "Can exchange opinions on hobbies and leisure activities in conversation"
-hw: "Record a 1-minute audio discussing your favorite hobbies"
-```
+- **Lesson Code:** `A1-044`
+- **Goal (Can-Do):** Can exchange opinions on hobbies and leisure activities in conversation
+- **Notes:**
+  - hw: "Record a 1-minute audio discussing your favorite hobbies"
 
 ### Lesson 5: Unit 9 exam & review
 
@@ -597,11 +573,10 @@ hw: "Record a 1-minute audio discussing your favorite hobbies"
 - Review of Present Continuous, like + -ing, and opinion structures
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-045"
-cando: "Can demonstrate mastery of Unit 9 hobbies, Present Continuous, and opinion phrases"
-hw: "Complete Unit 9 review assessment"
-```
+- **Lesson Code:** `A1-045`
+- **Goal (Can-Do):** Can demonstrate mastery of Unit 9 hobbies, Present Continuous, and opinion phrases
+- **Notes:**
+  - hw: "Complete Unit 9 review assessment"
 
 ## Unit 10: Past & plans — Revision, future & telling your story
 
@@ -612,12 +587,12 @@ hw: "Complete Unit 9 review assessment"
 - Past time expressions (yesterday, last week, ago, in 2020)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-046"
-pronunciation: [{"point":"Was vs Were pronunciation","explain":"Was /wɒz/ or /wəz/, Were /wɜː/ or /wə/","visual":"⏳"}]
-cando: "Can talk about past states, dates, and locations using was/were"
-hw: "Write 5 sentences about where you were yesterday and last week"
-```
+- **Lesson Code:** `A1-046`
+- **Goal (Can-Do):** Can talk about past states, dates, and locations using was/were
+- **Pronunciation Focus:**
+  - **Was vs Were pronunciation**: Was /wɒz/ or /wəz/, Were /wɜː/ or /wə/
+- **Notes:**
+  - hw: "Write 5 sentences about where you were yesterday and last week"
 
 ### Lesson 2: Past Simple (regular & common irregular verbs)
 
@@ -626,12 +601,12 @@ hw: "Write 5 sentences about where you were yesterday and last week"
 - Time expressions for completed past events
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-047"
-pronunciation: [{"point":"Past simple -ed pronunciation","explain":"/t/ worked, /d/ lived, /ɪd/ visited","visual":"📖"}]
-cando: "Can narrate completed past events using Past Simple regular and irregular verbs"
-hw: "Write a 5-sentence diary entry about what you did yesterday"
-```
+- **Lesson Code:** `A1-047`
+- **Goal (Can-Do):** Can narrate completed past events using Past Simple regular and irregular verbs
+- **Pronunciation Focus:**
+  - **Past simple -ed pronunciation**: /t/ worked, /d/ lived, /ɪd/ visited
+- **Notes:**
+  - hw: "Write a 5-sentence diary entry about what you did yesterday"
 
 ### Lesson 3: Future plans with "be going to" & "will" intro
 
@@ -640,12 +615,12 @@ hw: "Write a 5-sentence diary entry about what you did yesterday"
 - Will for spontaneous decisions / future predictions intro
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-048"
-pronunciation: [{"point":"Going to reduction","explain":"Going to -> /ˈɡən.ə/ in casual spoken speech","visual":"🔮"}]
-cando: "Can articulate future plans and personal intentions using be going to"
-hw: "Write 5 sentences about your plans for next weekend and next year"
-```
+- **Lesson Code:** `A1-048`
+- **Goal (Can-Do):** Can articulate future plans and personal intentions using be going to
+- **Pronunciation Focus:**
+  - **Going to reduction**: Going to -> /ˈɡən.ə/ in casual spoken speech
+- **Notes:**
+  - hw: "Write 5 sentences about your plans for next weekend and next year"
 
 ### Lesson 4: Spoken course lesson: My life story
 
@@ -653,11 +628,10 @@ hw: "Write 5 sentences about your plans for next weekend and next year"
 - Telling your story — past, present and future (combining tenses)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-049"
-cando: "Can synthesize past background, current routine, and future goals in a coherent personal story"
-hw: "Record a 2-minute personal story video or audio recording"
-```
+- **Lesson Code:** `A1-049`
+- **Goal (Can-Do):** Can synthesize past background, current routine, and future goals in a coherent personal story
+- **Notes:**
+  - hw: "Record a 2-minute personal story video or audio recording"
 
 ### Lesson 5: A1 Final Comprehensive Exam & Level Certification
 
@@ -665,8 +639,7 @@ hw: "Record a 2-minute personal story video or audio recording"
 - Comprehensive review of all A1 grammar (To be, Present Simple, Present Continuous, Past Simple, Going to, Modals, Possessives)
 
 **Teaching Notes & Rules:**
-```text
-code: "A1-050"
-cando: "Can demonstrate comprehensive A1 CEFR mastery across listening, speaking, reading, and grammar"
-hw: "Complete A1 Final Comprehensive Examination"
-```
+- **Lesson Code:** `A1-050`
+- **Goal (Can-Do):** Can demonstrate comprehensive A1 CEFR mastery across listening, speaking, reading, and grammar
+- **Notes:**
+  - hw: "Complete A1 Final Comprehensive Examination"

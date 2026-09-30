@@ -11,10 +11,8 @@
 - Assertive Modal Expressions for Sovereign Boardroom Stance
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-001"
-cando: "Can deliver C-suite speeches, handle press interviews, and address global market audiences."
-```
+- **Lesson Code:** `EN-PRO-C2-001`
+- **Goal (Can-Do):** Can deliver C-suite speeches, handle press interviews, and address global market audiences.
 
 ### Lesson 2: Authoring C-Suite Policy Papers & Regulatory Submissions
 
@@ -23,10 +21,8 @@ cando: "Can deliver C-suite speeches, handle press interviews, and address globa
 - High Statutory Legal Register Syntax
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-002"
-cando: "Can draft highly authoritative regulatory policy submissions and C-suite whitepapers."
-```
+- **Lesson Code:** `EN-PRO-C2-002`
+- **Goal (Can-Do):** Can draft highly authoritative regulatory policy submissions and C-suite whitepapers.
 
 ### Lesson 3: Crisis Management & Institutional Reputation Protection
 
@@ -35,10 +31,8 @@ cando: "Can draft highly authoritative regulatory policy submissions and C-suite
 - Discourse Control under Aggressive Interrogation
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-003"
-cando: "Can protect enterprise reputation during severe legal or public crises with flawless communication."
-```
+- **Lesson Code:** `EN-PRO-C2-003`
+- **Goal (Can-Do):** Can protect enterprise reputation during severe legal or public crises with flawless communication.
 
 ### Lesson 4: Annual General Meeting (AGM) Keynotes & Shareholder Address
 
@@ -47,10 +41,8 @@ cando: "Can protect enterprise reputation during severe legal or public crises w
 - Rhetorical Risk Presentation Formulations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-004"
-cando: "Can address Annual General Meetings, delivering masterly shareholder addresses under intense scrutiny."
-```
+- **Lesson Code:** `EN-PRO-C2-004`
+- **Goal (Can-Do):** Can address Annual General Meetings, delivering masterly shareholder addresses under intense scrutiny.
 
 ## Unit 2: Corporate Governance, Board Directorship & Fiduciary Duty
 
@@ -61,10 +53,8 @@ cando: "Can address Annual General Meetings, delivering masterly shareholder add
 - Corporate Jurisprudence Terminology and Precision
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-005"
-cando: "Can exercise and debate fiduciary oversight in corporate boardrooms at the highest level."
-```
+- **Lesson Code:** `EN-PRO-C2-005`
+- **Goal (Can-Do):** Can exercise and debate fiduciary oversight in corporate boardrooms at the highest level.
 
 ### Lesson 2: Steering Board Decision-Making & Activist Investor Relations
 
@@ -73,10 +63,8 @@ cando: "Can exercise and debate fiduciary oversight in corporate boardrooms at t
 - Syntactic Formulations for Neutralizing Activist Attacks
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-006"
-cando: "Can navigate hostile activist investor challenges and guide board consensus effectively."
-```
+- **Lesson Code:** `EN-PRO-C2-006`
+- **Goal (Can-Do):** Can navigate hostile activist investor challenges and guide board consensus effectively.
 
 ### Lesson 3: Navigating Antitrust, Monopolies & Global Compliance
 
@@ -85,10 +73,8 @@ cando: "Can navigate hostile activist investor challenges and guide board consen
 - Exception and Exemption Clause Drafting
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-007"
-cando: "Can analyze and articulate enterprise position regarding global antitrust regulations."
-```
+- **Lesson Code:** `EN-PRO-C2-007`
+- **Goal (Can-Do):** Can analyze and articulate enterprise position regarding global antitrust regulations.
 
 ### Lesson 4: Executive Ethics, Whistleblowing & Institutional Integrity
 
@@ -97,10 +83,8 @@ cando: "Can analyze and articulate enterprise position regarding global antitrus
 - Infinitive Constructions in Codes of Conduct
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-008"
-cando: "Can establish enterprise ethical standards and manage whistleblowing protocols with total neutrality."
-```
+- **Lesson Code:** `EN-PRO-C2-008`
+- **Goal (Can-Do):** Can establish enterprise ethical standards and manage whistleblowing protocols with total neutrality.
 
 ## Unit 3: Global Keynotes, Media Mastery & Strategic Thought Leadership
 
@@ -111,10 +95,8 @@ cando: "Can establish enterprise ethical standards and manage whistleblowing pro
 - Classical Rhetorical Triad Integration (Ethos, Pathos, Logos)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-009"
-cando: "Can deliver keynote speeches at major international economic forums and global summits."
-```
+- **Lesson Code:** `EN-PRO-C2-009`
+- **Goal (Can-Do):** Can deliver keynote speeches at major international economic forums and global summits.
 
 ### Lesson 2: Live Broadcast Media Interviews & Crisis Questioning
 
@@ -123,10 +105,8 @@ cando: "Can deliver keynote speeches at major international economic forums and 
 - Evasive Impersonal and Passive Constructions
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-010"
-cando: "Can command live television broadcast interviews during crisis news cycles."
-```
+- **Lesson Code:** `EN-PRO-C2-010`
+- **Goal (Can-Do):** Can command live television broadcast interviews during crisis news cycles.
 
 ### Lesson 3: Authoring Bestselling Business Books & Thought Leadership
 
@@ -135,10 +115,8 @@ cando: "Can command live television broadcast interviews during crisis news cycl
 - Inter-Paragraph Cohesion Mechanics in Long-Form Treatises
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-011"
-cando: "Can author influential thought-leadership books, monographs, and industry-defining articles."
-```
+- **Lesson Code:** `EN-PRO-C2-011`
+- **Goal (Can-Do):** Can author influential thought-leadership books, monographs, and industry-defining articles.
 
 ### Lesson 4: Chairing High-Level Advisory Commissions & Taskforces
 
@@ -147,10 +125,8 @@ cando: "Can author influential thought-leadership books, monographs, and industr
 - Synthesis of Opposing Expert Stances into Unified Mandates
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-012"
-cando: "Can chair international advisory commissions and formulate consensus policy reports."
-```
+- **Lesson Code:** `EN-PRO-C2-012`
+- **Goal (Can-Do):** Can chair international advisory commissions and formulate consensus policy reports.
 
 ## Unit 4: Crisis Negotiation, Sovereign Deals & International Consensus
 
@@ -161,10 +137,8 @@ cando: "Can chair international advisory commissions and formulate consensus pol
 - Statutory Agreement Formulations and Treaty Drafting
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-013"
-cando: "Can negotiate multi-billion dollar commercial deals with sovereign entities and government bodies."
-```
+- **Lesson Code:** `EN-PRO-C2-013`
+- **Goal (Can-Do):** Can negotiate multi-billion dollar commercial deals with sovereign entities and government bodies.
 
 ### Lesson 2: Multi-Party International Negotiations & Consortium Deals
 
@@ -173,10 +147,8 @@ cando: "Can negotiate multi-billion dollar commercial deals with sovereign entit
 - Geopolitical Interest Balancing Formulations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-014"
-cando: "Can lead complex multi-party international consortium negotiations to successful closure."
-```
+- **Lesson Code:** `EN-PRO-C2-014`
+- **Goal (Can-Do):** Can lead complex multi-party international consortium negotiations to successful closure.
 
 ### Lesson 3: High-Stakes Crisis Negotiation & Hostile Takeovers
 
@@ -185,10 +157,8 @@ cando: "Can lead complex multi-party international consortium negotiations to su
 - Hostile Takeover Poison Pill Legal Formulations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-015"
-cando: "Can execute defense strategies against hostile corporate takeovers and resolve severe impasses."
-```
+- **Lesson Code:** `EN-PRO-C2-015`
+- **Goal (Can-Do):** Can execute defense strategies against hostile corporate takeovers and resolve severe impasses.
 
 ### Lesson 4: Finalizing Global Mergers & Sovereign Framework Agreements
 
@@ -197,10 +167,8 @@ cando: "Can execute defense strategies against hostile corporate takeovers and r
 - Ceremonial Protocol Formulations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-016"
-cando: "Can seal global merger agreements and formalize sovereign accords in signing ceremonies."
-```
+- **Lesson Code:** `EN-PRO-C2-016`
+- **Goal (Can-Do):** Can seal global merger agreements and formalize sovereign accords in signing ceremonies.
 
 ## Unit 5: C-Suite Networking, Global Philanthropy & Industry Leadership
 
@@ -211,10 +179,8 @@ cando: "Can seal global merger agreements and formalize sovereign accords in sig
 - Non-Verbal and Subtextual Status Cues Integration
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-017"
-cando: "Can network effortlessly within global C-suite circles, private clubs, and executive enclaves."
-```
+- **Lesson Code:** `EN-PRO-C2-017`
+- **Goal (Can-Do):** Can network effortlessly within global C-suite circles, private clubs, and executive enclaves.
 
 ### Lesson 2: Global Philanthropy, Foundations & Corporate Social Responsibility
 
@@ -223,10 +189,8 @@ cando: "Can network effortlessly within global C-suite circles, private clubs, a
 - Commercial and Mission Dual-Purpose Formulations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-018"
-cando: "Can direct global corporate foundations and articulate visionary philanthropic missions."
-```
+- **Lesson Code:** `EN-PRO-C2-018`
+- **Goal (Can-Do):** Can direct global corporate foundations and articulate visionary philanthropic missions.
 
 ### Lesson 3: Sponsoring High-Level Cultural & Sporting Partnerships
 
@@ -235,10 +199,8 @@ cando: "Can direct global corporate foundations and articulate visionary philant
 - Sponsorship Contract Legal Nuances
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-019"
-cando: "Can negotiate prestige brand partnerships, sports sponsorships, and cultural patronage deals."
-```
+- **Lesson Code:** `EN-PRO-C2-019`
+- **Goal (Can-Do):** Can negotiate prestige brand partnerships, sports sponsorships, and cultural patronage deals.
 
 ### Lesson 4: Leading Industry Alliances & Trade Associations
 
@@ -247,10 +209,8 @@ cando: "Can negotiate prestige brand partnerships, sports sponsorships, and cult
 - Legislative Lobbying Formulations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-020"
-cando: "Can lead global industry alliances and advocate unified commercial positions to governments."
-```
+- **Lesson Code:** `EN-PRO-C2-020`
+- **Goal (Can-Do):** Can lead global industry alliances and advocate unified commercial positions to governments.
 
 ## Unit 6: Executive Dossiers, Board Recruitment & Succession Planning
 
@@ -261,10 +221,8 @@ cando: "Can lead global industry alliances and advocate unified commercial posit
 - Fiduciary Governance Experience Framing
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-021"
-cando: "Can construct authoritative C2 executive portfolios and non-executive directorship dossiers."
-```
+- **Lesson Code:** `EN-PRO-C2-021`
+- **Goal (Can-Do):** Can construct authoritative C2 executive portfolios and non-executive directorship dossiers.
 
 ### Lesson 2: Executive Chair Recruitment & CEO Succession Vetting
 
@@ -273,10 +231,8 @@ cando: "Can construct authoritative C2 executive portfolios and non-executive di
 - CEO Succession Criteria Drafting
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-022"
-cando: "Can lead CEO succession vetting processes and evaluate top-tier executive candidates."
-```
+- **Lesson Code:** `EN-PRO-C2-022`
+- **Goal (Can-Do):** Can lead CEO succession vetting processes and evaluate top-tier executive candidates.
 
 ### Lesson 3: Negotiating C-Suite Contracts, Golden Parachutes & Severance
 
@@ -285,10 +241,8 @@ cando: "Can lead CEO succession vetting processes and evaluate top-tier executiv
 - Golden Parachute, Clawback, and Non-Compete Clauses
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-023"
-cando: "Can negotiate C-suite executive employment contracts, indemnity clauses, and golden parachutes."
-```
+- **Lesson Code:** `EN-PRO-C2-023`
+- **Goal (Can-Do):** Can negotiate C-suite executive employment contracts, indemnity clauses, and golden parachutes.
 
 ### Lesson 4: Conducting Board Evaluations & Institutional Succession Audits
 
@@ -297,7 +251,5 @@ cando: "Can negotiate C-suite executive employment contracts, indemnity clauses,
 - Governance Transformation Goal Setting
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C2-024"
-cando: "Can conduct complete C-suite board evaluations and institutional succession planning master reviews."
-```
+- **Lesson Code:** `EN-PRO-C2-024`
+- **Goal (Can-Do):** Can conduct complete C-suite board evaluations and institutional succession planning master reviews.

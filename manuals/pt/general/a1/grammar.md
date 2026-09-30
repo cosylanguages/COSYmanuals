@@ -10,12 +10,14 @@
 - Verbo "ser" (presente) — formas afirmativas
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-001"
-pronunciation: [{"point":"O Alfabeto Português","explain":"O alfabeto português tem 26 letras. Atenção aos acentos e ao til (~).","alphabet":[{"l":"A a","ipa":"/a/"},{"l":"B b","ipa":"/be/"},{"l":"C c","ipa":"/se/"},{"l":"D d","ipa":"/de/"},{"l":"E e","ipa":"/ɛ/"},{"l":"F f","ipa":"/ɛfe/"},{"l":"G g","ipa":"/ʒe/"},{"l":"H h","ipa":"/aɡa/"},{"l":"I i","ipa":"/i/"},{"l":"J j","ipa":"/ʒɔta/"},{"l":"K k","ipa":"/ka/"},{"l":"L l","ipa":"/ɛle/"},{"l":"M m","ipa":"/ɛme/"},{"l":"N n","ipa":"/ɛne/"},{"l":"O o","ipa":"/ɔ/"},{"l":"P p","ipa":"/pe/"},{"l":"Q q","ipa":"/ke/"},{"l":"R r","ipa":"/ɛʁe/"},{"l":"S s","ipa":"/ɛse/"},{"l":"T t","ipa":"/te/"},{"l":"U u","ipa":"/u/"},{"l":"V v","ipa":"/ve/"},{"l":"W w","ipa":"/dabliu/"},{"l":"X x","ipa":"/ʃis/"},{"l":"Y y","ipa":"/ipsilɔn/"},{"l":"Z z","ipa":"/ze/"}],"extension":"O português é falado em muitos países, e existem diferenças de pronúncia entre o Brasil e Portugal. Aqui focamos na base comum e clara.","visual":"🇵🇹🔤"}]
-cando: "Can greet people and say goodbye"
-hw: "Learn the alphabet and the nasal sounds"
-```
+- **Lesson Code:** `PT-001`
+- **Goal (Can-Do):** Can greet people and say goodbye
+- **Pronunciation Focus:**
+  - **O Alfabeto Português**: O alfabeto português tem 26 letras. Atenção aos acentos e ao til (~).
+    - *Examples:* `A a` /a/, `B b` /be/, `C c` /se/, `D d` /de/, `E e` /ɛ/, `F f` /ɛfe/, `G g` /ʒe/, `H h` /aɡa/, `I i` /i/, `J j` /ʒɔta/, `K k` /ka/, `L l` /ɛle/, `M m` /ɛme/, `N n` /ɛne/, `O o` /ɔ/, `P p` /pe/, `Q q` /ke/, `R r` /ɛʁe/, `S s` /ɛse/, `T t` /te/, `U u` /u/, `V v` /ve/, `W w` /dabliu/, `X x` /ʃis/, `Y y` /ipsilɔn/, `Z z` /ze/
+    - *Note:* O português é falado em muitos países, e existem diferenças de pronúncia entre o Brasil e Portugal. Aqui focamos na base comum e clara.
+- **Notes:**
+  - hw: "Learn the alphabet and the nasal sounds"
 
 ### Lesson 2: Como se chama?
 
@@ -23,12 +25,14 @@ hw: "Learn the alphabet and the nasal sounds"
 - Verbo "chamar-se" (presente)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-002"
-pronunciation: [{"point":"Sons Nasais e o Til (~)","explain":"O til indica que o som deve sair pelo nariz.","examples":[{"pattern":"ão","ipa":"/ɐ̃w̃/","word":"pão"},{"pattern":"ã","ipa":"/ɐ̃/","word":"manhã"},{"pattern":"ões","ipa":"/õj̃s/","word":"lições"}],"tip":"Pense no som do sino: 'tão, tão'.","extension":"Os sons nasais são uma das características mais marcantes do português. É o que dá à língua o seu som melódico único.","visual":"👃"}]
-cando: "Can introduce themselves"
-hw: "Practice spelling your name in Portuguese"
-```
+- **Lesson Code:** `PT-002`
+- **Goal (Can-Do):** Can introduce themselves
+- **Pronunciation Focus:**
+  - **Sons Nasais e o Til (~)**: O til indica que o som deve sair pelo nariz.
+    - *Examples:* `pão` /ɐ̃w̃/, `manhã` /ɐ̃/, `lições` /õj̃s/
+    - *Note:* Pense no som do sino: 'tão, tão'.
+- **Notes:**
+  - hw: "Practice spelling your name in Portuguese"
 
 ### Lesson 3: Números 1-20
 
@@ -36,12 +40,13 @@ hw: "Practice spelling your name in Portuguese"
 - Género dos nomes (masculino e feminino)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-003"
-pronunciation: [{"point":"Sons de 'S' e 'Z'","explain":"O 's' entre vogais soa como 'z'.","examples":[{"pattern":"casa","ipa":"/ˈka.zɐ/","word":"casa"},{"pattern":"mesa","ipa":"/ˈme.zɐ/","word":"mesa"},{"pattern":"rosa","ipa":"/ˈʁɔ.zɐ/","word":"rosa"}]}]
-cando: "Can count from 1 to 20"
-hw: "Count from 1 to 20 in Portuguese while showering"
-```
+- **Lesson Code:** `PT-003`
+- **Goal (Can-Do):** Can count from 1 to 20
+- **Pronunciation Focus:**
+  - **Sons de 'S' e 'Z'**: O 's' entre vogais soa como 'z'.
+    - *Examples:* `casa` /ˈka.zɐ/, `mesa` /ˈme.zɐ/, `rosa` /ˈʁɔ.zɐ/
+- **Notes:**
+  - hw: "Count from 1 to 20 in Portuguese while showering"
 
 ### Lesson 4: Dígrafos: LH, NH, CH
 
@@ -49,12 +54,14 @@ hw: "Count from 1 to 20 in Portuguese while showering"
 - Estrutura básica da frase em português
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-004"
-pronunciation: [{"point":"Dígrafos LH, NH, CH","explain":"Estes pares de letras criam sons específicos.","minimalPairs":[{"w1":"filha","p1":"/ˈfi.ʎɐ/","w2":"fila","p2":"/ˈfi.lɐ/"},{"w1":"banho","p1":"/ˈba.ɲu/","w2":"bano","p2":"/ˈba.nu/"},{"w1":"chave","p1":"/ˈʃa.ve/","w2":"chá","p2":"/ʃa/"}],"extension":"LH soa como 'li' em 'milhão'. NH soa como 'ni' em 'ninho'. CH soa como 'sh' em 'show'.","visual":"🇵🇹"}]
-cando: "Can pronounce LH and NH sounds correctly"
-hw: "Record yourself saying \"filha\" and \"banho\""
-```
+- **Lesson Code:** `PT-004`
+- **Goal (Can-Do):** Can pronounce LH and NH sounds correctly
+- **Pronunciation Focus:**
+  - **Dígrafos LH, NH, CH**: Estes pares de letras criam sons específicos.
+    - *Examples:* `filha` /ˈfi.ʎɐ/ ↔ `fila` /ˈfi.lɐ/, `banho` /ˈba.ɲu/ ↔ `bano` /ˈba.nu/, `chave` /ˈʃa.ve/ ↔ `chá` /ʃa/
+    - *Note:* LH soa como 'li' em 'milhão'. NH soa como 'ni' em 'ninho'. CH soa como 'sh' em 'show'.
+- **Notes:**
+  - hw: "Record yourself saying \"filha\" and \"banho\""
 
 ### Lesson 5: Frases Essenciais
 
@@ -62,12 +69,13 @@ hw: "Record yourself saying \"filha\" and \"banho\""
 - Pedidos educados (Por favor, Com licença)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-005"
-pronunciation: [{"point":"Acento Tónico","explain":"Em português, a maioria das palavras é paroxítona (acento na penúltima sílaba).","examples":[{"pattern":"por favor","ipa":"/puɾ fɐ.ˈvoɾ/","word":"por favor"},{"pattern":"obrigado","ipa":"/u.bɾi.ˈɡa.du/","word":"obrigado"}]}]
-cando: "Can use basic polite phrases"
-hw: "Use three polite phrases tomorrow in Portuguese"
-```
+- **Lesson Code:** `PT-005`
+- **Goal (Can-Do):** Can use basic polite phrases
+- **Pronunciation Focus:**
+  - **Acento Tónico**: Em português, a maioria das palavras é paroxítona (acento na penúltima sílaba).
+    - *Examples:* `por favor` /puɾ fɐ.ˈvoɾ/, `obrigado` /u.bɾi.ˈɡa.du/
+- **Notes:**
+  - hw: "Use three polite phrases tomorrow in Portuguese"
 
 ## Unit 1: Unidade 1: A Minha Vida
 
@@ -77,12 +85,14 @@ hw: "Use three polite phrases tomorrow in Portuguese"
 - Verbos "ser" e "estar" (presente)
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-01"
-pronunciation: [{"point":"Redução Vocálica","explain":"Em Portugal, as vogais átonas são muitas vezes reduzidas ou quase desaparecem.","examples":[{"pattern":"excelente","ipa":"/ɐj.sə.ˈlẽ.tə/","word":"excelente"},{"pattern":"português","ipa":"/puɾ.tu.ˈɡeʃ/","word":"português"}],"extension":"Esta redução é a principal diferença entre o português de Portugal (mais 'fechado') e o do Brasil (mais 'aberto'). Ouvir estas diferenças ajuda muito na compreensão auditiva.","visual":"📉"}]
-cando: "Can introduce themselves and use basic verbs"
-hw: "Write a small intro about yourself in Portuguese"
-```
+- **Lesson Code:** `PT-01`
+- **Goal (Can-Do):** Can introduce themselves and use basic verbs
+- **Pronunciation Focus:**
+  - **Redução Vocálica**: Em Portugal, as vogais átonas são muitas vezes reduzidas ou quase desaparecem.
+    - *Examples:* `excelente` /ɐj.sə.ˈlẽ.tə/, `português` /puɾ.tu.ˈɡeʃ/
+    - *Note:* Esta redução é a principal diferença entre o português de Portugal (mais 'fechado') e o do Brasil (mais 'aberto'). Ouvir estas diferenças ajuda muito na compreensão auditiva.
+- **Notes:**
+  - hw: "Write a small intro about yourself in Portuguese"
 
 ### Lesson 2: O meu trabalho
 
@@ -90,10 +100,11 @@ hw: "Write a small intro about yourself in Portuguese"
 - Verbo ter + artigos indefinidos
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-02"
-pronunciation: [{"point":"O som do 'X'","explain":"A letra 'x' pode ter vários sons em português: 'sh', 'z', 'ks' ou 's'.","examples":[{"pattern":"sh","ipa":"/ʃ/","word":"caixa"},{"pattern":"z","ipa":"/z/","word":"exame"},{"pattern":"ks","ipa":"/ks/","word":"táxi"}],"tip":"Não há uma regra fixa, é preciso aprender caso a caso!","visual":"✖️"}]
-```
+- **Lesson Code:** `PT-02`
+- **Pronunciation Focus:**
+  - **O som do 'X'**: A letra 'x' pode ter vários sons em português: 'sh', 'z', 'ks' ou 's'.
+    - *Examples:* `caixa` /ʃ/, `exame` /z/, `táxi` /ks/
+    - *Note:* Não há uma regra fixa, é preciso aprender caso a caso!
 
 ### Lesson 3: A minha casa
 
@@ -101,7 +112,8 @@ pronunciation: [{"point":"O som do 'X'","explain":"A letra 'x' pode ter vários 
 - Verbos de lugar + preposições
 
 **Teaching Notes & Rules:**
-```text
-code: "PT-03"
-pronunciation: [{"point":"O 'R' vibrante e o 'RR'","explain":"O 'r' no início da palavra ou o 'rr' no meio é forte e vem da garganta.","examples":[{"pattern":"r-","ipa":"/ʁ/","word":"rua"},{"pattern":"rr","ipa":"/ʁ/","word":"carro"}],"extension":"Em Portugal, este som é muitas vezes produzido na úvula, de forma semelhante ao 'r' francês ou alemão.","visual":"🦁"}]
-```
+- **Lesson Code:** `PT-03`
+- **Pronunciation Focus:**
+  - **O 'R' vibrante e o 'RR'**: O 'r' no início da palavra ou o 'rr' no meio é forte e vem da garganta.
+    - *Examples:* `rua` /ʁ/, `carro` /ʁ/
+    - *Note:* Em Portugal, este som é muitas vezes produzido na úvula, de forma semelhante ao 'r' francês ou alemão.

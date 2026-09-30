@@ -11,11 +11,10 @@
 - Formal Academic and Corporate Register Switching
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-001"
-cando: "Can draft comprehensive strategic reports, academic monographs, and corporate whitepapers."
-domain_hints: "Education: Research monographs; Legal: Legal treatises; Medical: Clinical review papers; IT: Tech whitepapers; Business: Strategic market papers; Manual Trades: Engineering standards; Crafts: Critical art essays."
-```
+- **Lesson Code:** `EN-PRO-C1-001`
+- **Goal (Can-Do):** Can draft comprehensive strategic reports, academic monographs, and corporate whitepapers.
+- **Notes:**
+  - domain_hints: "Education: Research monographs; Legal: Legal treatises; Medical: Clinical review papers; IT: Tech whitepapers; Business: Strategic market papers; Manual Trades: Engineering standards; Crafts: Critical art essays."
 
 ### Lesson 2: Drafting Board Documents & Academic Directives
 
@@ -24,11 +23,10 @@ domain_hints: "Education: Research monographs; Legal: Legal treatises; Medical: 
 - Subjunctive Structures in Corporate Policy Formulation
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-002"
-cando: "Can write formal board resolutions, academic senate mandates, and governance directives."
-domain_hints: "Education: Academic senate resolutions; Legal: Corporate bylaws; Medical: Hospital board directives; IT: Security governance mandates; Business: Board resolutions; Manual Trades: Compliance mandates; Crafts: Guild bylaws."
-```
+- **Lesson Code:** `EN-PRO-C1-002`
+- **Goal (Can-Do):** Can write formal board resolutions, academic senate mandates, and governance directives.
+- **Notes:**
+  - domain_hints: "Education: Academic senate resolutions; Legal: Corporate bylaws; Medical: Hospital board directives; IT: Security governance mandates; Business: Board resolutions; Manual Trades: Compliance mandates; Crafts: Guild bylaws."
 
 ### Lesson 3: Crisis Management Communications & Stakeholder Briefs
 
@@ -37,11 +35,10 @@ domain_hints: "Education: Academic senate resolutions; Legal: Corporate bylaws; 
 - Conditional Structures for Risk Mitigation Scenarios
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-003"
-cando: "Can author crisis management statements and stakeholder risk briefs under intense pressure."
-domain_hints: "Education: Campus crisis statements; Legal: Litigation risk briefs; Medical: Epidemic response briefs; IT: System outage crisis briefs; Business: Investor risk alerts; Manual Trades: Site disaster reports; Crafts: Provenance dispute statements."
-```
+- **Lesson Code:** `EN-PRO-C1-003`
+- **Goal (Can-Do):** Can author crisis management statements and stakeholder risk briefs under intense pressure.
+- **Notes:**
+  - domain_hints: "Education: Campus crisis statements; Legal: Litigation risk briefs; Medical: Epidemic response briefs; IT: System outage crisis briefs; Business: Investor risk alerts; Manual Trades: Site disaster reports; Crafts: Provenance dispute statements."
 
 ### Lesson 4: Executive Press Releases & Public Statements
 
@@ -50,11 +47,10 @@ domain_hints: "Education: Campus crisis statements; Legal: Litigation risk brief
 - Precision in High-Level Corporate Terminology
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-004"
-cando: "Can write polished executive press releases and handle media statements on corporate changes."
-domain_hints: "Education: University expansion press releases; Legal: High-profile case press statements; Medical: Drug approval announcements; IT: Tech acquisition announcements; Business: Merger PR statements; Manual Trades: Infrastructure project launches; Crafts: Major museum acquisition announcements."
-```
+- **Lesson Code:** `EN-PRO-C1-004`
+- **Goal (Can-Do):** Can write polished executive press releases and handle media statements on corporate changes.
+- **Notes:**
+  - domain_hints: "Education: University expansion press releases; Legal: High-profile case press statements; Medical: Drug approval announcements; IT: Tech acquisition announcements; Business: Merger PR statements; Manual Trades: Infrastructure project launches; Crafts: Major museum acquisition announcements."
 
 ## Unit 2: Boardroom Leadership, Academic Senate & Strategic Governance
 
@@ -65,11 +61,10 @@ domain_hints: "Education: University expansion press releases; Legal: High-profi
 - Modals of Politeness and Distance
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-005"
-cando: "Can mediate boardroom or faculty senate conflicts and align stakeholder interests."
-domain_hints: "Education: Faculty senate mediation; Legal: Senior partner mediation; Medical: Clinical department alignment; IT: CTO/CIO strategy mediation; Business: Boardroom dispute mediation; Manual Trades: General contractor arbitration; Crafts: Foundation board alignment."
-```
+- **Lesson Code:** `EN-PRO-C1-005`
+- **Goal (Can-Do):** Can mediate boardroom or faculty senate conflicts and align stakeholder interests.
+- **Notes:**
+  - domain_hints: "Education: Faculty senate mediation; Legal: Senior partner mediation; Medical: Clinical department alignment; IT: CTO/CIO strategy mediation; Business: Boardroom dispute mediation; Manual Trades: General contractor arbitration; Crafts: Foundation board alignment."
 
 ### Lesson 2: Steering Board Discussions & Managing Dissent
 
@@ -78,11 +73,10 @@ domain_hints: "Education: Faculty senate mediation; Legal: Senior partner mediat
 - Diplomatic Counter-Arguments (While I appreciate the financial rationale, we must consider...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-006"
-cando: "Can manage executive or academic dissent gracefully and steer discussions toward consensus."
-domain_hints: "Education: Tenure committee dissent; Legal: Partner vote dissent; Medical: Ethics board objections; IT: Architectural dissent; Business: Shareholder dissent; Manual Trades: Union objections; Crafts: Exhibition jury dissent."
-```
+- **Lesson Code:** `EN-PRO-C1-006`
+- **Goal (Can-Do):** Can manage executive or academic dissent gracefully and steer discussions toward consensus.
+- **Notes:**
+  - domain_hints: "Education: Tenure committee dissent; Legal: Partner vote dissent; Medical: Ethics board objections; IT: Architectural dissent; Business: Shareholder dissent; Manual Trades: Union objections; Crafts: Exhibition jury dissent."
 
 ### Lesson 3: Navigating Corporate Governance & Institutional Compliance
 
@@ -91,11 +85,10 @@ domain_hints: "Education: Tenure committee dissent; Legal: Partner vote dissent;
 - Complex Conditionality in Regulatory Frameworks
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-007"
-cando: "Can analyze and articulate complex governance standards, ethical codes, and statutory compliance."
-domain_hints: "Education: Accreditation standards; Legal: Regulatory compliance; Medical: Bioethics compliance; IT: Data privacy compliance (GDPR/HIPAA); Business: Corporate audit compliance; Manual Trades: OSHA/Safety compliance; Crafts: Cultural heritage law."
-```
+- **Lesson Code:** `EN-PRO-C1-007`
+- **Goal (Can-Do):** Can analyze and articulate complex governance standards, ethical codes, and statutory compliance.
+- **Notes:**
+  - domain_hints: "Education: Accreditation standards; Legal: Regulatory compliance; Medical: Bioethics compliance; IT: Data privacy compliance (GDPR/HIPAA); Business: Corporate audit compliance; Manual Trades: OSHA/Safety compliance; Crafts: Cultural heritage law."
 
 ### Lesson 4: Aligning Multi-Stakeholder Priorities & Strategic Frameworks
 
@@ -104,11 +97,10 @@ domain_hints: "Education: Accreditation standards; Legal: Regulatory compliance;
 - Discourse Connectors of Concession and Synthesis
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-008"
-cando: "Can align diverse stakeholder priorities into a cohesive strategic framework."
-domain_hints: "Education: Institutional strategic plans; Legal: Multi-party litigation strategy; Medical: Healthcare reform frameworks; IT: Enterprise architecture roadmaps; Business: Strategic planning; Manual Trades: Master development plans; Crafts: Cultural grant frameworks."
-```
+- **Lesson Code:** `EN-PRO-C1-008`
+- **Goal (Can-Do):** Can align diverse stakeholder priorities into a cohesive strategic framework.
+- **Notes:**
+  - domain_hints: "Education: Institutional strategic plans; Legal: Multi-party litigation strategy; Medical: Healthcare reform frameworks; IT: Enterprise architecture roadmaps; Business: Strategic planning; Manual Trades: Master development plans; Crafts: Cultural grant frameworks."
 
 ## Unit 3: Keynote Speeches, Academic Lecturing & Media Mastery
 
@@ -119,11 +111,10 @@ domain_hints: "Education: Institutional strategic plans; Legal: Multi-party liti
 - Flawless Register Control and Vocal Cadence
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-009"
-cando: "Can deliver inspiring keynote addresses or inaugural academic lectures to large audiences."
-domain_hints: "Education: Inaugural professorial lectures; Legal: Bar association keynotes; Medical: International medical keynotes; IT: Tech conference keynotes; Business: CEO keynotes; Manual Trades: Construction summits; Crafts: Art biennial keynotes."
-```
+- **Lesson Code:** `EN-PRO-C1-009`
+- **Goal (Can-Do):** Can deliver inspiring keynote addresses or inaugural academic lectures to large audiences.
+- **Notes:**
+  - domain_hints: "Education: Inaugural professorial lectures; Legal: Bar association keynotes; Medical: International medical keynotes; IT: Tech conference keynotes; Business: CEO keynotes; Manual Trades: Construction summits; Crafts: Art biennial keynotes."
 
 ### Lesson 2: High-Stakes Investor Presentations & Venture Pitches
 
@@ -132,11 +123,10 @@ domain_hints: "Education: Inaugural professorial lectures; Legal: Bar associatio
 - Hypothetical Projections with Advanced Conditionals (Were we to scale into region X, ROI would exceed...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-010"
-cando: "Can present high-stakes venture pitches and defend company valuation before investors."
-domain_hints: "Education: EdTech venture pitches; Legal: Law firm equity pitches; Medical: Biotech funding pitches; IT: VC series pitches; Business: Angel investor pitches; Manual Trades: Infrastructure funding; Crafts: Creative enterprise pitches."
-```
+- **Lesson Code:** `EN-PRO-C1-010`
+- **Goal (Can-Do):** Can present high-stakes venture pitches and defend company valuation before investors.
+- **Notes:**
+  - domain_hints: "Education: EdTech venture pitches; Legal: Law firm equity pitches; Medical: Biotech funding pitches; IT: VC series pitches; Business: Angel investor pitches; Manual Trades: Infrastructure funding; Crafts: Creative enterprise pitches."
 
 ### Lesson 3: Mastering Press Conferences & Hostile Media Q&A
 
@@ -145,11 +135,10 @@ domain_hints: "Education: EdTech venture pitches; Legal: Law firm equity pitches
 - Advanced Non-Committal Modal Phrasing
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-011"
-cando: "Can handle hostile press interviews and steer media questioning back to core messages."
-domain_hints: "Education: Institutional crisis pressers; Legal: High-profile case media Q&A; Medical: Clinical trial dispute pressers; IT: Data leak media interrogations; Business: Earnings report pressers; Manual Trades: Safety audit media Q&A; Crafts: Authentication debate pressers."
-```
+- **Lesson Code:** `EN-PRO-C1-011`
+- **Goal (Can-Do):** Can handle hostile press interviews and steer media questioning back to core messages.
+- **Notes:**
+  - domain_hints: "Education: Institutional crisis pressers; Legal: High-profile case media Q&A; Medical: Clinical trial dispute pressers; IT: Data leak media interrogations; Business: Earnings report pressers; Manual Trades: Safety audit media Q&A; Crafts: Authentication debate pressers."
 
 ### Lesson 4: Moderating Executive Panels & Academic Symposia
 
@@ -158,11 +147,10 @@ domain_hints: "Education: Institutional crisis pressers; Legal: High-profile cas
 - Synthesizing Complex Contributions Live
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-012"
-cando: "Can moderate high-level industry or academic panels and synthesize complex debates in real time."
-domain_hints: "Education: Academic symposium moderation; Legal: Judicial panel moderation; Medical: Specialist panel moderation; IT: Tech summit moderation; Business: Industry panel moderation; Manual Trades: Engineering panel moderation; Crafts: Design symposium moderation."
-```
+- **Lesson Code:** `EN-PRO-C1-012`
+- **Goal (Can-Do):** Can moderate high-level industry or academic panels and synthesize complex debates in real time.
+- **Notes:**
+  - domain_hints: "Education: Academic symposium moderation; Legal: Judicial panel moderation; Medical: Specialist panel moderation; IT: Tech summit moderation; Business: Industry panel moderation; Manual Trades: Engineering panel moderation; Crafts: Design symposium moderation."
 
 ## Unit 4: Diplomatic Persuasion, M&A & High-Stakes Negotiation
 
@@ -173,11 +161,10 @@ domain_hints: "Education: Academic symposium moderation; Legal: Judicial panel m
 - Subtle Hedging in Financial Valuations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-013"
-cando: "Can negotiate M&A transaction terms, due diligence findings, and post-merger integration."
-domain_hints: "Education: University institute mergers; Legal: Law firm mergers; Medical: Hospital acquisitions; IT: Tech acquisitions; Business: Corporate M&A; Manual Trades: Construction firm buyouts; Crafts: Design studio mergers."
-```
+- **Lesson Code:** `EN-PRO-C1-013`
+- **Goal (Can-Do):** Can negotiate M&A transaction terms, due diligence findings, and post-merger integration.
+- **Notes:**
+  - domain_hints: "Education: University institute mergers; Legal: Law firm mergers; Medical: Hospital acquisitions; IT: Tech acquisitions; Business: Corporate M&A; Manual Trades: Construction firm buyouts; Crafts: Design studio mergers."
 
 ### Lesson 2: Breaking Negotiation Deadlocks & Institutional Mediation
 
@@ -186,11 +173,10 @@ domain_hints: "Education: University institute mergers; Legal: Law firm mergers;
 - Hypothetical Concessions with Conditional Nuance
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-014"
-cando: "Can resolve negotiation impasses through creative framing and strategic concessions."
-domain_hints: "Education: Faculty union negotiations; Legal: Arbitration stalemates; Medical: Malpractice mediation; IT: Vendor dispute deadlocks; Business: Contract impasses; Manual Trades: Labor union deadlocks; Crafts: Gallery dispute mediation."
-```
+- **Lesson Code:** `EN-PRO-C1-014`
+- **Goal (Can-Do):** Can resolve negotiation impasses through creative framing and strategic concessions.
+- **Notes:**
+  - domain_hints: "Education: Faculty union negotiations; Legal: Arbitration stalemates; Medical: Malpractice mediation; IT: Vendor dispute deadlocks; Business: Contract impasses; Manual Trades: Labor union deadlocks; Crafts: Gallery dispute mediation."
 
 ### Lesson 3: Tactical Persuasion, Framing & Influence Architecture
 
@@ -199,11 +185,10 @@ domain_hints: "Education: Faculty union negotiations; Legal: Arbitration stalema
 - Metaphorical and Figurative Language in Business Strategy
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-015"
-cando: "Can deploy subtle rhetorical framing techniques to influence partner strategy in negotiations."
-domain_hints: "Education: Policy influence framing; Legal: Jury argument framing; Medical: Health policy influence; IT: Tech standard adoption; Business: Market positioning; Manual Trades: Contractor alliance leverage; Crafts: Artistic movement positioning."
-```
+- **Lesson Code:** `EN-PRO-C1-015`
+- **Goal (Can-Do):** Can deploy subtle rhetorical framing techniques to influence partner strategy in negotiations.
+- **Notes:**
+  - domain_hints: "Education: Policy influence framing; Legal: Jury argument framing; Medical: Health policy influence; IT: Tech standard adoption; Business: Market positioning; Manual Trades: Contractor alliance leverage; Crafts: Artistic movement positioning."
 
 ### Lesson 4: Drafting & Negotiating International Joint Ventures & Grants
 
@@ -212,11 +197,10 @@ domain_hints: "Education: Policy influence framing; Legal: Jury argument framing
 - Precision in Defining Scope and Liability Clauses
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-016"
-cando: "Can negotiate complex cross-border joint venture agreements and governance structures."
-domain_hints: "Education: Global university consortia; Legal: Cross-border legal alliances; Medical: International clinical trials; IT: Global open-source consortia; Business: International joint ventures; Manual Trades: Global infrastructure consortia; Crafts: World art biennials."
-```
+- **Lesson Code:** `EN-PRO-C1-016`
+- **Goal (Can-Do):** Can negotiate complex cross-border joint venture agreements and governance structures.
+- **Notes:**
+  - domain_hints: "Education: Global university consortia; Legal: Cross-border legal alliances; Medical: International clinical trials; IT: Global open-source consortia; Business: International joint ventures; Manual Trades: Global infrastructure consortia; Crafts: World art biennials."
 
 ## Unit 5: Executive Networking, Cross-Cultural Diplomacy & Board Relations
 
@@ -227,11 +211,10 @@ domain_hints: "Education: Global university consortia; Legal: Cross-border legal
 - Indirect Inquiries into Strategic Alignment
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-017"
-cando: "Can build discreet executive or benefactor relationships and network seamlessly with leaders."
-domain_hints: "Education: University advancement & endowment donors; Legal: High-net-worth client relations; Medical: Research foundation benefactors; IT: Angel investor networks; Business: C-suite networking; Manual Trades: Major developer relations; Crafts: Art patrons."
-```
+- **Lesson Code:** `EN-PRO-C1-017`
+- **Goal (Can-Do):** Can build discreet executive or benefactor relationships and network seamlessly with leaders.
+- **Notes:**
+  - domain_hints: "Education: University advancement & endowment donors; Legal: High-net-worth client relations; Medical: Research foundation benefactors; IT: Angel investor networks; Business: C-suite networking; Manual Trades: Major developer relations; Crafts: Art patrons."
 
 ### Lesson 2: Cross-Cultural Diplomacy & Global Stakeholder Relations
 
@@ -240,11 +223,10 @@ domain_hints: "Education: University advancement & endowment donors; Legal: High
 - Nuanced Expressions of Respect and Authority
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-018"
-cando: "Can manage delicate international stakeholder relationships with high cross-cultural diplomacy."
-domain_hints: "Education: Foreign ministry academic exchanges; Legal: International tribunal diplomacy; Medical: WHO/global health diplomacy; IT: Global tech policy advocacy; Business: Sovereign wealth relations; Manual Trades: Overseas government tenders; Crafts: Cultural diplomacy."
-```
+- **Lesson Code:** `EN-PRO-C1-018`
+- **Goal (Can-Do):** Can manage delicate international stakeholder relationships with high cross-cultural diplomacy.
+- **Notes:**
+  - domain_hints: "Education: Foreign ministry academic exchanges; Legal: International tribunal diplomacy; Medical: WHO/global health diplomacy; IT: Global tech policy advocacy; Business: Sovereign wealth relations; Manual Trades: Overseas government tenders; Crafts: Cultural diplomacy."
 
 ### Lesson 3: Managing Advisory Boards & Academic / Industry Think Tanks
 
@@ -253,11 +235,10 @@ domain_hints: "Education: Foreign ministry academic exchanges; Legal: Internatio
 - Complex Prepositional Structures in Formal Invitations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-019"
-cando: "Can curate and lead advisory boards and global thought leadership networks."
-domain_hints: "Education: University advisory councils; Legal: Judicial advisory boards; Medical: Medical advisory panels; IT: Tech advisory boards; Business: Corporate think tanks; Manual Trades: Engineering advisory councils; Crafts: Arts advisory boards."
-```
+- **Lesson Code:** `EN-PRO-C1-019`
+- **Goal (Can-Do):** Can curate and lead advisory boards and global thought leadership networks.
+- **Notes:**
+  - domain_hints: "Education: University advisory councils; Legal: Judicial advisory boards; Medical: Medical advisory panels; IT: Tech advisory boards; Business: Corporate think tanks; Manual Trades: Engineering advisory councils; Crafts: Arts advisory boards."
 
 ### Lesson 4: Hosting Strategic Retreats & Executive / Academic Summits
 
@@ -266,11 +247,10 @@ domain_hints: "Education: University advisory councils; Legal: Judicial advisory
 - Facilitating High-Level Strategic Alignment Conversations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-020"
-cando: "Can host strategic retreats and facilitate high-level executive or academic deliberations."
-domain_hints: "Education: Academic leadership retreats; Legal: Partner retreats; Medical: Medical society retreats; IT: Architecture summits; Business: C-suite strategy retreats; Manual Trades: Contractor summits; Crafts: Arts leadership retreats."
-```
+- **Lesson Code:** `EN-PRO-C1-020`
+- **Goal (Can-Do):** Can host strategic retreats and facilitate high-level executive or academic deliberations.
+- **Notes:**
+  - domain_hints: "Education: Academic leadership retreats; Legal: Partner retreats; Medical: Medical society retreats; IT: Architecture summits; Business: C-suite strategy retreats; Manual Trades: Contractor summits; Crafts: Arts leadership retreats."
 
 ## Unit 6: Executive Dossiers, Board Profiles, Professorships & 360 Appraisals
 
@@ -281,11 +261,10 @@ domain_hints: "Education: Academic leadership retreats; Legal: Partner retreats;
 - Framing Governance Experience and Fiduciary Achievements
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-021"
-cando: "Can craft C1-level executive dossiers, professorial dossiers, and board-level profiles."
-domain_hints: "Education: Tenure dossiers; Legal: Judicial nomination dossiers; Medical: Medical directorship dossiers; IT: CTO board profiles; Business: Executive dossiers; Manual Trades: Master contractor credentials; Crafts: Master artist dossiers."
-```
+- **Lesson Code:** `EN-PRO-C1-021`
+- **Goal (Can-Do):** Can craft C1-level executive dossiers, professorial dossiers, and board-level profiles.
+- **Notes:**
+  - domain_hints: "Education: Tenure dossiers; Legal: Judicial nomination dossiers; Medical: Medical directorship dossiers; IT: CTO board profiles; Business: Executive dossiers; Manual Trades: Master contractor credentials; Crafts: Master artist dossiers."
 
 ### Lesson 2: Executive Search & Boardroom / Chairmanship Interviews
 
@@ -294,11 +273,10 @@ domain_hints: "Education: Tenure dossiers; Legal: Judicial nomination dossiers; 
 - Articulating Strategic Philosophy with Precise Rhetorical Structure
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-022"
-cando: "Can excel in executive search or professorial chair interviews, articulating strategic vision."
-domain_hints: "Education: University dean interviews; Legal: Senior partner vetting; Medical: Chief of Surgery vetting; IT: VP of Engineering vetting; Business: C-suite headhunter interviews; Manual Trades: Chief Engineer vetting; Crafts: Museum Director vetting."
-```
+- **Lesson Code:** `EN-PRO-C1-022`
+- **Goal (Can-Do):** Can excel in executive search or professorial chair interviews, articulating strategic vision.
+- **Notes:**
+  - domain_hints: "Education: University dean interviews; Legal: Senior partner vetting; Medical: Chief of Surgery vetting; IT: VP of Engineering vetting; Business: C-suite headhunter interviews; Manual Trades: Chief Engineer vetting; Crafts: Museum Director vetting."
 
 ### Lesson 3: Executive Compensation & Equity Package Negotiations
 
@@ -307,11 +285,10 @@ domain_hints: "Education: University dean interviews; Legal: Senior partner vett
 - Conditional Structures in Equity, Vesting, and Performance Bonuses
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-023"
-cando: "Can negotiate executive remuneration packages, research funding packages, or board terms."
-domain_hints: "Education: Endowed chair funding packages; Legal: Senior partner equity share; Medical: Chief Medical Officer packages; IT: VP Equity & stock option packages; Business: Executive C-suite compensation; Manual Trades: Chief Operations packages; Crafts: Foundation director packages."
-```
+- **Lesson Code:** `EN-PRO-C1-023`
+- **Goal (Can-Do):** Can negotiate executive remuneration packages, research funding packages, or board terms.
+- **Notes:**
+  - domain_hints: "Education: Endowed chair funding packages; Legal: Senior partner equity share; Medical: Chief Medical Officer packages; IT: VP Equity & stock option packages; Business: Executive C-suite compensation; Manual Trades: Chief Operations packages; Crafts: Foundation director packages."
 
 ### Lesson 4: Conducting 360-Degree Executive Reviews & Institutional Audits
 
@@ -320,8 +297,7 @@ domain_hints: "Education: Endowed chair funding packages; Legal: Senior partner 
 - Formulating Long-Term Organizational Development Goals
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-PRO-C1-024"
-cando: "Can lead and participate in 360-degree executive evaluations, academic reviews, and succession audits."
-domain_hints: "Education: Departmental academic audits; Legal: Partner performance reviews; Medical: Medical director evaluations; IT: Engineering VP 360 reviews; Business: Executive 360 reviews; Manual Trades: Operations leadership audits; Crafts: Foundation board reviews."
-```
+- **Lesson Code:** `EN-PRO-C1-024`
+- **Goal (Can-Do):** Can lead and participate in 360-degree executive evaluations, academic reviews, and succession audits.
+- **Notes:**
+  - domain_hints: "Education: Departmental academic audits; Legal: Partner performance reviews; Medical: Medical director evaluations; IT: Engineering VP 360 reviews; Business: Executive 360 reviews; Manual Trades: Operations leadership audits; Crafts: Foundation board reviews."

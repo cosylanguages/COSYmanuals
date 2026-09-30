@@ -11,11 +11,11 @@
 - Hedging and diplomatic stance devices (admittedly, conceivably, to a certain extent)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-001"
-pronunciation: [{"point":"Intonation in diplomatic hedging","explain":"Using fall-rise intonation contours to soft-land controversial assertions and reserve judgment.","examples":[{"pattern":"Admittedly, however...","ipa":"/ədˈmɪt.ɪd.li haʊˈev.ər/","word":"Admittedly"}],"visual":"🗣️"}]
-cando: "Can defend a complex position, nuance reservations, and chair executive debates fluently"
-```
+- **Lesson Code:** `EN-B2-001`
+- **Goal (Can-Do):** Can defend a complex position, nuance reservations, and chair executive debates fluently
+- **Pronunciation Focus:**
+  - **Intonation in diplomatic hedging**: Using fall-rise intonation contours to soft-land controversial assertions and reserve judgment.
+    - *Examples:* `Admittedly` /ədˈmɪt.ɪd.li haʊˈev.ər/
 
 ### Lesson 2: Distancing Passives & Passive Reporting Verbs
 
@@ -24,10 +24,8 @@ cando: "Can defend a complex position, nuance reservations, and chair executive 
 - Passive verbs with two objects and complex complements
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-002"
-cando: "Can report allegations, corporate findings, and speculative news using distancing passives"
-```
+- **Lesson Code:** `EN-B2-002`
+- **Goal (Can-Do):** Can report allegations, corporate findings, and speculative news using distancing passives
 
 ## Unit 2: Geopolitics, Global Economy & News Analysis
 
@@ -38,10 +36,8 @@ cando: "Can report allegations, corporate findings, and speculative news using d
 - Conditional inversion (Had we known, Should you require, Were it not for)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-003"
-cando: "Can deliver dramatic rhetorical emphasis in formal presentations and economic briefings using negative inversion"
-```
+- **Lesson Code:** `EN-B2-003`
+- **Goal (Can-Do):** Can deliver dramatic rhetorical emphasis in formal presentations and economic briefings using negative inversion
 
 ### Lesson 2: Fronting & Cleft Sentences for Focus
 
@@ -50,10 +46,8 @@ cando: "Can deliver dramatic rhetorical emphasis in formal presentations and eco
 - Advanced cleft structures (All that matters is..., What concerns economists most is...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-004"
-cando: "Can analyze geopolitical trends and economic forecasts using fronting and cleft emphasis"
-```
+- **Lesson Code:** `EN-B2-004`
+- **Goal (Can-Do):** Can analyze geopolitical trends and economic forecasts using fronting and cleft emphasis
 
 ## Unit 3: Environmental Policy, Sustainability & Energy Transition
 
@@ -64,10 +58,8 @@ cando: "Can analyze geopolitical trends and economic forecasts using fronting an
 - Mixed conditionals deepening for policy modeling
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-005"
-cando: "Can evaluate energy transition models and negotiate environmental agreements using conditional alternatives"
-```
+- **Lesson Code:** `EN-B2-005`
+- **Goal (Can-Do):** Can evaluate energy transition models and negotiate environmental agreements using conditional alternatives
 
 ### Lesson 2: Participle Clauses & Adverbial Reduction
 
@@ -76,10 +68,8 @@ cando: "Can evaluate energy transition models and negotiate environmental agreem
 - Reduced relative and adverbial clauses for academic conciseness
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-006"
-cando: "Can draft concise environmental policy briefs and white papers using participle clauses"
-```
+- **Lesson Code:** `EN-B2-006`
+- **Goal (Can-Do):** Can draft concise environmental policy briefs and white papers using participle clauses
 
 ## Unit 4: Advanced Technology, AI Ethics & Cybersecurity Governance
 
@@ -90,10 +80,8 @@ cando: "Can draft concise environmental policy briefs and white papers using par
 - Substitution using so, do so, one/ones, former/latter
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-007"
-cando: "Can analyze AI ethics and data privacy frameworks while maintaining high stylistic cohesion"
-```
+- **Lesson Code:** `EN-B2-007`
+- **Goal (Can-Do):** Can analyze AI ethics and data privacy frameworks while maintaining high stylistic cohesion
 
 ### Lesson 2: Nominalization & Register Shifts
 
@@ -102,10 +90,8 @@ cando: "Can analyze AI ethics and data privacy frameworks while maintaining high
 - Complex compound nouns and noun phrases
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-008"
-cando: "Can transform spoken technical explanations into formal executive reports using nominalization"
-```
+- **Lesson Code:** `EN-B2-008`
+- **Goal (Can-Do):** Can transform spoken technical explanations into formal executive reports using nominalization
 
 ## Unit 5: Legal Frameworks, Human Rights & Civil Jurisprudence
 
@@ -116,10 +102,8 @@ cando: "Can transform spoken technical explanations into formal executive report
 - Modals of necessity and duty (bound to, obligated to, under obligation)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-009"
-cando: "Can interpret legal contracts, civil rights legislation, and corporate compliance statutes"
-```
+- **Lesson Code:** `EN-B2-009`
+- **Goal (Can-Do):** Can interpret legal contracts, civil rights legislation, and corporate compliance statutes
 
 ### Lesson 2: Wh-ever Relative Words & Generalization
 
@@ -128,10 +112,8 @@ cando: "Can interpret legal contracts, civil rights legislation, and corporate c
 - Adverbial clauses of concession (However difficult the case may be...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-010"
-cando: "Can evaluate judicial proceedings, arbitration terms, and human rights charters"
-```
+- **Lesson Code:** `EN-B2-010`
+- **Goal (Can-Do):** Can evaluate judicial proceedings, arbitration terms, and human rights charters
 
 ## Unit 6: Arts, Cultural Heritage & Aesthetic Critique
 
@@ -142,10 +124,8 @@ cando: "Can evaluate judicial proceedings, arbitration terms, and human rights c
 - Gradable adjectives with modifying adverbs (fairly impressive, remarkably nuanced)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-011"
-cando: "Can publish sophisticated artistic reviews and cultural critiques using precise intensifiers and aesthetic lexicon"
-```
+- **Lesson Code:** `EN-B2-011`
+- **Goal (Can-Do):** Can publish sophisticated artistic reviews and cultural critiques using precise intensifiers and aesthetic lexicon
 
 ### Lesson 2: Order of Adjectives & Descriptive Cadence
 
@@ -154,10 +134,8 @@ cando: "Can publish sophisticated artistic reviews and cultural critiques using 
 - Descriptive sentence cadence in literary critique
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-012"
-cando: "Can analyze architectural styles, artistic movements, and historical artifacts with rich descriptive fluency"
-```
+- **Lesson Code:** `EN-B2-012`
+- **Goal (Can-Do):** Can analyze architectural styles, artistic movements, and historical artifacts with rich descriptive fluency
 
 ## Unit 7: Corporate Strategy, Management & Negotiations
 
@@ -168,10 +146,8 @@ cando: "Can analyze architectural styles, artistic movements, and historical art
 - Prepositional phrase collocations in boardroom negotiation
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-013"
-cando: "Can lead corporate strategy meetings, present merger proposals, and negotiate terms using precise prepositional patterns"
-```
+- **Lesson Code:** `EN-B2-013`
+- **Goal (Can-Do):** Can lead corporate strategy meetings, present merger proposals, and negotiate terms using precise prepositional patterns
 
 ### Lesson 2: Advanced Discourse Markers in Negotiations
 
@@ -180,10 +156,8 @@ cando: "Can lead corporate strategy meetings, present merger proposals, and nego
 - Chairing and managing formal executive discussions
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-014"
-cando: "Can chair executive boardroom negotiations, manage impasses, and build consensus fluently"
-```
+- **Lesson Code:** `EN-B2-014`
+- **Goal (Can-Do):** Can chair executive boardroom negotiations, manage impasses, and build consensus fluently
 
 ## Unit 8: Socio-Cultural Diversity, Migration & Intercultural Dynamics
 
@@ -194,10 +168,8 @@ cando: "Can chair executive boardroom negotiations, manage impasses, and build c
 - Phrasal verbs extended grammatical patterns (separable vs non-separable with double objects)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-015"
-cando: "Can navigate complex socio-cultural discussions and articulate multi-layered social viewpoints"
-```
+- **Lesson Code:** `EN-B2-015`
+- **Goal (Can-Do):** Can navigate complex socio-cultural discussions and articulate multi-layered social viewpoints
 
 ### Lesson 2: Conditionals & Subjunctive Devices in Public Policy Debates
 
@@ -206,10 +178,8 @@ cando: "Can navigate complex socio-cultural discussions and articulate multi-lay
 - Softened assertions in intercultural dialogue
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-016"
-cando: "Can debate migration policies, diaspora dynamics, and social equity with appropriate register and nuance"
-```
+- **Lesson Code:** `EN-B2-016`
+- **Goal (Can-Do):** Can debate migration policies, diaspora dynamics, and social equity with appropriate register and nuance
 
 ## Unit 9: Media Literacy, Crisis Communication & Public Relations
 
@@ -220,10 +190,8 @@ cando: "Can debate migration policies, diaspora dynamics, and social equity with
 - Passive stance framing in press statements
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-017"
-cando: "Can manage press conferences, handle hostile questioning, and frame corporate response in crisis communications"
-```
+- **Lesson Code:** `EN-B2-017`
+- **Goal (Can-Do):** Can manage press conferences, handle hostile questioning, and frame corporate response in crisis communications
 
 ### Lesson 2: Rhetorical Questioning, Metaphor & Persuasive Cadence
 
@@ -232,10 +200,8 @@ cando: "Can manage press conferences, handle hostile questioning, and frame corp
 - Extended metaphors in persuasive rhetoric
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-018"
-cando: "Can deliver persuasive public relations addresses and craft compelling campaign narratives"
-```
+- **Lesson Code:** `EN-B2-018`
+- **Goal (Can-Do):** Can deliver persuasive public relations addresses and craft compelling campaign narratives
 
 ## Unit 10: Academic Research, Ethics & B2 Course Consolidation
 
@@ -246,10 +212,8 @@ cando: "Can deliver persuasive public relations addresses and craft compelling c
 - Citation integration and parenthetical reporting
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-019"
-cando: "Can present research findings, formulate empirical hypotheses, and hedge academic conclusions responsibly"
-```
+- **Lesson Code:** `EN-B2-019`
+- **Goal (Can-Do):** Can present research findings, formulate empirical hypotheses, and hedge academic conclusions responsibly
 
 ### Lesson 2: B2 General Course Master Review & Examination
 
@@ -257,7 +221,5 @@ cando: "Can present research findings, formulate empirical hypotheses, and hedge
 - Comprehensive master review of B2 grammar systems: inversion, mandative subjunctive, distancing passives, clefts, hedging, and advanced discourse markers
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-B2-020"
-cando: "Can demonstrate full B2 upper-intermediate/vantage level mastery across executive, academic, geopolitical, and socio-cultural scenarios"
-```
+- **Lesson Code:** `EN-B2-020`
+- **Goal (Can-Do):** Can demonstrate full B2 upper-intermediate/vantage level mastery across executive, academic, geopolitical, and socio-cultural scenarios

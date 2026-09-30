@@ -11,11 +11,10 @@
 - Advanced modal expressions of probability and deduction
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-001"
-cando: "Can infer speaker feeling, stance, and implied meaning from short complex C1 monologues."
-strategy: "Timing: 1 min per audio clip. Pitfall: Taking idiomatic expressions literally. Criteria: Decoding implied stance and irony."
-```
+- **Lesson Code:** `EN-EXM-C1-001`
+- **Goal (Can-Do):** Can infer speaker feeling, stance, and implied meaning from short complex C1 monologues.
+- **Notes:**
+  - strategy: "Timing: 1 min per audio clip. Pitfall: Taking idiomatic expressions literally. Criteria: Decoding implied stance and irony."
 
 ### Lesson 2: C1 Listening: Multiple Matching & Speaker Tone
 
@@ -24,11 +23,10 @@ strategy: "Timing: 1 min per audio clip. Pitfall: Taking idiomatic expressions l
 - Complex participle clauses for background actions
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-002"
-cando: "Can match 5 speakers with two distinct thematic options based on tone and attitude."
-strategy: "Timing: 2 tasks per speaker listening twice. Pitfall: Focusing on task 1 while missing task 2 clues. Criteria: Dual-task processing accuracy under audio flow."
-```
+- **Lesson Code:** `EN-EXM-C1-002`
+- **Goal (Can-Do):** Can match 5 speakers with two distinct thematic options based on tone and attitude.
+- **Notes:**
+  - strategy: "Timing: 2 tasks per speaker listening twice. Pitfall: Focusing on task 1 while missing task 2 clues. Criteria: Dual-task processing accuracy under audio flow."
 
 ### Lesson 3: C1 Listening: Sentence Completion & Academic Terminology
 
@@ -37,11 +35,10 @@ strategy: "Timing: 2 tasks per speaker listening twice. Pitfall: Focusing on tas
 - Passive structures with reporting verbs (is estimated to have been)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-003"
-cando: "Can complete gapped notes from an academic lecture with exact technical words."
-strategy: "Timing: 8 mins lecture duration. Pitfall: Altering singular/plural forms of extracted academic nouns. Criteria: Exact orthographic and morphological extraction."
-```
+- **Lesson Code:** `EN-EXM-C1-003`
+- **Goal (Can-Do):** Can complete gapped notes from an academic lecture with exact technical words.
+- **Notes:**
+  - strategy: "Timing: 8 mins lecture duration. Pitfall: Altering singular/plural forms of extracted academic nouns. Criteria: Exact orthographic and morphological extraction."
 
 ### Lesson 4: C1 Listening: Panel Discussion & Nuanced Agreement
 
@@ -50,11 +47,10 @@ strategy: "Timing: 8 mins lecture duration. Pitfall: Altering singular/plural fo
 - Concession and hedging structures (Granted that..., mind you...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-004"
-cando: "Can follow a 10-minute complex panel discussion and evaluate subtle agreement and dispute."
-strategy: "Timing: 10 mins discussion duration. Pitfall: Confusing partial agreement with full endorsement. Criteria: Discerning nuanced speaker alignment."
-```
+- **Lesson Code:** `EN-EXM-C1-004`
+- **Goal (Can-Do):** Can follow a 10-minute complex panel discussion and evaluate subtle agreement and dispute.
+- **Notes:**
+  - strategy: "Timing: 10 mins discussion duration. Pitfall: Confusing partial agreement with full endorsement. Criteria: Discerning nuanced speaker alignment."
 
 ### Lesson 5: C1 Listening: Advanced Audio Review & Fast-Paced Speech
 
@@ -63,11 +59,10 @@ strategy: "Timing: 10 mins discussion duration. Pitfall: Confusing partial agree
 - Connected speech patterns (intrusion, elision, assimilation)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-005"
-cando: "Can decode fast unscripted native speech under C1 exam conditions."
-strategy: "Timing: 40 mins full test paper. Pitfall: Over-analyzing individual unaccented function words. Criteria: High-level listening decoding and speed comprehension."
-```
+- **Lesson Code:** `EN-EXM-C1-005`
+- **Goal (Can-Do):** Can decode fast unscripted native speech under C1 exam conditions.
+- **Notes:**
+  - strategy: "Timing: 40 mins full test paper. Pitfall: Over-analyzing individual unaccented function words. Criteria: High-level listening decoding and speed comprehension."
 
 ## Unit 2: C1 Advanced Reading & Use of English Analysis
 
@@ -79,11 +74,10 @@ strategy: "Timing: 40 mins full test paper. Pitfall: Over-analyzing individual u
 - Advanced verb-noun collocations
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-006"
-cando: "Can complete complex key word transformation and Use of English tasks."
-strategy: "Timing: 12 mins for 6 transformation items. Pitfall: Changing the provided key word or using more than 6 words. Criteria: Absolute grammatical precision and semantic accuracy."
-```
+- **Lesson Code:** `EN-EXM-C1-006`
+- **Goal (Can-Do):** Can complete complex key word transformation and Use of English tasks.
+- **Notes:**
+  - strategy: "Timing: 12 mins for 6 transformation items. Pitfall: Changing the provided key word or using more than 6 words. Criteria: Absolute grammatical precision and semantic accuracy."
 
 ### Lesson 2: C1 Reading: Cross-Textual Multiple Matching
 
@@ -92,11 +86,10 @@ strategy: "Timing: 12 mins for 6 transformation items. Pitfall: Changing the pro
 - Complex reporting verbs of stance (asserts, disputes, concurs)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-007"
-cando: "Can compare opinions across 4 short texts to identify agreement and disagreement on key issues."
-strategy: "Timing: 18 mins. Pitfall: Reading all 4 texts fully before reviewing questions. Criteria: Cross-referential scanning and opinion synthesis."
-```
+- **Lesson Code:** `EN-EXM-C1-007`
+- **Goal (Can-Do):** Can compare opinions across 4 short texts to identify agreement and disagreement on key issues.
+- **Notes:**
+  - strategy: "Timing: 18 mins. Pitfall: Reading all 4 texts fully before reviewing questions. Criteria: Cross-referential scanning and opinion synthesis."
 
 ### Lesson 3: C1 Reading: Gapped Text & Complex Paragraph Cohesion
 
@@ -105,11 +98,10 @@ strategy: "Timing: 18 mins. Pitfall: Reading all 4 texts fully before reviewing 
 - Ellipsis and substitution mechanisms
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-008"
-cando: "Can insert missing paragraphs into an essay analyzing overall textual architecture."
-strategy: "Timing: 15 mins for 6 gaps. Pitfall: Ignoring forward reference markers in paragraphs following gaps. Criteria: Micro and macro structural cohesion analysis."
-```
+- **Lesson Code:** `EN-EXM-C1-008`
+- **Goal (Can-Do):** Can insert missing paragraphs into an essay analyzing overall textual architecture.
+- **Notes:**
+  - strategy: "Timing: 15 mins for 6 gaps. Pitfall: Ignoring forward reference markers in paragraphs following gaps. Criteria: Micro and macro structural cohesion analysis."
 
 ### Lesson 4: C1 Reading: Multiple-Choice Long Academic Essay
 
@@ -118,11 +110,10 @@ strategy: "Timing: 15 mins for 6 gaps. Pitfall: Ignoring forward reference marke
 - Parenthetical commentary and stylistic devices
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-009"
-cando: "Can answer multiple-choice questions on an 800-word academic essay evaluating argument subtlety."
-strategy: "Timing: 18 mins. Pitfall: Selecting distractor options that quote text fragments out of context. Criteria: Deep textual analysis and author stance identification."
-```
+- **Lesson Code:** `EN-EXM-C1-009`
+- **Goal (Can-Do):** Can answer multiple-choice questions on an 800-word academic essay evaluating argument subtlety.
+- **Notes:**
+  - strategy: "Timing: 18 mins. Pitfall: Selecting distractor options that quote text fragments out of context. Criteria: Deep textual analysis and author stance identification."
 
 ### Lesson 5: C1 Use of English: Advanced Open Cloze & Word Formation
 
@@ -131,11 +122,10 @@ strategy: "Timing: 18 mins. Pitfall: Selecting distractor options that quote tex
 - Multiple prefixation and suffixation (unprecedented, misinterpretation)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-010"
-cando: "Can complete C1 open cloze and complex word formation tasks with zero grammatical errors."
-strategy: "Timing: 15 mins for both parts. Pitfall: Misreading overall sentence context and missing negative prefixes. Criteria: Advanced vocabulary derivation and grammatical exactness."
-```
+- **Lesson Code:** `EN-EXM-C1-010`
+- **Goal (Can-Do):** Can complete C1 open cloze and complex word formation tasks with zero grammatical errors.
+- **Notes:**
+  - strategy: "Timing: 15 mins for both parts. Pitfall: Misreading overall sentence context and missing negative prefixes. Criteria: Advanced vocabulary derivation and grammatical exactness."
 
 ## Unit 3: C1 Professional & Academic Writing Mastery
 
@@ -146,11 +136,10 @@ strategy: "Timing: 15 mins for both parts. Pitfall: Misreading overall sentence 
 - Subjunctive and recommendation structures
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-011"
-cando: "Can draft executive reports and proposals adhering to academic exam standards."
-strategy: "Timing: 45 mins. Pitfall: Failing to present clear persuasive recommendations with section headings. Criteria: Institutional register, layout, and persuasive impact."
-```
+- **Lesson Code:** `EN-EXM-C1-011`
+- **Goal (Can-Do):** Can draft executive reports and proposals adhering to academic exam standards.
+- **Notes:**
+  - strategy: "Timing: 45 mins. Pitfall: Failing to present clear persuasive recommendations with section headings. Criteria: Institutional register, layout, and persuasive impact."
 
 ### Lesson 2: C1 Writing: Academic Discursive Essay
 
@@ -159,11 +148,10 @@ strategy: "Timing: 45 mins. Pitfall: Failing to present clear persuasive recomme
 - Complex nominal phrases as subjects
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-012"
-cando: "Can write a 220-260 word academic essay weighing two viewpoints and advocating a solution."
-strategy: "Timing: 45 mins. Pitfall: Spending 15 mins planning and failing to finish the concluding paragraph. Criteria: Academic cohesion, argument depth, and precise vocabulary."
-```
+- **Lesson Code:** `EN-EXM-C1-012`
+- **Goal (Can-Do):** Can write a 220-260 word academic essay weighing two viewpoints and advocating a solution.
+- **Notes:**
+  - strategy: "Timing: 45 mins. Pitfall: Spending 15 mins planning and failing to finish the concluding paragraph. Criteria: Academic cohesion, argument depth, and precise vocabulary."
 
 ### Lesson 3: C1 Writing: Persuasive Formal Letter to Editor / Board
 
@@ -172,11 +160,10 @@ strategy: "Timing: 45 mins. Pitfall: Spending 15 mins planning and failing to fi
 - Emphatic structures with do/does and clefting
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-013"
-cando: "Can write a 220-260 word persuasive formal letter addressing systemic issues to leadership."
-strategy: "Timing: 45 mins. Pitfall: Slipping into aggressive or overly casual register. Criteria: High-level persuasive rhetoric, register control, and diplomatic firmness."
-```
+- **Lesson Code:** `EN-EXM-C1-013`
+- **Goal (Can-Do):** Can write a 220-260 word persuasive formal letter addressing systemic issues to leadership.
+- **Notes:**
+  - strategy: "Timing: 45 mins. Pitfall: Slipping into aggressive or overly casual register. Criteria: High-level persuasive rhetoric, register control, and diplomatic firmness."
 
 ### Lesson 4: C1 Writing: Critical Review (Arts / Media / Book)
 
@@ -185,11 +172,10 @@ strategy: "Timing: 45 mins. Pitfall: Slipping into aggressive or overly casual r
 - Complex comparative structures
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-014"
-cando: "Can draft a sophisticated 220-260 word review offering critical evaluation and target audience recommendations."
-strategy: "Timing: 45 mins. Pitfall: Retelling plot summary instead of offering critical analysis. Criteria: Engaging literary register and balanced critical evaluation."
-```
+- **Lesson Code:** `EN-EXM-C1-014`
+- **Goal (Can-Do):** Can draft a sophisticated 220-260 word review offering critical evaluation and target audience recommendations.
+- **Notes:**
+  - strategy: "Timing: 45 mins. Pitfall: Retelling plot summary instead of offering critical analysis. Criteria: Engaging literary register and balanced critical evaluation."
 
 ### Lesson 5: C1 Writing Strategy: Register, Cohesion & Scoring Criteria
 
@@ -198,11 +184,10 @@ strategy: "Timing: 45 mins. Pitfall: Retelling plot summary instead of offering 
 - Error categories and rubric self-audit
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-015"
-cando: "Can evaluate and edit C1 compositions to reach Tier-1 band scores across all rubrics."
-strategy: "Timing: 10 mins dedicated editing phase. Pitfall: Repeating basic linking words (and, but, so). Criteria: Lexical sophistication, syntactic flexibility, and register purity."
-```
+- **Lesson Code:** `EN-EXM-C1-015`
+- **Goal (Can-Do):** Can evaluate and edit C1 compositions to reach Tier-1 band scores across all rubrics.
+- **Notes:**
+  - strategy: "Timing: 10 mins dedicated editing phase. Pitfall: Repeating basic linking words (and, but, so). Criteria: Lexical sophistication, syntactic flexibility, and register purity."
 
 ## Unit 4: C1 Advanced Spoken Production & Diplomatic Interaction
 
@@ -213,11 +198,10 @@ strategy: "Timing: 10 mins dedicated editing phase. Pitfall: Repeating basic lin
 - Complex comparative inversion (No less important is...)
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-016"
-cando: "Can compare two photos and answer two analytical speculation questions in 1 minute."
-strategy: "Timing: 1 min strict monologue. Pitfall: Simply listing visual contents without speculative evaluation. Criteria: Instant speculation and complex comparative structures."
-```
+- **Lesson Code:** `EN-EXM-C1-016`
+- **Goal (Can-Do):** Can compare two photos and answer two analytical speculation questions in 1 minute.
+- **Notes:**
+  - strategy: "Timing: 1 min strict monologue. Pitfall: Simply listing visual contents without speculative evaluation. Criteria: Instant speculation and complex comparative structures."
 
 ### Lesson 2: C1 Speaking: 2-Minute Structured Monologue
 
@@ -226,11 +210,10 @@ strategy: "Timing: 1 min strict monologue. Pitfall: Simply listing visual conten
 - Conditionals for hypothetical scenario analysis
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-017"
-cando: "Can deliver a 2-minute structured monologue based on written prompt cards."
-strategy: "Timing: 2 mins uninterrupted talk. Pitfall: Spending 90 seconds on point 1 and rushing point 2. Criteria: Balanced time management and seamless discourse signposting."
-```
+- **Lesson Code:** `EN-EXM-C1-017`
+- **Goal (Can-Do):** Can deliver a 2-minute structured monologue based on written prompt cards.
+- **Notes:**
+  - strategy: "Timing: 2 mins uninterrupted talk. Pitfall: Spending 90 seconds on point 1 and rushing point 2. Criteria: Balanced time management and seamless discourse signposting."
 
 ### Lesson 3: C1 Speaking: Collaborative Problem Solving & Negotiation
 
@@ -239,11 +222,10 @@ strategy: "Timing: 2 mins uninterrupted talk. Pitfall: Spending 90 seconds on po
 - Concession and counter-proposal structures
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-018"
-cando: "Can lead a 2-minute collaborative task with a partner and negotiate a decision in 1 minute."
-strategy: "Timing: 2 mins interaction + 1 min decision. Pitfall: Dominating conversation without inviting partner input. Criteria: Interactive turn-taking and collaborative negotiation skill."
-```
+- **Lesson Code:** `EN-EXM-C1-018`
+- **Goal (Can-Do):** Can lead a 2-minute collaborative task with a partner and negotiate a decision in 1 minute.
+- **Notes:**
+  - strategy: "Timing: 2 mins interaction + 1 min decision. Pitfall: Dominating conversation without inviting partner input. Criteria: Interactive turn-taking and collaborative negotiation skill."
 
 ### Lesson 4: C1 Speaking: Abstract Debate & Nuanced Counter-Arguments
 
@@ -252,11 +234,10 @@ strategy: "Timing: 2 mins interaction + 1 min decision. Pitfall: Dominating conv
 - Emphatic inversion and clefting in debate
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-019"
-cando: "Can engage in a 5-minute abstract debate with examiner and peer on complex societal issues."
-strategy: "Timing: 5 mins group discussion. Pitfall: Giving brief personal anecdotes instead of structured analytical arguments. Criteria: Depth of debate and sophisticated qualification of statements."
-```
+- **Lesson Code:** `EN-EXM-C1-019`
+- **Goal (Can-Do):** Can engage in a 5-minute abstract debate with examiner and peer on complex societal issues.
+- **Notes:**
+  - strategy: "Timing: 5 mins group discussion. Pitfall: Giving brief personal anecdotes instead of structured analytical arguments. Criteria: Depth of debate and sophisticated qualification of statements."
 
 ### Lesson 5: C1 Speaking: Oral Exam Simulation & Fluency Polish
 
@@ -265,11 +246,10 @@ strategy: "Timing: 5 mins group discussion. Pitfall: Giving brief personal anecd
 - Natural self-correction and reformulation strategies
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-020"
-cando: "Can complete a full 15-minute C1 pair speaking exam under live test conditions."
-strategy: "Timing: 15 mins live examination. Pitfall: Visibly hesitating when reaching for rare vocabulary. Criteria: Natural prosody, spontaneous articulation, and interactive control."
-```
+- **Lesson Code:** `EN-EXM-C1-020`
+- **Goal (Can-Do):** Can complete a full 15-minute C1 pair speaking exam under live test conditions.
+- **Notes:**
+  - strategy: "Timing: 15 mins live examination. Pitfall: Visibly hesitating when reaching for rare vocabulary. Criteria: Natural prosody, spontaneous articulation, and interactive control."
 
 ## Unit 5: C1 Full Mock-Exam Practice & High-Score Tactics
 
@@ -279,11 +259,10 @@ strategy: "Timing: 15 mins live examination. Pitfall: Visibly hesitating when re
 - Comprehensive review of C1 listening structures
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-021"
-cando: "Can execute a full 40-minute C1 listening exam paper under timed conditions."
-strategy: "Timing: 40 mins test paper. Pitfall: Losing focus during Part 4 multiple matching. Criteria: Scaled score evaluation and item diagnostic review."
-```
+- **Lesson Code:** `EN-EXM-C1-021`
+- **Goal (Can-Do):** Can execute a full 40-minute C1 listening exam paper under timed conditions.
+- **Notes:**
+  - strategy: "Timing: 40 mins test paper. Pitfall: Losing focus during Part 4 multiple matching. Criteria: Scaled score evaluation and item diagnostic review."
 
 ### Lesson 2: C1 Mock Exam: Timed Reading & Use of English Paper
 
@@ -291,11 +270,10 @@ strategy: "Timing: 40 mins test paper. Pitfall: Losing focus during Part 4 multi
 - Comprehensive review of C1 reading & Use of English structures
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-022"
-cando: "Can complete all 8 parts of C1 Reading and Use of English paper within 90 minutes."
-strategy: "Timing: 90 mins limit. Pitfall: Misallocating time on Part 6 cross-textual matching. Criteria: Scaled score calculation across all 8 parts."
-```
+- **Lesson Code:** `EN-EXM-C1-022`
+- **Goal (Can-Do):** Can complete all 8 parts of C1 Reading and Use of English paper within 90 minutes.
+- **Notes:**
+  - strategy: "Timing: 90 mins limit. Pitfall: Misallocating time on Part 6 cross-textual matching. Criteria: Scaled score calculation across all 8 parts."
 
 ### Lesson 3: C1 Mock Exam: Timed Writing Paper & Criterion Analysis
 
@@ -303,11 +281,10 @@ strategy: "Timing: 90 mins limit. Pitfall: Misallocating time on Part 6 cross-te
 - Comprehensive review of C1 academic/professional writing styles
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-023"
-cando: "Can complete two 220-260 word C1 compositions within 90 minutes."
-strategy: "Timing: 90 mins total (45 mins per task). Pitfall: Failing to proofread register and complex grammar. Criteria: Grade assessment against official C1 criteria."
-```
+- **Lesson Code:** `EN-EXM-C1-023`
+- **Goal (Can-Do):** Can complete two 220-260 word C1 compositions within 90 minutes.
+- **Notes:**
+  - strategy: "Timing: 90 mins total (45 mins per task). Pitfall: Failing to proofread register and complex grammar. Criteria: Grade assessment against official C1 criteria."
 
 ### Lesson 4: C1 Mock Exam: Live Pair Speaking Test Simulation
 
@@ -315,11 +292,10 @@ strategy: "Timing: 90 mins total (45 mins per task). Pitfall: Failing to proofre
 - Comprehensive review of C1 spoken interaction skills
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-024"
-cando: "Can perform all 4 parts of a live C1 speaking examination with complete confidence."
-strategy: "Timing: 15 mins test duration. Pitfall: Breaking pair communication during Part 3 negotiation. Criteria: Detailed band score assessment across 5 criteria."
-```
+- **Lesson Code:** `EN-EXM-C1-024`
+- **Goal (Can-Do):** Can perform all 4 parts of a live C1 speaking examination with complete confidence.
+- **Notes:**
+  - strategy: "Timing: 15 mins test duration. Pitfall: Breaking pair communication during Part 3 negotiation. Criteria: Detailed band score assessment across 5 criteria."
 
 ### Lesson 5: C1 Exam Final Review: High-Tier Marking Criteria & Strategy
 
@@ -327,8 +303,7 @@ strategy: "Timing: 15 mins test duration. Pitfall: Breaking pair communication d
 - Integrated review of key C1 exam structures
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-EXM-C1-025"
-cando: "Can implement a personalized exam day execution plan to achieve Grade A/B C1 certificates."
-strategy: "Timing: Comprehensive review. Pitfall: Over-thinking straightforward items. Criteria: Final strategy checklist and score maximization."
-```
+- **Lesson Code:** `EN-EXM-C1-025`
+- **Goal (Can-Do):** Can implement a personalized exam day execution plan to achieve Grade A/B C1 certificates.
+- **Notes:**
+  - strategy: "Timing: Comprehensive review. Pitfall: Over-thinking straightforward items. Criteria: Final strategy checklist and score maximization."

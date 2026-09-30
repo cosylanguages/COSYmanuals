@@ -10,12 +10,14 @@
 - Личные местоимения + Глагол "быть" (опущение в настоящем времени)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-001"
-pronunciation: [{"point":"Русский алфавит (Кириллица)","explain":"В русском алфавите 33 буквы. Некоторые звучат как в английском, другие — нет.","alphabet":[{"l":"А","ipa":"/a/"},{"l":"Б","ipa":"/b/"},{"l":"В","ipa":"/v/"},{"l":"Г","ipa":"/ɡ/"},{"l":"Д","ipa":"/d/"},{"l":"Е","ipa":"/je/"},{"l":"Ё","ipa":"/jo/"},{"l":"Ж","ipa":"/ʐ/"},{"l":"З","ipa":"/z/"},{"l":"И","ipa":"/i/"},{"l":"Й","ipa":"/j/"},{"l":"К","ipa":"/k/"},{"l":"Л","ipa":"/l/"},{"l":"М","ipa":"/m/"},{"l":"Н","ipa":"/n/"},{"l":"О","ipa":"/o/"},{"l":"П","ipa":"/p/"},{"l":"Р","ipa":"/r/"},{"l":"С","ipa":"/s/"},{"l":"Т","ipa":"/t/"},{"l":"У","ipa":"/u/"},{"l":"Ф","ipa":"/f/"},{"l":"Х","ipa":"/x/"},{"l":"Ц","ipa":"/ts/"},{"l":"Ч","ipa":"/tɕ/"},{"l":"Ш","ipa":"/ʂ/"},{"l":"Щ","ipa":"/ɕː/"},{"l":"Ъ","ipa":"-"},{"l":"Ы","ipa":"/ɨ/"},{"l":"Ь","ipa":"-"},{"l":"Э","ipa":"/e/"},{"l":"Ю","ipa":"/ju/"},{"l":"Я","ipa":"/ja/"}],"extension":"Кириллица может показаться сложной, но она очень логична. Как только вы выучите буквы, вы сможете прочитать любое русское слово!","visual":"🇷🇺🔤"}]
-cando: "Может приветствовать людей и прощаться"
-hw: "Выучить алфавит"
-```
+- **Lesson Code:** `RU-001`
+- **Goal (Can-Do):** Может приветствовать людей и прощаться
+- **Pronunciation Focus:**
+  - **Русский алфавит (Кириллица)**: В русском алфавите 33 буквы. Некоторые звучат как в английском, другие — нет.
+    - *Examples:* `А` /a/, `Б` /b/, `В` /v/, `Г` /ɡ/, `Д` /d/, `Е` /je/, `Ё` /jo/, `Ж` /ʐ/, `З` /z/, `И` /i/, `Й` /j/, `К` /k/, `Л` /l/, `М` /m/, `Н` /n/, `О` /o/, `П` /p/, `Р` /r/, `С` /s/, `Т` /t/, `У` /u/, `Ф` /f/, `Х` /x/, `Ц` /ts/, `Ч` /tɕ/, `Ш` /ʂ/, `Щ` /ɕː/, `Ъ` -, `Ы` /ɨ/, `Ь` -, `Э` /e/, `Ю` /ju/, `Я` /ja/
+    - *Note:* Кириллица может показаться сложной, но она очень логична. Как только вы выучите буквы, вы сможете прочитать любое русское слово!
+- **Notes:**
+  - hw: "Выучить алфавит"
 
 ### Lesson 2: Синең исемең ничек?
 
@@ -23,12 +25,14 @@ hw: "Выучить алфавит"
 - Конструкция "Меня зовут..."
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-002"
-pronunciation: [{"point":"Редукция гласных (О)","explain":"Безударная 'О' произносится как 'А'.","examples":[{"pattern":"Хорошо","ipa":"/xərɐˈʂo/","word":"хорошо"},{"pattern":"Молоко","ipa":"/məlɐˈko/","word":"молоко"},{"pattern":"Россия","ipa":"/rɐˈsʲijə/","word":"Россия"}],"tip":"Слушайте ударение — это меняет звук 'О'!","extension":"Это явление называется 'аканье'. Оно делает русскую речь более мягкой и мелодичной. Ударный слог всегда долгий и четкий.","visual":"🅾️➡️🅰️"}]
-cando: "Может представиться"
-hw: "Потренируйтесь произносить свое имя по буквам"
-```
+- **Lesson Code:** `RU-002`
+- **Goal (Can-Do):** Может представиться
+- **Pronunciation Focus:**
+  - **Редукция гласных (О)**: Безударная 'О' произносится как 'А'.
+    - *Examples:* `хорошо` /xərɐˈʂo/, `молоко` /məlɐˈko/, `Россия` /rɐˈsʲijə/
+    - *Note:* Слушайте ударение — это меняет звук 'О'!
+- **Notes:**
+  - hw: "Потренируйтесь произносить свое имя по буквам"
 
 ### Lesson 3: Саннар 1-20
 
@@ -36,12 +40,13 @@ hw: "Потренируйтесь произносить свое имя по б
 - Род имен существительных (введение)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-003"
-pronunciation: [{"point":"Оглушение согласных","explain":"Звонкие согласные на конце слова становятся глухими (Б→П, В→Ф, Г→К, Д→Т, Ж→Ш, З→С).","examples":[{"pattern":"Хлеб","ipa":"/xlʲep/","word":"хлеб"},{"pattern":"Город","ipa":"/ˈɡorət/","word":"город"},{"pattern":"Друг","ipa":"/druk/","word":"друг"}]}]
-cando: "Может считать от 1 до 20"
-hw: "Посчитайте предметы в комнате"
-```
+- **Lesson Code:** `RU-003`
+- **Goal (Can-Do):** Может считать от 1 до 20
+- **Pronunciation Focus:**
+  - **Оглушение согласных**: Звонкие согласные на конце слова становятся глухими (Б→П, В→Ф, Г→К, Д→Т, Ж→Ш, З→С).
+    - *Examples:* `хлеб` /xlʲep/, `город` /ˈɡorət/, `друг` /druk/
+- **Notes:**
+  - hw: "Посчитайте предметы в комнате"
 
 ### Lesson 4: Минимальные пары: Мягкость
 
@@ -49,12 +54,14 @@ hw: "Посчитайте предметы в комнате"
 - Базовая структура предложения
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-004"
-pronunciation: [{"point":"Твердые и мягкие согласные","explain":"Мягкий знак (Ь) делает предыдущую согласную мягкой.","minimalPairs":[{"w1":"мат","p1":"/mat/","w2":"мать","p2":"/matʲ/"},{"w1":"брат","p1":"/brat/","w2":"брать","p2":"/bratʲ/"},{"w1":"угол","p1":"/ˈuɡəl/","w2":"уголь","p2":"/ˈuɡəlʲ/"}],"extension":"Разница между твердыми и мягкими согласными очень важна! Например, 'мат' — это нехорошее слово, а 'мать' — это мама.","visual":"🧊☁️"}]
-cando: "Может различать твердые и мягкие звуки"
-hw: "Запишите себя, произнося пары слов"
-```
+- **Lesson Code:** `RU-004`
+- **Goal (Can-Do):** Может различать твердые и мягкие звуки
+- **Pronunciation Focus:**
+  - **Твердые и мягкие согласные**: Мягкий знак (Ь) делает предыдущую согласную мягкой.
+    - *Examples:* `мат` /mat/ ↔ `мать` /matʲ/, `брат` /brat/ ↔ `брать` /bratʲ/, `угол` /ˈuɡəl/ ↔ `уголь` /ˈuɡəlʲ/
+    - *Note:* Разница между твердыми и мягкими согласными очень важна! Например, 'мат' — это нехорошее слово, а 'мать' — это мама.
+- **Notes:**
+  - hw: "Запишите себя, произнося пары слов"
 
 ### Lesson 5: Төп фразалар
 
@@ -62,12 +69,13 @@ hw: "Запишите себя, произнося пары слов"
 - Вежливые просьбы (Скажите, пожалуйста)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-005"
-pronunciation: [{"point":"Интонация","explain":"В вопросах без вопросительного слова тон резко повышается на ударном слоге слова, к которому относится вопрос.","examples":[{"pattern":"Это стол?","ipa":"/ˈetə stoɫ?/","word":"Это стол?"},{"pattern":"Ты дома?","ipa":"/tɨ ˈdomə?/","word":"Ты дома?"}]}]
-cando: "Может использовать базовые вежливые фразы"
-hw: "Используйте три вежливые фразы завтра"
-```
+- **Lesson Code:** `RU-005`
+- **Goal (Can-Do):** Может использовать базовые вежливые фразы
+- **Pronunciation Focus:**
+  - **Интонация**: В вопросах без вопросительного слова тон резко повышается на ударном слоге слова, к которому относится вопрос.
+    - *Examples:* `Это стол?` /ˈetə stoɫ?/, `Ты дома?` /tɨ ˈdomə?/
+- **Notes:**
+  - hw: "Используйте три вежливые фразы завтра"
 
 ## Unit 1: Моя жизнь сегодня
 
@@ -77,17 +85,19 @@ hw: "Используйте три вежливые фразы завтра"
 - Алфавит + Личные местоимения + Нулевая связка
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-01"
-pronunciation: [{"point":"The Cyrillic Alphabet — Vowels","explain":"Russian has 10 vowels, which can be hard or soft.","examples":[{"pattern":"А","ipa":"/a/","word":"мама"},{"pattern":"О","ipa":"/o/","word":"кот"},{"pattern":"И","ipa":"/i/","word":"вид"}],"extension":"Русские гласные очень четкие под ударением, но сильно меняются в безударном положении. Это одна из главных сложностей для иностранцев.","visual":"👄"}]
-speaking: "Поздороваться и представить себя"
-listening: "Диалоги знакомства"
-reading: "Простые слова и имена"
-writing: "Написать свое имя и город"
-task: "Знакомство в группе"
-cando: "Может здороваться и называть свое имя"
-hw: "Выучить алфавит"
-```
+- **Lesson Code:** `RU-01`
+- **Goal (Can-Do):** Может здороваться и называть свое имя
+- **Pronunciation Focus:**
+  - **The Cyrillic Alphabet — Vowels**: Russian has 10 vowels, which can be hard or soft.
+    - *Examples:* `мама` /a/, `кот` /o/, `вид` /i/
+    - *Note:* Русские гласные очень четкие под ударением, но сильно меняются в безударном положении. Это одна из главных сложностей для иностранцев.
+- **Notes:**
+  - speaking: "Поздороваться и представить себя"
+  - listening: "Диалоги знакомства"
+  - reading: "Простые слова и имена"
+  - writing: "Написать свое имя и город"
+  - task: "Знакомство в группе"
+  - hw: "Выучить алфавит"
 
 ### Lesson 2: Мин кем? Минем эш
 
@@ -95,17 +105,19 @@ hw: "Выучить алфавит"
 - Род существительных + Профессии
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-02"
-pronunciation: [{"point":"Vowel Reduction: The 'O'","explain":"When 'O' is not stressed, it sounds like 'A'.","examples":[{"pattern":"о","ipa":"/ma.la.'ko/","word":"молоко"},{"pattern":"о","ipa":"/xa.ra.'ʃo/","word":"хорошо"},{"pattern":"о","ipa":"/'o.kna/","word":"окна"}],"tip":"Listen for the stress! Only the stressed 'O' sounds like 'O'.","extension":"Это явление называется 'аканье'. Оно делает русскую речь более мягкой и мелодичной.","visual":"🅾️➡️🅰️"}]
-speaking: "Рассказать о своей профессии"
-listening: "Описание разных профессий"
-reading: "Короткие объявления о работе"
-writing: "Написать 5 предложений о работе"
-task: "Угадай профессию партнера"
-cando: "Может говорить о своей работе"
-hw: "Выучить названия 10 профессий"
-```
+- **Lesson Code:** `RU-02`
+- **Goal (Can-Do):** Может говорить о своей работе
+- **Pronunciation Focus:**
+  - **Vowel Reduction: The 'O'**: When 'O' is not stressed, it sounds like 'A'.
+    - *Examples:* `молоко` /ma.la.'ko/, `хорошо` /xa.ra.'ʃo/, `окна` /'o.kna/
+    - *Note:* Listen for the stress! Only the stressed 'O' sounds like 'O'.
+- **Notes:**
+  - speaking: "Рассказать о своей профессии"
+  - listening: "Описание разных профессий"
+  - reading: "Короткие объявления о работе"
+  - writing: "Написать 5 предложений о работе"
+  - task: "Угадай профессию партнера"
+  - hw: "Выучить названия 10 профессий"
 
 ### Lesson 3: Минем өем һәм минем шәһәрем
 
@@ -113,17 +125,19 @@ hw: "Выучить названия 10 профессий"
 - Притяжательные местоиμεния (мой, твой, его)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-03"
-pronunciation: [{"point":"The Sound 'Ы'","explain":"A unique Russian sound. Imagine someone hit you in the stomach!","examples":[{"pattern":"ы","ipa":"/ɨ/","word":"мы"},{"pattern":"ы","ipa":"/tɨ/","word":"ты"},{"pattern":"ы","ipa":"/vɨ/","word":"вы"}],"extension":"Чтобы произнести 'Ы', отодвиньте язык назад, как будто хотите сказать 'И', но глубже в горле.","visual":"🥊"}]
-speaking: "Описать свой дом и где он находится"
-listening: "Рассказ о квартире"
-reading: "Объявление об аренде"
-writing: "Описать свою комнату"
-task: "Нарисовать план квартиры"
-cando: "Может описать свое жилье"
-hw: "Слова по теме \"Мебель\""
-```
+- **Lesson Code:** `RU-03`
+- **Goal (Can-Do):** Может описать свое жилье
+- **Pronunciation Focus:**
+  - **The Sound 'Ы'**: A unique Russian sound. Imagine someone hit you in the stomach!
+    - *Examples:* `мы` /ɨ/, `ты` /tɨ/, `вы` /vɨ/
+    - *Note:* Чтобы произнести 'Ы', отодвиньте язык назад, как будто хотите сказать 'И', но глубже в горле.
+- **Notes:**
+  - speaking: "Описать свой дом и где он находится"
+  - listening: "Рассказ о квартире"
+  - reading: "Объявление об аренде"
+  - writing: "Описать свою комнату"
+  - task: "Нарисовать план квартиры"
+  - hw: "Слова по теме \"Мебель\""
 
 ### Lesson 4: Минем гаиләм
 
@@ -131,16 +145,15 @@ hw: "Слова по теме \"Мебель\""
 - Род существительных (повторение) + Семья
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-04"
-speaking: "Рассказать о своей семье по фото"
-listening: "Рассказ о большой семье"
-reading: "Текст о семейном древе"
-writing: "Написать о своих родственниках"
-task: "Найти сходства в семьях"
-cando: "Может представить членов семьи"
-hw: "Нарисовать семейное древо"
-```
+- **Lesson Code:** `RU-04`
+- **Goal (Can-Do):** Может представить членов семьи
+- **Notes:**
+  - speaking: "Рассказать о своей семье по фото"
+  - listening: "Рассказ о большой семье"
+  - reading: "Текст о семейном древе"
+  - writing: "Написать о своих родственниках"
+  - task: "Найти сходства в семьях"
+  - hw: "Нарисовать семейное древо"
 
 ### Lesson 5: Сколько это стоит? (Деньги)
 
@@ -148,16 +161,15 @@ hw: "Нарисовать семейное древо"
 - Числа 1-100 + Вопрос "Сколько?"
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-05"
-speaking: "Покупки в магазине (ролевая игра)"
-listening: "Диалог в магазине"
-reading: "Ценники и чеки"
-writing: "Список покупок с ценами"
-task: "Рынок: торгуемся за цену"
-cando: "Может совершать простые покупки"
-hw: "Выучить числа до 100"
-```
+- **Lesson Code:** `RU-05`
+- **Goal (Can-Do):** Может совершать простые покупки
+- **Notes:**
+  - speaking: "Покупки в магазине (ролевая игра)"
+  - listening: "Диалог в магазине"
+  - reading: "Ценники и чеки"
+  - writing: "Список покупок с ценами"
+  - task: "Рынок: торгуемся за цену"
+  - hw: "Выучить числа до 100"
 
 ### Lesson 6: Иртәнге аш, төшкө аш һәм кичке аш
 
@@ -165,16 +177,15 @@ hw: "Выучить числа до 100"
 - Винительный падеж (начало) — объекты
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-06"
-speaking: "Заказать еду в ресторане"
-listening: "Заказ в кафе"
-reading: "Меню русского ресторана"
-writing: "Написать свое любимое меню"
-task: "Заказать обед на двоих"
-cando: "Может заказать еду и напитки"
-hw: "Выучить 10 названий продуктов"
-```
+- **Lesson Code:** `RU-06`
+- **Goal (Can-Do):** Может заказать еду и напитки
+- **Notes:**
+  - speaking: "Заказать еду в ресторане"
+  - listening: "Заказ в кафе"
+  - reading: "Меню русского ресторана"
+  - writing: "Написать свое любимое меню"
+  - task: "Заказать обед на двоих"
+  - hw: "Выучить 10 названий продуктов"
 
 ### Lesson 7: Как вы себя чувствуете?
 
@@ -182,16 +193,15 @@ hw: "Выучить 10 названий продуктов"
 - Конструкция "У меня болит..."
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-07"
-speaking: "Объяснить симптомы врачу"
-listening: "Визит к врачу"
-reading: "Текст о здоровом образе жизни"
-writing: "Записка о болезни"
-task: "Ролевая игра: в аптеке"
-cando: "Может выразить простую физическую боль"
-hw: "Выучить части тела"
-```
+- **Lesson Code:** `RU-07`
+- **Goal (Can-Do):** Может выразить простую физическую боль
+- **Notes:**
+  - speaking: "Объяснить симптомы врачу"
+  - listening: "Визит к врачу"
+  - reading: "Текст о здоровом образе жизни"
+  - writing: "Записка о болезни"
+  - task: "Ролевая игра: в аптеке"
+  - hw: "Выучить части тела"
 
 ### Lesson 8: Мой компьютер и телефон
 
@@ -199,16 +209,15 @@ hw: "Выучить части тела"
 - Глаголы 1-го спряжения (повторение)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-08"
-speaking: "Рассказать об использовании гаджетов"
-listening: "Интервью о соцсетях"
-reading: "Пост в блоге"
-writing: "Описание своего цифрового дня"
-task: "Обсуждение: интернет — это хорошо?"
-cando: "Может говорить о своих цифровых привычках"
-hw: "Перевести 5 предложений о технологиях"
-```
+- **Lesson Code:** `RU-08`
+- **Goal (Can-Do):** Может говорить о своих цифровых привычках
+- **Notes:**
+  - speaking: "Рассказать об использовании гаджетов"
+  - listening: "Интервью о соцсетях"
+  - reading: "Пост в блоге"
+  - writing: "Описание своего цифрового дня"
+  - task: "Обсуждение: интернет — это хорошо?"
+  - hw: "Перевести 5 предложений о технологиях"
 
 ### Lesson 9: Шимбә көнне нишлисез?
 
@@ -216,16 +225,15 @@ hw: "Перевести 5 предложений о технологиях"
 - Настоящее время (смешанные глаголы)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-09"
-speaking: "Поделиться планами на выходные"
-listening: "Люди говорят о своих хобби"
-reading: "Афиша мероприятий"
-writing: "Описать свое любимое хобби"
-task: "Найти единомышленника по интересам"
-cando: "Может говорить о своем досуге"
-hw: "Написать 5 фраз о своих вкусах"
-```
+- **Lesson Code:** `RU-09`
+- **Goal (Can-Do):** Может говорить о своем досуге
+- **Notes:**
+  - speaking: "Поделиться планами на выходные"
+  - listening: "Люди говорят о своих хобби"
+  - reading: "Афиша мероприятий"
+  - writing: "Описать свое любимое хобби"
+  - task: "Найти единомышленника по интересам"
+  - hw: "Написать 5 фраз о своих вкусах"
 
 ### Lesson 10: Ревизия 1 — Моя жизнь
 
@@ -233,16 +241,15 @@ hw: "Написать 5 фраз о своих вкусах"
 - Итоги: Настоящее время, род и притяжательные
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-10"
-speaking: "Итоговый рассказ о себе (3 минуты)"
-listening: "Тест на понимание тем Модуля 1"
-reading: "Портрет типичного студента"
-writing: "Написать свою биографию (A1)"
-task: "Интервью"
-cando: "Владеет базовыми навыками выживания на русском"
-hw: "Подготовить портфолио за Модуль 1"
-```
+- **Lesson Code:** `RU-10`
+- **Goal (Can-Do):** Владеет базовыми навыками выживания на русском
+- **Notes:**
+  - speaking: "Итоговый рассказ о себе (3 минуты)"
+  - listening: "Тест на понимание тем Модуля 1"
+  - reading: "Портрет типичного студента"
+  - writing: "Написать свою биографию (A1)"
+  - task: "Интервью"
+  - hw: "Подготовить портфолио за Модуль 1"
 
 ## Unit 2: Мое прошлое
 
@@ -252,10 +259,9 @@ hw: "Подготовить портфолио за Модуль 1"
 - Прошедшее время
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-11"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-11`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 2: Сез кайда тугансыз?
 
@@ -263,10 +269,9 @@ lessons_count: 1
 - Предложный падеж
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-12"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-12`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 3: Минем укуым
 
@@ -274,10 +279,9 @@ lessons_count: 1
 - Глаголы прошлого времени
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-13"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-13`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 4: Минем кечкенә булганда
 
@@ -285,10 +289,9 @@ lessons_count: 1
 - Описание прошлого
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-14"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-14`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 5: Минем беренче эшем
 
@@ -296,10 +299,9 @@ lessons_count: 1
 - Профессии в прошлом
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-15"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-15`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 6: Элек һәм хәзер
 
@@ -307,10 +309,9 @@ lessons_count: 1
 - Сравнение времен
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-16"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-16`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 7: Кызыклы хәл
 
@@ -318,10 +319,9 @@ lessons_count: 1
 - Рассказ о событии
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-17"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-17`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 8: Минем иске гадәтләрем
 
@@ -329,10 +329,9 @@ lessons_count: 1
 - Регулярные действия в прошлом
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-18"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-18`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 9: Ул әйтте...
 
@@ -340,10 +339,9 @@ lessons_count: 1
 - Косвенная речь (просто)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-19"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-19`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 10: Ревизия 2 — Прошлое
 
@@ -351,10 +349,9 @@ lessons_count: 1
 - Итоги по прошедшему времени
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-20"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-20`
+- **Notes:**
+  - lessons_count: 1
 
 ## Unit 3: Мое будущее
 
@@ -364,10 +361,9 @@ lessons_count: 1
 - Будущее время
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-21"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-21`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 2: Минем ял планнарым
 
@@ -375,10 +371,9 @@ lessons_count: 1
 - Куда? (направление)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-22"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-22`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 3: Һава торошы
 
@@ -386,10 +381,9 @@ lessons_count: 1
 - Безличные конструкции
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-23"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-23`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 4: Мин барырга телим...
 
@@ -397,10 +391,9 @@ lessons_count: 1
 - Глаголы движения (начало)
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-24"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-24`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 5: Минем хыялларым
 
@@ -408,10 +401,9 @@ lessons_count: 1
 - Конструкция "Я хотел бы"
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-25"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-25`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 6: Киләчәктәге дөнья
 
@@ -419,10 +411,9 @@ lessons_count: 1
 - Прогнозы
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-26"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-26`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 7: Минем вәгъдәләрем
 
@@ -430,10 +421,9 @@ lessons_count: 1
 - Намерения
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-27"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-27`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 8: Офиста очрашу
 
@@ -441,10 +431,9 @@ lessons_count: 1
 - Назначение времени
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-28"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-28`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 9: Әгәр кояш булса...
 
@@ -452,10 +441,9 @@ lessons_count: 1
 - Условные предложения
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-29"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-29`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 10: Ревизия 3 — Будущее
 
@@ -463,10 +451,9 @@ lessons_count: 1
 - Итоги по будущему времени
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-30"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-30`
+- **Notes:**
+  - lessons_count: 1
 
 ## Unit 4: Мой мир
 
@@ -476,10 +463,9 @@ lessons_count: 1
 - Сравнение
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-31"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-31`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 2: Иң матур урын
 
@@ -487,10 +473,9 @@ lessons_count: 1
 - Превосходная степень
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-32"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-32`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 3: Я думаю, что... (Мнение)
 
@@ -498,10 +483,9 @@ lessons_count: 1
 - Выражение мнения
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-33"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-33`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 4: Кеше, кайсы...
 
@@ -509,10 +493,9 @@ lessons_count: 1
 - Слово "который"
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-34"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-34`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 5: Татар традицияләре
 
@@ -520,10 +503,9 @@ lessons_count: 1
 - Культура
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-35"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-35`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 6: Татарстанда бәйрәмнәр
 
@@ -531,10 +513,9 @@ lessons_count: 1
 - Даты и месяцы
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-36"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-36`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 7: Кунакта
 
@@ -542,10 +523,9 @@ lessons_count: 1
 - Этикет
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-37"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-37`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 8: Экология
 
@@ -553,10 +533,9 @@ lessons_count: 1
 - Природа
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-38"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-38`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 9: Минем дусларым
 
@@ -564,10 +543,9 @@ lessons_count: 1
 - Описание характера
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-39"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-39`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 10: Ревизия 4 — Мнения
 
@@ -575,10 +553,9 @@ lessons_count: 1
 - Итоги по темам дискуссий
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-40"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-40`
+- **Notes:**
+  - lessons_count: 1
 
 ## Unit 5: Мастерство
 
@@ -588,10 +565,9 @@ lessons_count: 1
 - Дискуссия
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-41"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-41`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 2: Минем тарихым
 
@@ -599,10 +575,9 @@ lessons_count: 1
 - Связный рассказ
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-42"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-42`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 3: Этикет һәм әдәплелек
 
@@ -610,10 +585,9 @@ lessons_count: 1
 - Конструкции просьбы
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-43"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-43`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 4: Яңалыклар уку
 
@@ -621,10 +595,9 @@ lessons_count: 1
 - Медиа-лексика
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-44"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-44`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 5: Идиомалар һәм сленг
 
@@ -632,10 +605,9 @@ lessons_count: 1
 - Разговорный язык
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-45"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-45`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 6: Тел биргә әзерлек
 
@@ -643,10 +615,9 @@ lessons_count: 1
 - Беглость
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-46"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-46`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 7: A1 Грамматика ревизиясе
 
@@ -654,10 +625,9 @@ lessons_count: 1
 - Итоги
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-47"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-47`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 8: A1 Лексика ревизиясе
 
@@ -665,10 +635,9 @@ lessons_count: 1
 - Итоги
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-48"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-48`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 9: Пробный A1 тесты
 
@@ -676,10 +645,9 @@ lessons_count: 1
 - Экзамен
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-49"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-49`
+- **Notes:**
+  - lessons_count: 1
 
 ### Lesson 10: Финаль тест һәм планнар
 
@@ -687,7 +655,6 @@ lessons_count: 1
 - Аттестация
 
 **Teaching Notes & Rules:**
-```text
-code: "RU-50"
-lessons_count: 1
-```
+- **Lesson Code:** `RU-50`
+- **Notes:**
+  - lessons_count: 1

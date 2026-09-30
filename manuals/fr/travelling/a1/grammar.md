@@ -11,10 +11,8 @@
 - Articles définis (le, la, l', les)
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-001"
-cando: "Peut s'orienter à l'enregistrement, au contrôle des passeports et à la livraison des bagages."
-```
+- **Lesson Code:** `FR-TRV-A1-001`
+- **Goal (Can-Do):** Peut s'orienter à l'enregistrement, au contrôle des passeports et à la livraison des bagages.
 
 ### Lesson 2: Enregistrement à l'aéroport et contrôle de sécurité
 
@@ -23,10 +21,8 @@ cando: "Peut s'orienter à l'enregistrement, au contrôle des passeports et à l
 - J'ai... / Je n'ai pas de...
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-002"
-cando: "Peut suivre les instructions de sécurité à l'aéroport et répondre aux questions d'enregistrement."
-```
+- **Lesson Code:** `FR-TRV-A1-002`
+- **Goal (Can-Do):** Peut suivre les instructions de sécurité à l'aéroport et répondre aux questions d'enregistrement.
 
 ### Lesson 3: Retrait des bagages et informations de vol
 
@@ -35,10 +31,8 @@ cando: "Peut suivre les instructions de sécurité à l'aéroport et répondre a
 - Quelle porte... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-003"
-cando: "Peut lire les panneaux d'affichage des vols et localiser le tapis à bagages."
-```
+- **Lesson Code:** `FR-TRV-A1-003`
+- **Goal (Can-Do):** Peut lire les panneaux d'affichage des vols et localiser le tapis à bagages.
 
 ### Lesson 4: Transports en commun et navette aéroport
 
@@ -47,10 +41,8 @@ cando: "Peut lire les panneaux d'affichage des vols et localiser le tapis à bag
 - Ligne directe / Correspondance
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-004"
-cando: "Peut acheter des billets de navette aéroport et de transports en commun."
-```
+- **Lesson Code:** `FR-TRV-A1-004`
+- **Goal (Can-Do):** Peut acheter des billets de navette aéroport et de transports en commun.
 
 ## Unit 2: L'hôtel et l'hébergement
 
@@ -61,10 +53,8 @@ cando: "Peut acheter des billets de navette aéroport et de transports en commun
 - Est-ce que je peux avoir... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-005"
-cando: "Peut faire son enregistrement à l'hôtel et demander les services de base."
-```
+- **Lesson Code:** `FR-TRV-A1-005`
+- **Goal (Can-Do):** Peut faire son enregistrement à l'hôtel et demander les services de base.
 
 ### Lesson 2: Équipements de la chambre et demandes
 
@@ -73,10 +63,8 @@ cando: "Peut faire son enregistrement à l'hôtel et demander les services de ba
 - Pouvez-vous me donner plus de... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-006"
-cando: "Peut demander du matériel supplémentaire et des services pour la chambre."
-```
+- **Lesson Code:** `FR-TRV-A1-006`
+- **Goal (Can-Do):** Peut demander du matériel supplémentaire et des services pour la chambre.
 
 ### Lesson 3: Petit-déjeuner et services de l'hôtel
 
@@ -85,10 +73,8 @@ cando: "Peut demander du matériel supplémentaire et des services pour la chamb
 - Où se trouve... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-007"
-cando: "Peut se renseigner sur les horaires du petit-déjeuner et l'accès aux équipements."
-```
+- **Lesson Code:** `FR-TRV-A1-007`
+- **Goal (Can-Do):** Peut se renseigner sur les horaires du petit-déjeuner et l'accès aux équipements.
 
 ### Lesson 4: Départ de l'hôtel et bagagerie
 
@@ -97,10 +83,8 @@ cando: "Peut se renseigner sur les horaires du petit-déjeuner et l'accès aux �
 - Puis-je laisser mes bagages ici ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-008"
-cando: "Peut effectuer les formalités de départ et demander à faire garder ses bagages."
-```
+- **Lesson Code:** `FR-TRV-A1-008`
+- **Goal (Can-Do):** Peut effectuer les formalités de départ et demander à faire garder ses bagages.
 
 ## Unit 3: Au restaurant et au café
 
@@ -111,10 +95,8 @@ cando: "Peut effectuer les formalités de départ et demander à faire garder se
 - Sur place ou à emporter
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-009"
-cando: "Peut commander des boissons et des en-cas simples au comptoir d'un café."
-```
+- **Lesson Code:** `FR-TRV-A1-009`
+- **Goal (Can-Do):** Peut commander des boissons et des en-cas simples au comptoir d'un café.
 
 ### Lesson 2: Réservation et accueil au restaurant
 
@@ -123,10 +105,8 @@ cando: "Peut commander des boissons et des en-cas simples au comptoir d'un café
 - Avez-vous une table près de... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-010"
-cando: "Peut demander une table au restaurant pour un groupe."
-```
+- **Lesson Code:** `FR-TRV-A1-010`
+- **Goal (Can-Do):** Peut demander une table au restaurant pour un groupe.
 
 ### Lesson 3: Commander un repas et préférences alimentaires
 
@@ -135,10 +115,8 @@ cando: "Peut demander une table au restaurant pour un groupe."
 - Je ne mange pas de...
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-011"
-cando: "Peut commander des plats principaux et indiquer ses préférences alimentaires de base."
-```
+- **Lesson Code:** `FR-TRV-A1-011`
+- **Goal (Can-Do):** Peut commander des plats principaux et indiquer ses préférences alimentaires de base.
 
 ### Lesson 4: Demander l'addition et régler
 
@@ -147,10 +125,8 @@ cando: "Peut commander des plats principaux et indiquer ses préférences alimen
 - Acceptez-vous la carte bancaire ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-012"
-cando: "Peut demander l'addition et payer son repas au restaurant."
-```
+- **Lesson Code:** `FR-TRV-A1-012`
+- **Goal (Can-Do):** Peut demander l'addition et payer son repas au restaurant.
 
 ## Unit 4: S'orienter et se déplacer
 
@@ -161,10 +137,8 @@ cando: "Peut demander l'addition et payer son repas au restaurant."
 - Est-ce loin d'ici ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-013"
-cando: "Peut identifier les principaux monuments de la ville et demander leur emplacement."
-```
+- **Lesson Code:** `FR-TRV-A1-013`
+- **Goal (Can-Do):** Peut identifier les principaux monuments de la ville et demander leur emplacement.
 
 ### Lesson 2: Demander et indiquer son chemin
 
@@ -174,10 +148,8 @@ cando: "Peut identifier les principaux monuments de la ville et demander leur em
 - C'est à côté de...
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-014"
-cando: "Peut suivre et donner des indications d'itinéraire simples à pied."
-```
+- **Lesson Code:** `FR-TRV-A1-014`
+- **Goal (Can-Do):** Peut suivre et donner des indications d'itinéraire simples à pied.
 
 ### Lesson 3: Prendre un taxi ou un VTC
 
@@ -186,10 +158,8 @@ cando: "Peut suivre et donner des indications d'itinéraire simples à pied."
 - Combien va coûter la course ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-015"
-cando: "Peut donner une destination à un chauffeur de taxi et s'informer du prix."
-```
+- **Lesson Code:** `FR-TRV-A1-015`
+- **Goal (Can-Do):** Peut donner une destination à un chauffeur de taxi et s'informer du prix.
 
 ### Lesson 4: Acheter des billets de train et de bus
 
@@ -198,10 +168,8 @@ cando: "Peut donner une destination à un chauffeur de taxi et s'informer du pri
 - Sur quel quai... ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-016"
-cando: "Peut comprendre les annonces de quai et acheter des billets de transport interurbain."
-```
+- **Lesson Code:** `FR-TRV-A1-016`
+- **Goal (Can-Do):** Peut comprendre les annonces de quai et acheter des billets de transport interurbain.
 
 ## Unit 5: Urgences et petits besoins
 
@@ -212,10 +180,8 @@ cando: "Peut comprendre les annonces de quai et acheter des billets de transport
 - J'ai mal à la tête / au ventre
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-017"
-cando: "Peut décrire des symptômes simples et acheter des médicaments sans ordonnance à la pharmacie."
-```
+- **Lesson Code:** `FR-TRV-A1-017`
+- **Goal (Can-Do):** Peut décrire des symptômes simples et acheter des médicaments sans ordonnance à la pharmacie.
 
 ### Lesson 2: Objets perdus et demande d'assistance
 
@@ -224,10 +190,8 @@ cando: "Peut décrire des symptômes simples et acheter des médicaments sans or
 - Pouvez-vous m'aider ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-018"
-cando: "Peut demander de l'aide en cas de perte d'un objet ou document personnel."
-```
+- **Lesson Code:** `FR-TRV-A1-018`
+- **Goal (Can-Do):** Peut demander de l'aide en cas de perte d'un objet ou document personnel.
 
 ### Lesson 3: Bureau de change et distributeurs
 
@@ -236,10 +200,8 @@ cando: "Peut demander de l'aide en cas de perte d'un objet ou document personnel
 - Où se trouve le distributeur le plus proche ?
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-019"
-cando: "Peut échanger des devises et trouver un distributeur automatique de billets."
-```
+- **Lesson Code:** `FR-TRV-A1-019`
+- **Goal (Can-Do):** Peut échanger des devises et trouver un distributeur automatique de billets.
 
 ### Lesson 4: Signaler un problème et numéros d'urgence
 
@@ -248,7 +210,5 @@ cando: "Peut échanger des devises et trouver un distributeur automatique de bil
 - C'est une urgence
 
 **Teaching Notes & Rules:**
-```text
-code: "FR-TRV-A1-020"
-cando: "Peut appeler les services d'urgence et signaler une situation urgente avec des mots simples."
-```
+- **Lesson Code:** `FR-TRV-A1-020`
+- **Goal (Can-Do):** Peut appeler les services d'urgence et signaler une situation urgente avec des mots simples.

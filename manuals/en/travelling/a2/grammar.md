@@ -11,10 +11,8 @@
 - Is there a delay?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-001"
-cando: "Can ask about timetable changes, ticket exchanges, and travel delays."
-```
+- **Lesson Code:** `EN-TRV-A2-001`
+- **Goal (Can-Do):** Can ask about timetable changes, ticket exchanges, and travel delays.
 
 ### Lesson 2: Missed Connections & Rebooking Flight Tickets
 
@@ -23,10 +21,8 @@ cando: "Can ask about timetable changes, ticket exchanges, and travel delays."
 - Are there any open seats on...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-002"
-cando: "Can arrange rebooking and ask for vouchers after missed flight connections."
-```
+- **Lesson Code:** `EN-TRV-A2-002`
+- **Goal (Can-Do):** Can arrange rebooking and ask for vouchers after missed flight connections.
 
 ### Lesson 3: Car Rentals & Driving Rules Abroad
 
@@ -35,10 +31,8 @@ cando: "Can arrange rebooking and ask for vouchers after missed flight connectio
 - Does it come with unlimited mileage?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-003"
-cando: "Can pick up a rental car, verify insurance options, and confirm fuel terms."
-```
+- **Lesson Code:** `EN-TRV-A2-003`
+- **Goal (Can-Do):** Can pick up a rental car, verify insurance options, and confirm fuel terms.
 
 ### Lesson 4: Long-Distance Rail & Intercity Bus Travel
 
@@ -47,10 +41,8 @@ cando: "Can pick up a rental car, verify insurance options, and confirm fuel ter
 - Which car/carriage is...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-004"
-cando: "Can locate reserved seats and travel comfortably on long-distance trains or coaches."
-```
+- **Lesson Code:** `EN-TRV-A2-004`
+- **Goal (Can-Do):** Can locate reserved seats and travel comfortably on long-distance trains or coaches.
 
 ## Unit 2: Hotel Issues & Special Accommodation Requests
 
@@ -61,10 +53,8 @@ cando: "Can locate reserved seats and travel comfortably on long-distance trains
 - Could I move to a quiet room?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-005"
-cando: "Can report room problems polite and request a room change or maintenance."
-```
+- **Lesson Code:** `EN-TRV-A2-005`
+- **Goal (Can-Do):** Can report room problems polite and request a room change or maintenance.
 
 ### Lesson 2: Booking Boutique Stays & Apartment Rentals
 
@@ -73,10 +63,8 @@ cando: "Can report room problems polite and request a room change or maintenance
 - Is there a self check-in option?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-006"
-cando: "Can communicate with vacation rental hosts and follow self check-in directions."
-```
+- **Lesson Code:** `EN-TRV-A2-006`
+- **Goal (Can-Do):** Can communicate with vacation rental hosts and follow self check-in directions.
 
 ### Lesson 3: Requesting Late Check-Out & Extra Services
 
@@ -85,10 +73,8 @@ cando: "Can communicate with vacation rental hosts and follow self check-in dire
 - Is there an extra fee for...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-007"
-cando: "Can negotiate flexible check-out times and request auxiliary hotel services."
-```
+- **Lesson Code:** `EN-TRV-A2-007`
+- **Goal (Can-Do):** Can negotiate flexible check-out times and request auxiliary hotel services.
 
 ### Lesson 4: Resolving Billing Disputes & Unexpected Hotel Fees
 
@@ -97,10 +83,8 @@ cando: "Can negotiate flexible check-out times and request auxiliary hotel servi
 - I did not order this item
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-008"
-cando: "Can review an itemized hotel bill and politely clarify disputed charges."
-```
+- **Lesson Code:** `EN-TRV-A2-008`
+- **Goal (Can-Do):** Can review an itemized hotel bill and politely clarify disputed charges.
 
 ## Unit 3: Regional Gastronomy & Dining Experiences
 
@@ -111,10 +95,8 @@ cando: "Can review an itemized hotel bill and politely clarify disputed charges.
 - I am allergic to...
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-009"
-cando: "Can order regional dishes, communicate dietary needs, and handle payment."
-```
+- **Lesson Code:** `EN-TRV-A2-009`
+- **Goal (Can-Do):** Can order regional dishes, communicate dietary needs, and handle payment.
 
 ### Lesson 2: Communicating Dietary Restrictions & Food Allergies
 
@@ -123,10 +105,8 @@ cando: "Can order regional dishes, communicate dietary needs, and handle payment
 - Can you prepare this without...?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-010"
-cando: "Can ask detailed questions about menu ingredients to respect dietary needs."
-```
+- **Lesson Code:** `EN-TRV-A2-010`
+- **Goal (Can-Do):** Can ask detailed questions about menu ingredients to respect dietary needs.
 
 ### Lesson 3: Exploring Local Markets & Artisanal Food Stalls
 
@@ -135,10 +115,8 @@ cando: "Can ask detailed questions about menu ingredients to respect dietary nee
 - Can I try a sample?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-011"
-cando: "Can shop at open-air markets, request samples, and buy local products."
-```
+- **Lesson Code:** `EN-TRV-A2-011`
+- **Goal (Can-Do):** Can shop at open-air markets, request samples, and buy local products.
 
 ### Lesson 4: Understanding Tipping Etiquette & Bill Splitting
 
@@ -147,10 +125,8 @@ cando: "Can shop at open-air markets, request samples, and buy local products."
 - Is service included in the price?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-012"
-cando: "Can navigate local tipping customs and request split payments among dining partners."
-```
+- **Lesson Code:** `EN-TRV-A2-012`
+- **Goal (Can-Do):** Can navigate local tipping customs and request split payments among dining partners.
 
 ## Unit 4: Sightseeing, Guided Tours & Local Excursions
 
@@ -161,10 +137,8 @@ cando: "Can navigate local tipping customs and request split payments among dini
 - Is entry included with this pass?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-013"
-cando: "Can purchase attraction passes, ask about discounts, and request audio guides."
-```
+- **Lesson Code:** `EN-TRV-A2-013`
+- **Goal (Can-Do):** Can purchase attraction passes, ask about discounts, and request audio guides.
 
 ### Lesson 2: Participating in Walking Tours & Guided Excursions
 
@@ -173,10 +147,8 @@ cando: "Can purchase attraction passes, ask about discounts, and request audio g
 - How long does the tour last?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-014"
-cando: "Can join guided walking tours and clarify schedule and itinerary details."
-```
+- **Lesson Code:** `EN-TRV-A2-014`
+- **Goal (Can-Do):** Can join guided walking tours and clarify schedule and itinerary details.
 
 ### Lesson 3: Asking Locals for Hidden Gems & Recommendations
 
@@ -185,10 +157,8 @@ cando: "Can join guided walking tours and clarify schedule and itinerary details
 - Where do locals usually go?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-015"
-cando: "Can ask local residents for authentic, non-touristy recommendations."
-```
+- **Lesson Code:** `EN-TRV-A2-015`
+- **Goal (Can-Do):** Can ask local residents for authentic, non-touristy recommendations.
 
 ### Lesson 4: Exploring Neighborhoods & Photography Etiquette
 
@@ -197,10 +167,8 @@ cando: "Can ask local residents for authentic, non-touristy recommendations."
 - Would you mind taking a picture of us?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-016"
-cando: "Can ask permission before taking photos and request someone to take a group photo."
-```
+- **Lesson Code:** `EN-TRV-A2-016`
+- **Goal (Can-Do):** Can ask permission before taking photos and request someone to take a group photo.
 
 ## Unit 5: Travel Health, Weather & Minor Mishaps
 
@@ -211,10 +179,8 @@ cando: "Can ask permission before taking photos and request someone to take a gr
 - Do I need a prescription for this?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-017"
-cando: "Can seek medical consultation at a local clinic and explain symptoms clearly."
-```
+- **Lesson Code:** `EN-TRV-A2-017`
+- **Goal (Can-Do):** Can seek medical consultation at a local clinic and explain symptoms clearly.
 
 ### Lesson 2: Reporting Lost Credit Cards & Emergency Cash
 
@@ -223,10 +189,8 @@ cando: "Can seek medical consultation at a local clinic and explain symptoms cle
 - Can I get an emergency cash transfer?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-018"
-cando: "Can contact a bank hotline to cancel lost or stolen cards."
-```
+- **Lesson Code:** `EN-TRV-A2-018`
+- **Goal (Can-Do):** Can contact a bank hotline to cancel lost or stolen cards.
 
 ### Lesson 3: Adapting Plans for Bad Weather & Unexpected Closures
 
@@ -235,10 +199,8 @@ cando: "Can contact a bank hotline to cancel lost or stolen cards."
 - What indoor activities do you suggest?
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-019"
-cando: "Can adjust travel plans when weather forces venue closures."
-```
+- **Lesson Code:** `EN-TRV-A2-019`
+- **Goal (Can-Do):** Can adjust travel plans when weather forces venue closures.
 
 ### Lesson 4: Dealing with Lost Property Office & Tourist Police
 
@@ -247,7 +209,5 @@ cando: "Can adjust travel plans when weather forces venue closures."
 - I would like to file a lost item report
 
 **Teaching Notes & Rules:**
-```text
-code: "EN-TRV-A2-020"
-cando: "Can file a lost property report at a station or tourist information desk."
-```
+- **Lesson Code:** `EN-TRV-A2-020`
+- **Goal (Can-Do):** Can file a lost property report at a station or tourist information desk.
