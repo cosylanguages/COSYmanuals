@@ -76,7 +76,7 @@ def generate_grammar_manual(curriculum_data):
     return "\n".join(lines)
 
 
-def generate_grammar_html(curriculum_data):
+def generate_grammar_html(curriculum_data, out_dir=None):
     if not isinstance(curriculum_data, dict): curriculum_data = {}
     lang = str(curriculum_data.get("language") or "en").lower()
     lang_upper = lang.upper()
@@ -84,6 +84,11 @@ def generate_grammar_html(curriculum_data):
     level = str(curriculum_data.get("level") or "A1").lower()
     level_upper = level.upper()
     units = curriculum_data.get("units") or []
+
+    if out_dir is None:
+        out_dir = os.path.join("manuals", lang, course_type.lower(), level)
+
+    rel_styles = os.path.relpath("shared/styles", out_dir).replace("\\", "/")
 
     unit_blocks = []
     for unit in units:
@@ -136,10 +141,10 @@ def generate_grammar_html(curriculum_data):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} Grammar Manual — {course_type} ({level_upper})</title>
-<link rel="stylesheet" href="../../../shared/styles/tokens.css">
-<link rel="stylesheet" href="../../../shared/styles/base.css">
-<link rel="stylesheet" href="../../../shared/styles/components.css">
-<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="{rel_styles}/tokens.css">
+<link rel="stylesheet" href="{rel_styles}/base.css">
+<link rel="stylesheet" href="{rel_styles}/components.css">
+<link rel="stylesheet" href="{rel_styles}/layout.css">
 </head>
 <body>
 
@@ -224,7 +229,7 @@ def generate_vocabulary_manual(curriculum_data):
     return "\n".join(lines)
 
 
-def generate_vocabulary_html(curriculum_data):
+def generate_vocabulary_html(curriculum_data, out_dir=None):
     if not isinstance(curriculum_data, dict): curriculum_data = {}
     lang = str(curriculum_data.get("language") or "en").lower()
     lang_upper = lang.upper()
@@ -232,6 +237,11 @@ def generate_vocabulary_html(curriculum_data):
     level = str(curriculum_data.get("level") or "A1").lower()
     level_upper = level.upper()
     units = curriculum_data.get("units") or []
+
+    if out_dir is None:
+        out_dir = os.path.join("manuals", lang, course_type.lower(), level)
+
+    rel_styles = os.path.relpath("shared/styles", out_dir).replace("\\", "/")
 
     unit_blocks = []
     for unit in units:
@@ -277,10 +287,10 @@ def generate_vocabulary_html(curriculum_data):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} Vocabulary Manual — {course_type} ({level_upper})</title>
-<link rel="stylesheet" href="../../../shared/styles/tokens.css">
-<link rel="stylesheet" href="../../../shared/styles/base.css">
-<link rel="stylesheet" href="../../../shared/styles/components.css">
-<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="{rel_styles}/tokens.css">
+<link rel="stylesheet" href="{rel_styles}/base.css">
+<link rel="stylesheet" href="{rel_styles}/components.css">
+<link rel="stylesheet" href="{rel_styles}/layout.css">
 </head>
 <body>
 
@@ -394,7 +404,7 @@ def generate_communication_manual(curriculum_data):
     return "\n".join(lines)
 
 
-def generate_communication_html(curriculum_data):
+def generate_communication_html(curriculum_data, out_dir=None):
     if not isinstance(curriculum_data, dict): curriculum_data = {}
     lang = str(curriculum_data.get("language") or "en").lower()
     lang_upper = lang.upper()
@@ -402,6 +412,11 @@ def generate_communication_html(curriculum_data):
     level = str(curriculum_data.get("level") or "A1").lower()
     level_upper = level.upper()
     units = curriculum_data.get("units") or []
+
+    if out_dir is None:
+        out_dir = os.path.join("manuals", lang, course_type.lower(), level)
+
+    rel_styles = os.path.relpath("shared/styles", out_dir).replace("\\", "/")
 
     unit_blocks = []
     for unit in units:
@@ -461,10 +476,10 @@ def generate_communication_html(curriculum_data):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} Communication Manual — {course_type} ({level_upper})</title>
-<link rel="stylesheet" href="../../../shared/styles/tokens.css">
-<link rel="stylesheet" href="../../../shared/styles/base.css">
-<link rel="stylesheet" href="../../../shared/styles/components.css">
-<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="{rel_styles}/tokens.css">
+<link rel="stylesheet" href="{rel_styles}/base.css">
+<link rel="stylesheet" href="{rel_styles}/components.css">
+<link rel="stylesheet" href="{rel_styles}/layout.css">
 </head>
 <body>
 
@@ -522,7 +537,7 @@ def generate_readme(curriculum_data):
     return "\n".join(lines)
 
 
-def generate_student_index(curriculum_data):
+def generate_student_index(curriculum_data, out_dir=None):
     if not isinstance(curriculum_data, dict):
         curriculum_data = {}
 
@@ -531,6 +546,11 @@ def generate_student_index(curriculum_data):
     course_type = str(curriculum_data.get("course_type") or "general").title()
     level = str(curriculum_data.get("level") or "a1").lower()
     level_upper = level.upper()
+
+    if out_dir is None:
+        out_dir = os.path.join("manuals", lang, course_type.lower(), level)
+
+    rel_styles = os.path.relpath("shared/styles", out_dir).replace("\\", "/")
 
     # Check for direct textbook links
     grammar_tb = f"../../grammar/{level}/index.html" if os.path.exists(f"manuals/{lang}/grammar/{level}/index.html") else None
@@ -566,10 +586,10 @@ def generate_student_index(curriculum_data):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} {course_type} Manual ({level_upper}) · Student Portal</title>
-<link rel="stylesheet" href="../../../shared/styles/tokens.css">
-<link rel="stylesheet" href="../../../shared/styles/base.css">
-<link rel="stylesheet" href="../../../shared/styles/components.css">
-<link rel="stylesheet" href="../../../shared/styles/layout.css">
+<link rel="stylesheet" href="{rel_styles}/tokens.css">
+<link rel="stylesheet" href="{rel_styles}/base.css">
+<link rel="stylesheet" href="{rel_styles}/components.css">
+<link rel="stylesheet" href="{rel_styles}/layout.css">
 </head>
 <body>
 

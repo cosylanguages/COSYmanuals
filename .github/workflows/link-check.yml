@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'manuals/**'
+      - 'marathons/**'
 
 jobs:
   verify-links:
@@ -20,3 +21,7 @@ jobs:
       - name: Verify relative links against baseline
         run: |
           python3 scripts/cosy_manuals_migrate.py verify --baseline docs/migration/known_broken_links.json
+
+      - name: Check CSS links
+        run: |
+          python3 scripts/check_css_links.py
