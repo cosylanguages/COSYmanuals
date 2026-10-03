@@ -328,11 +328,12 @@ def generate_grammar_html(curriculum_data, out_dir=None):
         textbook_btn = f'<a href="{textbook_link}" style="background:#1c8f56; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Textbook & Topic Lessons →</a>'
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang-theme="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} Grammar Manual — {course_type} ({level_upper})</title>
+<link rel="stylesheet" href="{rel_styles}/lang-accents.css">
 <link rel="stylesheet" href="{rel_styles}/tokens.css">
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
@@ -493,11 +494,12 @@ def generate_vocabulary_html(curriculum_data, out_dir=None):
         textbook_btn = f'<a href="{textbook_link}" style="background:#2563eb; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Vocabulary Textbook & Topic Lessons →</a>'
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang-theme="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} Vocabulary Manual — {course_type} ({level_upper})</title>
+<link rel="stylesheet" href="{rel_styles}/lang-accents.css">
 <link rel="stylesheet" href="{rel_styles}/tokens.css">
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
@@ -701,11 +703,12 @@ def generate_communication_html(curriculum_data, out_dir=None):
         textbook_btn = f'<a href="{textbook_link}" style="background:#4f46e5; color:#ffffff; font-weight:700; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:0.9rem;">📚 Open Full Level Communication Textbook & Topic Lessons →</a>'
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang-theme="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} Communication Manual — {course_type} ({level_upper})</title>
+<link rel="stylesheet" href="{rel_styles}/lang-accents.css">
 <link rel="stylesheet" href="{rel_styles}/tokens.css">
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
@@ -811,11 +814,12 @@ def generate_student_index(curriculum_data, out_dir=None):
         """
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang-theme="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{lang_upper} {course_type} Manual ({level_upper}) · Student Portal</title>
+<link rel="stylesheet" href="{rel_styles}/lang-accents.css">
 <link rel="stylesheet" href="{rel_styles}/tokens.css">
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
