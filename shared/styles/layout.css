@@ -50,3 +50,8 @@
   background: var(--lang-light, #ebf8ff);
   color: var(--lang-primary, #1a365d);
 }
+
+/* Chrome Navigation & Branding Overrides */
+.topbar, .topbar-nav, .logo-badge, .private-tag {
+  --chrome-accent: var(--cosy-manuals-accent, #6b202b);
+}
