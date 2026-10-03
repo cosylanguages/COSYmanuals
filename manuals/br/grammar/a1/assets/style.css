@@ -7,13 +7,13 @@
 
 :root {
   /* Breton brand ramp */
-  --teal-900: #0f382c;
-  --teal-800: #144f3e;
-  --teal-700: #1c6b54;
-  --teal-600: #24876b;
-  --teal-500: #2ea684;
-  --teal-100: #e3f5ef;
-  --teal-050: #f1faf7;
+  --teal-900: var(--accent-900, #0f382c);
+  --teal-800: var(--accent-800, #144f3e);
+  --teal-700: var(--accent-700, #1c6b54);
+  --teal-600: var(--accent-600, #24876b);
+  --teal-500: var(--accent-500, #2ea684);
+  --teal-100: var(--accent-100, #e3f5ef);
+  --teal-050: var(--accent-050, #f1faf7);
 
   --ink: #13231e;
   --ink-soft: #3c544c;
