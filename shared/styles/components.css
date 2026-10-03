@@ -17,20 +17,20 @@ header.manual-header {
   align-items: center;
 }
 
-.logo-badge {
+.logo-badge, .brand-badge, .cosy-badge, .topbar-brand {
   font-weight: var(--cosy-font-weight-extrabold, 800);
   font-size: var(--cosy-font-size-xl, 1.25rem);
-  color: var(--cosy-manuals-accent, #6b202b);
+  color: var(--cosy-manuals-accent, #6b202b) !important;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: var(--cosy-space-sm, 8px);
 }
 
-.private-tag {
-  background: var(--cosy-manuals-accent-light, #f9edf0);
-  color: var(--cosy-manuals-accent, #6b202b);
-  border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22));
+.private-tag, .badge-cosy, .topbar-badge {
+  background: var(--cosy-manuals-accent-light, #f9edf0) !important;
+  color: var(--cosy-manuals-accent, #6b202b) !important;
+  border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22)) !important;
   font-size: var(--cosy-font-size-xs, 0.75rem);
   font-weight: var(--cosy-font-weight-bold, 700);
   padding: 0.2rem 0.6rem;
@@ -39,8 +39,8 @@ header.manual-header {
   letter-spacing: 0.05em;
 }
 
-/* Sticky Header & Jump Links */
-.sd-sticky-header, .topbar {
+/* Sticky Header & Jump Links / Navigation Pills */
+.sd-sticky-header, .topbar, .nav-bar, .top-nav-bar {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -58,7 +58,7 @@ header.manual-header {
   align-items: center;
 }
 
-.sd-jump-links, .topbar-nav {
+.sd-jump-links, .topbar-nav, .nav-pills {
   display: flex;
   gap: var(--cosy-space-sm, 8px);
   overflow-x: auto;
@@ -67,22 +67,22 @@ header.manual-header {
   margin: 0 auto;
 }
 
-.sd-jump-link, .topbar-nav a {
+.sd-jump-link, .topbar-nav a, .nav-pill, .topbar-pill {
   color: var(--cosy-color-ink-soft, #4a4a4a);
   text-decoration: none;
   font-weight: var(--cosy-font-weight-bold, 700);
   font-size: var(--cosy-font-size-sm, 0.875rem);
   padding: 0.35rem 0.75rem;
   border-radius: var(--cosy-radius-sm, 8px);
-  background: var(--cosy-manuals-accent-light, #f9edf0);
-  border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22));
+  background: var(--cosy-manuals-accent-light, #f9edf0) !important;
+  border: 1px solid var(--cosy-manuals-accent-border, rgba(107, 32, 43, 0.22)) !important;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.sd-jump-link:hover, .sd-jump-link.active, .topbar-nav a:hover, .topbar-nav a.active {
-  background: var(--cosy-manuals-accent, #6b202b);
-  color: #ffffff;
-  border-color: var(--cosy-manuals-accent, #6b202b);
+.sd-jump-link:hover, .sd-jump-link.active, .topbar-nav a:hover, .topbar-nav a.active, .nav-pill:hover, .nav-pill.active, .topbar-pill:hover, .topbar-pill.active {
+  background: var(--cosy-manuals-accent, #6b202b) !important;
+  color: #ffffff !important;
+  border-color: var(--cosy-manuals-accent, #6b202b) !important;
 }
 
 /* Hero Header Contrast Overrides */

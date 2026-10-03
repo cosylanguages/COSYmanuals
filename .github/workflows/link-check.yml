@@ -5,6 +5,8 @@ on:
     paths:
       - 'manuals/**'
       - 'marathons/**'
+      - 'shared/**'
+      - 'scripts/**'
 
 jobs:
   verify-links:
@@ -25,3 +27,7 @@ jobs:
       - name: Check CSS links
         run: |
           python3 scripts/check_css_links.py
+
+      - name: Check accent contrast
+        run: |
+          python3 scripts/check_accent_contrast.py
