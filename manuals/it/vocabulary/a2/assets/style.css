@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
 
 :root {
-  --teal-900: #0f382c;
-  --teal-800: #17523d;
-  --teal-700: #1f6d50;
-  --teal-600: #288865;
-  --teal-100: #e3f5ef;
-  --teal-050: #f2faf5;
+  --teal-900: var(--accent-900, #0f382c);
+  --teal-800: var(--accent-800, #17523d);
+  --teal-700: var(--accent-700, #1f6d50);
+  --teal-600: var(--accent-600, #288865);
+  --teal-100: var(--accent-100, #e3f5ef);
+  --teal-050: var(--accent-050, #f2faf5);
 
   --ink: #13231e;
   --ink-soft: #3c544c;
