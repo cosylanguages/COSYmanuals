@@ -7,13 +7,13 @@
 
 :root{
   /* brand teal ramp */
-  --teal-900:#0c3f38;
-  --teal-800:#0f5c50;
-  --teal-700:#157c6c;
-  --teal-600:#1c9483;
-  --teal-500:#25a894;
-  --teal-100:#e4f4f0;
-  --teal-050:#f2faf8;
+  --teal-900:var(--accent-900, #0c3f38);
+  --teal-800:var(--accent-800, #0f5c50);
+  --teal-700:var(--accent-700, #157c6c);
+  --teal-600:var(--accent-600, #1c9483);
+  --teal-500:var(--accent-500, #25a894);
+  --teal-100:var(--accent-100, #e4f4f0);
+  --teal-050:var(--accent-050, #f2faf8);
 
   --ink:#132321;
   --ink-soft:#3c5450;

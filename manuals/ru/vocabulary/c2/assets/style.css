@@ -3,10 +3,10 @@
 
 :root {
   --brand-blue: #3562e0;
-  --teal-900: #0f382c;
-  --teal-800: #1c6b54;
-  --teal-700: #25a894;
-  --teal-100: #e8f5f1;
+  --teal-900: var(--accent-900, #0f382c);
+  --teal-800: var(--accent-800, #1c6b54);
+  --teal-700: var(--accent-700, #25a894);
+  --teal-100: var(--accent-100, #e8f5f1);
   --teal-50: #f2f9f6;
   --bg: #faf9f5;
   --card-bg: #ffffff;
