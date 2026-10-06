@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
 
 :root {
-  --teal-900: #0f382c;
-  --teal-800: #1c6b54;
-  --teal-600: #25a894;
-  --teal-100: #e4f5f0;
+  --teal-900: var(--accent-900, #0f382c);
+  --teal-800: var(--accent-800, #1c6b54);
+  --teal-600: var(--accent-600, #25a894);
+  --teal-100: var(--accent-100, #e4f5f0);
   --ink: #13231e;
   --ink-soft: #3c544c;
   --paper: #fcfbf7;
