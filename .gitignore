@@ -4,3 +4,11 @@ drafts/
 .env
 .env.local
 *.log
+
+# Deleted/Cleaned artifact categories
+screenshots/
+verification/
+videos/
+dist/videos/
+test-results/
+reports/screenshots/
