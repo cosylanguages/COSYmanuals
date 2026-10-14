@@ -19,7 +19,7 @@ import subprocess
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 def get_broken_pairs():
-    cmd = [sys.executable, os.path.join(REPO_ROOT, 'scripts', 'cosy_manuals_migrate.py'), 'verify', '--json-out', '/tmp/broken.json']
+    cmd = [sys.executable, os.path.join(REPO_ROOT, 'scripts', 'archive', 'cosy_manuals_migrate.py'), 'verify', '--json-out', '/tmp/broken.json']
     subprocess.run(cmd, capture_output=True, cwd=REPO_ROOT)
     with open('/tmp/broken.json', encoding='utf-8') as f:
         return json.load(f)
