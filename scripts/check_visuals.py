@@ -49,22 +49,25 @@ def check_page(path):
         if f.get("tabindex") != "0": err(path, "timeline is a scroll region: needs tabindex=\"0\"")
         items = []
         for li in f.select(".gv-axis > li"):
+            cls = li.get("class", []); st = li.get("style", "")
             lab = li.select_one(".gv-label"); text = lab.get_text(strip=True) if lab else ""
+            if li.get("aria-hidden") == "true" and not text: continue      # decorative bar
             if not text: err(path, "timeline item without a .gv-label text")
-            st = li.get("style", ""); cls = li.get("class", [])
             if "gv-span" in cls:
                 a, b = pct(st, "from"), pct(st, "to")
                 if a is None or b is None or not (0 <= a < b <= 100): err(path, f"bad span range {a}..{b} ({text})"); continue
-                pos = (a + b) / 2
+                pos, y0 = (a + b) / 2, 1.6
             else:
-                pos = pct(st, "at")
+                pos = pct(st, "at"); y0 = 2.8 if "gv-now" in cls else 1.3
                 if pos is None or not (0 <= pos <= 100): err(path, f"bad --at on '{text}'"); continue
-            items.append((pos, "gv-below" in cls, min(9.0, .5 * len(text)), text))
-        for side in (False, True):                      # label collision on the same side (30rem axis)
-            row = sorted(i for i in items if i[1] == side)
-            for p, q in zip(row, row[1:]):
-                if (q[0] - p[0]) * .30 < (p[2] + q[2]) / 2 + .3:
-                    err(path, f"timeline labels may overlap: '{p[3]}' / '{q[3]}' (move one with gv-below)")
+            if not text: continue
+            w = min(9.0, .5 * len(text)); lines = max(1, -(-int(.5 * len(text) * 100) // 900))
+            items.append(dict(pos=pos, below="gv-below" in cls, w=w, y0=y0, y1=y0 + 1.15 * lines, text=text))
+        for i, p in enumerate(items):                    # 2-D overlap: same side, 30rem axis
+            for q in items[i + 1:]:
+                if p["below"] != q["below"]: continue
+                if abs(p["pos"] - q["pos"]) * .30 < (p["w"] + q["w"]) / 2 and p["y0"] < q["y1"] and q["y0"] < p["y1"]:
+                    err(path, f"timeline labels may overlap: '{p['text']}' / '{q['text']}' (move one with gv-below)")
     for f in soup.select("figure.gv-tree"):
         if not (f.get("aria-label") or f.get("aria-labelledby") or f.find("figcaption")): err(path, "tree has no accessible name")
         if not f.select("ul ul"): err(path, "tree has no branches")

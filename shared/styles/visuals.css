@@ -60,7 +60,7 @@ figure.gv { margin:1.2rem 0; }
 .gv-now::after { content:""; position:absolute; left:0; top:-2.6rem; height:5.2rem;
   border-inline-start:2px dashed var(--gv-ink); }
 .gv-span { position:absolute; left:var(--from); width:calc(var(--to) - var(--from)); top:50%;
-  height:1.1rem; transform:translateY(-50%); background:var(--c-bg); border:2px solid var(--c-line);
+  height:1.1rem; transform:translateY(-50%); background:var(--c-bg,#ecefe9); border:2px solid var(--c-line,var(--gv-axis));
   border-radius:6px; z-index:1; }
 .gv-open-end   { border-inline-end-color:transparent; border-start-end-radius:0; border-end-end-radius:0;
   background:linear-gradient(to right,var(--c-bg) 55%,transparent); }
