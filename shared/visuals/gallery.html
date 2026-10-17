@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-lang-theme="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COSYmanuals · grammar visual components (internal gallery)</title>
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../styles/lang-accents.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/layout.css">
+<link rel="stylesheet" href="../styles/visuals.css">
+</head>
+<body>
+<main class="container">
+<h1>Grammar visual components</h1>
+<p>Internal gallery and test fixture. Only the headings are English; each demo is in its own language, as in real manuals. Sample content is illustrative, not final pedagogy.</p>
+
+<h2>1 · Formula (en)</h2>
+<div class="gv gv-formula" role="group" aria-label="Formula: to be">
+  <span class="gv-slot gv-r1">Subject</span><span class="gv-op">+</span>
+  <span class="gv-slot gv-r2">am / is / are</span><span class="gv-op">+</span>
+  <span class="gv-slot gv-r3">complement</span>
+</div>
+<ul class="gv-examples">
+  <li><span class="gv-r1">I</span> <span class="gv-r2">am</span> <span class="gv-r3">a teacher</span>.</li>
+  <li><span class="gv-r1">She</span> <span class="gv-r2">is</span> <span class="gv-r3">happy</span>.</li>
+</ul>
+
+<h2>1b · Formula (ru)</h2>
+<div class="gv gv-formula" lang="ru" role="group" aria-label="Порядок слов">
+  <span class="gv-slot gv-r1">подлежащее</span><span class="gv-op">+</span>
+  <span class="gv-slot gv-r2">глагол</span><span class="gv-op">+</span>
+  <span class="gv-slot gv-r3">дополнение</span>
+</div>
+<ul class="gv-examples" lang="ru">
+  <li><span class="gv-r1">Я</span> <span class="gv-r2">читаю</span> <span class="gv-r3">книгу</span>.</li>
+</ul>
+
+<h2>2 · Timeline (en): present perfect</h2>
+<figure class="gv gv-timeline" tabindex="0" role="region" aria-labelledby="t1">
+  <ol class="gv-axis">
+    <li class="gv-span gv-tone-past gv-open-start" style="--from:8%;--to:60%"><span class="gv-label">I’ve lived here</span></li>
+    <li class="gv-point gv-tone-past gv-below" style="--at:20%"><span class="gv-label">since 2020</span></li>
+    <li class="gv-now" style="--at:60%"><span class="gv-label">Now</span></li>
+  </ol>
+  <div class="gv-caps"><span>past</span><span>future</span></div>
+  <figcaption id="t1">Present perfect: from the past up to now.</figcaption>
+</figure>
+
+<h2>2b · Timeline (fr): passé composé / imparfait</h2>
+<figure class="gv gv-timeline" lang="fr" tabindex="0" role="region" aria-labelledby="t2">
+  <ol class="gv-axis">
+    <li class="gv-span gv-tone-past gv-below" style="--from:12%;--to:72%"><span class="gv-label">Il pleuvait (imparfait)</span></li>
+    <li class="gv-point gv-tone-b" style="--at:42%"><span class="gv-label">Le téléphone a sonné (passé composé)</span></li>
+    <li class="gv-now" style="--at:86%"><span class="gv-label">Maintenant</span></li>
+  </ol>
+  <div class="gv-caps"><span>passé</span><span>futur</span></div>
+  <figcaption id="t2">Une action ponctuelle pendant une situation en cours.</figcaption>
+</figure>
+
+<h2>3 · Tree (fr): être ou avoir ?</h2>
+<figure class="gv gv-tree" lang="fr" aria-labelledby="tr1">
+  <ul><li><span class="gv-node gv-q">Le verbe est-il pronominal ?</span>
+    <ul>
+      <li><span class="gv-edge">oui</span><span class="gv-node gv-leaf gv-tone-a">être</span> <em>Elle s’est levée.</em></li>
+      <li><span class="gv-edge">non</span><span class="gv-node gv-q">Mouvement ou changement d’état (aller, arriver, partir…) ?</span>
+        <ul>
+          <li><span class="gv-edge">oui</span><span class="gv-node gv-leaf gv-tone-a">être</span> <em>Elle est arrivée.</em></li>
+          <li><span class="gv-edge">non</span><span class="gv-node gv-leaf gv-tone-b">avoir</span> <em>Elle a mangé.</em></li>
+        </ul></li>
+    </ul></li></ul>
+  <figcaption id="tr1">Choisir l’auxiliaire du passé composé (règle simplifiée).</figcaption>
+</figure>
+
+<h2>4 · Contrast (fr)</h2>
+<figure class="gv gv-contrast" lang="fr" aria-labelledby="c1">
+  <div class="gv-side gv-tone-a"><h3 class="gv-head">être</h3>
+    <ul class="gv-pairs"><li>Elle <b>est</b> arrivée.</li><li>Nous <b>sommes</b> partis.</li></ul></div>
+  <div class="gv-vs" aria-hidden="true"></div>
+  <div class="gv-side gv-tone-b"><h3 class="gv-head">avoir</h3>
+    <ul class="gv-pairs"><li>Elle <b>a</b> mangé.</li><li>Nous <b>avons</b> fini.</li></ul></div>
+  <figcaption id="c1" style="grid-column:1/-1">Deux auxiliaires, deux groupes de verbes.</figcaption>
+</figure>
+
+<h2>5 · Paradigm tables</h2>
+<div class="gv gv-paradigm" lang="fr" tabindex="0" role="region" aria-label="parler, présent">
+  <table><caption>parler · présent</caption>
+    <thead><tr><th scope="col"></th><th scope="col">forme</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">je</th><td><span class="gv-stem">parl</span><span class="gv-end">e</span></td></tr>
+      <tr><th scope="row">tu</th><td><span class="gv-stem">parl</span><span class="gv-end">es</span></td></tr>
+      <tr><th scope="row">il / elle</th><td><span class="gv-stem">parl</span><span class="gv-end">e</span></td></tr>
+      <tr><th scope="row">nous</th><td><span class="gv-stem">parl</span><span class="gv-end">ons</span></td></tr>
+      <tr><th scope="row">vous</th><td><span class="gv-stem">parl</span><span class="gv-end">ez</span></td></tr>
+      <tr><th scope="row">ils / elles</th><td><span class="gv-stem">parl</span><span class="gv-end">ent</span></td></tr>
+    </tbody></table>
+</div>
+<div class="gv gv-paradigm" tabindex="0" role="region" aria-label="work, present simple">
+  <table><caption>work · present simple</caption>
+    <thead><tr><th scope="col"></th><th scope="col">form</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">I / you / we / they</th><td><span class="gv-stem">work</span><span class="gv-end"></span></td></tr>
+      <tr><th scope="row">he / she / it</th><td><span class="gv-stem">work</span><span class="gv-end">s</span></td></tr>
+      <tr><th scope="row">to have (irregular)</th><td><span class="gv-irr">has</span></td></tr>
+    </tbody></table>
+</div>
+<div class="gv gv-paradigm" lang="ru" tabindex="0" role="region" aria-label="читать, настоящее время">
+  <table><caption>читать · настоящее время</caption>
+    <thead><tr><th scope="col"></th><th scope="col">форма</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">я</th><td><span class="gv-stem">чита</span><span class="gv-end">ю</span></td></tr>
+      <tr><th scope="row">ты</th><td><span class="gv-stem">чита</span><span class="gv-end">ешь</span></td></tr>
+      <tr><th scope="row">он / она</th><td><span class="gv-stem">чита</span><span class="gv-end">ет</span></td></tr>
+      <tr><th scope="row">мы</th><td><span class="gv-stem">чита</span><span class="gv-end">ем</span></td></tr>
+      <tr><th scope="row">вы</th><td><span class="gv-stem">чита</span><span class="gv-end">ете</span></td></tr>
+      <tr><th scope="row">они</th><td><span class="gv-stem">чита</span><span class="gv-end">ют</span></td></tr>
+    </tbody></table>
+</div>
+</main>
+</body>
+</html>

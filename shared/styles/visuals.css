@@ -1,0 +1,128 @@
+/* COSYmanuals grammar-visual components (prefix gv-).
+   Rules: (1) this file contains NO words: all text comes from the page, so every page stays
+   monolingual. (2) colour is never the only cue (roles also differ by underline style), so it
+   survives grayscale print. (3) no JS needed. Guide: docs/VISUAL_COMPONENTS.md */
+
+:root {
+  --gv-1-ink:#1d4f91; --gv-1-bg:#e7eefa; --gv-1-line:#3b78c4;
+  --gv-2-ink:#9b1c38; --gv-2-bg:#fbe9ed; --gv-2-line:#c4465f;
+  --gv-3-ink:#25673a; --gv-3-bg:#e6f3e9; --gv-3-line:#3f9a5a;
+  --gv-4-ink:#7a4a05; --gv-4-bg:#fdf0d9; --gv-4-line:#c98a1b;
+  --gv-5-ink:#663a99; --gv-5-bg:#f1eafa; --gv-5-line:#8f63c4;
+  --gv-ink:var(--cosy-color-ink,#2a2a2a);
+  --gv-faint:var(--cosy-color-ink-faint,#5c5957);
+  --gv-surface:var(--cosy-color-surface,#fff);
+  --gv-line:var(--cosy-color-border-hover,rgba(74,107,80,.25));
+  --gv-axis:#6f776f;
+  --gv-accent:var(--cosy-manuals-accent,#6b202b);
+  --gv-radius:10px;
+}
+
+/* ---- tones / roles: set --c-ink --c-bg --c-line ---- */
+.gv-r1,.gv-tone-a,.gv-tone-past   {--c-ink:var(--gv-1-ink);--c-bg:var(--gv-1-bg);--c-line:var(--gv-1-line)}
+.gv-r2,.gv-tone-b                 {--c-ink:var(--gv-2-ink);--c-bg:var(--gv-2-bg);--c-line:var(--gv-2-line)}
+.gv-r3,.gv-tone-c,.gv-tone-present{--c-ink:var(--gv-3-ink);--c-bg:var(--gv-3-bg);--c-line:var(--gv-3-line)}
+.gv-r4,.gv-tone-d,.gv-tone-future {--c-ink:var(--gv-4-ink);--c-bg:var(--gv-4-bg);--c-line:var(--gv-4-line)}
+.gv-r5,.gv-tone-e                 {--c-ink:var(--gv-5-ink);--c-bg:var(--gv-5-bg);--c-line:var(--gv-5-line)}
+
+/* role = colour + underline style, in sentences and in formula chips */
+.gv-r1,.gv-r2,.gv-r3,.gv-r4,.gv-r5 {
+  color:var(--c-ink); font-weight:700; text-decoration-line:underline;
+  text-decoration-color:var(--c-line); text-decoration-thickness:2px; text-underline-offset:.2em;
+}
+.gv-r1{text-decoration-style:solid}  .gv-r2{text-decoration-style:dashed}
+.gv-r3{text-decoration-style:dotted} .gv-r4{text-decoration-style:double}
+.gv-r5{text-decoration-style:wavy}
+
+figure.gv { margin:1.2rem 0; }
+.gv figcaption { font-size:.9rem; color:var(--gv-faint); margin-top:.4rem; }
+
+/* ---- FORMULA: <div class="gv gv-formula"> slots + operators ---- */
+.gv-formula { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .6rem; margin:1.2rem 0;
+  padding:.9rem 1rem; background:var(--gv-surface); border:1px solid var(--gv-line);
+  border-inline-start:5px solid var(--gv-accent); border-radius:var(--gv-radius); font-size:1.05rem; }
+.gv-slot { display:inline-block; padding:.25em .75em; border-radius:999px; background:var(--c-bg);
+  border:1.5px solid var(--c-line); }
+.gv-op { color:var(--gv-faint); font-weight:700; }
+.gv-examples { margin:.4rem 0 1.2rem; padding-inline-start:1.2rem; font-size:1.05rem; line-height:1.9; }
+
+/* ---- TIMELINE: figure > ol.gv-axis > li (.gv-point | .gv-span | .gv-now) ---- */
+.gv-timeline { overflow-x:auto; padding-block:.25rem; }
+.gv-axis { list-style:none; margin:0; padding:0; position:relative; height:9.6rem; min-width:30rem; }
+.gv-axis::before { content:""; position:absolute; left:0; right:.4rem; top:50%; height:3px;
+  background:var(--gv-axis); border-radius:2px; transform:translateY(-50%); }
+.gv-axis::after { content:""; position:absolute; right:-1px; top:50%; transform:translateY(-50%);
+  border-block:7px solid transparent; border-inline-start:10px solid var(--gv-axis); }
+.gv-point,.gv-now { position:absolute; left:var(--at); top:50%; width:0; height:0; z-index:2; }
+.gv-point::before,.gv-now::before { content:""; position:absolute; width:1rem; height:1rem;
+  border-radius:50%; transform:translate(-50%,-50%); background:var(--c-line,var(--gv-ink));
+  border:3px solid var(--gv-surface); box-shadow:0 0 0 1.5px var(--c-line,var(--gv-ink)); }
+.gv-now::after { content:""; position:absolute; left:0; top:-2.6rem; height:5.2rem;
+  border-inline-start:2px dashed var(--gv-ink); }
+.gv-span { position:absolute; left:var(--from); width:calc(var(--to) - var(--from)); top:50%;
+  height:1.1rem; transform:translateY(-50%); background:var(--c-bg); border:2px solid var(--c-line);
+  border-radius:6px; z-index:1; }
+.gv-open-end   { border-inline-end-color:transparent; border-start-end-radius:0; border-end-end-radius:0;
+  background:linear-gradient(to right,var(--c-bg) 55%,transparent); }
+.gv-open-start { border-inline-start-color:transparent; border-start-start-radius:0; border-end-start-radius:0;
+  background:linear-gradient(to left,var(--c-bg) 55%,transparent); }
+.gv-label { position:absolute; left:0; transform:translateX(-50%); bottom:1.3rem; width:max-content;
+  max-width:9rem; text-align:center; font-size:.9rem; line-height:1.25; font-weight:600;
+  color:var(--c-ink,var(--gv-ink)); text-wrap:balance; }
+.gv-now .gv-label { bottom:2.8rem; color:var(--gv-ink); }
+.gv-span .gv-label { left:50%; bottom:1.6rem; }
+.gv-below .gv-label { bottom:auto; top:1.3rem; }
+.gv-now.gv-below .gv-label { top:2.8rem; }
+.gv-span.gv-below .gv-label { top:1.6rem; }
+.gv-caps { margin-top:-.9rem; display:flex; justify-content:space-between; min-width:30rem; font-size:.8rem; color:var(--gv-faint); }
+
+/* ---- TREE: figure > ul > li > (.gv-edge)? .gv-node + nested ul ---- */
+.gv-tree ul { list-style:none; margin:0; padding:0; }
+.gv-tree ul ul { margin-inline-start:.7rem; padding-inline-start:1.6rem; }
+.gv-tree li { position:relative; padding:.35rem 0; }
+.gv-tree ul ul > li::before { content:""; position:absolute; inset-inline-start:-1rem; top:0; height:100%;
+  border-inline-start:2px solid var(--gv-axis); }
+.gv-tree ul ul > li:last-child::before { height:1.3rem; }
+.gv-tree ul ul > li::after { content:""; position:absolute; inset-inline-start:-1rem; top:1.3rem; width:1rem;
+  border-top:2px solid var(--gv-axis); }
+.gv-node { display:inline-block; padding:.3rem .75rem; border-radius:8px; font-weight:600;
+  border:1.5px solid var(--c-line,var(--gv-axis)); background:var(--c-bg,var(--gv-surface));
+  color:var(--c-ink,var(--gv-ink)); }
+.gv-q { border-style:dashed; }
+.gv-leaf { border-width:2.5px; font-weight:800; }
+.gv-edge { display:inline-block; margin-inline-end:.5rem; padding:.05rem .55rem; border-radius:999px;
+  background:#eceee9; color:#3a3d3a; font-size:.8rem; font-weight:700; }
+
+/* ---- CONTRAST: figure > .gv-side + .gv-vs + .gv-side ---- */
+.gv-contrast { display:grid; grid-template-columns:1fr auto 1fr; gap:.75rem; }
+.gv-side { padding:.8rem 1rem; border:1.5px solid var(--c-line); background:var(--c-bg); border-radius:var(--gv-radius); }
+.gv-head { margin:0 0 .5rem; font-size:1rem; color:var(--c-ink); }
+.gv-vs { align-self:center; font-weight:800; color:var(--gv-faint); }
+.gv-vs::before { content:"\2260"; }
+.gv-pairs { list-style:none; margin:0; padding:0; }
+.gv-pairs li { padding:.35rem 0; border-top:1px dashed var(--c-line); }
+.gv-pairs li:first-child { border-top:0; }
+.gv-note { display:block; font-size:.85rem; color:var(--gv-faint); font-weight:400; }
+@media (max-width:34rem) { .gv-contrast { grid-template-columns:1fr; } .gv-vs { justify-self:center; } }
+
+/* ---- PARADIGM: .gv-paradigm > table (stem + ending highlighting) ---- */
+.gv-paradigm { overflow-x:auto; margin:1rem 0; background:var(--gv-surface);
+  border:1px solid var(--gv-line); border-radius:var(--gv-radius); }
+.gv-paradigm table { border-collapse:separate; border-spacing:0; width:100%; min-width:18rem; }
+.gv-paradigm caption { text-align:start; padding:.6rem .9rem; font-weight:700; }
+.gv-paradigm th,.gv-paradigm td { padding:.55rem .9rem; border-top:1px solid var(--gv-line); text-align:start; }
+.gv-paradigm thead th { background:var(--cosy-manuals-accent-light,#f9edf0); color:var(--cosy-manuals-accent-dark,#3f1118); }
+.gv-paradigm tbody th { width:1%; white-space:nowrap; position:sticky; inset-inline-start:0; background:#faf8f3; color:var(--gv-faint); font-weight:600; }
+.gv-end { font-weight:800; color:var(--cosy-manuals-accent-dark,#3f1118);
+  background:var(--cosy-manuals-accent-light,#f9edf0); border-bottom:2px solid var(--gv-accent); padding:0 .1em; }
+.gv-end:empty::after { content:"\2205"; }
+.gv-irr { background:var(--gv-4-bg); color:var(--gv-4-ink); border-bottom:2px dotted var(--gv-4-line); font-weight:800; }
+
+.gv-timeline:focus-visible,.gv-paradigm:focus-visible { outline:3px solid var(--gv-accent); outline-offset:2px; }
+
+@media print {
+  .gv,.gv * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  figure.gv,.gv-formula,.gv-paradigm { break-inside:avoid; }
+  .gv-timeline,.gv-paradigm { overflow:visible; }
+  .gv-axis,.gv-caps { min-width:0; }
+}
