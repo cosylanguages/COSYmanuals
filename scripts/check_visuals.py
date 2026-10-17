@@ -38,6 +38,11 @@ def pct(style, var):
 
 def check_page(path):
     soup = BeautifulSoup(open(path, errors="ignore").read(), "html.parser")
+    noscope = [t for t in soup.select("table th") if not t.get("scope")]
+    if noscope: err(path, f"{len(noscope)} table header cell(s) without scope (run scripts/upgrade_tables.py)")
+    for w in soup.select("div.table-wrap"):
+        if w.get("role") != "region" or not w.get("aria-label") or w.get("tabindex") != "0":
+            err(path, "table-wrap must be a named, focusable region (run scripts/upgrade_tables.py)"); break
     if not soup.select("[class*=gv-]"): return 0
     for el in soup.select("[class*=gv-]"):
         for c in el.get("class", []):

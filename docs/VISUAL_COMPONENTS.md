@@ -45,7 +45,7 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
   <figcaption id="id">...</figcaption></figure>
 ```
 **Contrast**: exactly two `gv-side`, one `gv-vs aria-hidden="true"` (the "≠" is drawn by CSS).
-**Paradigm**: wrap the table in `.gv-paradigm` (`tabindex="0" role="region" aria-label`), `<caption>`, `<th scope>`; `<span class="gv-stem">` + `<span class="gv-end">` (empty `gv-end` shows ∅); `gv-irr` marks irregular forms.
+**Paradigm** (inside manuals the page keeps its own table look: `class="table-wrap gv gv-paradigm"`; standalone `gv-paradigm` brings its own): wrap the table in `.gv-paradigm` (`tabindex="0" role="region" aria-label`), `<caption>`, `<th scope>`; `<span class="gv-stem">` + `<span class="gv-end">` (empty `gv-end` shows ∅); `gv-irr` marks irregular forms.
 
 ## Limits to know
 - Timeline labels are placed by hand. The linter warns when two labels on the same side are too close; fix with `gv-below` or by moving them.
@@ -59,3 +59,6 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
 ## Wiring
 Add as the **first line** of `shared/styles/components.css` (3,880 of 4,039 pages already load it, so no page edits are needed):
 `@import url("visuals.css");`
+
+## Tables (all pages)
+`python3 scripts/upgrade_tables.py` (dry run; `--apply` to write) makes every table accessible (`<th scope>`, `.table-wrap` becomes a named, focusable region) and splits stem/ending ONLY for clearly regular verb paradigms (every ending must be in a per-language regular set). Irregular verbs are never marked automatically; see the review list. `check_visuals.py` fails on any table header without `scope`.

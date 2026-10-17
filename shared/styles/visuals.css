@@ -105,19 +105,21 @@ figure.gv { margin:1.2rem 0; }
 .gv-note { display:block; font-size:.85rem; color:var(--gv-faint); font-weight:400; }
 @media (max-width:34rem) { .gv-contrast { grid-template-columns:1fr; } .gv-vs { justify-self:center; } }
 
-/* ---- PARADIGM: .gv-paradigm > table (stem + ending highlighting) ---- */
-.gv-paradigm { overflow-x:auto; margin:1rem 0; background:var(--gv-surface);
+/* ---- PARADIGM: stem + ending highlighting. Standalone (.gv-paradigm) brings its own table look;
+   inside a manual (.table-wrap.gv-paradigm) the page's table look is kept and only the highlighting is added. ---- */
+.gv-paradigm:not(.table-wrap) { overflow-x:auto; margin:1rem 0; background:var(--gv-surface);
   border:1px solid var(--gv-line); border-radius:var(--gv-radius); }
-.gv-paradigm table { border-collapse:separate; border-spacing:0; width:100%; min-width:18rem; }
-.gv-paradigm caption { text-align:start; padding:.6rem .9rem; font-weight:700; }
-.gv-paradigm th,.gv-paradigm td { padding:.55rem .9rem; border-top:1px solid var(--gv-line); text-align:start; }
-.gv-paradigm thead th { background:var(--cosy-manuals-accent-light,#f9edf0); color:var(--cosy-manuals-accent-dark,#3f1118); }
-.gv-paradigm tbody th { width:1%; white-space:nowrap; position:sticky; inset-inline-start:0; background:#faf8f3; color:var(--gv-faint); font-weight:600; }
+.gv-paradigm:not(.table-wrap) table { border-collapse:separate; border-spacing:0; width:100%; min-width:18rem; }
+.gv-paradigm:not(.table-wrap) caption { text-align:start; padding:.6rem .9rem; font-weight:700; }
+.gv-paradigm:not(.table-wrap) th,.gv-paradigm:not(.table-wrap) td { padding:.55rem .9rem; border-top:1px solid var(--gv-line); text-align:start; }
+.gv-paradigm:not(.table-wrap) thead th { background:var(--cosy-manuals-accent-light,#f9edf0); color:var(--cosy-manuals-accent-dark,#3f1118); }
+.gv-paradigm:not(.table-wrap) tbody th { width:1%; white-space:nowrap; position:sticky; inset-inline-start:0; background:#faf8f3; color:var(--gv-faint); font-weight:600; }
 .gv-end { font-weight:800; color:var(--cosy-manuals-accent-dark,#3f1118);
   background:var(--cosy-manuals-accent-light,#f9edf0); border-bottom:2px solid var(--gv-accent); padding:0 .1em; }
 .gv-end:empty::after { content:"\2205"; }
 .gv-irr { background:var(--gv-4-bg); color:var(--gv-4-ink); border-bottom:2px dotted var(--gv-4-line); font-weight:800; }
 
+.gv-sr { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 .gv-timeline:focus-visible,.gv-paradigm:focus-visible { outline:3px solid var(--gv-accent); outline-offset:2px; }
 
 @media print {
