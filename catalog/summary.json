@@ -1,0 +1,579 @@
+{
+ "by_language": {
+  "ba": {
+   "english_leak_pages": 10,
+   "hub": 11,
+   "lang_wrong": 8,
+   "other_stub": 0,
+   "pages": 67,
+   "topic_real": 39,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 9,
+   "visual_pages": 0
+  },
+  "br": {
+   "english_leak_pages": 10,
+   "hub": 11,
+   "lang_wrong": 8,
+   "other_stub": 0,
+   "pages": 70,
+   "topic_real": 45,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 6,
+   "visual_pages": 0
+  },
+  "cv": {
+   "english_leak_pages": 2,
+   "hub": 9,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 61,
+   "topic_real": 41,
+   "topic_stub": 0,
+   "track_manual": 0,
+   "unit": 9,
+   "visual_pages": 0
+  },
+  "de": {
+   "english_leak_pages": 0,
+   "hub": 11,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 96,
+   "topic_real": 62,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 15,
+   "visual_pages": 1
+  },
+  "el": {
+   "english_leak_pages": 0,
+   "hub": 17,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 192,
+   "topic_real": 117,
+   "topic_stub": 0,
+   "track_manual": 21,
+   "unit": 35,
+   "visual_pages": 0
+  },
+  "en": {
+   "english_leak_pages": 0,
+   "hub": 55,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 893,
+   "topic_real": 547,
+   "topic_stub": 0,
+   "track_manual": 81,
+   "unit": 208,
+   "visual_pages": 14
+  },
+  "es": {
+   "english_leak_pages": 0,
+   "hub": 11,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 101,
+   "topic_real": 66,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 16,
+   "visual_pages": 2
+  },
+  "fr": {
+   "english_leak_pages": 0,
+   "hub": 43,
+   "lang_wrong": 0,
+   "other_stub": 4,
+   "pages": 1452,
+   "topic_real": 166,
+   "topic_stub": 1102,
+   "track_manual": 57,
+   "unit": 82,
+   "visual_pages": 2
+  },
+  "hy": {
+   "english_leak_pages": 10,
+   "hub": 11,
+   "lang_wrong": 8,
+   "other_stub": 0,
+   "pages": 68,
+   "topic_real": 40,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 9,
+   "visual_pages": 0
+  },
+  "it": {
+   "english_leak_pages": 0,
+   "hub": 17,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 180,
+   "topic_real": 106,
+   "topic_stub": 0,
+   "track_manual": 18,
+   "unit": 37,
+   "visual_pages": 2
+  },
+  "ka": {
+   "english_leak_pages": 10,
+   "hub": 11,
+   "lang_wrong": 8,
+   "other_stub": 0,
+   "pages": 67,
+   "topic_real": 39,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 9,
+   "visual_pages": 0
+  },
+  "pt": {
+   "english_leak_pages": 0,
+   "hub": 11,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 99,
+   "topic_real": 64,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 16,
+   "visual_pages": 3
+  },
+  "ru": {
+   "english_leak_pages": 0,
+   "hub": 43,
+   "lang_wrong": 0,
+   "other_stub": 0,
+   "pages": 607,
+   "topic_real": 425,
+   "topic_stub": 0,
+   "track_manual": 57,
+   "unit": 80,
+   "visual_pages": 3
+  },
+  "tt": {
+   "english_leak_pages": 11,
+   "hub": 11,
+   "lang_wrong": 9,
+   "other_stub": 0,
+   "pages": 84,
+   "topic_real": 53,
+   "topic_stub": 0,
+   "track_manual": 6,
+   "unit": 12,
+   "visual_pages": 0
+  }
+ },
+ "topics_by_language_module_level": {
+  "ba/grammar/a1": [
+   24,
+   0
+  ],
+  "ba/grammar/a2": [
+   2,
+   0
+  ],
+  "ba/vocabulary/a1": [
+   11,
+   0
+  ],
+  "ba/vocabulary/a2": [
+   2,
+   0
+  ],
+  "br/grammar/a1": [
+   19,
+   0
+  ],
+  "br/grammar/a2": [
+   3,
+   0
+  ],
+  "br/vocabulary/a1": [
+   21,
+   0
+  ],
+  "br/vocabulary/a2": [
+   2,
+   0
+  ],
+  "cv/grammar/a1": [
+   26,
+   0
+  ],
+  "cv/grammar/a2": [
+   2,
+   0
+  ],
+  "cv/vocabulary/a1": [
+   11,
+   0
+  ],
+  "cv/vocabulary/a2": [
+   2,
+   0
+  ],
+  "de/grammar/a1": [
+   27,
+   0
+  ],
+  "de/grammar/a2": [
+   5,
+   0
+  ],
+  "de/vocabulary/a1": [
+   26,
+   0
+  ],
+  "de/vocabulary/a2": [
+   4,
+   0
+  ],
+  "el/communication/a1": [
+   17,
+   0
+  ],
+  "el/grammar/a1": [
+   60,
+   0
+  ],
+  "el/grammar/a2": [
+   13,
+   0
+  ],
+  "el/vocabulary/a1": [
+   23,
+   0
+  ],
+  "el/vocabulary/a2": [
+   4,
+   0
+  ],
+  "en/communication/a1": [
+   30,
+   0
+  ],
+  "en/communication/a2": [
+   10,
+   0
+  ],
+  "en/communication/b1": [
+   49,
+   0
+  ],
+  "en/communication/b2": [
+   10,
+   0
+  ],
+  "en/communication/c1": [
+   10,
+   0
+  ],
+  "en/communication/c2": [
+   5,
+   0
+  ],
+  "en/grammar/a1": [
+   70,
+   0
+  ],
+  "en/grammar/a2": [
+   47,
+   0
+  ],
+  "en/grammar/b1": [
+   48,
+   0
+  ],
+  "en/grammar/b2": [
+   37,
+   0
+  ],
+  "en/grammar/c1": [
+   26,
+   0
+  ],
+  "en/grammar/c2": [
+   20,
+   0
+  ],
+  "en/vocabulary/a1": [
+   81,
+   0
+  ],
+  "en/vocabulary/a2": [
+   18,
+   0
+  ],
+  "en/vocabulary/b1": [
+   32,
+   0
+  ],
+  "en/vocabulary/b2": [
+   27,
+   0
+  ],
+  "en/vocabulary/c1": [
+   22,
+   0
+  ],
+  "en/vocabulary/c2": [
+   5,
+   0
+  ],
+  "es/grammar/a1": [
+   27,
+   0
+  ],
+  "es/grammar/a2": [
+   10,
+   0
+  ],
+  "es/vocabulary/a1": [
+   25,
+   0
+  ],
+  "es/vocabulary/a2": [
+   4,
+   0
+  ],
+  "fr/communication/a1": [
+   10,
+   0
+  ],
+  "fr/communication/a2": [
+   10,
+   0
+  ],
+  "fr/communication/b1": [
+   10,
+   0
+  ],
+  "fr/communication/b2": [
+   10,
+   0
+  ],
+  "fr/communication/c1": [
+   10,
+   0
+  ],
+  "fr/communication/c2": [
+   10,
+   0
+  ],
+  "fr/grammar/a1": [
+   0,
+   202
+  ],
+  "fr/grammar/a2": [
+   0,
+   202
+  ],
+  "fr/grammar/b1": [
+   0,
+   246
+  ],
+  "fr/grammar/b2": [
+   0,
+   202
+  ],
+  "fr/grammar/c1": [
+   0,
+   129
+  ],
+  "fr/grammar/c2": [
+   0,
+   121
+  ],
+  "fr/vocabulary/a1": [
+   70,
+   0
+  ],
+  "fr/vocabulary/a2": [
+   12,
+   0
+  ],
+  "fr/vocabulary/b1": [
+   7,
+   0
+  ],
+  "fr/vocabulary/b2": [
+   6,
+   0
+  ],
+  "fr/vocabulary/c1": [
+   5,
+   0
+  ],
+  "fr/vocabulary/c2": [
+   6,
+   0
+  ],
+  "hy/grammar/a1": [
+   25,
+   0
+  ],
+  "hy/grammar/a2": [
+   2,
+   0
+  ],
+  "hy/vocabulary/a1": [
+   11,
+   0
+  ],
+  "hy/vocabulary/a2": [
+   2,
+   0
+  ],
+  "it/communication/a1": [
+   17,
+   0
+  ],
+  "it/grammar/a1": [
+   37,
+   0
+  ],
+  "it/grammar/a2": [
+   15,
+   0
+  ],
+  "it/grammar/b1": [
+   8,
+   0
+  ],
+  "it/vocabulary/a1": [
+   25,
+   0
+  ],
+  "it/vocabulary/a2": [
+   4,
+   0
+  ],
+  "ka/grammar/a1": [
+   24,
+   0
+  ],
+  "ka/grammar/a2": [
+   2,
+   0
+  ],
+  "ka/vocabulary/a1": [
+   11,
+   0
+  ],
+  "ka/vocabulary/a2": [
+   2,
+   0
+  ],
+  "pt/grammar/a1": [
+   25,
+   0
+  ],
+  "pt/grammar/a2": [
+   10,
+   0
+  ],
+  "pt/vocabulary/a1": [
+   25,
+   0
+  ],
+  "pt/vocabulary/a2": [
+   4,
+   0
+  ],
+  "ru/communication/a1": [
+   10,
+   0
+  ],
+  "ru/communication/a2": [
+   10,
+   0
+  ],
+  "ru/communication/b1": [
+   10,
+   0
+  ],
+  "ru/communication/b2": [
+   10,
+   0
+  ],
+  "ru/communication/c1": [
+   11,
+   0
+  ],
+  "ru/communication/c2": [
+   11,
+   0
+  ],
+  "ru/grammar/a1": [
+   115,
+   0
+  ],
+  "ru/grammar/a2": [
+   54,
+   0
+  ],
+  "ru/grammar/b1": [
+   45,
+   0
+  ],
+  "ru/grammar/b2": [
+   34,
+   0
+  ],
+  "ru/grammar/c1": [
+   28,
+   0
+  ],
+  "ru/grammar/c2": [
+   20,
+   0
+  ],
+  "ru/vocabulary/a1": [
+   37,
+   0
+  ],
+  "ru/vocabulary/a2": [
+   11,
+   0
+  ],
+  "ru/vocabulary/b1": [
+   6,
+   0
+  ],
+  "ru/vocabulary/b2": [
+   5,
+   0
+  ],
+  "ru/vocabulary/c1": [
+   4,
+   0
+  ],
+  "ru/vocabulary/c2": [
+   4,
+   0
+  ],
+  "tt/grammar/a1": [
+   24,
+   0
+  ],
+  "tt/grammar/a2": [
+   2,
+   0
+  ],
+  "tt/vocabulary/a1": [
+   25,
+   0
+  ],
+  "tt/vocabulary/a2": [
+   2,
+   0
+  ]
+ },
+ "total_pages": 4039
+}

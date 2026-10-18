@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COSYmanuals · page catalog (internal)</title>
+<link rel="stylesheet" href="../shared/css/tokens.css">
+<style>
+  body { margin:0; font:16px/1.5 system-ui, sans-serif; color:var(--cosy-color-ink,#2a2a2a); background:var(--cosy-color-bg,#fdfcf8); }
+  main { max-width:72rem; margin:0 auto; padding:1.2rem 1rem 3rem; }
+  h1 { margin:.2rem 0; font-size:1.5rem; }
+  #sum { margin:.2rem 0 1rem; color:#5c5957; }
+  form { display:grid; grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr)); gap:.6rem; margin-bottom:1rem; }
+  label { display:flex; flex-direction:column; font-size:.8rem; font-weight:600; gap:.15rem; }
+  select, input { font:inherit; padding:.35rem .4rem; border:1px solid #b9bfb7; border-radius:6px; background:#fff; }
+  .scroll { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:46rem; background:#fff; }
+  th, td { text-align:start; padding:.45rem .6rem; border-top:1px solid #e2e5df; vertical-align:top; }
+  thead th { background:#f4efe9; border-top:0; font-size:.85rem; }
+  .b { display:inline-block; padding:0 .45rem; border-radius:999px; font-size:.75rem; font-weight:700; }
+  .real { background:#e6f3e9; color:#25673a; } .locked { background:#fbe9ed; color:#9b1c38; } .redirect { background:#eceee9; color:#3a3d3a; }
+  .flag { background:#fdf0d9; color:#7a4a05; margin-inline-end:.25rem; }
+  button { font:inherit; padding:.45rem 1rem; margin-top:.8rem; border:1px solid #6b202b; border-radius:6px; background:#fff; color:#6b202b; cursor:pointer; }
+  a { color:#6b202b; } :focus-visible { outline:3px solid #6b202b; outline-offset:2px; }
+  .path { color:#5c5957; font-size:.78rem; word-break:break-all; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Page catalog</h1>
+  <p id="sum">Loading…</p>
+  <form id="f" aria-label="Filters" onsubmit="return false">
+    <label>Search<input id="q" type="search" placeholder="title or path"></label>
+    <label>Language<select id="lang"></select></label>
+    <label>Level<select id="level"></select></label>
+    <label>Module<select id="module"></select></label>
+    <label>Track<select id="track"></select></label>
+    <label>Kind<select id="kind"></select></label>
+    <label>Status<select id="status"></select></label>
+  </form>
+  <div class="scroll" tabindex="0" role="region" aria-label="Results">
+    <table><thead><tr><th>Page</th><th>Lang</th><th>Level</th><th>Module / track</th><th>Kind</th><th>Status</th><th>Flags</th></tr></thead><tbody id="rows"></tbody></table>
+  </div>
+  <button id="more" hidden>Show more</button>
+  <noscript>This page needs JavaScript. The same data is in pages.json and COVERAGE.md.</noscript>
+</main>
+<script>
+(function () {
+  var KEYS = ["lang", "level", "module", "track", "kind", "status"], PAGE = 150, rows = [], shown = PAGE;
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function state() { var p = new URLSearchParams(location.hash.slice(1)); return p; }
+  function save() { var p = new URLSearchParams(); if ($("q").value) p.set("q", $("q").value); KEYS.forEach(function (k) { if ($(k).value) p.set(k, $(k).value); }); history.replaceState(null, "", "#" + p.toString()); }
+  function match(r) {
+    var q = $("q").value.trim().toLowerCase();
+    for (var i = 0; i < KEYS.length; i++) { var v = $(KEYS[i]).value; if (v && String(r[KEYS[i]]) !== v) return false; }
+    return !q || r.title.toLowerCase().indexOf(q) > -1 || r.path.toLowerCase().indexOf(q) > -1;
+  }
+  function render() {
+    var f = rows.filter(match), n = { real: 0, "locked-stub": 0, redirect: 0 };
+    f.forEach(function (r) { n[r.status]++; });
+    $("sum").textContent = f.length + " of " + rows.length + " pages · " + n.real + " real · " + n["locked-stub"] + " locked stubs · " + n.redirect + " redirects";
+    var tb = $("rows"); tb.textContent = "";
+    f.slice(0, shown).forEach(function (r) {
+      var tr = el("tr"), td = el("td"), a = el("a", null, r.title || r.path); a.href = "../" + r.path; td.appendChild(a); td.appendChild(el("div", "path", r.path)); tr.appendChild(td);
+      [r.lang || "", (r.level || "").toUpperCase(), r.module || r.track || "", r.kind].forEach(function (t) { tr.appendChild(el("td", null, t)); });
+      var s = el("td"); s.appendChild(el("span", "b " + (r.status === "real" ? "real" : r.status === "redirect" ? "redirect" : "locked"), r.status)); tr.appendChild(s);
+      var fl = el("td"); if (!r.lang_ok) fl.appendChild(el("span", "b flag", "lang")); if (r.leaks) fl.appendChild(el("span", "b flag", "English"));
+      if (r.access) fl.appendChild(el("span", "b flag", r.access.split("-")[0])); tr.appendChild(fl); tb.appendChild(tr);
+    });
+    $("more").hidden = f.length <= shown; $("more").textContent = "Show " + Math.min(PAGE, f.length - shown) + " more";
+  }
+  function fill() {
+    KEYS.forEach(function (k) {
+      var c = {}; rows.forEach(function (r) { var v = r[k]; if (v != null && v !== "") c[v] = (c[v] || 0) + 1; });
+      var sel = $(k), order = k === "level" ? ["a0","a1","a2","b1","b2","c1","c2"] : Object.keys(c).sort();
+      sel.appendChild(new Option("All", ""));
+      order.forEach(function (v) { if (c[v]) sel.appendChild(new Option(v + " (" + c[v] + ")", v)); });
+      sel.addEventListener("change", function () { shown = PAGE; save(); render(); });
+    });
+    $("q").addEventListener("input", function () { shown = PAGE; save(); render(); });
+    $("more").addEventListener("click", function () { shown += PAGE; render(); });
+    var p = state(); $("q").value = p.get("q") || ""; KEYS.forEach(function (k) { if (p.get(k)) $(k).value = p.get(k); });
+  }
+  fetch("pages.json").then(function (r) { return r.json(); }).then(function (d) {
+    rows = d.rows.map(function (a) { var o = {}; d.columns.forEach(function (c, i) { o[c] = a[i]; }); return o; });
+    fill(); render();
+  }).catch(function () { $("sum").textContent = "Could not load pages.json (open this page from a web server, not from a file)."; });
+})();
+</script>
+</body>
+</html>
