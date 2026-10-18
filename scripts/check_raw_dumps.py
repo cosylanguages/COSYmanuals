@@ -10,8 +10,12 @@ Fails with exit code 1 if any file contains:
 Exits with code 0 if all files under manuals/ are clean.
 """
 
+import re
 import sys
 from pathlib import Path
+
+# Serialized lesson notes printed as visible text, e.g.  task: &quot;...&quot; speaking_focus: &quot;...&quot;  (HTML only)
+RAW_NOTES = re.compile(r'(?<![\w-])(task|speaking_focus|domain_hints|lessons_count|hw|strategy|speaking|listening|reading|writing):\s*(?:&quot;|"|\d)')
 
 FORBIDDEN_CONTAINS = [
     'pronunciation: [{',
@@ -25,6 +29,13 @@ def check_file(filepath):
     for pattern in FORBIDDEN_CONTAINS:
         if pattern in content:
             violations.append(pattern)
+
+    if filepath.suffix == '.html':
+        visible = re.sub(r'<(script|style)\b.*?</\1>', ' ', content, flags=re.S)
+        visible = ''.join(re.split(r'<[^>]+>', visible))
+        m = RAW_NOTES.search(visible)
+        if m:
+            violations.append('raw notes dump: ' + m.group(0)[:30])
 
     for line in content.splitlines():
         l = line.strip()

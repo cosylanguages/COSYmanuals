@@ -119,6 +119,12 @@ figure.gv { margin:1.2rem 0; }
 .gv-end:empty::after { content:"\2205"; }
 .gv-irr { background:var(--gv-4-bg); color:var(--gv-4-ink); border-bottom:2px dotted var(--gv-4-line); font-weight:800; }
 
+.gv-notes { margin:0; font-size:.92rem; line-height:1.55; }
+.gv-notes > div { margin:.2rem 0; }
+.gv-notes dt { display:inline; font-weight:700; }
+.gv-notes dt::after { content:":"; }
+:lang(fr) .gv-notes dt::after { content:"\00a0:"; }
+.gv-notes dd { display:inline; margin:0 0 0 .35em; }
 .gv-sr { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 .gv-timeline:focus-visible,.gv-paradigm:focus-visible { outline:3px solid var(--gv-accent); outline-offset:2px; }
 

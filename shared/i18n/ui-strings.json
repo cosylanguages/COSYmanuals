@@ -471,6 +471,18 @@
    "pt": "Próximo tópico",
    "ru": "Следующая тема",
    "el": "Επόμενο θέμα"
+  },
+  {
+   "id": "focus_inversion",
+   "en": "Focus on stylistic inversion and advanced connectors.",
+   "it": "Focus su inversione stilistica e connettori avanzati.",
+   "el": "Έμφαση στη στυλιστική αναστροφή και στους προχωρημένους συνδέσμους."
+  },
+  {
+   "id": "critical_discussion",
+   "en": "Critical discussion and presentation skills.",
+   "it": "Discussione critica e capacità di presentazione.",
+   "el": "Κριτική συζήτηση και δεξιότητες παρουσίασης."
   }
  ],
  "patterns": [
@@ -779,6 +791,109 @@
      }
     }
    }
+  },
+  {
+   "id": "focus_advanced",
+   "regex": "^Focus on advanced (?P<topic>.+) vocabulary and registers\\.$",
+   "tpl": {
+    "it": "Focus su vocabolario e registri avanzati di {topic}.",
+    "el": "Έμφαση σε προχωρημένο λεξιλόγιο και ύφος: {topic}."
+   }
   }
+ ],
+ "notes_labels": {
+  "task": {
+   "en": "Task",
+   "fr": "Tâche",
+   "de": "Aufgabe",
+   "es": "Tarea",
+   "it": "Compito",
+   "pt": "Tarefa",
+   "ru": "Задание",
+   "el": "Δραστηριότητα"
+  },
+  "speaking_focus": {
+   "en": "Speaking focus",
+   "fr": "Axe d’expression orale",
+   "de": "Sprechschwerpunkt",
+   "es": "Enfoque oral",
+   "it": "Focus sul parlato",
+   "pt": "Foco na fala",
+   "ru": "Фокус говорения",
+   "el": "Έμφαση στην προφορική έκφραση"
+  },
+  "hw": {
+   "en": "Homework",
+   "fr": "Devoirs",
+   "de": "Hausaufgabe",
+   "es": "Tarea para casa",
+   "it": "Compiti",
+   "pt": "Trabalho de casa",
+   "ru": "Домашнее задание",
+   "el": "Εργασία για το σπίτι"
+  },
+  "domain_hints": {
+   "en": "Domain hints",
+   "fr": "Domaines suggérés",
+   "de": "Themenbereiche",
+   "es": "Ámbitos sugeridos",
+   "it": "Ambiti suggeriti",
+   "pt": "Áreas sugeridas",
+   "ru": "Предлагаемые сферы",
+   "el": "Προτεινόμενοι τομείς"
+  },
+  "speaking": {
+   "en": "Speaking",
+   "fr": "Expression orale",
+   "de": "Sprechen",
+   "es": "Expresión oral",
+   "it": "Parlato",
+   "pt": "Fala",
+   "ru": "Говорение",
+   "el": "Προφορική έκφραση"
+  },
+  "listening": {
+   "en": "Listening",
+   "fr": "Compréhension orale",
+   "de": "Hören",
+   "es": "Comprensión auditiva",
+   "it": "Ascolto",
+   "pt": "Compreensão oral",
+   "ru": "Аудирование",
+   "el": "Κατανόηση προφορικού λόγου"
+  },
+  "reading": {
+   "en": "Reading",
+   "fr": "Compréhension écrite",
+   "de": "Lesen",
+   "es": "Comprensión lectora",
+   "it": "Lettura",
+   "pt": "Leitura",
+   "ru": "Чтение",
+   "el": "Κατανόηση γραπτού λόγου"
+  },
+  "writing": {
+   "en": "Writing",
+   "fr": "Expression écrite",
+   "de": "Schreiben",
+   "es": "Expresión escrita",
+   "it": "Scrittura",
+   "pt": "Escrita",
+   "ru": "Письмо",
+   "el": "Παραγωγή γραπτού λόγου"
+  },
+  "strategy": {
+   "en": "Strategy",
+   "fr": "Stratégie",
+   "de": "Strategie",
+   "es": "Estrategia",
+   "it": "Strategia",
+   "pt": "Estratégia",
+   "ru": "Стратегия",
+   "el": "Στρατηγική"
+  }
+ },
+ "notes_drop_if_only": [
+  "lessons_count"
  ]
 }

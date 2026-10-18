@@ -30,7 +30,7 @@ def check_css():
             if ratio(ink, other) < 4.5:
                 err(CSS, f"tone {n}: ink {ink} on {name} is {ratio(ink, other):.2f}:1 (< 4.5)")
     for m in re.finditer(r'content:\s*"([^"]*)"', s):   # monolingual guarantee
-        if re.search(r"[A-Za-z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]", m.group(1)):
+        if re.search(r"[A-Za-z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF]", re.sub(r"\\[0-9a-fA-F]{1,6}", "", m.group(1))):   # ignore CSS escapes like \00a0
             err(CSS, f'content:"{m.group(1)}" contains words; text must come from the page')
 
 def pct(style, var):

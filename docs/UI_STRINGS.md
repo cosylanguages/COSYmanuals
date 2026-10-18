@@ -16,4 +16,10 @@ Follows the existing pages: formal address in de (Sie), es (usted), pt (você), 
 - Variable-part strings (course titles, "Lesson N:", "Unit N:", hub headings) are handled by `patterns` in the JSON: a regex with named groups plus a per-language template (`{lg}`, `{lvl}`, `{n}`, `{rest}`) and optional word maps (`mod`, `track`).
 - Headings that repeated their own prefix ("Unit 0: Unidad 0: …") are collapsed to one. The same duplicate exists in 30 English headings (not touched here).
 - The locked-stub text ("Log In to Access Content", ...) is English in non-English folders (1,106 pages) and mentions the storage back end; wait for the decision on where gated lessons live before localizing it.
-- Raw data dumps ("task: ... speaking_focus: ...") appear on some pages; see `scripts/check_raw_dumps.py`.
+
+## Lesson notes (`lesson-notes-extra`)
+Some pages printed serialized notes as visible text (`task: "..." speaking_focus: "..."`, `hw: "..."`, ...).
+`python3 scripts/format_notes.py` (`--apply`) turns them into a labelled list (`<dl class="gv-notes">`); labels live in
+`notes_labels` in `shared/i18n/ui-strings.json`. Values are copied verbatim. Blocks holding only `lessons_count` (internal
+metadata) are removed. Languages without translated labels (ba br cv hy ka tt) get English labels marked `lang="en"`.
+`scripts/check_raw_dumps.py` now fails if a raw dump comes back.
