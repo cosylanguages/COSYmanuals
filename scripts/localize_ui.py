@@ -40,11 +40,11 @@ def lookup(text, lang):
         return p["id"], tpl.format(**g)
     return None, None
 
-def process(s, lang, stats):
+def process(s, lang, stats, dedupe_only=False):
     def sub(m):
         if m.group(1): return m.group(0)
         raw = m.group(3); n = norm(raw)
-        key, tr = lookup(raw, lang)
+        key, tr = (None, None) if dedupe_only else lookup(raw, lang)
         if key and not tr: stats["missing"][key] += 1
         out = tr if (key and tr) else n
         dd = DUP.sub(lambda x: x.group("w") + " ", out, count=1)
@@ -73,9 +73,15 @@ def main():
         for f in fs:
             if not f.endswith(".html"): continue
             p = os.path.join(d, f); lang = p.split(os.sep)[1]
-            if not re.fullmatch(r"[a-z]{2}", lang) or lang == "en": continue
+            if not re.fullmatch(r"[a-z]{2}", lang): continue
             s = open(p, encoding="utf-8", errors="surrogateescape").read()
             stats = {"replaced": collections.Counter(), "missing": collections.Counter(), "deduped": 0}
+            if lang == "en":                                       # English: only collapse duplicated heading prefixes
+                new = process(s, lang, stats, dedupe_only=True)
+                if new != s:
+                    changed += 1; per_lang[lang] += 1; dedup += stats["deduped"]
+                    if apply: open(p, "w", encoding="utf-8", errors="surrogateescape").write(new)
+                continue
             new = process(s, lang, stats) if lang in APPLY else s
             rem = remaining_english(new, lang)
             for r in rem: left[lang][r] += 1
