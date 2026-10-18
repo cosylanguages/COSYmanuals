@@ -13,6 +13,7 @@ Add its code to `"apply"` and a translation under each string (`"ba": "..."`). L
 Follows the existing pages: formal address in de (Sie), es (usted), pt (você), fr (vous), ru (Вы); informal in it (tu).
 
 ## Known gaps
-- Strings with variable parts ("{LANG} Grammar Manual — Spoken (B1)", "Lesson 1:", "Unit 1:") are not covered yet.
+- Variable-part strings (course titles, "Lesson N:", "Unit N:", hub headings) are handled by `patterns` in the JSON: a regex with named groups plus a per-language template (`{lg}`, `{lvl}`, `{n}`, `{rest}`) and optional word maps (`mod`, `track`).
+- Headings that repeated their own prefix ("Unit 0: Unidad 0: …") are collapsed to one. The same duplicate exists in 30 English headings (not touched here).
 - The locked-stub text ("Log In to Access Content", ...) is English in non-English folders (1,106 pages) and mentions the storage back end; wait for the decision on where gated lessons live before localizing it.
 - Raw data dumps ("task: ... speaking_focus: ...") appear on some pages; see `scripts/check_raw_dumps.py`.

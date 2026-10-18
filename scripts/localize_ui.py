@@ -18,6 +18,8 @@ APPLY = set(DATA["apply"]); ROWS = DATA["strings"]; PATS = [(re.compile(p["regex
 EN = {re.sub(r"\s+", " ", r["en"]).strip(): r for r in ROWS}
 TOKEN = re.compile(r"<(script|style)\b.*?</\1>|(>)([^<>]+)(?=<)", re.S | re.I)
 HTML_TAG = re.compile(r"<html\b[^>]*>", re.I)
+# "Unidad 0: Unidad 0: Primeros Pasos": the source repeated the heading prefix; keep it once
+DUP = re.compile(r"^(?P<w>[^\W\d_]+ \d+[\s\u00a0]*:)\s*(?P=w)\s*")
 
 def norm(t): return re.sub(r"\s+", " ", html.unescape(t)).strip()
 
@@ -27,18 +29,31 @@ def lookup(text, lang):
     if n in EN: return EN[n]["id"], EN[n].get(lang)
     for rx, p in PATS:
         m = rx.match(n)
-        if m: return p["id"], (p.get(lang) or "").replace("{n}", m.group(1)) or None
+        if not m: continue
+        tpl = p["tpl"].get(lang)
+        if not tpl: return p["id"], None
+        g = m.groupdict()
+        for name, table in p.get("maps", {}).items():            # localized words (module, track, ...)
+            g[name] = table.get(g[name], {}).get(lang)
+            if g[name] is None: return p["id"], None
+        if lang == "fr" and g.get("rest", "").startswith(":"): g["rest"] = "\u00a0" + g["rest"]   # French spacing before ':'
+        return p["id"], tpl.format(**g)
     return None, None
 
 def process(s, lang, stats):
     def sub(m):
         if m.group(1): return m.group(0)
-        key, tr = lookup(m.group(3), lang)
-        if not key: return m.group(0)
-        if not tr: stats["missing"][key] += 1; return m.group(0)
-        raw = m.group(3); lead = raw[:len(raw) - len(raw.lstrip())]; trail = raw[len(raw.rstrip()):]
-        stats["replaced"][key] += 1
-        return ">" + lead + html.escape(tr, quote=False) + trail
+        raw = m.group(3); n = norm(raw)
+        key, tr = lookup(raw, lang)
+        if key and not tr: stats["missing"][key] += 1
+        out = tr if (key and tr) else n
+        dd = DUP.sub(lambda x: x.group("w") + " ", out, count=1)
+        if dd != out: stats["deduped"] += 1
+        if dd == n and not (key and tr): return m.group(0)         # nothing to do
+        if dd == n: return m.group(0)
+        lead = raw[:len(raw) - len(raw.lstrip())]; trail = raw[len(raw.rstrip()):]
+        if key and tr: stats["replaced"][key] += 1
+        return ">" + lead + html.escape(dd, quote=False) + trail
     return TOKEN.sub(sub, s)
 
 def remaining_english(s, lang):
@@ -52,7 +67,7 @@ def remaining_english(s, lang):
 
 def main():
     apply = "--apply" in sys.argv; audit = "--audit" in sys.argv
-    changed = 0; langfix = 0; rep = collections.Counter(); per_lang = collections.Counter()
+    changed = 0; langfix = 0; dedup = 0; rep = collections.Counter(); per_lang = collections.Counter()
     left = collections.defaultdict(collections.Counter); pages_left = collections.Counter()
     for d, _, fs in os.walk("manuals"):
         for f in fs:
@@ -60,7 +75,7 @@ def main():
             p = os.path.join(d, f); lang = p.split(os.sep)[1]
             if not re.fullmatch(r"[a-z]{2}", lang) or lang == "en": continue
             s = open(p, encoding="utf-8", errors="surrogateescape").read()
-            stats = {"replaced": collections.Counter(), "missing": collections.Counter()}
+            stats = {"replaced": collections.Counter(), "missing": collections.Counter(), "deduped": 0}
             new = process(s, lang, stats) if lang in APPLY else s
             rem = remaining_english(new, lang)
             for r in rem: left[lang][r] += 1
@@ -70,7 +85,7 @@ def main():
                 if hm and re.search(r'\blang="(?!%s")[^"]*"' % lang, hm.group(0)):
                     new = new.replace(hm.group(0), re.sub(r'\blang="[^"]*"', f'lang="{lang}"', hm.group(0)), 1); langfix += 1
             if new != s:
-                changed += 1; per_lang[lang] += 1; rep.update(stats["replaced"])
+                changed += 1; per_lang[lang] += 1; rep.update(stats["replaced"]); dedup += stats["deduped"]
                 if apply: open(p, "w", encoding="utf-8", errors="surrogateescape").write(new)
     if audit:
         print("Remaining English template strings (pages affected / distinct strings):")
@@ -78,7 +93,7 @@ def main():
             tag = "" if l in APPLY else "  <- no translations yet (needs a native speaker)"
             print(f"  {l}: {pages_left[l]} pages, {len(left[l])} strings{tag}")
         return
-    print(f"{changed} page(s) {'updated' if apply else 'would change'}; {sum(rep.values())} strings replaced; <html lang> fixed on {langfix} page(s)")
+    print(f"{changed} page(s) {'updated' if apply else 'would change'}; {sum(rep.values())} strings replaced; {dedup} duplicated heading prefixes collapsed; <html lang> fixed on {langfix} page(s)")
     print("  per language:", dict(per_lang.most_common()))
     still = {l: pages_left[l] for l in pages_left}
     print("  pages still containing known English template strings:", still)

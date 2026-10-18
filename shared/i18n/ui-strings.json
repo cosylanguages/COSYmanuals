@@ -449,20 +449,336 @@
    "pt": "Vocabulário",
    "ru": "Лексика",
    "el": "Λεξιλόγιο"
+  },
+  {
+   "id": "prev_topic",
+   "en": "Previous Topic",
+   "fr": "Thème précédent",
+   "de": "Vorheriges Thema",
+   "es": "Tema anterior",
+   "it": "Argomento precedente",
+   "pt": "Tópico anterior",
+   "ru": "Предыдущая тема",
+   "el": "Προηγούμενο θέμα"
+  },
+  {
+   "id": "next_topic",
+   "en": "Next Topic",
+   "fr": "Thème suivant",
+   "de": "Nächstes Thema",
+   "es": "Tema siguiente",
+   "it": "Argomento successivo",
+   "pt": "Próximo tópico",
+   "ru": "Следующая тема",
+   "el": "Επόμενο θέμα"
   }
  ],
  "patterns": [
   {
    "id": "score",
-   "regex": "^Score: 0 / (\\d+)$",
-   "en": "Score: 0 / {n}",
-   "fr": "Score : 0 / {n}",
-   "de": "Punktzahl: 0 / {n}",
-   "es": "Puntuación: 0 / {n}",
-   "it": "Punteggio: 0 / {n}",
-   "pt": "Pontuação: 0 / {n}",
-   "ru": "Счёт: 0 / {n}",
-   "el": "Βαθμολογία: 0 / {n}"
+   "regex": "^Score: 0 / (?P<n>\\d+)$",
+   "tpl": {
+    "fr": "Score : 0 / {n}",
+    "de": "Punktzahl: 0 / {n}",
+    "es": "Puntuación: 0 / {n}",
+    "it": "Punteggio: 0 / {n}",
+    "pt": "Pontuação: 0 / {n}",
+    "ru": "Счёт: 0 / {n}",
+    "el": "Βαθμολογία: 0 / {n}"
+   }
+  },
+  {
+   "id": "lesson",
+   "regex": "^Lesson (?P<n>\\d+)(?P<rest>(?::.*)?)$",
+   "tpl": {
+    "fr": "Leçon {n}{rest}",
+    "de": "Lektion {n}{rest}",
+    "es": "Lección {n}{rest}",
+    "it": "Lezione {n}{rest}",
+    "pt": "Lição {n}{rest}",
+    "ru": "Урок {n}{rest}",
+    "el": "Μάθημα {n}{rest}"
+   }
+  },
+  {
+   "id": "unit",
+   "regex": "^Unit (?P<n>\\d+)(?P<rest>(?::.*)?)$",
+   "tpl": {
+    "fr": "Unité {n}{rest}",
+    "de": "Einheit {n}{rest}",
+    "es": "Unidad {n}{rest}",
+    "it": "Unità {n}{rest}",
+    "pt": "Unidade {n}{rest}",
+    "ru": "Раздел {n}{rest}",
+    "el": "Ενότητα {n}{rest}"
+   }
+  },
+  {
+   "id": "hub_comm",
+   "regex": "^← Hub Communication (?P<lg>[A-Z]{2}) (?P<lvl>[ABC][12])$",
+   "tpl": {
+    "fr": "← Centre de communication {lg} {lvl}",
+    "de": "← Kommunikationszentrale {lg} {lvl}",
+    "es": "← Centro de comunicación {lg} {lvl}",
+    "it": "← Hub di comunicazione {lg} {lvl}",
+    "pt": "← Hub de comunicação {lg} {lvl}",
+    "ru": "← Раздел «Общение» {lg} {lvl}",
+    "el": "← Κέντρο επικοινωνίας {lg} {lvl}"
+   }
+  },
+  {
+   "id": "student_manuals",
+   "regex": "^🎓 Student Course Manuals · (?P<lg>[A-Z]{2})$",
+   "tpl": {
+    "fr": "🎓 Manuels du cours pour élèves · {lg}",
+    "de": "🎓 Kursmaterialien für Lernende · {lg}",
+    "es": "🎓 Manuales del curso para estudiantes · {lg}",
+    "it": "🎓 Manuali del corso per studenti · {lg}",
+    "pt": "🎓 Manuais do curso para estudantes · {lg}",
+    "ru": "🎓 Учебные пособия курса для учеников · {lg}",
+    "el": "🎓 Εγχειρίδια μαθήματος για μαθητές · {lg}"
+   }
+  },
+  {
+   "id": "access_textbooks",
+   "regex": "^Access the complete, topic-by-topic interactive textbooks for (?P<lg>[A-Z]{2}) (?P<lvl>[ABC][12]):$",
+   "tpl": {
+    "fr": "Accédez aux manuels interactifs complets, thème par thème, pour {lg} {lvl} :",
+    "de": "Zugriff auf die vollständigen interaktiven Lehrbücher, Thema für Thema, für {lg} {lvl}:",
+    "es": "Acceda a los libros interactivos completos, tema por tema, de {lg} {lvl}:",
+    "it": "Accedi ai libri interattivi completi, argomento per argomento, per {lg} {lvl}:",
+    "pt": "Acesse os livros interativos completos, tema por tema, de {lg} {lvl}:",
+    "ru": "Полные интерактивные учебники по темам для {lg} {lvl}:",
+    "el": "Πρόσβαση στα πλήρη διαδραστικά εγχειρίδια, θέμα προς θέμα, για {lg} {lvl}:"
+   }
+  },
+  {
+   "id": "derived_manuals",
+   "regex": "^📖 Derived Course Manuals \\((?P<lvl>[ABC][12])\\):$",
+   "tpl": {
+    "fr": "📖 Manuels dérivés du cours ({lvl}) :",
+    "de": "📖 Abgeleitete Kursmaterialien ({lvl}):",
+    "es": "📖 Manuales derivados del curso ({lvl}):",
+    "it": "📖 Manuali derivati del corso ({lvl}):",
+    "pt": "📖 Manuais derivados do curso ({lvl}):",
+    "ru": "📖 Производные пособия курса ({lvl}):",
+    "el": "📖 Παράγωγα εγχειρίδια μαθήματος ({lvl}):"
+   }
+  },
+  {
+   "id": "title_manual",
+   "regex": "^(?P<lg>[A-Z]{2}) (?P<mod>Grammar|Communication|Vocabulary) Manual — (?P<track>General|Spoken|Professional|Travelling|Exam) \\((?P<lvl>[ABC][12])\\)$",
+   "tpl": {
+    "fr": "{mod} {lg} — {track} ({lvl})",
+    "de": "{mod} {lg} — {track} ({lvl})",
+    "es": "{mod} {lg} — {track} ({lvl})",
+    "it": "{mod} {lg} — {track} ({lvl})",
+    "pt": "{mod} {lg} — {track} ({lvl})",
+    "ru": "{mod} {lg} — {track} ({lvl})",
+    "el": "{mod} {lg} — {track} ({lvl})"
+   },
+   "maps": {
+    "mod": {
+     "Grammar": {
+      "fr": "Manuel de grammaire",
+      "de": "Grammatikhandbuch",
+      "es": "Manual de gramática",
+      "it": "Manuale di grammatica",
+      "pt": "Manual de gramática",
+      "ru": "Пособие по грамматике",
+      "el": "Εγχειρίδιο γραμματικής"
+     },
+     "Communication": {
+      "fr": "Manuel de communication",
+      "de": "Kommunikationshandbuch",
+      "es": "Manual de comunicación",
+      "it": "Manuale di comunicazione",
+      "pt": "Manual de comunicação",
+      "ru": "Пособие по общению",
+      "el": "Εγχειρίδιο επικοινωνίας"
+     },
+     "Vocabulary": {
+      "fr": "Manuel de vocabulaire",
+      "de": "Wortschatzhandbuch",
+      "es": "Manual de vocabulario",
+      "it": "Manuale di vocabolario",
+      "pt": "Manual de vocabulário",
+      "ru": "Пособие по лексике",
+      "el": "Εγχειρίδιο λεξιλογίου"
+     }
+    },
+    "track": {
+     "General": {
+      "fr": "Général",
+      "de": "Allgemein",
+      "es": "General",
+      "it": "Generale",
+      "pt": "Geral",
+      "ru": "Общий",
+      "el": "Γενικό"
+     },
+     "Spoken": {
+      "fr": "Expression orale",
+      "de": "Sprechen",
+      "es": "Expresión oral",
+      "it": "Parlato",
+      "pt": "Conversação",
+      "ru": "Разговорный",
+      "el": "Προφορικός λόγος"
+     },
+     "Professional": {
+      "fr": "Professionnel",
+      "de": "Beruf",
+      "es": "Profesional",
+      "it": "Professionale",
+      "pt": "Profissional",
+      "ru": "Профессиональный",
+      "el": "Επαγγελματικό"
+     },
+     "Travelling": {
+      "fr": "Voyage",
+      "de": "Reisen",
+      "es": "Viajes",
+      "it": "Viaggi",
+      "pt": "Viagens",
+      "ru": "Путешествия",
+      "el": "Ταξίδια"
+     },
+     "Exam": {
+      "fr": "Examen",
+      "de": "Prüfung",
+      "es": "Examen",
+      "it": "Esame",
+      "pt": "Exame",
+      "ru": "Экзамен",
+      "el": "Εξετάσεις"
+     }
+    }
+   }
+  },
+  {
+   "id": "title_course",
+   "regex": "^(?P<lg>[A-Z]{2}) (?P<track>General|Spoken|Professional|Travelling|Exam) Course \\((?P<lvl>[ABC][12])\\)$",
+   "tpl": {
+    "fr": "Cours {lg} — {track} ({lvl})",
+    "de": "Kurs {lg} — {track} ({lvl})",
+    "es": "Curso {lg} — {track} ({lvl})",
+    "it": "Corso {lg} — {track} ({lvl})",
+    "pt": "Curso {lg} — {track} ({lvl})",
+    "ru": "Курс {lg} — {track} ({lvl})",
+    "el": "Μάθημα {lg} — {track} ({lvl})"
+   },
+   "maps": {
+    "track": {
+     "General": {
+      "fr": "Général",
+      "de": "Allgemein",
+      "es": "General",
+      "it": "Generale",
+      "pt": "Geral",
+      "ru": "Общий",
+      "el": "Γενικό"
+     },
+     "Spoken": {
+      "fr": "Expression orale",
+      "de": "Sprechen",
+      "es": "Expresión oral",
+      "it": "Parlato",
+      "pt": "Conversação",
+      "ru": "Разговорный",
+      "el": "Προφορικός λόγος"
+     },
+     "Professional": {
+      "fr": "Professionnel",
+      "de": "Beruf",
+      "es": "Profesional",
+      "it": "Professionale",
+      "pt": "Profissional",
+      "ru": "Профессиональный",
+      "el": "Επαγγελματικό"
+     },
+     "Travelling": {
+      "fr": "Voyage",
+      "de": "Reisen",
+      "es": "Viajes",
+      "it": "Viaggi",
+      "pt": "Viagens",
+      "ru": "Путешествия",
+      "el": "Ταξίδια"
+     },
+     "Exam": {
+      "fr": "Examen",
+      "de": "Prüfung",
+      "es": "Examen",
+      "it": "Esame",
+      "pt": "Exame",
+      "ru": "Экзамен",
+      "el": "Εξετάσεις"
+     }
+    }
+   }
+  },
+  {
+   "id": "title_portal",
+   "regex": "^(?P<lg>[A-Z]{2}) (?P<track>General|Spoken|Professional|Travelling|Exam) Manual \\((?P<lvl>[ABC][12])\\) · Student Portal$",
+   "tpl": {
+    "fr": "Manuel {lg} — {track} ({lvl}) · Espace élève",
+    "de": "Handbuch {lg} — {track} ({lvl}) · Lernbereich",
+    "es": "Manual {lg} — {track} ({lvl}) · Portal del estudiante",
+    "it": "Manuale {lg} — {track} ({lvl}) · Portale studente",
+    "pt": "Manual {lg} — {track} ({lvl}) · Portal do estudante",
+    "ru": "Пособие {lg} — {track} ({lvl}) · Портал ученика",
+    "el": "Εγχειρίδιο {lg} — {track} ({lvl}) · Πύλη μαθητή"
+   },
+   "maps": {
+    "track": {
+     "General": {
+      "fr": "Général",
+      "de": "Allgemein",
+      "es": "General",
+      "it": "Generale",
+      "pt": "Geral",
+      "ru": "Общий",
+      "el": "Γενικό"
+     },
+     "Spoken": {
+      "fr": "Expression orale",
+      "de": "Sprechen",
+      "es": "Expresión oral",
+      "it": "Parlato",
+      "pt": "Conversação",
+      "ru": "Разговорный",
+      "el": "Προφορικός λόγος"
+     },
+     "Professional": {
+      "fr": "Professionnel",
+      "de": "Beruf",
+      "es": "Profesional",
+      "it": "Professionale",
+      "pt": "Profissional",
+      "ru": "Профессиональный",
+      "el": "Επαγγελματικό"
+     },
+     "Travelling": {
+      "fr": "Voyage",
+      "de": "Reisen",
+      "es": "Viajes",
+      "it": "Viaggi",
+      "pt": "Viagens",
+      "ru": "Путешествия",
+      "el": "Ταξίδια"
+     },
+     "Exam": {
+      "fr": "Examen",
+      "de": "Prüfung",
+      "es": "Examen",
+      "it": "Esame",
+      "pt": "Exame",
+      "ru": "Экзамен",
+      "el": "Εξετάσεις"
+     }
+    }
+   }
   }
  ]
 }
