@@ -1,31 +1,31 @@
 {
-  "title": "Master Guide to Confusing Spanish Grammar Usage (A vs B)",
+  "title": "Guía maestra de puntos gramaticales confusos en español (A vs B)",
   "language": "es",
   "levels": {
     "a0_a2": [
       {
         "id": "ser-vs-estar",
         "level": "A0-A1",
-        "point": "ser vs estar (to be)",
-        "core_difference": "Ser = permanent traits, origin, identity, time, occupation. Estar = temporary states, emotions, location, ongoing actions.",
-        "usage_a": "Use 'ser' for DOCTOR (Description, Occupation, Characteristic, Time, Origin, Relationship).",
-        "usage_b": "Use 'estar' for PLACE (Position, Location, Action, Condition, Emotion).",
+        "point": "ser vs estar (verbos de estado e identidad)",
+        "core_difference": "Ser = características permanentes, origen, identidad, profesión y tiempo. Estar = estados temporales, emociones, ubicación y acciones en curso.",
+        "usage_a": "Utilice 'ser' para identidad, origen, características esenciales, hora y profesión.",
+        "usage_b": "Utilice 'estar' para ubicación espacial, estados físicos o emocionales y acciones temporales.",
         "examples": ["Soy de España.", "Ella es médica.", "El café está caliente.", "Estoy en la oficina."],
-        "quick_logic": "How you feel and where you are, always use the verb ESTAR.",
-        "common_mistakes": ["❌ Soy cansado. → ✓ Estoy cansado.", "❌ Dónde es el baño? → ✓ Dónde está el baño?"],
-        "memory_trick": "For how you feel and where you are, always use ESTAR!"
+        "quick_logic": "Para emociones y ubicaciones espaciales, utilice siempre ESTAR.",
+        "common_mistakes": ["❌ Soy cansado. → ✓ Estoy cansado.", "❌ ¿Dónde es el baño? → ✓ ¿Dónde está el baño?"],
+        "memory_trick": "Para expresar estado de ánimo o lugar, el verbo ESTAR debes usar."
       },
       {
         "id": "por-vs-para",
         "level": "A2",
-        "point": "por vs para (for / by / through)",
-        "core_difference": "Por = cause, reason, duration, exchange, travel route. Para = goal, destination, deadline, recipient, intended use.",
-        "usage_a": "por expresses cause, motivation, duration ('for 2 hours'), or means of transport.",
-        "usage_b": "para expresses destination ('to Madrid'), recipient ('for you'), deadline ('for tomorrow'), or objective ('in order to').",
+        "point": "por vs para (causa vs propósito)",
+        "core_difference": "Por = causa, motivo, duración, cambio y medio. Para = finalidad, destino, plazo determinado y destinatario.",
+        "usage_a": "Por expresa causa, motivo original, duración temporal o medio de transporte/comunicación.",
+        "usage_b": "Para expresa destino final, destinatario del objeto, fecha límite o finalidad proyectada.",
         "examples": ["Gracias por la ayuda.", "Estudié por dos horas.", "Este regalo es para ti.", "Salimos para Madrid."],
-        "quick_logic": "Looking back at cause = POR. Looking forward to purpose/destination = PARA.",
+        "quick_logic": "Causa o motivo pasado = POR. Propósito o destino futuro = PARA.",
         "common_mistakes": ["❌ Trabajo por ganar dinero. → ✓ Trabajo para ganar dinero."],
-        "memory_trick": "POR = Cause / Motive behind. PARA = Purpose / Recipient ahead."
+        "memory_trick": "POR mira hacia atrás (el motivo). PARA mira hacia adelante (el objetivo)."
       }
     ],
     "b1_b2": [
@@ -33,13 +33,13 @@
         "id": "indefinido-vs-imperfecto",
         "level": "B1",
         "point": "Pretérito Indefinido vs Pretérito Imperfecto",
-        "core_difference": "Indefinido = completed past action with clear start/end. Imperfecto = background scene, habitual past action, description, ongoing past state.",
-        "usage_a": "Indefinido advances the story storyline with specific events (ayer, el año pasado).",
-        "usage_b": "Imperfecto sets the stage (weather, age, feelings, repeated habits with 'siempre', 'todos los días').",
+        "core_difference": "Indefinido = acción pasada puntual y delimitada. Imperfecto = descripción del entorno, hábito pasado o acción en desarrollo.",
+        "usage_a": "Indefinido avanza la narración con sucesos completados en momentos precisos.",
+        "usage_b": "Imperfecto describe el escenario, la hora, la edad, las emociones o las rutinas pasadas.",
         "examples": ["Ayer fui al cine. (Indefinido)", "Cuando era niño, jugaba en el parque todos los días. (Imperfecto)"],
-        "quick_logic": "Single event / stroke = Indefinido. Background / Ongoing habit = Imperfecto.",
+        "quick_logic": "Acción puntual completada = Indefinido. Escenario o hábito pasado = Imperfecto.",
         "common_mistakes": ["❌ Ayer hacía sol y decidí ir al parque cuando repentinamente llovía. → ✓ ...cuando de repente llovió."],
-        "memory_trick": "Imperfecto draws the backdrop; Indefinido shoots the action camera."
+        "memory_trick": "El imperfecto dibuja el fondo de la escena; el indefinido dispara la acción."
       }
     ]
   }
