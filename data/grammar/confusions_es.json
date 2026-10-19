@@ -1,0 +1,46 @@
+{
+  "title": "Master Guide to Confusing Spanish Grammar Usage (A vs B)",
+  "language": "es",
+  "levels": {
+    "a0_a2": [
+      {
+        "id": "ser-vs-estar",
+        "level": "A0-A1",
+        "point": "ser vs estar (to be)",
+        "core_difference": "Ser = permanent traits, origin, identity, time, occupation. Estar = temporary states, emotions, location, ongoing actions.",
+        "usage_a": "Use 'ser' for DOCTOR (Description, Occupation, Characteristic, Time, Origin, Relationship).",
+        "usage_b": "Use 'estar' for PLACE (Position, Location, Action, Condition, Emotion).",
+        "examples": ["Soy de España.", "Ella es médica.", "El café está caliente.", "Estoy en la oficina."],
+        "quick_logic": "How you feel and where you are, always use the verb ESTAR.",
+        "common_mistakes": ["❌ Soy cansado. → ✓ Estoy cansado.", "❌ Dónde es el baño? → ✓ Dónde está el baño?"],
+        "memory_trick": "For how you feel and where you are, always use ESTAR!"
+      },
+      {
+        "id": "por-vs-para",
+        "level": "A2",
+        "point": "por vs para (for / by / through)",
+        "core_difference": "Por = cause, reason, duration, exchange, travel route. Para = goal, destination, deadline, recipient, intended use.",
+        "usage_a": "por expresses cause, motivation, duration ('for 2 hours'), or means of transport.",
+        "usage_b": "para expresses destination ('to Madrid'), recipient ('for you'), deadline ('for tomorrow'), or objective ('in order to').",
+        "examples": ["Gracias por la ayuda.", "Estudié por dos horas.", "Este regalo es para ti.", "Salimos para Madrid."],
+        "quick_logic": "Looking back at cause = POR. Looking forward to purpose/destination = PARA.",
+        "common_mistakes": ["❌ Trabajo por ganar dinero. → ✓ Trabajo para ganar dinero."],
+        "memory_trick": "POR = Cause / Motive behind. PARA = Purpose / Recipient ahead."
+      }
+    ],
+    "b1_b2": [
+      {
+        "id": "indefinido-vs-imperfecto",
+        "level": "B1",
+        "point": "Pretérito Indefinido vs Pretérito Imperfecto",
+        "core_difference": "Indefinido = completed past action with clear start/end. Imperfecto = background scene, habitual past action, description, ongoing past state.",
+        "usage_a": "Indefinido advances the story storyline with specific events (ayer, el año pasado).",
+        "usage_b": "Imperfecto sets the stage (weather, age, feelings, repeated habits with 'siempre', 'todos los días').",
+        "examples": ["Ayer fui al cine. (Indefinido)", "Cuando era niño, jugaba en el parque todos los días. (Imperfecto)"],
+        "quick_logic": "Single event / stroke = Indefinido. Background / Ongoing habit = Imperfecto.",
+        "common_mistakes": ["❌ Ayer hacía sol y decidí ir al parque cuando repentinamente llovía. → ✓ ...cuando de repente llovió."],
+        "memory_trick": "Imperfecto draws the backdrop; Indefinido shoots the action camera."
+      }
+    ]
+  }
+}

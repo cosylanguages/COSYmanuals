@@ -1,5 +1,12 @@
 [
   {
+    "id": "en-a1-grammar",
+    "title": "English Starter A1 Grammar Manual",
+    "language": "en",
+    "level": "A1",
+    "short_description": "Foundational guide covering 'to be', present simple, continuous, articles, possessives, and question words."
+  },
+  {
     "id": "en-b1-grammar",
     "title": "English Intermediate B1 Grammar Manual",
     "language": "en",
@@ -7,11 +14,32 @@
     "short_description": "Comprehensive guide covering past continuous, used to vs would, conditionals, and relative clauses."
   },
   {
+    "id": "en-c1-grammar",
+    "title": "English Advanced C1 Mastery Manual",
+    "language": "en",
+    "level": "C1",
+    "short_description": "Inversion, emphatic structures, advanced modal synthesis, nuance, and formal register."
+  },
+  {
+    "id": "fr-a1-grammar",
+    "title": "Manuel de Grammaire Débutant A1 (Français)",
+    "language": "fr",
+    "level": "A1",
+    "short_description": "Les verbes être/avoir, présent de l'indicatif, articles définis/indéfinis et genre des noms."
+  },
+  {
     "id": "fr-a2-vocabulary",
     "title": "French Elementary A2 Vocabulary Guide",
     "language": "fr",
     "level": "A2",
-    "short_description": "Essential thematic vocabulary modules for daily life, travel, and routines in French."
+    "short_description": "Essential thematic vocabulary modules for daily life, travel, routines, and expressions in French."
+  },
+  {
+    "id": "fr-b2-grammar",
+    "title": "Manuel de Grammaire Intermédiaire B2 (Français)",
+    "language": "fr",
+    "level": "B2",
+    "short_description": "Le subjonctif présent et passé, le conditionnel, la concordance des temps et le discours indirect."
   },
   {
     "id": "ru-a1-communication",
@@ -21,6 +49,20 @@
     "short_description": "Real-world conversational frames, introductions, basic requests, and survival Russian."
   },
   {
+    "id": "ru-b1-grammar",
+    "title": "Русская Грамматика Средний Уровень B1",
+    "language": "ru",
+    "level": "B1",
+    "short_description": "Глаголы движения с приставками, падежная система, причастия и деепричастия."
+  },
+  {
+    "id": "de-a1-grammar",
+    "title": "German Starter A1 Grammar Guide",
+    "language": "de",
+    "level": "A1",
+    "short_description": "Nomen, Artikel (der/die/das), Pronomen, Präsens und Trennbare Verben."
+  },
+  {
     "id": "de-b2-grammar",
     "title": "German Upper-Intermediate B2 Grammar Reference",
     "language": "de",
@@ -28,10 +70,38 @@
     "short_description": "Advanced sentence structure, Konjunktiv II, passive voice, and complex prepositions."
   },
   {
+    "id": "es-a1-grammar",
+    "title": "Spanish Elementary A1 Grammar Manual",
+    "language": "es",
+    "level": "A1",
+    "short_description": "Presente de indicativo, verbes ser vs estar, artículos y género de los sustantivos."
+  },
+  {
+    "id": "es-b1-grammar",
+    "title": "Spanish Intermediate B1 Grammar Reference",
+    "language": "es",
+    "level": "B1",
+    "short_description": "Pretérito indefinido vs imperfecto, introducción al subjuntivo y por vs para."
+  },
+  {
+    "id": "it-a1-grammar",
+    "title": "Italian Starter A1 Grammar Guide",
+    "language": "it",
+    "level": "A1",
+    "short_description": "Essere e avere, presente indicativo, articoli determinativi e nomi plurali."
+  },
+  {
     "id": "el-a2-communication",
     "title": "Greek Elementary A2 Spoken Communication",
     "language": "el",
     "level": "A2",
     "short_description": "Practical dialogue structures, ordering food, directions, and social interaction frames."
+  },
+  {
+    "id": "pt-a1-grammar",
+    "title": "Portuguese Beginner A1 Essentials",
+    "language": "pt",
+    "level": "A1",
+    "short_description": "Verbos ser e estar, presente do indicativo, artigos e numerais."
   }
 ]

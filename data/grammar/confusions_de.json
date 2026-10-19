@@ -1,0 +1,58 @@
+{
+  "title": "Master Guide to Confusing German Grammar Usage (A vs B)",
+  "language": "de",
+  "levels": {
+    "a0_a2": [
+      {
+        "id": "sie-vs-sie-vs-sie",
+        "level": "A0-A1",
+        "point": "sie (she) vs sie (they) vs Sie (formal you)",
+        "core_difference": "Capitalization and verb conjugation distinguish singular 'she', plural 'they', and formal 'you'.",
+        "usage_a": "sie (she) takes 3rd person singular verb ending (-t, e.g. sie wohnt).",
+        "usage_b": "sie (they) takes plural verb ending (-en, e.g. sie wohnen). Formal 'Sie' is always capitalized and takes plural verb ending (-en).",
+        "examples": ["Sie wohnt in Berlin. (She lives in Berlin)", "Sie wohnen in Berlin. (They live in Berlin)", "Woher kommen Sie? (Where are you from? - formal)"],
+        "quick_logic": "Check verb ending (-t vs -en) and capital letter S.",
+        "common_mistakes": ["❌ Sie wohnt hier (meaning 'They live here') → ✓ Sie wohnen hier."],
+        "memory_trick": "Capital S = Formal Respect. Lowercase s + -t = She. Lowercase s + -en = They."
+      },
+      {
+        "id": "kein-vs-nicht",
+        "level": "A0-A1",
+        "point": "kein vs nicht (German Negation)",
+        "core_difference": "Use 'kein' to negate nouns with indefinite articles or no articles; use 'nicht' to negate verbs, adjectives, proper nouns, or definite nouns.",
+        "usage_a": "kein declines like 'ein' and negates countable/uncountable nouns without definite articles.",
+        "usage_b": "nicht negates verbs, adjectives, adverbs, possessives, and sentences.",
+        "examples": ["Ich habe keinen Hunger.", "Das Buch ist nicht teuer.", "Er arbeitet nicht heute."],
+        "quick_logic": "Negating a noun preceded by ein/eine or no article? → KEIN. Otherwise → NICHT.",
+        "common_mistakes": ["❌ Ich habe nicht Geld. → ✓ Ich habe kein Geld."],
+        "memory_trick": "Kein = No + Noun. Nicht = Not + Everything else."
+      },
+      {
+        "id": "weil-vs-denn",
+        "level": "A2",
+        "point": "weil vs denn (because)",
+        "core_difference": "Both mean 'because', but 'weil' sends the conjugated verb to the end of the clause, whereas 'denn' keeps standard word order (Position 0).",
+        "usage_a": "weil is a subordinating conjunction (Verb at the end).",
+        "usage_b": "denn is a coordinating conjunction in Position 0 (Subject + Verb follow directly).",
+        "examples": ["Ich bleibe zu Hause, weil ich krank bin.", "Ich bleibe zu Hause, denn ich bin krank."],
+        "quick_logic": "weil = verb kicked to the end. denn = normal sentence order.",
+        "common_mistakes": ["❌ ...weil ich bin krank. → ✓ ...weil ich krank bin."],
+        "memory_trick": "Weil kicks the verb to the end!"
+      }
+    ],
+    "b1_b2": [
+      {
+        "id": "wenn-vs-als",
+        "level": "B1",
+        "point": "wenn vs als (when)",
+        "core_difference": "Use 'als' for single past events or past time periods. Use 'wenn' for repeated past actions, present events, or future events.",
+        "usage_a": "als for one single finished event or phase in the past (e.g. when I was a child, when I arrived yesterday).",
+        "usage_b": "wenn for repeated events ('whenever') or present/future conditions.",
+        "examples": ["Als ich ein Kind war, wohnte ich in Hamburg.", "Jedes Mal, wenn er kam, brachten wir Kuchen.", "Wenn es morgen regnet, bleiben wir drinnen."],
+        "quick_logic": "Single past moment = ALS. Repeated or present/future = WENN.",
+        "common_mistakes": ["❌ Wenn ich 10 Jahre alt war... → ✓ Als ich 10 Jahre alt war..."],
+        "memory_trick": "ALS = A Lone Story in the past. WENN = Whenever / Future."
+      }
+    ]
+  }
+}
