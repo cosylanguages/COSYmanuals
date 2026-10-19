@@ -483,6 +483,39 @@
    "en": "Critical discussion and presentation skills.",
    "it": "Discussione critica e capacità di presentazione.",
    "el": "Κριτική συζήτηση και δεξιότητες παρουσίασης."
+  },
+  {
+   "id": "redirect_title",
+   "en": "Redirecting · COSYlanguages",
+   "fr": "Redirection · COSYlanguages",
+   "de": "Weiterleitung · COSYlanguages",
+   "es": "Redirigiendo · COSYlanguages",
+   "it": "Reindirizzamento · COSYlanguages",
+   "pt": "Redirecionando · COSYlanguages",
+   "ru": "Переход · COSYlanguages",
+   "el": "Ανακατεύθυνση · COSYlanguages"
+  },
+  {
+   "id": "page_moved",
+   "en": "Page Moved",
+   "fr": "Page déplacée",
+   "de": "Seite verschoben",
+   "es": "Página movida",
+   "it": "Pagina spostata",
+   "pt": "Página movida",
+   "ru": "Страница перемещена",
+   "el": "Η σελίδα μεταφέρθηκε"
+  },
+  {
+   "id": "moved_body",
+   "en": "This page has moved to a new location. If you are not redirected automatically, please follow the link below.",
+   "fr": "Cette page a été déplacée. Si vous n’êtes pas redirigé automatiquement, suivez le lien ci-dessous.",
+   "de": "Diese Seite wurde verschoben. Wenn Sie nicht automatisch weitergeleitet werden, folgen Sie bitte dem Link unten.",
+   "es": "Esta página se ha movido. Si no se le redirige automáticamente, siga el enlace de abajo.",
+   "it": "Questa pagina è stata spostata. Se non vieni reindirizzato automaticamente, segui il link qui sotto.",
+   "pt": "Esta página foi movida. Se não for redirecionado automaticamente, siga o link abaixo.",
+   "ru": "Эта страница перемещена. Если вы не перешли автоматически, перейдите по ссылке ниже.",
+   "el": "Αυτή η σελίδα έχει μεταφερθεί. Αν δεν γίνει αυτόματη ανακατεύθυνση, ακολουθήστε τον παρακάτω σύνδεσμο."
   }
  ],
  "patterns": [
