@@ -1,0 +1,58 @@
+{
+  "title": "Meisterfaden für verwirrende deutsche Grammatikstrukturen (A vs B)",
+  "language": "de",
+  "levels": {
+    "a0_a2": [
+      {
+        "id": "sie-vs-sie-vs-sie",
+        "level": "A0-A1",
+        "point": "sie (Singular) vs sie (Plural) vs Sie (Höflichkeitsform)",
+        "core_difference": "Großschreibung und Verbkonjugation unterscheiden das weibliche 'sie', das plurale 'sie' und das höfliche 'Sie'.",
+        "usage_a": "sie (3. Person Singular) verlangt die Verbendung -t (z. B. sie wohnt).",
+        "usage_b": "sie (3. Person Plural) verlangt die Verbendung -en (z. B. sie wohnen). Das höfliche 'Sie' wird immer großgeschrieben und steht mit der Pluralform -en.",
+        "examples": ["Sie wohnt in Berlin. (eine Frau)", "Sie wohnen in Berlin. (mehrere Personen)", "Woher kommen Sie? (Höflichkeitsform)"],
+        "quick_logic": "Verbendung (-t vs. -en) und Großschreibung beachten.",
+        "common_mistakes": ["❌ Sie wohnt hier (wenn mehrere Personen gemeint sind) → ✓ Sie wohnen hier."],
+        "memory_trick": "Großes 'Sie' = Höflicher Respekt. Kleines 'sie' + -t = Sie (Singular). Kleines 'sie' + -en = Sie (Plural)."
+      },
+      {
+        "id": "kein-vs-nicht",
+        "level": "A0-A1",
+        "point": "kein vs nicht (Deutsche Verneinung)",
+        "core_difference": "Verwenden Sie 'kein' zur Verneinung von Nomen mit unbestimmtem oder ohne Artikel; verwenden Sie 'nicht' für Verben, Adjektive und bestimmte Nomen.",
+        "usage_a": "kein wird wie der unbestimmte Artikel 'ein' dekliniert und verneint Substantive.",
+        "usage_b": "nicht verneint Verben, Adjektive, Adverbien, Possessivartikel und ganze Sätze.",
+        "examples": ["Ich habe keinen Hunger.", "Das Buch ist nicht teuer.", "Er arbeitet heute nicht."],
+        "quick_logic": "Nomen ohne bestimmten Artikel verneinen? → KEIN. Sonst → NICHT.",
+        "common_mistakes": ["❌ Ich habe nicht Geld. → ✓ Ich habe kein Geld."],
+        "memory_trick": "Kein = Kein + Nomen. Nicht = Nicht + Rest des Satzes."
+      },
+      {
+        "id": "weil-vs-denn",
+        "level": "A2",
+        "point": "weil vs denn (Begründung)",
+        "core_difference": "Beide Wörter begründen eine Aussage, aber 'weil' schickt das konjugierte Verb ans Satzende, während 'denn' die Hauptsatzwortstellung behält.",
+        "usage_a": "weil ist eine unterordnende Konjunktion (konjugiertes Verb steht am Ende des Nebensatzes).",
+        "usage_b": "denn ist eine koordinierende Konjunktion auf Position 0 (Subjekt und Verb folgen direkt).",
+        "examples": ["Ich bleibe zu Hause, weil ich krank bin.", "Ich bleibe zu Hause, denn ich bin krank."],
+        "quick_logic": "weil = Verb wandert ans Satzende. denn = normale Satzstellung.",
+        "common_mistakes": ["❌ ...weil ich bin krank. → ✓ ...weil ich krank bin."],
+        "memory_trick": "Weil kickt das Verb ans Satzende!"
+      }
+    ],
+    "b1_b2": [
+      {
+        "id": "wenn-vs-als",
+        "level": "B1",
+        "point": "wenn vs als (Vergangenheit & Bedingung)",
+        "core_difference": "Verwenden Sie 'als' für einmalige Ereignisse in der Vergangenheit. Verwenden Sie 'wenn' für wiederholte Vergangenheitsereignisse sowie für Gegenwart und Zukunft.",
+        "usage_a": "als steht bei einmaligen, abgeschlossenen Ereignissen oder Zeitspannen der Vergangenheit.",
+        "usage_b": "wenn steht bei wiederholten Vorgängen in der Vergangenheit ('jedes Mal, wenn') oder bei Bedingungen in Gegenwart/Zukunft.",
+        "examples": ["Als ich ein Kind war, wohnte ich in Hamburg.", "Jedes Mal, wenn er kam, brachten wir Kuchen.", "Wenn es morgen regnet, bleiben wir drinnen."],
+        "quick_logic": "Einmalig in der Vergangenheit = ALS. Wiederholt oder Gegenwart/Zukunft = WENN.",
+        "common_mistakes": ["❌ Wenn ich 10 Jahre alt war... → ✓ Als ich 10 Jahre alt war..."],
+        "memory_trick": "ALS = Einmaliges Altes Ereignis. WENN = Wiederholung oder Zukunft."
+      }
+    ]
+  }
+}
