@@ -26,7 +26,7 @@ jobs:
       - name: Audit edited English lesson links (report only; repository baseline checked separately)
         run: node scripts/check-internal-links.mjs manuals/en/grammar/a1/topics/part-1-building-blocks.html
       - name: Install browser test dependencies
-        run: npm install --no-save playwright@1.56.1 @axe-core/playwright@4.10.3
+        run: npm install --no-save playwright@1.64.1 @axe-core/playwright@4.14.0
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Test keyboard, responsive layout, accessibility, and print output
