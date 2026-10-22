@@ -47,9 +47,9 @@ begin
     (room_key, lesson_id, '', 0, array[caller_id], caller_id, caller_id)
   on conflict on constraint lesson_notes_room_lesson_key do update
     set participants = case
-          when caller_id = any(lesson_notes.participants)
-            then lesson_notes.participants
-          else array_append(lesson_notes.participants, caller_id)
+          when caller_id = any(coalesce(lesson_notes.participants, array[]::uuid[]))
+            then coalesce(lesson_notes.participants, array[]::uuid[])
+          else array_append(coalesce(lesson_notes.participants, array[]::uuid[]), caller_id)
         end,
         updated_at = now()
   returning * into note_rec;
