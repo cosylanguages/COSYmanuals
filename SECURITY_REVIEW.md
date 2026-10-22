@@ -161,3 +161,22 @@ The proposed migration still does not remediate existing grants on `is_founder()
 - No approved non-billable staging environment is available through the connected Supabase project. The project's existing public schema has create permission limited to owner/admin roles, and `private` schema is not available to `anon`; do not attempt to create a test schema or role on the live project as a workaround. A local ephemeral PostgreSQL/Supabase-compatible harness can provide useful parser/behavior tests, but it does not replace staging against the real Supabase auth/RLS/Data API configuration.
 
 Deployment gate remains blocked until current-head CI is green, the room-key bearer capability is explicitly accepted, the helper/RLS grant matrix is approved, and the candidate plus exact rollback have passed in a confirmed isolated environment. No Supabase migration or database modification has been made.
+
+### Catalog dependency inventory and legitimate publisher/reader paths
+
+A grouped read-only `pg_policies` inventory found **32 policies across 22 public tables** whose expressions reference `public.is_founder()`, **3 policies on `lesson_content`** that reference `public.is_lesson_author()`, and **1 policy on `profiles`** that references `private.is_founder()`. The public-founder policy set covers access grants, CMS overrides, CRM activities/contacts/deals, lesson answers/authors/content/notes/submissions, manual content, profiles, role changes, session catalog/content/grants/revisions/sources/teacher notes, teacher languages, and teacher-student relations. Policies apply to different role sets (`PUBLIC`, `anon`/`authenticated`, or `authenticated` only), so one global helper ACL change cannot be assumed safe.
+
+Effective function ACLs observed read-only:
+
+- `public.is_founder()`: SECURITY DEFINER, `search_path=public`; EXECUTE granted to `anon`, `authenticated`, and `service_role`.
+- `public.is_lesson_author()`: SECURITY DEFINER, `search_path=public`; explicit EXECUTE to `anon`, `authenticated`, `service_role`, and `PUBLIC`.
+- `private.is_founder()`: SECURITY DEFINER, empty search path; EXECUTE to `authenticated` and `service_role`, not `anon`. The `private` schema is not usable by `anon`.
+- `public.redeem_session_access_link(text,text)`: SECURITY DEFINER, empty search path; EXECUTE to `anon`, `authenticated`, and `service_role`. This is an intended token-redemption entry point; preserve its public use if product requirements depend on share links, but review token entropy, throttling, expiry/revocation and returned data. `session_access_links` has RLS enabled and no direct policies, so the definer function is the relevant access path.
+
+Read-only policy/grant matrix for content tables:
+
+- `manual_content`: reader policy is authenticated entitlement-based (founder, teacher language access, student language and level). A separate `service_role` ALL policy supports the trusted publisher. `scripts/publish_to_supabase.js` uses the service-role key for `INSERT ... on_conflict=manual_id` upserts, so backend publisher INSERT/UPDATE must continue to work. The connected project currently gives `anon` SELECT table privilege, but no anon-targeted RLS policy was found on this table; table privilege alone does not mean anon can read rows.
+- `lesson_content`: author INSERT/UPDATE and read policies depend on `is_lesson_author()`; delete is founder-only; separate reader policies cover founder and entitled teachers. Anonymous table-level SELECT/INSERT privileges do not bypass RLS, but function execution errors or changed helper behavior can break policy evaluation.
+- `student_lesson_content`: the existing authenticated reader policy is entitlement-based for founder/teacher/student language and level. Do not replace it with blanket authenticated access.
+
+These findings support a staged approach: preserve existing policy expressions and table grants for ordinary CRUD until the role matrix is tested; revoke only the dangerous table-level privileges in the candidate proposal; harden helper search paths and EXECUTE grants in a separately reviewed policy-aware change. Test anonymous requests, ordinary authenticated users, teachers/authors, students, founders, and the trusted service-role publisher against each affected table. No live permissions or policies were changed.
