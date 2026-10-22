@@ -69,3 +69,22 @@ Prepare and review the rollback script **before** applying the candidate migrati
 - [ ] Migration and rollback are independently reviewed.
 - [ ] Production deployment is a separate, explicitly approved action.
 
+
+## Non-billable preflight: disposable PostgreSQL CI harness
+
+The repository quality workflow now runs the proposed SQL against a fresh PostgreSQL 17 service container, then runs assertions and a fixture-only rollback. This uses the ephemeral GitHub Actions runner, not a Supabase development branch or the connected project.
+
+The harness covers SQL parsing/execution against a minimal schema, unauthenticated and malformed joins, first/repeat joins, participant membership, unauthorized saves, version-zero initialization, successful save/version increments, stale-version conflict behavior, founder RPC behavior, the intended note-RPC EXECUTE matrix, dangerous content-table privileges, service-role publisher INSERT, and default ACL behavior for new objects created by both postgres and supabase_admin.
+
+**Limitations:** auth.uid() and the minimal Supabase catalog are stubbed. The harness does not validate the actual Supabase Data API, JWT claim plumbing, platform-managed roles, every live RLS policy, actual browser behavior against a backend, or concurrent transactions. Its rollback restores the known test fixture baseline only; it is not a production rollback script. Passing CI is a useful non-billable SQL/logic preflight, not a substitute for the required isolated Supabase staging run.
+
+## Required access/role matrix before a real staging run
+
+- `anon`: only the explicitly intended public read paths and session-token redemption; no note RPC execution, content writes, or dangerous table privileges.
+- `authenticated` student: only entitlement-matched manual/student-safe content; may join a note only if the bearer-room-key policy is explicitly approved; may save only notes where their UID is a participant.
+- `authenticated` teacher/lesson author: preserve language-authorized read and explicitly intended authoring/publishing operations; verify `is_lesson_author()`-dependent policies individually.
+- `authenticated` founder: preserve founder administration and the exact approved note read/save behavior; verify every policy that depends on `is_founder()`.
+- `service_role` / trusted publisher: preserve the server-side `scripts/publish_to_supabase.js` upsert path; never expose the service-role key to browsers or ordinary client roles.
+- object owners (`postgres`, `supabase_admin`, plus any additional creator roles found in the target): verify defaults independently for tables, sequences, and functions. Do not alter platform-managed schemas as part of this public-schema proposal.
+
+The room key is a bearer capability in the current client. Product approval must explicitly answer: **Is possession of the 32-hex key alone sufficient to join, or must a trusted invitation/enrollment check also be required?** Until that decision is recorded, the join RPC change is not deployment-ready.
