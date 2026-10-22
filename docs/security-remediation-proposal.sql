@@ -3,12 +3,14 @@
 -- Canonical client review: COSYplatform-source/classroom.html and
 -- supabase/migrations/0009_lesson_notes.sql.
 --
--- The client generates a separate 32-hex-character bearer room key and calls
+-- The client generates a separate 32-hex-character room key and calls
 -- join_lesson_note after a browser-side PeerJS handshake. That handshake is NOT a
--- database authorization boundary. This proposal preserves the current signed-in
--- bearer-key join contract, validates the key format, and checks auth.uid().
--- Anyone who obtains the room key can join; confirm that this is the intended product
--- contract, and review key leakage, logging, rotation/expiry, and rate limiting.
+-- database authorization boundary. Product policy confirmed 2026-10-22: a user with a
+-- valid paid entitlement for THIS session should be allowed to join. Possession of the
+-- room key alone must NOT authorize an unentitled user. The function below is therefore
+-- an incomplete, NON-DEPLOYABLE draft until the authoritative entitlement relation and
+-- session-to-room mapping are traced and enforced server-side before participant upsert.
+-- Do not apply this proposal in its current form.
 --
 -- This file is a review draft only. It has not been parsed/applied against staging.
 -- Grant changes below are intentionally conservative/incomplete pending a full grant
