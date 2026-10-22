@@ -27,15 +27,15 @@ function extractLocalTargets(html) {
   return targets;
 }
 
-function targetExists(sourceFile, rawTarget) {
+function targetExists(sourceFile, rawTarget, rootDir = process.cwd()) {
   let pathname = rawTarget.split('#', 1)[0].split('?', 1)[0];
   if (!pathname) return true;
   try { pathname = decodeURIComponent(pathname); } catch { return false; }
   const candidate = pathname.startsWith('/')
-    ? path.resolve(process.cwd(), `.${pathname}`)
+    ? path.resolve(rootDir, `.${pathname}`)
     : path.resolve(path.dirname(sourceFile), pathname);
-  if (!candidate.startsWith(path.resolve(process.cwd()) + path.sep) &&
-      candidate !== path.resolve(process.cwd())) return false;
+  if (!candidate.startsWith(path.resolve(rootDir) + path.sep) &&
+      candidate !== path.resolve(rootDir)) return false;
   try {
     const stat = fs.statSync(candidate);
     return stat.isFile() || (stat.isDirectory() && fs.existsSync(path.join(candidate, 'index.html')));
@@ -50,7 +50,7 @@ export function findBrokenLinks(rootDir) {
   for (const file of walk(root)) {
     const html = fs.readFileSync(file, 'utf8');
     for (const target of extractLocalTargets(html)) {
-      if (!targetExists(file, target)) broken.push({ file, target });
+      if (!targetExists(file, target, root)) broken.push({ file, target });
     }
   }
   return broken;
@@ -75,7 +75,7 @@ function run() {
     const stat = fs.statSync(absolute);
     if (stat.isFile()) {
       const html = fs.readFileSync(absolute, 'utf8');
-      return extractLocalTargets(html).filter(t => !targetExists(absolute, t)).map(t => ({file:absolute,target:t}));
+      return extractLocalTargets(html).filter(t => !targetExists(absolute, t, root)).map(t => ({file:absolute,target:t}));
     }
     return findBrokenLinks(absolute);
   });
