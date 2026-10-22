@@ -44,7 +44,7 @@ begin
   insert into public.lesson_notes
     (room_key, lesson_id, content, version, participants, created_by, updated_by)
   values
-    (room_key, lesson_id, '', 0, array[caller_id], caller_id, caller_id)
+    (room_key, lesson_id, '', 1, array[caller_id], caller_id, caller_id)
   on conflict on constraint lesson_notes_room_lesson_key do update
     set participants = case
           when caller_id = any(coalesce(lesson_notes.participants, array[]::uuid[]))
