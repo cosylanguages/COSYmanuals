@@ -53,3 +53,37 @@ Reviewed: `manuals/fr/grammar/a1/index.html`, `domaine-1.html`, and `topics/genr
 - A proficient speaker/teacher reviews language accuracy before a manual is marked approved.
 
 No full French gated lesson content was reviewed in this pass; that remains an explicit follow-up rather than an assumed pass.
+
+
+## Supplemental read-only review: live Supabase French A1 pronunciation content
+
+Reviewed on 2026-10-22 from the connected Supabase project's `public.lesson_content` rows (read-only; no content was changed):
+- `fr-pron-a1-01-alphabet` — “L'Alphabet et les sons fondamentaux”
+- `fr-pron-a1-02-accent-aigu` — “L'Accent Aigu (É) et le son [e]”
+- The A1 French workbook JSON at `student-workbooks/data/workbooks/fr/a1.json`
+
+This is a sample review of database content, not proof that the connected project is staging. The project had no development branches listed, so treat it as potentially production. No database write tests or content edits were performed.
+
+### High-priority accuracy corrections
+
+1. **Separate letter names from grapheme-to-sound examples.** The alphabet lesson lists “C [se] (chat)” and “E [ə] (eau)” in a sequence of letter-name/word examples. The letter names C /se/ and E /ə/ are not the pronunciations of the initial letters in *chat* and *eau*: *chat* begins with /ʃ/ (the digraph **ch**), and *eau* begins with /o/. As written, these pairings teach a false association. Use examples that match the target sound (e.g. C — *ce* for the letter name, and *chat* only in a separate **ch** spelling example; E — *le* for a schwa example, and *eau* under /o/).
+2. **Correct the categorical statement about K and W.** The lesson says K and W are “reserved for words of foreign origin.” This is too absolute for a beginner rule; explain that they are less common in inherited French vocabulary and occur especially in loanwords, names, and established exceptions.
+3. **Clarify the six-vowel statement.** “Six pure vowels” can conflate written vowel letters (A, E, I, O, U, Y) with phonetic vowel sounds. State explicitly that this is a spelling/alphabet convention, and distinguish it from the French vowel phoneme inventory.
+4. **Fix the accent aigu exception field.** The lesson treats omission of accents in uppercase loanwords as an exception. That is not a useful phonetic exception and risks implying that accents should be dropped in capitals. Teach that French accents are retained on capital letters in standard modern French typography; if discussing inconsistent real-world typography, label it as a common error, not a rule.
+5. **Qualify the schwa rule.** “E without an accent = [ə]” is an overgeneralization. Use a small set of clear examples and note that schwa realization/deletion varies with word, context, speech rate, and variety.
+
+### Pedagogical structure and usability
+
+- The alphabet lesson's three stages each show a 50-minute duration while the overall lesson also declares a 50-minute default. Reconcile per-stage durations with the stated lesson duration, or label these as suggested durations that can be adjusted.
+- The repeated 14-field template creates consistent teacher notes, but it overloads a beginner-facing lesson with abstract fields such as frequency stars, historical etymology, exceptions, and meta labels. Keep the full framework in teacher notes; expose learners first to a small objective, a clear model, guided discrimination, short retrieval practice, and a recap.
+- The workbook's English-only exercise prompts (e.g. asking “How do you say ‘Hello’ in French (formal)?”) may be intentional for English-medium instruction, but the interface should clearly state its instructional language and offer French learner-facing directions or accessible language support where appropriate.
+- The workbook groups greetings, accents, and numbers 1–10 into one topic. This can work as a first orientation, but needs an explicit learning goal and separate short practice/feedback for each mini-skill.
+- Pronunciation examples should include a consistent IPA convention and an audio/listening model where possible; visual mouth-shape cues alone are not enough for phonological contrasts.
+
+### Recommended correction sequence
+
+1. Fix the two misleading alphabet examples and the capital-accent guidance first.
+2. Rework the “14 fields” into learner-facing core + expandable teacher notes.
+3. Reconcile timing, objective alignment, and exercise feedback.
+4. Have a French phonetics/teaching reviewer validate all IPA examples and regional notes.
+5. Validate the revised lesson in staging before any publisher action. Keep database content unchanged until a reviewed change set and staging target are confirmed.
