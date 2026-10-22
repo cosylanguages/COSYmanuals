@@ -43,11 +43,21 @@ For every denied write, assert the persisted row is unchanged. Do not treat a cl
 
 ## Rollback plan (staging first)
 
-1. Save the pre-change function definitions, table ACLs, default ACLs, and policy definitions as review artifacts.
-2. Keep the proposed migration in a transaction where supported; stop on any failed assertion or regression.
-3. If tests fail, restore the captured function definitions and ACL/default-ACL state from a reviewed rollback script; do not improvise grants during an incident.
-4. Re-run the same authorization, entitlement, and publisher tests after rollback.
-5. Do not promote to production until a reviewer signs off on the diff, advisor results, test evidence, and the exact rollback script.
+Prepare and review the rollback script **before** applying the candidate migration. Do not use a guessed inverse migration: the current ACL state includes grants that may be intentional, and default privileges are scoped to the role that creates each object.
+
+1. Capture a timestamped, access-controlled baseline for the exact environment: migration/version history; function definitions via pg_get_functiondef and function ACLs for every function changed; table/sequence ACLs; default ACLs for every role that can create objects in public; RLS enablement and policy definitions; relevant table constraints; and current security-advisor output. Record the project/environment identifier and database version. Do not include learner content, JWTs, or room secrets in artifacts.
+2. Generate a rollback script from that baseline. It must restore the exact prior function definitions, function EXECUTE ACLs, table/sequence ACLs, and per-creator default ACLs. Include explicit policy/constraint restoration only if the forward migration changes them. Review the script independently and check it into the same review before the forward change is considered releasable.
+3. On isolated staging, use a transaction for DDL/ACL changes where supported and appropriate. Run syntax/definition checks first. Abort on the first error; do not run partial statements manually to force completion. If any operation cannot be transactional in the target environment, document it and define its recovery step before applying.
+4. If a release gate fails, stop further rollout. Run the reviewed rollback script against the same environment, inspect every statement result, then compare restored function definitions, ACLs, default ACLs, RLS state, and policies to the baseline. A rollback is not complete merely because the script exits successfully.
+5. Re-run the RPC authorization, concurrent version-conflict, entitlement, author/publisher, service-role, and browser regression tests after rollback. Confirm content and version values match pre-test fixtures and that no test-only accounts or data remain.
+6. Save sanitized evidence: before/after catalog snapshots, test results, advisor output, migration and rollback checksums, reviewer sign-off, and residual risks. Do not promote to production until an independent reviewer signs off on the forward diff, rollback diff, test evidence, and explicit production authorization.
+
+### Rollback-specific assertions
+
+- [ ] anon, authenticated, service_role, and object-owner behavior matches the captured baseline/approved design; do not blindly revoke or restore broad service-role privileges.
+- [ ] Default ACLs are restored separately for every object-creating role and schema. Restoring only postgres defaults is insufficient if migrations also run as supabase_admin or another owner.
+- [ ] No rollback step drops or truncates lesson/content tables or deletes live content.
+- [ ] If a forward migration has already changed note rows, do not assume restoring function definitions/ACLs reverses those row changes. The proposed remediation should not be treated as data-reversible without a separately reviewed data-recovery plan.
 
 ## Release gates
 
