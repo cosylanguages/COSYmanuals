@@ -126,9 +126,16 @@ revoke truncate, references, trigger, maintain
   on table public.manual_content, public.lesson_content, public.student_lesson_content
   from public, anon, authenticated;
 
--- Stop future public-schema tables from inheriting client access. This applies only to
--- objects created by postgres; review all other object owners/default ACLs separately.
+-- The live read-only inventory found broad default table ACLs for BOTH postgres and
+-- supabase_admin (including anon/authenticated CRUD and TRUNCATE/REFERENCES/TRIGGER/
+-- MAINTAIN). Default ACLs are per object-creator role, so addressing postgres alone is
+-- incomplete. This fail-closed proposal removes future implicit client grants; migrations
+-- must explicitly GRANT only the table operations each client flow requires, alongside RLS.
+-- Review role membership/ownership and test these statements in staging before deployment.
 alter default privileges for role postgres in schema public
+  revoke all on tables from public, anon, authenticated;
+
+alter default privileges for role supabase_admin in schema public
   revoke all on tables from public, anon, authenticated;
 
 commit;
@@ -137,12 +144,18 @@ commit;
 -- 1) Assert anon/authenticated have no TRUNCATE/REFERENCES/TRIGGER/MAINTAIN on content tables.
 -- 2) Assert existing manual_content entitlement policies are unchanged.
 -- 3) Assert the two RPCs have search_path = '' and only intended EXECUTE grants.
--- 4) Verify default ACLs for every owner role, not only postgres.
--- 5) Run functional tests for each supported enrollment, authoring, publishing, and note flow.
+-- 4) Verify default ACLs for every object-creator role (live inventory includes postgres
+--    and supabase_admin); verify future tables receive no implicit client ACLs.
+-- 5) Explicitly grant the minimum required table privileges to intended roles for each
+--    future table; test Data API access and RLS/entitlement behavior.
+-- 6) Run functional tests for each supported enrollment, authoring, publishing, and note flow.
 --
 -- IMPORTANT: This proposal is not yet merge-ready:
 -- * join_lesson_note preserves self-join based on a 32-hex bearer key. Confirm that this
 --   remains the intended authorization model; browser-side PeerJS checks are not sufficient.
 -- * REVOKE from PUBLIC affects all roles that inherit PUBLIC grants. Check current grants.
--- * Default privileges must be set for every role that creates public tables.
+-- * The default-privilege revokes remove future implicit client grants, including SELECT.
+--   Future migrations must add explicit minimal grants; otherwise client access may fail.
+-- * Default privileges are per object-creator role; inventory any additional roles beyond
+--   postgres and supabase_admin before approval.
 -- * Use a backup/rollback plan and apply only through an approved staging migration.
