@@ -10,10 +10,12 @@
 -- manuals themselves. Do not gate note joining on manual language/level access or assume
 -- a paid-session rule from the earlier mistaken statement. The intended authorization
 -- is participation in the relevant live lesson. The current client uses the room key as
--- a bearer invitation, but it is not yet confirmed whether that secret alone is the
--- complete authorization proof or whether a trusted live-lesson roster/invitation check
--- is required. This function is therefore NON-DEPLOYABLE until that join policy is
--- explicitly confirmed and represented server-side. Do not apply this proposal yet.
+-- a bearer invitation. Product decision (2026-10-22): any authenticated student who
+-- presents the valid room key may join; no separate roster check or paid-session gate is
+-- required. Possession is the invitation credential, so protect distribution and avoid
+-- logging the key; plan leakage response, rotation/expiry, and rate limiting. This remains
+-- a review-only proposal and is NOT deployable until isolated staging, grant review, and
+-- rollback validation are complete. Do not apply this proposal to production.
 --
 -- This file is a review draft only. It has not been parsed/applied against staging.
 -- Grant changes below are intentionally conservative/incomplete pending a full grant
@@ -43,12 +45,11 @@ begin
     raise exception 'Invalid room or lesson' using errcode = '22023';
   end if;
 
-  -- Draft behavior only: the current client treats possession of the random room key
-  -- as a bearer invitation. Product clarification establishes that notes are for live
-  -- lesson collaboration, but does not yet confirm whether the key alone is sufficient
-  -- proof of live-lesson participation. Do not deploy until the approved authorization
-  -- model is enforced here (or this behavior is explicitly approved). The browser-side
-  -- PeerJS handshake is not a database security boundary.
+  -- Approved product behavior: an authenticated student presenting this valid random
+  -- room key may join. The key is a bearer invitation; do not add a separate roster or
+  -- paid-session entitlement gate. Anyone who obtains the key can join, so do not log
+  -- it and define distribution, leakage response, rotation/expiry, and rate limiting.
+  -- The browser-side PeerJS handshake is not a database security boundary.
   insert into public.lesson_notes
     (room_key, lesson_id, content, version, participants, created_by, updated_by)
   values
@@ -178,11 +179,11 @@ commit;
 -- 6) Run functional tests for each supported enrollment, authoring, publishing, and note flow.
 --
 -- IMPORTANT: This proposal is not yet merge-ready:
--- * join_lesson_note currently permits self-join based on a 32-hex bearer key. Notes are
---   collaborative live-lesson notes, not manuals; no paid-session gate is established by
---   the latest product clarification. Confirm whether the key is the intended invitation
---   credential or whether server-side live-lesson membership must also be checked. The
---   browser-side PeerJS handshake is not sufficient authorization.
+-- * join_lesson_note permits self-join based on a valid 32-hex bearer key, as explicitly
+--   approved for authenticated students on 2026-10-22. Notes are collaborative live-lesson
+--   notes, not manuals; do not add a paid-session gate or separate roster check. The
+--   browser-side PeerJS handshake is not sufficient authorization; the key is the actual
+--   invitation credential and must be handled as a secret.
 -- * REVOKE from PUBLIC affects all roles that inherit PUBLIC grants. Check current grants.
 -- * The default-privilege revokes remove future implicit client grants, including SELECT.
 --   Future migrations must add explicit minimal grants; otherwise client access may fail.
