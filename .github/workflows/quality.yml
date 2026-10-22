@@ -23,5 +23,5 @@ jobs:
         run: node scripts/validate-catalog.mjs
       - name: Run automated tests
         run: node --test
-      - name: Audit local manual links (report only during baseline)
-        run: node scripts/check-internal-links.mjs manuals
+      - name: Audit edited English lesson links (report only; repository baseline checked separately)
+        run: node scripts/check-internal-links.mjs manuals/en/grammar/a1/topics/part-1-building-blocks.html
