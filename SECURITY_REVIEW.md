@@ -117,3 +117,16 @@ A read-only review of the canonical `COSYplatform-source` `classroom.html` and `
 The proposal in `docs/security-remediation-proposal.sql` has been revised to preserve that intended bearer-key flow while requiring `auth.uid()`, validating the key format, setting an empty `search_path`, and restricting `save_lesson_note` to participants (plus founders if the existing product policy permits them). It also aligns the save response with the client contract, which consumes `version`, `content`, and `conflict`.
 
 This is still a **review draft only**, not an applied migration. Before approval, verify the founder authorization expectation, key handling/logging/expiry, actual client error handling, and all grant/default-privilege effects. The SQL must be parsed and exercised against a disposable/staging database before any deployment; no database changes have been made as part of this follow-up.
+
+
+## Staging verification checklist
+
+The detailed test matrix and rollback gates are now in [`docs/security-staging-test-plan.md`](docs/security-staging-test-plan.md). It covers unauthenticated and invalid-key joins, first/repeated/second-participant joins, unauthorized note UUID writes, participant saves, stale/future version conflicts, founder access, concurrent saves, entitlement regression, and rollback verification. It is a plan only; none of those adversarial tests have been run against a database.
+
+### Additional read-only ACL inventory
+
+A further read-only query found broad default table ACLs for both `postgres` and `supabase_admin` in `public`, including grants to `anon`, `authenticated`, and `service_role`. The proposed SQL now addresses the two observed creator roles, but that portion is deliberately **fail-closed**: revoking all future implicit client table grants also removes default SELECT, so each future table migration must explicitly grant only the minimum required operations and retain appropriate RLS. The current content-table ACLs also show client-role TRUNCATE/REFERENCES/TRIGGER/MAINTAIN privileges. The proposal removes those specific dangerous privileges while leaving ordinary CRUD grants for separate review.
+
+The current security-advisor baseline still reports mutable `search_path` on the two note RPCs, public execution of `is_founder()`, `is_lesson_author()`, and `redeem_session_access_link(...)`, 13 authenticated-callable SECURITY DEFINER functions, and `session_access_links` with RLS but no policies. No database change has been made, so a post-fix advisor run is not yet meaningful; rerun it only after a reviewed staging change.
+
+The browser workflow did complete successfully on commit `2019f73e7ac79b540920c629f5dde68288ee31e4`: keyboard focus, responsive overflow, axe WCAG 2.1 A/AA, and A4 PDF generation passed for English and French sample pages. The current PR head contains later documentation-only commits, so rerun CI against the current head before merge.
