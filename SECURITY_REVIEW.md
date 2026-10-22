@@ -142,3 +142,11 @@ A second read-only pass checked the proposal against the live catalog and canoni
 - The proposal's table-level and default-ACL changes have not been parsed or executed in staging. Confirm every object-creator role and the actual publisher/reader grant matrix first; do not infer that a syntactically valid `REVOKE` preserves application behavior.
 
 These checks remain static/read-only. No migration, grant, policy, function, or lesson-content changes were made in Supabase.
+
+### Default-privilege scope and helper-function dependencies
+
+A follow-up read-only catalog query confirms default ACL entries for `public` tables, sequences, and functions under both `postgres` and `supabase_admin`. The draft proposal now includes default-privilege revokes for all three object types under those two roles. This is intentionally fail-closed and is not a drop-in production migration: each migration must explicitly grant the exact required table/sequence privileges and function EXECUTE rights, and all roles that can create public objects must be inventoried first. The inventory also shows defaults in other schemas; the proposal is scoped to `public` and must not be broadened to platform-managed schemas without a separate review.
+
+Read-only effective-privilege checks also show `anon` currently has table-level SELECT on several tables whose RLS policies reference `is_founder()` or `is_lesson_author()` (including `lesson_content`, `manual_content`, `lesson_authors`, and others). That does not alone prove data exposure—the policies and function behavior matter—but it means helper EXECUTE grants and each affected policy must be reviewed together. Do not revoke helper execution or change its search path in isolation without testing every dependent RLS policy and supported anonymous/authenticated access path.
+
+The proposed migration still does not remediate existing grants on `is_founder()`, `is_lesson_author()`, or `redeem_session_access_link(...)`; it only proposes safer defaults for newly created functions. These existing functions require a separate reviewed change that preserves intentional policy evaluation and session-link redemption. No database changes were made.
