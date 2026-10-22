@@ -108,3 +108,12 @@ The proposal makes the note RPCs require an authenticated caller and existing pa
 **Important design blocker:** the current `join_lesson_note` RPC creates a note row on demand. The proposal stops that behavior because no trusted invitation/enrollment mechanism has yet been verified. Before any deployment, trace the real client flow and define how legitimate participants are added to `participants`; then test valid first-time joins, existing participant joins, nonparticipant reads/writes, unauthenticated calls, version conflicts, and founder/author workflows in staging.
 
 The grant section is intentionally incomplete for deployment: verify all existing grants, table owners and default-privilege owners, and all required SELECT/INSERT/UPDATE/DELETE paths. Preserve the entitlement-aware `manual_content` policy. Run the Supabase security advisor again after staged changes, and prepare rollback before any production migration.
+
+
+### Follow-up source review: classroom note-join contract
+
+A read-only review of the canonical `COSYplatform-source` `classroom.html` and `supabase/migrations/0009_lesson_notes.sql` clarified the intended join contract. The client generates a 10-character room ID and a separate 32-hex-character secret room key; after its client-side PeerJS handshake it calls `join_lesson_note`, which creates the note if missing or adds the authenticated caller to `participants`. The browser handshake is not a database authorization boundary: a signed-in user who obtains the room key can join the note room.
+
+The proposal in `docs/security-remediation-proposal.sql` has been revised to preserve that intended bearer-key flow while requiring `auth.uid()`, validating the key format, setting an empty `search_path`, and restricting `save_lesson_note` to participants (plus founders if the existing product policy permits them). It also aligns the save response with the client contract, which consumes `version`, `content`, and `conflict`.
+
+This is still a **review draft only**, not an applied migration. Before approval, verify the founder authorization expectation, key handling/logging/expiry, actual client error handling, and all grant/default-privilege effects. The SQL must be parsed and exercised against a disposable/staging database before any deployment; no database changes have been made as part of this follow-up.
