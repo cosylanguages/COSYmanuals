@@ -19,27 +19,37 @@ set search_path = ''
 as $function$
 declare
   caller_id uuid := auth.uid();
+  note_rec public.lesson_notes%rowtype;
 begin
   if caller_id is null then
     raise exception 'Authentication required' using errcode = '28000';
   end if;
 
-  if room_key is null or btrim(room_key) = ''
-     or lesson_id is null or btrim(lesson_id) = '' then
+  -- classroom.html generates a 32-character hexadecimal bearer room key.
+  -- Treat it as a secret capability: anyone who knows it can join that room.
+  if room_key is null or room_key !~ '^[0-9a-fA-F]{32}$'
+     or lesson_id is null or btrim(lesson_id) = ''
+     or length(lesson_id) > 512 then
     raise exception 'Invalid room or lesson' using errcode = '22023';
   end if;
 
-  -- Do not create a row or reveal whether a room exists to a non-participant.
-  return query
-    select ln.*
-    from public.lesson_notes as ln
-    where ln.room_key = join_lesson_note.room_key
-      and ln.lesson_id = join_lesson_note.lesson_id
-      and caller_id = any(ln.participants);
+  -- Preserve the intended join flow: a caller presenting the room key is added
+  -- as a participant. The random room key is the authorization capability; the
+  -- browser-side PeerJS handshake is not a database security boundary.
+  insert into public.lesson_notes
+    (room_key, lesson_id, content, version, participants, created_by, updated_by)
+  values
+    (room_key, lesson_id, '', 0, array[caller_id], caller_id, caller_id)
+  on conflict on constraint lesson_notes_room_lesson_key do update
+    set participants = case
+          when caller_id = any(public.lesson_notes.participants)
+            then public.lesson_notes.participants
+          else array_append(public.lesson_notes.participants, caller_id)
+        end,
+        updated_at = now()
+  returning * into note_rec;
 
-  if not found then
-    raise exception 'Note not found or access denied' using errcode = '42501';
-  end if;
+  return next note_rec;
 end;
 $function$;
 
@@ -65,41 +75,36 @@ begin
     raise exception 'Invalid note or version' using errcode = '22023';
   end if;
 
-  -- Lock only a row the caller is already authorized to access. The authorization
-  -- check is inside this SECURITY DEFINER function; table RLS cannot protect it.
   select ln.* into current_rec
   from public.lesson_notes as ln
   where ln.id = save_lesson_note.note_id
-    and caller_id = any(ln.participants)
+    and (caller_id = any(ln.participants) or public.is_founder())
   for update;
 
   if not found then
-    -- Same response for nonexistent and unauthorized IDs to avoid existence leaks.
-    return jsonb_build_object('success', false, 'error', 'Note not found or access denied');
+    return jsonb_build_object('success', false, 'conflict', false,
+                              'error', 'Note not found or access denied');
   end if;
 
-  if current_rec.version > base_version then
-    return jsonb_build_object(
-      'success', false,
-      'conflict', true,
-      'version', current_rec.version,
-      'content', current_rec.content
-    );
+  -- Match the client contract: data.version and data.content are consumed by
+  -- classroom.html; any version mismatch is a conflict, including stale/ahead bases.
+  if coalesce(current_rec.version, 0) <> base_version then
+    return jsonb_build_object('success', false, 'conflict', true,
+                              'version', coalesce(current_rec.version, 0),
+                              'content', current_rec.content);
   end if;
 
   update public.lesson_notes as ln
      set content = save_lesson_note.content,
-         version = current_rec.version + 1,
+         version = coalesce(current_rec.version, 0) + 1,
          updated_at = now(),
          updated_by = caller_id
-   where ln.id = current_rec.id;
+   where ln.id = current_rec.id
+   returning * into current_rec;
 
-  return jsonb_build_object(
-    'success', true,
-    'conflict', false,
-    'version', current_rec.version + 1,
-    'content', save_lesson_note.content
-  );
+  return jsonb_build_object('success', true, 'conflict', false,
+                            'version', current_rec.version,
+                            'content', current_rec.content);
 end;
 $function$;
 
