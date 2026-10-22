@@ -38,7 +38,8 @@ try {
   browser = await chromium.launch({ headless: true });
   const errors = [];
   for (const route of PAGES) {
-    const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const page = await context.newPage();
     page.on('pageerror', error => errors.push(route + ': browser error: ' + error.message));
     const response = await page.goto('http://127.0.0.1:' + port + route, { waitUntil: 'networkidle' });
     if (!response || !response.ok()) errors.push(route + ': page failed to load');
@@ -78,7 +79,7 @@ try {
       errors.push(route + ': print/PDF output is missing or unexpectedly small');
     }
     fs.rmSync(pdfPath, { force: true });
-    await page.close();
+    await context.close();
   }
 
   if (errors.length) {
