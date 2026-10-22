@@ -128,12 +128,12 @@ revoke truncate, references, trigger, maintain
   on table public.manual_content, public.lesson_content, public.student_lesson_content
   from public, anon, authenticated;
 
--- The live read-only inventory found broad default table ACLs for BOTH postgres and
--- supabase_admin (including anon/authenticated CRUD and TRUNCATE/REFERENCES/TRIGGER/
--- MAINTAIN). Default ACLs are per object-creator role, so addressing postgres alone is
--- incomplete. This fail-closed proposal removes future implicit client grants; migrations
--- must explicitly GRANT only the table operations each client flow requires, alongside RLS.
--- Review role membership/ownership and test these statements in staging before deployment.
+-- The live read-only inventory found broad default table, sequence, and function ACLs
+-- for postgres and supabase_admin in public, including client-role grants. Default ACLs
+-- are per object-creator role, so addressing postgres alone is incomplete. This fail-closed
+-- proposal removes future implicit client grants; migrations must explicitly GRANT only
+-- the table/sequence privileges and function EXECUTE permissions each client flow requires.
+-- Review role membership/ownership and test every app path in staging before deployment.
 alter default privileges for role postgres in schema public
   revoke all on tables from public, anon, authenticated;
 
