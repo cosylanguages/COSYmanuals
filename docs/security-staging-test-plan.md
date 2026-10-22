@@ -88,3 +88,13 @@ The harness covers SQL parsing/execution against a minimal schema, unauthenticat
 - object owners (`postgres`, `supabase_admin`, plus any additional creator roles found in the target): verify defaults independently for tables, sequences, and functions. Do not alter platform-managed schemas as part of this public-schema proposal.
 
 The room key is a bearer capability in the current client. Product approval must explicitly answer: **Is possession of the 32-hex key alone sufficient to join, or must a trusted invitation/enrollment check also be required?** Until that decision is recorded, the join RPC change is not deployment-ready.
+
+## Confirmed product rule: paid session entitlement gates room joining
+
+The product requirement is now explicit: a user who has paid for / holds a valid entitlement to the relevant session should be allowed to join that session. A room key by itself is not sufficient authorization for an otherwise unentitled user.
+
+Before changing `join_lesson_note`, trace the authoritative paid-session entitlement records and the exact mapping between session, room key, and lesson. The join RPC must verify the authenticated user's active entitlement for that specific session server-side before inserting or appending a participant. Reuse the canonical entitlement/session authorization logic where possible; do not infer payment from possession of a room key, a browser handshake, a client-supplied flag, or a client-supplied session ID that is not independently verified.
+
+Define and test handling for refunded/cancelled/expired/revoked entitlements, duplicate purchases, teacher/founder exceptions, and any complimentary or administrator-granted sessions. Do not broaden access to all paid sessions when the room is tied to only one session.
+
+**Current proposal is not compliant with this newly confirmed rule yet.** Its current `join_lesson_note` only checks authentication and room-key format, then adds the caller as a participant. That bearer-key-only behavior must be replaced with the verified entitlement gate before the proposal can be considered deployment-ready. The current disposable SQL tests validate the existing proposal behavior only and must be updated to include entitled and unentitled callers once the authoritative entitlement relation is mapped.
