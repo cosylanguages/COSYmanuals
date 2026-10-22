@@ -7,7 +7,7 @@ Status: **not executed**. This plan requires an isolated disposable database or 
 - [ ] Identify an isolated staging/disposable database and record its project/environment identifier.
 - [ ] Snapshot schema, policies, table ACLs, default ACLs, and function definitions before applying a migration.
 - [ ] Create test accounts: participant A, participant B, unrelated signed-in user C, and a founder test account. Do not use real learner accounts.
-- [ ] Record the intended founder behavior and confirm the live-lesson note join policy: is the 32-hex room key itself the invitation credential, or must the server also verify a trusted live-lesson roster/invitation?
+- [ ] Record the intended founder behavior. Product decision (2026-10-22): an authenticated student with the valid 32-hex room key may join; key possession is the invitation credential. No separate roster check or paid-session gate is required. Confirm key distribution, leakage response, rotation/expiry, and rate-limiting controls before release.
 - [ ] Capture the current client contract in `COSYplatform-source/classroom.html`: join expects a row; save consumes `version`, `content`, and `conflict`; RPC errors retain a local copy.
 - [ ] Apply the candidate SQL only to this isolated environment, after syntax validation.
 
@@ -19,7 +19,7 @@ Status: **not executed**. This plan requires an isolated disposable database or 
 | Invalid room key | Authenticated user supplies malformed key | Rejected; no row created |
 | Valid first join | A joins with a generated valid 32-hex room key and lesson ID | One row returned; A is a participant |
 | Repeat join | A joins the same room and lesson again | Same row; no duplicate participant |
-| Second valid join | B joins using the same room key and lesson ID | B is added; existing note content/version retained |
+| Second valid join | B joins using the same room key and lesson ID | B is added; existing note content/version retained; this is expected bearer-key behavior |
 | Unrelated guessed ID | C attempts save with an existing note UUID but is not a participant/founder | Access denied; content/version unchanged |
 | Participant save | A saves with the current base version | Success; content updated; version increments once |
 | Version conflict | A saves with stale or future base version | Conflict=true; current version/content returned; no overwrite |
@@ -28,7 +28,7 @@ Status: **not executed**. This plan requires an isolated disposable database or 
 | Cross-room isolation | A tries to save B's unrelated room note by UUID | Denied unless A is a participant or approved founder |
 | Concurrent saves | Two participants save from the same base version | One succeeds; the stale writer receives a conflict |
 
-For every denied write, assert the persisted row is unchanged. Do not treat a client-side PeerJS handshake as database authorization. The room key is a bearer secret; tests must not print real keys or tokens in logs.
+For every denied write, assert the persisted row is unchanged. Do not treat a client-side PeerJS handshake as database authorization. The approved policy is that any authenticated caller possessing the valid room key can join; an authenticated user without the key cannot join unless they guess or obtain it. Do not log real keys or tokens. Verify operational controls for distribution, leakage response, rotation/expiry, and rate limiting separately; do not imply the SQL harness implements controls it does not contain.
 
 ## Grant and entitlement regression tests
 
@@ -81,7 +81,7 @@ The harness covers SQL parsing/execution against a minimal schema, unauthenticat
 ## Required access/role matrix before a real staging run
 
 - `anon`: only the explicitly intended public read paths and session-token redemption; no note RPC execution, content writes, or dangerous table privileges.
-- `authenticated` student: only entitlement-matched manual/student-safe content; may join collaborative notes for a live lesson only under the explicitly approved room-invitation / live-lesson membership policy; may save only notes where their UID is a participant.
+- `authenticated` student: only entitlement-matched manual/student-safe content; may join collaborative live-lesson notes when presenting the valid 32-hex bearer room key (no separate roster check or paid-session gate); may save only notes where their UID is a participant.
 - `authenticated` teacher/lesson author: preserve language-authorized read and explicitly intended authoring/publishing operations; verify `is_lesson_author()`-dependent policies individually.
 - `authenticated` founder: preserve founder administration and the exact approved note read/save behavior; verify every policy that depends on `is_founder()`.
 - `service_role` / trusted publisher: preserve the server-side `scripts/publish_to_supabase.js` upsert path; never expose the service-role key to browsers or ordinary client roles.
@@ -95,6 +95,6 @@ The notes are used collaboratively during live lessons. Do not apply the manuals
 
 The current `classroom.html` client sends `room_key` and `lesson_id` (the latter is `currentLessonPath || 'default'`) to `join_lesson_note`; it does not send a session ID. The room key is generated client-side, and `lesson_notes` has no authoritative session ID or room-to-session mapping. The current RPC treats the key as a bearer invitation and adds any authenticated caller presenting it as a participant. The browser-side PeerJS handshake is not a database authorization boundary.
 
-Before changing `join_lesson_note`, confirm how live-lesson participants receive room keys and whether possession of the key is intentionally sufficient. If a trusted roster/invitation check is required, first identify the authoritative live-lesson membership source and server-side mapping from room to lesson/session. Do not infer note authorization from manual access, a generic language/level read grant, a client-supplied flag, or an unverified client-supplied session ID.
+Product decision (2026-10-22): possession of the valid 32-hex room key is intentionally sufficient invitation authorization for an authenticated student. Do not add a separate roster check, paid-session gate, or unverified client-supplied session ID. The client has no authoritative session ID or room-to-session mapping. Before release, document how keys are distributed, avoid logging them, and establish leakage response, rotation/expiry, and rate limiting.
 
-Update the disposable SQL tests to match the approved policy: include authorized live-lesson participants, unrelated authenticated users who know or guess a key, malformed keys, repeated joins, participant-only saves, and version conflicts. If key possession is explicitly approved as the invitation credential, document the key-distribution, leakage, rotation/expiry, and rate-limiting expectations. CI success must not be interpreted as approval to deploy the current draft.
+The disposable SQL tests should reflect the approved bearer-key policy: valid key holders join, malformed keys are rejected, repeat joins do not duplicate participants, unrelated users without the key cannot save, participant-only saves and version conflicts are enforced. The test harness does not prove resistance to online key guessing or implement rate limiting; validate those operational controls separately. CI success must not be interpreted as approval to deploy the draft.
