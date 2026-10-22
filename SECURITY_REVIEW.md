@@ -20,6 +20,17 @@ Before changing grants, check all legitimate app and authoring flows. A safe tar
 
 ### High: exposed SECURITY DEFINER functions
 
+### Critical: note RPCs bypass participant checks
+
+Read-only inspection of function definitions and EXECUTE grants found two authenticated-callable `SECURITY DEFINER` functions that do not check the caller's identity or participant membership inside the function:
+
+- `public.join_lesson_note(room_key text, lesson_id text)` inserts a note row for the supplied room/lesson if missing, then returns the matching row. It does not verify `auth.uid()` or that the caller is listed in `lesson_notes.participants`. The underlying table's RLS policies do not constrain SQL executed as the function owner.
+- `public.save_lesson_note(note_id uuid, content text, base_version integer)` selects a note by ID, returns its existing content on version conflict, or updates the content and version. It does not verify the caller's participant membership. Because it is SECURITY DEFINER, the table's participant-based UPDATE policy cannot be relied on to protect this function.
+
+Both functions are executable by `authenticated` and not by `anon`. This is a high-confidence authorization defect in the function bodies, although exploitability depends on whether an attacker can obtain/guess a room key or note UUID. Do not run exploit tests against live data.
+
+**Remediation priority:** urgently review and fix in staging. Add explicit `auth.uid() IS NOT NULL` checks and verify participant membership for the exact note/room before reading, creating, returning conflict content, or updating. For `join_lesson_note`, decide how participants are securely enrolled; do not allow a caller to self-create access merely by choosing `room_key`. For `save_lesson_note`, lock and authorize the row before returning any existing content. Set a safe fixed search path (prefer `SET search_path = ''` with schema-qualified references). Add tests for unrelated authenticated users, missing identity, legitimate participants, conflict responses, and writes. Deploy only after staging tests and review.
+
 The security advisor reported three SECURITY DEFINER functions callable by `anon`: `public.is_founder()`, `public.is_lesson_author()`, and `public.redeem_session_access_link(text, text)`. It also reported 13 SECURITY DEFINER functions callable by `authenticated`. Some may be intentional APIs; each must be reviewed individually for authorization checks, fixed search paths, and least-privilege EXECUTE grants. In particular, `join_lesson_note` and `save_lesson_note` have mutable/unset search paths per the advisor. Do not revoke access or change function security blindly, because valid product flows may depend on them.
 
 The advisor also reported RLS enabled with no policies on `public.session_access_links`. Confirm that this table is intentionally accessed only through narrowly checked functions and is not expected to be queried directly.
