@@ -66,7 +66,7 @@ try {
     try {
       const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
       for (const item of axe.violations) {
-        errors.push(route + ': axe ' + item.id + ' (' + item.impact + '): ' + item.help);
+        errors.push(route + ': axe ' + item.id + ' (' + item.impact + '): ' + item.help + ' | ' + item.nodes.map(node => node.target.join(', ') + ' [' + node.failureSummary.replace(/\\s+/g, ' ').slice(0, 240) + ']').join(' ; '));
       }
     } catch (error) {
       errors.push(route + ': axe scan failed: ' + error.message);
