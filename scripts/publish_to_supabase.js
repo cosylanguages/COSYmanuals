@@ -5,8 +5,8 @@
  *   SUPABASE_URL
  *   SUPABASE_SERVICE_ROLE_KEY
  *
- * Drafts are read only from the gitignored drafts/ directory. Each draft must
- * have a matching catalog/<manual-id>.json file with language and level fields.
+ * Drafts are read only from the gitignored drafts/ directory. Metadata is read
+ * from catalog/<manual-id>.json when present, otherwise from catalog/manifest.json.
  * Never commit draft content or service-role credentials.
  */
 
@@ -58,22 +58,38 @@ function getSupabaseEndpoint() {
 
 function readManualMetadata(manualId) {
   const metadataPath = path.join(CATALOG_DIR, `${manualId}.json`);
-
-  if (!fs.existsSync(metadataPath)) {
-    throw new Error(
-      `Missing catalog metadata: catalog/${manualId}.json. Refusing to publish with guessed language or level.`
-    );
-  }
-
   let metadata;
-  try {
-    metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
-  } catch (error) {
-    throw new Error(`Invalid JSON in catalog/${manualId}.json: ${error.message}`);
+
+  if (fs.existsSync(metadataPath)) {
+    try {
+      metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
+    } catch (error) {
+      throw new Error(`Invalid JSON in catalog/${manualId}.json: ${error.message}`);
+    }
+  } else {
+    const manifestPath = path.join(CATALOG_DIR, 'manifest.json');
+    if (!fs.existsSync(manifestPath)) {
+      throw new Error(`Neither catalog/${manualId}.json nor catalog/manifest.json exists.`);
+    }
+
+    let manifest;
+    try {
+      manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+    } catch (error) {
+      throw new Error(`Invalid JSON in catalog/manifest.json: ${error.message}`);
+    }
+
+    if (!Array.isArray(manifest)) {
+      throw new Error('catalog/manifest.json must contain a JSON array.');
+    }
+    metadata = manifest.find((entry) => entry && entry.id === manualId);
+    if (!metadata) {
+      throw new Error(`No entry for ${manualId} found in catalog/manifest.json.`);
+    }
   }
 
   if (metadata.id && metadata.id !== manualId) {
-    throw new Error(`Catalog ID mismatch in catalog/${manualId}.json.`);
+    throw new Error(`Catalog ID mismatch for ${manualId}.`);
   }
   if (typeof metadata.language !== 'string' || !/^[a-z]{2}$/.test(metadata.language)) {
     throw new Error(`Catalog metadata for ${manualId} must contain a two-letter lowercase language code.`);
