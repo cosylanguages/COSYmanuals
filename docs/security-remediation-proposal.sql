@@ -87,8 +87,10 @@ begin
   for update;
 
   if not found then
-    return jsonb_build_object('success', false, 'conflict', false,
-                              'error', 'Note not found or access denied');
+    -- Match the existing RPC/client contract: the caller handles RPC errors by
+    -- retaining a local copy. Returning conflict=false here would be misread by
+    -- classroom.html as a successful save with missing version/content fields.
+    raise exception 'Note not found or access denied' using errcode = '42501';
   end if;
 
   -- Match the client contract: data.version and data.content are consumed by
