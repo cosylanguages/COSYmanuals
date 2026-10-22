@@ -1,111 +1,165 @@
 /**
- * publish_to_supabase.js
+ * Publish local Markdown drafts to the protected Supabase manual_content table.
  *
- * Local-only publisher script for COSYmanuals.
- * Reads Markdown manuals from gitignored `drafts/` folder and upserts them into
- * Supabase `manual_content` table using service role key.
+ * Required environment variables:
+ *   SUPABASE_URL
+ *   SUPABASE_SERVICE_ROLE_KEY
  *
- * Requirements:
- * - Environment variables: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
- * - Local drafts in `drafts/` (e.g. `drafts/en-b1-grammar.md`)
+ * Drafts are read only from the gitignored drafts/ directory. Each draft must
+ * have a matching catalog/<manual-id>.json file with language and level fields.
+ * Never commit draft content or service-role credentials.
  */
 
-const fs = require('fs');
-const path = require('path');
+'use strict';
 
-// Try loading dotenv if available
+const fs = require('node:fs');
+const path = require('node:path');
+
 try {
   require('dotenv').config();
-} catch (e) {
-  // dotenv optional
+} catch {
+  // dotenv is optional; environment variables may be supplied by the shell.
 }
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const ROOT_DIR = path.resolve(__dirname, '..');
+const DRAFTS_DIR = path.join(ROOT_DIR, 'drafts');
+const CATALOG_DIR = path.join(ROOT_DIR, 'catalog');
+const ALLOWED_LEVELS = new Set(['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
 
-if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
-  console.error('Error: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY environment variables are required.');
-  console.error('Create a local .env file (gitignored) with these credentials.');
-  process.exit(1);
+function fail(message) {
+  console.error(`Error: ${message}`);
+  process.exitCode = 1;
 }
 
-const DRAFTS_DIR = path.join(__dirname, '..', 'drafts');
-const CATALOG_DIR = path.join(__dirname, '..', 'catalog');
+function getSupabaseEndpoint() {
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+    throw new Error(
+      'SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required. ' +
+      'Set them in your shell or in a local, gitignored .env file.'
+    );
+  }
+
+  let parsed;
+  try {
+    parsed = new URL(SUPABASE_URL);
+  } catch {
+    throw new Error('SUPABASE_URL must be a valid HTTPS URL.');
+  }
+
+  if (parsed.protocol !== 'https:' || parsed.username || parsed.password ||
+      parsed.search || parsed.hash) {
+    throw new Error('SUPABASE_URL must be an HTTPS project URL without credentials, query, or fragment.');
+  }
+
+  return `${parsed.origin}/rest/v1/manual_content`;
+}
+
+function readManualMetadata(manualId) {
+  const metadataPath = path.join(CATALOG_DIR, `${manualId}.json`);
+
+  if (!fs.existsSync(metadataPath)) {
+    throw new Error(
+      `Missing catalog metadata: catalog/${manualId}.json. Refusing to publish with guessed language or level.`
+    );
+  }
+
+  let metadata;
+  try {
+    metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
+  } catch (error) {
+    throw new Error(`Invalid JSON in catalog/${manualId}.json: ${error.message}`);
+  }
+
+  if (metadata.id && metadata.id !== manualId) {
+    throw new Error(`Catalog ID mismatch in catalog/${manualId}.json.`);
+  }
+  if (typeof metadata.language !== 'string' || !/^[a-z]{2}$/.test(metadata.language)) {
+    throw new Error(`Catalog metadata for ${manualId} must contain a two-letter lowercase language code.`);
+  }
+  if (!ALLOWED_LEVELS.has(metadata.level)) {
+    throw new Error(`Catalog metadata for ${manualId} must contain a valid CEFR level (A0-C2).`);
+  }
+
+  return metadata;
+}
 
 async function publishDrafts() {
+  const endpoint = getSupabaseEndpoint();
+
   if (!fs.existsSync(DRAFTS_DIR)) {
-    console.log(`Drafts directory "${DRAFTS_DIR}" does not exist. Creating empty drafts/ directory...`);
-    fs.mkdirSync(DRAFTS_DIR, { recursive: true });
-    console.log('No drafts to publish.');
+    console.log('No drafts/ directory found. Nothing to publish.');
     return;
   }
 
-  const files = fs.readdirSync(DRAFTS_DIR).filter(f => f.endsWith('.md'));
+  const files = fs.readdirSync(DRAFTS_DIR)
+    .filter((file) => file.endsWith('.md'))
+    .sort();
 
   if (files.length === 0) {
-    console.log('No Markdown (.md) files found in drafts/ folder.');
+    console.log('No Markdown drafts found in drafts/. Nothing to publish.');
     return;
   }
 
-  console.log(`Found ${files.length} draft manual(s) to publish: ${files.join(', ')}`);
+  console.log(`Found ${files.length} draft manual(s).`);
+  let failures = 0;
 
   for (const file of files) {
     const manualId = path.basename(file, '.md');
-    const filePath = path.join(DRAFTS_DIR, file);
-    const markdownContent = fs.readFileSync(filePath, 'utf-8');
 
-    // Read metadata from catalog if available
-    let language = 'en';
-    let level = 'A1';
-    const metadataPath = path.join(CATALOG_DIR, `${manualId}.json`);
-    if (fs.existsSync(metadataPath)) {
-      try {
-        const meta = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
-        if (meta.language) language = meta.language;
-        if (meta.level) level = meta.level;
-      } catch (err) {
-        console.warn(`Warning: Could not parse metadata for ${manualId}.json:`, err.message);
-      }
+    if (!/^[a-z]{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/.test(manualId)) {
+      console.error(`Skipping "${file}": filename must use a safe manual ID such as en-b1-grammar.`);
+      failures += 1;
+      continue;
     }
 
-    console.log(`Publishing "${manualId}" (Language: ${language}, Level: ${level})...`);
-
-    // Upsert to Supabase manual_content table using REST API
-    const endpoint = `${SUPABASE_URL.replace(/\/$/, '')}/rest/v1/manual_content`;
-
-    const payload = {
-      manual_id: manualId,
-      language: language,
-      level: level,
-      markdown_content: markdownContent,
-      updated_at: new Date().toISOString()
-    };
-
     try {
-      const response = await fetch(endpoint, {
+      const metadata = readManualMetadata(manualId);
+      const markdownContent = fs.readFileSync(path.join(DRAFTS_DIR, file), 'utf8');
+
+      if (!markdownContent.trim()) {
+        throw new Error('Draft is empty; refusing to publish.');
+      }
+
+      console.log(`Publishing ${manualId} (${metadata.language}, ${metadata.level})...`);
+
+      const response = await fetch(`${endpoint}?on_conflict=manual_id`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'apikey': SUPABASE_SERVICE_ROLE_KEY,
-          'Authorization': `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
-          'Prefer': 'resolution=merge-duplicates'
+          apikey: SUPABASE_SERVICE_ROLE_KEY,
+          Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+          Prefer: 'resolution=merge-duplicates,return=minimal'
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify({
+          manual_id: manualId,
+          language: metadata.language,
+          level: metadata.level,
+          markdown_content: markdownContent,
+          updated_at: new Date().toISOString()
+        })
       });
 
       if (!response.ok) {
-        const errorText = await response.text();
-        console.error(`Failed to publish "${manualId}": ${response.status} ${response.statusText}`, errorText);
-      } else {
-        console.log(`Successfully published "${manualId}" to Supabase!`);
+        const details = (await response.text()).slice(0, 1000);
+        throw new Error(`Supabase returned HTTP ${response.status} ${response.statusText}: ${details}`);
       }
-    } catch (err) {
-      console.error(`Network or fetch error publishing "${manualId}":`, err.message);
+
+      console.log(`Published ${manualId} successfully.`);
+    } catch (error) {
+      failures += 1;
+      console.error(`Failed to publish ${manualId}: ${error.message}`);
     }
   }
+
+  if (failures > 0) {
+    throw new Error(`${failures} of ${files.length} manual(s) failed to publish. Review the errors above.`);
+  }
+
+  console.log(`All ${files.length} manual(s) published successfully.`);
 }
 
-publishDrafts().catch(err => {
-  console.error('Unexpected error in publish script:', err);
-  process.exit(1);
+publishDrafts().catch((error) => {
+  fail(error.message);
 });
