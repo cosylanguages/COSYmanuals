@@ -13,6 +13,14 @@ CREATE TABLE IF NOT EXISTS public.manual_content (
 -- Enable Row Level Security (RLS)
 ALTER TABLE public.manual_content ENABLE ROW LEVEL SECURITY;
 
+-- Least-privilege table grants:
+-- anonymous users cannot read or write gated content;
+-- authenticated users may read (subject to the SELECT RLS policy below);
+-- only the trusted service_role publisher may write.
+REVOKE ALL PRIVILEGES ON TABLE public.manual_content FROM PUBLIC, anon, authenticated;
+GRANT SELECT ON TABLE public.manual_content TO authenticated;
+GRANT ALL PRIVILEGES ON TABLE public.manual_content TO service_role;
+
 -- Drop existing policies if re-applying
 DROP POLICY IF EXISTS "Authenticated users can read manual content" ON public.manual_content;
 DROP POLICY IF EXISTS "Service role can manage manual content" ON public.manual_content;

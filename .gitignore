@@ -1,14 +1,22 @@
+# Dependencies and generated output
 node_modules/
-drafts/
 .cache/
-.env
-.env.local
-*.log
-
-# Deleted/Cleaned artifact categories
+dist/
+test-results/
+reports/screenshots/
 screenshots/
 verification/
 videos/
 dist/videos/
-test-results/
-reports/screenshots/
+
+# Local manual drafts must never enter Git history
+drafts/
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Logs
+*.log

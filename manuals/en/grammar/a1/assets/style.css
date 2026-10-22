@@ -44,6 +44,7 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); line-height: 1.65; font-size: 16px; }
 
 a { color: var(--teal-700); text-decoration: none; transition: color .2s ease; }
+main p a, main li a, main dd a { text-decoration: underline; text-underline-offset: 0.15em; }
 a:hover { color: var(--teal-900); }
 
 .topbar { background: var(--teal-900); color: #fff; padding: 12px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.15); }

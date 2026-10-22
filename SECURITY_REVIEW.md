@@ -1,0 +1,192 @@
+# Security review and safe publishing
+
+## Live audit findings — 2026-10-22
+
+A read-only inspection was performed against the connected Supabase project **COSYlanguages** (EU West). No data, grants, policies, functions, or schema were changed.
+
+### Critical: broad table privileges and default privileges
+
+The live entitlement policy on `public.manual_content` is more restrictive than the earlier repository description: it checks founder, teacher language access, and student language/level access. Do not replace it with a generic authenticated-user policy.
+
+However, the live ACLs for `public.manual_content`, `public.lesson_content`, and `public.student_lesson_content` grant the `anon` role SELECT, TRUNCATE, REFERENCES, TRIGGER, and MAINTAIN privileges. The `authenticated` role also has TRUNCATE and other non-minimal privileges on those tables. The live default privileges for tables created by `postgres` in schema `public` also grant broad privileges to `anon`, `authenticated`, and `service_role`.
+
+RLS does **not** protect against table-level `TRUNCATE`, and it is not a substitute for table grants. The grant inventory is a critical finding. This audit did not test whether the public REST endpoint exposes a path to invoke TRUNCATE; it did verify the database role privileges themselves.
+
+Before changing grants, check all legitimate app and authoring flows. A safe target is:
+- `manual_content`: no access for `anon`; SELECT for `authenticated` subject to the existing entitlement policy; full table access only for the trusted publisher/service role.
+- `lesson_content`: no access for `anon`; retain only the CRUD privileges required by authenticated lesson authors and protected by the existing author policies; remove TRUNCATE, REFERENCES, TRIGGER, and MAINTAIN from client roles.
+- `student_lesson_content`: no access for `anon`; SELECT for `authenticated` subject to the existing entitlement policy; writes only for the trusted publisher/service role unless a verified workflow requires otherwise.
+- Future public-schema tables: default to least privilege, then explicitly grant only the privileges required by each table's API contract. Changing default privileges can affect existing application assumptions, so stage and regression-test it before rollout.
+
+### High: exposed SECURITY DEFINER functions
+
+### Critical: note RPCs bypass participant checks
+
+Read-only inspection of function definitions and EXECUTE grants found two authenticated-callable `SECURITY DEFINER` functions that do not check the caller's identity or participant membership inside the function:
+
+- `public.join_lesson_note(room_key text, lesson_id text)` inserts a note row for the supplied room/lesson if missing, then returns the matching row. It does not verify `auth.uid()` or that the caller is listed in `lesson_notes.participants`. The underlying table's RLS policies do not constrain SQL executed as the function owner.
+- `public.save_lesson_note(note_id uuid, content text, base_version integer)` selects a note by ID, returns its existing content on version conflict, or updates the content and version. It does not verify the caller's participant membership. Because it is SECURITY DEFINER, the table's participant-based UPDATE policy cannot be relied on to protect this function.
+
+Both functions are executable by `authenticated` and not by `anon`. This is a high-confidence authorization defect in the function bodies, although exploitability depends on whether an attacker can obtain/guess a room key or note UUID. Do not run exploit tests against live data.
+
+**Remediation priority:** urgently review and fix in staging. Add explicit `auth.uid() IS NOT NULL` checks and verify participant membership for the exact note/room before reading, creating, returning conflict content, or updating. For `join_lesson_note`, decide how participants are securely enrolled; do not allow a caller to self-create access merely by choosing `room_key`. For `save_lesson_note`, lock and authorize the row before returning any existing content. Set a safe fixed search path (prefer `SET search_path = ''` with schema-qualified references). Add tests for unrelated authenticated users, missing identity, legitimate participants, conflict responses, and writes. Deploy only after staging tests and review.
+
+The security advisor reported three SECURITY DEFINER functions callable by `anon`: `public.is_founder()`, `public.is_lesson_author()`, and `public.redeem_session_access_link(text, text)`. It also reported 13 SECURITY DEFINER functions callable by `authenticated`. Some may be intentional APIs; each must be reviewed individually for authorization checks, fixed search paths, and least-privilege EXECUTE grants. In particular, `join_lesson_note` and `save_lesson_note` have mutable/unset search paths per the advisor. Do not revoke access or change function security blindly, because valid product flows may depend on them.
+
+The advisor also reported RLS enabled with no policies on `public.session_access_links`. Confirm that this table is intentionally accessed only through narrowly checked functions and is not expected to be queried directly.
+
+### Additional performance observations
+
+The performance advisor reported 16 unindexed foreign keys and 19 RLS policies with auth calls that could be wrapped in scalar subqueries to avoid per-row re-evaluation. These are follow-up optimization items, separate from the critical access-control work.
+
+## Read-only verification queries
+
+Run these in the intended project and preserve the output with the change review. Do not apply schema changes to production as part of an unreviewed audit.
+
+```sql
+-- RLS status and forced-RLS setting for sensitive content tables.
+select n.nspname as schema_name, c.relname as table_name,
+       c.relrowsecurity as rls_enabled, c.relforcerowsecurity as rls_forced
+from pg_class c
+join pg_namespace n on n.oid = c.relnamespace
+where n.nspname = 'public'
+  and c.relname in ('manual_content', 'lesson_content', 'student_lesson_content');
+
+-- Inspect the policies. Permissive policies combine with OR.
+select schemaname, tablename, policyname, permissive, roles, cmd, qual, with_check
+from pg_policies
+where schemaname = 'public'
+  and tablename in ('manual_content', 'lesson_content', 'student_lesson_content')
+order by tablename, policyname;
+
+-- Check effective table privileges, including privileges that RLS cannot constrain.
+select c.relname as table_name,
+       has_table_privilege('anon', c.oid, 'SELECT') as anon_select,
+       has_table_privilege('anon', c.oid, 'TRUNCATE') as anon_truncate,
+       has_table_privilege('authenticated', c.oid, 'TRUNCATE') as authenticated_truncate,
+       has_table_privilege('service_role', c.oid, 'SELECT') as service_role_select
+from pg_class c
+join pg_namespace n on n.oid = c.relnamespace
+where n.nspname = 'public'
+  and c.relkind = 'r'
+  and c.relname in ('manual_content', 'lesson_content', 'student_lesson_content')
+order by c.relname;
+
+-- Inspect default privileges for future public-schema tables.
+select n.nspname as schema_name, d.defaclrole::regrole as owner_role,
+       d.defaclobjtype, d.defaclacl
+from pg_default_acl d
+join pg_namespace n on n.oid = d.defaclnamespace
+where n.nspname = 'public' and d.defaclobjtype = 'r';
+```
+
+## Expected authorization behavior
+
+- Anonymous users: no direct access to gated manual or lesson content. Explicit token-based sharing endpoints, if intended, must validate token hash, expiry, revocation, session identity, and returned fields.
+- Authenticated users: access only according to the existing role/language/level/course entitlement rules.
+- Lesson authors and teachers: only the specific authoring and teaching capabilities assigned by the product.
+- Publisher/service role: write access only from a trusted server-side environment; never expose a service-role key to a browser or public CI log.
+
+## Safe validation workflow
+
+1. Confirm whether this connected project is production. No development branches were returned by the branch listing, so do not assume a staging branch is available.
+2. Export/record current grants, policies, relevant function definitions, and a recoverable backup before any proposed database change.
+3. Reproduce the current app's read, authoring, publishing, and share-link workflows in an isolated staging project.
+4. Apply least-privilege grants and default-privilege changes in staging, preserving the existing entitlement policies.
+5. Test anonymous, unentitled authenticated, entitled learner, teacher/author, founder, and publisher behavior; confirm no client role has TRUNCATE on content tables.
+6. Review SECURITY DEFINER functions individually and run the Supabase security advisor again.
+7. Apply an approved migration through the normal deployment process only after staging and regression tests pass.
+
+This report is a snapshot of a read-only live audit, not proof that any proposed fix has been deployed.
+
+## Prepared remediation draft — not applied
+
+A proposed staging-only SQL migration is available at [`docs/security-remediation-proposal.sql`](docs/security-remediation-proposal.sql). It is documentation for review, not an approved or executed migration. It has **not** been run against Supabase.
+
+The proposal makes the note RPCs require an authenticated caller, permits joining with the valid bearer `room_key` under the approved product policy, restricts saves to participants (plus the existing founder allowance), sets an empty `search_path`, and sketches removal of dangerous content-table privileges and broad default grants.
+
+**Product decision recorded (2026-10-22):** an authenticated student with the valid 32-hex-character room key may join collaborative live-lesson notes. The key is the bearer invitation credential; do not add a separate roster check or paid-session gate. The proposal adds authentication, key-format validation, and a hardened RPC search path. Treat the key as a secret: avoid logging it and document distribution, leakage response, rotation/expiry, and rate limiting. This decision does not authorize production deployment; isolated staging, grant review, rollback validation, and current-head CI remain required.
+
+The grant section is intentionally incomplete for deployment: verify all existing grants, table owners and default-privilege owners, and all required SELECT/INSERT/UPDATE/DELETE paths. Preserve the entitlement-aware `manual_content` policy. Run the Supabase security advisor again after staged changes, and prepare rollback before any production migration.
+
+
+### Follow-up source review: classroom note-join contract
+
+A read-only review of the canonical `COSYplatform-source` `classroom.html` and `supabase/migrations/0009_lesson_notes.sql` clarified the intended join contract. The client generates a 10-character room ID and a separate 32-hex-character secret room key; after its client-side PeerJS handshake it calls `join_lesson_note`, which creates the note if missing or adds the authenticated caller to `participants`. The browser handshake is not a database authorization boundary: a signed-in user who obtains the room key can join the note room.
+
+The proposal in `docs/security-remediation-proposal.sql` drafts authentication checks, key-format validation, an empty `search_path`, and participant-only saves (plus founders if existing product policy permits them). These are collaborative COSYplatform live-lesson notes, separate from manuals. Product decision: possession of the valid room key is the invitation credential for authenticated students; there is no separate roster check or paid-session gate. The save response is aligned with the client contract, which consumes `version`, `content`, and `conflict`. The draft still requires isolated staging, ACL review, rollback validation, and CI before release.
+
+This is still a **review draft only**, not an applied migration. Before approval, verify the founder authorization expectation, key handling/logging/expiry, actual client error handling, and all grant/default-privilege effects. The SQL must be parsed and exercised against a disposable/staging database before any deployment; no database changes have been made as part of this follow-up.
+
+
+## Staging verification checklist
+
+The detailed test matrix and rollback gates are now in [`docs/security-staging-test-plan.md`](docs/security-staging-test-plan.md). It covers unauthenticated and invalid-key joins, first/repeated/second-participant joins, unauthorized note UUID writes, participant saves, stale/future version conflicts, founder access, concurrent saves, entitlement regression, and rollback verification. It is a plan only; none of those adversarial tests have been run against a database.
+
+### Additional read-only ACL inventory
+
+A further read-only query found broad default table ACLs for both `postgres` and `supabase_admin` in `public`, including grants to `anon`, `authenticated`, and `service_role`. The proposed SQL now addresses the two observed creator roles, but that portion is deliberately **fail-closed**: revoking all future implicit client table grants also removes default SELECT, so each future table migration must explicitly grant only the minimum required operations and retain appropriate RLS. The current content-table ACLs also show client-role TRUNCATE/REFERENCES/TRIGGER/MAINTAIN privileges. The proposal removes those specific dangerous privileges while leaving ordinary CRUD grants for separate review.
+
+The current security-advisor baseline still reports mutable `search_path` on the two note RPCs, public execution of `is_founder()`, `is_lesson_author()`, and `redeem_session_access_link(...)`, 13 authenticated-callable SECURITY DEFINER functions, and `session_access_links` with RLS but no policies. No database change has been made, so a post-fix advisor run is not yet meaningful; rerun it only after a reviewed staging change.
+
+The browser workflow did complete successfully on commit `2019f73e7ac79b540920c629f5dde68288ee31e4`: keyboard focus, responsive overflow, axe WCAG 2.1 A/AA, and A4 PDF generation passed for English and French sample pages. The current PR head contains later documentation-only commits, so rerun CI against the current head before merge.
+
+### Compatibility follow-up: SQL and client behavior (read-only)
+
+A second read-only pass checked the proposal against the live catalog and canonical `classroom.html` client:
+
+- The connected database reports PostgreSQL **17.6**, so the `MAINTAIN` privilege keyword used by the proposal is supported by the server version. This is syntax compatibility only; it does not validate or execute the migration.
+- `classroom.html` passes the record's `version` as `base_version`, handles `data.conflict` by merging local and remote text and retrying once, and treats RPC errors as “saved locally.” The proposal's authorization exception is therefore safer than returning a success-shaped response for a denied save. Still test that the local copy survives reload/reconnect and that repeated conflicts do not falsely show “saved.”
+- The existing join function initializes new notes at version `1`. The proposal was adjusted to preserve that initial-version contract. Its upsert also now handles a legacy `NULL participants` array without leaving the caller unrecorded.
+- The proposal's save routine calls `public.is_founder()`, but the live function is itself `SECURITY DEFINER` with `search_path = public`, and it is executable by `anon` and `authenticated`. Review/fix that helper's search path and intended EXECUTE grants as a separate, explicitly scoped change before relying on it for authorization. Also review `is_lesson_author()` and `redeem_session_access_link(...)`; their public execution/search-path findings are not fully remediated by changing only the two note RPCs.
+- The proposal's table-level and default-ACL changes have not been parsed or executed in staging. Confirm every object-creator role and the actual publisher/reader grant matrix first; do not infer that a syntactically valid `REVOKE` preserves application behavior.
+
+These checks remain static/read-only. No migration, grant, policy, function, or lesson-content changes were made in Supabase.
+
+### Default-privilege scope and helper-function dependencies
+
+A follow-up read-only catalog query confirms default ACL entries for `public` tables, sequences, and functions under both `postgres` and `supabase_admin`. The draft proposal now includes default-privilege revokes for all three object types under those two roles. This is intentionally fail-closed and is not a drop-in production migration: each migration must explicitly grant the exact required table/sequence privileges and function EXECUTE rights, and all roles that can create public objects must be inventoried first. The inventory also shows defaults in other schemas; the proposal is scoped to `public` and must not be broadened to platform-managed schemas without a separate review.
+
+Read-only effective-privilege checks also show `anon` currently has table-level SELECT on several tables whose RLS policies reference `is_founder()` or `is_lesson_author()` (including `lesson_content`, `manual_content`, `lesson_authors`, and others). That does not alone prove data exposure—the policies and function behavior matter—but it means helper EXECUTE grants and each affected policy must be reviewed together. Do not revoke helper execution or change its search path in isolation without testing every dependent RLS policy and supported anonymous/authenticated access path.
+
+The proposed migration still does not remediate existing grants on `is_founder()`, `is_lesson_author()`, or `redeem_session_access_link(...)`; it only proposes safer defaults for newly created functions. These existing functions require a separate reviewed change that preserves intentional policy evaluation and session-link redemption. No database changes were made.
+
+### Final pre-deployment review checkpoint
+
+- GitHub Actions for PR head `45ed41b10e1ceb2668ac6832b78fea2d29d3b6a4` completed successfully: Link Check and Repository quality checks (including the browser smoke job). Subsequent security-document/proposal edits require fresh CI on the newest head before merge.
+- Source migration `COSYplatform-source/supabase/migrations/0009_lesson_notes.sql` initializes note versions at `0`, and `classroom.html` uses a local fallback record with version `0`. The proposal was corrected to preserve version-zero initialization. Treat this as an important client/data contract; do not reset existing rows or version counters as part of this change.
+- `public.is_founder()` is SECURITY DEFINER with `search_path=public`, executable by `anon` and `authenticated`; `public.is_lesson_author()` is SECURITY DEFINER with `search_path=public` and has a PUBLIC EXECUTE grant; `public.redeem_session_access_link(text,text)` is SECURITY DEFINER with an empty search path and executable by `anon` and `authenticated`. Redemption is intentionally a public-token flow, so do not revoke it blindly. Review its token entropy, rate limiting, use-count race behavior, expiry/revocation checks, and returned fields; preserve intended public redemption while restricting unrelated helper functions as policy dependencies permit.
+- The `public` RLS policies referencing `is_founder()` and `is_lesson_author()` span access grants, CMS overrides, CRM tables, lesson answers/authors/content/notes/submissions, manual and student-safe content, profiles, role changes, session catalog/content/grants/revisions/sources/teacher notes, teacher languages, and teacher-student relations. Some policies apply to `PUBLIC` and some only to `authenticated`; capture the full policy inventory in staging and test anonymous, authenticated non-founder, teacher, student, lesson-author, founder, and service-role behavior before changing helper ACLs or search paths.
+- Publisher workflow review: `scripts/publish_to_supabase.js` uses `SUPABASE_SERVICE_ROLE_KEY` and upserts `manual_content` through the service-role API. Preserve this server-side publisher path; never replace its key with an anon/authenticated client or expose the key in CI logs. Reader access remains controlled by the existing `Entitled users read manual content` RLS policy and its founder/teacher/student language/level rules.
+- No approved non-billable staging environment is available through the connected Supabase project. The project's existing public schema has create permission limited to owner/admin roles, and `private` schema is not available to `anon`; do not attempt to create a test schema or role on the live project as a workaround. A local ephemeral PostgreSQL/Supabase-compatible harness can provide useful parser/behavior tests, but it does not replace staging against the real Supabase auth/RLS/Data API configuration.
+
+Deployment gate remains blocked until current-head CI is green, the helper/RLS grant matrix is approved, and the candidate plus exact rollback have passed in a confirmed isolated environment. The room-key bearer policy is now explicitly accepted, but key-handling controls still need to be documented. No Supabase migration or database modification has been made.
+
+### Catalog dependency inventory and legitimate publisher/reader paths
+
+A grouped read-only `pg_policies` inventory found **32 policies across 22 public tables** whose expressions reference `public.is_founder()`, **3 policies on `lesson_content`** that reference `public.is_lesson_author()`, and **1 policy on `profiles`** that references `private.is_founder()`. The public-founder policy set covers access grants, CMS overrides, CRM activities/contacts/deals, lesson answers/authors/content/notes/submissions, manual content, profiles, role changes, session catalog/content/grants/revisions/sources/teacher notes, teacher languages, and teacher-student relations. Policies apply to different role sets (`PUBLIC`, `anon`/`authenticated`, or `authenticated` only), so one global helper ACL change cannot be assumed safe.
+
+Effective function ACLs observed read-only:
+
+- `public.is_founder()`: SECURITY DEFINER, `search_path=public`; EXECUTE granted to `anon`, `authenticated`, and `service_role`.
+- `public.is_lesson_author()`: SECURITY DEFINER, `search_path=public`; explicit EXECUTE to `anon`, `authenticated`, `service_role`, and `PUBLIC`.
+- `private.is_founder()`: SECURITY DEFINER, empty search path; EXECUTE to `authenticated` and `service_role`, not `anon`. The `private` schema is not usable by `anon`.
+- `public.redeem_session_access_link(text,text)`: SECURITY DEFINER, empty search path; EXECUTE to `anon`, `authenticated`, and `service_role`. This is an intended token-redemption entry point; preserve its public use if product requirements depend on share links, but review token entropy, throttling, expiry/revocation and returned data. `session_access_links` has RLS enabled and no direct policies, so the definer function is the relevant access path.
+
+Read-only policy/grant matrix for content tables:
+
+- `manual_content`: reader policy is authenticated entitlement-based (founder, teacher language access, student language and level). A separate `service_role` ALL policy supports the trusted publisher. `scripts/publish_to_supabase.js` uses the service-role key for `INSERT ... on_conflict=manual_id` upserts, so backend publisher INSERT/UPDATE must continue to work. The connected project currently gives `anon` SELECT table privilege, but no anon-targeted RLS policy was found on this table; table privilege alone does not mean anon can read rows.
+- `lesson_content`: author INSERT/UPDATE and read policies depend on `is_lesson_author()`; delete is founder-only; separate reader policies cover founder and entitled teachers. Anonymous table-level SELECT/INSERT privileges do not bypass RLS, but function execution errors or changed helper behavior can break policy evaluation.
+- `student_lesson_content`: the existing authenticated reader policy is entitlement-based for founder/teacher/student language and level. Do not replace it with blanket authenticated access.
+
+These findings support a staged approach: preserve existing policy expressions and table grants for ordinary CRUD until the role matrix is tested; revoke only the dangerous table-level privileges in the candidate proposal; harden helper search paths and EXECUTE grants in a separately reviewed policy-aware change. Test anonymous requests, ordinary authenticated users, teachers/authors, students, founders, and the trusted service-role publisher against each affected table. No live permissions or policies were changed.
+
+## Product clarification: live-lesson collaboration, not manual access
+
+The notes are collaborative COSYplatform notes used during live lessons, separate from manuals. Do not apply the manuals' language/level access rule to notes as a substitute for live-lesson participation, and do not add a paid-session entitlement gate based on the earlier mistaken statement.
+
+The current `classroom.html` client sends `room_key` and `lesson_id` (the latter is `currentLessonPath || 'default'`) to `join_lesson_note`; it does not send a session ID. The room key is generated client-side, and `lesson_notes` has no authoritative session ID or room-to-session mapping. The current RPC treats the key as a bearer invitation and adds any authenticated caller presenting it as a participant. The browser-side PeerJS handshake is not a database authorization boundary.
+
+Product decision (2026-10-22): possession of the valid 32-hex room key is intentionally sufficient invitation authorization for an authenticated student. Do not add a separate roster check, paid-session gate, or unverified client-supplied session ID. The client has no authoritative session ID or room-to-session mapping. Before release, document how keys are distributed, avoid logging them, and establish leakage response, rotation/expiry, and rate limiting.
+
+The disposable SQL tests should reflect the approved bearer-key policy: valid key holders join, malformed keys are rejected, repeat joins do not duplicate participants, unrelated users without the key cannot save, participant-only saves and version conflicts are enforced. The test harness does not prove resistance to online key guessing or implement rate limiting; validate those operational controls separately. CI success must not be interpreted as approval to deploy the draft.

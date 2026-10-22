@@ -23,11 +23,21 @@
    SUPABASE_URL=https://your-supabase-project.supabase.co
    SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
    ```
-3. Run the local publisher script:
+3. Validate the catalog and run automated tests:
+   ```bash
+   node scripts/validate-catalog.mjs
+   node --test
+   node scripts/check-internal-links.mjs manuals
+   ```
+4. Run the publisher in dry-run mode first. It validates draft filenames, content, and catalog metadata without network requests or credentials:
+   ```bash
+   node scripts/publish_to_supabase.js --dry-run
+   ```
+5. Only after reviewing the dry-run output, publish from a trusted local environment with the required Supabase credentials:
    ```bash
    node scripts/publish_to_supabase.js
    ```
-4. DB Schema can be updated using `scripts/schema.sql`.
+6. Review `SECURITY_REVIEW.md` before any production database changes. The SQL schema is not a substitute for auditing all deployed grants and RLS policies.
 
 ---
 
