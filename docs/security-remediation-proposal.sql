@@ -1,13 +1,18 @@
 -- PROPOSAL ONLY — DO NOT APPLY DIRECTLY TO PRODUCTION.
 -- Prepared 2026-10-22 from a read-only audit of the connected Supabase project.
--- Review the room enrollment/product flow and test in an isolated staging database first.
+-- Canonical client review: COSYplatform-source/classroom.html and
+-- supabase/migrations/0009_lesson_notes.sql.
 --
--- This proposal intentionally does not create participants from knowledge of room_key.
--- The current join_lesson_note function creates a note and returns it to any caller who
--- supplies a room key. A secure replacement must use an established enrollment/invitation
--- mechanism. Until that mechanism is identified, this version permits existing participants
--- (and founders only if product requirements explicitly permit it) to retrieve an existing
--- note, and does not create new notes.
+-- The client generates a separate 32-hex-character bearer room key and calls
+-- join_lesson_note after a browser-side PeerJS handshake. That handshake is NOT a
+-- database authorization boundary. This proposal preserves the current signed-in
+-- bearer-key join contract, validates the key format, and checks auth.uid().
+-- Anyone who obtains the room key can join; confirm that this is the intended product
+-- contract, and review key leakage, logging, rotation/expiry, and rate limiting.
+--
+-- This file is a review draft only. It has not been parsed/applied against staging.
+-- Grant changes below are intentionally conservative/incomplete pending a full grant
+-- inventory, owner/default-privilege review, and testing of legitimate publisher flows.
 
 begin;
 
@@ -136,8 +141,8 @@ commit;
 -- 5) Run functional tests for each supported enrollment, authoring, publishing, and note flow.
 --
 -- IMPORTANT: This proposal is not yet merge-ready:
--- * join_lesson_note no longer self-creates rows. Confirm and implement a trusted room
---   creation/invitation/enrollment flow before deploying, or this can break valid clients.
+-- * join_lesson_note preserves self-join based on a 32-hex bearer key. Confirm that this
+--   remains the intended authorization model; browser-side PeerJS checks are not sufficient.
 -- * REVOKE from PUBLIC affects all roles that inherit PUBLIC grants. Check current grants.
 -- * Default privileges must be set for every role that creates public tables.
 -- * Use a backup/rollback plan and apply only through an approved staging migration.
