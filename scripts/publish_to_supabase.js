@@ -56,8 +56,8 @@ function getSupabaseEndpoint() {
   return `${parsed.origin}/rest/v1/manual_content`;
 }
 
-function readManualMetadata(manualId) {
-  const metadataPath = path.join(CATALOG_DIR, `${manualId}.json`);
+function readManualMetadata(manualId, catalogDir = CATALOG_DIR) {
+  const metadataPath = path.join(catalogDir, `${manualId}.json`);
   let metadata;
 
   if (fs.existsSync(metadataPath)) {
@@ -67,7 +67,7 @@ function readManualMetadata(manualId) {
       throw new Error(`Invalid JSON in catalog/${manualId}.json: ${error.message}`);
     }
   } else {
-    const manifestPath = path.join(CATALOG_DIR, 'manifest.json');
+    const manifestPath = path.join(catalogDir, 'manifest.json');
     if (!fs.existsSync(manifestPath)) {
       throw new Error(`Neither catalog/${manualId}.json nor catalog/manifest.json exists.`);
     }
@@ -101,15 +101,19 @@ function readManualMetadata(manualId) {
   return metadata;
 }
 
-async function publishDrafts() {
-  const endpoint = getSupabaseEndpoint();
+async function publishDrafts(options = {}) {
+  const rootDir = path.resolve(options.rootDir || ROOT_DIR);
+  const draftsDir = path.join(rootDir, 'drafts');
+  const catalogDir = path.join(rootDir, 'catalog');
+  const dryRun = options.dryRun ?? process.argv.includes('--dry-run');
+  const endpoint = dryRun ? null : getSupabaseEndpoint();
 
-  if (!fs.existsSync(DRAFTS_DIR)) {
+  if (!fs.existsSync(draftsDir)) {
     console.log('No drafts/ directory found. Nothing to publish.');
     return;
   }
 
-  const files = fs.readdirSync(DRAFTS_DIR)
+  const files = fs.readdirSync(draftsDir)
     .filter((file) => file.endsWith('.md'))
     .sort();
 
@@ -131,11 +135,16 @@ async function publishDrafts() {
     }
 
     try {
-      const metadata = readManualMetadata(manualId);
-      const markdownContent = fs.readFileSync(path.join(DRAFTS_DIR, file), 'utf8');
+      const metadata = readManualMetadata(manualId, catalogDir);
+      const markdownContent = fs.readFileSync(path.join(draftsDir, file), 'utf8');
 
       if (!markdownContent.trim()) {
         throw new Error('Draft is empty; refusing to publish.');
+      }
+
+      if (dryRun) {
+        console.log(`DRY RUN: validated ${manualId} (${metadata.language}, ${metadata.level}); no network request made.`);
+        continue;
       }
 
       console.log(`Publishing ${manualId} (${metadata.language}, ${metadata.level})...`);
@@ -176,6 +185,10 @@ async function publishDrafts() {
   console.log(`All ${files.length} manual(s) published successfully.`);
 }
 
-publishDrafts().catch((error) => {
-  fail(error.message);
-});
+if (require.main === module) {
+  publishDrafts().catch((error) => {
+    fail(error.message);
+  });
+}
+
+module.exports = { getSupabaseEndpoint, readManualMetadata, publishDrafts };
