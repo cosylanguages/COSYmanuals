@@ -180,3 +180,13 @@ Read-only policy/grant matrix for content tables:
 - `student_lesson_content`: the existing authenticated reader policy is entitlement-based for founder/teacher/student language and level. Do not replace it with blanket authenticated access.
 
 These findings support a staged approach: preserve existing policy expressions and table grants for ordinary CRUD until the role matrix is tested; revoke only the dangerous table-level privileges in the candidate proposal; harden helper search paths and EXECUTE grants in a separately reviewed policy-aware change. Test anonymous requests, ordinary authenticated users, teachers/authors, students, founders, and the trusted service-role publisher against each affected table. No live permissions or policies were changed.
+
+## Confirmed product rule: paid session entitlement gates room joining
+
+The product requirement is now explicit: a user who has paid for / holds a valid entitlement to the relevant session should be allowed to join that session. A room key by itself is not sufficient authorization for an otherwise unentitled user.
+
+Before changing `join_lesson_note`, trace the authoritative paid-session entitlement records and the exact mapping between session, room key, and lesson. The join RPC must verify the authenticated user's active entitlement for that specific session server-side before inserting or appending a participant. Reuse the canonical entitlement/session authorization logic where possible; do not infer payment from possession of a room key, a browser handshake, a client-supplied flag, or a client-supplied session ID that is not independently verified.
+
+Define and test handling for refunded/cancelled/expired/revoked entitlements, duplicate purchases, teacher/founder exceptions, and any complimentary or administrator-granted sessions. Do not broaden access to all paid sessions when the room is tied to only one session.
+
+**Current proposal is not compliant with this newly confirmed rule yet.** Its current `join_lesson_note` only checks authentication and room-key format, then adds the caller as a participant. That bearer-key-only behavior must be replaced with the verified entitlement gate before the proposal can be considered deployment-ready. The current disposable SQL tests validate the existing proposal behavior only and must be updated to include entitled and unentitled callers once the authoritative entitlement relation is mapped.
