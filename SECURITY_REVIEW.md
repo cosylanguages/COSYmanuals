@@ -130,3 +130,15 @@ A further read-only query found broad default table ACLs for both `postgres` and
 The current security-advisor baseline still reports mutable `search_path` on the two note RPCs, public execution of `is_founder()`, `is_lesson_author()`, and `redeem_session_access_link(...)`, 13 authenticated-callable SECURITY DEFINER functions, and `session_access_links` with RLS but no policies. No database change has been made, so a post-fix advisor run is not yet meaningful; rerun it only after a reviewed staging change.
 
 The browser workflow did complete successfully on commit `2019f73e7ac79b540920c629f5dde68288ee31e4`: keyboard focus, responsive overflow, axe WCAG 2.1 A/AA, and A4 PDF generation passed for English and French sample pages. The current PR head contains later documentation-only commits, so rerun CI against the current head before merge.
+
+### Compatibility follow-up: SQL and client behavior (read-only)
+
+A second read-only pass checked the proposal against the live catalog and canonical `classroom.html` client:
+
+- The connected database reports PostgreSQL **17.6**, so the `MAINTAIN` privilege keyword used by the proposal is supported by the server version. This is syntax compatibility only; it does not validate or execute the migration.
+- `classroom.html` passes the record's `version` as `base_version`, handles `data.conflict` by merging local and remote text and retrying once, and treats RPC errors as “saved locally.” The proposal's authorization exception is therefore safer than returning a success-shaped response for a denied save. Still test that the local copy survives reload/reconnect and that repeated conflicts do not falsely show “saved.”
+- The existing join function initializes new notes at version `1`. The proposal was adjusted to preserve that initial-version contract. Its upsert also now handles a legacy `NULL participants` array without leaving the caller unrecorded.
+- The proposal's save routine calls `public.is_founder()`, but the live function is itself `SECURITY DEFINER` with `search_path = public`, and it is executable by `anon` and `authenticated`. Review/fix that helper's search path and intended EXECUTE grants as a separate, explicitly scoped change before relying on it for authorization. Also review `is_lesson_author()` and `redeem_session_access_link(...)`; their public execution/search-path findings are not fully remediated by changing only the two note RPCs.
+- The proposal's table-level and default-ACL changes have not been parsed or executed in staging. Confirm every object-creator role and the actual publisher/reader grant matrix first; do not infer that a syntactically valid `REVOKE` preserves application behavior.
+
+These checks remain static/read-only. No migration, grant, policy, function, or lesson-content changes were made in Supabase.
