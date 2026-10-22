@@ -98,3 +98,13 @@ where n.nspname = 'public' and d.defaclobjtype = 'r';
 7. Apply an approved migration through the normal deployment process only after staging and regression tests pass.
 
 This report is a snapshot of a read-only live audit, not proof that any proposed fix has been deployed.
+
+## Prepared remediation draft — not applied
+
+A proposed staging-only SQL migration is available at [`docs/security-remediation-proposal.sql`](docs/security-remediation-proposal.sql). It is documentation for review, not an approved or executed migration. It has **not** been run against Supabase.
+
+The proposal makes the note RPCs require an authenticated caller and existing participant membership, sets an empty `search_path`, and sketches removal of dangerous content-table privileges and broad default grants. It deliberately does not trust knowledge of `room_key` as enrollment proof.
+
+**Important design blocker:** the current `join_lesson_note` RPC creates a note row on demand. The proposal stops that behavior because no trusted invitation/enrollment mechanism has yet been verified. Before any deployment, trace the real client flow and define how legitimate participants are added to `participants`; then test valid first-time joins, existing participant joins, nonparticipant reads/writes, unauthenticated calls, version conflicts, and founder/author workflows in staging.
+
+The grant section is intentionally incomplete for deployment: verify all existing grants, table owners and default-privilege owners, and all required SELECT/INSERT/UPDATE/DELETE paths. Preserve the entitlement-aware `manual_content` policy. Run the Supabase security advisor again after staged changes, and prepare rollback before any production migration.
