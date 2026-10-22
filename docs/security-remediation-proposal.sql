@@ -140,6 +140,23 @@ alter default privileges for role postgres in schema public
 alter default privileges for role supabase_admin in schema public
   revoke all on tables from public, anon, authenticated;
 
+-- The same read-only catalog inventory shows client grants on future sequences
+-- and functions. Without addressing these object types, a future SECURITY DEFINER
+-- RPC may inherit EXECUTE for client roles, and client roles may inherit sequence
+-- privileges. Treat this as a fail-closed default: grant only what each migration
+-- actually requires and test all application paths in staging.
+alter default privileges for role postgres in schema public
+  revoke all on sequences from public, anon, authenticated;
+
+alter default privileges for role supabase_admin in schema public
+  revoke all on sequences from public, anon, authenticated;
+
+alter default privileges for role postgres in schema public
+  revoke execute on functions from public, anon, authenticated;
+
+alter default privileges for role supabase_admin in schema public
+  revoke execute on functions from public, anon, authenticated;
+
 commit;
 
 -- POST-APPLY VERIFICATION QUERIES (run only in staging):
