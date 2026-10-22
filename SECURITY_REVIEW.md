@@ -103,7 +103,7 @@ This report is a snapshot of a read-only live audit, not proof that any proposed
 
 A proposed staging-only SQL migration is available at [`docs/security-remediation-proposal.sql`](docs/security-remediation-proposal.sql). It is documentation for review, not an approved or executed migration. It has **not** been run against Supabase.
 
-The proposal makes the note RPCs require an authenticated caller and existing participant membership, sets an empty `search_path`, and sketches removal of dangerous content-table privileges and broad default grants. It deliberately does not trust knowledge of `room_key` as enrollment proof.
+The proposal makes the note RPCs require an authenticated caller, permits joining with the valid bearer `room_key` under the approved product policy, restricts saves to participants (plus the existing founder allowance), sets an empty `search_path`, and sketches removal of dangerous content-table privileges and broad default grants.
 
 **Product decision recorded (2026-10-22):** an authenticated student with the valid 32-hex-character room key may join collaborative live-lesson notes. The key is the bearer invitation credential; do not add a separate roster check or paid-session gate. The proposal adds authentication, key-format validation, and a hardened RPC search path. Treat the key as a secret: avoid logging it and document distribution, leakage response, rotation/expiry, and rate limiting. This decision does not authorize production deployment; isolated staging, grant review, rollback validation, and current-head CI remain required.
 
@@ -160,7 +160,7 @@ The proposed migration still does not remediate existing grants on `is_founder()
 - Publisher workflow review: `scripts/publish_to_supabase.js` uses `SUPABASE_SERVICE_ROLE_KEY` and upserts `manual_content` through the service-role API. Preserve this server-side publisher path; never replace its key with an anon/authenticated client or expose the key in CI logs. Reader access remains controlled by the existing `Entitled users read manual content` RLS policy and its founder/teacher/student language/level rules.
 - No approved non-billable staging environment is available through the connected Supabase project. The project's existing public schema has create permission limited to owner/admin roles, and `private` schema is not available to `anon`; do not attempt to create a test schema or role on the live project as a workaround. A local ephemeral PostgreSQL/Supabase-compatible harness can provide useful parser/behavior tests, but it does not replace staging against the real Supabase auth/RLS/Data API configuration.
 
-Deployment gate remains blocked until current-head CI is green, the room-key bearer capability is explicitly accepted, the helper/RLS grant matrix is approved, and the candidate plus exact rollback have passed in a confirmed isolated environment. No Supabase migration or database modification has been made.
+Deployment gate remains blocked until current-head CI is green, the helper/RLS grant matrix is approved, and the candidate plus exact rollback have passed in a confirmed isolated environment. The room-key bearer policy is now explicitly accepted, but key-handling controls still need to be documented. No Supabase migration or database modification has been made.
 
 ### Catalog dependency inventory and legitimate publisher/reader paths
 
