@@ -7,7 +7,7 @@ Status: **not executed**. This plan requires an isolated disposable database or 
 - [ ] Identify an isolated staging/disposable database and record its project/environment identifier.
 - [ ] Snapshot schema, policies, table ACLs, default ACLs, and function definitions before applying a migration.
 - [ ] Create test accounts: participant A, participant B, unrelated signed-in user C, and a founder test account. Do not use real learner accounts.
-- [ ] Record the intended founder behavior and confirm the room key is a bearer capability.
+- [ ] Record the intended founder behavior and confirm the live-lesson note join policy: is the 32-hex room key itself the invitation credential, or must the server also verify a trusted live-lesson roster/invitation?
 - [ ] Capture the current client contract in `COSYplatform-source/classroom.html`: join expects a row; save consumes `version`, `content`, and `conflict`; RPC errors retain a local copy.
 - [ ] Apply the candidate SQL only to this isolated environment, after syntax validation.
 
@@ -81,32 +81,20 @@ The harness covers SQL parsing/execution against a minimal schema, unauthenticat
 ## Required access/role matrix before a real staging run
 
 - `anon`: only the explicitly intended public read paths and session-token redemption; no note RPC execution, content writes, or dangerous table privileges.
-- `authenticated` student: only entitlement-matched manual/student-safe content; may join a note only if the bearer-room-key policy is explicitly approved; may save only notes where their UID is a participant.
+- `authenticated` student: only entitlement-matched manual/student-safe content; may join collaborative notes for a live lesson only under the explicitly approved room-invitation / live-lesson membership policy; may save only notes where their UID is a participant.
 - `authenticated` teacher/lesson author: preserve language-authorized read and explicitly intended authoring/publishing operations; verify `is_lesson_author()`-dependent policies individually.
 - `authenticated` founder: preserve founder administration and the exact approved note read/save behavior; verify every policy that depends on `is_founder()`.
 - `service_role` / trusted publisher: preserve the server-side `scripts/publish_to_supabase.js` upsert path; never expose the service-role key to browsers or ordinary client roles.
 - object owners (`postgres`, `supabase_admin`, plus any additional creator roles found in the target): verify defaults independently for tables, sequences, and functions. Do not alter platform-managed schemas as part of this public-schema proposal.
 
-The room key is a bearer capability in the current client. Product approval must explicitly answer: **Is possession of the 32-hex key alone sufficient to join, or must a trusted invitation/enrollment check also be required?** Until that decision is recorded, the join RPC change is not deployment-ready.
+The room key is a bearer capability in the current client. Product clarification on 2026-10-22 establishes that `lesson_notes` are collaborative COSYplatform notes used during live lessons, separate from manuals. It does **not** establish a paid-session requirement. The remaining authorization decision is: **Is possession of the 32-hex room key the intended live-lesson invitation credential, or must the server also verify a trusted live-lesson roster/invitation?** Until that is recorded, the join RPC change is not deployment-ready.
 
-## Confirmed product rule: paid session entitlement gates room joining
+## Product clarification: live-lesson collaboration, not manual access
 
-The product requirement is now explicit: a user who has paid for / holds a valid entitlement to the relevant session should be allowed to join that session. A room key by itself is not sufficient authorization for an otherwise unentitled user.
+The notes are used collaboratively during live lessons. Do not apply the manuals' language/level access rule to notes as a substitute for live-lesson participation, and do not add a paid-session entitlement gate based on the earlier mistaken statement.
 
-Before changing `join_lesson_note`, trace the authoritative paid-session entitlement records and the exact mapping between session, room key, and lesson. The join RPC must verify the authenticated user's active entitlement for that specific session server-side before inserting or appending a participant. Reuse the canonical entitlement/session authorization logic where possible; do not infer payment from possession of a room key, a browser handshake, a client-supplied flag, or a client-supplied session ID that is not independently verified.
+The current `classroom.html` client sends `room_key` and `lesson_id` (the latter is `currentLessonPath || 'default'`) to `join_lesson_note`; it does not send a session ID. The room key is generated client-side, and `lesson_notes` has no authoritative session ID or room-to-session mapping. The current RPC treats the key as a bearer invitation and adds any authenticated caller presenting it as a participant. The browser-side PeerJS handshake is not a database authorization boundary.
 
-Define and test handling for refunded/cancelled/expired/revoked entitlements, duplicate purchases, teacher/founder exceptions, and any complimentary or administrator-granted sessions. Do not broaden access to all paid sessions when the room is tied to only one session.
+Before changing `join_lesson_note`, confirm how live-lesson participants receive room keys and whether possession of the key is intentionally sufficient. If a trusted roster/invitation check is required, first identify the authoritative live-lesson membership source and server-side mapping from room to lesson/session. Do not infer note authorization from manual access, a generic language/level read grant, a client-supplied flag, or an unverified client-supplied session ID.
 
-**Current proposal is not compliant with this newly confirmed rule yet.** Its current `join_lesson_note` only checks authentication and room-key format, then adds the caller as a participant. That bearer-key-only behavior must be replaced with the verified entitlement gate before the proposal can be considered deployment-ready. The current disposable SQL tests validate the existing proposal behavior only and must be updated to include entitled and unentitled callers once the authoritative entitlement relation is mapped.
-
-## Paid-session entitlement gate: confirmed rule and unresolved data binding
-
-Product decision confirmed 2026-10-22: a user with a valid paid entitlement for the relevant session should be allowed to join; possession of the room key alone must not authorize an unentitled user.
-
-Read-only catalog review found `public.session_grants(user_id, session_id, valid_until, source, ...)` and `public.can_read_session(p_session_id text)`. The existing `can_read_session` helper returns true for founders, teachers with the relevant language, currently valid explicit `session_grants`, and currently valid language/level `access_grants` for published sessions. This is useful existing authorization logic, but it represents general read entitlement, not strictly proof of payment.
-
-**Critical integration gap:** the current `classroom.html` RPC call sends `room_key` and `lesson_id`, where `lesson_id` is `currentLessonPath || 'default'`. It does not send a session ID. The current client generates the room key client-side, and the current `lesson_notes` schema has no authoritative session ID or room-to-session mapping. Therefore it is not safe to call `can_read_session(lesson_id)` or trust a client-supplied session ID: there is no verified mapping tying that room key to the paid session.
-
-Before implementing the gate, design a server-authoritative mapping from a room capability to a canonical `session_catalog.session_id` (for example, an explicit room/session record created by a trusted session-creation flow). At join time, resolve the session from that mapping, authenticate the caller, verify the applicable active entitlement server-side, and only then add them as a participant. Decide whether founders/teachers and complimentary grants are permitted exceptions; check `valid_until`, and define refund/cancellation/revocation semantics. Do not equate a generic language/level read grant with payment unless product policy explicitly says that grant is sufficient.
-
-The current SQL proposal remains deliberately incomplete and non-deployable. The disposable PostgreSQL harness only checks the existing draft's current behavior; it does not prove the new paid-entitlement requirement. Add entitled-user, unentitled-user, expired/revoked-grant, wrong-session, and mismatched-room/session cases after the authoritative mapping and policy are implemented. CI success must not be interpreted as approval to deploy this draft.
+Update the disposable SQL tests to match the approved policy: include authorized live-lesson participants, unrelated authenticated users who know or guess a key, malformed keys, repeated joins, participant-only saves, and version conflicts. If key possession is explicitly approved as the invitation credential, document the key-distribution, leakage, rotation/expiry, and rate-limiting expectations. CI success must not be interpreted as approval to deploy the current draft.
