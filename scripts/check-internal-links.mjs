@@ -44,13 +44,14 @@ function targetExists(sourceFile, rawTarget, rootDir = process.cwd()) {
   }
 }
 
-export function findBrokenLinks(rootDir) {
+export function findBrokenLinks(rootDir, boundaryDir = rootDir) {
   const root = path.resolve(rootDir);
+  const boundary = path.resolve(boundaryDir);
   const broken = [];
   for (const file of walk(root)) {
     const html = fs.readFileSync(file, 'utf8');
     for (const target of extractLocalTargets(html)) {
-      if (!targetExists(file, target, root)) broken.push({ file, target });
+      if (!targetExists(file, target, boundary)) broken.push({ file, target });
     }
   }
   return broken;
@@ -77,7 +78,7 @@ function run() {
       const html = fs.readFileSync(absolute, 'utf8');
       return extractLocalTargets(html).filter(t => !targetExists(absolute, t, root)).map(t => ({file:absolute,target:t}));
     }
-    return findBrokenLinks(absolute);
+    return findBrokenLinks(absolute, root);
   });
 
   if (broken.length) {
