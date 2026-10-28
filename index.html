@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COSYmanuals - Public Manual Catalog & Learning Portal</title>
+  <meta name="description" content="COSYmanuals is the public manual catalog and gated learning portal for COSYlanguages, providing grammar references, vocabulary manuals, and interactive language bootcamps.">
+  <meta property="og:title" content="COSYmanuals - Public Manual Catalog & Learning Portal">
+  <meta property="og:description" content="Browse language manuals, grammar references, communication frames, and interactive language bootcamps across English, French, German, Russian, Spanish, Italian, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cosylanguages.github.io/COSYmanuals/">
+  <meta property="og:site_name" content="COSYmanuals">
+  <meta property="og:image" content="https://cosylanguages.github.io/COSYlanguages/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="COSYmanuals - Public Manual Catalog & Learning Portal">
+  <meta name="twitter:description" content="Browse language manuals, grammar references, communication frames, and interactive language bootcamps across CEFR levels A0 to C2.">
   <link rel="stylesheet" href="shared/styles/style.css">
   <link rel="stylesheet" href="shared/styles/print.css">
   <!-- Supabase JS Client & Marked library for Markdown rendering -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="shared/js/auth-sso.js"></script>
-  <script src="shared/js/cms-editor.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+  <script src="shared/js/auth-sso.js" defer></script>
+  <script src="shared/js/cms-editor.js" defer></script>
   <style>
     .catalog-filters {
       display: flex;
@@ -104,6 +114,23 @@
     .markdown-body th {
       background: #f7fafc;
     }
+    @media (max-width: 600px) {
+      .catalog-filters {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .catalog-filters > div {
+        width: 100%;
+      }
+      .catalog-filters select {
+        width: 100%;
+      }
+      .manual-viewer-content {
+        padding: 1.25rem 1rem;
+        max-height: 95vh;
+        border-radius: 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -136,10 +163,10 @@
       <h2>📖 Public Manual Catalog</h2>
       <p class="section-subtitle">Select a manual to view details or read full content (login required for full content).</p>
 
-      <div class="catalog-filters">
+      <div class="catalog-filters" role="search" aria-label="Filter manuals by language and level">
         <div>
           <label for="filter-language">Language:</label>
-          <select id="filter-language">
+          <select id="filter-language" aria-label="Filter by Language">
             <option value="all">All Languages</option>
             <option value="en">🇬🇧 English</option>
             <option value="fr">🇫🇷 French</option>
@@ -154,7 +181,7 @@
 
         <div>
           <label for="filter-level">CEFR Level:</label>
-          <select id="filter-level">
+          <select id="filter-level" aria-label="Filter by CEFR Level">
             <option value="all">All Levels</option>
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -166,7 +193,7 @@
         </div>
       </div>
 
-      <div id="catalog-grid" class="marathon-grid">
+      <div id="catalog-grid" class="marathon-grid" aria-live="polite" aria-atomic="true">
         <!-- Catalog cards injected dynamically via JavaScript -->
       </div>
     </section>
@@ -229,7 +256,7 @@
   </main>
 
   <!-- Modal for viewing full manual content -->
-  <div id="manual-viewer-modal" class="manual-viewer-modal" role="dialog" aria-modal="true">
+  <div id="manual-viewer-modal" class="manual-viewer-modal" role="dialog" aria-modal="true" aria-labelledby="manual-viewer-title">
     <div class="manual-viewer-content">
       <button id="manual-viewer-close" class="manual-viewer-close" aria-label="Close modal">&times;</button>
       <div id="manual-viewer-header">
@@ -354,7 +381,10 @@
       fetchAndRenderManualContent(manualId);
     }
 
+    let lastActiveElement = null;
+
     function openManualModal(item) {
+      lastActiveElement = document.activeElement;
       const modal = document.getElementById('manual-viewer-modal');
       document.getElementById('manual-viewer-title').innerText = item.title || item.id;
       document.getElementById('manual-viewer-badges').innerHTML = `
@@ -363,10 +393,16 @@
       `;
       document.getElementById('manual-viewer-body').innerHTML = '<p>Loading manual content from Supabase...</p>';
       modal.style.display = 'flex';
+      const closeBtn = document.getElementById('manual-viewer-close');
+      if (closeBtn) closeBtn.focus();
     }
 
     function closeManualModal() {
-      document.getElementById('manual-viewer-modal').style.display = 'none';
+      const modal = document.getElementById('manual-viewer-modal');
+      modal.style.display = 'none';
+      if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
+        lastActiveElement.focus();
+      }
     }
 
     async function fetchAndRenderManualContent(manualId) {
@@ -407,6 +443,15 @@
     window.addEventListener('click', function(e) {
       const modal = document.getElementById('manual-viewer-modal');
       if (e.target === modal) closeManualModal();
+    });
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('manual-viewer-modal');
+        if (modal && modal.style.display === 'flex') {
+          closeManualModal();
+        }
+      }
     });
 
     // Check query params on load (e.g. ?manual=en-b1-grammar)
