@@ -26,6 +26,27 @@
   }
 }
 
+@media (max-width: 600px) {
+  .catalog-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .catalog-filters > div {
+    width: 100%;
+  }
+
+  .catalog-filters select {
+    width: 100%;
+  }
+
+  .manual-viewer-content {
+    padding: 1.25rem 1rem;
+    max-height: 95vh;
+    border-radius: 8px;
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 1.6rem;
