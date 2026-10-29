@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found · COSYmanuals</title>
+  <meta name="description" content="The requested manual page or resource could not be found. Return to COSYmanuals Public Catalog or Master Directory.">
+  <link rel="stylesheet" href="shared/styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1" defer></script>
+  <script src="shared/js/auth-sso.js" defer></script>
+</head>
+<body>
+  <header class="manual-header">
+    <div class="header-content">
+      <a href="index.html" class="logo-badge" style="text-decoration:none; color:inherit;">
+        <span>📖 COSYmanuals</span>
+        <span class="private-tag">Public Catalog & Gated Portal</span>
+      </a>
+      <div id="auth-status" style="font-size: 0.85rem; color: #edf2f7;"></div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+    <div class="notice-card" style="border-top: 4px solid var(--cosy-manuals-accent, #6b202b); max-width: 680px; margin: 0 auto; text-align: center;">
+      <div class="notice-icon" style="font-size: 3rem;">🔍</div>
+      <h1 class="notice-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">404 — Page or Route Not Found</h1>
+      <p class="notice-body" style="margin-bottom: 1.5rem; color: #4a5568;">
+        The manual page, lesson topic, or URL path you were trying to access is not available at this location.
+        If you logged in via COSYlanguages or clicked a link, you can return to the central catalog or master directory below.
+      </p>
+
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+        <a href="index.html" class="btn" style="background: var(--cosy-manuals-accent, #6b202b); color: #fff; font-weight: 700; text-decoration: none; padding: 0.75rem 1.25rem; border-radius: 6px;">
+          📖 Public Manual Catalog
+        </a>
+        <a href="manuals/index.html" class="btn" style="background: #2d3748; color: #fff; font-weight: 600; text-decoration: none; padding: 0.75rem 1.25rem; border-radius: 6px;">
+          📂 Master Directory
+        </a>
+        <a href="https://cosylanguages.github.io/COSYlanguages/index.html" class="btn" style="background: #edf2f7; color: #2d3748; font-weight: 600; text-decoration: none; padding: 0.75rem 1.25rem; border-radius: 6px; border: 1px solid #cbd5e0;">
+          🏠 COSYlanguages Main Site
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="cosy-ecosystem-footer-note" role="contentinfo" aria-label="COSY Ecosystem Membership">
+    <div class="cosy-footer-note-inner" style="text-align: center; padding: 1.5rem 0; color: #718096; font-size: 0.85rem;">
+      <span class="cosy-footer-note-brand">🌐 Part of the COSY Family</span> ·
+      <span class="cosy-footer-note-desc">COSYmanuals Catalog & Learning Portal</span>
+    </div>
+  </footer>
+
+  <script>
+    // Automatic route recovery logic for GitHub Pages
+    (function() {
+      const path = window.location.pathname.toLowerCase();
+      const search = window.location.search;
+      const hash = window.location.hash;
+
+      // Handle direct manual path or /manuals without index.html
+      if (path.endsWith('/manuals') || path.endsWith('/manuals/')) {
+        window.location.replace('manuals/index.html' + search + hash);
+        return;
+      }
+
+      // Check if redirect query parameter is present (e.g. ?redirect=en-b1-grammar)
+      const params = new URLSearchParams(search);
+      const redirectTarget = params.get('redirect') || params.get('manual');
+      if (redirectTarget) {
+        window.location.replace('index.html' + search + hash);
+      }
+    })();
+  </script>
+</body>
+</html>
