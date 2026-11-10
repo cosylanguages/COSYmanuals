@@ -1,0 +1,18 @@
+name: Studio tests
+on:
+  pull_request:
+    paths: ['shared/studio/**', 'tests/test_manual_studio.js', 'scripts/manual_to_record.py']
+  push:
+    branches: [main]
+    paths: ['shared/studio/**', 'tests/test_manual_studio.js', 'scripts/manual_to_record.py']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tests/test_manual_studio.js
