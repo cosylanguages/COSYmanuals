@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Manuals Studio · COSYmanuals</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="manual-studio.css">
+</head>
+<body>
+<header class="ms-bar">
+  <strong>📖 Manuals Studio</strong>
+  <span id="ms-who" class="ms-muted">Working locally. Nothing is published from here.</span>
+  <span id="ms-saved" class="ms-muted" aria-live="polite"></span>
+</header>
+
+<div class="ms-layout">
+  <form id="ms-form" class="ms-form" autocomplete="off">
+    <fieldset><legend>Where it lives</legend>
+      <div class="ms-row">
+        <label>Language <select name="iso"></select></label>
+        <label>Module <select name="module"></select></label>
+        <label>Level <select name="level"></select></label>
+      </div>
+      <label>Slug <input name="slug" placeholder="to-be"></label>
+      <label>Title <input name="title"></label>
+      <label>Subtitle <input name="subtitle"></label>
+      <label>Eyebrow <input name="eyebrow" placeholder="A1 · Grammar"></label>
+    </fieldset>
+
+    <fieldset><legend>1 · Formula</legend>
+      <label>Formula <input name="formula"></label>
+      <label>Key examples (one per line) <textarea name="formulaExamples" rows="3"></textarea></label>
+      <label>What you can communicate after this page <input name="outcome"></label>
+    </fieldset>
+
+    <fieldset><legend>3 · Guided observation</legend>
+      <label>"What do you notice?" <textarea name="notice" rows="2"></textarea></label>
+      <label>Check questions (CCQs) <textarea name="ccqs" rows="9" class="ms-mono"></textarea></label>
+      <p class="ms-help">Write a question, then <code>- option</code> lines. Mark the right one <code>- *option</code>. Add <code>? explanation</code>. Blank line between questions.</p>
+    </fieldset>
+
+    <fieldset><legend>5 · Rule</legend>
+      <label>Rule paragraphs (blank line between) <textarea name="paragraphs" rows="4"></textarea></label>
+      <label>Table (optional: headers on line 1, cells split by <code>|</code>) <textarea name="table" rows="4" class="ms-mono"></textarea></label>
+    </fieldset>
+
+    <fieldset><legend>6 · Think like a native</legend>
+      <label>Why this matters <textarea name="why" rows="2"></textarea></label>
+      <label>Think like a native speaker <textarea name="native" rows="3"></textarea></label>
+      <label>Pronunciation note <textarea name="pronunciation" rows="2"></textarea></label>
+      <label>More examples (one per line) <textarea name="examples" rows="3"></textarea></label>
+    </fieldset>
+
+    <fieldset><legend>7–10 · Mistakes, connections, checklist</legend>
+      <label>Common mistakes (<code>wrong =&gt; right</code>, one per line) <textarea name="mistakes" rows="4"></textarea></label>
+      <label>Connects to what you already know <textarea name="connects" rows="2"></textarea></label>
+      <label>Self-assessment checklist (one per line) <textarea name="checklist" rows="3"></textarea></label>
+    </fieldset>
+
+    <fieldset><legend>Quiz</legend>
+      <label>Quick check questions <textarea name="quiz" rows="9" class="ms-mono"></textarea></label>
+      <div class="ms-row">
+        <label>Previous topic slug <input name="prevSlug"></label>
+        <label>Next topic slug <input name="nextSlug"></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <aside class="ms-side">
+    <section>
+      <h2>Readiness</h2>
+      <ul id="ms-checks" class="ms-checks"></ul>
+    </section>
+    <section>
+      <h2>Export</h2>
+      <button type="button" id="ms-page" disabled>Download full page (.html)</button>
+      <button type="button" id="ms-record" disabled>Download protected record (.json)</button>
+      <button type="button" id="ms-stub" disabled>Download public stub (.html)</button>
+      <p class="ms-help"><b>Public repo warning:</b> the full page is readable by anyone once committed. Commit the stub, and keep the record for the protected store.</p>
+      <p id="ms-path" class="ms-help ms-mono"></p>
+    </section>
+    <section>
+      <h2>Preview</h2>
+      <iframe id="ms-preview" title="Topic preview" sandbox=""></iframe>
+    </section>
+    <section><button type="button" id="ms-new">New topic</button></section>
+  </aside>
+</div>
+
+<script src="studio-core.js"></script>
+<script src="manual-core.js"></script>
+<script src="manual-studio.js"></script>
+</body>
+</html>
