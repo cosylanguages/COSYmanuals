@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Day 10: Relative Clauses (Defining vs Non-Defining) — English Grammar Intensive · COSY</title>
+<meta name="description" content="Day 10 of English Grammar Intensive: Master Defining vs Non-Defining Relative Clauses with CELTA elicitation, CCQs, and exercises.">
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
@@ -12,44 +13,160 @@
 <link rel="stylesheet" href="../../../shared/styles/mobile.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <style>
-  body { font-family: 'Nunito', system-ui, sans-serif; color: #2d3748; background: #f7fafc; line-height: 1.65; }
-  .day-hero { background: linear-gradient(135deg, #1a365d, #2b6cb0); color: #fff; padding: 2.5rem 1.5rem; text-align: center; }
-  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
+  :root {
+    --g-primary: #1a365d;
+    --g-accent: #2b6cb0;
+    --g-light: #ebf8ff;
+    --g-border: #bee3f8;
+  }
+  body { font-family: 'Nunito', system-ui, -apple-system, sans-serif; color: #2d3748; background-color: #f7fafc; line-height: 1.65; }
+  .sd-sticky-header { position: sticky; top: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .sd-jump-links { display: flex; gap: 0.75rem; overflow-x: auto; padding: 0.75rem 1.5rem; white-space: nowrap; max-width: 1000px; margin: 0 auto; }
+  .sd-jump-link { color: #1a365d; text-decoration: none; font-weight: 700; font-size: 0.88rem; padding: 0.3rem 0.75rem; border-radius: 6px; background: #ebf8ff; }
+  .sd-jump-link:hover { background: #1a365d; color: #ffffff; }
+  .day-hero { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: #ffffff; padding: 3rem 1.5rem 2rem; text-align: center; border-bottom: 4px solid #63b3ed; }
+  .day-hero h1 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
   .day-container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .stage-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; }
-  .stage-tag { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.8rem; padding: 0.25rem 0.65rem; border-radius: 50px; text-transform: uppercase; }
-  .rule-card { background: #ebf8ff; border-left: 4px solid #2b6cb0; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 6px; }
+  .celta-stage { background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 1.75rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+  .stage-badge { background: #ebf8ff; color: #2b6cb0; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 50px; display: inline-block; margin-bottom: 0.75rem; }
+  .celta-stage h2 { color: #1a365d; font-family: 'Lora', serif; margin-top: 0; font-size: 1.5rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .box-a { background: #e6fffa; border-left: 4px solid #319795; padding: 1rem; border-radius: 6px; }
+  .box-b { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 6px; }
+  .mnemonic-box { background: #fff8e1; border-left: 4px solid #f57f17; padding: 0.85rem 1rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }
+  .ccq-list { line-height: 1.8; padding-left: 1.25rem; }
+  .ccq-list li { margin-bottom: 1rem; }
+  .practice-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
+  details { background: #ebf8ff; border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; cursor: pointer; }
+  details summary { font-weight: 700; color: #1a365d; }
+  .nav-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+  .nav-btn { background: #2b6cb0; color: #ffffff; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; }
+  .nav-btn:hover { background: #1a365d; }
 </style>
 </head>
 <body data-lang-theme="en">
 
+<header class="sd-sticky-header">
+  <nav class="sd-jump-links">
+    <a href="../index.html" class="sd-jump-link">← English Hub</a>
+    <a href="#stage1" class="sd-jump-link">Stage 1 · Elicitation</a>
+    <a href="#stage2" class="sd-jump-link">Stage 2 · The Rule</a>
+    <a href="#stage3" class="sd-jump-link">Stage 3 · CCQs</a>
+    <a href="#stage4" class="sd-jump-link">Stage 4 · Practice</a>
+  </nav>
+</header>
+
 <header class="day-hero">
-  <div style="margin-bottom: 0.5rem;">
-    <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:50px; font-weight:700; font-size:0.85rem;">🇬🇧 Day 10 / 14 · Grammar Intensive</span>
-  </div>
+  <span style="background:rgba(255,255,255,0.2); padding:0.25rem 0.75rem; border-radius:50px; font-size:0.85rem; font-weight:700;">DAY 10 / 14 · GRAMMAR INTENSIVE</span>
   <h1>Relative Clauses (Defining vs Non-Defining)</h1>
-  <p style="color:#ebf8ff; max-width:700px; margin:0.5rem auto 1rem;">Essential identity info without commas vs. extra detail with commas.</p>
-  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#fff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">
-    🖨️ Print Day 10
-  </button>
+  <p style="max-width:700px; margin:0.5rem auto 1rem; color:#ebf8ff;">Master essential identity info without commas vs. extra detail with commas.</p>
+  <button type="button" class="print-btn no-print" onclick="window.print()" style="background:#ffffff; color:#1a365d; border:none; padding:0.5rem 1rem; border-radius:6px; font-weight:700; cursor:pointer;">🖨️ Print Day 10 Lesson</button>
 </header>
 
 <main class="day-container">
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 1 · Core Contrast</span>
-    <h2>1. Understanding the Difference</h2>
-    <div class="rule-card">
-      <strong>💡 Key Principle:</strong> Essential identity info without commas vs. extra detail with commas.
+
+  <!-- STAGE 1: ELICITATION -->
+  <section id="stage1" class="celta-stage">
+    <span class="stage-badge">Stage 1 · Elicitation</span>
+    <h2>Compare these two sentences:</h2>
+    <div style="background:#ebf8ff; border-left:4px solid #2b6cb0; padding:1rem; border-radius:6px; font-size:1.1rem; margin:1rem 0;">
+      1. "My brother <strong>who lives in Sydney</strong> is a doctor."<br>
+      2. "My brother<strong>, who lives in Sydney,</strong> is a doctor."
+    </div>
+    <p><strong>Notice the commas:</strong> In sentence 1, I have multiple brothers, so "who lives in Sydney" specifies <em>which</em> brother. In sentence 2, I have only one brother, and "who lives in Sydney" is just extra detail wrapped in commas!</p>
+  </section>
+
+  <!-- STAGE 2: THE RULE -->
+  <section id="stage2" class="celta-stage">
+    <span class="stage-badge">Stage 2 · The Rule</span>
+    <h2>Core Rule: Essential Identity vs. Extra Detail</h2>
+
+    <div class="grid-2">
+      <div class="box-a">
+        <h4 style="margin:0 0 0.5rem; color:#234e52;">Defining Relative Clause</h4>
+        <p style="margin:0;">Gives essential information to identify who or what we are talking about. Cannot be removed.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><strong>NO COMMAS used!</strong></li>
+          <li><strong>'That' can replace who/which:</strong> <em>The car that I bought is fast.</em></li>
+        </ul>
+      </div>
+      <div class="box-b">
+        <h4 style="margin:0 0 0.5rem; color:#2b6cb0;">Non-Defining Relative Clause</h4>
+        <p style="margin:0;">Gives extra non-essential information. The sentence makes complete sense without it.</p>
+        <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+          <li><strong>HUGGED BY COMMAS!</strong></li>
+          <li><strong>NEVER use 'that':</strong> <em>Paris, which is the capital of France, is beautiful.</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mnemonic-box">
+      💡 Memory Trick: Essential info = No commas, 'that' allowed! Extra bonus info = Commas hug it, 'that' is FORBIDDEN!
     </div>
   </section>
 
-  <section class="stage-box">
-    <span class="stage-tag">CELTA Stage 2 · Navigation</span>
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <a href="../a0-a2.html" style="color:#1a365d; text-decoration:none; font-weight:700;">← Module Overview</a>
-      <a href="../index.html" style="background:#2b6cb0; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:700;">Grammar Hub 🇬🇧</a>
-    </div>
+  <!-- STAGE 3: CCQS -->
+  <section id="stage3" class="celta-stage">
+    <span class="stage-badge">Stage 3 · Concept Check Questions (CCQs)</span>
+    <ol class="ccq-list">
+      <li>
+        <strong>Question:</strong> In "My sister, who is a lawyer, visited me," can we remove "who is a lawyer" without changing who visited me?
+        <br><em>Answer:</em> Yes! It is extra information surrounded by commas.
+      </li>
+      <li>
+        <strong>Question:</strong> In "The students who cheated failed the test," did ALL the students fail?
+        <br><em>Answer:</em> No! Only the specific students who cheated failed.
+      </li>
+      <li>
+        <strong>Question:</strong> Can we write "London, that is on the River Thames, is big"?
+        <br><em>Answer:</em> No! Non-defining clauses with commas CANNOT use 'that' (must use 'which').
+      </li>
+      <li>
+        <strong>Question:</strong> When can relative pronouns (who/which/that) be omitted?
+        <br><em>Answer:</em> In defining clauses when the pronoun is the OBJECT of the verb (e.g., "The movie [that] we watched").
+      </li>
+    </ol>
   </section>
+
+  <!-- STAGE 4: PRACTICE -->
+  <section id="stage4" class="celta-stage">
+    <span class="stage-badge">Stage 4 · Guided & Free Practice</span>
+    <h2>Complete the Sentences (who / which / whose / where / that) & add commas if needed</h2>
+
+    <div class="practice-item">
+      1. The woman _____ lives next door is a professional musician.
+    </div>
+    <div class="practice-item">
+      2. Amazon _____ was founded by Jeff Bezos _____ is now a global giant.
+    </div>
+    <div class="practice-item">
+      3. This is the restaurant _____ we had our first date.
+    </div>
+    <div class="practice-item">
+      4. The boy _____ bike was stolen reported it to the police.
+    </div>
+    <div class="practice-item">
+      5. My smartphone _____ I bought last week _____ takes amazing photos.
+    </div>
+
+    <details>
+      <summary>🔍 Click to Reveal Answer Key & Explanations</summary>
+      <ol style="margin-top:0.5rem; padding-left:1.2rem; line-height:1.7;">
+        <li><strong>who / that</strong> — Defining clause (essential info identifying the woman); no commas.</li>
+        <li><strong>, which ... ,</strong> — Non-defining clause (Amazon is a proper noun, extra info needs commas and 'which').</li>
+        <li><strong>where</strong> — Relative adverb denoting location.</li>
+        <li><strong>whose</strong> — Relative possessive pronoun ("his bike was stolen").</li>
+        <li><strong>, which ... ,</strong> — Non-defining extra info wrapped in commas (or defining if specifying among multiple phones).</li>
+      </ol>
+    </details>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="day-9.html" class="nav-btn">← Day 9: Conditionals</a>
+    <a href="day-11.html" class="nav-btn">Next Lesson: Day 11 →</a>
+  </footer>
+
 </main>
+
 </body>
 </html>
