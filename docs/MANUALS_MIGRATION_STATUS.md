@@ -10,7 +10,7 @@
 1. **Digital Manuals**: Explanatory reference hubs linking out to COSYplatform lessons rather than duplicating interactive platform exercises.
 2. **Print / Offline Manuals**: Formatted for print or offline reference (no interactive JS widgets, print-optimized CSS, page-break management).
 
-Access to COSYmanuals is strictly link-only and never exposed via public website navigation.
+Access to COSYmanuals is open (decision 2026-11-16): the repository and site are public and manuals need no login. Earlier notes calling it link-only no longer apply.
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **Document Status**: Canonical Prioritized Punch-List
 > **Last Updated**: September 2026
-> **Context & Privacy Note**: COSYmanuals is intentionally private and direct-link accessible only. Do not add public navigation links or reference this document/repo from public navigation.
+> **Context & Privacy Note (updated 2026-11-16)**: COSYmanuals is a public repository and its manuals are open to everyone for now (nothing is paid yet). Earlier notes calling it private or link-only no longer apply.
 
 ---
 
