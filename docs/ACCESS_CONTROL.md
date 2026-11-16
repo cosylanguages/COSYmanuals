@@ -1,5 +1,7 @@
 # Access Control Architecture & Roster Specification
 
+> **Update 2026-11-16:** this repository is public and all manuals are open; nothing is paid yet. The text below is a design note for a possible future paid tier and does not describe the current setup.
+
 ## 🔒 Overview & Access Model Principles
 
 `COSYmanuals` serves as a private, direct-link repository for language course manuals. Access control must remain **100% free and sustainable** with **zero personal data harvesting**.

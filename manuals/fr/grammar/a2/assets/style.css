@@ -175,7 +175,7 @@ tbody tr:nth-child(even) { background: var(--teal-050); }
 .mflip .right-line { display: none; gap: 10px; align-items: flex-start; font-size: 15.5px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #f0b8b8; }
 .mflip .right-line .c { color: #1c8f56; font-weight: 800; }
 .mflip.flipped .right-line { display: flex; }
-.mflip .hint { font-family: var(--font-mono); font-size: 11px; color: #b56060; margin-top: 4px; display: block; }
+.mflip .hint { font-family: var(--font-mono); font-size: 11px; color: #9a4545; margin-top: 4px; display: block; }
 .mflip.flipped .hint { display: none; }
 
 /* ---------- examples list ---------- */

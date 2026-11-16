@@ -1,12 +1,14 @@
 # COSYmanuals
 
-**COSYmanuals** is a public catalog and gated learning portal holding grammar, vocabulary, communication manuals, teacher guides, and offline print booklets for students and teachers of COSYlanguages.
+**COSYmanuals** is an open (public) repository and website holding grammar, vocabulary, communication manuals, teacher guides, and offline print booklets for students and teachers of COSYlanguages.
 
 ---
 
 ## 🔒 Security & Privacy Rules
 
-> **IMPORTANT:** This repository's git history must **NEVER** contain manual body text, only public catalog metadata, app code, and open curriculum schemas/booklet structures.
+> **Status (decision 2026-11-16): all manuals are open for now.** The repository and its GitHub Pages site are public and every manual page is readable without login. Nothing is paid yet. Do not put anything here that must stay private (answer keys, teacher notes, personal data, secrets).
+>
+> The gating tools below (`manual_to_record.py`, `load_records_to_supabase.js`, `publish_to_supabase.js`, the `manual_content` table) are kept for a possible future paid tier. They are not in use. If paid manuals are introduced later, the text already in this repository's git history stays public, so only new, never-published content can be protected this way.
 
 - **Public Catalog (`catalog/`):** Contains public metadata JSON files (`title`, `language`, `level`, `short_description`).
 - **Gated Content Storage (Supabase):** Full manual body text is stored exclusively in Supabase under the `manual_content` table with Row Level Security (RLS) policies.
