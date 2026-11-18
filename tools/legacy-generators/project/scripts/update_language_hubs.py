@@ -110,13 +110,9 @@ for lang, data in hub_data.items():
     new_daily_html = '''<section id="daily-dose">
   <div class="sec-head reveal">
     <span class="sec-tag" data-translate-key="daily_dose_tag">💊 Daily Dose & Cultural Insights</span>
-    <h2 data-translate-key="daily_dose_title">Fact & Idiom of the Day 💡</h2>
+    <h2 data-translate-key="daily_dose_title">Idiom of the Day 💡</h2>
   </div>
   <div class="daily-grid">
-    <div class="daily-card reveal" data-bg="🤣">
-      <h3 data-translate-key="fun_fact_title">Fact of the Day 🤣</h3>
-      <div class="daily-content" id="fun-fact-of-the-day" data-translate-key="fun_fact_placeholder">Loading...</div>
-    </div>
     <div class="daily-card reveal" data-bg="💡">
       <h3 data-translate-key="idiom_title">Idiom of the Day 💬</h3>
       <div class="daily-content" id="idiom-of-the-day">Loading...</div>
