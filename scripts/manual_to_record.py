@@ -137,8 +137,10 @@ def extract_record_and_stub(filepath):
 <link rel="stylesheet" href="{rel_root}shared/styles/base.css">
 <link rel="stylesheet" href="{rel_root}shared/styles/components.css">
 <link rel="stylesheet" href="{rel_root}shared/styles/layout.css">
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
 <nav id="cosy-nav" aria-label="Navigation principale"></nav>
 
 <main class="container">
@@ -165,6 +167,7 @@ def extract_record_and_stub(filepath):
 <footer class="cosy-ecosystem-footer-note" style="text-align: center; padding: 2rem 0; color: var(--text-muted, #888); font-size: 0.875rem;">
   Part of the COSY Family · Upstream Curriculum Owner: COSYplatform
 </footer>
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>
 """
