@@ -140,7 +140,7 @@ def extract_record_and_stub(filepath):
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
-<div data-ecosystem-strip data-self="manuals"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle></div>
 <nav id="cosy-nav" aria-label="Navigation principale"></nav>
 
 <main class="container">
