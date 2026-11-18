@@ -452,8 +452,10 @@ for d, data in b1_b2_data.items():
   .task-box {{ background: #fff8e1; border-left: 4px solid #f57f17; padding: 1rem 1.25rem; border-radius: 6px; margin-top: 1rem; font-weight: 600; }}
   .frame-list li {{ margin-bottom: 0.5rem; }}
 </style>
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body data-lang-theme="el">
+<div data-ecosystem-strip data-self="manuals"></div>
 
 <header class="day-hero">
   <div style="margin-bottom: 0.5rem;">
@@ -514,6 +516,7 @@ for d, data in b1_b2_data.items():
 
 </main>
 
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>"""
 

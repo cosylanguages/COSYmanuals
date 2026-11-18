@@ -29,8 +29,11 @@
   a { color:#6b202b; } :focus-visible { outline:3px solid #6b202b; outline-offset:2px; }
   .path { color:#5c5957; font-size:.78rem; word-break:break-all; }
 </style>
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
+
 <main>
   <h1>Page catalog</h1>
   <p id="sum">Loading…</p>
@@ -93,5 +96,6 @@
   }).catch(function () { $("sum").textContent = "Could not load pages.json (open this page from a web server, not from a file)."; });
 })();
 </script>
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>

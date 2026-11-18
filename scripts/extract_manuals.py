@@ -338,8 +338,10 @@ def generate_grammar_html(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
 <link rel="stylesheet" href="{rel_styles}/layout.css">
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
@@ -367,6 +369,7 @@ def generate_grammar_html(curriculum_data, out_dir=None):
   </footer>
 </main>
 
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>
 """
@@ -504,8 +507,10 @@ def generate_vocabulary_html(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
 <link rel="stylesheet" href="{rel_styles}/layout.css">
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
@@ -533,6 +538,7 @@ def generate_vocabulary_html(curriculum_data, out_dir=None):
   </footer>
 </main>
 
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>
 """
@@ -713,8 +719,10 @@ def generate_communication_html(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
 <link rel="stylesheet" href="{rel_styles}/layout.css">
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
@@ -742,6 +750,7 @@ def generate_communication_html(curriculum_data, out_dir=None):
   </footer>
 </main>
 
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>
 """
@@ -824,8 +833,10 @@ def generate_student_index(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="{rel_styles}/base.css">
 <link rel="stylesheet" href="{rel_styles}/components.css">
 <link rel="stylesheet" href="{rel_styles}/layout.css">
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
 
 <main class="container" style="max-width:800px; margin:2.5rem auto; padding:0 1.25rem;">
   <div class="page-head" style="margin-bottom:1.5rem;">
@@ -872,6 +883,7 @@ def generate_student_index(curriculum_data, out_dir=None):
   </footer>
 </main>
 
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>
 """

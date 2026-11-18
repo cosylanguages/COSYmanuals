@@ -32,8 +32,10 @@ SHELL = """<!doctype html>
   a {{ color:#416b49; font-weight:700; text-decoration:underline; }}
 </style>
 <link rel="stylesheet" href="../../../../../shared/styles/lang-accents.css">
+<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
+<div data-ecosystem-strip data-self="manuals"></div>
 <main>
 <div class="card">
   <h1>Page Moved</h1>
@@ -41,6 +43,7 @@ SHELL = """<!doctype html>
   <p><a href="{to}">{label}</a></p>
 </div>
 </main>
+<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>
 </body>
 </html>
 """
