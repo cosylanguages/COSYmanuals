@@ -455,7 +455,7 @@ for d, data in b1_b2_data.items():
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body data-lang-theme="el">
-<div data-ecosystem-strip data-self="manuals"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle></div>
 
 <header class="day-hero">
   <div style="margin-bottom: 0.5rem;">
