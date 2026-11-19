@@ -1,10 +1,10 @@
 name: Studio tests
 on:
   pull_request:
-    paths: ['shared/studio/**', 'tests/test_manual_studio.js', 'scripts/manual_to_record.py']
+    paths: ['shared/studio/**', 'tests/test_manual_studio.js', 'tests/test_studio_core_lock.js', 'scripts/manual_to_record.py']
   push:
     branches: [main]
-    paths: ['shared/studio/**', 'tests/test_manual_studio.js', 'scripts/manual_to_record.py']
+    paths: ['shared/studio/**', 'tests/test_manual_studio.js', 'tests/test_studio_core_lock.js', 'scripts/manual_to_record.py']
 permissions:
   contents: read
 jobs:
@@ -16,3 +16,4 @@ jobs:
         with:
           node-version: 20
       - run: node tests/test_manual_studio.js
+      - run: node tests/test_studio_core_lock.js

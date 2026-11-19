@@ -313,7 +313,8 @@
       '<title>' + escapeHtml(title) + ' · Protected Manual Shell · COSYmanuals</title>\n' +
       '<meta name="description" content="' + escapeHtml(summary) + '">\n' +
       ['lang-accents', 'tokens', 'base', 'components', 'layout'].map(function (s) { return '<link rel="stylesheet" href="' + rel + 'shared/styles/' + s + '.css">'; }).join('\n') + '\n' +
-      '</head>\n<body>\n<nav id="cosy-nav" aria-label="Navigation principale"></nav>\n\n<main class="container">\n' +
+      '<link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">\n' +
+      '</head>\n<body>\n<div data-ecosystem-strip data-self="manuals"></div>\n<nav id="cosy-nav" aria-label="Navigation principale"></nav>\n\n<main class="container">\n' +
       '<div class="page-head" style="margin-top: 2rem;">\n <span class="eyebrow">' + escapeHtml(lang.toUpperCase()) + ' ' + escapeHtml(cefr.toUpperCase()) + ' Manual</span>\n' +
       ' <h1>' + escapeHtml(title) + '</h1>\n <p class="subtitle">' + escapeHtml(summary) + '</p>\n <hr class="rule">\n</div>\n\n' +
       '<div class="box gated-content-notice" style="background: var(--surface-2, #f8f9fa); border: 2px dashed var(--border-color, #ccc); padding: 2rem; border-radius: 8px; text-align: center; margin: 2rem 0;">\n' +
@@ -322,7 +323,7 @@
       '  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">\n' +
       '    <a href="https://cosylanguages.github.io/COSYlanguages/login.html?redirect=' + escapeHtml(id) + '" class="btn-primary" style="background: var(--cosy-manuals-accent, #6b202b); color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Log In to Access Content</a>\n' +
       '    <a href="' + rel + 'manuals/' + escapeHtml(lang) + '/' + escapeHtml(course) + '/' + escapeHtml(cefr) + '/index.html" class="btn-secondary" style="border: 1px solid var(--border-color, #ccc); color: var(--text-color, #333); padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none;">Return to ' + escapeHtml(cefr.toUpperCase()) + ' Index</a>\n  </div>\n</div>\n</main>\n\n' +
-      '<footer class="cosy-ecosystem-footer-note" style="text-align: center; padding: 2rem 0; color: var(--text-muted, #888); font-size: 0.875rem;">\n  Part of the COSY Family · Upstream Curriculum Owner: COSYplatform\n</footer>\n</body>\n</html>\n';
+      '<footer class="cosy-ecosystem-footer-note" style="text-align: center; padding: 2rem 0; color: var(--text-muted, #888); font-size: 0.875rem;">\n  Part of the COSY Family · Upstream Curriculum Owner: COSYplatform\n</footer>\n<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>\n</body>\n</html>\n';
   }
 
   // ---- Plain-text editing formats ---------------------------------------
