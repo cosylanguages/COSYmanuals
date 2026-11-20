@@ -40,3 +40,30 @@ test('cms-editor sanitizeHTML removes script, handlers, unsafe URLs and keeps sa
     await browser.close();
   }
 });
+
+test('cms-editor role check trusts the database profile, not user-editable fields', async () => {
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage();
+    await page.setContent('<html><body></body></html>');
+    await page.addScriptTag({ content: editor });
+    const run = (profileRole, metaRole, extra) => page.evaluate(({ profileRole, metaRole, extra }) => {
+      window.COSY_USER = extra ? { role: 'founder' } : undefined;
+      window.supabaseClient = {
+        auth: { getSession: async () => ({ data: { session: { user: { id: 'u1', role: 'founder',
+          user_metadata: { role: metaRole }, app_metadata: { role: metaRole } } } } }) },
+        from: () => ({ select: () => ({ eq: () => ({ maybeSingle: async () =>
+          (profileRole === null ? { data: null, error: null } : { data: { role: profileRole }, error: null }) }) }) })
+      };
+      return window.CosyCMS.checkUserRole();
+    }, { profileRole, metaRole, extra });
+    assert.equal(await run('student', 'founder', true), false, 'forged metadata/global must not grant access');
+    assert.equal(await run(null, 'founder', true), false, 'no profile row means no access');
+    assert.equal(await run(' Founder ', 'student', false), true);
+    assert.equal(await run('admin', '', false), true);
+    assert.equal(await run('owner', '', false), true);
+    assert.equal(await run('editor', 'founder', false), false);
+  } finally {
+    await browser.close();
+  }
+});

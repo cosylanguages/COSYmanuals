@@ -85,6 +85,7 @@
 
   window.CosyCMS = window.CosyCMS || {};
   window.CosyCMS.sanitizeHTML = sanitizeHTML;
+  window.CosyCMS.checkUserRole = function () { return checkUserRole(); };
 
   function getSupabaseClient() {
     if (window.supabaseClient) {
@@ -112,13 +113,15 @@
       const user = data?.session?.user;
       if (!user) return false;
 
-      const role = (
-        user.user_metadata?.role ||
-        user.app_metadata?.role ||
-        user.role ||
-        window.COSY_USER?.role ||
-        ''
-      ).toLowerCase();
+      // The role comes from the database, never from user_metadata, localStorage or window globals:
+      // those can be edited by the signed-in user. (Writes are still gated by row-level security.)
+      const { data: profile, error } = await client
+        .from('profiles')
+        .select('role')
+        .eq('id', user.id)
+        .maybeSingle();
+      if (error || !profile) return false;
+      const role = String(profile.role || '').trim().toLowerCase();
 
       return ['admin', 'founder', 'owner'].includes(role);
     } catch (err) {
