@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-18T15:06:49Z",
-  "count": 2044,
+  "generated": "2026-11-22T14:11:52Z",
+  "count": 2049,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -2125,6 +2125,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/have-got.html"
     },
     {
+      "id": "en-a1-how-much-cost",
+      "lang": "en",
+      "level": "a1",
+      "slug": "how-much-cost",
+      "title": "How Much Is It? Prices and Cost",
+      "subtitle": "Asking for and giving prices",
+      "path": "manuals/en/grammar/a1/topics/how-much-cost.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/how-much-cost.html"
+    },
+    {
       "id": "en-a1-id-like",
       "lang": "en",
       "level": "a1",
@@ -2143,6 +2153,16 @@
       "subtitle": "Instructions, rules & directions",
       "path": "manuals/en/grammar/a1/topics/imperatives.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/imperatives.html"
+    },
+    {
+      "id": "en-a1-impersonal-it",
+      "lang": "en",
+      "level": "a1",
+      "slug": "impersonal-it",
+      "title": "It’s Cold, It’s Five O’Clock: Impersonal It",
+      "subtitle": "Weather, time and days with ‘it’",
+      "path": "manuals/en/grammar/a1/topics/impersonal-it.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/impersonal-it.html"
     },
     {
       "id": "en-a1-intensifiers",
@@ -2365,6 +2385,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/plurals-regular.html"
     },
     {
+      "id": "en-a1-possessive-adjectives",
+      "lang": "en",
+      "level": "a1",
+      "slug": "possessive-adjectives",
+      "title": "Possessive Adjectives: My, Your, His, Her…",
+      "subtitle": "Saying who something belongs to",
+      "path": "manuals/en/grammar/a1/topics/possessive-adjectives.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/possessive-adjectives.html"
+    },
+    {
       "id": "en-a1-possessive-s",
       "lang": "en",
       "level": "a1",
@@ -2443,6 +2473,16 @@
       "subtitle": "Asking for information",
       "path": "manuals/en/grammar/a1/topics/question-words.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/question-words.html"
+    },
+    {
+      "id": "en-a1-sequence-words",
+      "lang": "en",
+      "level": "a1",
+      "slug": "sequence-words",
+      "title": "Sequence Words: First, Then, Next, Finally",
+      "subtitle": "Putting actions in order",
+      "path": "manuals/en/grammar/a1/topics/sequence-words.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/sequence-words.html"
     },
     {
       "id": "en-a1-simple-vs-continuous",
@@ -2573,6 +2613,16 @@
       "subtitle": "Subject + Verb + Object",
       "path": "manuals/en/grammar/a1/topics/word-order.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/word-order.html"
+    },
+    {
+      "id": "en-a1-work-collocations",
+      "lang": "en",
+      "level": "a1",
+      "slug": "work-collocations",
+      "title": "Work Collocations: Have, Make, Do, Take, Send",
+      "subtitle": "Verbs that go together with work words",
+      "path": "manuals/en/grammar/a1/topics/work-collocations.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a1/topics/work-collocations.html"
     },
     {
       "id": "en-a2-as-as",
