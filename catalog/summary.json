@@ -5,7 +5,7 @@
    "hub": 11,
    "lang_wrong": 8,
    "other_stub": 0,
-   "pages": 67,
+   "pages": 68,
    "topic_real": 39,
    "topic_stub": 0,
    "track_manual": 6,
@@ -17,7 +17,7 @@
    "hub": 11,
    "lang_wrong": 8,
    "other_stub": 0,
-   "pages": 70,
+   "pages": 71,
    "topic_real": 45,
    "topic_stub": 0,
    "track_manual": 6,
@@ -29,7 +29,7 @@
    "hub": 9,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 61,
+   "pages": 62,
    "topic_real": 41,
    "topic_stub": 0,
    "track_manual": 0,
@@ -41,19 +41,19 @@
    "hub": 11,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 96,
+   "pages": 97,
    "topic_real": 62,
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 15,
-   "visual_pages": 1
+   "visual_pages": 2
   },
   "el": {
    "english_leak_pages": 0,
    "hub": 17,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 192,
+   "pages": 193,
    "topic_real": 117,
    "topic_stub": 0,
    "track_manual": 21,
@@ -65,33 +65,33 @@
    "hub": 55,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 893,
-   "topic_real": 536,
+   "pages": 905,
+   "topic_real": 547,
    "topic_stub": 0,
    "track_manual": 81,
    "unit": 208,
-   "visual_pages": 20
+   "visual_pages": 21
   },
   "es": {
    "english_leak_pages": 0,
    "hub": 11,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 101,
+   "pages": 102,
    "topic_real": 66,
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 16,
-   "visual_pages": 2
+   "visual_pages": 3
   },
   "fr": {
-   "english_leak_pages": 0,
-   "hub": 43,
-   "lang_wrong": 0,
-   "other_stub": 4,
-   "pages": 1452,
-   "topic_real": 166,
-   "topic_stub": 1102,
+   "english_leak_pages": 1049,
+   "hub": 48,
+   "lang_wrong": 62,
+   "other_stub": 0,
+   "pages": 1458,
+   "topic_real": 1268,
+   "topic_stub": 0,
    "track_manual": 57,
    "unit": 82,
    "visual_pages": 2
@@ -101,7 +101,7 @@
    "hub": 11,
    "lang_wrong": 8,
    "other_stub": 0,
-   "pages": 68,
+   "pages": 69,
    "topic_real": 40,
    "topic_stub": 0,
    "track_manual": 6,
@@ -113,19 +113,19 @@
    "hub": 17,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 180,
+   "pages": 181,
    "topic_real": 106,
    "topic_stub": 0,
    "track_manual": 18,
    "unit": 37,
-   "visual_pages": 2
+   "visual_pages": 3
   },
   "ka": {
    "english_leak_pages": 11,
    "hub": 11,
    "lang_wrong": 8,
    "other_stub": 0,
-   "pages": 67,
+   "pages": 68,
    "topic_real": 39,
    "topic_stub": 0,
    "track_manual": 6,
@@ -137,31 +137,31 @@
    "hub": 11,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 99,
+   "pages": 100,
    "topic_real": 64,
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 16,
-   "visual_pages": 3
+   "visual_pages": 4
   },
   "ru": {
    "english_leak_pages": 0,
    "hub": 43,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 607,
+   "pages": 608,
    "topic_real": 422,
    "topic_stub": 0,
    "track_manual": 57,
    "unit": 80,
-   "visual_pages": 7
+   "visual_pages": 8
   },
   "tt": {
    "english_leak_pages": 14,
    "hub": 11,
    "lang_wrong": 9,
    "other_stub": 0,
-   "pages": 84,
+   "pages": 85,
    "topic_real": 53,
    "topic_stub": 0,
    "track_manual": 6,
@@ -279,7 +279,7 @@
    0
   ],
   "en/grammar/a1": [
-   59,
+   70,
    11
   ],
   "en/grammar/a2": [
@@ -367,28 +367,28 @@
    0
   ],
   "fr/grammar/a1": [
-   0,
-   202
+   202,
+   0
   ],
   "fr/grammar/a2": [
-   0,
-   202
+   202,
+   0
   ],
   "fr/grammar/b1": [
-   0,
-   246
+   246,
+   0
   ],
   "fr/grammar/b2": [
-   0,
-   202
+   202,
+   0
   ],
   "fr/grammar/c1": [
-   0,
-   129
+   129,
+   0
   ],
   "fr/grammar/c2": [
-   0,
-   121
+   121,
+   0
   ],
   "fr/vocabulary/a1": [
    70,
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4039
+ "total_pages": 4069
 }
