@@ -106,6 +106,10 @@ To ensure 1:1 synchronization with COSYplatform, COSYmanuals uses standardized c
 - **`professional`** — Business and career English/French/Russian with domain verticals (`it`, `marketing`, `career`, `finance`).
 - **`travelling`** — Situational travel and navigation language.
 - **`relocation`** — Expat integration, living abroad, and administrative language.
+- **`discussion`** — COSYplatform only: the speaking clubs run in COSYevents, converted into lessons. No COSYmanuals folder and no COSYlanguages course page.
+- **`pronunciation`** — Planned as a marathon / course in COSYplatform (curricula exist, not launched yet). Until then, pronunciation guides stay a content module here (see below).
+
+The full list lives in COSYplatform: `curriculums/_schema/course-types.json` (documented in `docs/COURSE_TYPES.md`). On the COSYlanguages site the exam course page is named `exam-preparation.html`; `exam.html` redirects to it.
 
 ### Content Tracks & Reference Modules (`/manuals/{iso}/{module}/`)
 - **`grammar`** — Structural grammar explanations, CCQ checks, and rule tables.
@@ -113,6 +117,7 @@ To ensure 1:1 synchronization with COSYplatform, COSYmanuals uses standardized c
 - **`vocabulary`** — Topic-based lexical sets and visual dictionary modules.
 - **`pronunciation`** — Phonetic diagrams, IPA guides, and accent bootcamps.
 - **`introductory`** — Foundation alphabet, phonetics, and pre-A1 starter modules.
+- **`communication`** — Manual-only folder (`/manuals/{iso}/communication/`). Not a course type and it has no curriculum.
 
 ---
 
@@ -132,7 +137,7 @@ To ensure 1:1 synchronization with COSYplatform, COSYmanuals uses standardized c
 - 🏠 **[COSYlanguages](https://cosylanguages.github.io/COSYlanguages/):** Main platform catalog and authentication hub.
 
 > ⚠️ **Read-Only Mirror Notice**:
-> The vocabulary datasets (`A0-A1_master.json`) and general curriculum files (`A1.json` – `C2.json`) in this repository are **read-only mirrors** synced from [COSYlanguages](https://github.com/cosylanguages/COSYlanguages) and [COSYplatform](https://github.com/cosylanguages/COSYplatform).
+> The curriculum files in `/curriculums/` are pointers to COSYplatform, where the canonical curricula live (`curriculums/<lang>/<track>/<LEVEL>.json`). The vocabulary dataset (`A0-A1_master.json`) is a **read-only mirror**.
 >
 > **Do not edit these dataset files directly in this repository.** Proposed changes (word additions, definition edits, lesson adjustments) must be submitted as an Issue or PR to the canonical source repository. See `CANON_SOURCE_OF_TRUTH.md` for details.
 

@@ -11,7 +11,8 @@ To prevent data divergence, duplicate maintenance, and drift across ecosystem re
 1. **Vocabulary Canon Authority**:
    - `vocabulary/_canonical/en/A0-A1_master.json` in **COSYlanguages** is the **sole writable master copy** of the A0-A1 English vocabulary canon for the entire COSY ecosystem.
 2. **Curriculum Canon Authority**:
-   - `curriculum/en/general/*.json` (e.g., `A1.json`, `A2.json`, etc.) in **COSYlanguages** is the **sole writable master copy** of general-course curriculum data for the entire COSY ecosystem.
+   - `curriculums/<lang>/<track>/<LEVEL>.json` (e.g., `curriculums/en/general/A1.json`) in **COSYplatform** is the **sole writable master copy** of curriculum data for the entire COSY ecosystem, validated by `curriculums/_schema/curriculum.schema.json`.
+   - The files under `curriculums/` in this repository are pointers to those files, not copies. (This section previously named COSYlanguages as the master; COSYlanguages holds no curriculum data.)
 3. **Read-Only Mirror Requirement**:
    - Any other repository or application within the COSY ecosystem (**COSYgames**, **COSYtools**, **COSYmanuals**) holding a copy or subset of these datasets MUST treat its local copy as a **read-only mirror** and label it as such.
 4. **Change Management Protocol**:
@@ -60,7 +61,7 @@ The following companion note must be added manually to the READMEs of downstream
 
 ```markdown
 > ⚠️ **Read-Only Mirror Notice**:
-> The vocabulary datasets (`A0-A1_master.json`) and general curriculum files (`A1.json` - `C2.json`) in this repository are **read-only mirrors** synced from [COSYlanguages](https://github.com/cosylanguages/COSYlanguages).
+> The vocabulary dataset (`A0-A1_master.json`) in this repository is a **read-only mirror**. Curriculum files (`A1.json` - `C2.json`) are pointers to [COSYplatform](https://github.com/cosylanguages/COSYplatform), where the canonical curricula live.
 > 
-> **Do not edit these dataset files directly in this repository.** Proposed changes (word additions, definition edits, lesson adjustments) must be submitted as an Issue or PR to [COSYlanguages](https://github.com/cosylanguages/COSYlanguages) referencing the specific word or lesson ID. See `CANON_SOURCE_OF_TRUTH.md` in `COSYlanguages` for details.
+> **Do not edit these dataset files directly in this repository.** Proposed changes (word additions, definition edits, lesson adjustments) must be submitted as an Issue or PR to the repository that owns the data ([COSYplatform](https://github.com/cosylanguages/COSYplatform) for curricula) referencing the specific word or lesson ID. See `CANON_SOURCE_OF_TRUTH.md` in `COSYlanguages` for details.
 ```
