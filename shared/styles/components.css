@@ -420,7 +420,7 @@ footer.main-footer, footer.site {
   text-align: center;
   padding: var(--cosy-space-md, 16px);
   font-size: var(--cosy-font-size-sm, 0.875rem);
-  color: var(--cosy-color-ink-faint, #5c5957);
+  color: inherit;
   border-top: 1px solid var(--cosy-color-border, rgba(74, 107, 80, 0.12));
   margin-top: auto;
 }
@@ -538,3 +538,30 @@ footer.main-footer, footer.site {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.78rem;
 }
+
+/* ── Contrast fixes: diagram chips ────────────────────────────────────── */
+.branch .box2 { color: #ffffff !important; }
+.branch .box2[style*="1c9483"],
+.branch .box2[style*="c9740a"],
+.branch .box2[style*="1c8f56"] { color: #0d1f1a !important; }
+/* Practice CTA painted 4.1:1 under white text; deepen the fill */
+a[style*="1c8f56"], .btn-practice-link[style*="1c8f56"] { background: #177a49 !important; }
+
+/* Footer ink follows whatever surface the manual paints behind it */
+footer.site a, footer.main-footer a { color: inherit !important; text-decoration: underline; }
+/* Green used as text on white needs the darker step */
+[style*="color:#1c8f56"], [style*="color: #1c8f56"] { color: #177a49 !important; }
+
+/* Site footers are the brand navy bar: one surface, one ink */
+footer.site, footer.main-footer {
+  background: var(--teal-900, #11263d) !important;
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+footer.site a, footer.main-footer a { color: #bcd6ee !important; }
+main.container footer { color: #4a5568 !important; }
+.cosy-ecosystem-footer-note a, .cosy-ecosystem-footer-note { color: #a8c7b0 !important; }
+.mflip .hint, .mistakes .hint { color: #9c4a4a !important; }
+.cosy-ecosystem-footer-note div,
+.cosy-ecosystem-footer-note p,
+.cosy-ecosystem-footer-note span { color: #a8c7b0 !important; }
+.mistakes .mflip .hint, .mistakes .mflip .hint * { color: #9c4a4a !important; }
