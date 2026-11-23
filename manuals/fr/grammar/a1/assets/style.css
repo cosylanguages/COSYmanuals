@@ -430,3 +430,98 @@ footer.site .container{display:flex; justify-content:space-between; gap:20px; fl
 .see-hear .col .txt{font-family:var(--font-display); font-size:16px;}
 .phon-pill{display:inline-flex; align-items:center; gap:6px; margin-top:10px; background:#e7f1fc; color:#1a4a7a; border:1px solid #bcd9f5; padding:5px 12px; border-radius:99px; font-size:12.5px; font-weight:700;}
 @media (max-width:640px){ .see-hear{grid-template-columns:1fr;} }
+
+
+
+
+/* Dark theme: the palette above is light-only, so the same role
+   tokens are re-derived over a dark base when the OS prefers dark
+   or an explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --teal-100: color-mix(in srgb, #e4f4f0 14%, #151a16);
+  --teal-050: color-mix(in srgb, #f2faf8 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e4e1d6 42%, #151a16);
+  --role-subject: color-mix(in srgb, #3562e0 42%, #ffffff);
+  --role-subject-bg: color-mix(in srgb, #e9eefd 16%, #151a16);
+  --role-verb: color-mix(in srgb, #1c8f56 42%, #ffffff);
+  --role-verb-bg: color-mix(in srgb, #e6f6ec 16%, #151a16);
+  --role-noun: color-mix(in srgb, #c9740a 42%, #ffffff);
+  --role-noun-bg: color-mix(in srgb, #fbecd9 16%, #151a16);
+  --role-adj: color-mix(in srgb, #7c4fd6 42%, #ffffff);
+  --role-adj-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --role-ending: color-mix(in srgb, #0f5c50 42%, #ffffff);
+  --role-ending-bg: color-mix(in srgb, #e4f4f0 16%, #151a16);
+  --role-optional: color-mix(in srgb, #6b7280 42%, #ffffff);
+  --role-optional-bg: color-mix(in srgb, #eef0f1 16%, #151a16);
+  --role-question: color-mix(in srgb, #a3195b 42%, #ffffff);
+  --role-question-bg: color-mix(in srgb, #fce8f1 16%, #151a16);
+  --why-bg: color-mix(in srgb, #fdf3d6 16%, #151a16);
+  --why-line: color-mix(in srgb, #c99a1f 42%, #151a16);
+  --why-ink: color-mix(in srgb, #7a5b0c 45%, #ffffff);
+  --native-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --native-line: color-mix(in srgb, #8b5cf6 42%, #151a16);
+  --native-ink: color-mix(in srgb, #5b3aa8 45%, #ffffff);
+  --mistake-bg: color-mix(in srgb, #fdecec 16%, #151a16);
+  --mistake-line: color-mix(in srgb, #d64545 42%, #151a16);
+  --mistake-ink: color-mix(in srgb, #9c1c1c 45%, #ffffff);
+  --connect-bg: color-mix(in srgb, #eceafc 16%, #151a16);
+  --connect-line: color-mix(in srgb, #5b4fc4 42%, #151a16);
+  --connect-ink: color-mix(in srgb, #3c2f9e 45%, #ffffff);
+  --mint-bg: color-mix(in srgb, #e6f5ef 16%, #151a16);
+  --mint-line: color-mix(in srgb, #1c9483 42%, #151a16);
+  --mint-ink: color-mix(in srgb, #0f5c50 45%, #ffffff);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+  }
+  :root:not([data-theme="light"]) thead th {
+    background: var(--thead-fill) !important; color: var(--ink) !important;
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+  --teal-100: color-mix(in srgb, #e4f4f0 14%, #151a16);
+  --teal-050: color-mix(in srgb, #f2faf8 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e4e1d6 42%, #151a16);
+  --role-subject: color-mix(in srgb, #3562e0 42%, #ffffff);
+  --role-subject-bg: color-mix(in srgb, #e9eefd 16%, #151a16);
+  --role-verb: color-mix(in srgb, #1c8f56 42%, #ffffff);
+  --role-verb-bg: color-mix(in srgb, #e6f6ec 16%, #151a16);
+  --role-noun: color-mix(in srgb, #c9740a 42%, #ffffff);
+  --role-noun-bg: color-mix(in srgb, #fbecd9 16%, #151a16);
+  --role-adj: color-mix(in srgb, #7c4fd6 42%, #ffffff);
+  --role-adj-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --role-ending: color-mix(in srgb, #0f5c50 42%, #ffffff);
+  --role-ending-bg: color-mix(in srgb, #e4f4f0 16%, #151a16);
+  --role-optional: color-mix(in srgb, #6b7280 42%, #ffffff);
+  --role-optional-bg: color-mix(in srgb, #eef0f1 16%, #151a16);
+  --role-question: color-mix(in srgb, #a3195b 42%, #ffffff);
+  --role-question-bg: color-mix(in srgb, #fce8f1 16%, #151a16);
+  --why-bg: color-mix(in srgb, #fdf3d6 16%, #151a16);
+  --why-line: color-mix(in srgb, #c99a1f 42%, #151a16);
+  --why-ink: color-mix(in srgb, #7a5b0c 45%, #ffffff);
+  --native-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --native-line: color-mix(in srgb, #8b5cf6 42%, #151a16);
+  --native-ink: color-mix(in srgb, #5b3aa8 45%, #ffffff);
+  --mistake-bg: color-mix(in srgb, #fdecec 16%, #151a16);
+  --mistake-line: color-mix(in srgb, #d64545 42%, #151a16);
+  --mistake-ink: color-mix(in srgb, #9c1c1c 45%, #ffffff);
+  --connect-bg: color-mix(in srgb, #eceafc 16%, #151a16);
+  --connect-line: color-mix(in srgb, #5b4fc4 42%, #151a16);
+  --connect-ink: color-mix(in srgb, #3c2f9e 45%, #ffffff);
+  --mint-bg: color-mix(in srgb, #e6f5ef 16%, #151a16);
+  --mint-line: color-mix(in srgb, #1c9483 42%, #151a16);
+  --mint-ink: color-mix(in srgb, #0f5c50 45%, #ffffff);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+}
+html[data-theme="dark"] thead th, body.theme-dark thead th {
+  background: var(--thead-fill) !important; color: var(--ink) !important;
+}

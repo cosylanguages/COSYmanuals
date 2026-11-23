@@ -326,3 +326,76 @@ footer.site .container { display: flex; justify-content: space-between; gap: 20p
   border-top: 1px dashed var(--line);
   padding-top: 6px;
 }
+
+
+
+
+/* Dark theme: the palette above is light-only, so the same role
+   tokens are re-derived over a dark base when the OS prefers dark
+   or an explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --teal-100: color-mix(in srgb, #e3f5ef 14%, #151a16);
+  --teal-050: color-mix(in srgb, #f1faf7 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e3e0d5 42%, #151a16);
+  --gour-bg: color-mix(in srgb, #e9f0fb 16%, #151a16);
+  --gwreg-bg: color-mix(in srgb, #fde8f2 16%, #151a16);
+  --lies-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --why-bg: color-mix(in srgb, #fdf3d6 16%, #151a16);
+  --why-line: color-mix(in srgb, #c99a1f 42%, #151a16);
+  --why-ink: color-mix(in srgb, #7a5b0c 45%, #ffffff);
+  --native-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --native-line: color-mix(in srgb, #8b5cf6 42%, #151a16);
+  --native-ink: color-mix(in srgb, #5b3aa8 45%, #ffffff);
+  --mistake-bg: color-mix(in srgb, #fdecec 16%, #151a16);
+  --mistake-line: color-mix(in srgb, #d64545 42%, #151a16);
+  --mistake-ink: color-mix(in srgb, #9c1c1c 45%, #ffffff);
+  --connect-bg: color-mix(in srgb, #e8f4fd 16%, #151a16);
+  --connect-line: color-mix(in srgb, #2f5fae 42%, #151a16);
+  --connect-ink: color-mix(in srgb, #1b3b73 45%, #ffffff);
+  --mint-bg: color-mix(in srgb, #e3f5ef 16%, #151a16);
+  --mint-line: color-mix(in srgb, #24876b 42%, #151a16);
+  --mint-ink: color-mix(in srgb, #0f382c 45%, #ffffff);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+  }
+  :root:not([data-theme="light"]) thead th {
+    background: var(--thead-fill) !important; color: var(--ink) !important;
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+  --teal-100: color-mix(in srgb, #e3f5ef 14%, #151a16);
+  --teal-050: color-mix(in srgb, #f1faf7 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e3e0d5 42%, #151a16);
+  --gour-bg: color-mix(in srgb, #e9f0fb 16%, #151a16);
+  --gwreg-bg: color-mix(in srgb, #fde8f2 16%, #151a16);
+  --lies-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --why-bg: color-mix(in srgb, #fdf3d6 16%, #151a16);
+  --why-line: color-mix(in srgb, #c99a1f 42%, #151a16);
+  --why-ink: color-mix(in srgb, #7a5b0c 45%, #ffffff);
+  --native-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --native-line: color-mix(in srgb, #8b5cf6 42%, #151a16);
+  --native-ink: color-mix(in srgb, #5b3aa8 45%, #ffffff);
+  --mistake-bg: color-mix(in srgb, #fdecec 16%, #151a16);
+  --mistake-line: color-mix(in srgb, #d64545 42%, #151a16);
+  --mistake-ink: color-mix(in srgb, #9c1c1c 45%, #ffffff);
+  --connect-bg: color-mix(in srgb, #e8f4fd 16%, #151a16);
+  --connect-line: color-mix(in srgb, #2f5fae 42%, #151a16);
+  --connect-ink: color-mix(in srgb, #1b3b73 45%, #ffffff);
+  --mint-bg: color-mix(in srgb, #e3f5ef 16%, #151a16);
+  --mint-line: color-mix(in srgb, #24876b 42%, #151a16);
+  --mint-ink: color-mix(in srgb, #0f382c 45%, #ffffff);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+}
+html[data-theme="dark"] thead th, body.theme-dark thead th {
+  background: var(--thead-fill) !important; color: var(--ink) !important;
+}

@@ -60,3 +60,42 @@ a { color: var(--teal-800); text-decoration: none; font-weight: 600; }
 .pager { display: flex; justify-content: space-between; gap: 16px; margin: 40px 0; }
 footer.site { background: var(--teal-900); color: #e4f5f0; padding: 32px 0; margin-top: 48px; text-align: center; font-size: 14px; }
 footer.site a { color: #fff; }
+
+
+
+
+/* Dark theme: the palette above is light-only, so the same role
+   tokens are re-derived over a dark base when the OS prefers dark
+   or an explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --teal-100: color-mix(in srgb, #e4f5f0 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e3e0d5 42%, #151a16);
+  --mint-bg: color-mix(in srgb, #e3f5ef 16%, #151a16);
+  --mint-ink: color-mix(in srgb, #0f382c 45%, #ffffff);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+  }
+  :root:not([data-theme="light"]) thead th {
+    background: var(--thead-fill) !important; color: var(--ink) !important;
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+  --teal-100: color-mix(in srgb, #e4f5f0 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e3e0d5 42%, #151a16);
+  --mint-bg: color-mix(in srgb, #e3f5ef 16%, #151a16);
+  --mint-ink: color-mix(in srgb, #0f382c 45%, #ffffff);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+}
+html[data-theme="dark"] thead th, body.theme-dark thead th {
+  background: var(--thead-fill) !important; color: var(--ink) !important;
+}

@@ -234,3 +234,62 @@ footer.site .container{display:flex; justify-content:space-between; gap:20px; fl
   .topbar, .pager, .vocab-search-box { display: none !important; }
   .vocab-card, .box, .quiz-panel { background: none !important; border: 1px solid #ccc !important; box-shadow: none !important; }
 }
+
+
+
+
+/* Dark theme: the palette above is light-only, so the same role
+   tokens are re-derived over a dark base when the OS prefers dark
+   or an explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --teal-100: color-mix(in srgb, #e4f4f0 14%, #151a16);
+  --teal-050: color-mix(in srgb, #f2faf8 14%, #151a16);
+  --amber-100: color-mix(in srgb, #fbecd9 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e4e1d6 42%, #151a16);
+  --vocab-noun: color-mix(in srgb, #3562e0 42%, #ffffff);
+  --vocab-noun-bg: color-mix(in srgb, #e9eefd 16%, #151a16);
+  --vocab-verb: color-mix(in srgb, #1c8f56 42%, #ffffff);
+  --vocab-verb-bg: color-mix(in srgb, #e6f6ec 16%, #151a16);
+  --vocab-adj: color-mix(in srgb, #7c4fd6 42%, #ffffff);
+  --vocab-adj-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --vocab-expr: color-mix(in srgb, #c9740a 42%, #ffffff);
+  --vocab-expr-bg: color-mix(in srgb, #fbecd9 16%, #151a16);
+  --vocab-colloc: color-mix(in srgb, #a3195b 42%, #ffffff);
+  --vocab-colloc-bg: color-mix(in srgb, #fce8f1 16%, #151a16);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+  }
+  :root:not([data-theme="light"]) thead th {
+    background: var(--thead-fill) !important; color: var(--ink) !important;
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+  --teal-100: color-mix(in srgb, #e4f4f0 14%, #151a16);
+  --teal-050: color-mix(in srgb, #f2faf8 14%, #151a16);
+  --amber-100: color-mix(in srgb, #fbecd9 14%, #151a16);
+  --ink: #e8f0e9;
+  --ink-soft: #c8d8c9;
+  --paper: #151a16;
+  --panel: #1e241f;
+  --line: color-mix(in srgb, #e4e1d6 42%, #151a16);
+  --vocab-noun: color-mix(in srgb, #3562e0 42%, #ffffff);
+  --vocab-noun-bg: color-mix(in srgb, #e9eefd 16%, #151a16);
+  --vocab-verb: color-mix(in srgb, #1c8f56 42%, #ffffff);
+  --vocab-verb-bg: color-mix(in srgb, #e6f6ec 16%, #151a16);
+  --vocab-adj: color-mix(in srgb, #7c4fd6 42%, #ffffff);
+  --vocab-adj-bg: color-mix(in srgb, #f1e9fb 16%, #151a16);
+  --vocab-expr: color-mix(in srgb, #c9740a 42%, #ffffff);
+  --vocab-expr-bg: color-mix(in srgb, #fbecd9 16%, #151a16);
+  --vocab-colloc: color-mix(in srgb, #a3195b 42%, #ffffff);
+  --vocab-colloc-bg: color-mix(in srgb, #fce8f1 16%, #151a16);
+  /* table headers paint --ink as a fill, which turns light in dark mode */
+  --thead-fill: color-mix(in srgb, var(--ink) 16%, #151a16);
+}
+html[data-theme="dark"] thead th, body.theme-dark thead th {
+  background: var(--thead-fill) !important; color: var(--ink) !important;
+}

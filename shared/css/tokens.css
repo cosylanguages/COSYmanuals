@@ -236,6 +236,34 @@
     --lang-border:                       #bee3f8;
 }
 
+/* Dark Mode Fallback via System Preferences when no explicit theme is saved */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+    --cosy-color-cream:                  #1a1f1a;
+    --cosy-color-cream-dark:             #141914;
+    --cosy-color-warm-white:             #222b22;
+    --cosy-color-surface:                #222b22;
+
+    --cosy-color-ink:                    #e8f0e9;
+    --cosy-color-ink-soft:               #c8d8c9;
+    --cosy-color-ink-muted:              #c8d8c9;
+    --cosy-color-ink-faint:              #8a9e8b;
+    --cosy-color-muted:                  #8a9e8b;
+
+    --cosy-color-border:                 rgba(107, 143, 113, 0.20);
+    --cosy-color-border-hover:           rgba(107, 143, 113, 0.35);
+
+    --cosy-manuals-accent:               #A83444;
+    --cosy-manuals-accent-hover:         #BD4354;
+    --cosy-manuals-accent-dark:          #f7c0c8;
+    --cosy-manuals-accent-light:         #381c22;
+    --cosy-manuals-accent-border:        rgba(224, 122, 136, 0.3);
+
+    --btn-primary-bg:                    var(--cosy-manuals-accent);
+    --btn-primary-hover-bg:              var(--cosy-manuals-accent-hover);
+    }
+}
+
 /* Dark Mode Overrides */
 html[data-theme="dark"], body.theme-dark {
     --cosy-color-cream:                  #1a1f1a;
@@ -252,8 +280,8 @@ html[data-theme="dark"], body.theme-dark {
     --cosy-color-border:                 rgba(107, 143, 113, 0.20);
     --cosy-color-border-hover:           rgba(107, 143, 113, 0.35);
 
-    --cosy-manuals-accent:               #e07a88;
-    --cosy-manuals-accent-hover:         #f0a0ac;
+    --cosy-manuals-accent:               #A83444;
+    --cosy-manuals-accent-hover:         #BD4354;
     --cosy-manuals-accent-dark:          #f7c0c8;
     --cosy-manuals-accent-light:         #381c22;
     --cosy-manuals-accent-border:        rgba(224, 122, 136, 0.3);

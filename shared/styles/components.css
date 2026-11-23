@@ -282,6 +282,7 @@ header.manual-header {
 }
 
 .qopt {
+  color: inherit;
   background: var(--cosy-color-cream, #fdfcf8);
   border: 1px solid var(--cosy-color-border, rgba(74, 107, 80, 0.12));
   border-radius: var(--cosy-radius-xs, 4px);
@@ -565,3 +566,226 @@ main.container footer { color: #4a5568 !important; }
 .cosy-ecosystem-footer-note p,
 .cosy-ecosystem-footer-note span { color: #a8c7b0 !important; }
 .mistakes .mflip .hint, .mistakes .mflip .hint * { color: #9c4a4a !important; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+
+  /* Content pages carry literal light fills in inline styles and one-off
+     rules; under the dark palette those blocks would stay light behind
+     light text. Only elements whose author hard-coded a background are
+     re-pointed at theme surfaces, so intentional tints keep their hue. */
+  table th[style*="background"],
+  table td[style*="background"],
+  tbody tr[style*="background"] {
+    background: color-mix(in srgb, var(--cosy-color-ink) 8%, var(--cosy-color-surface)) !important;
+    color: var(--cosy-color-ink) !important;
+    border-color: var(--cosy-color-border) !important;
+  }
+  .mflip[style*="background"],
+  .mistakes p[style*="background"] {
+    background: color-mix(in srgb, #e53e3e 16%, var(--cosy-color-surface)) !important;
+    color: var(--cosy-color-ink) !important;
+  }
+  .box[style*="background"],
+  .callout[style*="background"],
+  .note[style*="background"] {
+    background: color-mix(in srgb, var(--cosy-color-ink) 6%, var(--cosy-color-surface)) !important;
+    color: var(--cosy-color-ink) !important;
+  }
+  .eyebrow[style*="background"],
+  .hint[style*="background"],
+  .quiz-head[style*="background"],
+  .theme-pill[style*="background"],
+  .pnum[style*="background"] {
+    background: color-mix(in srgb, var(--cosy-color-ink) 10%, var(--cosy-color-surface)) !important;
+    color: var(--cosy-color-ink-soft) !important;
+  }
+  .notice-card .btn[style*="background"] {
+    background: var(--cosy-color-surface) !important;
+    color: var(--cosy-color-ink) !important;
+  }
+  
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+/* Content pages carry literal light fills in inline styles and one-off
+   rules; under the dark palette those blocks would stay light behind
+   light text. Only elements whose author hard-coded a background are
+   re-pointed at theme surfaces, so intentional tints keep their hue. */
+table th[style*="background"],
+table td[style*="background"],
+tbody tr[style*="background"] {
+  background: color-mix(in srgb, var(--cosy-color-ink) 8%, var(--cosy-color-surface)) !important;
+  color: var(--cosy-color-ink) !important;
+  border-color: var(--cosy-color-border) !important;
+}
+.mflip[style*="background"],
+.mistakes p[style*="background"] {
+  background: color-mix(in srgb, #e53e3e 16%, var(--cosy-color-surface)) !important;
+  color: var(--cosy-color-ink) !important;
+}
+.box[style*="background"],
+.callout[style*="background"],
+.note[style*="background"] {
+  background: color-mix(in srgb, var(--cosy-color-ink) 6%, var(--cosy-color-surface)) !important;
+  color: var(--cosy-color-ink) !important;
+}
+.eyebrow[style*="background"],
+.hint[style*="background"],
+.quiz-head[style*="background"],
+.theme-pill[style*="background"],
+.pnum[style*="background"] {
+  background: color-mix(in srgb, var(--cosy-color-ink) 10%, var(--cosy-color-surface)) !important;
+  color: var(--cosy-color-ink-soft) !important;
+}
+.notice-card .btn[style*="background"] {
+  background: var(--cosy-color-surface) !important;
+  color: var(--cosy-color-ink) !important;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+
+  [style*="color:#0f172a"], [style*="color: #0f172a"],
+  [style*="color:#132321"], [style*="color: #132321"],
+  [style*="color:#1e293b"], [style*="color: #1e293b"],
+  [style*="color:#1a365d"], [style*="color: #1a365d"] { color: var(--cosy-color-ink) !important; }
+
+  [style*="color:#475569"], [style*="color: #475569"],
+  [style*="color:#64748b"], [style*="color: #64748b"],
+  [style*="color:#94a3b8"], [style*="color: #94a3b8"] { color: var(--cosy-color-ink-soft) !important; }
+
+  [style*="color:#1c8f56"], [style*="color: #1c8f56"] { color: color-mix(in srgb, #1c8f56 45%, #ffffff) !important; }
+  [style*="color:#2563eb"], [style*="color: #2563eb"] { color: color-mix(in srgb, #2563eb 45%, #ffffff) !important; }
+  [style*="color:#4f46e5"], [style*="color: #4f46e5"] { color: color-mix(in srgb, #4f46e5 45%, #ffffff) !important; }
+
+  [style*="background:#f1f5f9"], [style*="background: #f1f5f9"],
+  [style*="background:#f8fafc"], [style*="background: #f8fafc"],
+  [style*="background:#f7fafc"], [style*="background: #f7fafc"],
+  [style*="background:#eef0f1"], [style*="background: #eef0f1"] {
+    background: color-mix(in srgb, var(--cosy-color-ink) 8%, var(--cosy-color-surface)) !important;
+  }
+
+  [style*="background:#ffffff"], [style*="background: #ffffff"],
+  [style*="background:#fff"], [style*="background: #fff"],
+  [style*="background:white"] { background: var(--cosy-color-surface) !important; }
+
+  [style*="background:#fff3f3"], [style*="background: #fff3f3"] {
+    background: color-mix(in srgb, #e53e3e 16%, var(--cosy-color-surface)) !important;
+  }
+  [style*="background:#fff8e1"], [style*="background: #fff8e1"] {
+    background: color-mix(in srgb, #f0b429 16%, var(--cosy-color-surface)) !important;
+  }
+  [style*="background:#ebf8ff"], [style*="background: #ebf8ff"] {
+    background: color-mix(in srgb, #2563eb 16%, var(--cosy-color-surface)) !important;
+  }
+  [style*="background:#e8f5e9"], [style*="background: #e8f5e9"] {
+    background: color-mix(in srgb, #1c8f56 16%, var(--cosy-color-surface)) !important;
+  }
+
+
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+
+  [style*="color:#0f172a"], [style*="color: #0f172a"],
+  [style*="color:#132321"], [style*="color: #132321"],
+  [style*="color:#1e293b"], [style*="color: #1e293b"],
+  [style*="color:#1a365d"], [style*="color: #1a365d"] { color: var(--cosy-color-ink) !important; }
+
+  [style*="color:#475569"], [style*="color: #475569"],
+  [style*="color:#64748b"], [style*="color: #64748b"],
+  [style*="color:#94a3b8"], [style*="color: #94a3b8"] { color: var(--cosy-color-ink-soft) !important; }
+
+  [style*="color:#1c8f56"], [style*="color: #1c8f56"] { color: color-mix(in srgb, #1c8f56 45%, #ffffff) !important; }
+  [style*="color:#2563eb"], [style*="color: #2563eb"] { color: color-mix(in srgb, #2563eb 45%, #ffffff) !important; }
+  [style*="color:#4f46e5"], [style*="color: #4f46e5"] { color: color-mix(in srgb, #4f46e5 45%, #ffffff) !important; }
+
+  [style*="background:#f1f5f9"], [style*="background: #f1f5f9"],
+  [style*="background:#f8fafc"], [style*="background: #f8fafc"],
+  [style*="background:#f7fafc"], [style*="background: #f7fafc"],
+  [style*="background:#eef0f1"], [style*="background: #eef0f1"] {
+    background: color-mix(in srgb, var(--cosy-color-ink) 8%, var(--cosy-color-surface)) !important;
+  }
+
+  [style*="background:#ffffff"], [style*="background: #ffffff"],
+  [style*="background:#fff"], [style*="background: #fff"],
+  [style*="background:white"] { background: var(--cosy-color-surface) !important; }
+
+  [style*="background:#fff3f3"], [style*="background: #fff3f3"] {
+    background: color-mix(in srgb, #e53e3e 16%, var(--cosy-color-surface)) !important;
+  }
+  [style*="background:#fff8e1"], [style*="background: #fff8e1"] {
+    background: color-mix(in srgb, #f0b429 16%, var(--cosy-color-surface)) !important;
+  }
+  [style*="background:#ebf8ff"], [style*="background: #ebf8ff"] {
+    background: color-mix(in srgb, #2563eb 16%, var(--cosy-color-surface)) !important;
+  }
+  [style*="background:#e8f5e9"], [style*="background: #e8f5e9"] {
+    background: color-mix(in srgb, #1c8f56 16%, var(--cosy-color-surface)) !important;
+  }
+
+
+}
+
+/* Inline colours: lesson pages hard-code a light palette */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  [style*="color:#0f172a" i], [style*="color: #0f172a" i], [style*="color:#132321" i], [style*="color: #132321" i], [style*="color:#1e293b" i], [style*="color: #1e293b" i], [style*="color:#1a365d" i], [style*="color: #1a365d" i], [style*="color:#111827" i], [style*="color: #111827" i], [style*="color:#0b1f17" i], [style*="color: #0b1f17" i] { color: var(--cosy-color-ink) !important; }
+
+  [style*="color:#475569" i], [style*="color: #475569" i], [style*="color:#64748b" i], [style*="color: #64748b" i], [style*="color:#94a3b8" i], [style*="color: #94a3b8" i], [style*="color:#4a5568" i], [style*="color: #4a5568" i], [style*="color:#6b7280" i], [style*="color: #6b7280" i] { color: var(--cosy-color-ink-soft) !important; }
+
+  [style*="color:#1c8f56" i], [style*="color: #1c8f56" i] { color: color-mix(in srgb, #1c8f56 45%, #ffffff) !important; }
+  [style*="color:#2563eb" i], [style*="color: #2563eb" i] { color: color-mix(in srgb, #2563eb 45%, #ffffff) !important; }
+  [style*="color:#4f46e5" i], [style*="color: #4f46e5" i] { color: color-mix(in srgb, #4f46e5 45%, #ffffff) !important; }
+  [style*="color:#2d6a4f" i], [style*="color: #2d6a4f" i] { color: color-mix(in srgb, #2d6a4f 45%, #ffffff) !important; }
+  [style*="color:#2b6cb0" i], [style*="color: #2b6cb0" i] { color: color-mix(in srgb, #2b6cb0 45%, #ffffff) !important; }
+  [style*="color:#3562e0" i], [style*="color: #3562e0" i] { color: color-mix(in srgb, #3562e0 45%, #ffffff) !important; }
+  [style*="color:#c9740a" i], [style*="color: #c9740a" i] { color: color-mix(in srgb, #c9740a 45%, #ffffff) !important; }
+
+  [style*="background:#ffffff" i], [style*="background: #ffffff" i], [style*="background-color:#ffffff" i], [style*="background-color: #ffffff" i] { background: var(--cosy-color-surface) !important; }
+  [style*="background:#fff" i], [style*="background: #fff" i], [style*="background-color:#fff" i], [style*="background-color: #fff" i] { background: var(--cosy-color-surface) !important; }
+
+  [style*="background:#f1f5f9" i], [style*="background: #f1f5f9" i], [style*="background-color:#f1f5f9" i], [style*="background-color: #f1f5f9" i] { background: color-mix(in srgb, #f1f5f9 8%, var(--cosy-color-surface)) !important; }
+  [style*="background:#f8fafc" i], [style*="background: #f8fafc" i], [style*="background-color:#f8fafc" i], [style*="background-color: #f8fafc" i] { background: color-mix(in srgb, #f8fafc 8%, var(--cosy-color-surface)) !important; }
+  [style*="background:#f7fafc" i], [style*="background: #f7fafc" i], [style*="background-color:#f7fafc" i], [style*="background-color: #f7fafc" i] { background: color-mix(in srgb, #f7fafc 8%, var(--cosy-color-surface)) !important; }
+  [style*="background:#eef0f1" i], [style*="background: #eef0f1" i], [style*="background-color:#eef0f1" i], [style*="background-color: #eef0f1" i] { background: color-mix(in srgb, #eef0f1 8%, var(--cosy-color-surface)) !important; }
+  [style*="background:#f5f6fa" i], [style*="background: #f5f6fa" i], [style*="background-color:#f5f6fa" i], [style*="background-color: #f5f6fa" i] { background: color-mix(in srgb, #f5f6fa 8%, var(--cosy-color-surface)) !important; }
+  [style*="background:#e6f0fa" i], [style*="background: #e6f0fa" i], [style*="background-color:#e6f0fa" i], [style*="background-color: #e6f0fa" i] { background: color-mix(in srgb, #e6f0fa 8%, var(--cosy-color-surface)) !important; }
+  [style*="background:#fff3f3" i], [style*="background: #fff3f3" i], [style*="background-color:#fff3f3" i], [style*="background-color: #fff3f3" i] { background: color-mix(in srgb, #fff3f3 16%, var(--cosy-color-surface)) !important; }
+  [style*="background:#fff8e1" i], [style*="background: #fff8e1" i], [style*="background-color:#fff8e1" i], [style*="background-color: #fff8e1" i] { background: color-mix(in srgb, #fff8e1 16%, var(--cosy-color-surface)) !important; }
+  [style*="background:#ebf8ff" i], [style*="background: #ebf8ff" i], [style*="background-color:#ebf8ff" i], [style*="background-color: #ebf8ff" i] { background: color-mix(in srgb, #ebf8ff 16%, var(--cosy-color-surface)) !important; }
+  [style*="background:#e8f5e9" i], [style*="background: #e8f5e9" i], [style*="background-color:#e8f5e9" i], [style*="background-color: #e8f5e9" i] { background: color-mix(in srgb, #e8f5e9 16%, var(--cosy-color-surface)) !important; }
+  }
+}
+html[data-theme="dark"], body.theme-dark {
+/* Inline colours: lesson pages hard-code a light palette (21k uses of
+   #0f172a on #f1f5f9), which turns into dark-on-dark text once the page
+   palette flips. Re-point the recurring literals at theme tokens. */
+[style*="color:#0f172a" i], [style*="color: #0f172a" i], [style*="color:#132321" i], [style*="color: #132321" i], [style*="color:#1e293b" i], [style*="color: #1e293b" i], [style*="color:#1a365d" i], [style*="color: #1a365d" i], [style*="color:#111827" i], [style*="color: #111827" i], [style*="color:#0b1f17" i], [style*="color: #0b1f17" i] { color: var(--cosy-color-ink) !important; }
+
+[style*="color:#475569" i], [style*="color: #475569" i], [style*="color:#64748b" i], [style*="color: #64748b" i], [style*="color:#94a3b8" i], [style*="color: #94a3b8" i], [style*="color:#4a5568" i], [style*="color: #4a5568" i], [style*="color:#6b7280" i], [style*="color: #6b7280" i] { color: var(--cosy-color-ink-soft) !important; }
+
+[style*="color:#1c8f56" i], [style*="color: #1c8f56" i] { color: color-mix(in srgb, #1c8f56 45%, #ffffff) !important; }
+[style*="color:#2563eb" i], [style*="color: #2563eb" i] { color: color-mix(in srgb, #2563eb 45%, #ffffff) !important; }
+[style*="color:#4f46e5" i], [style*="color: #4f46e5" i] { color: color-mix(in srgb, #4f46e5 45%, #ffffff) !important; }
+[style*="color:#2d6a4f" i], [style*="color: #2d6a4f" i] { color: color-mix(in srgb, #2d6a4f 45%, #ffffff) !important; }
+[style*="color:#2b6cb0" i], [style*="color: #2b6cb0" i] { color: color-mix(in srgb, #2b6cb0 45%, #ffffff) !important; }
+[style*="color:#3562e0" i], [style*="color: #3562e0" i] { color: color-mix(in srgb, #3562e0 45%, #ffffff) !important; }
+[style*="color:#c9740a" i], [style*="color: #c9740a" i] { color: color-mix(in srgb, #c9740a 45%, #ffffff) !important; }
+
+[style*="background:#ffffff" i], [style*="background: #ffffff" i], [style*="background-color:#ffffff" i], [style*="background-color: #ffffff" i] { background: var(--cosy-color-surface) !important; }
+[style*="background:#fff" i], [style*="background: #fff" i], [style*="background-color:#fff" i], [style*="background-color: #fff" i] { background: var(--cosy-color-surface) !important; }
+
+[style*="background:#f1f5f9" i], [style*="background: #f1f5f9" i], [style*="background-color:#f1f5f9" i], [style*="background-color: #f1f5f9" i] { background: color-mix(in srgb, #f1f5f9 8%, var(--cosy-color-surface)) !important; }
+[style*="background:#f8fafc" i], [style*="background: #f8fafc" i], [style*="background-color:#f8fafc" i], [style*="background-color: #f8fafc" i] { background: color-mix(in srgb, #f8fafc 8%, var(--cosy-color-surface)) !important; }
+[style*="background:#f7fafc" i], [style*="background: #f7fafc" i], [style*="background-color:#f7fafc" i], [style*="background-color: #f7fafc" i] { background: color-mix(in srgb, #f7fafc 8%, var(--cosy-color-surface)) !important; }
+[style*="background:#eef0f1" i], [style*="background: #eef0f1" i], [style*="background-color:#eef0f1" i], [style*="background-color: #eef0f1" i] { background: color-mix(in srgb, #eef0f1 8%, var(--cosy-color-surface)) !important; }
+[style*="background:#f5f6fa" i], [style*="background: #f5f6fa" i], [style*="background-color:#f5f6fa" i], [style*="background-color: #f5f6fa" i] { background: color-mix(in srgb, #f5f6fa 8%, var(--cosy-color-surface)) !important; }
+[style*="background:#e6f0fa" i], [style*="background: #e6f0fa" i], [style*="background-color:#e6f0fa" i], [style*="background-color: #e6f0fa" i] { background: color-mix(in srgb, #e6f0fa 8%, var(--cosy-color-surface)) !important; }
+[style*="background:#fff3f3" i], [style*="background: #fff3f3" i], [style*="background-color:#fff3f3" i], [style*="background-color: #fff3f3" i] { background: color-mix(in srgb, #fff3f3 16%, var(--cosy-color-surface)) !important; }
+[style*="background:#fff8e1" i], [style*="background: #fff8e1" i], [style*="background-color:#fff8e1" i], [style*="background-color: #fff8e1" i] { background: color-mix(in srgb, #fff8e1 16%, var(--cosy-color-surface)) !important; }
+[style*="background:#ebf8ff" i], [style*="background: #ebf8ff" i], [style*="background-color:#ebf8ff" i], [style*="background-color: #ebf8ff" i] { background: color-mix(in srgb, #ebf8ff 16%, var(--cosy-color-surface)) !important; }
+[style*="background:#e8f5e9" i], [style*="background: #e8f5e9" i], [style*="background-color:#e8f5e9" i], [style*="background-color: #e8f5e9" i] { background: color-mix(in srgb, #e8f5e9 16%, var(--cosy-color-surface)) !important; }
+}
