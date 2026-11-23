@@ -48,7 +48,7 @@ a { color: var(--teal-800); text-decoration: none; font-weight: 600; }
 .qitem { border-top: 1px solid var(--line); padding: 16px 0; }
 .qopts { display: flex; flex-direction: column; gap: 8px; }
 .qopt { text-align: left; border: 1px solid var(--line); background: var(--paper); border-radius: var(--radius-s); padding: 10px 14px; font-size: 15px; cursor: pointer; width: 100%; }
-.qopt.correct { border-color: #16a34a; background: #dcfce7; font-weight: 700; }
+.qopt.correct { border-color: #15803d; background: #dcfce7; font-weight: 700; }
 .qopt.incorrect { border-color: #ef4444; background: #fef2f2; }
 .qexplain { display: none; margin-top: 10px; font-size: 14px; background: var(--teal-100); padding: 10px 14px; border-radius: 6px; }
 .qexplain.show { display: block; }

@@ -18,6 +18,23 @@
   .card-day { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; border-left: 5px solid #005bae; }
   .card-day h3 { margin: 0 0 0.4rem; color: #003366; font-size: 1.2rem; }
   .badge-phase { background: #e6f0fa; color: #005bae; font-weight: 800; padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.8rem; display: inline-block; margin-bottom: 0.4rem; }
+
+/* cosy-dark-surface: these pages ship a light-only inline palette */
+@media (prefers-color-scheme: dark) {
+  html, body { background: #151a16 !important; color: #e8f0e9 !important; }
+  :is(.celta-stage, .stage-box, .rule-card, .day-container, .mp-container, .card, .note-box, .tip-box) {
+    background: #1e241f !important; border-color: #3a463a !important; box-shadow: none !important;
+  }
+  :is(.celta-stage, .stage-box, .rule-card, .card, .note-box, .tip-box) :is(h1,h2,h3,h4,h5,p,li,td,th,strong,b,em,label,small,span) {
+    color: #e8f0e9 !important;
+  }
+  :is(.stage-badge, .badge, .stage-tag) { background: #2a3b52 !important; color: #bcd4f5 !important; }
+  :is(.sd-sticky-header, .sd-jump-links, .topbar) { background: #1e241f !important; border-color: #3a463a !important; }
+  :is(.sd-jump-link, .sd-jump-links a, .topbar-nav a) { color: #cfe0f5 !important; background: transparent !important; }
+  :is(.sd-jump-link.active, .sd-jump-links a.active) { background: #A83444 !important; color: #ffffff !important; }
+  :is(.wrong, .error, .incorrect) { color: #e8a3a3 !important; }
+  :is(.correct, .ok) { color: #9fd8b0 !important; }
+}
 </style>
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>

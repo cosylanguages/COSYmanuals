@@ -82,7 +82,7 @@ a:hover { color: var(--green-900); }
 .qitem .qtext { font-family: var(--font-display); font-weight: 800; margin-bottom: 12px; }
 .qopts { display: flex; flex-direction: column; gap: 8px; }
 .qopt { text-align: left; border: 1px solid var(--line); background: var(--paper); border-radius: var(--radius-s); padding: 10px 14px; font-size: 15px; cursor: pointer; }
-.qopt.correct { border-color: #16a34a; background: #dcfce7; font-weight: 700; }
+.qopt.correct { border-color: #15803d; background: #dcfce7; font-weight: 700; }
 .qopt.incorrect { border-color: #ef4444; background: #fef2f2; }
 .qexplain { display: none; margin-top: 10px; font-size: 14px; background: var(--green-050); border-left: 3px solid var(--green-600); padding: 10px 14px; }
 .qexplain.show { display: block; }

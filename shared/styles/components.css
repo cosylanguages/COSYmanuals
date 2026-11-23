@@ -796,9 +796,10 @@ html[data-theme="dark"], body.theme-dark {
    theme surfaces; the tint hue is preserved as a faint wash. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) :is(
-    .notice-box, .mindset-box, .memory-box, .conversation-map, .map-step,
-    .stage-box, .lesson-cando, .checklist, .check-item, .ccq-panel,
-    .quiz-panel, .outcome-banner, .hero-builder, .rule-box, .box2
+    .notice-box, .mindset-box, .memory-box, .connect-box, .conversation-map,
+    .map-step, .building-blocks, .stage-box, .lesson-cando, .checklist,
+    .check-item, .ccq-panel, .quiz-panel, .outcome-banner, .hero-builder,
+    .rule-box, .box2, .box.why
   ) {
     background: color-mix(in srgb, var(--accent, #4a6b50) 10%, var(--cosy-color-surface, #222b22)) !important;
     border-color: var(--cosy-color-border, #3a463a) !important;
@@ -806,15 +807,31 @@ html[data-theme="dark"], body.theme-dark {
   }
 
   :root:not([data-theme="light"]) :is(
-    .notice-box, .mindset-box, .memory-box, .conversation-map, .map-step,
-    .stage-box, .lesson-cando, .checklist, .ccq-panel, .quiz-panel,
-    .outcome-banner, .hero-builder, .rule-box, .box2
+    .notice-box, .mindset-box, .memory-box, .connect-box, .conversation-map,
+    .map-step, .building-blocks, .stage-box, .lesson-cando, .checklist,
+    .ccq-panel, .quiz-panel, .outcome-banner, .hero-builder, .rule-box,
+    .box2, .box.why
   ) :is(h1, h2, h3, h4, h5, p, li, span, strong, b, em, a, td, th, div) {
     color: var(--cosy-color-ink, #e8f0e9) !important;
   }
 
   :root:not([data-theme="light"]) :is(.page-head, .section-head) :is(h1, h2, h3) {
     color: var(--cosy-color-ink, #e8f0e9) !important;
+  }
+
+  /* pastel label chips keep their fill in dark mode, so flatten them onto the
+     panel surface and let the ink carry the contrast */
+  :root:not([data-theme="light"]) :is(
+    .chip, .chip-grid > span, .tag, .pill, .word-chip, .task-box,
+    .hint-box, .note, table.mp-table > thead > th, table.mp-table thead th
+  ) {
+    background: color-mix(in srgb, var(--accent, #4a6b50) 16%, #1e241f) !important;
+    color: #e8f0e9 !important;
+    border-color: #3a463a !important;
+  }
+
+  :root:not([data-theme="light"]) .mistakes .mflip span:not(.hint) {
+    color: #e8a3a3 !important;
   }
 
   :root:not([data-theme="light"]) .booklet-actions :is(.btn, button, a) {

@@ -160,7 +160,7 @@ main.container footer { color: #4a5568 !important; }
     --accent-700: color-mix(in srgb, var(--accent) 52%, var(--accent-shade-base));
     --accent-800: color-mix(in srgb, var(--accent) 42%, var(--accent-shade-base));
     --accent-900: color-mix(in srgb, var(--accent) 34%, var(--accent-shade-base));
-    --accent-ink: color-mix(in srgb, var(--accent) 45%, var(--accent-shade-base));
+    --accent-ink: color-mix(in srgb, var(--accent) 36%, var(--accent-shade-base));
   }
 
   :root:not([data-theme="light"]) .mistakes .mflip .hint,
