@@ -45,7 +45,7 @@ a:hover { color: var(--green-900); }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .brand { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-family: var(--font-display); }
-.brand-mark { background: #fff; color: var(--green-900); width: 30px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-style: italic; }
+.brand-mark { background: var(--panel, #fff); color: var(--green-900); width: 30px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-style: italic; }
 .topbar-nav { display: flex; gap: 8px; }
 .topbar-nav a { color: #d1fae5; font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 99px; }
 .topbar-nav a:hover, .topbar-nav a.active { background: rgba(255,255,255,.18); color: #fff; }

@@ -94,7 +94,7 @@ button, .btn, .qopt, .topic-card, .check-item, .pager a {
 }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #eafaf5; }
 .brand-mark {
-  width: 34px; height: 34px; border-radius: 10px; background: #ffffff; color: var(--teal-900);
+  width: 34px; height: 34px; border-radius: 10px; background: var(--panel, #fff); color: var(--teal-900);
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display); font-weight: 900; font-size: 16px;
 }

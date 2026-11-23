@@ -8,13 +8,18 @@
 
 :root,
 [data-lang-theme] {
-  --accent-050: color-mix(in srgb, var(--accent) 5%, #ffffff);
-  --accent-100: color-mix(in srgb, var(--accent) 10%, #ffffff);
+  /* Tints mix toward the page paper, shades toward the page ink, so the
+     whole scale inverts with the theme instead of staying light-tuned. */
+  --accent-tint-base: #ffffff;
+  --accent-shade-base: #000000;
+  --accent-050: color-mix(in srgb, var(--accent) 5%, var(--accent-tint-base));
+  --accent-100: color-mix(in srgb, var(--accent) 10%, var(--accent-tint-base));
   --accent-500: var(--accent);
-  --accent-600: color-mix(in srgb, var(--accent) 85%, #000000);
-  --accent-700: color-mix(in srgb, var(--accent) 70%, #000000);
-  --accent-800: color-mix(in srgb, var(--accent) 55%, #000000);
-  --accent-900: color-mix(in srgb, var(--accent) 40%, #000000);
+  --accent-600: color-mix(in srgb, var(--accent) 85%, var(--accent-shade-base));
+  --accent-700: color-mix(in srgb, var(--accent) 70%, var(--accent-shade-base));
+  --accent-800: color-mix(in srgb, var(--accent) 55%, var(--accent-shade-base));
+  --accent-900: color-mix(in srgb, var(--accent) 40%, var(--accent-shade-base));
+  --accent-ink: color-mix(in srgb, var(--accent) 62%, var(--accent-shade-base));
 }
 
 [data-lang-theme="ba"] {
@@ -119,3 +124,66 @@ main.container footer { color: #4a5568 !important; }
 .cosy-ecosystem-footer-note div, .cosy-ecosystem-footer-note p,
 .cosy-ecosystem-footer-note span { color: #a8c7b0 !important; }
 .mistakes .mflip .hint, .mflip .hint { color: #9c4a4a !important; }
+
+
+/* ── Theme-aware accent scale ─────────────────────────────────────────────
+   Pages alias the scale (--teal-700 and friends) for both text and fills.
+   Dark mode turns the shades light so accent text stays readable, then
+   re-pins the few selectors that paint an accent as a dark band. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]),
+  [data-lang-theme]:not([data-theme="light"]) {
+    --accent-tint-base: #141a15;
+    --accent-shade-base: #ffffff;
+    --accent-pale: color-mix(in srgb, var(--accent) 16%, #141a15);
+    --accent-dark: color-mix(in srgb, var(--accent) 45%, #ffffff);
+  }
+
+  :root:not([data-theme="light"]) .hero,
+  :root:not([data-theme="light"]) .topbar,
+  :root:not([data-theme="light"]) footer,
+  :root:not([data-theme="light"]) footer.site,
+  :root:not([data-theme="light"]) footer.main-footer,
+  :root:not([data-theme="light"]) main.container footer,
+  :root:not([data-theme="light"]) .step-num,
+  :root:not([data-theme="light"]) .quiz-reset,
+  :root:not([data-theme="light"]) .flash-face.front,
+  :root:not([data-theme="light"]) .qa-cell.c2,
+  :root:not([data-theme="light"]) .filter-pill:hover,
+  :root:not([data-theme="light"]) .filter-pill.active,
+  :root:not([data-theme="light"]) .timeline .pt {
+    background: color-mix(in srgb, var(--accent) 26%, #0d1210) !important;
+    color: #e6efe8 !important;
+  }
+
+  :root:not([data-theme="light"]) {
+    --accent-700: color-mix(in srgb, var(--accent) 52%, var(--accent-shade-base));
+    --accent-800: color-mix(in srgb, var(--accent) 42%, var(--accent-shade-base));
+    --accent-900: color-mix(in srgb, var(--accent) 34%, var(--accent-shade-base));
+    --accent-ink: color-mix(in srgb, var(--accent) 45%, var(--accent-shade-base));
+  }
+
+  :root:not([data-theme="light"]) .mistakes .mflip .hint,
+  :root:not([data-theme="light"]) .mflip .hint { color: #e8a3a3 !important; }
+  :root:not([data-theme="light"]) .eyebrow,
+  :root:not([data-theme="light"]) .page-head .eyebrow {
+    color: color-mix(in srgb, var(--accent) 38%, #ffffff) !important;
+  }
+
+  :root:not([data-theme="light"]) .mflip .wrong-text,
+  :root:not([data-theme="light"]) .wrong-text { color: #e8a3a3 !important; }
+  :root:not([data-theme="light"]) .private-tag,
+  :root:not([data-theme="light"]) .badge-cosy,
+  :root:not([data-theme="light"]) .topbar-badge {
+    background: color-mix(in srgb, #A83444 20%, #141a15) !important;
+    color: var(--cosy-manuals-accent, #f0a8b0) !important;
+  }
+}
+
+html[data-theme="dark"],
+body.theme-dark {
+  --accent-tint-base: #141a15;
+  --accent-shade-base: #ffffff;
+  --accent-pale: color-mix(in srgb, var(--accent) 16%, #141a15);
+  --accent-dark: color-mix(in srgb, var(--accent) 45%, #ffffff);
+}

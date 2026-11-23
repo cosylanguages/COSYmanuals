@@ -3,7 +3,9 @@
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --bg: #faf9f6;
   --card-bg: #ffffff;
+  --panel: var(--card-bg);
   --text: #1c1c1e;
+  --ink: var(--text);
   --subtext: #636366;
   --border: #e5e5ea;
   --brand-blue: #3562e0;

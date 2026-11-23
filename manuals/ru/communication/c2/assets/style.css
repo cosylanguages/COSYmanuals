@@ -78,7 +78,7 @@ a:hover { color: var(--teal-900); }
 .building-blocks { background: #f4f8f7; border: 1px solid #d2e5e1; border-radius: var(--radius-m); padding: 22px; margin: 24px 0; }
 .building-blocks h3 { margin: 0 0 14px; font-family: var(--font-display); color: var(--teal-900); font-size: 18px; font-weight: 800; }
 .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-.chip { display: inline-flex; align-items: center; padding: 8px 16px; background: #fff; border: 1px solid var(--line); border-radius: 99px; font-weight: 700; font-size: 14.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.chip { display: inline-flex; align-items: center; padding: 8px 16px; background: var(--panel, #fff); border: 1px solid var(--line); border-radius: 99px; font-weight: 700; font-size: 14.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
 .chip.block-start { background: #e0f2fe; color: #0369a1; border-color: #7dd3fc; }
 .chip.block-continue { background: #e0e7ff; color: #3730a3; border-color: #a5b4fc; }
 .chip.block-react { background: #fce7f3; color: #9d174d; border-color: #fbcfe8; }

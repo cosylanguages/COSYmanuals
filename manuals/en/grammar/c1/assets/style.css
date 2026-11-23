@@ -143,7 +143,7 @@ th { background: var(--teal-050); color: var(--teal-900); font-weight: 700; }
 
 .mistakes { background: var(--mistake-bg); border-left: 4px solid var(--mistake-line); padding: 16px; border-radius: var(--radius-s); margin-bottom: 24px; }
 .mistakes .m-title { font-weight: 800; color: var(--mistake-ink); font-size: 14px; margin-bottom: 12px; }
-.mflip { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; cursor: pointer; user-select: none; transition: background .15s; }
+.mflip { background: var(--panel, #fff); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; cursor: pointer; user-select: none; transition: background .15s; }
 .mflip:hover { background: #fffdfd; }
 .wrong-line { color: var(--mistake-ink); font-weight: 600; margin-bottom: 4px; }
 .right-line { color: var(--role-verb); font-weight: 700; display: none; margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--line); }

@@ -65,6 +65,7 @@
     /* Product Identity: Academic Leather-Bound Burgundy / Deep Scholar Crimson
        Distinct from COSYlanguages (Sage Green), COSYplatform (Credible Navy), and COSYevents (Coral/Amber). */
     --cosy-manuals-accent:               #6b202b;
+    --cosy-manuals-accent-fill:          #6b202b;
     --cosy-manuals-accent-hover:         #521821;
     --cosy-manuals-accent-dark:          #3f1118;
     --cosy-manuals-accent-soft:          #8c3442;
@@ -97,6 +98,10 @@
 
     /* ── 5. Auxiliary UI Palette ───────────────────────────────────────── */
     --cosy-color-honey:                  #945e05;
+    --cosy-color-honey-pale:             #fff8e7;
+    --cosy-color-honey-soft:             #f7e6c2;
+    --cosy-color-tint-error:             #fdecec;
+    --cosy-color-tint-success:           #e8f4ec;
     --cosy-color-coral:                  #B84318;
     --cosy-color-navy:                   #1e2f6b;
     --cosy-color-green:                  #4a6b50;
@@ -248,12 +253,18 @@
     --cosy-color-ink-soft:               #c8d8c9;
     --cosy-color-ink-muted:              #c8d8c9;
     --cosy-color-ink-faint:              #8a9e8b;
+    --cosy-color-honey:                  #e0b25e;
+    --cosy-color-honey-pale:             #3a3320;
+    --cosy-color-honey-soft:             #4a4128;
+    --cosy-color-tint-error:             #3b2426;
+    --cosy-color-tint-success:           #24322a;
     --cosy-color-muted:                  #8a9e8b;
 
     --cosy-color-border:                 rgba(107, 143, 113, 0.20);
     --cosy-color-border-hover:           rgba(107, 143, 113, 0.35);
 
-    --cosy-manuals-accent:               #A83444;
+    --cosy-manuals-accent:               #f0a8b0;
+    --cosy-manuals-accent-fill:          #A83444;
     --cosy-manuals-accent-hover:         #BD4354;
     --cosy-manuals-accent-dark:          #f7c0c8;
     --cosy-manuals-accent-light:         #381c22;
@@ -275,12 +286,18 @@ html[data-theme="dark"], body.theme-dark {
     --cosy-color-ink-soft:               #c8d8c9;
     --cosy-color-ink-muted:              #c8d8c9;
     --cosy-color-ink-faint:              #8a9e8b;
+    --cosy-color-honey:                  #e0b25e;
+    --cosy-color-honey-pale:             #3a3320;
+    --cosy-color-honey-soft:             #4a4128;
+    --cosy-color-tint-error:             #3b2426;
+    --cosy-color-tint-success:           #24322a;
     --cosy-color-muted:                  #8a9e8b;
 
     --cosy-color-border:                 rgba(107, 143, 113, 0.20);
     --cosy-color-border-hover:           rgba(107, 143, 113, 0.35);
 
-    --cosy-manuals-accent:               #A83444;
+    --cosy-manuals-accent:               #f0a8b0;
+    --cosy-manuals-accent-fill:          #A83444;
     --cosy-manuals-accent-hover:         #BD4354;
     --cosy-manuals-accent-dark:          #f7c0c8;
     --cosy-manuals-accent-light:         #381c22;

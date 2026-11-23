@@ -51,7 +51,7 @@ a:hover { color: var(--teal-900); }
 .topbar { position: sticky; top: 0; z-index: 50; background: var(--teal-900); color: #eafaf5; border-bottom: 1px solid rgba(255,255,255,.1); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
 .topbar-inner { max-width: 1180px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #eafaf5; }
-.brand-mark { width: 32px; height: 32px; border-radius: 10px; background: #fff; color: var(--teal-900); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; }
+.brand-mark { width: 32px; height: 32px; border-radius: 10px; background: var(--panel, #fff); color: var(--teal-900); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; }
 .brand-name { font-family: var(--font-display); font-weight: 800; font-size: 16px; }
 .brand-name em { font-style: italic; opacity: .88; }
 .topbar-nav { display: flex; gap: 4px; flex-wrap: wrap; }
@@ -76,9 +76,9 @@ a:hover { color: var(--teal-900); }
 .building-blocks { background: #f4f8f7; border: 1px solid #d2e5e1; border-radius: var(--radius-m); padding: 20px; margin: 24px 0; }
 .building-blocks h3 { margin: 0 0 12px; font-family: var(--font-display); color: var(--teal-900); font-size: 17px; }
 .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-.chip { background: #fff; border: 1px solid var(--teal-600); color: var(--teal-900); padding: 8px 14px; border-radius: 99px; font-weight: 700; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+.chip { background: var(--panel, #fff); border: 1px solid var(--teal-600); color: var(--teal-900); padding: 8px 14px; border-radius: 99px; font-weight: 700; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
 
-.conversation-map { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-m); padding: 22px; margin: 24px 0; box-shadow: var(--shadow-card); }
+.conversation-map { background: var(--panel, #fff); border: 1px solid var(--line); border-radius: var(--radius-m); padding: 22px; margin: 24px 0; box-shadow: var(--shadow-card); }
 .conversation-map h3 { margin: 0 0 16px; font-family: var(--font-display); color: var(--ink); font-size: 18px; }
 .map-step { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
 .map-step:last-child { margin-bottom: 0; }

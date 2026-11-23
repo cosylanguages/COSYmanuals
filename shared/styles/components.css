@@ -81,9 +81,9 @@ header.manual-header {
 }
 
 .sd-jump-link:hover, .sd-jump-link.active, .topbar-nav a:hover, .topbar-nav a.active, .nav-pill:hover, .nav-pill.active, .topbar-pill:hover, .topbar-pill.active {
-  background: var(--cosy-manuals-accent, #6b202b) !important;
+  background: var(--cosy-manuals-accent-fill, #6b202b) !important;
   color: #ffffff !important;
-  border-color: var(--cosy-manuals-accent, #6b202b) !important;
+  border-color: var(--cosy-manuals-accent-fill, #6b202b) !important;
 }
 
 /* Hero Header Contrast Overrides */
@@ -788,4 +788,38 @@ html[data-theme="dark"], body.theme-dark {
 [style*="background:#fff8e1" i], [style*="background: #fff8e1" i], [style*="background-color:#fff8e1" i], [style*="background-color: #fff8e1" i] { background: color-mix(in srgb, #fff8e1 16%, var(--cosy-color-surface)) !important; }
 [style*="background:#ebf8ff" i], [style*="background: #ebf8ff" i], [style*="background-color:#ebf8ff" i], [style*="background-color: #ebf8ff" i] { background: color-mix(in srgb, #ebf8ff 16%, var(--cosy-color-surface)) !important; }
 [style*="background:#e8f5e9" i], [style*="background: #e8f5e9" i], [style*="background-color:#e8f5e9" i], [style*="background-color: #e8f5e9" i] { background: color-mix(in srgb, #e8f5e9 16%, var(--cosy-color-surface)) !important; }
+}
+
+/* ── Dark-mode content panels ────────────────────────────────────────────
+   The manual pages hard-code pastel panel fills per language level, so the
+   shared dark palette never reaches them. Re-point the recurring families at
+   theme surfaces; the tint hue is preserved as a faint wash. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) :is(
+    .notice-box, .mindset-box, .memory-box, .conversation-map, .map-step,
+    .stage-box, .lesson-cando, .checklist, .check-item, .ccq-panel,
+    .quiz-panel, .outcome-banner, .hero-builder, .rule-box, .box2
+  ) {
+    background: color-mix(in srgb, var(--accent, #4a6b50) 10%, var(--cosy-color-surface, #222b22)) !important;
+    border-color: var(--cosy-color-border, #3a463a) !important;
+    color: var(--cosy-color-ink, #e8f0e9) !important;
+  }
+
+  :root:not([data-theme="light"]) :is(
+    .notice-box, .mindset-box, .memory-box, .conversation-map, .map-step,
+    .stage-box, .lesson-cando, .checklist, .ccq-panel, .quiz-panel,
+    .outcome-banner, .hero-builder, .rule-box, .box2
+  ) :is(h1, h2, h3, h4, h5, p, li, span, strong, b, em, a, td, th, div) {
+    color: var(--cosy-color-ink, #e8f0e9) !important;
+  }
+
+  :root:not([data-theme="light"]) :is(.page-head, .section-head) :is(h1, h2, h3) {
+    color: var(--cosy-color-ink, #e8f0e9) !important;
+  }
+
+  :root:not([data-theme="light"]) .booklet-actions :is(.btn, button, a) {
+    background: var(--cosy-color-surface, #222b22) !important;
+    color: var(--cosy-color-ink, #e8f0e9) !important;
+    border-color: var(--cosy-color-border, #3a463a) !important;
+  }
 }

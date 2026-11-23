@@ -10,7 +10,9 @@
   --teal-50: #f2f9f6;
   --bg: #faf9f5;
   --card-bg: #ffffff;
+  --panel: var(--card-bg);
   --text: #1a1a1a;
+  --ink: var(--text);
   --subtext: #555555;
   --border: #e2e8f0;
 }
@@ -56,7 +58,7 @@ body {
   font-size: 32px;
   font-weight: 800;
   margin: 4px 0 8px;
-  color: #111827;
+  color: var(--text);
 }
 
 .subtitle {
@@ -100,7 +102,7 @@ body {
 .word {
   font-size: 18px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--ink, #0f172a);
 }
 
 .emoji {
@@ -111,7 +113,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: var(--brand-blue);
-  background: #eff6ff;
+  background: color-mix(in srgb, #eff6ff 12%, var(--card-bg));
   padding: 2px 8px;
   border-radius: 4px;
   align-self: flex-start;
@@ -120,13 +122,13 @@ body {
 
 .def {
   font-size: 14px;
-  color: #334155;
+  color: var(--subtext);
   margin: 4px 0 0;
 }
 
 .ex {
   font-size: 13px;
-  color: #64748b;
+  color: var(--subtext);
   font-style: italic;
   margin-top: 4px;
   border-left: 2px solid var(--border);
@@ -161,7 +163,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 8px;
-  color: #0f172a;
+  color: var(--ink, #0f172a);
 }
 
 .mcard p, .part-card p {
@@ -173,7 +175,7 @@ body {
 
 /* Interactive elements */
 .checklist {
-  background: #f8fafc;
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 20px;
@@ -183,7 +185,7 @@ body {
 .checklist h3 {
   margin: 0 0 12px;
   font-size: 16px;
-  color: #0f172a;
+  color: var(--ink, #0f172a);
 }
 
 .check-item {
@@ -247,7 +249,7 @@ body {
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: #fff;
+  background: var(--panel, #fff);
   font-size: 14px;
   text-align: left;
   cursor: pointer;
@@ -255,26 +257,26 @@ body {
 }
 
 .qopt:hover {
-  background: #f1f5f9;
+  background: var(--card-bg);
 }
 
 .qopt.correct {
-  background: #dcfce7;
+  background: color-mix(in srgb, #dcfce7 12%, var(--card-bg));
   border-color: #86efac;
-  color: #166534;
+  color: var(--text);
 }
 
 .qopt.wrong {
-  background: #fee2e2;
+  background: color-mix(in srgb, #fee2e2 14%, var(--card-bg));
   border-color: #fca5a5;
-  color: #991b1b;
+  color: var(--text);
 }
 
 .qexplain {
   display: none;
   font-size: 13px;
   margin-top: 8px;
-  color: #166534;
+  color: var(--text);
 }
 
 .pager {
@@ -294,7 +296,7 @@ body {
 }
 
 footer.site {
-  background: #ffffff;
+  background: var(--panel, #fff);
   border-top: 1px solid var(--border);
   padding: 24px 0;
   margin-top: 48px;
@@ -325,6 +327,7 @@ footer.site a {
   --teal-50: color-mix(in srgb, #f2f9f6 14%, #151a16);
   --bg: #151a16;
   --card-bg: #1e241f;
+  --brand-blue: #93b0f5;
   --text: #e8f0e9;
   --subtext: #c8d8c9;
   --border: color-mix(in srgb, #e2e8f0 42%, #151a16);
@@ -340,6 +343,7 @@ html[data-theme="dark"], body.theme-dark {
   --teal-50: color-mix(in srgb, #f2f9f6 14%, #151a16);
   --bg: #151a16;
   --card-bg: #1e241f;
+  --brand-blue: #93b0f5;
   --text: #e8f0e9;
   --subtext: #c8d8c9;
   --border: color-mix(in srgb, #e2e8f0 42%, #151a16);
