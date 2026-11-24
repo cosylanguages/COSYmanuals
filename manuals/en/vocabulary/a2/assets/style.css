@@ -66,8 +66,8 @@ a:hover { color: var(--teal-900); }
 .rule { border: none; border-top: 2px solid var(--ink); margin: 20px 0 0; opacity: .85; }
 
 .badge-reg { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; font-family: var(--font-mono); margin-right: 6px; text-transform: uppercase; }
-.badge-reg.uk { background: #e0e8ff; color: #2b50b8; }
-.badge-reg.us { background: #ffe0e0; color: #c02b2b; }
+.badge-reg.uk { background: #e0e8ff; color: #1e3f9e; }
+.badge-reg.us { background: #ffe0e0; color: #9b1c1c; }
 
 /* Callout Box */
 .box { border-radius: var(--radius-m); padding: 20px 22px; margin: 22px 0; border: 1px solid transparent; box-shadow: 0 2px 8px rgba(0,0,0,.02); }

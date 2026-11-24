@@ -449,3 +449,11 @@ html[data-theme="dark"], body.theme-dark {
 html[data-theme="dark"] thead th, body.theme-dark thead th {
   background: var(--thead-fill) !important; color: var(--ink) !important;
 }
+
+/* timeline labels sit on the diagram bars, so they get their own ground */
+.timeline .pt-label, .timeline .now-label, .timeline .endcap {
+  background: var(--paper, #ffffff);
+  color: var(--ink, #1f2937);
+  padding: 0 4px;
+  border-radius: 4px;
+}

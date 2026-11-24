@@ -122,13 +122,13 @@ body {
 
 .def {
   font-size: 14px;
-  color: #334155;
+  color: var(--subtext, #475569);
   margin: 4px 0 0;
 }
 
 .ex {
   font-size: 13px;
-  color: #64748b;
+  color: var(--subtext, #64748b);
   font-style: italic;
   margin-top: 4px;
   border-left: 2px solid var(--border);

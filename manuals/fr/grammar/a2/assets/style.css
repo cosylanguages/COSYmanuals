@@ -113,10 +113,10 @@ a:hover { color: var(--teal-900); }
   display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 800;
   font-family: var(--font-mono); margin-right: 6px; text-transform: uppercase;
 }
-.badge-reg.uk { background: #e0e8ff; color: #2b50b8; }
-.badge-reg.us { background: #ffe0e0; color: #c02b2b; }
-.badge-reg.ca { background: #e0f7ff; color: #0077a3; }
-.badge-reg.au { background: #fff3e0; color: #b86b2b; }
+.badge-reg.uk { background: #e0e8ff; color: #1e3f9e; }
+.badge-reg.us { background: #ffe0e0; color: #9b1c1c; }
+.badge-reg.ca { background: #e0f7ff; color: #005f80; }
+.badge-reg.au { background: #fff3e0; color: #8a4d18; }
 
 /* ---------- callout boxes ---------- */
 .box { border-radius: var(--radius-m); padding: 20px 22px; margin: 22px 0; border: 1px solid transparent; box-shadow: 0 2px 8px rgba(0,0,0,.02); }
@@ -532,4 +532,12 @@ html[data-theme="dark"], body.theme-dark {
 }
 html[data-theme="dark"] thead th, body.theme-dark thead th {
   background: var(--thead-fill) !important; color: var(--ink) !important;
+}
+
+/* timeline labels sit on the diagram bars, so they get their own ground */
+.timeline .pt-label, .timeline .now-label, .timeline .endcap {
+  background: var(--paper, #ffffff);
+  color: var(--ink, #1f2937);
+  padding: 0 4px;
+  border-radius: 4px;
 }

@@ -546,12 +546,20 @@ footer.main-footer, footer.site {
 .branch .box2[style*="c9740a"],
 .branch .box2[style*="1c8f56"] { color: #0d1f1a !important; }
 /* Practice CTA painted 4.1:1 under white text; deepen the fill */
-a[style*="1c8f56"], .btn-practice-link[style*="1c8f56"] { background: #177a49 !important; }
+a[style*="background:#1c8f56"], a[style*="background: #1c8f56"],
+.btn-practice-link[style*="1c8f56"] { background: #177a49 !important; }
 
 /* Footer ink follows whatever surface the manual paints behind it */
 footer.site a, footer.main-footer a { color: inherit !important; text-decoration: underline; }
 /* Green used as text on white needs the darker step */
 [style*="color:#1c8f56"], [style*="color: #1c8f56"] { color: #177a49 !important; }
+/* ...but an element that paints the green behind itself needs white ink */
+:root [style*="background:#1c8f56"], :root [style*="background: #1c8f56"],
+:root [style*="background:#177a49"], :root [style*="background: #177a49"] {
+  background: #177a49 !important; color: #ffffff !important;
+}
+:root [style*="background:#1c8f56"] *,
+:root [style*="background:#177a49"] * { color: #ffffff !important; }
 
 /* Site footers are the brand navy bar: one surface, one ink */
 footer.site, footer.main-footer {
@@ -796,7 +804,7 @@ html[data-theme="dark"], body.theme-dark {
    theme surfaces; the tint hue is preserved as a faint wash. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) :is(
-    .notice-box, .mindset-box, .memory-box, .connect-box, .conversation-map,
+    .box, .notice-box, .mindset-box, .memory-box, .connect-box, .conversation-map,
     .map-step, .building-blocks, .stage-box, .lesson-cando, .checklist,
     .check-item, .ccq-panel, .quiz-panel, .outcome-banner, .hero-builder,
     .rule-box, .box2, .box.why
@@ -807,7 +815,7 @@ html[data-theme="dark"], body.theme-dark {
   }
 
   :root:not([data-theme="light"]) :is(
-    .notice-box, .mindset-box, .memory-box, .connect-box, .conversation-map,
+    .box, .notice-box, .mindset-box, .memory-box, .connect-box, .conversation-map,
     .map-step, .building-blocks, .stage-box, .lesson-cando, .checklist,
     .ccq-panel, .quiz-panel, .outcome-banner, .hero-builder, .rule-box,
     .box2, .box.why
@@ -817,6 +825,16 @@ html[data-theme="dark"], body.theme-dark {
 
   :root:not([data-theme="light"]) :is(.page-head, .section-head) :is(h1, h2, h3) {
     color: var(--cosy-color-ink, #e8f0e9) !important;
+  }
+
+  :root:not([data-theme="light"]) .flash-face.back {
+    background: color-mix(in srgb, var(--vocab-noun, #6b7fd0) 28%, #141a15) !important;
+    color: #ffffff !important;
+  }
+  :root:not([data-theme="light"]) .print-btn {
+    background: transparent !important;
+    color: #e8f0e9 !important;
+    border-color: #3a463a !important;
   }
 
   /* pastel label chips keep their fill in dark mode, so flatten them onto the
