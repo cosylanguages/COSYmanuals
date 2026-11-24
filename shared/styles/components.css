@@ -830,6 +830,17 @@ html[data-theme="dark"], body.theme-dark {
     border-color: #3a463a !important;
   }
 
+  /* print booklets colour corrections inline, so the literal has to be
+     matched by attribute rather than by token */
+  :root:not([data-theme="light"]) [style*="color:#107050"],
+  :root:not([data-theme="light"]) [style*="color: #107050"] { color: #74d6ae !important; }
+  :root:not([data-theme="light"]) [style*="color:#dc2626"],
+  :root:not([data-theme="light"]) [style*="color: #dc2626"] { color: #f08f8f !important; }
+  :root:not([data-theme="light"]) [style*="color:#16a34a"],
+  :root:not([data-theme="light"]) [style*="color: #16a34a"] { color: #86d9a2 !important; }
+  :root:not([data-theme="light"]) [style*="background:#f0f9f5"],
+  :root:not([data-theme="light"]) [style*="background: #f0f9f5"] { background: #1e2a24 !important; }
+
   :root:not([data-theme="light"]) .mistakes .mflip span:not(.hint) {
     color: #e8a3a3 !important;
   }
@@ -840,3 +851,17 @@ html[data-theme="dark"], body.theme-dark {
     border-color: var(--cosy-color-border, #3a463a) !important;
   }
 }
+
+/* Light-mode counterpart: the print booklets put the semantic colours inline,
+   where a 3.0:1 green and 4.4:1 red sit on the pink mistakes wash. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) [style*="color:#16a34a"],
+  :root:not([data-theme="dark"]) [style*="color: #16a34a"] { color: #15803d !important; }
+  :root:not([data-theme="dark"]) [style*="color:#dc2626"],
+  :root:not([data-theme="dark"]) [style*="color: #dc2626"] { color: #b91c1c !important; }
+}
+
+:root[data-theme="light"] [style*="color:#16a34a"],
+:root[data-theme="light"] [style*="color: #16a34a"] { color: #15803d !important; }
+:root[data-theme="light"] [style*="color:#dc2626"],
+:root[data-theme="light"] [style*="color: #dc2626"] { color: #b91c1c !important; }
