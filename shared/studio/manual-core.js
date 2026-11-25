@@ -309,7 +309,7 @@
     const id = canonicalId(topic);
     const rel = '../../../../../';
     const manualUrl = 'https://cosylanguages.github.io/COSYmanuals/index.html?manual=' + encodeURIComponent(id);
-    const loginHref = 'https://cosylanguages.github.io/COSYlanguages/login.html?redirect=' + encodeURIComponent(manualUrl);
+    const loginHref = 'https://cosylanguages.github.io/COSYlanguages/login.html?redirect=' + encodeURIComponent(manualUrl) + '&v=20261125-1';
     return '<!DOCTYPE html>\n<html lang="' + escapeHtml(lang) + '" data-lang-theme="' + escapeHtml(lang) + '">\n<head>\n' +
       '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
       '<title>' + escapeHtml(title) + ' · Protected Manual Shell · COSYmanuals</title>\n' +
