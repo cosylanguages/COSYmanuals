@@ -393,7 +393,7 @@
       if (!user) {
         // Unauthenticated -> return here after sign-in with the chosen manual
         const returnUrl = `${window.location.origin}${window.location.pathname}?manual=${encodeURIComponent(manualId)}`;
-        const redirectUrl = `${LOGIN_BASE_URL}?redirect=${encodeURIComponent(returnUrl)}`;
+        const redirectUrl = `${LOGIN_BASE_URL}?redirect=${encodeURIComponent(returnUrl)}&v=20261125-1`;
         window.location.href = redirectUrl;
         return;
       }

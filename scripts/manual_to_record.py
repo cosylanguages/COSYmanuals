@@ -116,6 +116,7 @@ def extract_record_and_stub(filepath):
     login_href = (
         "https://cosylanguages.github.io/COSYlanguages/login.html?redirect="
         + quote(manual_url, safe="")
+        + "&v=20261125-1"
     )
 
     record = {
