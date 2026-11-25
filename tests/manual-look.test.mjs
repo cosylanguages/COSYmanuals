@@ -1,0 +1,21 @@
+// Every manual page loads the shared look last, and the self-hosted fonts it names exist.
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
+test('every manual page links manual-look.css (run: python3 scripts/add_manual_look.py manuals)', () => {
+  const r = spawnSync('python3', ['scripts/add_manual_look.py', '--check', 'manuals'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});
+
+test('fonts referenced by manual-look.css are in shared/fonts', () => {
+  const css = fs.readFileSync(path.join(ROOT, 'shared/styles/manual-look.css'), 'utf8');
+  const files = [...css.matchAll(/url\('\.\.\/fonts\/([^']+)'\)/g)].map((m) => m[1]);
+  assert.ok(files.length >= 10, 'expected the @font-face blocks');
+  for (const f of files) assert.ok(fs.existsSync(path.join(ROOT, 'shared/fonts', f)), `missing font ${f}`);
+});
