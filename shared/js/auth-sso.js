@@ -12,12 +12,20 @@
       return window.supabaseClient;
     }
 
-    const supabaseUrl = window.ENV_SUPABASE_URL || window.SUPABASE_URL || "https://your-supabase-project.supabase.co";
-    const supabaseAnonKey = window.ENV_SUPABASE_ANON_KEY || window.SUPABASE_ANON_KEY || "your-anon-key";
+    const supabaseUrl = window.ENV_SUPABASE_URL ||
+      window.SUPABASE_URL ||
+      (window.COSY_CONFIG && window.COSY_CONFIG.SUPABASE_URL) ||
+      "https://iajkejcmoykubthlwfra.supabase.co";
+    const supabaseAnonKey = window.ENV_SUPABASE_ANON_KEY ||
+      window.SUPABASE_ANON_KEY ||
+      (window.COSY_CONFIG && window.COSY_CONFIG.SUPABASE_ANON_KEY) ||
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlhamtlamNtb3lrdWJ0aGx3ZnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4MjYwOTUsImV4cCI6MjA5NjQwMjA5NX0.mGY94U3Ei9eLoFbWPIcUfdGRCfjQ2OBYixQ1eyZai-U";
 
     if (typeof window.supabase !== 'undefined' && typeof window.supabase.createClient === 'function') {
       if (supabaseUrl && !supabaseUrl.includes("your-supabase-project")) {
-        window.supabaseClient = window.supabase.createClient(supabaseUrl, supabaseAnonKey);
+        window.supabaseClient = window.supabase.createClient(supabaseUrl, supabaseAnonKey, {
+          auth: { storageKey: 'cosy-auth', persistSession: true, autoRefreshToken: true }
+        });
         return window.supabaseClient;
       }
     }
