@@ -19,3 +19,8 @@ test('fonts referenced by manual-look.css are in shared/fonts', () => {
   assert.ok(files.length >= 10, 'expected the @font-face blocks');
   for (const f of files) assert.ok(fs.existsSync(path.join(ROOT, 'shared/fonts', f)), `missing font ${f}`);
 });
+
+test('every topic page carries data-level (run: python3 scripts/add_level_stamp.py manuals)', () => {
+  const r = spawnSync('python3', ['scripts/add_level_stamp.py', '--check', 'manuals'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});

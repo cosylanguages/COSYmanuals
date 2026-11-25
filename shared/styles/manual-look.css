@@ -88,6 +88,7 @@
   --ml-paper:#faf7f2; --ml-card:#ffffff; --ml-aged:#f3ede4; --ml-ink:#1c1917; --ml-ink2:#44403c; --ml-muted:#6f6862;
   --ml-rule:#e2dacd; --ml-strong:#292524; --ml-accent:#0d6e66; --ml-accent-bg:#e4f1ee; --ml-crimson:#be123c; --ml-gold:#b45309;
   --ml-r-subject:#1d4f91; --ml-r-verb:#9b1c38; --ml-r-noun:#25673a; --ml-r-ending:#6b3fa0; --ml-r-mutation:#a15c07; --ml-r-masc:#1d4f91; --ml-r-fem:#a31d62;
+  --ml-lv-a1:#0d6e66; --ml-lv-a2:#1d4f91; --ml-lv-b1:#a15c07; --ml-lv-b2:#be123c; --ml-lv-c1:#6b3fa0; --ml-lv-c2:#44403c;
   --ml-display:'Fraunces','Literata',Georgia,'Times New Roman',serif;
   --ml-body:'Commissioner','DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
   --ml-hand:'Caveat','Segoe Print','Bradley Hand',cursive;
@@ -96,11 +97,13 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --ml-paper:#181614; --ml-card:#221f1d; --ml-aged:#2c2825; --ml-ink:#f5f5f4; --ml-ink2:#d6d3d1; --ml-muted:#a8a29e;
   --ml-rule:#3c3836; --ml-strong:#f5f5f4; --ml-accent:#5eead4; --ml-accent-bg:#14302c; --ml-crimson:#fb7185; --ml-gold:#fbbf24;
-  --ml-r-subject:#8db8f2; --ml-r-verb:#f09aae; --ml-r-noun:#86d19b; --ml-r-ending:#c4a3f0; --ml-r-mutation:#f0c274; --ml-r-masc:#8db8f2; --ml-r-fem:#f29bc6; } }
+  --ml-r-subject:#8db8f2; --ml-r-verb:#f09aae; --ml-r-noun:#86d19b; --ml-r-ending:#c4a3f0; --ml-r-mutation:#f0c274; --ml-r-masc:#8db8f2;  --ml-r-fem:#f29bc6;
+  --ml-lv-a1:#5eead4; --ml-lv-a2:#8db8f2; --ml-lv-b1:#f0c274; --ml-lv-b2:#fb7185; --ml-lv-c1:#c4a3f0; --ml-lv-c2:#d6d3d1; } }
 :root[data-theme="dark"] {
   --ml-paper:#181614; --ml-card:#221f1d; --ml-aged:#2c2825; --ml-ink:#f5f5f4; --ml-ink2:#d6d3d1; --ml-muted:#a8a29e;
   --ml-rule:#3c3836; --ml-strong:#f5f5f4; --ml-accent:#5eead4; --ml-accent-bg:#14302c; --ml-crimson:#fb7185; --ml-gold:#fbbf24;
-  --ml-r-subject:#8db8f2; --ml-r-verb:#f09aae; --ml-r-noun:#86d19b; --ml-r-ending:#c4a3f0; --ml-r-mutation:#f0c274; --ml-r-masc:#8db8f2; --ml-r-fem:#f29bc6; }
+  --ml-r-subject:#8db8f2; --ml-r-verb:#f09aae; --ml-r-noun:#86d19b; --ml-r-ending:#c4a3f0; --ml-r-mutation:#f0c274; --ml-r-masc:#8db8f2;  --ml-r-fem:#f29bc6;
+  --ml-lv-a1:#5eead4; --ml-lv-a2:#8db8f2; --ml-lv-b1:#f0c274; --ml-lv-b2:#fb7185; --ml-lv-c1:#c4a3f0; --ml-lv-c2:#d6d3d1; }
 
 /* paper and text */
 body { background-color:var(--ml-paper); background-image:var(--ml-grain); color:var(--ml-ink); font-family:var(--ml-body); line-height:1.65; }
@@ -127,6 +130,19 @@ main.container a { color:var(--ml-accent); }
 .page-head::after { content:""; position:absolute; right:0; top:14px; width:84px; height:56px; opacity:.8; pointer-events:none;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 80' fill='none' stroke='%230d6e66' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 66 L22 48 L82 14 L92 30 L32 62 Z'/%3E%3Cpath d='M22 48 L32 62'/%3E%3Cpath d='M74 18 L86 34'/%3E%3Cpath d='M26 74 q10 -6 20 0 t20 0 t20 0'/%3E%3C/svg%3E") no-repeat center/contain; }
 @media (max-width:520px) { .page-head { padding-right:0; } .page-head::after { display:none; } }
+
+/* CEFR level: one accent per level (A1 teal, A2 blue, B1 amber, B2 crimson, C1 violet, C2 graphite) and a tilted stamp, as in the magazine.
+   data-level is set on <main> by scripts/add_level_stamp.py. The stamp text is generated, so it needs no translation. */
+main[data-level="A1"] { --ml-accent:var(--ml-lv-a1); } main[data-level="A2"] { --ml-accent:var(--ml-lv-a2); }
+main[data-level="B1"] { --ml-accent:var(--ml-lv-b1); } main[data-level="B2"] { --ml-accent:var(--ml-lv-b2); }
+main[data-level="C1"] { --ml-accent:var(--ml-lv-c1); } main[data-level="C2"] { --ml-accent:var(--ml-lv-c2); }
+main[data-level] .page-head::before { position:absolute; right:0; top:12px; padding:.15rem .6rem; background:var(--ml-card); color:var(--ml-accent);
+  border:2px solid var(--ml-accent); box-shadow:2px 2px 0 var(--ml-accent); transform:rotate(-3deg); font:800 .8rem var(--ml-body); letter-spacing:.1em; }
+main[data-level="A1"] .page-head::before { content:"A1"; } main[data-level="A2"] .page-head::before { content:"A2"; }
+main[data-level="B1"] .page-head::before { content:"B1"; } main[data-level="B2"] .page-head::before { content:"B2"; }
+main[data-level="C1"] .page-head::before { content:"C1"; } main[data-level="C2"] .page-head::before { content:"C2"; }
+main[data-level] .page-head::after { top:auto; bottom:4px; width:58px; height:38px; }
+@media (max-width:520px) { main[data-level] .page-head::before { position:static; display:inline-block; margin-right:10px; transform:rotate(-2deg); } }
 
 /* callouts: each kind looks different, so the page has a hierarchy */
 .outcome-banner { background:none !important; border:0 !important; border-top:1px solid var(--ml-rule) !important; border-bottom:1px solid var(--ml-rule) !important; border-radius:0 !important;
