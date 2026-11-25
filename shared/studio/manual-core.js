@@ -308,6 +308,8 @@
     const summary = summaryOf(topic);
     const id = canonicalId(topic);
     const rel = '../../../../../';
+    const manualUrl = 'https://cosylanguages.github.io/COSYmanuals/index.html?manual=' + encodeURIComponent(id);
+    const loginHref = 'https://cosylanguages.github.io/COSYlanguages/login.html?redirect=' + encodeURIComponent(manualUrl) + '&v=20261125-1';
     return '<!DOCTYPE html>\n<html lang="' + escapeHtml(lang) + '" data-lang-theme="' + escapeHtml(lang) + '">\n<head>\n' +
       '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
       '<title>' + escapeHtml(title) + ' · Protected Manual Shell · COSYmanuals</title>\n' +
@@ -321,7 +323,7 @@
       '  <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔒</div>\n  <h2 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Protected Ecosystem Content</h2>\n' +
       '  <p style="max-width: 600px; margin: 0 auto 1.5rem auto; color: var(--text-muted, #666);">\n    Full lesson text, rule guides, answer keys, and teacher materials for <strong>' + escapeHtml(title) + '</strong> are protected and hosted in Supabase database tables with Row Level Security.\n  </p>\n' +
       '  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">\n' +
-      '    <a href="https://cosylanguages.github.io/COSYlanguages/login.html?redirect=' + escapeHtml(id) + '" class="btn-primary" style="background: var(--cosy-manuals-accent, #6b202b); color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Log In to Access Content</a>\n' +
+      '    <a href="' + escapeHtml(loginHref) + '" class="btn-primary" style="background: var(--cosy-manuals-accent, #6b202b); color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Log In to Access Content</a>\n' +
       '    <a href="' + rel + 'manuals/' + escapeHtml(lang) + '/' + escapeHtml(course) + '/' + escapeHtml(cefr) + '/index.html" class="btn-secondary" style="border: 1px solid var(--border-color, #ccc); color: var(--text-color, #333); padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none;">Return to ' + escapeHtml(cefr.toUpperCase()) + ' Index</a>\n  </div>\n</div>\n</main>\n\n' +
       '<footer class="cosy-ecosystem-footer-note" style="text-align: center; padding: 2rem 0; color: var(--text-muted, #888); font-size: 0.875rem;">\n  Part of the COSY Family · Upstream Curriculum Owner: COSYplatform\n</footer>\n<script src="https://cosylanguages.github.io/COSYlanguages/js/ecosystem-strip.js" defer></script>\n</body>\n</html>\n';
   }

@@ -18,6 +18,7 @@ import json
 import argparse
 from datetime import datetime, timezone
 from html.parser import HTMLParser
+from urllib.parse import quote
 
 class TopicHTMLParser(HTMLParser):
     def __init__(self):
@@ -108,6 +109,15 @@ def extract_record_and_stub(filepath):
         body = body_match.group(1).strip() if body_match else content
 
     canonical_id = f"{lang}:{cefr}:manual:{slug}"
+    manual_url = (
+        "https://cosylanguages.github.io/COSYmanuals/index.html?manual="
+        + quote(canonical_id, safe="")
+    )
+    login_href = (
+        "https://cosylanguages.github.io/COSYlanguages/login.html?redirect="
+        + quote(manual_url, safe="")
+        + "&v=20261125-1"
+    )
 
     record = {
         "id": canonical_id,
@@ -158,7 +168,7 @@ def extract_record_and_stub(filepath):
     Full lesson text, rule guides, answer keys, and teacher materials for <strong>{title}</strong> are protected and hosted in Supabase database tables with Row Level Security.
   </p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://cosylanguages.github.io/COSYlanguages/login.html?redirect={canonical_id}" class="btn-primary" style="background: var(--cosy-manuals-accent, #6b202b); color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Log In to Access Content</a>
+    <a href="{login_href}" class="btn-primary" style="background: var(--cosy-manuals-accent, #6b202b); color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Log In to Access Content</a>
     <a href="{rel_root}manuals/{lang}/{course}/{cefr}/index.html" class="btn-secondary" style="border: 1px solid var(--border-color, #ccc); color: var(--text-color, #333); padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none;">Return to {cefr.upper()} Index</a>
   </div>
 </div>

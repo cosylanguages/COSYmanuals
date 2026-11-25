@@ -281,12 +281,29 @@
 
   <script>
     // Configuration & Supabase Initialization
-    const SUPABASE_URL = window.ENV_SUPABASE_URL || "https://your-supabase-project.supabase.co";
-    const SUPABASE_ANON_KEY = window.ENV_SUPABASE_ANON_KEY || "your-anon-key";
+    const SUPABASE_URL = window.ENV_SUPABASE_URL ||
+      (window.COSY_CONFIG && window.COSY_CONFIG.SUPABASE_URL) ||
+      "https://iajkejcmoykubthlwfra.supabase.co";
+    const SUPABASE_ANON_KEY = window.ENV_SUPABASE_ANON_KEY ||
+      (window.COSY_CONFIG && window.COSY_CONFIG.SUPABASE_ANON_KEY) ||
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlhamtlamNtb3lrdWJ0aGx3ZnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4MjYwOTUsImV4cCI6MjA5NjQwMjA5NX0.mGY94U3Ei9eLoFbWPIcUfdGRCfjQ2OBYixQ1eyZai-U";
 
     let supabaseClient = null;
-    if (typeof supabase !== 'undefined' && SUPABASE_URL && !SUPABASE_URL.includes("your-supabase-project")) {
-      supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    function getSupabaseClient() {
+      if (supabaseClient) return supabaseClient;
+      if (window.supabaseClient) {
+        supabaseClient = window.supabaseClient;
+        return supabaseClient;
+      }
+      if (typeof window.supabase !== 'undefined' &&
+          typeof window.supabase.createClient === 'function' &&
+          SUPABASE_URL && !SUPABASE_URL.includes("your-supabase-project")) {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+          auth: { storageKey: 'cosy-auth', persistSession: true, autoRefreshToken: true }
+        });
+      }
+      return supabaseClient;
     }
 
     let catalogItems = [];
@@ -367,14 +384,16 @@
 
       // Check auth state
       let user = null;
-      if (supabaseClient) {
-        const { data } = await supabaseClient.auth.getSession();
+      const client = getSupabaseClient();
+      if (client) {
+        const { data } = await client.auth.getSession();
         user = data.session?.user || null;
       }
 
       if (!user) {
-        // Unauthenticated -> redirect to login with return target
-        const redirectUrl = `${LOGIN_BASE_URL}?redirect=${encodeURIComponent(manualId)}`;
+        // Unauthenticated -> return here after sign-in with the chosen manual
+        const returnUrl = `${window.location.origin}${window.location.pathname}?manual=${encodeURIComponent(manualId)}`;
+        const redirectUrl = `${LOGIN_BASE_URL}?redirect=${encodeURIComponent(returnUrl)}&v=20261125-1`;
         window.location.href = redirectUrl;
         return;
       }
@@ -410,14 +429,15 @@
 
     async function fetchAndRenderManualContent(manualId) {
       const bodyContainer = document.getElementById('manual-viewer-body');
+      const client = getSupabaseClient();
 
-      if (!supabaseClient) {
+      if (!client) {
         bodyContainer.innerHTML = '<p style="color: #c53030;">Supabase client not initialized or offline.</p>';
         return;
       }
 
       try {
-        const { data, error } = await supabaseClient
+        const { data, error } = await client
           .from('manual_content')
           .select('markdown_content')
           .eq('manual_id', manualId)
