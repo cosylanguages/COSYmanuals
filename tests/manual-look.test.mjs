@@ -24,3 +24,8 @@ test('every topic page carries data-level (run: python3 scripts/add_level_stamp.
   const r = spawnSync('python3', ['scripts/add_level_stamp.py', '--check', 'manuals'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
 });
+
+test('English grammar pages with a practice banner carry a print QR (run: python3 scripts/add_page_qr.py manuals/en/grammar)', () => {
+  const r = spawnSync('python3', ['scripts/add_page_qr.py', '--check', 'manuals/en/grammar'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});
