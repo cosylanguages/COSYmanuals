@@ -56,3 +56,9 @@ test('print booklets load visuals.css (openings and QR blocks are unstyled and h
   }
   assert.deepEqual(bad, []);
 });
+
+test('English openings come from a lesson that teaches their grammar id (needs ../cosyplatform; skipped without it)', (t) => {
+  if (!fs.existsSync(path.join(ROOT, '..', 'cosyplatform', 'curriculums'))) return t.skip('cosyplatform not next to this repo');
+  const r = spawnSync('python3', ['scripts/check_open_vocab.py'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});

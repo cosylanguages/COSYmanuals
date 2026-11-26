@@ -264,6 +264,12 @@ PAGES_A2 = {
    [("now", "AM &middot; IS &middot; ARE + participle"), ("past", "WAS &middot; WERE + participle")], "passive: be plus past participle"),
 }
 from gv_open_data_b import B1, B2, C1, C2
+import gv_open_curriculum as _cur
+for _lv, _d, _o in (("a1", PAGES, _cur.A1), ("a2", PAGES_A2, _cur.A2), ("b1", B1, _cur.B1), ("b2", B2, _cur.B2)):
+    for _slug, _ov in _o.items():
+        _base = _d[_slug]
+        _d[_slug] = dict(_base, lesson=_ov["lesson"], theme=_ov["theme"], title=_ov["q"] + " Think of the word, then ",
+                         lines=_ov["lines"], formula=((_ov["label"] or _base["formula"][0]), (_ov["formula"] or _base["formula"][1])))
 LEVELS = (("a1", PAGES), ("a2", PAGES_A2), ("b1", B1), ("b2", B2), ("c1", C1), ("c2", C2))
 
 def build(slug, d):
@@ -294,7 +300,9 @@ def main():
     for lvl, pages in LEVELS:
         for slug, d in pages.items():
             p = Path("manuals/en/grammar/%s/topics/%s.html" % (lvl, slug)); t = p.read_text(encoding="utf8")
-            if "gv-open" in t: continue
+            if "gv-open" in t:
+                if "--rebuild" not in sys.argv: continue
+                t = re.sub(r'<section class="gv gv-open".*?</section>\n\n?', "", t, count=1, flags=re.S)
             lacking += 1
             if check: print("lacks opening:", lvl, slug); continue
             i = t.index('<div class="box outcome-banner"')
