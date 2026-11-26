@@ -97,6 +97,21 @@ def check_page(path):
             if not label or not label.get_text(strip=True): err(path, "case map role needs a <small> case label")
         for arrow in f.select(".gv-case-arrow"):
             if arrow.get("aria-hidden") != "true": err(path, "case map arrows must have aria-hidden=\"true\"")
+    for f in soup.select("aside.gv-lookup"):
+        lookup = f.get("data-lookup")
+        if lookup not in {"cases", "conjugation", "principal-parts", "government", "gender"}:
+            err(path, f"unknown lookup type {lookup}")
+        if not f.get("data-lang"): err(path, "lookup card needs data-lang")
+        if not f.get("aria-label"): err(path, "lookup card needs aria-label")
+        text = f.select_one(".gv-lookup-text")
+        if not text or not text.get_text(strip=True): err(path, "lookup card needs a .gv-lookup-text")
+        link = f.select_one("a.gv-lookup-link")
+        if not link or not link.get_text(strip=True):
+            err(path, "lookup card needs a .gv-lookup-link with text")
+        elif not link.get("href", "").startswith("https://cosylanguages.github.io/COSYtools/"):
+            err(path, "lookup card link must point at COSYtools")
+        if not f.select_one(".gv-lookup-url") or not f.select_one(".gv-lookup-url").get_text(strip=True):
+            err(path, "lookup card needs a visible .gv-lookup-url")
     for f in soup.select(".gv-paradigm"):
         if f.get("tabindex") != "0" or not f.get("aria-label"): err(path, "paradigm needs tabindex=\"0\" and aria-label")
         if not f.find("caption"): err(path, "paradigm table needs a <caption>")

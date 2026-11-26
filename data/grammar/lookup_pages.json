@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "path": "manuals/fr/grammar/a1/topics/verbes-en-er-groupe-1-au-present.html",
+      "lang": "fr",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/chto-takoe-padezh.html",
+      "lang": "ru",
+      "lookup": "cases"
+    },
+    {
+      "path": "manuals/en/grammar/a1/topics/irregular-verbs.html",
+      "lang": "en",
+      "lookup": "principal-parts"
+    },
+    {
+      "path": "manuals/en/grammar/b1/topics/verb-preposition.html",
+      "lang": "en",
+      "lookup": "government"
+    },
+    {
+      "path": "manuals/es/grammar/a1/topics/ser-vs-estar.html",
+      "lang": "es",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/de/grammar/a2/topics/wechselpraepositionen.html",
+      "lang": "de",
+      "lookup": "government"
+    },
+    {
+      "path": "manuals/it/grammar/a1/topics/presente-regolare.html",
+      "lang": "it",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/pt/grammar/a1/topics/presente-do-indicativo.html",
+      "lang": "pt",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/el/grammar/a1/topics/pliris-klisi-ousiastikou.html",
+      "lang": "el",
+      "lookup": "cases"
+    }
+  ]
+}
