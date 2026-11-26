@@ -34,3 +34,8 @@ test('English grammar topic pages carry data-doodle (run: python3 scripts/add_pa
   const r = spawnSync('python3', ['scripts/add_page_doodle.py', '--check', 'manuals/en/grammar'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
 });
+
+test('English A1 pages listed in add_gv_open.py keep their opening (run: python3 scripts/add_gv_open.py)', () => {
+  const r = spawnSync('python3', ['scripts/add_gv_open.py', '--check'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});
