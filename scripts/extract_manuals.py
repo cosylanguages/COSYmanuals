@@ -341,7 +341,7 @@ def generate_grammar_html(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
-<div data-ecosystem-strip data-self="manuals"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle></div>
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
@@ -510,7 +510,7 @@ def generate_vocabulary_html(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
-<div data-ecosystem-strip data-self="manuals"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle></div>
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
@@ -722,7 +722,7 @@ def generate_communication_html(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
-<div data-ecosystem-strip data-self="manuals"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle></div>
 
 <main class="container" style="max-width:840px; margin:2.5rem auto; padding:0 1.25rem;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
@@ -836,7 +836,7 @@ def generate_student_index(curriculum_data, out_dir=None):
 <link rel="stylesheet" href="https://cosylanguages.github.io/COSYlanguages/css/ecosystem-strip.css">
 </head>
 <body>
-<div data-ecosystem-strip data-self="manuals"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle></div>
 
 <main class="container" style="max-width:800px; margin:2.5rem auto; padding:0 1.25rem;">
   <div class="page-head" style="margin-bottom:1.5rem;">

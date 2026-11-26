@@ -108,7 +108,7 @@ ${body}
 </style>
 </head>
 <body data-booklet-pdf="full.pdf">
-<div data-ecosystem-strip data-self="manuals" class="no-print"></div>
+<div data-ecosystem-strip data-self="manuals" data-theme-toggle class="no-print"></div>
 <main class="container">
   <div class="page-head">
     <span class="eyebrow">COSYmanuals · ${esc(name)} · ${points.length} grammar points</span>
