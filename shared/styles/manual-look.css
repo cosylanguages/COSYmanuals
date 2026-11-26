@@ -197,6 +197,8 @@ main[data-level] .page-head::after { top:auto; bottom:4px; width:58px; height:38
 .gblock.ending { --c:var(--ml-r-ending); border-style:double; border-width:4px; }
 .gblock.mutation { --c:var(--ml-r-mutation); border-style:dashed; }
 .gblock.fem { --c:var(--ml-r-fem); }
+/* some language stylesheets paint masc/fem tiles solid; keep them cards so text stays readable (contrast) */
+.gblock.masc, .gblock.fem { background:var(--ml-card) !important; }
 .gblock.optional { opacity:.85; }
 .block-row .plus { font:800 1.4rem var(--ml-display); color:var(--ml-muted); }
 
