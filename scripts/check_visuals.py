@@ -5,12 +5,17 @@ Needs: pip install beautifulsoup4
 Checks: palette contrast (WCAG AA), no words in visuals.css, and for every page using gv-*:
 accessible names, scroll regions focusable, timeline numbers valid, label collisions,
 known role/tone classes only."""
-import os, re, sys
+import json, os, re, sys
 from bs4 import BeautifulSoup
 
 CSS = "shared/styles/visuals.css"
 ROLES = {f"gv-r{i}" for i in range(1, 6)}
 TONES = {f"gv-tone-{t}" for t in ("a", "b", "c", "d", "e", "past", "present", "future")}
+TABLE_IDS = set()
+try:
+    TABLE_IDS = set(json.load(open("data/grammar/table_index.json", encoding="utf-8"))["tables"])
+except Exception:
+    pass
 errors = []
 def err(where, msg): errors.append(f"{where}: {msg}")
 
@@ -80,10 +85,35 @@ def check_page(path):
         if len(f.select(".gv-side")) != 2: err(path, "contrast needs exactly two .gv-side")
         for v in f.select(".gv-vs"):
             if v.get("aria-hidden") != "true": err(path, ".gv-vs must have aria-hidden=\"true\"")
+    for f in soup.select("figure.gv-case-map"):
+        if not (f.get("aria-label") or f.get("aria-labelledby") or f.find("figcaption")):
+            err(path, "case map has no accessible name (figcaption/aria-label)")
+        roles = f.select(".gv-case-role")
+        if len(roles) < 2: err(path, "case map needs at least two .gv-case-role items")
+        for role in roles:
+            word = role.find("b")
+            label = role.find("small")
+            if not word or not word.get_text(strip=True): err(path, "case map role needs a <b> word")
+            if not label or not label.get_text(strip=True): err(path, "case map role needs a <small> case label")
+        for arrow in f.select(".gv-case-arrow"):
+            if arrow.get("aria-hidden") != "true": err(path, "case map arrows must have aria-hidden=\"true\"")
     for f in soup.select(".gv-paradigm"):
         if f.get("tabindex") != "0" or not f.get("aria-label"): err(path, "paradigm needs tabindex=\"0\" and aria-label")
         if not f.find("caption"): err(path, "paradigm table needs a <caption>")
         if [t for t in f.select("th") if not t.get("scope")]: err(path, "paradigm <th> without scope")
+    for f in soup.select(".gv-paradigm[data-table-id]"):
+        table_id = f.get("data-table-id")
+        if TABLE_IDS and table_id not in TABLE_IDS: err(path, f"unknown data-table-id {table_id}")
+        if f.get("data-source") != "cosytools": err(path, "embedded table must declare data-source=\"cosytools\"")
+        source_url = f.get("data-source-url", "")
+        if not source_url.startswith("https://cosylanguages.github.io/COSYtools/"):
+            err(path, "embedded table source-url must point at COSYtools")
+        if not re.fullmatch(r"[0-9a-f]{16}", f.get("data-source-hash", "")):
+            err(path, "embedded table needs a 16-character data-source-hash")
+        if not f.find("table"): err(path, "embedded table is not rendered (run scripts/embed_grammar_tables.py)")
+        source = f.select_one(".gv-source a")
+        if not source or source.get("href") != source_url:
+            err(path, "embedded table needs a .gv-source link to its COSYtools source")
     for f in soup.select(".gv-open"):
         if not (f.get("aria-label") or f.get("aria-labelledby")): err(path, "opening needs aria-labelledby or aria-label")
         if not f.select_one(".gv-theme") or not f.select_one(".gv-theme").get_text(strip=True): err(path, "opening needs a .gv-theme (vocabulary theme) with text")

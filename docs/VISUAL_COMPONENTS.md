@@ -16,7 +16,9 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
 | Sentence pattern, word order, auxiliary + participle | **Formula** + colour-coded examples |
 | "Which form do I choose?" (auxiliary, article, case, aspect) | **Tree** |
 | Two forms often confused (être/avoir, a/an, perfective/imperfective) | **Contrast** |
-| Conjugation / declension tables | **Paradigm** (stem vs ending, irregular forms) |
+| Case roles: who does what to whom | **Case map** (`gv-case-map`); the full case table is embedded by ID or looked up in COSYtools |
+| Conjugation / declension tables | **Embedded paradigm** by COSYtools table ID (`gv-paradigm` + `data-table-id`); hand-author only small teaching patterns |
+| Any other word's forms | **COSYtools lookup** (link/QR), not a duplicate manual table |
 | First thing on every page: guess, then see the pattern | **Opening** (`gv-open`) |
 | A practice exercise that exists in COSYpractice | **QR block** (`gv-qr`), print only |
 
@@ -47,6 +49,19 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
   <figcaption id="id">...</figcaption></figure>
 ```
 **Contrast**: exactly two `gv-side`, one `gv-vs aria-hidden="true"` (the "≠" is drawn by CSS).
+**Case map**: one row of role chips; the case label sits under the word. Use `gv-tone-a..d` for the tint (not `gv-r1..r4`, which adds an underline to the whole card). Arrows are decorative.
+```html
+<figure class="gv gv-case-map" lang="ru" aria-labelledby="id">
+  <div class="gv-case-row">
+    <span class="gv-case-role gv-tone-a"><b>брат</b><small>именительный · кто?</small></span>
+    <span class="gv-case-arrow" aria-hidden="true">→</span>
+    <span class="gv-case-role gv-tone-b"><b>даёт</b><small>глагол</small></span>
+    <span class="gv-case-arrow" aria-hidden="true">→</span>
+    <span class="gv-case-role gv-tone-c"><b>книгу</b><small>винительный · что?</small></span>
+  </div>
+  <figcaption id="id">Кто? → что делает? → что?</figcaption>
+</figure>
+```
 **Paradigm** (inside manuals the page keeps its own table look: `class="table-wrap gv gv-paradigm"`; standalone `gv-paradigm` brings its own): wrap the table in `.gv-paradigm` (`tabindex="0" role="region" aria-label`), `<caption>`, `<th scope>`; `<span class="gv-stem">` + `<span class="gv-end">` (empty `gv-end` shows ∅); `gv-irr` marks irregular forms.
 
 ## Opening (`gv-open`): the first thing on every grammar page
@@ -65,6 +80,51 @@ Three beats, all in the page's own language, using only words the learner has me
 - **Level shape.** A0-A1: named people, 3-4 gap lines. A2: two small sets side by side. B1: sentence pairs with different meaning. B2+: a short text, find the pattern. The component is the same; only the content changes.
 - **Print.** `<details>` prints closed: each gap becomes a blank line to write on, and the answers are in the formula that follows. Use `gv-screen` / `gv-print` for wording that only fits one medium ("tap" / "write").
 - Lint (`check_visuals.py`): needs a labelled section, a non-empty `gv-theme`, at least two gap lines, a `gv-sr` label on every gap, one answer element per gap, and a formula.
+
+## Canonical tables by COSYtools ID
+COSYdata owns the data. COSYtools is the lookup engine. The manual is the explanation layer. If a page needs a specific conjugation, declension or case table, do not type it by hand: add a placeholder and let the build script fill it from the canonical source.
+
+```html
+<div class="gv gv-paradigm" data-table-id="fr:verb:parler:indicatif_present" data-source="cosytools"></div>
+```
+
+Use any stable key as the table ID. The examples use `<lang>:<pos>:<lemma>:<feature>` because the COSYtools JSON is keyed by lemma; a COSYdata object ID works the same way.
+
+Register the table in `data/grammar/table_index.json`:
+
+```json
+{
+  "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
+  "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
+  "path": ["parler", "tenses", "indicatif_present"],
+  "caption": "parler · présent de l'indicatif",
+  "render": {
+    "kind": "list",
+    "split_pronoun": true,
+    "columns": [
+      {"key": "person", "header": "personne"},
+      {"key": "form", "header": "forme"}
+    ]
+  }
+}
+```
+
+Run:
+
+```bash
+python3 scripts/embed_grammar_tables.py            # dry run
+python3 scripts/embed_grammar_tables.py --apply    # write
+python3 scripts/embed_grammar_tables.py --id fr:verb:parler:indicatif_present --apply
+```
+
+The script fetches the canonical JSON, renders a static `gv-paradigm` table with `<caption>`, `scope`, and a visible `Source: COSYtools` link, and records `data-source-url` + `data-source-hash`. Re-running is idempotent; when the source data changes, the hash changes and the block is regenerated. The build needs network access to COSYtools; the generated HTML is static, so the manual itself works offline.
+
+- Do not edit inside `<!-- gv-table:start ... -->` / `<!-- gv-table:end -->`. Edit the index entry or the page framing instead.
+- The visible link goes to the COSYtools tool page, not the raw JSON.
+- The table is static, so it prints; the source link stays visible.
+- If the table ID cannot be resolved, the script leaves the placeholder unchanged and the linter reports it. Keep the surrounding explanation useful.
+- Lint (`check_visuals.py`): `gv-paradigm[data-table-id]` needs a known ID, `data-source="cosytools"`, a COSYtools `data-source-url`, a 16-character `data-source-hash`, a rendered `<table>`, and a `.gv-source` link.
+- Lint: a `gv-case-map` needs an accessible name, at least two `.gv-case-role` items, a `<b>` word and `<small>` case label in each role, and `aria-hidden="true"` on arrows.
 
 ## QR block (`gv-qr`): practice from the printed manual
 Hidden on screen. In print the page's "Practice this" button is hidden and the QR block (code + visible short address) appears in its place. Generate it with `python3 scripts/make_qr_block.py --url <https URL> --text "<page language>" --alt "<page language>"` (needs `pip install segno`); it is inline SVG, so it needs no network. Link to the live practice site (`https://cosylanguages.github.io/COSYpractice/index.html?lang=..&cat=..&level=..&theme=..`), never to a relative path, so the code works on paper. Check that the `theme` value exists in COSYpractice before printing it on a page.
@@ -95,11 +155,11 @@ python3 scripts/check_visuals.py manuals/*/grammar
 - Languages are all left-to-right today. The timeline assumes LTR.
 
 ## Rollout order (suggested)
-1. Wire in (below) and run the linter. 2. English A1 `to-be`, `have-got`, `simple-vs-continuous` (existing hand-made timelines become `gv-timeline`). 3. French passé composé (tree + contrast). 4. Paradigm tables for every conjugated verb page. 5. Other languages by level.
+1. Wire in (below) and run the linter. 2. English A1 `to-be`, `have-got`, `simple-vs-continuous` (existing hand-made timelines become `gv-timeline`). 3. French passé composé (tree + contrast). 4. Embed canonical COSYtools tables by ID on conjugated verb pages; add case maps to case pages. 5. Other languages by level.
 
 ## Wiring
 Add as the **first line** of `shared/styles/components.css` (3,880 of 4,039 pages already load it, so no page edits are needed):
 `@import url("visuals.css");`
 
 ## Tables (all pages)
-`python3 scripts/upgrade_tables.py` (dry run; `--apply` to write) makes every table accessible (`<th scope>`, `.table-wrap` becomes a named, focusable region) and splits stem/ending ONLY for clearly regular verb paradigms (every ending must be in a per-language regular set). Irregular verbs are never marked automatically; see the review list. `check_visuals.py` fails on any table header without `scope`.
+`python3 scripts/upgrade_tables.py` (dry run; `--apply` to write) makes every table accessible (`<th scope>`, `.table-wrap` becomes a named, focusable region) and splits stem/ending ONLY for clearly regular verb paradigms (every ending must be in a per-language regular set). Irregular verbs are never marked automatically; see the review list. `check_visuals.py` fails on any table header without `scope`. For a canonical table, prefer `data-table-id` + `scripts/embed_grammar_tables.py`; `upgrade_tables.py` is for legacy hand-authored tables.
