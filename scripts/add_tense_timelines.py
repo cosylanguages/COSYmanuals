@@ -121,6 +121,7 @@ TABLE_RE = re.compile(r'<div class="table-wrap\b')
 TABLE_ANY_RE = re.compile(r'<table\b')
 RULE_RE = re.compile(r'<div class="box rule-box\b')
 BOX_WHY_RE = re.compile(r'<div class="box why"')
+PAGER_RE = re.compile(r'<div class="pager"')
 
 
 def esc(value):
@@ -255,24 +256,45 @@ def render_quiz_ccq(text, profile_id):
     )
 
 
+def in_canonical_table(text, pos):
+    """True when pos sits inside a canonical gv-paradigm wrapper."""
+    start = text.rfind("<div", 0, pos)
+    if start == -1:
+        return False
+    tag = text[start:text.find(">", start) + 1]
+    return "data-table-id=" in tag or "gv-paradigm" in tag
+
+
 def find_anchor(text):
-    matches = []
-    for regex, kind in ((CCQ_RE, "ccq"), (TABLE_RE, "table"), (TABLE_ANY_RE, "table"), (RULE_RE, "rule"), (BOX_WHY_RE, "rule")):
-        m = regex.search(text)
-        if m:
-            matches.append((m.start(), kind))
-    if not matches:
-        return None, None
     main = re.search(r'<main\b', text)
     main_start = main.start() if main else 0
-    inside = [m for m in matches if m[0] >= main_start]
-    index, kind = min(inside if inside else matches)
-    if kind == "ccq":
-        prefix = text[:index]
-        m = re.search(r'<section[^>]*\bid="ccq"[^>]*>\s*$', prefix)
-        if m:
-            return m.start(), "section-ccq"
-    return index, kind
+
+    # Keep the timeline directly above the concept-check block when one exists.
+    for pattern, kind in (
+        (r'<section[^>]*\bid="ccq"[^>]*>', "section-ccq"),
+        (CCQ_RE.pattern, "ccq"),
+    ):
+        for m in re.finditer(pattern, text):
+            if m.start() >= main_start:
+                return m.start(), kind
+
+    matches = []
+    canonical_wrapper = None
+    for regex, kind in ((TABLE_RE, "table"), (TABLE_ANY_RE, "table"), (RULE_RE, "rule"), (BOX_WHY_RE, "rule"), (PAGER_RE, "pager")):
+        for m in regex.finditer(text):
+            if m.start() < main_start:
+                continue
+            if kind == "table" and in_canonical_table(text, m.start()):
+                if canonical_wrapper is None:
+                    canonical_wrapper = text.rfind("<div", main_start, m.start())
+                continue
+            matches.append((m.start(), kind))
+            break
+    if matches:
+        return min(matches)
+    if canonical_wrapper is not None:
+        return canonical_wrapper, "table"
+    return None, None
 
 
 def remove_generated_ccq(text):
