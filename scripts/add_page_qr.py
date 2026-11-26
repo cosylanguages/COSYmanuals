@@ -4,7 +4,6 @@ same COSYpractice link as the banner. Idempotent. English only: the QR caption i
    python3 scripts/add_page_qr.py manuals/en/grammar   |   --check"""
 import re, sys, pathlib, html
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from make_qr_block import qr_block
 
 BASE = "https://cosylanguages.github.io/COSYpractice/"
 BANNER = re.compile(r'<div class="box practice-cta-banner".*?<a href="(\.\./\.\./\.\./\.\./\.\./practice/|https://cosylanguages\.github\.io/(?:COSYlanguages/practice|COSYpractice)/)([^"]+)"[^>]*>.*?</a>\s*</div>\n', re.S)
@@ -17,6 +16,7 @@ def process(p, check):
     if not m: return None
     if check: return True
     pre = m.group(1)
+    from make_qr_block import qr_block  # needs segno; only when writing
     url = (BASE if pre.startswith("..") else pre) + html.unescape(m.group(2))
     title = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
     name = html.unescape(re.sub(r"<[^>]+>", "", title.group(1))).strip() if title else "this topic"
