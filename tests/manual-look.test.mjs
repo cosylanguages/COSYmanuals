@@ -46,3 +46,13 @@ for (const lang of ['fr', 'ru']) {
     assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
   });
 }
+
+test('print booklets load visuals.css (openings and QR blocks are unstyled and huge without it)', () => {
+  const dir = path.join(ROOT, 'manuals');
+  const bad = [];
+  for (const lang of fs.readdirSync(dir)) {
+    const f = path.join(dir, lang, 'print', 'full.html');
+    if (fs.existsSync(f) && !fs.readFileSync(f, 'utf8').includes('shared/styles/visuals.css')) bad.push(lang);
+  }
+  assert.deepEqual(bad, []);
+});
