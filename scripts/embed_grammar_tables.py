@@ -92,11 +92,14 @@ def render_table(entry: dict, data) -> str:
             + "</tr></thead>"
         )
         lines.append("<tbody>")
-        for item in data:
+        rows = render.get("rows")
+        if rows is not None and (not isinstance(rows, list) or len(rows) != len(data)):
+            raise ValueError("render.rows must be a list with one label per form")
+        for index, item in enumerate(data):
             if render.get("split_pronoun") and isinstance(item, str) and " " in item.strip():
                 person, form = item.strip().split(" ", 1)
             else:
-                person, form = "", item
+                person, form = (rows[index] if rows else ""), item
             lines.append(
                 "<tr>"
                 f'<th scope="row">{escape(person)}</th>'

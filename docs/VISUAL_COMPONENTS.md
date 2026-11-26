@@ -119,6 +119,21 @@ python3 scripts/embed_grammar_tables.py --id fr:verb:parler:indicatif_present --
 
 The script fetches the canonical JSON, renders a static `gv-paradigm` table with `<caption>`, `scope`, and a visible `Source: COSYtools` link, and records `data-source-url` + `data-source-hash`. Re-running is idempotent; when the source data changes, the hash changes and the block is regenerated. The build needs network access to COSYtools; the generated HTML is static, so the manual itself works offline.
 
+For a batch:
+
+```bash
+python3 scripts/build_table_index.py --apply          # add/refresh curated index entries
+python3 scripts/add_table_placeholders.py --apply     # insert page placeholders
+python3 scripts/embed_grammar_tables.py --apply       # render the tables
+```
+
+`data/grammar/table_pages.json` maps a page to one or more table IDs and an optional localized intro. `build_table_index.py` verifies every lemma, tense and case against the live COSYtools JSON; `add_table_placeholders.py` skips any table ID already present, so both scripts are idempotent.
+
+- Prefer the hand-made table when it teaches a contrast: several verbs side by side, stem/ending splits, or affirmative/negative/interrogative columns. Use the canonical embed when the page teaches one lemma and no complete paradigm exists.
+- `python3 scripts/prune_table_embeds.py --apply` removes a canonical embed when a richer hand-made paradigm is already on the page; do not show two paradigms for the same point.
+- `python3 scripts/fix_table_accessibility.py --apply <paths>` is the targeted legacy `.table-wrap` fix when a page is otherwise ready; `scripts/upgrade_tables.py` remains the bulk migration tool.
+- List tables whose forms do not include pronouns (Spanish, Italian, Portuguese, Greek) set `"rows": ["yo", "tú", ...]` in the render spec. The renderer uses those labels instead of trying to split a pronoun from each form.
+
 - Do not edit inside `<!-- gv-table:start ... -->` / `<!-- gv-table:end -->`. Edit the index entry or the page framing instead.
 - The visible link goes to the COSYtools tool page, not the raw JSON.
 - The table is static, so it prints; the source link stays visible.

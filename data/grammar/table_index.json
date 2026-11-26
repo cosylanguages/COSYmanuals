@@ -5,7 +5,11 @@
       "source": "cosytools",
       "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
       "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
-      "path": ["parler", "tenses", "indicatif_present"],
+      "path": [
+        "parler",
+        "tenses",
+        "indicatif_present"
+      ],
       "lang": "fr",
       "pos": "verb",
       "lemma": "parler",
@@ -16,8 +20,14 @@
         "kind": "list",
         "split_pronoun": true,
         "columns": [
-          {"key": "person", "header": "personne"},
-          {"key": "form", "header": "forme"}
+          {
+            "key": "person",
+            "header": "personne"
+          },
+          {
+            "key": "form",
+            "header": "forme"
+          }
         ]
       }
     },
@@ -25,7 +35,10 @@
       "source": "cosytools",
       "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/rod-padezhi/",
       "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/rod-padezhi/data/nouns.json",
-      "path": ["дом", "cases"],
+      "path": [
+        "дом",
+        "cases"
+      ],
       "lang": "ru",
       "pos": "noun",
       "lemma": "дом",
@@ -37,16 +50,816 @@
         "label_key": "case",
         "label_header": "падеж",
         "columns": [
-          {"key": "singular", "header": "единственное число"},
-          {"key": "plural", "header": "множественное число"}
+          {
+            "key": "singular",
+            "header": "единственное число"
+          },
+          {
+            "key": "plural",
+            "header": "множественное число"
+          }
         ],
         "rows": [
-          {"case": "Именительный", "singular": "nom_sing", "plural": "nom_plur"},
-          {"case": "Родительный", "singular": "gen_sing", "plural": "gen_plur"},
-          {"case": "Дательный", "singular": "dat_sing", "plural": "dat_plur"},
-          {"case": "Винительный", "singular": "acc_sing", "plural": "acc_plur"},
-          {"case": "Творительный", "singular": "ins_sing", "plural": "ins_plur"},
-          {"case": "Предложный", "singular": "pre_sing", "plural": "pre_plur"}
+          {
+            "case": "Именительный",
+            "singular": "nom_sing",
+            "plural": "nom_plur"
+          },
+          {
+            "case": "Родительный",
+            "singular": "gen_sing",
+            "plural": "gen_plur"
+          },
+          {
+            "case": "Дательный",
+            "singular": "dat_sing",
+            "plural": "dat_plur"
+          },
+          {
+            "case": "Винительный",
+            "singular": "acc_sing",
+            "plural": "acc_plur"
+          },
+          {
+            "case": "Творительный",
+            "singular": "ins_sing",
+            "plural": "ins_plur"
+          },
+          {
+            "case": "Предложный",
+            "singular": "pre_sing",
+            "plural": "pre_plur"
+          }
+        ]
+      }
+    },
+    "fr:verb:être:indicatif_present": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
+      "path": [
+        "être",
+        "tenses",
+        "indicatif_present"
+      ],
+      "lang": "fr",
+      "pos": "verb",
+      "lemma": "être",
+      "feature": "indicatif_present",
+      "caption": "être · présent de l'indicatif",
+      "source_label": "Source :",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "personne"
+          },
+          {
+            "key": "form",
+            "header": "forme"
+          }
+        ]
+      }
+    },
+    "fr:verb:avoir:indicatif_present": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
+      "path": [
+        "avoir",
+        "tenses",
+        "indicatif_present"
+      ],
+      "lang": "fr",
+      "pos": "verb",
+      "lemma": "avoir",
+      "feature": "indicatif_present",
+      "caption": "avoir · présent de l'indicatif",
+      "source_label": "Source :",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "personne"
+          },
+          {
+            "key": "form",
+            "header": "forme"
+          }
+        ]
+      }
+    },
+    "fr:verb:aller:indicatif_present": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
+      "path": [
+        "aller",
+        "tenses",
+        "indicatif_present"
+      ],
+      "lang": "fr",
+      "pos": "verb",
+      "lemma": "aller",
+      "feature": "indicatif_present",
+      "caption": "aller · présent de l'indicatif",
+      "source_label": "Source :",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "personne"
+          },
+          {
+            "key": "form",
+            "header": "forme"
+          }
+        ]
+      }
+    },
+    "fr:verb:faire:indicatif_present": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
+      "path": [
+        "faire",
+        "tenses",
+        "indicatif_present"
+      ],
+      "lang": "fr",
+      "pos": "verb",
+      "lemma": "faire",
+      "feature": "indicatif_present",
+      "caption": "faire · présent de l'indicatif",
+      "source_label": "Source :",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "personne"
+          },
+          {
+            "key": "form",
+            "header": "forme"
+          }
+        ]
+      }
+    },
+    "es:verb:hablar:presente": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/es/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/es/conjugeur/data/verbs.json",
+      "path": [
+        "hablar",
+        "tenses",
+        "presente"
+      ],
+      "lang": "es",
+      "pos": "verb",
+      "lemma": "hablar",
+      "feature": "presente",
+      "caption": "hablar · presente de indicativo",
+      "source_label": "Fuente:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "persona"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "yo",
+          "tú",
+          "él/ella",
+          "nosotros",
+          "vosotros",
+          "ellos/ellas"
+        ]
+      }
+    },
+    "es:verb:ser:presente": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/es/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/es/conjugeur/data/verbs.json",
+      "path": [
+        "ser",
+        "tenses",
+        "presente"
+      ],
+      "lang": "es",
+      "pos": "verb",
+      "lemma": "ser",
+      "feature": "presente",
+      "caption": "ser · presente de indicativo",
+      "source_label": "Fuente:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "persona"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "yo",
+          "tú",
+          "él/ella",
+          "nosotros",
+          "vosotros",
+          "ellos/ellas"
+        ]
+      }
+    },
+    "es:verb:estar:presente": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/es/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/es/conjugeur/data/verbs.json",
+      "path": [
+        "estar",
+        "tenses",
+        "presente"
+      ],
+      "lang": "es",
+      "pos": "verb",
+      "lemma": "estar",
+      "feature": "presente",
+      "caption": "estar · presente de indicativo",
+      "source_label": "Fuente:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "persona"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "yo",
+          "tú",
+          "él/ella",
+          "nosotros",
+          "vosotros",
+          "ellos/ellas"
+        ]
+      }
+    },
+    "it:verb:parlare:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/it/coniugatore/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/it/coniugatore/data/verbs.json",
+      "path": [
+        "parlare",
+        "tenses",
+        "pres"
+      ],
+      "lang": "it",
+      "pos": "verb",
+      "lemma": "parlare",
+      "feature": "pres",
+      "caption": "parlare · presente indicativo",
+      "source_label": "Fonte:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "persona"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "io",
+          "tu",
+          "lui/lei",
+          "noi",
+          "voi",
+          "loro"
+        ]
+      }
+    },
+    "it:verb:essere:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/it/coniugatore/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/it/coniugatore/data/verbs.json",
+      "path": [
+        "essere",
+        "tenses",
+        "pres"
+      ],
+      "lang": "it",
+      "pos": "verb",
+      "lemma": "essere",
+      "feature": "pres",
+      "caption": "essere · presente indicativo",
+      "source_label": "Fonte:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "persona"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "io",
+          "tu",
+          "lui/lei",
+          "noi",
+          "voi",
+          "loro"
+        ]
+      }
+    },
+    "it:verb:avere:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/it/coniugatore/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/it/coniugatore/data/verbs.json",
+      "path": [
+        "avere",
+        "tenses",
+        "pres"
+      ],
+      "lang": "it",
+      "pos": "verb",
+      "lemma": "avere",
+      "feature": "pres",
+      "caption": "avere · presente indicativo",
+      "source_label": "Fonte:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "persona"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "io",
+          "tu",
+          "lui/lei",
+          "noi",
+          "voi",
+          "loro"
+        ]
+      }
+    },
+    "pt:verb:falar:presente": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/pt/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/pt/conjugeur/data/verbs.json",
+      "path": [
+        "falar",
+        "tenses",
+        "presente"
+      ],
+      "lang": "pt",
+      "pos": "verb",
+      "lemma": "falar",
+      "feature": "presente",
+      "caption": "falar · presente do indicativo",
+      "source_label": "Fonte:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "pessoa"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "eu",
+          "tu",
+          "ele/ela",
+          "nós",
+          "vós",
+          "eles/elas"
+        ]
+      }
+    },
+    "pt:verb:ser:presente": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/pt/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/pt/conjugeur/data/verbs.json",
+      "path": [
+        "ser",
+        "tenses",
+        "presente"
+      ],
+      "lang": "pt",
+      "pos": "verb",
+      "lemma": "ser",
+      "feature": "presente",
+      "caption": "ser · presente do indicativo",
+      "source_label": "Fonte:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "pessoa"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "eu",
+          "tu",
+          "ele/ela",
+          "nós",
+          "vós",
+          "eles/elas"
+        ]
+      }
+    },
+    "pt:verb:estar:presente": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/pt/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/pt/conjugeur/data/verbs.json",
+      "path": [
+        "estar",
+        "tenses",
+        "presente"
+      ],
+      "lang": "pt",
+      "pos": "verb",
+      "lemma": "estar",
+      "feature": "presente",
+      "caption": "estar · presente do indicativo",
+      "source_label": "Fonte:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "pessoa"
+          },
+          {
+            "key": "form",
+            "header": "forma"
+          }
+        ],
+        "rows": [
+          "eu",
+          "tu",
+          "ele/ela",
+          "nós",
+          "vós",
+          "eles/elas"
+        ]
+      }
+    },
+    "de:verb:lernen:präsens": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/de/konjugation/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/de/konjugation/data/verbs.json",
+      "path": [
+        "lernen",
+        "tenses",
+        "präsens"
+      ],
+      "lang": "de",
+      "pos": "verb",
+      "lemma": "lernen",
+      "feature": "präsens",
+      "caption": "lernen · Präsens",
+      "source_label": "Quelle:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "Person"
+          },
+          {
+            "key": "form",
+            "header": "Form"
+          }
+        ]
+      }
+    },
+    "de:verb:sein:präsens": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/de/konjugation/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/de/konjugation/data/verbs.json",
+      "path": [
+        "sein",
+        "tenses",
+        "präsens"
+      ],
+      "lang": "de",
+      "pos": "verb",
+      "lemma": "sein",
+      "feature": "präsens",
+      "caption": "sein · Präsens",
+      "source_label": "Quelle:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "Person"
+          },
+          {
+            "key": "form",
+            "header": "Form"
+          }
+        ]
+      }
+    },
+    "de:verb:haben:präsens": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/de/konjugation/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/de/konjugation/data/verbs.json",
+      "path": [
+        "haben",
+        "tenses",
+        "präsens"
+      ],
+      "lang": "de",
+      "pos": "verb",
+      "lemma": "haben",
+      "feature": "präsens",
+      "caption": "haben · Präsens",
+      "source_label": "Quelle:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "Person"
+          },
+          {
+            "key": "form",
+            "header": "Form"
+          }
+        ]
+      }
+    },
+    "ru:verb:читать:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/data/verbs.json",
+      "path": [
+        "читать",
+        "tenses",
+        "pres"
+      ],
+      "lang": "ru",
+      "pos": "verb",
+      "lemma": "читать",
+      "feature": "pres",
+      "caption": "читать · настоящее время",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "лицо"
+          },
+          {
+            "key": "form",
+            "header": "форма"
+          }
+        ]
+      }
+    },
+    "ru:verb:говорить:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/data/verbs.json",
+      "path": [
+        "говорить",
+        "tenses",
+        "pres"
+      ],
+      "lang": "ru",
+      "pos": "verb",
+      "lemma": "говорить",
+      "feature": "pres",
+      "caption": "говорить · настоящее время",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "лицо"
+          },
+          {
+            "key": "form",
+            "header": "форма"
+          }
+        ]
+      }
+    },
+    "ru:verb:быть:past": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/data/verbs.json",
+      "path": [
+        "быть",
+        "tenses",
+        "past"
+      ],
+      "lang": "ru",
+      "pos": "verb",
+      "lemma": "быть",
+      "feature": "past",
+      "caption": "быть · прошедшее время",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "лицо"
+          },
+          {
+            "key": "form",
+            "header": "форма"
+          }
+        ]
+      }
+    },
+    "ru:verb:быть:fut": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/data/verbs.json",
+      "path": [
+        "быть",
+        "tenses",
+        "fut"
+      ],
+      "lang": "ru",
+      "pos": "verb",
+      "lemma": "быть",
+      "feature": "fut",
+      "caption": "быть · будущее время",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "лицо"
+          },
+          {
+            "key": "form",
+            "header": "форма"
+          }
+        ]
+      }
+    },
+    "ru:verb:хотеть:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/data/verbs.json",
+      "path": [
+        "хотеть",
+        "tenses",
+        "pres"
+      ],
+      "lang": "ru",
+      "pos": "verb",
+      "lemma": "хотеть",
+      "feature": "pres",
+      "caption": "хотеть · настоящее время",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "лицо"
+          },
+          {
+            "key": "form",
+            "header": "форма"
+          }
+        ]
+      }
+    },
+    "ru:verb:мочь:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/spryazhenie/data/verbs.json",
+      "path": [
+        "мочь",
+        "tenses",
+        "pres"
+      ],
+      "lang": "ru",
+      "pos": "verb",
+      "lemma": "мочь",
+      "feature": "pres",
+      "caption": "мочь · настоящее время",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {
+            "key": "person",
+            "header": "лицо"
+          },
+          {
+            "key": "form",
+            "header": "форма"
+          }
+        ]
+      }
+    },
+    "el:verb:είμαι:pres": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/el/klisi-rimaton/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/el/klisi-rimaton/data/verbs.json",
+      "path": [
+        "είμαι",
+        "tenses",
+        "pres"
+      ],
+      "lang": "el",
+      "pos": "verb",
+      "lemma": "είμαι",
+      "feature": "pres",
+      "caption": "είμαι · ενεστώτας",
+      "source_label": "Πηγή:",
+      "render": {
+        "kind": "list",
+        "split_pronoun": false,
+        "columns": [
+          {
+            "key": "person",
+            "header": "πρόσωπο"
+          },
+          {
+            "key": "form",
+            "header": "τύπος"
+          }
+        ],
+        "rows": [
+          "εγώ",
+          "εσύ",
+          "αυτός/αυτή",
+          "εμείς",
+          "εσείς",
+          "αυτοί/αυτές"
         ]
       }
     }
