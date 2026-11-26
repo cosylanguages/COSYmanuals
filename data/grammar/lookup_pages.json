@@ -45,6 +45,31 @@
       "path": "manuals/el/grammar/a1/topics/pliris-klisi-ousiastikou.html",
       "lang": "el",
       "lookup": "cases"
+    },
+    {
+      "path": "manuals/es/grammar/a1/topics/presente-indicativo.html",
+      "lang": "es",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/de/grammar/a1/topics/praesens-regelmaessig.html",
+      "lang": "de",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/it/grammar/a1/topics/essere-avere.html",
+      "lang": "it",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/budushchee-vremya-spryazhenie.html",
+      "lang": "ru",
+      "lookup": "conjugation"
+    },
+    {
+      "path": "manuals/el/grammar/a1/topics/to-rima-eimai.html",
+      "lang": "el",
+      "lookup": "conjugation"
     }
   ]
 }
