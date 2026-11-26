@@ -1,0 +1,235 @@
+"""French and Russian tense-timeline profiles (monolingual labels)."""
+
+from tense_timelines_en import span, point, now
+
+
+FR_PROFILES = {
+    "fr-present": dict(
+        aria="habitude, routine et fait général autour du présent",
+        items=[span(8, 92, "present", "habitude · tous les jours"), now(50, "maintenant")],
+    ),
+    "fr-present-perfect-continu": dict(
+        aria="action commencée dans le passé et qui continue jusqu'à maintenant",
+        items=[span(20, 50, "past", "depuis · action commencée", below=True), now(50, "maintenant")],
+    ),
+    "fr-present-progress": dict(
+        aria="action en cours maintenant",
+        items=[span(38, 62, "present", "en train de · maintenant"), now(50, "maintenant")],
+    ),
+    "fr-futur-proche": dict(
+        aria="action future proche décidée avant maintenant",
+        items=[now(22, "maintenant"), point(72, "future", "aller + infinitif → futur proche")],
+    ),
+    "fr-futur-simple": dict(
+        aria="action située dans le futur",
+        items=[now(22, "maintenant"), point(72, "future", "action future")],
+    ),
+    "fr-passe-recent": dict(
+        aria="action qui vient de se terminer",
+        items=[point(30, "past", "venir de + infinitif"), now(82, "maintenant")],
+    ),
+    "fr-passe-compose": dict(
+        aria="action terminée dans le passé",
+        items=[point(32, "past", "action terminée · hier"), now(82, "maintenant")],
+    ),
+    "fr-imparfait": dict(
+        aria="action en cours ou habitude dans le passé",
+        items=[span(15, 62, "past", "imparfait · en cours / habitude"), now(85, "maintenant")],
+    ),
+    "fr-passe-compose-vs-imparfait": dict(
+        aria="l'imparfait décrit le décor, le passé composé raconte l'événement",
+        items=[span(18, 55, "past", "imparfait · décor", below=False), point(62, "past", "passé composé · événement"), now(85, "maintenant")],
+    ),
+    "fr-plus-que-parfait": dict(
+        aria="action antérieure à une autre action passée",
+        items=[point(26, "past", "plus-que-parfait · avant"), point(62, "past", "passé composé · après"), now(88, "maintenant")],
+    ),
+    "fr-futur-anterieur": dict(
+        aria="action accomplie avant une échéance future",
+        items=[now(22, "maintenant"), span(56, 82, "future", "futur antérieur · accompli"), point(86, "future", "échéance", below=False)],
+    ),
+    "fr-futur-du-passe": dict(
+        aria="futur vu depuis un point du passé",
+        items=[point(40, "past", "point de vue passé"), point(78, "future", "futur du passé")],
+    ),
+    "fr-master": dict(
+        aria="le système des temps : passé, présent et futur",
+        items=[span(6, 36, "past", "passé"), span(42, 58, "present", "présent"), span(64, 94, "future", "futur"), now(50, "maintenant")],
+    ),
+    "fr-narrative": dict(
+        aria="les temps du passé au service du récit",
+        items=[span(10, 40, "past", "plus-que-parfait · avant"), span(40, 66, "past", "imparfait · décor", below=False), point(66, "past", "passé composé · événement"), now(88, "maintenant")],
+    ),
+}
+
+
+RU_PROFILES = {
+    "ru-present": dict(
+        aria="настоящее время: регулярное действие вокруг момента речи",
+        items=[span(8, 92, "present", "настоящее · регулярно"), now(50, "сейчас")],
+    ),
+    "ru-present-progress": dict(
+        aria="действие происходит сейчас",
+        items=[span(38, 62, "present", "сейчас · процесс"), now(50, "сейчас")],
+    ),
+    "ru-past": dict(
+        aria="законченное действие в прошлом",
+        items=[point(32, "past", "прошедшее · закончено"), now(82, "сейчас")],
+    ),
+    "ru-past-imperfective": dict(
+        aria="процесс или повторяющееся действие в прошлом",
+        items=[span(15, 62, "past", "НСВ · процесс / повтор"), now(85, "сейчас")],
+    ),
+    "ru-past-perfective": dict(
+        aria="законченный результат в прошлом",
+        items=[point(32, "past", "СВ · результат"), now(85, "сейчас")],
+    ),
+    "ru-future": dict(
+        aria="действие в будущем",
+        items=[now(22, "сейчас"), point(72, "future", "будущее")],
+    ),
+    "ru-future-complex": dict(
+        aria="сложное будущее: процесс в будущем",
+        items=[now(22, "сейчас"), span(55, 85, "future", "буду делать · процесс")],
+    ),
+    "ru-future-perfective": dict(
+        aria="простое будущее: законченный результат",
+        items=[now(22, "сейчас"), point(78, "future", "сделаю · результат")],
+    ),
+    "ru-aspect": dict(
+        aria="вид глагола: процесс НСВ и результат СВ",
+        items=[span(12, 55, "past", "НСВ · процесс"), point(68, "past", "СВ · результат"), now(88, "сейчас")],
+    ),
+    "ru-be-past": dict(
+        aria="глагол быть в прошедшем времени",
+        items=[point(30, "past", "был / была"), now(82, "сейчас")],
+    ),
+    "ru-master": dict(
+        aria="система времён: прошлое, настоящее и будущее",
+        items=[span(6, 36, "past", "прошлое"), span(42, 58, "present", "настоящее"), span(64, 94, "future", "будущее"), now(50, "сейчас")],
+    ),
+    "ru-infinitive-aspect": dict(
+        aria="вид глагола в инфинитиве: процесс и результат",
+        items=[point(30, "present", "НСВ · делать"), point(70, "present", "СВ · сделать")],
+    ),
+    "ru-imperative-aspect": dict(
+        aria="вид глагола в повелительном наклонении",
+        items=[point(30, "present", "НСВ · делай"), point(70, "present", "СВ · сделай")],
+    ),
+}
+
+
+FR_SLUG_TO_PROFILE = {
+    "verbe-etre-au-present-de-lindicatif": "fr-present",
+    "etre-au-present-pronoms-sujets": "fr-present",
+    "verbe-etre-present-formes-affirmatives": "fr-present",
+    "avoir-au-present-articles-indefinis": "fr-present",
+    "verbes-en-er-groupe-1-au-present": "fr-present",
+    "verbe-sappeler-present": "fr-present",
+    "verbes-pronominaux-au-present-se-reveiller-se-lever-se-laver": "fr-present",
+    "verbes-auxiliaires-au-present": "fr-present",
+    "present-de-lindicatif-au-travail": "fr-present",
+    "present-de-description-pour-une-image": "fr-present",
+    "present-de-lindicatif-pour-presenter-lentreprise-ou-le-projet": "fr-present",
+    "recapitulatif-present-articles-et-possessifs": "fr-present",
+    "synthese-du-present-des-habitudes-des-connecteurs-temporels-et-des-possessifs": "fr-present",
+    "questions-au-present-a-quelle-heure-tu": "fr-present",
+    "modaux-devoir-et-pouvoir-au-present": "fr-present",
+    "modaux-de-possibilite-et-permission-pouvoir-devoir-au-present-et-conditionnel": "fr-present",
+    "present-de-continuite-pour-parler-de-lactivite-actuelle": "fr-present-progress",
+    "present-parfait-continu-depuis-pour-presenter-ses-chantiers-ou-recherches": "fr-present-perfect-continu",
+    "futur-proche": "fr-futur-proche",
+    "aller-au-present-infinitif-futur-proche": "fr-futur-proche",
+    "futur-proche-pour-organiser-des-rendez-vous": "fr-futur-proche",
+    "futur-proche-vs-present-continu": "fr-futur-proche",
+    "futur-simple": "fr-futur-simple",
+    "le-futur-simple": "fr-futur-simple",
+    "terminaisons-du-futur-simple": "fr-futur-simple",
+    "futur-simple-intro-dans-un-an-je-serai": "fr-futur-simple",
+    "futur-simple-pour-prendre-des-engagements-fermes": "fr-futur-simple",
+    "intention-future-avec-je-rappellerai": "fr-futur-simple",
+    "interrogation-au-futur": "fr-futur-simple",
+    "modaux-au-futur": "fr-futur-simple",
+    "verbes-impersonnels-au-futur-il-pleuvra-il-fera-beau-il-y-aura": "fr-futur-simple",
+    "verbes-irreguliers-au-futur-avoir-etre-faire-aller-venir": "fr-futur-simple",
+    "bilan-futur": "fr-futur-simple",
+    "passe-recent": "fr-passe-recent",
+    "passe-compose-avoir": "fr-passe-compose",
+    "passe-compose-avoir-etre": "fr-passe-compose",
+    "passe-compose-avec-avoir-verbes-reguliers": "fr-passe-compose",
+    "passe-compose-avec-lauxiliaire-avoir-verbes-reguliers-en-er": "fr-passe-compose",
+    "passe-compose-avec-etre-mouvement": "fr-passe-compose",
+    "passe-compose-avec-lauxiliaire-etre-verbes-de-mouvement-aller-venir-partir": "fr-passe-compose",
+    "passe-compose-etre-1": "fr-passe-compose",
+    "passe-compose-etre-2": "fr-passe-compose",
+    "passe-compose-verbes-irreguliers-courants": "fr-passe-compose",
+    "passe-compose-dans-le-signalement-de-pannes": "fr-passe-compose",
+    "passe-compose-pour-expliquer-un-incident-ou-retard": "fr-passe-compose",
+    "accord-du-participe-passe-avec-etre": "fr-passe-compose",
+    "imparfait": "fr-imparfait",
+    "limparfait-de-lindicatif": "fr-imparfait",
+    "formation-de-limparfait": "fr-imparfait",
+    "imparfait-pour-la-description": "fr-imparfait",
+    "imparfait-pour-lhabitude": "fr-imparfait",
+    "limparfait-dhabitude-avant-je-faisais": "fr-imparfait",
+    "imparfait-pour-le-decor-et-latmosphere-il-faisait-beau-quand": "fr-imparfait",
+    "imparfait-pour-poser-le-contexte-dun-probleme": "fr-imparfait",
+    "imparfait-vs-present": "fr-imparfait",
+    "passe-compose-vs-imparfait": "fr-passe-compose-vs-imparfait",
+    "passe-compose-vs-imparfait-initiation": "fr-passe-compose-vs-imparfait",
+    "imparfait-vs-passe-compose": "fr-passe-compose-vs-imparfait",
+    "bilan-passe-compose-imparfait": "fr-passe-compose-vs-imparfait",
+    "alternance-passe-compose-actions-ponctuelles-et-imparfait-decor-arriere-plan": "fr-passe-compose-vs-imparfait",
+    "passe-compose-vs-imparfait-dans-le-recit": "fr-passe-compose-vs-imparfait",
+    "alternance-passe-compose-imparfait-pour-decrire-sa-carriere": "fr-passe-compose-vs-imparfait",
+    "utilisation-du-passe-compose-et-de-limparfait-pour-decrire-lincident": "fr-passe-compose-vs-imparfait",
+    "passe-compose-et-present-pour-relier-ses-experiences-au-poste-vise": "fr-passe-compose-vs-imparfait",
+    "passe-compose-et-present-pour-faire-le-point-sur-lavancement": "fr-passe-compose-vs-imparfait",
+    "passe-compose-present-pour-faire-le-bilan": "fr-passe-compose-vs-imparfait",
+    "passe-compose-avec-depuis-pendant-pour-le-parcours-pro": "fr-passe-compose-vs-imparfait",
+    "valorisation-de-ses-experiences-au-passe-compose-imparfait": "fr-passe-compose-vs-imparfait",
+    "synthese-des-temps-du-passe-passe-compose-imparfait-appliquee-au-recit-de-voyage": "fr-passe-compose-vs-imparfait",
+    "revision-generale-passe-compose-vs-imparfait-futur-simple-pronoms-cod-coi-pronoms-relatifs": "fr-master",
+    "plus-que-parfait-et-passe-compose-pour-la-chronologie-dun-vol": "fr-plus-que-parfait",
+    "formation-du-plus-que-parfait-auxiliaire-a-limparfait-participe-passe": "fr-plus-que-parfait",
+    "plus-que-parfait-pour-lanteriorite-je-navais-jamais-vu": "fr-plus-que-parfait",
+    "anteriorite-dune-action-passee-par-rapport-a-une-autre": "fr-plus-que-parfait",
+    "futur-simple-et-futur-anterieur-pour-decrire-les-etapes-dinnovation": "fr-futur-anterieur",
+    "futur-anterieur-et-futur-simple-pour-fixer-le-calendrier-dentreprise-ou-detudes": "fr-futur-anterieur",
+    "le-futur-anterieur-dans-lestimation-de-retour-sur-investissement": "fr-futur-anterieur",
+    "dici-10-ans-jaurai-participe-passe": "fr-futur-anterieur",
+    "futur-du-passe-nous-etions-sur-le-point-de-partir-quand": "fr-futur-du-passe",
+    "temps-du-recit-avances-plus-que-parfait-passe-compose-imparfait": "fr-narrative",
+    "temps-du-recit-passe-compose-imparfait-plus-que-parfait-pour-structurer-ses-exemples": "fr-narrative",
+    "recit-complet-au-passe": "fr-narrative",
+    "tous-les-temps": "fr-master",
+    "synthese-du-present-du-passe-compose-et-du-futur-proche": "fr-master",
+    "modifications-des-temps-present-imparfait-passe-compose-plus-que-parfait-futur-conditionnel": "fr-master",
+    "synthese-des-temps-du-recit-du-discours-indirect-de-la-voix-passive-et-du-conseil": "fr-master",
+}
+
+
+RU_SLUG_TO_PROFILE = {
+    "nastoyashchee-vremya": "ru-present",
+    "nastoyashchee-vremya-spryazhenie-1": "ru-present",
+    "nastoyashchee-vremya-spryazhenie-2": "ru-present",
+    "osobye-glagoly-zhit-pisat-pit": "ru-present",
+    "bez-glagola-byt": "ru-present",
+    "proshedshee-vremya": "ru-past",
+    "proshedshee-vremya-glagolov": "ru-past",
+    "proshedshee-vremya-osobennosti": "ru-past",
+    "proshedshee-vremya-i-vid": "ru-past-imperfective",
+    "proshedshee-vremya-glagola-byt": "ru-be-past",
+    "budushchee-vremya": "ru-future",
+    "budushchee-vremya-spryazhenie": "ru-future",
+    "budushchee-vremya-slozhashchee": "ru-future-complex",
+    "budushchee-vremya-nsv-sv": "ru-future-perfective",
+    "vidy-glagola-osnovy-nsv-sv": "ru-aspect",
+    "vidy-glagola-v-proshedshem-vremeni": "ru-aspect",
+    "vidy-glagola-v-budushchem-vremeni": "ru-aspect",
+    "vidy-glagola-v-infinitive": "ru-infinitive-aspect",
+    "vidy-glagola-v-povelitelnom-naklonenii": "ru-imperative-aspect",
+    "vidovye-pary-glagolov": "ru-aspect",
+    "sovershennyy-i-nesovershennyy-vid": "ru-aspect",
+    "to-be": "ru-be-past",
+}

@@ -79,7 +79,7 @@
      var scoreEl = panel.querySelector('.quiz-score');
      var score = 0, answered = 0;
      function refreshScore(){
-       if(scoreEl) scoreEl.textContent = 'Score: ' + score + ' / ' + data.length;
+       if(scoreEl) scoreEl.textContent = 'Счёт: ' + score + ' / ' + data.length;
      }
      panel.querySelectorAll('.qitem').forEach(function(qEl, qi){
        var opts = qEl.querySelectorAll('.qopt');
