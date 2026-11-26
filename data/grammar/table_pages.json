@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "path": "manuals/fr/grammar/a1/topics/verbe-etre-au-present-de-lindicatif.html",
+      "table_ids": [
+        "fr:verb:être:indicatif_present"
+      ],
+      "intro": "<p>Observez le paradigme du verbe <strong>être</strong> au présent :</p>"
+    },
+    {
+      "path": "manuals/fr/grammar/a1/topics/verbe-etre-present-formes-affirmatives.html",
+      "table_ids": [
+        "fr:verb:être:indicatif_present"
+      ],
+      "intro": "<p>Observez le paradigme du verbe <strong>être</strong> au présent :</p>"
+    },
+    {
+      "path": "manuals/fr/grammar/a1/topics/avoir-au-present-articles-indefinis.html",
+      "table_ids": [
+        "fr:verb:avoir:indicatif_present"
+      ],
+      "intro": "<p>Observez le paradigme du verbe <strong>avoir</strong> au présent :</p>"
+    },
+    {
+      "path": "manuals/fr/grammar/a1/topics/aller-au-present-infinitif-futur-proche.html",
+      "table_ids": [
+        "fr:verb:aller:indicatif_present"
+      ],
+      "intro": "<p>Observez le paradigme du verbe <strong>aller</strong> au présent :</p>"
+    },
+    {
+      "path": "manuals/fr/grammar/a1/topics/le-verbe-faire-activites.html",
+      "table_ids": [
+        "fr:verb:faire:indicatif_present"
+      ],
+      "intro": "<p>Observez le paradigme du verbe <strong>faire</strong> au présent :</p>"
+    },
+    {
+      "path": "manuals/es/grammar/a1/topics/es-presente-reg.html",
+      "table_ids": [
+        "es:verb:hablar:presente"
+      ],
+      "intro": "<p>Observa el paradigma de <strong>hablar</strong> en presente:</p>"
+    },
+    {
+      "path": "manuals/es/grammar/a1/topics/ser-vs-estar.html",
+      "table_ids": [
+        "es:verb:ser:presente",
+        "es:verb:estar:presente"
+      ],
+      "intro": "<p>Compara los paradigmas de <strong>ser</strong> y <strong>estar</strong> en presente:</p>"
+    },
+    {
+      "path": "manuals/pt/grammar/a1/topics/ser-vs-estar.html",
+      "table_ids": [
+        "pt:verb:ser:presente",
+        "pt:verb:estar:presente"
+      ],
+      "intro": "<p>Compare os paradigmas de <strong>ser</strong> e <strong>estar</strong> no presente:</p>"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/nastoyashchee-vremya-spryazhenie-1.html",
+      "table_ids": [
+        "ru:verb:читать:pres"
+      ],
+      "intro": "<p>Посмотрите парадигму глагола <strong>читать</strong> в настоящем времени:</p>"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/nastoyashchee-vremya-spryazhenie-2.html",
+      "table_ids": [
+        "ru:verb:говорить:pres"
+      ],
+      "intro": "<p>Посмотрите парадигму глагола <strong>говорить</strong> в настоящем времени:</p>"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/proshedshee-vremya-glagola-byt.html",
+      "table_ids": [
+        "ru:verb:быть:past"
+      ],
+      "intro": "<p>Посмотрите парадигму глагола <strong>быть</strong> в прошедшем времени:</p>"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/glagol-khotet.html",
+      "table_ids": [
+        "ru:verb:хотеть:pres"
+      ],
+      "intro": "<p>Посмотрите парадигму глагола <strong>хотеть</strong> в настоящем времени:</p>"
+    },
+    {
+      "path": "manuals/ru/grammar/a1/topics/glagoly-moch-i-umet.html",
+      "table_ids": [
+        "ru:verb:мочь:pres"
+      ],
+      "intro": "<p>Посмотрите парадигму глагола <strong>мочь</strong> в настоящем времени:</p>"
+    }
+  ]
+}
