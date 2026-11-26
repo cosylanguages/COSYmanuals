@@ -29,3 +29,8 @@ test('English grammar pages with a practice banner carry a print QR (run: python
   const r = spawnSync('python3', ['scripts/add_page_qr.py', '--check', 'manuals/en/grammar'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
 });
+
+test('English grammar topic pages carry data-doodle (run: python3 scripts/add_page_doodle.py manuals/en/grammar)', () => {
+  const r = spawnSync('python3', ['scripts/add_page_doodle.py', '--check', 'manuals/en/grammar'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});
