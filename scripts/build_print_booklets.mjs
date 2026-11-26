@@ -10,7 +10,8 @@
  * The per-language download control (`shared/js/print-booklet.js`) and the PDF
  * builder (`scripts/build_manual_pdfs.mjs`) both point at this file.
  *
- * Run: node scripts/build_print_booklets.mjs
+ * Run: node scripts/build_print_booklets.mjs [lang]
+ *      Pass a language code to rebuild only that booklet.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -62,8 +63,10 @@ function build() {
     byLang.get(p.lang).push(p);
   }
 
+  const only = process.argv[2];
   const built = [];
   for (const [lang, points] of [...byLang.entries()].sort()) {
+    if (only && lang !== only) continue;
     points.sort((a, b) => {
       const la = LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level);
       return la !== 0 ? la : a.id.localeCompare(b.id);
