@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Insert the gv-open opening (a theme chip, a few gap lines, the formula) before the outcome banner of
-English A1 grammar pages. Content lives in PAGES below, written for A1: short lines, one vocabulary theme per page.
+English A1 and A2 grammar pages. Content lives in PAGES below, written for A1: short lines, one vocabulary theme per page.
 Idempotent. `--check` lists pages in PAGES that lack the opening.
   python3 scripts/add_gv_open.py [--check]"""
 import html, re, sys
@@ -168,6 +168,102 @@ PAGES.update({
    [("consonant sound", "A"), ("vowel sound", "AN"), ("a known thing", "THE")], "a before consonant sounds, an before vowel sounds, the for known things"),
 })
 
+PAGES_A2 = {
+ "past-continuous": _p("Yesterday evening", "What were they doing?",
+   [("I", "was", "cooking at seven.", ""), ("You", "were", "watching TV.", ""),
+    ("Anna", "was", "reading a book.", ""), ("They", "were", "playing football.", "")],
+   [("I &middot; he &middot; she &middot; it", "WAS + verb-ing"), ("you &middot; we &middot; they", "WERE + verb-ing")], "past continuous: was or were plus verb-ing"),
+ "past-simple-vs-past-continuous": _p("A busy morning", "Long action or short action?",
+   [("While I", "was walking", "to work, it started to rain.", "(walk)"), ("I", "met", "my friend while I was shopping.", "(meet)"),
+    ("When the phone rang, Anna", "was cooking", ".", "(cook)"), ("Tom", "saw", "an accident when he was driving.", "(see)")],
+   [("long action", "WAS &middot; WERE + verb-ing"), ("short action", "past simple")], "past continuous for the long action, past simple for the short action"),
+ "present-perfect-form-use": _p("Life experience", "What have they done?",
+   [("I", "have", "visited Rome.", ""), ("Anna", "has", "tried sushi.", ""),
+    ("We", "have", "seen that film.", ""), ("Tom", "has", "met a famous actor.", "")],
+   [("I &middot; you &middot; we &middot; they", "HAVE + participle"), ("he &middot; she &middot; it", "HAS + participle")], "present perfect: have or has plus past participle"),
+ "present-perfect-ever-never-for-since": _p("Life experience", "Ever, never, for or since?",
+   [("Have you", "ever", "been to Spain?", ""), ("I have", "never", "eaten snails.", ""),
+    ("I have lived here", "for", "five years.", ""), ("She has worked here", "since", "2020.", "")],
+   [("a question", "EVER"), ("not once", "NEVER"), ("5 years", "FOR"), ("2020", "SINCE")], "ever, never, for a period, since a starting point"),
+ "present-perfect-just-already-yet": _p("Today's to-do list", "Just, already or yet?",
+   [("I have", "just", "made coffee. (a minute ago)", ""), ("She has", "already", "cleaned the kitchen. (done)", ""),
+    ("Have you finished", "yet", "? (question)", ""), ("He hasn't called", "yet", ". (not done)", "")],
+   [("a moment ago", "JUST"), ("done, early", "ALREADY"), ("not done &middot; ?", "YET")], "just, already and yet with the present perfect"),
+ "present-perfect-vs-past-simple": _p("News and finished times", "Present perfect or past simple?",
+   [("I", "have", "lost my keys. (now: no keys)", ""), ("I", "lost", "my keys yesterday.", "(lose)"),
+    ("Anna", "has", "just arrived.", ""), ("We", "went", "to Paris in 2019.", "(go)")],
+   [("no time, or until now", "HAVE + participle"), ("finished time: yesterday, 2019", "past simple")], "present perfect for news, past simple for a finished time"),
+ "zero-conditional": _p("Cooking and weather", "What always happens?",
+   [("If you heat ice, it", "melts", ".", "(melt)"), ("If it rains, the grass", "gets", "wet.", "(get)"),
+    ("If I am tired, I", "go", "to bed early.", "(go)"), ("Water", "boils", "if you heat it to 100 degrees.", "(boil)")],
+   [("IF + present simple", "present simple")], "zero conditional: if plus present simple, present simple"),
+ "first-conditional": _p("Plans and weather", "What will happen?",
+   [("If it rains, we", "will", "stay at home.", ""), ("If you study, you", "will", "pass the test.", ""),
+    ("If I am late, I", "will", "call you.", ""), ("She", "won't", "come if she is ill.", "")],
+   [("IF + present simple", "WILL + verb")], "first conditional: if plus present simple, will plus verb"),
+ "second-conditional": _p("Dreams", "What would you do?",
+   [("If I had a million euros, I", "would", "travel the world.", ""), ("If I were rich, I", "would", "buy a house.", ""),
+    ("If she", "had", "more time, she would read more.", "(have)"), ("If we lived in Paris, we", "would", "eat croissants.", "")],
+   [("IF + past simple", "WOULD + verb")], "second conditional: if plus past simple, would plus verb"),
+ "should-shouldnt": _p("Health advice", "Good idea or bad idea?",
+   [("You", "should", "drink more water.", ""), ("You", "shouldn't", "eat too much sugar.", ""),
+    ("He", "should", "see a doctor.", ""), ("We", "shouldn't", "stay up late.", "")],
+   [("a good idea", "SHOULD + verb"), ("a bad idea", "SHOULDN'T + verb")], "should and shouldn't give advice"),
+ "have-to-must-mustnt": _p("Rules", "Must, mustn't or have to?",
+   [("You", "must", "wear a seatbelt. (rule)", ""), ("You", "mustn't", "use your phone here. (forbidden)", ""),
+    ("I", "have", "to get up at six. (need)", ""), ("He", "doesn't", "have to wear a uniform. (not necessary)", "")],
+   [("rule &middot; need", "MUST &middot; HAVE TO"), ("forbidden", "MUSTN'T"), ("not necessary", "DON'T HAVE TO")], "must and have to for rules, mustn't for forbidden, don't have to for not necessary"),
+ "used-to": _p("When I was a child", "What did you use to do?",
+   [("I", "used", "to play outside every day.", ""), ("We", "used", "to live in a small village.", ""),
+    ("She", "didn't", "use to like vegetables.", ""), ("Did you", "use", "to have a pet?", "")],
+   [("a past habit, not now", "USED TO + verb"), ("question &middot; negative", "DID &middot; DIDN'T + USE TO")], "used to for past habits"),
+ "will-vs-going-to": _p("Plans and offers", "Will or going to?",
+   [("I", "am", "going to visit my aunt tomorrow. (plan)", ""), ("The phone is ringing. I", "will", "answer it. (sudden decision)", ""),
+    ("Look at the clouds! It", "is", "going to rain. (I can see it)", ""), ("I think she", "will", "like the gift. (opinion)", "")],
+   [("plan &middot; evidence", "GOING TO"), ("sudden decision &middot; opinion", "WILL")], "going to for plans and evidence, will for sudden decisions and opinions"),
+ "present-continuous-for-future": _p("My diary", "What are your plans?",
+   [("I", "am", "meeting Anna tomorrow.", ""), ("We", "are", "flying to Rome on Friday.", ""),
+    ("Tom", "is", "starting a new job next week.", ""), ("They", "are", "having a party on Saturday.", "")],
+   [("a fixed plan + a time", "AM &middot; IS &middot; ARE + verb-ing")], "present continuous for fixed future plans"),
+ "too-and-enough": _p("Shopping for clothes", "Too or enough?",
+   [("The coat is", "too", "big for me.", ""), ("The shoes are not big", "enough", ".", ""),
+    ("The jacket is", "too", "expensive.", ""), ("I haven't got", "enough", "money.", "")],
+   [("more than needed", "TOO + adjective"), ("after an adjective", "adjective + ENOUGH"), ("before a noun", "ENOUGH + noun")], "too before an adjective, enough after an adjective or before a noun"),
+ "much-many-little-few": _p("In the fridge", "How much is left?",
+   [("There is", "little", "milk left.", ""), ("There are", "few", "eggs left.", ""),
+    ("There isn't", "much", "bread.", ""), ("There aren't", "many", "apples.", "")],
+   [("you can count: eggs", "FEW &middot; MANY"), ("you cannot count: milk", "LITTLE &middot; MUCH")], "few and many with countable nouns, little and much with uncountable nouns"),
+ "question-forms": _p("An interview", "What do you ask?",
+   [("", "Where", "do you live?", ""), ("", "What", "did you do yesterday?", ""),
+    ("", "Who", "is your best friend?", ""), ("", "How", "often do you go to the gym?", "")],
+   [("where &middot; what &middot; who", "+ DO &middot; DOES &middot; DID + subject + verb")], "question words with do, does or did"),
+ "how-questions": _p("Getting to know you", "Which how?",
+   [("", "How old", "are you?", ""), ("", "How long", "is the film?", ""),
+    ("", "How far", "is the station?", ""), ("", "How often", "do you swim?", "")],
+   [("age", "HOW OLD"), ("time", "HOW LONG"), ("distance", "HOW FAR"), ("frequency", "HOW OFTEN")], "how questions"),
+ "do-vs-make": _p("At home", "Do or make?",
+   [("I", "do", "my homework every day.", ""), ("Anna", "makes", "dinner.", ""),
+    ("We", "do", "the washing-up.", ""), ("Tom", "makes", "a lot of noise.", "")],
+   [("tasks &middot; jobs", "DO"), ("create &middot; produce", "MAKE")], "do for tasks, make for creating"),
+ "indefinite-pronouns": _p("At a party", "Who or what?",
+   [("", "Everyone", "is happy.", ""), ("", "Someone", "is at the door.", ""),
+    ("There is", "nothing", "to eat.", ""), ("I don't know", "anybody", "here.", "")],
+   [("all", "EVERYONE"), ("some", "SOMEONE"), ("none", "NO ONE"), ("any: &#10007; &middot; ?", "ANYONE")], "everyone, someone, no one, anyone"),
+ "may-might": _p("Maybe at the weekend", "What might happen?",
+   [("I", "might", "go to the cinema.", ""), ("It", "may", "rain tomorrow.", ""),
+    ("She", "might", "not come.", ""), ("We", "may", "visit Paris.", "")],
+   [("maybe", "MAY &middot; MIGHT + verb")], "may and might for possibility"),
+ "prepositions-of-movement": _p("In the city", "Which way?",
+   [("Walk", "across", "the bridge.", ""), ("Go", "along", "the river.", ""),
+    ("The bus goes", "through", "the tunnel.", ""), ("Turn", "into", "Oak Street.", "")],
+   [("side to side", "ACROSS"), ("in a line", "ALONG"), ("in and out", "THROUGH"), ("to the inside", "INTO")], "prepositions of movement"),
+ "present-and-past-simple-passive": _p("Famous things", "Is, was or were?",
+   [("The Eiffel Tower", "is", "visited by millions.", ""), ("Bread", "is", "made from flour.", ""),
+    ("The book", "was", "written in 1990.", ""), ("These shoes", "were", "made in Italy.", "")],
+   [("now", "AM &middot; IS &middot; ARE + participle"), ("past", "WAS &middot; WERE + participle")], "passive: be plus past participle"),
+}
+LEVELS = (("a1", PAGES), ("a2", PAGES_A2))
+
 def build(slug, d):
     gid = "open-" + slug
     out = ['<section class="gv gv-open" aria-labelledby="%s">' % gid,
@@ -181,8 +277,8 @@ def build(slug, d):
     out.append('  <ol class="gv-lines">')
     for subj, ans, tail, hint in d["lines"]:
         s = ('<span class="gv-r1">%s</span> ' % subj) if subj else ""
-        out.append('    <li>%s<details class="gv-gap"><summary><span class="gv-sr">gap</span></summary><span class="gv-r2">%s</span></details> %s%s</li>'
-                   % (s, E(ans, quote=False), tail, (" " + E(hint)) if hint else ""))
+        out.append('    <li>%s<details class="gv-gap"><summary><span class="gv-sr">gap</span></summary><span class="gv-r2">%s</span></details>%s%s%s</li>'
+                   % (s, E(ans, quote=False), "" if tail[:1] in ".?,!" else " ", tail, (" " + E(hint)) if hint else ""))
     out.append("  </ol>")
     label, pairs = d["formula"]
     out.append('  <div class="gv gv-formula" role="group" aria-label="%s">' % E(label))
@@ -193,13 +289,14 @@ def build(slug, d):
 
 def main():
     check = "--check" in sys.argv; lacking = 0
-    for slug, d in PAGES.items():
-        p = Path("manuals/en/grammar/a1/topics/%s.html" % slug); t = p.read_text(encoding="utf8")
-        if "gv-open" in t: continue
-        lacking += 1
-        if check: print("lacks opening:", slug); continue
-        i = t.index('<div class="box outcome-banner"')
-        p.write_text(t[:i] + build(slug, d) + "\n" + t[i:], encoding="utf8")
+    for lvl, pages in LEVELS:
+        for slug, d in pages.items():
+            p = Path("manuals/en/grammar/%s/topics/%s.html" % (lvl, slug)); t = p.read_text(encoding="utf8")
+            if "gv-open" in t: continue
+            lacking += 1
+            if check: print("lacks opening:", lvl, slug); continue
+            i = t.index('<div class="box outcome-banner"')
+            p.write_text(t[:i] + build(lvl + "-" + slug, d) + "\n" + t[i:], encoding="utf8")
     print(("check: %d pages lack the opening" if check else "added %d openings") % lacking)
     return 1 if check and lacking else 0
 
