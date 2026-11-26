@@ -18,11 +18,12 @@ Regardless of language or level, every grammar page/lesson must answer the follo
 ### Principle 2: Standardized Page Rhythm & Inductive Staging
 Every grammar page must follow an identical visual and logical rhythm to create familiarity for the learner. The standard rhythm sequence is:
 
-1. **Vocabulary Theme:** Natural thematic anchor (e.g., *Family*, *Food*, *Travel*).
+1. **Vocabulary Theme:** Natural thematic anchor (e.g., *Family*, *Food*, *Travel*). Chosen for the grammar point itself, and every example uses it: frequency adverbs go with daily routine, *to be* with meeting people. Shown as the `gv-theme` chip.
 2. **Grammar Title:** Large, clear, never clever.
 3. **One-Line Summary:** Exactly one sentence summarizing the core rule.
 4. **Why is this important? / Why learners struggle:** Highlighting importance & difficulty.
-5. **Situational Context Examples:** A minimum of 3 short example sentences using only previously-taught vocabulary in a consistent situational context (e.g., presenting named characters with clear roles: *"Julia is a teacher. Tanya is a student. John is a doctor."*).
+5. **Opening (`gv-open`, guess then reveal):** the situational context examples below, presented as gap lines the learner fills before seeing the pattern (see `docs/VISUAL_COMPONENTS.md`). Print version: blank lines plus a QR code to the matching COSYpractice exercise. The examples are:
+5a. **Situational Context Examples:** A minimum of 3 short example sentences using only previously-taught vocabulary in a consistent situational context (e.g., presenting named characters with clear roles: *"Julia is a teacher. Tanya is a student. John is a doctor."*).
 6. **Guided Observation (👀 Notice):** A mandatory inductive noticing question answerable solely by inspecting the situational context examples (e.g., *"What word comes after Julia, Tanya, and John? Is it the same word every time?"*).
 7. **Concept Check (🧠 Concept check):** A mandatory box containing 2–4 Concept Checking Questions (CCQs) answerable Yes/No or by pointing, without using grammatical terminology, with answers explicitly included.
 8. **Main Rule & Formula (Diagram / Table):** The formal conjugation table, block diagram, or rule summary box (`.box.rule-box`). Must appear ONLY AFTER the concept check box.

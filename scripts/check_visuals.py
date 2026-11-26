@@ -84,6 +84,20 @@ def check_page(path):
         if f.get("tabindex") != "0" or not f.get("aria-label"): err(path, "paradigm needs tabindex=\"0\" and aria-label")
         if not f.find("caption"): err(path, "paradigm table needs a <caption>")
         if [t for t in f.select("th") if not t.get("scope")]: err(path, "paradigm <th> without scope")
+    for f in soup.select(".gv-open"):
+        if not (f.get("aria-label") or f.get("aria-labelledby")): err(path, "opening needs aria-labelledby or aria-label")
+        if not f.select_one(".gv-theme") or not f.select_one(".gv-theme").get_text(strip=True): err(path, "opening needs a .gv-theme (vocabulary theme) with text")
+        if len(f.select(".gv-lines > li")) < 2: err(path, "opening needs at least 2 gap lines")
+        for d in f.select("details.gv-gap"):
+            sm = d.find("summary")
+            if not sm or not sm.select_one(".gv-sr") or not sm.select_one(".gv-sr").get_text(strip=True): err(path, "gap <summary> needs a .gv-sr label")
+            if len(d.find_all(True, recursive=False)) != 2: err(path, "gap <details> must hold one <summary> and one answer element")
+        if not f.select_one(".gv-formula"): err(path, "opening should end with the formula that reveals the pattern")
+    for f in soup.select(".gv-qr"):
+        sv = f.find("svg")
+        if not sv or sv.get("role") != "img" or not sv.get("aria-label"): err(path, "QR needs an <svg role=\"img\" aria-label>")
+        u = f.select_one(".gv-url")
+        if not u or not u.get_text(strip=True): err(path, "QR needs a visible .gv-url (printed address)")
     for f in soup.select(".gv-formula"):
         if f.get("role") != "group" or not f.get("aria-label"): err(path, "formula needs role=\"group\" and aria-label")
     return 1

@@ -17,6 +17,8 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
 | "Which form do I choose?" (auxiliary, article, case, aspect) | **Tree** |
 | Two forms often confused (être/avoir, a/an, perfective/imperfective) | **Contrast** |
 | Conjugation / declension tables | **Paradigm** (stem vs ending, irregular forms) |
+| First thing on every page: guess, then see the pattern | **Opening** (`gv-open`) |
+| A practice exercise that exists in COSYpractice | **QR block** (`gv-qr`), print only |
 
 ## Snippets
 **Formula + examples** (roles `gv-r1` to `gv-r5`)
@@ -46,6 +48,26 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
 ```
 **Contrast**: exactly two `gv-side`, one `gv-vs aria-hidden="true"` (the "≠" is drawn by CSS).
 **Paradigm** (inside manuals the page keeps its own table look: `class="table-wrap gv gv-paradigm"`; standalone `gv-paradigm` brings its own): wrap the table in `.gv-paradigm` (`tabindex="0" role="region" aria-label`), `<caption>`, `<th scope>`; `<span class="gv-stem">` + `<span class="gv-end">` (empty `gv-end` shows ∅); `gv-irr` marks irregular forms.
+
+## Opening (`gv-open`): the first thing on every grammar page
+Three beats, all in the page's own language, using only words the learner has met: **look** (people or objects, a vocabulary-theme chip), **fill** (gap lines, each revealed with a native `<details>`; no JavaScript), **see it** (a `gv-formula` that shows the pattern in the same role colours). See `shared/visuals/gallery.html` and `manuals/en/grammar/a1/topics/to-be.html`.
+```html
+<section class="gv gv-open" aria-labelledby="id">
+  <span class="gv-theme">Meeting people</span>
+  <h2 class="gv-title" id="id">... <span class="gv-screen">tap the line.</span><span class="gv-print">write it on the line.</span></h2>
+  <ul class="gv-people"><li><span class="gv-av" aria-hidden="true">T</span><span>Tanya · student</span></li></ul>
+  <ol class="gv-lines"><li><span class="gv-r1">I</span> <details class="gv-gap"><summary><span class="gv-sr">gap</span></summary><span class="gv-r2">am</span></details> Tanya.</li></ol>
+  <div class="gv gv-formula" role="group" aria-label="..."><span class="gv-pair"><span class="gv-slot gv-r1">I</span><span class="gv-op">&rarr;</span><span class="gv-slot gv-r2">AM</span></span></div>
+</section>
+```
+- **Vocabulary theme.** Every grammar point gets the theme its use naturally lives in, and every example comes from it. Frequency adverbs: daily routine. To be: meeting people. Prepositions of place: home and rooms. Past simple: yesterday and weekends. Name it in the `gv-theme` chip so teachers and learners see it.
+- **People are neutral.** `gv-av` avatars use a neutral colour, because role colours mean subject / verb / object everywhere.
+- **Level shape.** A0-A1: named people, 3-4 gap lines. A2: two small sets side by side. B1: sentence pairs with different meaning. B2+: a short text, find the pattern. The component is the same; only the content changes.
+- **Print.** `<details>` prints closed: each gap becomes a blank line to write on, and the answers are in the formula that follows. Use `gv-screen` / `gv-print` for wording that only fits one medium ("tap" / "write").
+- Lint (`check_visuals.py`): needs a labelled section, a non-empty `gv-theme`, at least two gap lines, a `gv-sr` label on every gap, one answer element per gap, and a formula.
+
+## QR block (`gv-qr`): practice from the printed manual
+Hidden on screen. In print the page's "Practice this" button is hidden and the QR block (code + visible short address) appears in its place. Generate it with `python3 scripts/make_qr_block.py --url <https URL> --text "<page language>" --alt "<page language>"` (needs `pip install segno`); it is inline SVG, so it needs no network. Link to the live practice site (`https://cosylanguages.github.io/COSYpractice/index.html?lang=..&cat=..&level=..&theme=..`), never to a relative path, so the code works on paper. Check that the `theme` value exists in COSYpractice before printing it on a page.
 
 ## Limits to know
 - Timeline labels are placed by hand. The linter warns when two labels on the same side are too close; fix with `gv-below` or by moving them.
