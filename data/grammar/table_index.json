@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "tables": {
+    "fr:verb:parler:indicatif_present": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/fr/conjugeur/data/verbs.json",
+      "path": ["parler", "tenses", "indicatif_present"],
+      "lang": "fr",
+      "pos": "verb",
+      "lemma": "parler",
+      "feature": "indicatif_present",
+      "caption": "parler · présent de l'indicatif",
+      "source_label": "Source :",
+      "render": {
+        "kind": "list",
+        "split_pronoun": true,
+        "columns": [
+          {"key": "person", "header": "personne"},
+          {"key": "form", "header": "forme"}
+        ]
+      }
+    },
+    "ru:noun:дом:cases": {
+      "source": "cosytools",
+      "source_url": "https://cosylanguages.github.io/COSYtools/tools/ru/rod-padezhi/",
+      "data_url": "https://cosylanguages.github.io/COSYtools/tools/ru/rod-padezhi/data/nouns.json",
+      "path": ["дом", "cases"],
+      "lang": "ru",
+      "pos": "noun",
+      "lemma": "дом",
+      "feature": "cases",
+      "caption": "дом · падежи",
+      "source_label": "Источник:",
+      "render": {
+        "kind": "dict",
+        "label_key": "case",
+        "label_header": "падеж",
+        "columns": [
+          {"key": "singular", "header": "единственное число"},
+          {"key": "plural", "header": "множественное число"}
+        ],
+        "rows": [
+          {"case": "Именительный", "singular": "nom_sing", "plural": "nom_plur"},
+          {"case": "Родительный", "singular": "gen_sing", "plural": "gen_plur"},
+          {"case": "Дательный", "singular": "dat_sing", "plural": "dat_plur"},
+          {"case": "Винительный", "singular": "acc_sing", "plural": "acc_plur"},
+          {"case": "Творительный", "singular": "ins_sing", "plural": "ins_plur"},
+          {"case": "Предложный", "singular": "pre_sing", "plural": "pre_plur"}
+        ]
+      }
+    }
+  }
+}

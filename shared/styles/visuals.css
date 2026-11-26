@@ -125,6 +125,25 @@ figure.gv { margin:1.2rem 0; }
 .gv-notes dt::after { content:":"; }
 :lang(fr) .gv-notes dt::after { content:"\00a0:"; }
 .gv-notes dd { display:inline; margin:0 0 0 .35em; }
+
+/* ---- CASE MAP: who does what to whom. Roles carry the tone colour, labels carry the meaning. ---- */
+.gv-case-map { margin:1.2rem 0; }
+.gv-case-row { display:flex; flex-wrap:wrap; align-items:stretch; gap:.4rem; }
+.gv-case-role { flex:1 1 7rem; min-width:0; display:flex; flex-direction:column; gap:.15rem;
+  padding:.5rem .75rem; border:1.5px solid var(--c-line); background:var(--c-bg); border-radius:var(--gv-radius); }
+.gv-case-role b { color:var(--c-ink); font-size:1.05rem; }
+.gv-case-role small { color:var(--gv-faint); font-size:.8rem; }
+.gv-case-arrow { align-self:center; flex:none; color:var(--gv-faint); font-weight:800; }
+
+/* ---- CANONICAL TABLE SOURCE: visible provenance for an embedded COSYtools table. ---- */
+.gv-source { margin:.35rem .9rem .7rem; font-size:.85rem; color:var(--gv-faint); }
+.gv-source a { color:var(--gv-accent); text-decoration:underline; }
+
+@media print {
+  .gv-case-role { break-inside:avoid; padding:.35rem .5rem; }
+  .gv-case-arrow { font-size:.9rem; }
+}
+
 .gv-sr { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 .gv-timeline:focus-visible,.gv-paradigm:focus-visible { outline:3px solid var(--gv-accent); outline-offset:2px; }
 
