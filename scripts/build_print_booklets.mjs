@@ -95,6 +95,7 @@ ${body}
 <link rel="stylesheet" href="../../../shared/styles/tokens.css">
 <link rel="stylesheet" href="../../../shared/styles/base.css">
 <link rel="stylesheet" href="../../../shared/styles/components.css">
+<link rel="stylesheet" href="../../../shared/styles/visuals.css">
 <link rel="stylesheet" href="../../../shared/styles/layout.css">
 <link rel="stylesheet" href="../../../shared/styles/print.css">
 <link rel="stylesheet" href="print.css">
