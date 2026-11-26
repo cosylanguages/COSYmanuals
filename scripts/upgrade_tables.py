@@ -95,6 +95,21 @@ def paradigm(body, report, where, lang):
     report.append(f"   split columns {sorted(c + 1 for c in splits)}: {where}")
     return "".join(out)
 
+def table_label(s, body, pos, rows):
+    caption = re.search(r'<caption\b[^>]*>(.*?)</caption>', body, re.S)
+    if caption and text(caption.group(1)):
+        return text(caption.group(1))
+    h1 = re.search(r'<h1\b[^>]*>(.*?)</h1>', s, re.S)
+    topic = text(h1.group(1)) if h1 else ""
+    headers = " / ".join(x for x in (text(c) for _, _, c in CELL.findall(rows[0])) if x) if rows else ""
+    if topic and headers:
+        return f"{topic} — {headers}"
+    if topic:
+        return topic
+    hs = HEAD.findall(s[:pos])
+    return text(hs[-1]) if hs else headers
+
+
 def process(s, rep, lang):
     stats = {"tables": 0, "wrapped": 0, "paradigm": 0}
     def sub(m):
@@ -102,9 +117,8 @@ def process(s, rep, lang):
         wrap, wend, body, tattr = m.group("wrap"), m.group("wend"), m.group("body"), m.group("tattr")
         wattr = m.group("wattr") or ""
         if wrap and wend and ('role="region"' in wattr or "gv-paradigm" in wattr): return m.group(0)   # already done
-        pos = m.start(); hs = HEAD.findall(s[:pos]); label = text(hs[-1]) if hs else ""
         rows = ROW.findall(body)
-        if not label and rows: label = " / ".join(text(c) for _, _, c in CELL.findall(rows[0]))
+        label = table_label(s, body, m.start(), rows)
         new_body = scope_ths(body)
         if wrap and wend:
             stats["wrapped"] += 1
