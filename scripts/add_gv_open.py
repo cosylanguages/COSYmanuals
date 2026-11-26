@@ -5,6 +5,7 @@ Idempotent. `--check` lists pages in PAGES that lack the opening.
   python3 scripts/add_gv_open.py [--check]"""
 import html, re, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
 
 E = html.escape
 # line = (subject, answer, tail, hint)  ->  <subject> [gap=answer] <tail> <hint>
@@ -262,7 +263,8 @@ PAGES_A2 = {
     ("The book", "was", "written in 1990.", ""), ("These shoes", "were", "made in Italy.", "")],
    [("now", "AM &middot; IS &middot; ARE + participle"), ("past", "WAS &middot; WERE + participle")], "passive: be plus past participle"),
 }
-LEVELS = (("a1", PAGES), ("a2", PAGES_A2))
+from gv_open_data_b import B1, B2, C1, C2
+LEVELS = (("a1", PAGES), ("a2", PAGES_A2), ("b1", B1), ("b2", B2), ("c1", C1), ("c2", C2))
 
 def build(slug, d):
     gid = "open-" + slug
