@@ -139,9 +139,21 @@ figure.gv { margin:1.2rem 0; }
 .gv-source { margin:.35rem .9rem .7rem; font-size:.85rem; color:var(--gv-faint); }
 .gv-source a { color:var(--gv-accent); text-decoration:underline; }
 
+/* ---- LOOKUP CARD: hand the learner to COSYtools for forms this page does not show. ---- */
+.gv-lookup { display:flex; flex-wrap:wrap; align-items:center; gap:.45rem .9rem; margin:1.2rem 0;
+  padding:.75rem 1rem; background:var(--gv-surface); border:1px solid var(--gv-line);
+  border-inline-start:5px solid var(--gv-accent); border-radius:var(--gv-radius); }
+.gv-lookup-kicker { font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--gv-accent); }
+.gv-lookup-text { margin:0; flex:1 1 16rem; font-size:.95rem; }
+.gv-lookup-action { display:flex; flex-direction:column; gap:.15rem; }
+.gv-lookup-link { font-weight:700; color:var(--gv-accent); text-decoration:underline; white-space:nowrap; }
+.gv-lookup-url { font-size:.72rem; color:var(--gv-faint); word-break:break-all; }
+
 @media print {
   .gv-case-role { break-inside:avoid; padding:.35rem .5rem; }
   .gv-case-arrow { font-size:.9rem; }
+  .gv-lookup { break-inside:avoid; }
+  .gv-lookup-link { text-decoration:none; }
 }
 
 .gv-sr { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
