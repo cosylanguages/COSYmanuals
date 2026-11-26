@@ -18,7 +18,7 @@ Source: `shared/styles/visuals.css` · Gallery/test fixture: `shared/visuals/gal
 | Two forms often confused (être/avoir, a/an, perfective/imperfective) | **Contrast** |
 | Case roles: who does what to whom | **Case map** (`gv-case-map`); the full case table is embedded by ID or looked up in COSYtools |
 | Conjugation / declension tables | **Embedded paradigm** by COSYtools table ID (`gv-paradigm` + `data-table-id`); hand-author only small teaching patterns |
-| Any other word's forms | **COSYtools lookup** (link/QR), not a duplicate manual table |
+| Any other word's forms | **Lookup card** (`gv-lookup`): link to the language's COSYtools tool |
 | First thing on every page: guess, then see the pattern | **Opening** (`gv-open`) |
 | A practice exercise that exists in COSYpractice | **QR block** (`gv-qr`), print only |
 
@@ -126,6 +126,27 @@ The script fetches the canonical JSON, renders a static `gv-paradigm` table with
 - Lint (`check_visuals.py`): `gv-paradigm[data-table-id]` needs a known ID, `data-source="cosytools"`, a COSYtools `data-source-url`, a 16-character `data-source-hash`, a rendered `<table>`, and a `.gv-source` link.
 - Lint: a `gv-case-map` needs an accessible name, at least two `.gv-case-role` items, a `<b>` word and `<small>` case label in each role, and `aria-hidden="true"` on arrows.
 
+## Lookup card (`gv-lookup`)
+Use this when the page explains a pattern but does not embed a specific table: the learner can look up any word in COSYtools. The card is static, prints, and shows the URL so a paper reader can type it.
+```html
+<aside class="gv gv-lookup" data-lookup="conjugation" data-lang="fr" aria-label="...">
+  <span class="gv-lookup-kicker">COSYtools</span>
+  <p class="gv-lookup-text">...</p>
+  <span class="gv-lookup-action"><a class="gv-lookup-link" href="...">...</a><span class="gv-lookup-url">...</span></span>
+</aside>
+```
+Types: `cases`, `conjugation`, `principal-parts`, `government`, `gender`. The text and link label are in the page language; the URL is the only non-localized string.
+
+Add pages to `data/grammar/lookup_pages.json` and run:
+```bash
+python3 scripts/add_lookup_cards.py            # dry run
+python3 scripts/add_lookup_cards.py --apply    # write
+python3 scripts/add_lookup_cards.py --lang fr  # one language
+```
+The script inserts before the first `.mistakes`, `.checklist`, `.pager`, or `</main>` and is idempotent. It refuses a language/type pair with no COSYtools target or no localized labels. Adding a new language means adding its labels and tool paths to `scripts/add_lookup_cards.py`.
+
+- Lint (`check_visuals.py`): needs `data-lookup` from the known set, `data-lang`, `aria-label`, a non-empty `.gv-lookup-text`, a COSYtools `a.gv-lookup-link` with text, and a visible `.gv-lookup-url`.
+
 ## QR block (`gv-qr`): practice from the printed manual
 Hidden on screen. In print the page's "Practice this" button is hidden and the QR block (code + visible short address) appears in its place. Generate it with `python3 scripts/make_qr_block.py --url <https URL> --text "<page language>" --alt "<page language>"` (needs `pip install segno`); it is inline SVG, so it needs no network. Link to the live practice site (`https://cosylanguages.github.io/COSYpractice/index.html?lang=..&cat=..&level=..&theme=..`), never to a relative path, so the code works on paper. Check that the `theme` value exists in COSYpractice before printing it on a page.
 
@@ -155,7 +176,7 @@ python3 scripts/check_visuals.py manuals/*/grammar
 - Languages are all left-to-right today. The timeline assumes LTR.
 
 ## Rollout order (suggested)
-1. Wire in (below) and run the linter. 2. English A1 `to-be`, `have-got`, `simple-vs-continuous` (existing hand-made timelines become `gv-timeline`). 3. French passé composé (tree + contrast). 4. Embed canonical COSYtools tables by ID on conjugated verb pages; add case maps to case pages. 5. Other languages by level.
+1. Wire in (below) and run the linter. 2. English A1 `to-be`, `have-got`, `simple-vs-continuous` (existing hand-made timelines become `gv-timeline`). 3. French passé composé (tree + contrast). 4. Embed canonical COSYtools tables by ID on conjugated verb pages; add case maps to case pages; add lookup cards where a specific table is not embedded. 5. Other languages by level.
 
 ## Wiring
 Add as the **first line** of `shared/styles/components.css` (3,880 of 4,039 pages already load it, so no page edits are needed):
