@@ -142,7 +142,7 @@ python3 scripts/embed_grammar_tables.py --apply       # render the tables
 - Lint: a `gv-case-map` needs an accessible name, at least two `.gv-case-role` items, a `<b>` word and `<small>` case label in each role, and `aria-hidden="true"` on arrows.
 
 ## Lookup card (`gv-lookup`)
-Use this when the page explains a pattern but does not embed a specific table: the learner can look up any word in COSYtools. The card is static, prints, and shows the URL so a paper reader can type it.
+Use this when the page explains a pattern but does not embed a canonical table: the learner can look up any word in COSYtools. A hand-made paradigm can stay; the card adds lookups for other words. The card is static, prints, and shows the URL so a paper reader can type it.
 ```html
 <aside class="gv gv-lookup" data-lookup="conjugation" data-lang="fr" aria-label="...">
   <span class="gv-lookup-kicker">COSYtools</span>
