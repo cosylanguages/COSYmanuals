@@ -79,7 +79,7 @@
      var scoreEl = panel.querySelector('.quiz-score');
      var score = 0, answered = 0;
      function refreshScore(){
-       if(scoreEl) scoreEl.textContent = 'Score: ' + score + ' / ' + data.length;
+       if(scoreEl){ if(!scoreEl.dataset.prefix) scoreEl.dataset.prefix = scoreEl.textContent.replace(/0\s*\/.*$/, ''); scoreEl.textContent = scoreEl.dataset.prefix + score + ' / ' + data.length; }
      }
      panel.querySelectorAll('.qitem').forEach(function(qEl, qi){
        var opts = qEl.querySelectorAll('.qopt');

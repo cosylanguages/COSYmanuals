@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0;
     const refreshScore = () => {
       if (scoreEl && quizData.length > 0) {
-        scoreEl.textContent = 'Score: ' + score + ' / ' + quizData.length;
+        if(!scoreEl.dataset.prefix) scoreEl.dataset.prefix = scoreEl.textContent.replace(/0\s*\/.*$/, '');
+        scoreEl.textContent = scoreEl.dataset.prefix + score + ' / ' + quizData.length;
       }
     };
 

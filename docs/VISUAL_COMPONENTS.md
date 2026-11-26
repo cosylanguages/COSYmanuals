@@ -69,6 +69,25 @@ Three beats, all in the page's own language, using only words the learner has me
 ## QR block (`gv-qr`): practice from the printed manual
 Hidden on screen. In print the page's "Practice this" button is hidden and the QR block (code + visible short address) appears in its place. Generate it with `python3 scripts/make_qr_block.py --url <https URL> --text "<page language>" --alt "<page language>"` (needs `pip install segno`); it is inline SVG, so it needs no network. Link to the live practice site (`https://cosylanguages.github.io/COSYpractice/index.html?lang=..&cat=..&level=..&theme=..`), never to a relative path, so the code works on paper. Check that the `theme` value exists in COSYpractice before printing it on a page.
 
+## Tense timelines (automated authoring)
+Tense/aspect pages get a `gv-timeline` plus a CCQ panel directly below it. Do not hand-edit the timeline pages; run the driver:
+```bash
+python3 scripts/add_tense_timelines.py --lang en           # dry run
+python3 scripts/add_tense_timelines.py --lang en --apply   # write
+```
+Profiles live in `scripts/tense_timelines_en.py`, `tense_timelines_fr_ru.py`, `tense_timelines_other.py` and `tense_timelines_minor.py`. A profile declares the axis items, optional authored `ccq` questions, and a slug map. The driver:
+- removes an earlier generated timeline/CCQ, so reruns are idempotent;
+- inserts the timeline before the first in-content CCQ, `.table-wrap`, `<table>` or rule box, preferring anchors inside `<main>`;
+- keeps an existing hand-authored CCQ and moves it directly below the timeline; otherwise it copies the page's practice-quiz questions or renders the profile's authored CCQ;
+- escapes `data-quiz` as an HTML attribute, so apostrophes in questions are safe.
+
+Every inserted CCQ is a `.ccq-panel`/`.quiz-panel` with `data-quiz` and `data-tense-ccq`; the page's existing `app.js` makes it interactive. Pages on the legacy template must also load `tokens.css`, `base.css`, `components.css` and `layout.css`; the driver does not add them automatically.
+
+After a run:
+```bash
+python3 scripts/check_visuals.py manuals/*/grammar
+```
+
 ## Limits to know
 - Timeline labels are placed by hand. The linter warns when two labels on the same side are too close; fix with `gv-below` or by moving them.
 - On phones the timeline scrolls sideways inside its own box (the page never overflows).
