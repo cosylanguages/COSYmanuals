@@ -39,3 +39,10 @@ test('English A1 pages listed in add_gv_open.py keep their opening (run: python3
   const r = spawnSync('python3', ['scripts/add_gv_open.py', '--check'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
 });
+
+for (const lang of ['fr', 'ru']) {
+  test(`${lang} grammar pages with a practice banner carry a print QR (run: python3 scripts/add_page_qr.py manuals/${lang}/grammar)`, () => {
+    const r = spawnSync('python3', ['scripts/add_page_qr.py', '--check', `manuals/${lang}/grammar`], { cwd: ROOT, encoding: 'utf8' });
+    assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+  });
+}

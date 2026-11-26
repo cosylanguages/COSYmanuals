@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Add a print-only QR (.gv-qr) after the practice banner of English grammar pages, pointing to the
-same COSYpractice link as the banner. Idempotent. English only: the QR caption is page-language text.
+"""Add a print-only QR (.gv-qr) after the practice banner of grammar pages, pointing to the same
+practice link as the banner. Idempotent. The caption is page-language text, so only languages in CAPTIONS are done.
    python3 scripts/add_page_qr.py manuals/en/grammar   |   --check"""
 import re, sys, pathlib, html
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 
+CAPTIONS = {  # (caption, alt prefix)
+    "en": ("Practice this topic", "QR code: practice "),
+    "fr": ("S'entraîner sur ce sujet", "Code QR : s'entraîner sur "),
+    "ru": ("Потренироваться по этой теме", "QR-код: тренажёр по теме "),
+}
 BASE = "https://cosylanguages.github.io/COSYpractice/"
 BANNER = re.compile(r'<div class="box practice-cta-banner".*?<a href="(\.\./\.\./\.\./\.\./\.\./practice/|https://cosylanguages\.github\.io/(?:COSYlanguages/practice|COSYpractice)/)([^"]+)"[^>]*>.*?</a>\s*</div>\n', re.S)
 
@@ -20,7 +25,9 @@ def process(p, check):
     url = (BASE if pre.startswith("..") else pre) + html.unescape(m.group(2))
     title = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
     name = html.unescape(re.sub(r"<[^>]+>", "", title.group(1))).strip() if title else "this topic"
-    blk = qr_block(url, "Practice this topic", "QR code: practice " + name) + "\n"
+    lang = p.as_posix().split("manuals/")[-1].split("/")[0]
+    cap, alt = CAPTIONS[lang]
+    blk = qr_block(url, cap, alt + name) + "\n"
     p.write_text(s[:m.end()] + blk + s[m.end():], encoding="utf8")
     return True
 
