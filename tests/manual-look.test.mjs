@@ -62,3 +62,9 @@ test('English openings come from a lesson that teaches their grammar id (needs .
   const r = spawnSync('python3', ['scripts/check_open_vocab.py'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
 });
+
+test('French and Russian A1 openings stay in place (run: python3 scripts/add_gv_open_fr_ru.py; needs ../cosyplatform, skipped without it)', (t) => {
+  if (!fs.existsSync(path.join(ROOT, '..', 'cosyplatform', 'curriculums'))) return t.skip('cosyplatform not next to this repo');
+  const r = spawnSync('python3', ['scripts/add_gv_open_fr_ru.py', '--check'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(r.status, 0, r.stdout.split('\n').slice(0, 10).join('\n'));
+});
