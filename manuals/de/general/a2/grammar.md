@@ -8,7 +8,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-001`
-- **Goal (Can-Do):** Kann meinen Tagesablauf im Perfekt beschreiben.
+- **Goal (Can-Do):** meinen Tagesablauf im Perfekt beschreiben
 - **Notes:**
   - hw: "Schreibe deinen Tagesablauf in zehn Sätzen."
 
@@ -16,7 +16,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-002`
-- **Goal (Can-Do):** Kann über Hausarbeit sprechen und sagen, wer was macht.
+- **Goal (Can-Do):** über Hausarbeit sprechen und sagen, wer was macht
 - **Notes:**
   - hw: "Erstelle einen Plan für die Hausarbeit in deiner Familie."
 
@@ -24,7 +24,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-003`
-- **Goal (Can-Do):** Kann Termine vereinbaren und verschieben.
+- **Goal (Can-Do):** Termine vereinbaren und verschieben
 - **Notes:**
   - hw: "Notiere fünf Termine für deine Woche."
 
@@ -32,7 +32,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-004`
-- **Goal (Can-Do):** Kann über Stress und Entspannung sprechen.
+- **Goal (Can-Do):** über Stress und Entspannung sprechen
 - **Notes:**
   - hw: "Schreibe fünf Sätze darüber, wie du dich entspannst."
 
@@ -40,7 +40,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-005`
-- **Goal (Can-Do):** Kann über meine Woche berichten.
+- **Goal (Can-Do):** über meine Woche berichten
 - **Notes:**
   - hw: "Schreibe einen kurzen Wochenrückblick."
 
@@ -50,7 +50,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-006`
-- **Goal (Can-Do):** Kann nach einer Wohnung fragen und Gründe nennen.
+- **Goal (Can-Do):** nach einer Wohnung fragen und Gründe nennen
 - **Notes:**
   - hw: "Schreibe fünf Fragen für eine Wohnungsbesichtigung."
 
@@ -58,7 +58,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-007`
-- **Goal (Can-Do):** Kann über einen Umzug berichten.
+- **Goal (Can-Do):** über einen Umzug berichten
 - **Notes:**
   - hw: "Beschreibe deinen letzten Umzug."
 
@@ -66,7 +66,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-008`
-- **Goal (Can-Do):** Kann beschreiben, wo Möbel stehen.
+- **Goal (Can-Do):** beschreiben, wo Möbel stehen
 - **Notes:**
   - hw: "Beschreibe dein Wohnzimmer."
 
@@ -74,7 +74,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-009`
-- **Goal (Can-Do):** Kann Wohnorte vergleichen.
+- **Goal (Can-Do):** Wohnorte vergleichen
 - **Notes:**
   - hw: "Vergleiche zwei Viertel in deiner Stadt."
 
@@ -82,7 +82,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-010`
-- **Goal (Can-Do):** Kann Probleme in der Wohnung melden.
+- **Goal (Can-Do):** Probleme in der Wohnung melden
 - **Notes:**
   - hw: "Schreibe eine Nachricht an deinen Vermieter."
 
@@ -92,7 +92,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-011`
-- **Goal (Can-Do):** Kann über eine Bewerbung sprechen.
+- **Goal (Can-Do):** über eine Bewerbung sprechen
 - **Notes:**
   - hw: "Schreibe drei Sätze für dein Anschreiben."
 
@@ -100,7 +100,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-012`
-- **Goal (Can-Do):** Kann mich im Vorstellungsgespräch vorstellen.
+- **Goal (Can-Do):** mich im Vorstellungsgespräch vorstellen
 - **Notes:**
   - hw: "Beantworte drei typische Fragen im Vorstellungsgespräch."
 
@@ -108,7 +108,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-013`
-- **Goal (Can-Do):** Kann über Teamarbeit sprechen.
+- **Goal (Can-Do):** über Teamarbeit sprechen
 - **Notes:**
   - hw: "Beschreibe eine gute Teamerfahrung."
 
@@ -116,7 +116,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-014`
-- **Goal (Can-Do):** Kann über Arbeitszeiten sprechen.
+- **Goal (Can-Do):** über Arbeitszeiten sprechen
 - **Notes:**
   - hw: "Beschreibe deinen idealen Arbeitstag."
 
@@ -124,7 +124,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-015`
-- **Goal (Can-Do):** Kann berufliche Ziele vergleichen.
+- **Goal (Can-Do):** berufliche Ziele vergleichen
 - **Notes:**
   - hw: "Schreibe über deine Weiterbildungspläne."
 
@@ -134,7 +134,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-016`
-- **Goal (Can-Do):** Kann über Online-Einkäufe sprechen.
+- **Goal (Can-Do):** über Online-Einkäufe sprechen
 - **Notes:**
   - hw: "Beschreibe deine letzte Online-Bestellung."
 
@@ -142,7 +142,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-017`
-- **Goal (Can-Do):** Kann einen Artikel reklamieren.
+- **Goal (Can-Do):** einen Artikel reklamieren
 - **Notes:**
   - hw: "Schreibe eine Reklamation per E-Mail."
 
@@ -150,7 +150,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-018`
-- **Goal (Can-Do):** Kann Kleidung beschreiben.
+- **Goal (Can-Do):** Kleidung beschreiben
 - **Notes:**
   - hw: "Beschreibe deinen Lieblingslook."
 
@@ -158,7 +158,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-019`
-- **Goal (Can-Do):** Kann Mengen und Verpackungen angeben.
+- **Goal (Can-Do):** Mengen und Verpackungen angeben
 - **Notes:**
   - hw: "Schreibe eine Einkaufsliste mit Mengen."
 
@@ -166,7 +166,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-020`
-- **Goal (Can-Do):** Kann über Konsum und Sparen sprechen.
+- **Goal (Can-Do):** über Konsum und Sparen sprechen
 - **Notes:**
   - hw: "Beschreibe deine Ausgaben."
 
@@ -176,7 +176,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-021`
-- **Goal (Can-Do):** Kann über einen Arztbesuch berichten.
+- **Goal (Can-Do):** über einen Arztbesuch berichten
 - **Notes:**
   - hw: "Beschreibe deinen letzten Arztbesuch."
 
@@ -184,7 +184,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-022`
-- **Goal (Can-Do):** Kann über Sport und Fitness sprechen.
+- **Goal (Can-Do):** über Sport und Fitness sprechen
 - **Notes:**
   - hw: "Schreibe deinen Trainingsplan."
 
@@ -192,7 +192,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-023`
-- **Goal (Can-Do):** Kann Ernährungstipps geben.
+- **Goal (Can-Do):** Ernährungstipps geben
 - **Notes:**
   - hw: "Schreibe fünf Tipps für gesunde Ernährung."
 
@@ -200,7 +200,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-024`
-- **Goal (Can-Do):** Kann über Schlaf sprechen.
+- **Goal (Can-Do):** über Schlaf sprechen
 - **Notes:**
   - hw: "Beschreibe deine Abendroutine."
 
@@ -208,7 +208,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-025`
-- **Goal (Can-Do):** Kann über Gefühle und Belastung sprechen.
+- **Goal (Can-Do):** über Gefühle und Belastung sprechen
 - **Notes:**
   - hw: "Schreibe über eine Situation, die dich belastet hat."
 
@@ -218,7 +218,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-026`
-- **Goal (Can-Do):** Kann eine Reise planen.
+- **Goal (Can-Do):** eine Reise planen
 - **Notes:**
   - hw: "Plane eine Reise mit fünf Schritten."
 
@@ -226,7 +226,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-027`
-- **Goal (Can-Do):** Kann mich am Bahnhof und am Flughafen orientieren.
+- **Goal (Can-Do):** mich am Bahnhof und am Flughafen orientieren
 - **Notes:**
   - hw: "Schreibe einen Dialog am Fahrkartenschalter."
 
@@ -234,7 +234,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-028`
-- **Goal (Can-Do):** Kann im Hotel um Hilfe bitten.
+- **Goal (Can-Do):** im Hotel um Hilfe bitten
 - **Notes:**
   - hw: "Schreibe eine höfliche Beschwerde."
 
@@ -242,7 +242,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-029`
-- **Goal (Can-Do):** Kann über Urlaubserlebnisse berichten.
+- **Goal (Can-Do):** über Urlaubserlebnisse berichten
 - **Notes:**
   - hw: "Erzähle von deinem schönsten Urlaub."
 
@@ -250,7 +250,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-030`
-- **Goal (Can-Do):** Kann Reisemöglichkeiten vergleichen.
+- **Goal (Can-Do):** Reisemöglichkeiten vergleichen
 - **Notes:**
   - hw: "Vergleiche Zug und Flugzeug."
 
@@ -260,7 +260,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-031`
-- **Goal (Can-Do):** Kann über Smartphone-Nutzung sprechen.
+- **Goal (Can-Do):** über Smartphone-Nutzung sprechen
 - **Notes:**
   - hw: "Beschreibe deine wichtigsten Apps."
 
@@ -268,7 +268,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-032`
-- **Goal (Can-Do):** Kann meine Meinung zu sozialen Medien sagen.
+- **Goal (Can-Do):** meine Meinung zu sozialen Medien sagen
 - **Notes:**
   - hw: "Schreibe deine Meinung zu sozialen Medien."
 
@@ -276,7 +276,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-033`
-- **Goal (Can-Do):** Kann Sendungen beschreiben und empfehlen.
+- **Goal (Can-Do):** Sendungen beschreiben und empfehlen
 - **Notes:**
   - hw: "Empfiehl eine Serie."
 
@@ -284,7 +284,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-034`
-- **Goal (Can-Do):** Kann über Computerprobleme sprechen.
+- **Goal (Can-Do):** über Computerprobleme sprechen
 - **Notes:**
   - hw: "Schreibe fünf Sätze über Computerprobleme."
 
@@ -292,7 +292,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-035`
-- **Goal (Can-Do):** Kann Vor- und Nachteile von Technik nennen.
+- **Goal (Can-Do):** Vor- und Nachteile von Technik nennen
 - **Notes:**
   - hw: "Beschreibe ein Gerät, das du oft benutzt."
 
@@ -302,7 +302,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-036`
-- **Goal (Can-Do):** Kann über Wetter und Klima sprechen.
+- **Goal (Can-Do):** über Wetter und Klima sprechen
 - **Notes:**
   - hw: "Vergleiche das Wetter in zwei Jahreszeiten."
 
@@ -310,7 +310,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-037`
-- **Goal (Can-Do):** Kann Mülltrennung erklären.
+- **Goal (Can-Do):** Mülltrennung erklären
 - **Notes:**
   - hw: "Schreibe eine Anleitung zur Mülltrennung."
 
@@ -318,7 +318,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-038`
-- **Goal (Can-Do):** Kann Energiespartipps geben.
+- **Goal (Can-Do):** Energiespartipps geben
 - **Notes:**
   - hw: "Schreibe fünf Energiespartipps."
 
@@ -326,7 +326,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-039`
-- **Goal (Can-Do):** Kann über nachhaltigen Alltag sprechen.
+- **Goal (Can-Do):** über nachhaltigen Alltag sprechen
 - **Notes:**
   - hw: "Beschreibe drei nachhaltige Gewohnheiten."
 
@@ -334,7 +334,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-040`
-- **Goal (Can-Do):** Kann über Umweltprojekte berichten.
+- **Goal (Can-Do):** über Umweltprojekte berichten
 - **Notes:**
   - hw: "Stelle ein Umweltprojekt vor."
 
@@ -344,7 +344,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-041`
-- **Goal (Can-Do):** Kann über Freundschaften sprechen.
+- **Goal (Can-Do):** über Freundschaften sprechen
 - **Notes:**
   - hw: "Beschreibe eine gute Freundschaft."
 
@@ -352,7 +352,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-042`
-- **Goal (Can-Do):** Kann Generationen vergleichen.
+- **Goal (Can-Do):** Generationen vergleichen
 - **Notes:**
   - hw: "Vergleiche deine Generation mit der deiner Eltern."
 
@@ -360,7 +360,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-043`
-- **Goal (Can-Do):** Kann über Feste berichten.
+- **Goal (Can-Do):** über Feste berichten
 - **Notes:**
   - hw: "Beschreibe ein Fest in deiner Region."
 
@@ -368,7 +368,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-044`
-- **Goal (Can-Do):** Kann über Regeln sprechen.
+- **Goal (Can-Do):** über Regeln sprechen
 - **Notes:**
   - hw: "Schreibe fünf Regeln für ein gutes Zusammenleben."
 
@@ -376,7 +376,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-045`
-- **Goal (Can-Do):** Kann Konflikte beschreiben und lösen.
+- **Goal (Can-Do):** Konflikte beschreiben und lösen
 - **Notes:**
   - hw: "Beschreibe einen Konflikt und eine Lösung."
 
@@ -386,7 +386,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-046`
-- **Goal (Can-Do):** Kann über früher sprechen.
+- **Goal (Can-Do):** über früher sprechen
 - **Notes:**
   - hw: "Schreibe fünf Sätze mit war und hatte."
 
@@ -394,7 +394,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-047`
-- **Goal (Can-Do):** Kann über Möglichkeiten in der Vergangenheit sprechen.
+- **Goal (Can-Do):** über Möglichkeiten in der Vergangenheit sprechen
 - **Notes:**
   - hw: "Schreibe fünf Sätze mit konnte und musste."
 
@@ -402,7 +402,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-048`
-- **Goal (Can-Do):** Kann Zeiten richtig verwenden.
+- **Goal (Can-Do):** Zeiten richtig verwenden
 - **Notes:**
   - hw: "Erzähle eine kurze Geschichte im Perfekt."
 
@@ -410,7 +410,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-049`
-- **Goal (Can-Do):** Kann eine Biografie erzählen.
+- **Goal (Can-Do):** eine Biografie erzählen
 - **Notes:**
   - hw: "Schreibe eine kurze Biografie."
 
@@ -418,7 +418,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-050`
-- **Goal (Can-Do):** Kann von einem Erlebnis berichten.
+- **Goal (Can-Do):** von einem Erlebnis berichten
 - **Notes:**
   - hw: "Schreibe einen kurzen Bericht."
 
@@ -428,7 +428,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-051`
-- **Goal (Can-Do):** Kann über Zukunftspläne sprechen.
+- **Goal (Can-Do):** über Zukunftspläne sprechen
 - **Notes:**
   - hw: "Schreibe deine Pläne für das nächste Jahr."
 
@@ -436,7 +436,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-052`
-- **Goal (Can-Do):** Kann Wünsche ausdrücken.
+- **Goal (Can-Do):** Wünsche ausdrücken
 - **Notes:**
   - hw: "Schreibe fünf Wünsche mit würde."
 
@@ -444,7 +444,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-053`
-- **Goal (Can-Do):** Kann Einladungen aussprechen und beantworten.
+- **Goal (Can-Do):** Einladungen aussprechen und beantworten
 - **Notes:**
   - hw: "Schreibe eine Einladung."
 
@@ -452,7 +452,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-054`
-- **Goal (Can-Do):** Kann berufliche Ziele beschreiben.
+- **Goal (Can-Do):** berufliche Ziele beschreiben
 - **Notes:**
   - hw: "Beschreibe dein berufliches Ziel."
 
@@ -460,7 +460,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-055`
-- **Goal (Can-Do):** Kann über Lebensplanung sprechen.
+- **Goal (Can-Do):** über Lebensplanung sprechen
 - **Notes:**
   - hw: "Schreibe über deine Lebensplanung."
 
@@ -470,7 +470,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-056`
-- **Goal (Can-Do):** Kann meine Meinung äußern.
+- **Goal (Can-Do):** meine Meinung äußern
 - **Notes:**
   - hw: "Schreibe deine Meinung zu einem Thema."
 
@@ -478,7 +478,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-057`
-- **Goal (Can-Do):** Kann zustimmen und widersprechen.
+- **Goal (Can-Do):** zustimmen und widersprechen
 - **Notes:**
   - hw: "Schreibe eine kurze Stellungnahme."
 
@@ -486,7 +486,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-058`
-- **Goal (Can-Do):** Kann Argumente begründen.
+- **Goal (Can-Do):** Argumente begründen
 - **Notes:**
   - hw: "Schreibe drei Argumente zu einem Thema."
 
@@ -494,7 +494,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-059`
-- **Goal (Can-Do):** Kann an einer Diskussion teilnehmen.
+- **Goal (Can-Do):** an einer Diskussion teilnehmen
 - **Notes:**
   - hw: "Übe eine Diskussion mit einem Partner."
 
@@ -502,7 +502,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-060`
-- **Goal (Can-Do):** Kann eine Debatte vorbereiten.
+- **Goal (Can-Do):** eine Debatte vorbereiten
 - **Notes:**
   - hw: "Bereite eine kurze Debatte vor."
 
@@ -512,7 +512,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-061`
-- **Goal (Can-Do):** Kann die A2-Grammatik wiederholen.
+- **Goal (Can-Do):** die A2-Grammatik wiederholen
 - **Notes:**
   - hw: "Löse zehn Grammatikaufgaben."
 
@@ -520,7 +520,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-062`
-- **Goal (Can-Do):** Kann den A2-Wortschatz wiederholen.
+- **Goal (Can-Do):** den A2-Wortschatz wiederholen
 - **Notes:**
   - hw: "Schreibe zehn Wörter mit Artikel."
 
@@ -528,7 +528,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-063`
-- **Goal (Can-Do):** Kann Lese- und Hörtexte verstehen.
+- **Goal (Can-Do):** Lese- und Hörtexte verstehen
 - **Notes:**
   - hw: "Löse eine Leseaufgabe."
 
@@ -536,7 +536,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-064`
-- **Goal (Can-Do):** Kann kurze Texte schreiben.
+- **Goal (Can-Do):** kurze Texte schreiben
 - **Notes:**
   - hw: "Schreibe eine E-Mail."
 
@@ -544,6 +544,6 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A2-065`
-- **Goal (Can-Do):** Kann mich in der Prüfung unterhalten.
+- **Goal (Can-Do):** mich in der Prüfung unterhalten
 - **Notes:**
   - hw: "Übe ein Prüfungsgespräch."

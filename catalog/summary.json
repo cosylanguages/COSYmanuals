@@ -74,13 +74,13 @@
   },
   "es": {
    "english_leak_pages": 0,
-   "hub": 11,
+   "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 102,
+   "pages": 106,
    "topic_real": 66,
    "topic_stub": 0,
-   "track_manual": 6,
+   "track_manual": 9,
    "unit": 16,
    "visual_pages": 11
   },
@@ -134,13 +134,13 @@
   },
   "pt": {
    "english_leak_pages": 0,
-   "hub": 11,
+   "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 100,
+   "pages": 104,
    "topic_real": 64,
    "topic_stub": 0,
-   "track_manual": 6,
+   "track_manual": 9,
    "unit": 16,
    "visual_pages": 10
   },
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4073
+ "total_pages": 4081
 }
