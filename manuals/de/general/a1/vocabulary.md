@@ -15,7 +15,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-001`
-- **Goal (Can-Do):** Can greet people and say goodbye
+- **Goal (Can-Do):** Menschen begrüßen und verabschieden
 - **Pronunciation Focus:**
   - **Das deutsche Alphabet**: Deutsch hat 26 Buchstaben plus die Umlaute (Ä, Ö, Ü) und das Eszett (ß).
     - *Examples:* `A a` /aː/, `B b` /beː/, `C c` /tseː/, `D d` /deː/, `E e` /eː/, `F f` /ɛf/, `G g` /ɡeː/, `H h` /haː/, `I i` /iː/, `J j` /jɔt/, `K k` /kaː/, `L l` /ɛl/, `M m` /ɛm/, `N n` /ɛn/, `O o` /oː/, `P p` /peː/, `Q q` /kuː/, `R r` /ɛʁ/, `S s` /ɛs/, `T t` /teː/, `U u` /uː/, `V v` /faʊ/, `W w` /veː/, `X x` /ɪks/, `Y y` /ˈʏpsilɔn/, `Z z` /tsɛt/, `Ä ä` /ɛː/, `Ö ö` /øː/, `Ü ü` /yː/, `ß` /ɛsˈtsɛt/
@@ -32,7 +32,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-002`
-- **Goal (Can-Do):** Can introduce themselves
+- **Goal (Can-Do):** sich vorstellen
 - **Pronunciation Focus:**
   - **Umlaute und Sonderzeichen**: Ä, Ö, Ü und ß sind typisch für die deutsche Sprache.
     - *Examples:* `Äpfel` /ɛː/, `Öl` /øː/, `Über` /yː/, `heißen` /s/
@@ -51,7 +51,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-003`
-- **Goal (Can-Do):** Can count from 1 to 20
+- **Goal (Can-Do):** von 1 bis 20 zählen
 - **Pronunciation Focus:**
   - **Zahlen und Wortakzent**: Im Deutschen liegt der Akzent meist auf der ersten Silbe.
     - *Examples:* `eins` /aɪns/, `sieben` /ˈziːbn̩/, `zwanzig` /ˈtsvantsɪç/
@@ -67,7 +67,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-004`
-- **Goal (Can-Do):** Can distinguish between soft and hard \"ch\" sounds
+- **Goal (Can-Do):** weiche und harte ch-Laute unterscheiden
 - **Pronunciation Focus:**
   - **Der CH-Laut (/ç/ vs /x/)**: Nach hellen Vokalen (i, e) klingt 'ch' weich (/ç/), nach dunklen (a, o, u) hart (/x/).
     - *Examples:* `ich` /ɪç/ ↔ `ach` /ax/, `dich` /dɪç/ ↔ `Dach` /dax/, `Kirche` /ˈkɪʁçə/ ↔ `Küche` /ˈkʏçə/
@@ -85,7 +85,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-005`
-- **Goal (Can-Do):** Can use basic polite phrases
+- **Goal (Can-Do):** grundlegende Höflichkeitsfloskeln benutzen
 - **Pronunciation Focus:**
   - **Satzmelodie bei Fragen**: Bei Ja/Nein-Fragen steigt die Stimme am Ende an.
     - *Examples:* `Wie geht es?` /viː ɡeːt ɛs?/, `Alles klar?` /ˈaləs klaːɐ?/
@@ -103,7 +103,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-01`
-- **Goal (Can-Do):** Can introduce themselves and use basic verbs
+- **Goal (Can-Do):** sich vorstellen und grundlegende Verben benutzen
 - **Pronunciation Focus:**
   - **Der Vokalneueinsatz (Glottal Stop)**: Wörter, die mit einem Vokal beginnen, werden mit einem kleinen harten Einsatz gesprochen.
     - *Examples:* `Apfel` /ˈʔapfl̩/, `Eis` /ˈʔaɪs/
@@ -125,7 +125,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-02`
-- **Goal (Can-Do):** Can talk about jobs and professions.
+- **Goal (Can-Do):** über Berufe sprechen
 - **Pronunciation Focus:**
   - **Auslautverhärtung**: B, D und G am Ende eines Wortes werden wie P, T und K ausgesprochen.
     - *Examples:* `ab` /ap/, `Hand` /hant/, `Tag` /taːk/
@@ -147,7 +147,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-03`
-- **Goal (Can-Do):** Can say where I live.
+- **Goal (Can-Do):** sagen, wo ich wohne
 - **Pronunciation Focus:**
   - **Das 'R' im Deutschen**: Am Wortanfang wird es im Rachen gerieben, am Ende fast wie ein 'A' ausgesprochen.
     - *Examples:* `rot` /ʁɔt/, `Winter` /ˈvɪndɐ/
@@ -169,7 +169,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-009`
-- **Goal (Can-Do):** Can describe my daily routine.
+- **Goal (Can-Do):** meinen Tagesablauf beschreiben
 - **Notes:**
   - hw: "Schreibe deinen Tagesablauf mit fünf trennbaren Verben."
 
@@ -187,7 +187,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-010`
-- **Goal (Can-Do):** Can talk about free time after work.
+- **Goal (Can-Do):** über die Freizeit nach der Arbeit sprechen
 - **Notes:**
   - hw: "Schreibe fünf Sätze darüber, was du gern machst."
 
@@ -207,7 +207,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-011`
-- **Goal (Can-Do):** Can talk about my family.
+- **Goal (Can-Do):** über meine Familie sprechen
 - **Notes:**
   - hw: "Zeichne deinen Stammbaum und beschrifte ihn."
 
@@ -225,7 +225,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-012`
-- **Goal (Can-Do):** Can describe friends and neighbours.
+- **Goal (Can-Do):** Freunde und Nachbarn beschreiben
 - **Notes:**
   - hw: "Beschreibe zwei Freunde in je drei Sätzen."
 
@@ -243,7 +243,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-013`
-- **Goal (Can-Do):** Can describe appearance and character.
+- **Goal (Can-Do):** Aussehen und Charakter beschreiben
 - **Notes:**
   - hw: "Beschreibe eine Person, ohne den Namen zu nennen."
 
@@ -261,7 +261,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-014`
-- **Goal (Can-Do):** Can talk about birthdays and celebrations.
+- **Goal (Can-Do):** über Geburtstage und Feste sprechen
 - **Notes:**
   - hw: "Schreibe eine kurze Einladung zum Geburtstag."
 
@@ -279,7 +279,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-015`
-- **Goal (Can-Do):** Can describe family routines.
+- **Goal (Can-Do):** Familienroutinen beschreiben
 - **Notes:**
   - hw: "Beschreibe den Alltag deiner Familie."
 
@@ -299,7 +299,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-016`
-- **Goal (Can-Do):** Can name everyday foods.
+- **Goal (Can-Do):** alltägliche Lebensmittel benennen
 - **Notes:**
   - hw: "Schreibe eine Einkaufsliste mit zehn Lebensmitteln."
 
@@ -317,7 +317,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-017`
-- **Goal (Can-Do):** Can order food and drinks.
+- **Goal (Can-Do):** Essen und Getränke bestellen
 - **Notes:**
   - hw: "Spiele eine Bestellung im Restaurant."
 
@@ -335,7 +335,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-018`
-- **Goal (Can-Do):** Can follow and give simple cooking instructions.
+- **Goal (Can-Do):** einfache Kochanweisungen verstehen und geben
 - **Notes:**
   - hw: "Schreibe ein einfaches Rezept."
 
@@ -353,7 +353,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-019`
-- **Goal (Can-Do):** Can talk about breakfast habits.
+- **Goal (Can-Do):** über Frühstücksgewohnheiten sprechen
 - **Notes:**
   - hw: "Beschreibe dein Frühstück."
 
@@ -371,7 +371,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-020`
-- **Goal (Can-Do):** Can describe eating habits.
+- **Goal (Can-Do):** Essgewohnheiten beschreiben
 - **Notes:**
   - hw: "Schreibe fünf Sätze über deine Essgewohnheiten."
 
@@ -391,7 +391,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-021`
-- **Goal (Can-Do):** Can shop for groceries.
+- **Goal (Can-Do):** Lebensmittel einkaufen
 - **Notes:**
   - hw: "Schreibe einen kurzen Dialog im Supermarkt."
 
@@ -409,7 +409,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-022`
-- **Goal (Can-Do):** Can buy clothes and ask about sizes.
+- **Goal (Can-Do):** Kleidung kaufen und nach der Größe fragen
 - **Notes:**
   - hw: "Beschreibe deine Lieblingskleidung."
 
@@ -427,7 +427,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-023`
-- **Goal (Can-Do):** Can ask about prices and pay.
+- **Goal (Can-Do):** nach Preisen fragen und bezahlen
 - **Notes:**
   - hw: "Frage nach Preisen in einem Geschäft."
 
@@ -445,7 +445,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-024`
-- **Goal (Can-Do):** Can buy food at a market.
+- **Goal (Can-Do):** Lebensmittel auf dem Markt kaufen
 - **Notes:**
   - hw: "Schreibe einen Dialog auf dem Markt."
 
@@ -463,7 +463,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-025`
-- **Goal (Can-Do):** Can return a faulty item.
+- **Goal (Can-Do):** einen defekten Artikel zurückgeben
 - **Notes:**
   - hw: "Reklamiere einen defekten Artikel."
 
@@ -483,7 +483,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-026`
-- **Goal (Can-Do):** Can describe my home.
+- **Goal (Can-Do):** meine Wohnung beschreiben
 - **Notes:**
   - hw: "Beschreibe deine Wohnung in sechs Sätzen."
 
@@ -501,7 +501,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-027`
-- **Goal (Can-Do):** Can describe furniture and rooms.
+- **Goal (Can-Do):** Möbel und Räume beschreiben
 - **Notes:**
   - hw: "Beschreibe dein Wohnzimmer."
 
@@ -519,7 +519,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-028`
-- **Goal (Can-Do):** Can ask about a flat.
+- **Goal (Can-Do):** nach einer Wohnung fragen
 - **Notes:**
   - hw: "Schreibe Fragen für eine Wohnungsbesichtigung."
 
@@ -537,7 +537,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-029`
-- **Goal (Can-Do):** Can compare city and village life.
+- **Goal (Can-Do):** das Leben in der Stadt und auf dem Land vergleichen
 - **Notes:**
   - hw: "Vergleiche Stadt und Dorf."
 
@@ -555,7 +555,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-030`
-- **Goal (Can-Do):** Can talk about house rules.
+- **Goal (Can-Do):** über Hausregeln sprechen
 - **Notes:**
   - hw: "Schreibe fünf Hausregeln."
 
@@ -575,7 +575,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-031`
-- **Goal (Can-Do):** Can talk about jobs.
+- **Goal (Can-Do):** über Berufe sprechen
 - **Notes:**
   - hw: "Beschreibe drei Berufe."
 
@@ -593,7 +593,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-032`
-- **Goal (Can-Do):** Can describe office work.
+- **Goal (Can-Do):** Büroarbeit beschreiben
 - **Notes:**
   - hw: "Beschreibe deinen Arbeitsplatz."
 
@@ -611,7 +611,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-033`
-- **Goal (Can-Do):** Can describe a working day.
+- **Goal (Can-Do):** einen Arbeitstag beschreiben
 - **Notes:**
   - hw: "Beschreibe einen Arbeitstag."
 
@@ -629,7 +629,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-034`
-- **Goal (Can-Do):** Can talk about a job application.
+- **Goal (Can-Do):** über eine Bewerbung sprechen
 - **Notes:**
   - hw: "Schreibe drei Sätze für eine Bewerbung."
 
@@ -647,7 +647,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-035`
-- **Goal (Can-Do):** Can talk about work-life balance.
+- **Goal (Can-Do):** über die Work-Life-Balance sprechen
 - **Notes:**
   - hw: "Schreibe über Arbeit und Freizeit."
 
@@ -667,7 +667,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-036`
-- **Goal (Can-Do):** Can talk about hobbies.
+- **Goal (Can-Do):** über Hobbys sprechen
 - **Notes:**
   - hw: "Schreibe über deine Hobbys."
 
@@ -685,7 +685,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-037`
-- **Goal (Can-Do):** Can talk about sport.
+- **Goal (Can-Do):** über Sport sprechen
 - **Notes:**
   - hw: "Beschreibe deinen Lieblingssport."
 
@@ -703,7 +703,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-038`
-- **Goal (Can-Do):** Can talk about music and films.
+- **Goal (Can-Do):** über Musik und Filme sprechen
 - **Notes:**
   - hw: "Schreibe eine kurze Filmkritik."
 
@@ -721,7 +721,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-039`
-- **Goal (Can-Do):** Can make arrangements.
+- **Goal (Can-Do):** Verabredungen treffen
 - **Notes:**
   - hw: "Verabrede dich mit einem Freund."
 
@@ -739,7 +739,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-040`
-- **Goal (Can-Do):** Can talk about weekend plans.
+- **Goal (Can-Do):** über Wochenendpläne sprechen
 - **Notes:**
   - hw: "Schreibe deine Wochenendpläne."
 
@@ -759,7 +759,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-041`
-- **Goal (Can-Do):** Can name parts of the body.
+- **Goal (Can-Do):** Körperteile benennen
 - **Notes:**
   - hw: "Beschrifte eine Körperzeichnung."
 
@@ -777,7 +777,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-042`
-- **Goal (Can-Do):** Can describe symptoms at the doctor.
+- **Goal (Can-Do):** beim Arzt Beschwerden beschreiben
 - **Notes:**
   - hw: "Spiele einen Arztbesuch."
 
@@ -795,7 +795,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-043`
-- **Goal (Can-Do):** Can talk about being ill.
+- **Goal (Can-Do):** über eine Krankheit sprechen
 - **Notes:**
   - hw: "Beschreibe, wie du krank warst."
 
@@ -813,7 +813,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-044`
-- **Goal (Can-Do):** Can give health advice.
+- **Goal (Can-Do):** Gesundheitstipps geben
 - **Notes:**
   - hw: "Gib drei Gesundheitsratschläge."
 
@@ -831,7 +831,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-045`
-- **Goal (Can-Do):** Can buy medicine.
+- **Goal (Can-Do):** Medikamente kaufen
 - **Notes:**
   - hw: "Schreibe einen Dialog in der Apotheke."
 
@@ -851,7 +851,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-046`
-- **Goal (Can-Do):** Can talk about transport.
+- **Goal (Can-Do):** über Verkehrsmittel sprechen
 - **Notes:**
   - hw: "Beschreibe, wie du zur Arbeit fährst."
 
@@ -869,7 +869,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-047`
-- **Goal (Can-Do):** Can buy tickets and travel by train.
+- **Goal (Can-Do):** Fahrkarten kaufen und mit dem Zug fahren
 - **Notes:**
   - hw: "Kaufe eine Fahrkarte am Bahnhof."
 
@@ -887,7 +887,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-048`
-- **Goal (Can-Do):** Can check into a hotel.
+- **Goal (Can-Do):** im Hotel einchecken
 - **Notes:**
   - hw: "Reserviere ein Hotelzimmer."
 
@@ -905,7 +905,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-049`
-- **Goal (Can-Do):** Can ask for and give directions.
+- **Goal (Can-Do):** nach dem Weg fragen und ihn beschreiben
 - **Notes:**
   - hw: "Beschreibe den Weg zum Bahnhof."
 
@@ -923,7 +923,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-050`
-- **Goal (Can-Do):** Can talk about holiday plans.
+- **Goal (Can-Do):** über Urlaubspläne sprechen
 - **Notes:**
   - hw: "Schreibe über dein Traumreiseziel."
 
@@ -943,7 +943,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-051`
-- **Goal (Can-Do):** Can talk about past activities.
+- **Goal (Can-Do):** über vergangene Aktivitäten sprechen
 - **Notes:**
   - hw: "Schreibe fünf Sätze im Perfekt."
 
@@ -961,7 +961,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-052`
-- **Goal (Can-Do):** Can say where I went and what happened.
+- **Goal (Can-Do):** sagen, wo ich war und was passiert ist
 - **Notes:**
   - hw: "Erzähle, wohin du gestern gegangen bist."
 
@@ -979,7 +979,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-053`
-- **Goal (Can-Do):** Can describe last weekend.
+- **Goal (Can-Do):** das letzte Wochenende beschreiben
 - **Notes:**
   - hw: "Schreibe über dein letztes Wochenende."
 
@@ -997,7 +997,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-054`
-- **Goal (Can-Do):** Can talk about childhood memories.
+- **Goal (Can-Do):** über Kindheitserinnerungen sprechen
 - **Notes:**
   - hw: "Schreibe über deine Kindheit."
 
@@ -1015,7 +1015,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-055`
-- **Goal (Can-Do):** Can tell a short travel story.
+- **Goal (Can-Do):** eine kurze Reisegeschichte erzählen
 - **Notes:**
   - hw: "Erzähle eine kurze Reisegeschichte."
 
@@ -1035,7 +1035,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-056`
-- **Goal (Can-Do):** Can talk about future plans.
+- **Goal (Can-Do):** über Zukunftspläne sprechen
 - **Notes:**
   - hw: "Schreibe über deine Pläne für nächstes Jahr."
 
@@ -1053,7 +1053,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-057`
-- **Goal (Can-Do):** Can express wishes and dreams.
+- **Goal (Can-Do):** Wünsche und Träume ausdrücken
 - **Notes:**
   - hw: "Schreibe fünf Wünsche mit würde, hätte, wäre."
 
@@ -1071,7 +1071,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-058`
-- **Goal (Can-Do):** Can make and change appointments.
+- **Goal (Can-Do):** Termine vereinbaren und verschieben
 - **Notes:**
   - hw: "Schreibe eine Einladung und eine Absage."
 
@@ -1089,7 +1089,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-059`
-- **Goal (Can-Do):** Can make weekend plans.
+- **Goal (Can-Do):** Wochenendpläne machen
 - **Notes:**
   - hw: "Plane dein Wochenende."
 
@@ -1107,7 +1107,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-060`
-- **Goal (Can-Do):** Can talk about life goals.
+- **Goal (Can-Do):** über Lebensziele sprechen
 - **Notes:**
   - hw: "Schreibe über deine Lebensziele."
 
@@ -1127,7 +1127,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-061`
-- **Goal (Can-Do):** Can review A1 grammar.
+- **Goal (Can-Do):** die A1-Grammatik wiederholen
 - **Notes:**
   - hw: "Löse zehn Grammatikaufgaben."
 
@@ -1145,7 +1145,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-062`
-- **Goal (Can-Do):** Can review A1 vocabulary.
+- **Goal (Can-Do):** den A1-Wortschatz wiederholen
 - **Notes:**
   - hw: "Schreibe zehn Wörter mit Artikel."
 
@@ -1163,7 +1163,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-063`
-- **Goal (Can-Do):** Can talk about everyday life.
+- **Goal (Can-Do):** über den Alltag sprechen
 - **Notes:**
   - hw: "Übe ein Gespräch über den Alltag."
 
@@ -1181,7 +1181,7 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-064`
-- **Goal (Can-Do):** Can write short texts.
+- **Goal (Can-Do):** kurze Texte schreiben
 - **Notes:**
   - hw: "Schreibe eine kurze E-Mail."
 
@@ -1199,6 +1199,6 @@
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `DE-A1-065`
-- **Goal (Can-Do):** Can complete A1 exam tasks.
+- **Goal (Can-Do):** A1-Prüfungsaufgaben bearbeiten
 - **Notes:**
   - hw: "Mache eine Übungsprüfung."
