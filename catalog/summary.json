@@ -49,14 +49,14 @@
    "visual_pages": 5
   },
   "el": {
-   "english_leak_pages": 6,
-   "hub": 17,
+   "english_leak_pages": 1,
+   "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 193,
+   "pages": 173,
    "topic_real": 117,
    "topic_stub": 0,
-   "track_manual": 21,
+   "track_manual": 6,
    "unit": 35,
    "visual_pages": 13
   },
@@ -109,14 +109,14 @@
    "visual_pages": 5
   },
   "it": {
-   "english_leak_pages": 5,
-   "hub": 17,
+   "english_leak_pages": 0,
+   "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 181,
+   "pages": 161,
    "topic_real": 106,
    "topic_stub": 0,
-   "track_manual": 18,
+   "track_manual": 3,
    "unit": 37,
    "visual_pages": 10
   },
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4113
+ "total_pages": 4073
 }

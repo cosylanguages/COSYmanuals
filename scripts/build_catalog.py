@@ -42,7 +42,8 @@ def main():
     if os.path.exists("MANUALS_ACCESS_MANIFEST.json"):
         for e in json.load(open("MANUALS_ACCESS_MANIFEST.json", encoding="utf-8"))["entries"]: access[e["path"]] = e.get("classification")
     rows = []
-    for d, _, fs in os.walk("manuals"):
+    for d, dirs, fs in os.walk("manuals"):
+        dirs[:] = [x for x in dirs if not x.startswith("_")]
         for f in fs:
             if not f.endswith(".html"): continue
             p = os.path.join(d, f).replace(os.sep, "/"); segs = p.split("/")[1:]
