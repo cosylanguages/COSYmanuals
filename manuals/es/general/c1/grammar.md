@@ -2,197 +2,548 @@
 
 > **Derived Manual Document**: Extracted automatically from COSYplatform curriculum source dataset. Do not hand-edit directly.
 
-## Unit 1: Ciencia, Tecnología y Sociedad
+## Unit 1: Ciencia e investigación
 
-### Lesson 1: Ciencia e Investigación - Vocabulario I
+### Lesson 1: Diseño de la investigación y metodología
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-001`
-- **Goal (Can-Do):** Puede evaluar y sintetizar terminología científica compleja en registros académicos formales
+- **Goal (Can-Do):** describir un diseño de investigación
+- **Notes:**
+  - hw: "Describe un diseño de investigación."
 
-### Lesson 2: Ciencia e Investigación - Gramática Avanzada
-
-**Grammar Focus Points:**
-- Estructuras atenuantes avanzadas (Es ampliamente reconocido que..., Parecería indicar que...)
-- Pasiva refleja y pasiva analítica para empaquetamiento de información e imparcialidad científica
+### Lesson 2: Empiria y estadística
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-002`
-- **Goal (Can-Do):** Puede matizar afirmaciones científicas y empaquetar información formal mediante pasivas impersonales y atenuadores
+- **Goal (Can-Do):** interpretar resultados estadísticos
+- **Notes:**
+  - hw: "Interpreta un conjunto de datos."
 
-### Lesson 3: Ética Tecnológica y Política Científica - Seminario
-
-**Grammar Focus Points:**
-- Inversión sintáctica y locuciones adverso-restrictivas (No solo automatiza..., sino que...)
-- Subjuntivo en oraciones concesivas avanzadas (Por más que se argumente..., Aun cuando la tecnología...)
+### Lesson 3: Ciencia y sociedad
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-003`
-- **Goal (Can-Do):** Puede debatir con fluidez sobre ética tecnológica y políticas científicas en seminarios académicos
+- **Goal (Can-Do):** divulgar resultados científicos
+- **Notes:**
+  - hw: "Resume un estudio para el público general."
 
-## Unit 2: Poder e Instituciones
-
-### Lesson 1: Gobernanza Institucional - Vocabulario I
+### Lesson 4: Ética de la investigación
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-004`
-- **Goal (Can-Do):** Puede utilizar con precisión léxico político e institucional especializado en contextos formales
+- **Goal (Can-Do):** debatir cuestiones éticas
+- **Notes:**
+  - hw: "Analiza un conflicto de intereses."
 
-### Lesson 2: Derecho y Política - Gramática Avanzada
-
-**Grammar Focus Points:**
-- Perífrasis verbales de distanciamiento e informe formal (Se da por sentado que..., Se rumorea haber sido promulgado...)
-- Subjuntivo mandativo e impersonal en decretos y leyes (Es imperativo que la norma sea ratificada)
+### Lesson 5: Política científica
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-005`
-- **Goal (Can-Do):** Puede redactar enunciados jurídicos e institucionales formales utilizando el subjuntivo mandativo y perifrasis formales
+- **Goal (Can-Do):** evaluar la política científica
+- **Notes:**
+  - hw: "Evalúa un programa de financiación."
 
-### Lesson 3: Reforma Institucional y Democracia - Debate
+## Unit 2: Tecnología, ética y sociedad
 
-**Grammar Focus Points:**
-- Oraciones hendidas y seudohendidas para énfasis en discursos (Lo que la comisión propuso fue..., Fue el ministro quien...)
-- Estructuras retóricas en el debate parlamentario
+### Lesson 1: Automatización y trabajo
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-006`
-- **Goal (Can-Do):** Puede debatir sobre gobernanza e instituciones públicas aplicando énfasis retórico avanzado
+- **Goal (Can-Do):** describir las consecuencias de la automatización
+- **Notes:**
+  - hw: "Describe las consecuencias de la automatización."
 
-## Unit 3: Estructuras Sociales y Cambio
-
-### Lesson 1: Sociología y Demografía - Vocabulario I
+### Lesson 2: Inteligencia artificial
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-007`
-- **Goal (Can-Do):** Puede analizar estructuras sociales y tendencias demográficas complejas con léxico sociológico preciso
+- **Goal (Can-Do):** sopesar los riesgos de la IA
+- **Notes:**
+  - hw: "Sopesa un riesgo de la IA."
 
-### Lesson 2: Sociología y Demografía - Gramática Avanzada
-
-**Grammar Focus Points:**
-- Construcciones absolutas de participio y gerundio (Habiéndose analizado el fenómeno..., Examinados los datos...)
-- Conectores discursivos complejos de concesión y contraste (No obstante, Pese a que, A tenor de lo cual)
+### Lesson 3: Protección de datos y vigilancia
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-008`
-- **Goal (Can-Do):** Puede redactar análisis sociológicos cohesivos utilizando construcciones absolutas y elipsis elaboradas
+- **Goal (Can-Do):** aclarar cuestiones de protección de datos
+- **Notes:**
+  - hw: "Explica la limitación de finalidad."
 
-### Lesson 3: Política Social y Renovación Urbana - Seminario
-
-**Grammar Focus Points:**
-- Condicionales hipotéticas e irrealizables con subjuntivo (Aun cuando se implementara la política...)
-- Gestión matizada del turno de palabra e interrupciones corteses
+### Lesson 4: Soberanía digital
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-009`
-- **Goal (Can-Do):** Puede articular y defender con soltura posturas complejas sobre transformación social y urbanismo
+- **Goal (Can-Do):** evaluar dependencias digitales
+- **Notes:**
+  - hw: "Evalúa una dependencia digital."
 
-## Unit 4: Conocimiento, Epistemología y Verdad
-
-### Lesson 1: Epistemología y Cognición - Vocabulario I
+### Lesson 5: Evaluación de impacto tecnológico
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-010`
-- **Goal (Can-Do):** Puede reflexionar académicamente sobre epistemología, validación del conocimiento y sesgos cognitivos
+- **Goal (Can-Do):** presentar una evaluación de impacto
+- **Notes:**
+  - hw: "Presenta una evaluación de impacto."
 
-### Lesson 2: Epistemología y Cognición - Gramática Avanzada
+## Unit 3: Poder, Estado e instituciones
 
-**Grammar Focus Points:**
-- Verbos y expresiones de certidumbre e incertidumbre (Haber de + infinitivo, Caber la posibilidad de que + subjuntivo)
-- Puntuación avanzada y uso de incisos entre guiones o paréntesis para matizar la postura del autor
+### Lesson 1: Gobernanza institucional
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-011`
-- **Goal (Can-Do):** Puede expresar grados exactos de certidumbre epistemológica e integrar incisos parentéticos académicos
+- **Goal (Can-Do):** explicar los procedimientos institucionales
+- **Notes:**
+  - hw: "Explica un procedimiento administrativo."
 
-### Lesson 3: Medios, Posverdad y Debate Crítico - Seminario
-
-**Grammar Focus Points:**
-- Estructuras de refutación y réplica (Aun admitiendo que X, no por ello se deduce Y)
-- Identificación e impugnación de falacias lógicas en tiempo real
+### Lesson 2: Constitución y separación de poderes
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-012`
-- **Goal (Can-Do):** Puede impugnar falacias lógicas y debatir críticamente sobre fenómenos de posverdad en el discurso público
+- **Goal (Can-Do):** explicar la separación de poderes
+- **Notes:**
+  - hw: "Explica un derecho fundamental."
 
-## Unit 5: Retórica, Discurso y Argumentación
-
-### Lesson 1: Retórica y Persuasión - Vocabulario I
+### Lesson 3: Elecciones y legitimidad
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-013`
-- **Goal (Can-Do):** Puede utilizar recursos retóricos y léxico persuasivo en intervenciones orales y escritas
+- **Goal (Can-Do):** interpretar resultados electorales
+- **Notes:**
+  - hw: "Interpreta un resultado electoral."
 
-### Lesson 2: Retórica y Persuasión - Gramática Avanzada
-
-**Grammar Focus Points:**
-- Variedad sintáctica: Periodos compuestos, oraciones bimembres y simétricas para impacto estilístico
-- Marcadores de discurso de ordenación y contraste (En otro orden de cosas, Bien que, Por más que)
+### Lesson 4: Reforma administrativa
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-014`
-- **Goal (Can-Do):** Puede estructurar periodos sintácticos elaborados con marcadores discursivos avanzados
+- **Goal (Can-Do):** evaluar propuestas de reforma
+- **Notes:**
+  - hw: "Evalúa una propuesta de reforma."
 
-### Lesson 3: Discurso Magistral y Mesa Redonda - Seminario
-
-**Grammar Focus Points:**
-- Técnicas de negociación oral, gestión del debate y reformuladores discursivos espontáneos
-- Pronunciación y cadencia en ponencias formales
+### Lesson 5: Estado y esfera pública
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-015`
-- **Goal (Can-Do):** Puede pronunciar ponencias magistrales y moderar mesas redondas con alta competencia argumentativa
+- **Goal (Can-Do):** debatir sobre el Estado y la esfera pública
+- **Notes:**
+  - hw: "Debate un proceso participativo."
 
-## Unit 6: Economía, Mercados Globales y Geopolítica
+## Unit 4: Derecho y administración
 
-### Lesson 1: Macroeconomía y Mercados - Vocabulario I
+### Lesson 1: Ordenamiento jurídico
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-016`
-- **Goal (Can-Do):** Puede analizar políticas macroeconómicas, riesgos sistémicos y dinámicas de mercados internacionales
+- **Goal (Can-Do):** explicar el ordenamiento jurídico
+- **Notes:**
+  - hw: "Explica una resolución administrativa."
 
-### Lesson 2: Economía y Geopolítica - Gramática Avanzada
-
-**Grammar Focus Points:**
-- Condicionales de inversión sintáctica y prótasis implícitas (De haber intervenido los bancos centrales..., De subir los aranceles...)
-- Nominalización y principio de peso final en análisis económicos formales
+### Lesson 2: Contratos y responsabilidad
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-017`
-- **Goal (Can-Do):** Puede redactar proyecciones económicas sofisticadas utilizando construcciones condicionales de 'de + infinitivo compuesto
+- **Goal (Can-Do):** aclarar cuestiones contractuales
+- **Notes:**
+  - hw: "Redacta una rescisión."
 
-### Lesson 3: Relaciones Internacionales y Comercio - Debate
-
-**Grammar Focus Points:**
-- Anteposición focal e información periodística de pasiva impersonal en informes de geopolítica
-- Estrategias diplomáticas de concesión y redefinición del marco de negociación
+### Lesson 3: Derecho penal y prevención
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-018`
-- **Goal (Can-Do):** Puede debatir sobre geopolítica, acuerdos internacionales y políticas comerciales con precisión estratégica
+- **Goal (Can-Do):** debatir sobre los fines de la pena
+- **Notes:**
+  - hw: "Analiza la proporcionalidad."
 
-## Unit 7: Estética, Crítica Cultural y Consolidación C1
-
-### Lesson 1: Estética y Crítica de Arte - Vocabulario I
+### Lesson 4: Derecho europeo
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-019`
-- **Goal (Can-Do):** Puede formular críticas artísticas y análisis culturales de alto nivel en registros formales
+- **Goal (Can-Do):** situar la normativa europea
+- **Notes:**
+  - hw: "Sitúa una directiva europea."
 
-### Lesson 2: Estética y Crítica Cultural - Gramática Avanzada
-
-**Grammar Focus Points:**
-- Nominalización léxica y ritmo oracional en la prosa crítica y ensayística
-- Uso refinado de adjetivos antepuestos y modificadores adverbiales de matiz
+### Lesson 5: Derecho y justicia
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-020`
-- **Goal (Can-Do):** Puede redactar ensayos culturales elegantes combinando nominalizaciones refinadas y adjetivación antepuesta
+- **Goal (Can-Do):** debatir cuestiones de justicia
+- **Notes:**
+  - hw: "Analiza un precedente."
 
-### Lesson 3: Examen de Maestría C1 y Consolidación Global
+## Unit 5: Estructuras sociales y demografía
 
-**Grammar Focus Points:**
-- Síntesis de los pilares de C1: pasiva refleja, subjuntivo mandativo, construcciones absolutas, oraciones hendidas, condicionales implícitas y prosa ensayística
+### Lesson 1: Estructura social
 
 **Teaching Notes & Rules:**
 - **Lesson Code:** `ES-C1-021`
-- **Goal (Can-Do):** Puede demostrar un dominio operativo eficaz completo (C1) del español en ámbitos académicos, profesionales, económicos y culturales
+- **Goal (Can-Do):** describir estructuras sociales
+- **Notes:**
+  - hw: "Describe una estructura social."
+
+### Lesson 2: Cambio demográfico
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-022`
+- **Goal (Can-Do):** interpretar previsiones demográficas
+- **Notes:**
+  - hw: "Interpreta una previsión demográfica."
+
+### Lesson 3: Ciudad y vivienda
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-023`
+- **Goal (Can-Do):** evaluar el desarrollo urbano
+- **Notes:**
+  - hw: "Evalúa un proyecto de barrio."
+
+### Lesson 4: Educación y oportunidades
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-024`
+- **Goal (Can-Do):** debatir la equidad educativa
+- **Notes:**
+  - hw: "Debate la equidad educativa."
+
+### Lesson 5: Estado del bienestar
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-025`
+- **Goal (Can-Do):** debatir sobre el Estado del bienestar
+- **Notes:**
+  - hw: "Debate sobre el Estado del bienestar."
+
+## Unit 6: Migración y cambio cultural
+
+### Lesson 1: Migración e integración
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-026`
+- **Goal (Can-Do):** describir políticas de integración
+- **Notes:**
+  - hw: "Describe un programa de integración."
+
+### Lesson 2: Refugio y asilo
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-027`
+- **Goal (Can-Do):** explicar el procedimiento de asilo
+- **Notes:**
+  - hw: "Explica un procedimiento de asilo."
+
+### Lesson 3: Interculturalidad
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-028`
+- **Goal (Can-Do):** interpretar malentendidos culturales
+- **Notes:**
+  - hw: "Interpreta un malentendido."
+
+### Lesson 4: Lengua e identidad
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-029`
+- **Goal (Can-Do):** hablar de lengua e identidad
+- **Notes:**
+  - hw: "Debate la política lingüística."
+
+### Lesson 5: Cambio cultural
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-030`
+- **Goal (Can-Do):** describir el cambio cultural
+- **Notes:**
+  - hw: "Describe un cambio de valores."
+
+## Unit 7: Conocimiento y verdad
+
+### Lesson 1: Epistemología
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-031`
+- **Goal (Can-Do):** examinar pretensiones de conocimiento
+- **Notes:**
+  - hw: "Examina una pretensión de conocimiento."
+
+### Lesson 2: Verdad y perspectiva
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-032`
+- **Goal (Can-Do):** distinguir pretensiones de verdad
+- **Notes:**
+  - hw: "Distingue dos pretensiones de verdad."
+
+### Lesson 3: Evidencia y prueba
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-033`
+- **Goal (Can-Do):** evaluar pruebas
+- **Notes:**
+  - hw: "Evalúa una evidencia."
+
+### Lesson 4: Pensamiento crítico
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-034`
+- **Goal (Can-Do):** detectar falacias
+- **Notes:**
+  - hw: "Detecta una falacia."
+
+### Lesson 5: Conocimiento y sociedad
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-035`
+- **Goal (Can-Do):** debatir sobre la sociedad del conocimiento
+- **Notes:**
+  - hw: "Debate sobre la expertise."
+
+## Unit 8: Medios, esfera pública y posverdad
+
+### Lesson 1: Panorama mediático
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-036`
+- **Goal (Can-Do):** situar las ofertas mediáticas
+- **Notes:**
+  - hw: "Sitúa dos medios de comunicación."
+
+### Lesson 2: Desinformación
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-037`
+- **Goal (Can-Do):** desmontar la desinformación
+- **Notes:**
+  - hw: "Desmonta una noticia falsa."
+
+### Lesson 3: Crítica de fuentes
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-038`
+- **Goal (Can-Do):** evaluar fuentes con criterio
+- **Notes:**
+  - hw: "Evalúa dos fuentes."
+
+### Lesson 4: Libertad de expresión
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-039`
+- **Goal (Can-Do):** debatir los límites de la libertad de expresión
+- **Notes:**
+  - hw: "Debate un límite."
+
+### Lesson 5: Debate público
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-040`
+- **Goal (Can-Do):** moderar un debate
+- **Notes:**
+  - hw: "Modera un debate."
+
+## Unit 9: Retórica y argumentación
+
+### Lesson 1: Recursos retóricos
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-041`
+- **Goal (Can-Do):** analizar recursos retóricos
+- **Notes:**
+  - hw: "Analiza un discurso."
+
+### Lesson 2: Estructura argumentativa
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-042`
+- **Goal (Can-Do):** construir una argumentación
+- **Notes:**
+  - hw: "Construye una argumentación."
+
+### Lesson 3: Conducción de debates
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-043`
+- **Goal (Can-Do):** conducir un debate
+- **Notes:**
+  - hw: "Conduce un debate."
+
+### Lesson 4: Negociación
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-044`
+- **Goal (Can-Do):** negociar
+- **Notes:**
+  - hw: "Negocia un acuerdo."
+
+### Lesson 5: Conferencia y mesa redonda
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-045`
+- **Goal (Can-Do):** pronunciar una conferencia
+- **Notes:**
+  - hw: "Pronuncia una conferencia breve."
+
+## Unit 10: Economía y mercados financieros
+
+### Lesson 1: Macroeconomía
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-046`
+- **Goal (Can-Do):** interpretar datos coyunturales
+- **Notes:**
+  - hw: "Interpreta un indicador."
+
+### Lesson 2: Mercados financieros
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-047`
+- **Goal (Can-Do):** explicar riesgos financieros
+- **Notes:**
+  - hw: "Explica un riesgo financiero."
+
+### Lesson 3: Dirección de empresas
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-048`
+- **Goal (Can-Do):** evaluar decisiones empresariales
+- **Notes:**
+  - hw: "Evalúa una inversión."
+
+### Lesson 4: Mercado laboral
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-049`
+- **Goal (Can-Do):** debatir la política laboral
+- **Notes:**
+  - hw: "Debate una medida laboral."
+
+### Lesson 5: Comercio y cadenas de suministro
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-050`
+- **Goal (Can-Do):** analizar cadenas de suministro
+- **Notes:**
+  - hw: "Analiza una cadena de suministro."
+
+## Unit 11: Geopolítica y relaciones internacionales
+
+### Lesson 1: Situación geopolítica
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-051`
+- **Goal (Can-Do):** evaluar una situación geopolítica
+- **Notes:**
+  - hw: "Evalúa una situación geopolítica."
+
+### Lesson 2: Organizaciones internacionales
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-052`
+- **Goal (Can-Do):** explicar el papel de las organizaciones internacionales
+- **Notes:**
+  - hw: "Explica un mandato."
+
+### Lesson 3: Política comercial
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-053`
+- **Goal (Can-Do):** debatir conflictos comerciales
+- **Notes:**
+  - hw: "Debate un conflicto comercial."
+
+### Lesson 4: Política de seguridad
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-054`
+- **Goal (Can-Do):** sopesar riesgos de seguridad
+- **Notes:**
+  - hw: "Sopesa un riesgo de seguridad."
+
+### Lesson 5: Cooperación global
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-055`
+- **Goal (Can-Do):** evaluar la cooperación global
+- **Notes:**
+  - hw: "Evalúa una asociación."
+
+## Unit 12: Estética y crítica cultural
+
+### Lesson 1: Estética
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-056`
+- **Goal (Can-Do):** explicar categorías estéticas
+- **Notes:**
+  - hw: "Explica una categoría estética."
+
+### Lesson 2: Crítica de arte
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-057`
+- **Goal (Can-Do):** comentar una obra
+- **Notes:**
+  - hw: "Comenta una obra."
+
+### Lesson 3: Literatura y canon
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-058`
+- **Goal (Can-Do):** hablar de literatura
+- **Notes:**
+  - hw: "Interpreta un motivo."
+
+### Lesson 4: Crítica cultural
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-059`
+- **Goal (Can-Do):** formular una crítica cultural
+- **Notes:**
+  - hw: "Formula una crítica cultural."
+
+### Lesson 5: Patrimonio cultural
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-060`
+- **Goal (Can-Do):** hablar del patrimonio cultural
+- **Notes:**
+  - hw: "Debate un proyecto de restauración."
+
+## Unit 13: Examen y consolidación
+
+### Lesson 1: Gramática: pasiva y subjuntivo
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-061`
+- **Goal (Can-Do):** usar la pasiva y el subjuntivo con seguridad
+- **Notes:**
+  - hw: "Resuelve diez ejercicios de pasiva."
+
+### Lesson 2: Gramática: estilo indirecto y condicionales
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-062`
+- **Goal (Can-Do):** usar el estilo indirecto y los condicionales
+- **Notes:**
+  - hw: "Transforma diez oraciones."
+
+### Lesson 3: Léxico y colocaciones
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-063`
+- **Goal (Can-Do):** emplear el léxico con precisión
+- **Notes:**
+  - hw: "Forma diez colocaciones."
+
+### Lesson 4: Comprensión lectora y auditiva
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-064`
+- **Goal (Can-Do):** resolver tareas de comprensión
+- **Notes:**
+  - hw: "Resuelve una tarea de lectura."
+
+### Lesson 5: Expresión escrita y oral
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `ES-C1-065`
+- **Goal (Can-Do):** escribir y hablar en el examen
+- **Notes:**
+  - hw: "Escribe un ensayo."
