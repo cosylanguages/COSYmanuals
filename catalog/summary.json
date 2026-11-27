@@ -10,7 +10,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 9,
-   "visual_pages": 0
+   "visual_pages": 5
   },
   "br": {
    "english_leak_pages": 10,
@@ -22,7 +22,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 6,
-   "visual_pages": 0
+   "visual_pages": 5
   },
   "cv": {
    "english_leak_pages": 3,
@@ -34,7 +34,7 @@
    "topic_stub": 0,
    "track_manual": 0,
    "unit": 9,
-   "visual_pages": 0
+   "visual_pages": 5
   },
   "de": {
    "english_leak_pages": 0,
@@ -46,7 +46,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 15,
-   "visual_pages": 2
+   "visual_pages": 5
   },
   "el": {
    "english_leak_pages": 0,
@@ -58,7 +58,7 @@
    "topic_stub": 0,
    "track_manual": 21,
    "unit": 35,
-   "visual_pages": 0
+   "visual_pages": 13
   },
   "en": {
    "english_leak_pages": 0,
@@ -70,7 +70,7 @@
    "topic_stub": 0,
    "track_manual": 81,
    "unit": 208,
-   "visual_pages": 21
+   "visual_pages": 150
   },
   "es": {
    "english_leak_pages": 0,
@@ -82,10 +82,10 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 16,
-   "visual_pages": 3
+   "visual_pages": 11
   },
   "fr": {
-   "english_leak_pages": 0,
+   "english_leak_pages": 14,
    "hub": 48,
    "lang_wrong": 0,
    "other_stub": 0,
@@ -94,7 +94,7 @@
    "topic_stub": 0,
    "track_manual": 57,
    "unit": 82,
-   "visual_pages": 2
+   "visual_pages": 106
   },
   "hy": {
    "english_leak_pages": 11,
@@ -106,7 +106,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 9,
-   "visual_pages": 0
+   "visual_pages": 5
   },
   "it": {
    "english_leak_pages": 0,
@@ -118,7 +118,7 @@
    "topic_stub": 0,
    "track_manual": 18,
    "unit": 37,
-   "visual_pages": 3
+   "visual_pages": 10
   },
   "ka": {
    "english_leak_pages": 11,
@@ -130,7 +130,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 9,
-   "visual_pages": 0
+   "visual_pages": 2
   },
   "pt": {
    "english_leak_pages": 0,
@@ -142,7 +142,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 16,
-   "visual_pages": 4
+   "visual_pages": 10
   },
   "ru": {
    "english_leak_pages": 0,
@@ -154,7 +154,7 @@
    "topic_stub": 0,
    "track_manual": 57,
    "unit": 80,
-   "visual_pages": 8
+   "visual_pages": 37
   },
   "tt": {
    "english_leak_pages": 14,
@@ -166,7 +166,7 @@
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 12,
-   "visual_pages": 0
+   "visual_pages": 4
   }
  },
  "topics_by_language_module_level": {
