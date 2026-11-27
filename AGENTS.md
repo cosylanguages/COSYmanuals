@@ -30,7 +30,7 @@ Seven such links were repaired during the A1 completion; check new pages for the
 
 ## Status (last update)
 - French A1: 202/202 written. French A2: 202/202 written.
-- French B1: 35 of 246 written; every grammar page linked from units 1 to 3 of the B1 course is now real content.
+- French B1: 82 of 246 written; every grammar page linked from units 1 to 8 of the B1 course is now real content.
 - French B2 200, C1 129, C2 121 still boilerplate.
 - German, Spanish, Italian, Portuguese, Russian, Greek A1 and A2: all written.
 - English A1 to C2: all written; it is the reference for tone and page shape.
