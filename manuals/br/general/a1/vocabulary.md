@@ -2,815 +2,1198 @@
 
 > **Derived Manual Document**: Extracted automatically from COSYplatform curriculum source dataset. Do not hand-edit directly.
 
-## Unit 0: Pazioù kentañ (A0)
+## Unit 1: Saluderezh ha kinnig
 
-### Lesson 1: Hello & Welcome
-
-**Target Vocabulary:**
-- `Hello`
-- `Hi`
-- `Good morning`
-- `Good afternoon`
-- `Good evening`
-- `Goodbye`
-
-### Lesson 2: What is your name?
+### Lesson 1: Demat! Saluderezh
 
 **Target Vocabulary:**
-- `Name`
-- `What`
-- `How`
-- `Nice to meet you`
+- `demat`
+- `kenavo`
+- `trugarez`
+- `mar plij`
+- `ya`
+- `nann`
+- `mat`
+- `noz vat`
 
-### Lesson 3: Numbers 1-20
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-001`
+- **Goal (Can-Do):** saludiñ ha kinnig an den
+- **Notes:**
+  - hw: "Skriv pemp saluderezh."
 
-**Target Vocabulary:**
-- `one`
-- `two`
-- `three`
-- `ten`
-- `twenty`
-
-### Lesson 4: Minimal Pairs 1: Vowels
-
-**Target Vocabulary:**
-- `ship`
-- `sheep`
-- `feet`
-- `sit`
-
-### Lesson 5: Essential Phrases
+### Lesson 2: Piv out? Kinnig an den
 
 **Target Vocabulary:**
-- `Please`
-- `Thank you`
-- `Excuse me`
-- `Sorry`
+- `piv`
+- `petra`
+- `anv`
+- `bezañ`
+- `out`
+- `eus`
+- `Breizh`
+- `plijadur`
 
-## Unit 1: My Life Today
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-002`
+- **Goal (Can-Do):** goulenn an anv hag an orin
+- **Notes:**
+  - hw: "Kinnig da unan e-unan e pemp frazenn."
 
-### Lesson 1: A day in my life — routines revisited
-
-**Target Vocabulary:**
-- `always`
-- `usually`
-- `often`
-- `sometimes`
-- `rarely`
-- `never`
-- `wake up`
-- `get up`
-- `leave`
-- `arrive`
-- `finish`
-- `start`
-
-### Lesson 2: My job — describing work in detail
+### Lesson 3: Ar sifroù hag an oad
 
 **Target Vocabulary:**
-- `job`
-- `work`
-- `boss`
-- `colleague`
-- `salary`
-- `office`
-- `meeting`
-- `email`
-- `full-time`
-- `part-time`
-- `manage`
-- `attend`
-- `check`
-- `send`
-- `meet`
-- `reply`
-- `help`
-- `order`
-- `visit`
-- `busy`
+- `unan`
+- `daou`
+- `tri`
+- `pevar`
+- `pemp`
+- `c'hwec'h`
+- `seizh`
+- `eizh`
 
-### Lesson 3: My commute and workplace
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-003`
+- **Goal (Can-Do):** lavaret an niveroù hag an oad
+- **Notes:**
+  - hw: "Skriv an niveroù eus 1 da 20."
+
+### Lesson 4: Ma labour
 
 **Target Vocabulary:**
-- `commute`
-- `floor`
-- `department`
-- `delay`
-- `rush hour`
-- `travel`
-- `leave`
-- `arrive`
-- `busy`
-- `free`
-- `difficult`
+- `kelenner`
+- `medisin`
+- `labourer`
+- `studier`
+- `gwerzher`
+- `keginer`
+- `blenier`
+- `labour`
 
-### Lesson 4: Earning and spending — money vocabulary
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-004`
+- **Goal (Can-Do):** lavaret e vicher
+- **Notes:**
+  - hw: "Skriv da vicher ha hini da vignoned."
 
-**Target Vocabulary:**
-- `spend`
-- `save`
-- `pay`
-- `cost`
-- `cash`
-- `card`
-- `receipt`
-- `discount`
-- `bill`
-- `earn`
-- `afford`
-- `charge`
-- `cheap`
-- `expensive`
-
-### Lesson 5: My home — renting and buying
+### Lesson 5: An devezh
 
 **Target Vocabulary:**
-- `rent`
-- `flat`
-- `landlord`
-- `tenant`
-- `neighbour`
-- `furniture`
-- `heating`
-- `bill`
-- `move`
-- `repair`
-- `clean`
-- `cook`
-- `cheap`
-- `expensive`
-- `different`
+- `hiziv`
+- `warc'hoazh`
+- `dec'h`
+- `beure`
+- `endervezh`
+- `abardaez`
+- `noz`
+- `bremañ`
 
-### Lesson 6: Food and health — what you eat, how you feel
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-005`
+- **Goal (Can-Do):** komz eus an devezh
+- **Notes:**
+  - hw: "Deskriv da zevezh."
 
-**Target Vocabulary:**
-- `ill`
-- `tired`
-- `headache`
-- `doctor`
-- `hospital`
-- `medicine`
-- `sleep`
-- `exercise`
-- `stress`
-- `feel`
-- `rest`
-- `recover`
-- `hurt`
-- `healthy`
-- `fit`
-- `stressed`
+## Unit 2: An tiegezh
 
-### Lesson 7: Technology in my life
+### Lesson 1: Ar familh
 
 **Target Vocabulary:**
-- `phone`
-- `app`
-- `password`
-- `internet`
-- `online`
-- `screen`
-- `check`
-- `send`
-- `watch`
-- `follow`
-- `learn`
-- `free`
-- `popular`
+- `mamm`
+- `tad`
+- `breur`
+- `c'hoar`
+- `mab`
+- `merc'h`
+- `familh`
+- `kerent`
 
-### Lesson 8: My interests and free time
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-006`
+- **Goal (Can-Do):** kinnig e familh
+- **Notes:**
+  - hw: "Skriv eus da familh."
 
-**Target Vocabulary:**
-- `holiday`
-- `weekend`
-- `free time`
-- `friend`
-- `invitation`
-- `party`
-- `hobby`
-- `relax`
-- `enjoy`
-- `invite`
-- `celebrate`
-- `play`
-- `happy`
-- `relaxed`
-- `bored`
-- `excited`
-- `free`
-
-### Lesson 9: My neighbourhood and community
+### Lesson 2: Ar vugale
 
 **Target Vocabulary:**
-- `neighbour`
-- `local`
-- `convenient`
-- `community`
-- `live`
-- `move`
-- `seem`
-- `happen`
-- `quiet`
-- `noisy`
-- `popular`
-- `special`
-- `different`
-- `similar`
+- `bugel`
+- `bugale`
+- `paotr`
+- `plac'h`
+- `mignon`
+- `kamarad`
+- `kozh`
+- `yaouank`
 
-### Lesson 10: Unit 1 Review — My life today
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-007`
+- **Goal (Can-Do):** komz eus ar vugale
+- **Notes:**
+  - hw: "Skriv eus da vugale pe da vignoned."
 
-**Target Vocabulary:**
-- `ALL Unit 1 vocabulary`
-- `ALL Unit 1 verbs`
-- `ALL Unit 1 adjectives`
-
-## Unit 2: My Past
-
-### Lesson 1: My career story — past simple review
+### Lesson 3: An ti
 
 **Target Vocabulary:**
-- `career`
-- `promotion`
-- `colleague`
-- `study`
-- `work`
-- `move`
-- `change`
-- `leave`
-- `join`
-- `start`
-- `become`
-- `different`
-- `new`
-- `old`
+- `ti`
+- `sal`
+- `kegin`
+- `kambr`
+- `sal-gibellañ`
+- `prenestr`
+- `dor`
+- `taol`
 
-### Lesson 2: What were you doing? — past continuous
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-008`
+- **Goal (Can-Do):** deskrivañ an ti
+- **Notes:**
+  - hw: "Deskriv da di."
 
-**Target Vocabulary:**
-- `while`
-- `when`
-- `at that moment`
-- `suddenly`
-- `happen`
-- `continue`
-- `stop`
-- `sit`
-- `stand`
-- `carry`
-- `surprised`
-- `worried`
-
-### Lesson 3: I used to… — past habits and states
+### Lesson 4: Ar vuhez pemdez
 
 **Target Vocabulary:**
-- `anymore`
-- `not anymore`
-- `in the past`
-- `these days`
-- `now`
-- `used to + any verb`
-- `different`
-- `similar`
+- `sevel`
+- `debriñ`
+- `mont`
+- `dont`
+- `labourat`
+- `kousket`
+- `lenn`
+- `skrivañ`
 
-### Lesson 4: Have you ever…? — life experiences
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-009`
+- **Goal (Can-Do):** deskrivañ e zevezh
+- **Notes:**
+  - hw: "Skriv pemp frazenn eus da zevezh."
 
-**Target Vocabulary:**
-- `ever`
-- `never`
-- `once`
-- `twice`
-- `many times`
-- `visit`
-- `travel`
-- `try`
-- `meet`
-- `see`
-- `eat`
-- `do`
-- `amazing`
-- `fantastic`
-- `terrible`
-- `interesting`
-
-### Lesson 5: I have just… — recent events
+### Lesson 5: Ar vignoned
 
 **Target Vocabulary:**
-- `just`
-- `already`
-- `yet`
-- `recently`
-- `this week`
-- `finish`
-- `start`
-- `hear`
-- `arrive`
-- `send`
-- `recent`
+- `mat`
+- `fall`
+- `bras`
+- `bihan`
+- `laouen`
+- `trist`
+- `brav`
+- `dedennus`
 
-### Lesson 6: Since when? For how long? — duration
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-010`
+- **Goal (Can-Do):** deskrivañ e vignoned
+- **Notes:**
+  - hw: "Deskriv da vignoned."
 
-**Target Vocabulary:**
-- `for`
-- `since`
-- `how long`
-- `a week`
-- `a year`
-- `last month`
-- `live`
-- `work`
-- `study`
-- `know`
-- `have`
-- `long`
+## Unit 3: Boued ha died
 
-### Lesson 7: Telling a story — narrative skills
+### Lesson 1: Ar predoù
 
 **Target Vocabulary:**
-- `first`
-- `then`
-- `next`
-- `after that`
-- `suddenly`
-- `in the end`
-- `finally`
-- `happen`
-- `tell`
-- `show`
-- `follow`
-- `mean`
-- `seem`
-- `surprised`
-- `excited`
-- `worried`
-- `disappointed`
+- `bara`
+- `amann`
+- `kig`
+- `pesked`
+- `legumaj`
+- `frouezh`
+- `riz`
+- `soubenn`
 
-### Lesson 8: A difficult situation — problem narration
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-011`
+- **Goal (Can-Do):** komz eus ar predoù
+- **Notes:**
+  - hw: "Skriv eus da bred."
+
+### Lesson 2: Er preti
 
 **Target Vocabulary:**
-- `difficulty`
-- `challenge`
-- `decision`
-- `mistake`
-- `consequence`
-- `solution`
-- `try`
-- `manage`
-- `continue`
-- `stop`
-- `change`
-- `choose`
-- `build`
-- `difficult`
-- `wrong`
-- `correct`
-- `important`
+- `kafe`
+- `te`
+- `laezh`
+- `dour`
+- `chug`
+- `gwin`
+- `gwerenn`
+- `tas`
 
-### Lesson 9: Reporting what people said
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-012`
+- **Goal (Can-Do):** goulenn traoù er preti
+- **Notes:**
+  - hw: "Skriv ur goulenn er preti."
+
+### Lesson 3: Ar marc'had
 
 **Target Vocabulary:**
-- `say`
-- `tell`
-- `ask`
-- `explain`
-- `mention`
-- `that`
+- `marc'had`
+- `priz`
+- `euro`
+- `ker`
+- `marc'had-mat`
+- `prenañ`
+- `gwerzhañ`
+- `sac'had`
 
-### Lesson 10: Unit 2 Review — My past
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-013`
+- **Goal (Can-Do):** prenañ traoù er marc'had
+- **Notes:**
+  - hw: "Skriv un dial etre daou zen."
 
-**Target Vocabulary:**
-- `ALL Unit 2 vocabulary`
-- `ALL Unit 2 verbs`
-- `ALL Unit 2 adjectives`
-
-## Unit 3: My Future & Plans
-
-### Lesson 1: I'm going to change — plans and intentions
-
-**Target Vocabulary:**
-- `plan`
-- `intention`
-- `goal`
-- `next year`
-- `soon`
-- `eventually`
-- `decide`
-- `change`
-- `move`
-- `start`
-- `save`
-- `travel`
-- `different`
-- `exciting`
-- `possible`
-
-### Lesson 2: It will be… — predictions and decisions
+### Lesson 4: Er gegin
 
 **Target Vocabulary:**
-- `probably`
-- `definitely`
-- `perhaps`
-- `maybe`
-- `I think`
-- `will + any verb`
-- `possible`
-- `impossible`
-- `certain`
-- `necessary`
+- `aozañ`
+- `troc'hañ`
+- `lakaat`
+- `meskañ`
+- `poazhañ`
+- `rostal`
+- `klouar`
+- `yen`
 
-### Lesson 3: What are you doing on Friday? — arrangements
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-014`
+- **Goal (Can-Do):** heuliañ ur resept
+- **Notes:**
+  - hw: "Skriv ur resept eeun."
 
-**Target Vocabulary:**
-- `appointment`
-- `diary`
-- `available`
-- `schedule`
-- `arrange`
-- `confirm`
-- `meet`
-- `book`
-- `cancel`
-- `miss`
-- `arrive`
-- `busy`
-- `free`
-
-### Lesson 4: If you work hard… — real conditions
+### Lesson 5: Boued yac'hus
 
 **Target Vocabulary:**
-- `if`
-- `unless`
-- `when`
-- `as soon as`
-- `result`
-- `condition`
-- `will + any verb`
-- `possible`
-- `necessary`
-- `important`
+- `yac'hus`
+- `sukret`
+- `druz`
+- `fresk`
+- `natur`
+- `bep`
+- `alies`
+- `nebeut`
 
-### Lesson 5: What would you do? — imagined situations
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-015`
+- **Goal (Can-Do):** komz eus boued yac'hus
+- **Notes:**
+  - hw: "Skriv pemp boaz yac'hus."
 
-**Target Vocabulary:**
-- `ideal`
-- `imagine`
-- `dream`
-- `wish`
-- `would`
-- `would + any verb`
-- `amazing`
-- `different`
+## Unit 4: Ar gêr hag ar c'henwerzh
 
-### Lesson 6: Making decisions — comparing options
+### Lesson 1: Er gêr
 
 **Target Vocabulary:**
-- `option`
-- `choice`
-- `pro`
-- `con`
-- `advantage`
-- `disadvantage`
-- `worth`
-- `choose`
-- `decide`
-- `compare`
-- `prefer`
-- `better`
-- `best`
-- `worse`
-- `worst`
-- `more/less + adj`
+- `kêr`
+- `straed`
+- `plasenn`
+- `iliz`
+- `ti-kêr`
+- `mirdi`
+- `liorzh`
+- `porzh`
 
-### Lesson 7: What should I do? — giving advice
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-016`
+- **Goal (Can-Do):** deskrivañ e gêr
+- **Notes:**
+  - hw: "Deskriv da gêr."
+
+### Lesson 2: Ar stalioù
 
 **Target Vocabulary:**
-- `advice`
-- `idea`
-- `suggestion`
-- `problem`
-- `solution`
-- `option`
-- `suggest`
-- `recommend`
-- `advise`
-- `try`
-- `think about`
-- `good`
-- `bad`
-- `useful`
-- `important`
+- `stal`
+- `baraerezh`
+- `kigerezh`
+- `apotikerezh`
+- `levraoueg`
+- `gwerzher`
+- `prener`
+- `gouloù`
 
-### Lesson 8: I need to… — obligation and necessity
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-017`
+- **Goal (Can-Do):** kavout ar stalioù
+- **Notes:**
+  - hw: "Skriv pemp stal eus da gêr."
 
-**Target Vocabulary:**
-- `urgent`
-- `deadline`
-- `required`
-- `necessary`
-- `compulsory`
-- `need to`
-- `must`
-- `have to`
-- `mustn't`
-- `important`
-
-### Lesson 9: Making requests and offers
+### Lesson 3: An hent
 
 **Target Vocabulary:**
-- `request`
-- `offer`
-- `favour`
-- `appreciate`
-- `mind`
-- `wonder`
-- `could`
-- `would`
-- `shall`
-- `polite`
-- `formal`
-- `informal`
+- `a-gleiz`
+- `a-zehou`
+- `eeun`
+- `a-dreuz`
+- `tost`
+- `pell`
+- `amañ`
+- `aze`
 
-### Lesson 10: Unit 3 Review — My future
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-018`
+- **Goal (Can-Do):** goulenn an hent
+- **Notes:**
+  - hw: "Skriv ur goulenn hent."
 
-**Target Vocabulary:**
-- `ALL Unit 3 vocabulary`
-- `ALL Unit 3 verbs`
-- `ALL Unit 3 adjectives`
-
-## Unit 4: My World
-
-### Lesson 1: Describing people — personality in depth
+### Lesson 4: An treuzdougen
 
 **Target Vocabulary:**
-- `reliable`
-- `organised`
-- `ambitious`
-- `creative`
-- `sensitive`
-- `tolerant`
-- `stubborn`
-- `generous`
-- `seem`
-- `appear`
-- `become`
-- `confident`
-- `friendly`
-- `honest`
-- `patient`
+- `karr-tan`
+- `bus`
+- `tren`
+- `marc'h-houarn`
+- `kamion`
+- `blenier`
+- `tiked`
+- `porzh-houarn`
 
-### Lesson 2: The person who… — relative clauses
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-019`
+- **Goal (Can-Do):** komz eus an treuzdougen
+- **Notes:**
+  - hw: "Skriv eus da veaj."
 
-**Target Vocabulary:**
-- `who`
-- `which`
-- `that`
-- `where`
-- `the one who`
-- `the place where`
-- `define`
-- `describe`
-- `special`
-- `useful`
-- `important`
-
-### Lesson 3: Agreeing and discussing — question tags
+### Lesson 5: Ar prizioù
 
 **Target Vocabulary:**
-- `exactly`
-- `absolutely`
-- `I agree`
-- `that's true`
-- `isn't it`
-- `don't you`
-- `agree`
-- `disagree`
-- `think`
-- `right`
-- `wrong`
+- `deg`
+- `ugent`
+- `kant`
+- `mil`
+- `hanter`
+- `kalz`
+- `nebeut`
+- `holl`
 
-### Lesson 4: Could you tell me…? — indirect questions
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-020`
+- **Goal (Can-Do):** komz eus ar prizioù
+- **Notes:**
+  - hw: "Skriv pemp priz."
 
-**Target Vocabulary:**
-- `I wonder if`
-- `do you know`
-- `I'd like to know`
-- `could you tell me`
-- `wonder`
-- `know`
-- `tell`
-- `explain`
-- `polite`
-- `formal`
+## Unit 5: An ti hag ar vuhez er gêr
 
-### Lesson 5: What do you think? — opinions and discussions
+### Lesson 1: Ar ranndioù
 
 **Target Vocabulary:**
-- `opinion`
-- `view`
-- `perspective`
-- `I think`
-- `I believe`
-- `personally`
-- `in my opinion`
-- `think`
-- `believe`
-- `feel`
-- `agree`
-- `disagree`
-- `important`
-- `interesting`
-- `different`
-- `similar`
+- `ranndi`
+- `kambr`
+- `kegin`
+- `sal`
+- `sal-gibellañ`
+- `balkon`
+- `leur`
+- `lec'h`
 
-### Lesson 6: Talking about culture — customs and norms
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-021`
+- **Goal (Can-Do):** deskrivañ ur ranndi
+- **Notes:**
+  - hw: "Deskriv da ranndi."
+
+### Lesson 2: An arrebeuri
 
 **Target Vocabulary:**
-- `custom`
-- `tradition`
-- `norm`
-- `polite`
-- `rude`
-- `different`
-- `common`
-- `respect`
-- `follow`
-- `understand`
-- `compare`
-- `normal`
-- `strange`
+- `gwele`
+- `kador`
+- `armel`
+- `taol`
+- `skabell`
+- `skouerenn`
+- `lamp`
+- `pallenn`
 
-### Lesson 7: A community event — social English
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-022`
+- **Goal (Can-Do):** komz eus an arrebeuri
+- **Notes:**
+  - hw: "Skriv pemp tra eus da gambr."
 
-**Target Vocabulary:**
-- `invitation`
-- `celebration`
-- `RSVP`
-- `event`
-- `arrange`
-- `accept`
-- `decline`
-- `invite`
-- `celebrate`
-- `meet`
-- `join`
-- `free`
-- `busy`
-- `available`
-- `sorry`
-
-### Lesson 8: On the phone — telephone English
+### Lesson 3: Ar feurm
 
 **Target Vocabulary:**
-- `hold on`
-- `put through`
-- `leave a message`
-- `call back`
-- `available`
-- `speaking`
-- `call`
-- `phone`
-- `hold`
-- `leave`
-- `busy`
-- `urgent`
+- `feurm`
+- `perc'henn`
+- `feurmer`
+- `kontrad`
+- `priz`
+- `miz`
+- `bloaz`
+- `dle`
 
-### Lesson 9: Writing an email — formal and informal
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-023`
+- **Goal (Can-Do):** komz eus ar feurm
+- **Notes:**
+  - hw: "Skriv ur goulenn feurm."
 
-**Target Vocabulary:**
-- `subject`
-- `salutation`
-- `closing`
-- `attached`
-- `regarding`
-- `sincerely`
-- `kind regards`
-- `write`
-- `reply`
-- `attach`
-- `send`
-- `thank`
-- `formal`
-- `informal`
-- `polite`
-
-### Lesson 10: Unit 4 Review — Relationships and communication
+### Lesson 4: Ar c'harter
 
 **Target Vocabulary:**
-- `ALL Unit 4 vocabulary`
-- `ALL Unit 4 verbs`
-- `ALL Unit 4 adjectives`
+- `karter`
+- `amezeg`
+- `sioul`
+- `trouzus`
+- `skol`
+- `park`
+- `ospital`
+- `marc'had`
 
-## Unit 5: Mastery & Extension
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-024`
+- **Goal (Can-Do):** deskrivañ ar c'harter
+- **Notes:**
+  - hw: "Deskriv da garter."
 
-### Lesson 1: My opinions on the world — discussion topics
-
-**Target Vocabulary:**
-- `environment`
-- `relationship`
-- `health`
-- `opinion`
-- `reason`
-- `because`
-- `discuss`
-- `debate`
-- `argue`
-- `agree`
-- `disagree`
-- `think`
-- `important`
-- `interesting`
-- `difficult`
-- `necessary`
-
-### Lesson 2: Real conversations — fluency practice
+### Lesson 5: Kinklañ an ti
 
 **Target Vocabulary:**
-- `well`
-- `actually`
-- `you know`
-- `I mean`
-- `kind of`
-- `sort of`
-- `by the way`
-- `ALL A1 verbs in natural speech`
-- `ALL A1 adjectives in natural speech`
+- `liv`
+- `lien`
+- `sklasenn`
+- `skeudenn`
+- `plant`
+- `boked`
+- `kaeraat`
+- `naetaat`
 
-### Lesson 3: Building vocabulary — word families and collocations
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-025`
+- **Goal (Can-Do):** komz eus kinklañ an ti
+- **Notes:**
+  - hw: "Skriv eus kinklañ da gambr."
 
-**Target Vocabulary:**
-- `do homework / exercise / research`
-- `make a decision / progress / a mistake`
-- `have a meeting / lunch / time`
-- `take notes / a break / care`
-- `do`
-- `make`
-- `have`
-- `take`
+## Unit 6: Al labour
 
-### Lesson 4: Pronunciation — stress and intonation
+### Lesson 1: Ar vicherioù
 
 **Target Vocabulary:**
-- `stress pattern`
-- `intonation`
-- `syllable`
-- `emphasis`
-- `ALL — focus on correct stress`
+- `labour`
+- `labourer`
+- `kelenner`
+- `medisin`
+- `kazetenner`
+- `keginer`
+- `ijinour`
+- `servijer`
 
-### Lesson 5: Reading strategies — understanding more
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-026`
+- **Goal (Can-Do):** komz eus ar vicherioù
+- **Notes:**
+  - hw: "Skriv pemp vicher."
 
-**Target Vocabulary:**
-- `skim`
-- `scan`
-- `infer`
-- `predict`
-- `context clue`
-- `main idea`
-- `detail`
-- `read`
-- `understand`
-- `summarise`
-- `main`
-- `key`
-- `important`
-- `unclear`
-
-### Lesson 6: Writing paragraphs — structure and cohesion
+### Lesson 2: Er burev
 
 **Target Vocabulary:**
-- `firstly`
-- `also`
-- `however`
-- `for example`
-- `in conclusion`
-- `therefore`
-- `furthermore`
-- `write`
-- `structure`
-- `link`
-- `connect`
-- `clear`
-- `structured`
-- `logical`
+- `burev`
+- `urzhiataer`
+- `paperenn`
+- `emvod`
+- `rener`
+- `kenseurt`
+- `poellad`
+- `eur`
 
-### Lesson 7: A2 preview — What's coming next?
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-027`
+- **Goal (Can-Do):** deskrivañ al labour burev
+- **Notes:**
+  - hw: "Deskriv da labour."
 
-**Target Vocabulary:**
-- `A2 preview vocabulary: conditionals, reported speech, comparisons`
-- `ALL — seen in A2 context`
-
-### Lesson 8: Revision day — grammar
+### Lesson 3: Ar gemennadennoù
 
 **Target Vocabulary:**
-- `ALL A1 vocabulary — student choice`
-- `ALL`
+- `chomlec'h`
+- `pellgomz`
+- `postel`
+- `kasadenn`
+- `kazetenn`
+- `lizher`
+- `sinadur`
+- `kemenn`
 
-### Lesson 9: Oral assessment preparation
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-028`
+- **Goal (Can-Do):** skrivañ ur gemennadenn
+- **Notes:**
+  - hw: "Skriv ur postel berr."
+
+### Lesson 4: Klask labour
 
 **Target Vocabulary:**
-- `ALL A1 topics`
-- `ALL`
+- `klask`
+- `kinnig`
+- `buhezskrid`
+- `lizher-kaozeal`
+- `atersadenn`
+- `embregerezh`
+- `post`
+- `respont`
 
-### Lesson 10: Final assessment and reflection
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-029`
+- **Goal (Can-Do):** klask labour
+- **Notes:**
+  - hw: "Skriv ur buhezskrid berr."
+
+### Lesson 5: An arc'hant
 
 **Target Vocabulary:**
-- `ALL A1 vocabulary`
-- `ALL`
+- `arc'hant`
+- `gopr`
+- `bank`
+- `kartenn`
+- `moneiz`
+- `paeañ`
+- `gounit`
+- `mirout`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-030`
+- **Goal (Can-Do):** komz eus an arc'hant
+- **Notes:**
+  - hw: "Skriv pemp frazenn eus an arc'hant."
+
+## Unit 7: An amzer vak
+
+### Lesson 1: Ar sportoù
+
+**Target Vocabulary:**
+- `sport`
+- `mel-droad`
+- `basket`
+- `neuial`
+- `redek`
+- `marc'hegañ`
+- `c'hoari`
+- `skipailh`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-031`
+- **Goal (Can-Do):** komz eus ar sportoù
+- **Notes:**
+  - hw: "Skriv eus ar sport a blij dit."
+
+### Lesson 2: Ar sonerezh
+
+**Target Vocabulary:**
+- `sonerezh`
+- `kan`
+- `kaner`
+- `laz-kanañ`
+- `gitar`
+- `taboulinoù`
+- `selaou`
+- `dañsal`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-032`
+- **Goal (Can-Do):** komz eus ar sonerezh
+- **Notes:**
+  - hw: "Skriv eus da sonerezh."
+
+### Lesson 3: Ar sinema hag al levrioù
+
+**Target Vocabulary:**
+- `sinema`
+- `film`
+- `levr`
+- `romant`
+- `istor`
+- `tudenn`
+- `plijus`
+- `hir`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-033`
+- **Goal (Can-Do):** komz eus filmoù ha levrioù
+- **Notes:**
+  - hw: "Skriv eus ur film."
+
+### Lesson 4: An dudi
+
+**Target Vocabulary:**
+- `dudi`
+- `livañ`
+- `skeudenniñ`
+- `liorzhañ`
+- `keginañ`
+- `bageal`
+- `bale`
+- `tresañ`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-034`
+- **Goal (Can-Do):** komz eus e zudi
+- **Notes:**
+  - hw: "Skriv eus da zudi."
+
+### Lesson 5: Ar veaj vihan
+
+**Target Vocabulary:**
+- `beaj`
+- `menez`
+- `mor`
+- `traezhenn`
+- `kamp`
+- `karr-tan`
+- `tren`
+- `dale`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-035`
+- **Goal (Can-Do):** aozañ ur veaj vihan
+- **Notes:**
+  - hw: "Skriv ur veaj vihan."
+
+## Unit 8: Ar yec'hed
+
+### Lesson 1: Ar c'horf
+
+**Target Vocabulary:**
+- `penn`
+- `lagad`
+- `dorn`
+- `troad`
+- `kalon`
+- `kof`
+- `kein`
+- `blev`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-036`
+- **Goal (Can-Do):** deskrivañ ar c'horf
+- **Notes:**
+  - hw: "Skriv pemp lodenn eus ar c'horf."
+
+### Lesson 2: Ar c'hleñvedoù
+
+**Target Vocabulary:**
+- `kleñved`
+- `poan`
+- `sifern`
+- `terzhienn`
+- `paz`
+- `gloaz`
+- `skuizh`
+- `yac'h`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-037`
+- **Goal (Can-Do):** komz eus ar c'hleñvedoù
+- **Notes:**
+  - hw: "Skriv eus ur c'hleñved."
+
+### Lesson 3: Ar medisin
+
+**Target Vocabulary:**
+- `medisin`
+- `apotikerezh`
+- `louzoù`
+- `goulenn`
+- `ospital`
+- `sikour`
+- `buan`
+- `gortoz`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-038`
+- **Goal (Can-Do):** mont d'ar medisin
+- **Notes:**
+  - hw: "Skriv ur goulenn d'ar medisin."
+
+### Lesson 4: Ar vuhez yac'hus
+
+**Target Vocabulary:**
+- `kousket`
+- `redek`
+- `debriñ`
+- `evañ`
+- `mousc'hoarzhin`
+- `diskuizhañ`
+- `boas`
+- `yec'hed`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-039`
+- **Goal (Can-Do):** komz eus boazioù yac'hus
+- **Notes:**
+  - hw: "Skriv pemp boaz yac'hus."
+
+### Lesson 5: Un urzhiadur
+
+**Target Vocabulary:**
+- `urzhiadur`
+- `eur`
+- `devezh`
+- `sizhun`
+- `miz`
+- `bloaz`
+- `buan`
+- `diwezhat`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-040`
+- **Goal (Can-Do):** aozañ un urzhiadur
+- **Notes:**
+  - hw: "Skriv un urzhiadur."
+
+## Unit 9: Beajiñ
+
+### Lesson 1: En aerborzh
+
+**Target Vocabulary:**
+- `aerborzh`
+- `nijadenn`
+- `pas`
+- `sac'h`
+- `tiked`
+- `karr-nij`
+- `degemer`
+- `loc'hañ`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-041`
+- **Goal (Can-Do):** komz eus an nijadenn
+- **Notes:**
+  - hw: "Skriv ur veaj dre garr-nij."
+
+### Lesson 2: En ti-ostiz
+
+**Target Vocabulary:**
+- `ti-ostiz`
+- `kambr`
+- `alc'hwez`
+- `gwele`
+- `nozvezh`
+- `priz`
+- `deiz`
+- `beure`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-042`
+- **Goal (Can-Do):** lojañ en ti-ostiz
+- **Notes:**
+  - hw: "Skriv ur goulenn lojañ."
+
+### Lesson 3: En estrenvro
+
+**Target Vocabulary:**
+- `Bro-C'hall`
+- `Bro-Saoz`
+- `Spagn`
+- `Alamagn`
+- `Breizh`
+- `estrenvro`
+- `yezh`
+- `paperioù`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-043`
+- **Goal (Can-Do):** komz eus ar broioù
+- **Notes:**
+  - hw: "Skriv pemp bro."
+
+### Lesson 4: En tren
+
+**Target Vocabulary:**
+- `porzh-houarn`
+- `tren`
+- `pladenn`
+- `tiked`
+- `lec'h`
+- `dale`
+- `degouezhout`
+- `loc'hañ`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-044`
+- **Goal (Can-Do):** komz eus ar veaj en tren
+- **Notes:**
+  - hw: "Skriv eus ur veaj en tren."
+
+### Lesson 5: Ar gweledvaoù
+
+**Target Vocabulary:**
+- `gweledva`
+- `menez`
+- `mor`
+- `traezhenn`
+- `koad`
+- `lenn`
+- `kaer`
+- `iskis`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-045`
+- **Goal (Can-Do):** deskrivañ ar gweledvaoù
+- **Notes:**
+  - hw: "Deskriv ur gweledva."
+
+## Unit 10: An amzer dremenet
+
+### Lesson 1: Dec'h
+
+**Target Vocabulary:**
+- `dec'h`
+- `gwechall`
+- `bloaz`
+- `kozh`
+- `yaouank`
+- `koun`
+- `soñj`
+- `amzer`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-046`
+- **Goal (Can-Do):** komz eus an amzer dremenet
+- **Notes:**
+  - hw: "Skriv eus dec'h."
+
+### Lesson 2: Ar vugaleaj
+
+**Target Vocabulary:**
+- `bugaleaj`
+- `c'hoari`
+- `skol`
+- `kentañ`
+- `mignon`
+- `ti`
+- `liorzh`
+- `koun`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-047`
+- **Goal (Can-Do):** komz eus ar vugaleaj
+- **Notes:**
+  - hw: "Skriv eus da vugaleaj."
+
+### Lesson 3: Ar veaj diwezhañ
+
+**Target Vocabulary:**
+- `beaj`
+- `diwezhañ`
+- `bloaz`
+- `mor`
+- `menez`
+- `luc'hskeudenn`
+- `plijadur`
+- `koun`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-048`
+- **Goal (Can-Do):** kontañ ur veaj
+- **Notes:**
+  - hw: "Kont ur veaj."
+
+### Lesson 4: Ar gouelioù
+
+**Target Vocabulary:**
+- `gouel`
+- `Nedeleg`
+- `Pask`
+- `Gouel Yann`
+- `sonerezh`
+- `dañsal`
+- `familh`
+- `plijadur`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-049`
+- **Goal (Can-Do):** komz eus ar gouelioù
+- **Notes:**
+  - hw: "Skriv eus ur gouel."
+
+### Lesson 5: Ur soñj kentañ
+
+**Target Vocabulary:**
+- `gwelet`
+- `klevet`
+- `kompren`
+- `deskiñ`
+- `kentañ`
+- `gwech`
+- `mod`
+- `istor`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-050`
+- **Goal (Can-Do):** kontañ ur soñj kentañ
+- **Notes:**
+  - hw: "Kont ur soñj."
+
+## Unit 11: An amzer da zont
+
+### Lesson 1: Warc'hoazh
+
+**Target Vocabulary:**
+- `warc'hoazh`
+- `sizhun`
+- `miz`
+- `bloaz`
+- `raktal`
+- `goude`
+- `bremaik`
+- `c'hoazh`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-051`
+- **Goal (Can-Do):** komz eus an amzer da zont
+- **Notes:**
+  - hw: "Skriv eus warc'hoazh."
+
+### Lesson 2: Ar raktresoù
+
+**Target Vocabulary:**
+- `raktres`
+- `mennozh`
+- `c'hoant`
+- `soñj`
+- `deskiñ`
+- `labourat`
+- `beajiñ`
+- `kregiñ`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-052`
+- **Goal (Can-Do):** komz eus e raktresoù
+- **Notes:**
+  - hw: "Skriv tri raktres."
+
+### Lesson 3: An amzer
+
+**Target Vocabulary:**
+- `amzer`
+- `glav`
+- `heol`
+- `avel`
+- `erc'h`
+- `koumoul`
+- `tomm`
+- `yen`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-053`
+- **Goal (Can-Do):** komz eus an amzer
+- **Notes:**
+  - hw: "Skriv eus an amzer hiziv."
+
+### Lesson 4: Ar sizhun
+
+**Target Vocabulary:**
+- `Lun`
+- `Meurzh`
+- `Merc'her`
+- `Yaou`
+- `Gwener`
+- `Sadorn`
+- `Sul`
+- `sizhun`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-054`
+- **Goal (Can-Do):** lavaret an deizioù
+- **Notes:**
+  - hw: "Skriv an deizioù."
+
+### Lesson 5: Ar mizioù
+
+**Target Vocabulary:**
+- `Genver`
+- `C'hwevrer`
+- `Meurzh`
+- `Ebrel`
+- `Mae`
+- `Mezheven`
+- `Gouere`
+- `Eost`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-055`
+- **Goal (Can-Do):** lavaret ar mizioù
+- **Notes:**
+  - hw: "Skriv an daouzek miz."
+
+## Unit 12: Ar servijoù foran
+
+### Lesson 1: An ti-kêr
+
+**Target Vocabulary:**
+- `ti-kêr`
+- `maer`
+- `servij`
+- `paper`
+- `sinadur`
+- `anv`
+- `deiz`
+- `burev`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-056`
+- **Goal (Can-Do):** ober un dro d'an ti-kêr
+- **Notes:**
+  - hw: "Skriv ur goulenn d'an ti-kêr."
+
+### Lesson 2: Ar skol
+
+**Target Vocabulary:**
+- `skol`
+- `kelenner`
+- `skoliad`
+- `levr`
+- `kentel`
+- `arnod`
+- `notenn`
+- `devezh`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-057`
+- **Goal (Can-Do):** komz eus ar skol
+- **Notes:**
+  - hw: "Skriv eus da skol."
+
+### Lesson 3: Ar post
+
+**Target Vocabulary:**
+- `post`
+- `lizher`
+- `postel`
+- `kasadenn`
+- `timbr`
+- `chomlec'h`
+- `kas`
+- `resev`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-058`
+- **Goal (Can-Do):** kas ul lizher
+- **Notes:**
+  - hw: "Skriv ul lizher berr."
+
+### Lesson 4: Ar bank
+
+**Target Vocabulary:**
+- `bank`
+- `kartenn`
+- `kont`
+- `arc'hant`
+- `paeañ`
+- `tennañ`
+- `lakaat`
+- `gopr`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-059`
+- **Goal (Can-Do):** ober gant ar bank
+- **Notes:**
+  - hw: "Skriv ur goulenn d'ar bank."
+
+### Lesson 5: Ar reolennoù
+
+**Target Vocabulary:**
+- `rankout`
+- `gellout`
+- `ret`
+- `difennet`
+- `aotreet`
+- `goulenn`
+- `sentiñ`
+- `reolenn`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-060`
+- **Goal (Can-Do):** kompren ar reolennoù
+- **Notes:**
+  - hw: "Skriv pemp reolenn."
+
+## Unit 13: Adkemer ha prientiñ an arnod
+
+### Lesson 1: Adkemer: yezhadur
+
+**Target Vocabulary:**
+- `ger-mell`
+- `anv-kadarn`
+- `anv-gwan`
+- `verb`
+- `amzer-vremañ`
+- `amzer-dremenet`
+- `goulenn`
+- `respont`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-061`
+- **Goal (Can-Do):** adkemer ar yezhadur A1
+- **Notes:**
+  - hw: "Gra dek poellad yezhadur."
+
+### Lesson 2: Adkemer: gerioù
+
+**Target Vocabulary:**
+- `familh`
+- `boued`
+- `ti`
+- `labour`
+- `yec'hed`
+- `beaj`
+- `amzer`
+- `kêr`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-062`
+- **Goal (Can-Do):** adkemer ar gerioù A1
+- **Notes:**
+  - hw: "Skriv dek ger gant o ger-mell."
+
+### Lesson 3: Lenn ha selaou
+
+**Target Vocabulary:**
+- `testenn`
+- `poellad`
+- `respont`
+- `kompren`
+- `klotañ`
+- `titour`
+- `mennozh`
+- `amzer`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-063`
+- **Goal (Can-Do):** kompren testennoù berr
+- **Notes:**
+  - hw: "Gra ur poellad lenn."
+
+### Lesson 4: Skrivañ
+
+**Target Vocabulary:**
+- `lizher`
+- `postel`
+- `kinnig`
+- `saluderezh`
+- `kenavo`
+- `frammañ`
+- `displegañ`
+- `ger`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-064`
+- **Goal (Can-Do):** skrivañ testennoù berr
+- **Notes:**
+  - hw: "Skriv ur postel berr."
+
+### Lesson 5: Komz
+
+**Target Vocabulary:**
+- `kaozeal`
+- `kinnig`
+- `goulenn`
+- `respont`
+- `displegañ`
+- `mennozh`
+- `mouezh`
+- `youl`
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `BR-A1-065`
+- **Goal (Can-Do):** komz en arnod
+- **Notes:**
+  - hw: "Pleustr ur ginnig dre gomz."

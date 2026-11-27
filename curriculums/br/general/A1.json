@@ -1,4 +1,1905 @@
 {
-  "source": "https://cosylanguages.github.io/COSYplatform/curriculums/br/general/A1.json",
-  "note": "canonical data lives in COSYplatform"
+  "language": "br",
+  "course_type": "general",
+  "level": "A1",
+  "units": [
+    {
+      "unit": 1,
+      "title": "Saluderezh ha kinnig",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Demat! Saluderezh",
+          "grammar": "Ar ger-mell (an, ar, al)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "demat",
+            "kenavo",
+            "trugarez",
+            "mar plij",
+            "ya",
+            "nann",
+            "mat",
+            "noz vat"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-001\"\ncando: \"saludiñ ha kinnig an den\"\nhw: \"Skriv pemp saluderezh.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Piv out? Kinnig an den",
+          "grammar": "Ar verb bezañ en amzer-vremañ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "piv",
+            "petra",
+            "anv",
+            "bezañ",
+            "out",
+            "eus",
+            "Breizh",
+            "plijadur"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-002\"\ncando: \"goulenn an anv hag an orin\"\nhw: \"Kinnig da unan e-unan e pemp frazenn.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar sifroù hag an oad",
+          "grammar": "An niveroù eus 0 da 20",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "unan",
+            "daou",
+            "tri",
+            "pevar",
+            "pemp",
+            "c'hwec'h",
+            "seizh",
+            "eizh"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-003\"\ncando: \"lavaret an niveroù hag an oad\"\nhw: \"Skriv an niveroù eus 1 da 20.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ma labour",
+          "grammar": "Ar ger-mell amstrizh (un, ur, ul)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "kelenner",
+            "medisin",
+            "labourer",
+            "studier",
+            "gwerzher",
+            "keginer",
+            "blenier",
+            "labour"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-004\"\ncando: \"lavaret e vicher\"\nhw: \"Skriv da vicher ha hini da vignoned.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "An devezh",
+          "grammar": "An amzer-vremañ eus ober",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "hiziv",
+            "warc'hoazh",
+            "dec'h",
+            "beure",
+            "endervezh",
+            "abardaez",
+            "noz",
+            "bremañ"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-005\"\ncando: \"komz eus an devezh\"\nhw: \"Deskriv da zevezh.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "title": "An tiegezh",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Ar familh",
+          "grammar": "An anv-gwan perc'hennañ (ma, da, e, he)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "mamm",
+            "tad",
+            "breur",
+            "c'hoar",
+            "mab",
+            "merc'h",
+            "familh",
+            "kerent"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-006\"\ncando: \"kinnig e familh\"\nhw: \"Skriv eus da familh.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar vugale",
+          "grammar": "Liester an anvioù-kadarn (-où, -ed)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "bugel",
+            "bugale",
+            "paotr",
+            "plac'h",
+            "mignon",
+            "kamarad",
+            "kozh",
+            "yaouank"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-007\"\ncando: \"komz eus ar vugale\"\nhw: \"Skriv eus da vugale pe da vignoned.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "An ti",
+          "grammar": "An araogennoù a lec'h (e, war, dindan, e-barzh)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "ti",
+            "sal",
+            "kegin",
+            "kambr",
+            "sal-gibellañ",
+            "prenestr",
+            "dor",
+            "taol"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-008\"\ncando: \"deskrivañ an ti\"\nhw: \"Deskriv da di.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ar vuhez pemdez",
+          "grammar": "An amzer-vremañ eus bezañ (emañ, eo)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "sevel",
+            "debriñ",
+            "mont",
+            "dont",
+            "labourat",
+            "kousket",
+            "lenn",
+            "skrivañ"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-009\"\ncando: \"deskrivañ e zevezh\"\nhw: \"Skriv pemp frazenn eus da zevezh.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ar vignoned",
+          "grammar": "An anv-gwan hag e glotadur",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "mat",
+            "fall",
+            "bras",
+            "bihan",
+            "laouen",
+            "trist",
+            "brav",
+            "dedennus"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-010\"\ncando: \"deskrivañ e vignoned\"\nhw: \"Deskriv da vignoned.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "title": "Boued ha died",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Ar predoù",
+          "grammar": "An amzer-vremañ eus debriñ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "bara",
+            "amann",
+            "kig",
+            "pesked",
+            "legumaj",
+            "frouezh",
+            "riz",
+            "soubenn"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-011\"\ncando: \"komz eus ar predoù\"\nhw: \"Skriv eus da bred.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Er preti",
+          "grammar": "Goulenn gant c'hoant",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "kafe",
+            "te",
+            "laezh",
+            "dour",
+            "chug",
+            "gwin",
+            "gwerenn",
+            "tas"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-012\"\ncando: \"goulenn traoù er preti\"\nhw: \"Skriv ur goulenn er preti.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar marc'had",
+          "grammar": "Ar prizioù hag an niveroù",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "marc'had",
+            "priz",
+            "euro",
+            "ker",
+            "marc'had-mat",
+            "prenañ",
+            "gwerzhañ",
+            "sac'had"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-013\"\ncando: \"prenañ traoù er marc'had\"\nhw: \"Skriv un dial etre daou zen.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Er gegin",
+          "grammar": "An anv-gwan-verb",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "aozañ",
+            "troc'hañ",
+            "lakaat",
+            "meskañ",
+            "poazhañ",
+            "rostal",
+            "klouar",
+            "yen"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-014\"\ncando: \"heuliañ ur resept\"\nhw: \"Skriv ur resept eeun.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Boued yac'hus",
+          "grammar": "An adverbioù (alies, bep, nebeut)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "yac'hus",
+            "sukret",
+            "druz",
+            "fresk",
+            "natur",
+            "bep",
+            "alies",
+            "nebeut"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-015\"\ncando: \"komz eus boued yac'hus\"\nhw: \"Skriv pemp boaz yac'hus.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "title": "Ar gêr hag ar c'henwerzh",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Er gêr",
+          "grammar": "Kemmadurioù goude ar ger-mell",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "kêr",
+            "straed",
+            "plasenn",
+            "iliz",
+            "ti-kêr",
+            "mirdi",
+            "liorzh",
+            "porzh"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-016\"\ncando: \"deskrivañ e gêr\"\nhw: \"Deskriv da gêr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar stalioù",
+          "grammar": "An araogenn e (el, er, en)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "stal",
+            "baraerezh",
+            "kigerezh",
+            "apotikerezh",
+            "levraoueg",
+            "gwerzher",
+            "prener",
+            "gouloù"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-017\"\ncando: \"kavout ar stalioù\"\nhw: \"Skriv pemp stal eus da gêr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "An hent",
+          "grammar": "Ar renerioù lec'h (a-gleiz, a-zehou)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "a-gleiz",
+            "a-zehou",
+            "eeun",
+            "a-dreuz",
+            "tost",
+            "pell",
+            "amañ",
+            "aze"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-018\"\ncando: \"goulenn an hent\"\nhw: \"Skriv ur goulenn hent.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "An treuzdougen",
+          "grammar": "An amzer-vremañ eus mont",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "karr-tan",
+            "bus",
+            "tren",
+            "marc'h-houarn",
+            "kamion",
+            "blenier",
+            "tiked",
+            "porzh-houarn"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-019\"\ncando: \"komz eus an treuzdougen\"\nhw: \"Skriv eus da veaj.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ar prizioù",
+          "grammar": "An niveroù bras",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "deg",
+            "ugent",
+            "kant",
+            "mil",
+            "hanter",
+            "kalz",
+            "nebeut",
+            "holl"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-020\"\ncando: \"komz eus ar prizioù\"\nhw: \"Skriv pemp priz.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "title": "An ti hag ar vuhez er gêr",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Ar ranndioù",
+          "grammar": "An araogennoù e-barzh hag e-maez",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "ranndi",
+            "kambr",
+            "kegin",
+            "sal",
+            "sal-gibellañ",
+            "balkon",
+            "leur",
+            "lec'h"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-021\"\ncando: \"deskrivañ ur ranndi\"\nhw: \"Deskriv da ranndi.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "An arrebeuri",
+          "grammar": "Liester an anvioù-gwan",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "gwele",
+            "kador",
+            "armel",
+            "taol",
+            "skabell",
+            "skouerenn",
+            "lamp",
+            "pallenn"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-022\"\ncando: \"komz eus an arrebeuri\"\nhw: \"Skriv pemp tra eus da gambr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar feurm",
+          "grammar": "An amzer-vremañ eus kaout",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "feurm",
+            "perc'henn",
+            "feurmer",
+            "kontrad",
+            "priz",
+            "miz",
+            "bloaz",
+            "dle"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-023\"\ncando: \"komz eus ar feurm\"\nhw: \"Skriv ur goulenn feurm.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ar c'harter",
+          "grammar": "Ar ger-stur pe (which)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "karter",
+            "amezeg",
+            "sioul",
+            "trouzus",
+            "skol",
+            "park",
+            "ospital",
+            "marc'had"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-024\"\ncando: \"deskrivañ ar c'harter\"\nhw: \"Deskriv da garter.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Kinklañ an ti",
+          "grammar": "An amzer-vremañ eus lakaat",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "liv",
+            "lien",
+            "sklasenn",
+            "skeudenn",
+            "plant",
+            "boked",
+            "kaeraat",
+            "naetaat"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-025\"\ncando: \"komz eus kinklañ an ti\"\nhw: \"Skriv eus kinklañ da gambr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "title": "Al labour",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Ar vicherioù",
+          "grammar": "An amzer-vremañ eus labourat",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "labour",
+            "labourer",
+            "kelenner",
+            "medisin",
+            "kazetenner",
+            "keginer",
+            "ijinour",
+            "servijer"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-026\"\ncando: \"komz eus ar vicherioù\"\nhw: \"Skriv pemp vicher.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Er burev",
+          "grammar": "An amzer-vremañ eus ober",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "burev",
+            "urzhiataer",
+            "paperenn",
+            "emvod",
+            "rener",
+            "kenseurt",
+            "poellad",
+            "eur"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-027\"\ncando: \"deskrivañ al labour burev\"\nhw: \"Deskriv da labour.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar gemennadennoù",
+          "grammar": "An amzer-vremañ eus skrivañ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "chomlec'h",
+            "pellgomz",
+            "postel",
+            "kasadenn",
+            "kazetenn",
+            "lizher",
+            "sinadur",
+            "kemenn"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-028\"\ncando: \"skrivañ ur gemennadenn\"\nhw: \"Skriv ur postel berr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Klask labour",
+          "grammar": "An amzer-vremañ eus klask",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "klask",
+            "kinnig",
+            "buhezskrid",
+            "lizher-kaozeal",
+            "atersadenn",
+            "embregerezh",
+            "post",
+            "respont"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-029\"\ncando: \"klask labour\"\nhw: \"Skriv ur buhezskrid berr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "An arc'hant",
+          "grammar": "An amzer-vremañ eus paeañ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "arc'hant",
+            "gopr",
+            "bank",
+            "kartenn",
+            "moneiz",
+            "paeañ",
+            "gounit",
+            "mirout"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-030\"\ncando: \"komz eus an arc'hant\"\nhw: \"Skriv pemp frazenn eus an arc'hant.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "title": "An amzer vak",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Ar sportoù",
+          "grammar": "An amzer-vremañ eus c'hoari",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "sport",
+            "mel-droad",
+            "basket",
+            "neuial",
+            "redek",
+            "marc'hegañ",
+            "c'hoari",
+            "skipailh"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-031\"\ncando: \"komz eus ar sportoù\"\nhw: \"Skriv eus ar sport a blij dit.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar sonerezh",
+          "grammar": "An amzer-vremañ eus selaou",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "sonerezh",
+            "kan",
+            "kaner",
+            "laz-kanañ",
+            "gitar",
+            "taboulinoù",
+            "selaou",
+            "dañsal"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-032\"\ncando: \"komz eus ar sonerezh\"\nhw: \"Skriv eus da sonerezh.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar sinema hag al levrioù",
+          "grammar": "An anv-gwan plijus",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "sinema",
+            "film",
+            "levr",
+            "romant",
+            "istor",
+            "tudenn",
+            "plijus",
+            "hir"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-033\"\ncando: \"komz eus filmoù ha levrioù\"\nhw: \"Skriv eus ur film.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "An dudi",
+          "grammar": "An amzer-vremañ eus kavout",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "dudi",
+            "livañ",
+            "skeudenniñ",
+            "liorzhañ",
+            "keginañ",
+            "bageal",
+            "bale",
+            "tresañ"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-034\"\ncando: \"komz eus e zudi\"\nhw: \"Skriv eus da zudi.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ar veaj vihan",
+          "grammar": "An amzer-vremañ eus mont",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "beaj",
+            "menez",
+            "mor",
+            "traezhenn",
+            "kamp",
+            "karr-tan",
+            "tren",
+            "dale"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-035\"\ncando: \"aozañ ur veaj vihan\"\nhw: \"Skriv ur veaj vihan.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "title": "Ar yec'hed",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Ar c'horf",
+          "grammar": "An anv-gwan perc'hennañ (e, he, o)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "penn",
+            "lagad",
+            "dorn",
+            "troad",
+            "kalon",
+            "kof",
+            "kein",
+            "blev"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-036\"\ncando: \"deskrivañ ar c'horf\"\nhw: \"Skriv pemp lodenn eus ar c'horf.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar c'hleñvedoù",
+          "grammar": "An amzer-vremañ eus kaout poan",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "kleñved",
+            "poan",
+            "sifern",
+            "terzhienn",
+            "paz",
+            "gloaz",
+            "skuizh",
+            "yac'h"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-037\"\ncando: \"komz eus ar c'hleñvedoù\"\nhw: \"Skriv eus ur c'hleñved.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar medisin",
+          "grammar": "An amzer-vremañ eus rankout",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "medisin",
+            "apotikerezh",
+            "louzoù",
+            "goulenn",
+            "ospital",
+            "sikour",
+            "buan",
+            "gortoz"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-038\"\ncando: \"mont d'ar medisin\"\nhw: \"Skriv ur goulenn d'ar medisin.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ar vuhez yac'hus",
+          "grammar": "An adverbioù alies ha bep",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "kousket",
+            "redek",
+            "debriñ",
+            "evañ",
+            "mousc'hoarzhin",
+            "diskuizhañ",
+            "boas",
+            "yec'hed"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-039\"\ncando: \"komz eus boazioù yac'hus\"\nhw: \"Skriv pemp boaz yac'hus.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Un urzhiadur",
+          "grammar": "An amzer-vremañ eus dont",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "urzhiadur",
+            "eur",
+            "devezh",
+            "sizhun",
+            "miz",
+            "bloaz",
+            "buan",
+            "diwezhat"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-040\"\ncando: \"aozañ un urzhiadur\"\nhw: \"Skriv un urzhiadur.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "title": "Beajiñ",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "En aerborzh",
+          "grammar": "An araogenn war-du",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "aerborzh",
+            "nijadenn",
+            "pas",
+            "sac'h",
+            "tiked",
+            "karr-nij",
+            "degemer",
+            "loc'hañ"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-041\"\ncando: \"komz eus an nijadenn\"\nhw: \"Skriv ur veaj dre garr-nij.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "En ti-ostiz",
+          "grammar": "An amzer-vremañ eus lojañ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "ti-ostiz",
+            "kambr",
+            "alc'hwez",
+            "gwele",
+            "nozvezh",
+            "priz",
+            "deiz",
+            "beure"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-042\"\ncando: \"lojañ en ti-ostiz\"\nhw: \"Skriv ur goulenn lojañ.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "En estrenvro",
+          "grammar": "An anvioù-bro",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "Bro-C'hall",
+            "Bro-Saoz",
+            "Spagn",
+            "Alamagn",
+            "Breizh",
+            "estrenvro",
+            "yezh",
+            "paperioù"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-043\"\ncando: \"komz eus ar broioù\"\nhw: \"Skriv pemp bro.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "En tren",
+          "grammar": "An amzer-vremañ eus tapout",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "porzh-houarn",
+            "tren",
+            "pladenn",
+            "tiked",
+            "lec'h",
+            "dale",
+            "degouezhout",
+            "loc'hañ"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-044\"\ncando: \"komz eus ar veaj en tren\"\nhw: \"Skriv eus ur veaj en tren.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ar gweledvaoù",
+          "grammar": "An anv-gwan kaer",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "gweledva",
+            "menez",
+            "mor",
+            "traezhenn",
+            "koad",
+            "lenn",
+            "kaer",
+            "iskis"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-045\"\ncando: \"deskrivañ ar gweledvaoù\"\nhw: \"Deskriv ur gweledva.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "title": "An amzer dremenet",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Dec'h",
+          "grammar": "An amzer-dremenet eus bezañ (oa, oant)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "dec'h",
+            "gwechall",
+            "bloaz",
+            "kozh",
+            "yaouank",
+            "koun",
+            "soñj",
+            "amzer"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-046\"\ncando: \"komz eus an amzer dremenet\"\nhw: \"Skriv eus dec'h.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar vugaleaj",
+          "grammar": "An amzer-dremenet eus c'hoari",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "bugaleaj",
+            "c'hoari",
+            "skol",
+            "kentañ",
+            "mignon",
+            "ti",
+            "liorzh",
+            "koun"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-047\"\ncando: \"komz eus ar vugaleaj\"\nhw: \"Skriv eus da vugaleaj.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar veaj diwezhañ",
+          "grammar": "An amzer-dremenet eus mont",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "beaj",
+            "diwezhañ",
+            "bloaz",
+            "mor",
+            "menez",
+            "luc'hskeudenn",
+            "plijadur",
+            "koun"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-048\"\ncando: \"kontañ ur veaj\"\nhw: \"Kont ur veaj.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ar gouelioù",
+          "grammar": "An amzer-dremenet eus ober",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "gouel",
+            "Nedeleg",
+            "Pask",
+            "Gouel Yann",
+            "sonerezh",
+            "dañsal",
+            "familh",
+            "plijadur"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-049\"\ncando: \"komz eus ar gouelioù\"\nhw: \"Skriv eus ur gouel.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ur soñj kentañ",
+          "grammar": "An amzer-dremenet eus gwelet",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "gwelet",
+            "klevet",
+            "kompren",
+            "deskiñ",
+            "kentañ",
+            "gwech",
+            "mod",
+            "istor"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-050\"\ncando: \"kontañ ur soñj kentañ\"\nhw: \"Kont ur soñj.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "title": "An amzer da zont",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Warc'hoazh",
+          "grammar": "An amzer-da-zont eus bezañ (vin, bezo)",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "warc'hoazh",
+            "sizhun",
+            "miz",
+            "bloaz",
+            "raktal",
+            "goude",
+            "bremaik",
+            "c'hoazh"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-051\"\ncando: \"komz eus an amzer da zont\"\nhw: \"Skriv eus warc'hoazh.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar raktresoù",
+          "grammar": "An amzer-da-zont eus ober",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "raktres",
+            "mennozh",
+            "c'hoant",
+            "soñj",
+            "deskiñ",
+            "labourat",
+            "beajiñ",
+            "kregiñ"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-052\"\ncando: \"komz eus e raktresoù\"\nhw: \"Skriv tri raktres.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "An amzer",
+          "grammar": "An amzer-da-zont eus kaout",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "amzer",
+            "glav",
+            "heol",
+            "avel",
+            "erc'h",
+            "koumoul",
+            "tomm",
+            "yen"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-053\"\ncando: \"komz eus an amzer\"\nhw: \"Skriv eus an amzer hiziv.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ar sizhun",
+          "grammar": "An deizioù eus ar sizhun",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "Lun",
+            "Meurzh",
+            "Merc'her",
+            "Yaou",
+            "Gwener",
+            "Sadorn",
+            "Sul",
+            "sizhun"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-054\"\ncando: \"lavaret an deizioù\"\nhw: \"Skriv an deizioù.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ar mizioù",
+          "grammar": "Ar mizioù eus ar bloaz",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "Genver",
+            "C'hwevrer",
+            "Meurzh",
+            "Ebrel",
+            "Mae",
+            "Mezheven",
+            "Gouere",
+            "Eost"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-055\"\ncando: \"lavaret ar mizioù\"\nhw: \"Skriv an daouzek miz.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "title": "Ar servijoù foran",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "An ti-kêr",
+          "grammar": "Ar goulennoù formel",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "ti-kêr",
+            "maer",
+            "servij",
+            "paper",
+            "sinadur",
+            "anv",
+            "deiz",
+            "burev"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-056\"\ncando: \"ober un dro d'an ti-kêr\"\nhw: \"Skriv ur goulenn d'an ti-kêr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Ar skol",
+          "grammar": "An amzer-vremañ eus deskiñ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "skol",
+            "kelenner",
+            "skoliad",
+            "levr",
+            "kentel",
+            "arnod",
+            "notenn",
+            "devezh"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-057\"\ncando: \"komz eus ar skol\"\nhw: \"Skriv eus da skol.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Ar post",
+          "grammar": "An amzer-vremañ eus kas",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "post",
+            "lizher",
+            "postel",
+            "kasadenn",
+            "timbr",
+            "chomlec'h",
+            "kas",
+            "resev"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-058\"\ncando: \"kas ul lizher\"\nhw: \"Skriv ul lizher berr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Ar bank",
+          "grammar": "An amzer-vremañ eus tennañ",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "bank",
+            "kartenn",
+            "kont",
+            "arc'hant",
+            "paeañ",
+            "tennañ",
+            "lakaat",
+            "gopr"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-059\"\ncando: \"ober gant ar bank\"\nhw: \"Skriv ur goulenn d'ar bank.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Ar reolennoù",
+          "grammar": "Ar verb rankout",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "rankout",
+            "gellout",
+            "ret",
+            "difennet",
+            "aotreet",
+            "goulenn",
+            "sentiñ",
+            "reolenn"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-060\"\ncando: \"kompren ar reolennoù\"\nhw: \"Skriv pemp reolenn.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "title": "Adkemer ha prientiñ an arnod",
+      "lessons": [
+        {
+          "lesson": 1,
+          "type": "gv",
+          "title": "Adkemer: yezhadur",
+          "grammar": "Yezhadur A1",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "ger-mell",
+            "anv-kadarn",
+            "anv-gwan",
+            "verb",
+            "amzer-vremañ",
+            "amzer-dremenet",
+            "goulenn",
+            "respont"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-061\"\ncando: \"adkemer ar yezhadur A1\"\nhw: \"Gra dek poellad yezhadur.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 2,
+          "type": "gv",
+          "title": "Adkemer: gerioù",
+          "grammar": "Geriaoueg A1",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "familh",
+            "boued",
+            "ti",
+            "labour",
+            "yec'hed",
+            "beaj",
+            "amzer",
+            "kêr"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-062\"\ncando: \"adkemer ar gerioù A1\"\nhw: \"Skriv dek ger gant o ger-mell.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 3,
+          "type": "gv",
+          "title": "Lenn ha selaou",
+          "grammar": "Poelladoù an arnod",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "testenn",
+            "poellad",
+            "respont",
+            "kompren",
+            "klotañ",
+            "titour",
+            "mennozh",
+            "amzer"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-063\"\ncando: \"kompren testennoù berr\"\nhw: \"Gra ur poellad lenn.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 4,
+          "type": "gv",
+          "title": "Skrivañ",
+          "grammar": "Testennoù berr",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "lizher",
+            "postel",
+            "kinnig",
+            "saluderezh",
+            "kenavo",
+            "frammañ",
+            "displegañ",
+            "ger"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-064\"\ncando: \"skrivañ testennoù berr\"\nhw: \"Skriv ur postel berr.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        },
+        {
+          "lesson": 5,
+          "type": "gv",
+          "title": "Komz",
+          "grammar": "Kinnig ha kaozeal",
+          "duration_minutes": 60,
+          "vocabulary": [
+            "kaozeal",
+            "kinnig",
+            "goulenn",
+            "respont",
+            "displegañ",
+            "mennozh",
+            "mouezh",
+            "youl"
+          ],
+          "practice_types": [
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "listening",
+            "reading",
+            "writing"
+          ],
+          "speaking_percent": 55,
+          "teacher_notes": "code: \"BR-A1-065\"\ncando: \"komz en arnod\"\nhw: \"Pleustr ur ginnig dre gomz.\"",
+          "recycled": "Adkemer a ra ar gerioù hag ar yezhadur eus ar c'hentelioù a-raok."
+        }
+      ]
+    }
+  ]
 }

@@ -7,7 +7,7 @@
 | lang | pages | topic pages real | topic pages locked | % locked | unit pages | track manuals | pages with visuals | wrong `lang` | English-template leaks |
 |---|---|---|---|---|---|---|---|---|---|
 | ba | 68 | 39 | 0 | 0% | 9 | 6 | 5 | 8 | 11 |
-| br | 71 | 45 | 0 | 0% | 6 | 6 | 5 | 8 | 10 |
+| br | 71 | 45 | 0 | 0% | 6 | 6 | 5 | 0 | 2 |
 | cv | 62 | 41 | 0 | 0% | 9 | 0 | 5 | 0 | 3 |
 | de | 109 | 62 | 0 | 0% | 15 | 15 | 5 | 0 | 0 |
 | el | 193 | 117 | 0 | 0% | 35 | 21 | 13 | 0 | 0 |
