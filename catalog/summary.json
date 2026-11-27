@@ -13,7 +13,7 @@
    "visual_pages": 5
   },
   "br": {
-   "english_leak_pages": 2,
+   "english_leak_pages": 0,
    "hub": 13,
    "lang_wrong": 0,
    "other_stub": 0,
@@ -49,7 +49,7 @@
    "visual_pages": 5
   },
   "el": {
-   "english_leak_pages": 1,
+   "english_leak_pages": 0,
    "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
@@ -85,7 +85,7 @@
    "visual_pages": 11
   },
   "fr": {
-   "english_leak_pages": 14,
+   "english_leak_pages": 0,
    "hub": 48,
    "lang_wrong": 0,
    "other_stub": 0,
