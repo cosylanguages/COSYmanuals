@@ -2,7 +2,7 @@
 
 > **Derived Manual Document**: Extracted automatically from COSYplatform curriculum source dataset. Do not hand-edit directly.
 
-## Unit 1: Unité 1 : Raconter ses souvenirs et événements passés
+## Unit 1: Raconter ses souvenirs et événements passés
 
 ### Lesson 1: Passé composé avec avoir et être
 
@@ -57,7 +57,7 @@
 - **Lesson Code:** `FR-A2-005`
 - **Goal (Can-Do):** Peut raconter une anecdote personnelle détaillée et exprimer des souvenirs
 
-## Unit 2: Unité 2 : Exprimer ses projets, intentions et l'avenir
+## Unit 2: Exprimer ses projets, intentions et l'avenir
 
 ### Lesson 1: Le futur simple
 
@@ -109,7 +109,7 @@
 - **Lesson Code:** `FR-A2-010`
 - **Goal (Can-Do):** Peut comprendre des bulletin météo et exprimer des prédictions environnementales
 
-## Unit 3: Unité 3 : Logement, quartier et vie quotidienne
+## Unit 3: Logement, quartier et vie quotidienne
 
 ### Lesson 1: Prépositions de lieu et aménagement de l'espace
 
@@ -161,7 +161,7 @@
 - **Lesson Code:** `FR-A2-015`
 - **Goal (Can-Do):** Peut contacter une agence immobilière, poser des questions sur une annonce et négocier
 
-## Unit 4: Unité 4 : Santé, corps humain et bien-être
+## Unit 4: Santé, corps humain et bien-être
 
 ### Lesson 1: Exprimer la douleur et les sensations physiques
 
@@ -213,7 +213,7 @@
 - **Lesson Code:** `FR-A2-020`
 - **Goal (Can-Do):** Peut exprimer son état émotionnel et discuter de techniques de relaxation
 
-## Unit 5: Unité 5 : Voyages, transports et orientation
+## Unit 5: Voyages, transports et orientation
 
 ### Lesson 1: Demander et donner son chemin
 
@@ -265,7 +265,7 @@
 - **Lesson Code:** `FR-A2-025`
 - **Goal (Can-Do):** Peut faire le compte-rendu d'un voyage et donner ses impressions sur un site touristique
 
-## Unit 6: Unité 6 : Achats, consommation et services
+## Unit 6: Achats, consommation et services
 
 ### Lesson 1: Articles partitifs et expressions de quantité
 
@@ -317,7 +317,7 @@
 - **Lesson Code:** `FR-A2-030`
 - **Goal (Can-Do):** Peut gérer des transactions financières courantes et expliquer un mode de paiement
 
-## Unit 7: Unité 7 : Travail, tâches et vie professionnelle
+## Unit 7: Travail, tâches et vie professionnelle
 
 ### Lesson 1: Obligation, interdiction et permission au travail
 
@@ -369,7 +369,7 @@
 - **Lesson Code:** `FR-A2-035`
 - **Goal (Can-Do):** Peut convenir d'un rendez-vous professionnel et ajuster un emploi du temps
 
-## Unit 8: Unité 8 : Médias, technologies et communication
+## Unit 8: Médias, technologies et communication
 
 ### Lesson 1: Discours rapporté au présent (Il dit que / demande si)
 
@@ -421,7 +421,7 @@
 - **Lesson Code:** `FR-A2-040`
 - **Goal (Can-Do):** Peut exprimer un point de vue personnel court sur un fait de société
 
-## Unit 9: Unité 9 : Culture, loisirs et sorties
+## Unit 9: Culture, loisirs et sorties
 
 ### Lesson 1: Exprimer ses goûts et préférences nuancés
 
@@ -473,7 +473,193 @@
 - **Lesson Code:** `FR-A2-045`
 - **Goal (Can-Do):** Peut planifier un événement amical et répartir les responsabilités entre participants
 
-## Unit 10: Unité 10 : Environnement, climat et bilan A2
+## Unit 10: École, études et formation
+
+### Lesson 1: Le système scolaire et les diplômes
+
+**Grammar Focus Points:**
+- Le passé récent (venir de + infinitif)
+- Le futur proche (aller + infinitif)
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-046`
+- **Goal (Can-Do):** décrire son parcours scolaire
+- **Notes:**
+  - hw: "Décris ton parcours scolaire."
+
+### Lesson 2: Parler de ses études
+
+**Grammar Focus Points:**
+- Les pronoms relatifs dont et où
+- La comparaison des quantités
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-047`
+- **Goal (Can-Do):** parler de ses études
+- **Notes:**
+  - hw: "Présente ta filière en cinq phrases."
+
+### Lesson 3: Comprendre et expliquer une consigne
+
+**Grammar Focus Points:**
+- L'impératif avec pronoms (donne-le-moi)
+- Il faut que + subjonctif
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-048`
+- **Goal (Can-Do):** comprendre et expliquer une consigne
+- **Notes:**
+  - hw: "Explique une consigne à un camarade."
+
+### Lesson 4: S'inscrire à une formation
+
+**Grammar Focus Points:**
+- La forme passive simple
+- Les prépositions devant les noms d'établissement
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-049`
+- **Goal (Can-Do):** s'inscrire à une formation
+- **Notes:**
+  - hw: "Rédige un courriel d'inscription."
+
+### Lesson 5: Étudier à l'étranger
+
+**Grammar Focus Points:**
+- Le conditionnel de politesse
+- Les indicateurs de temps (dès que, tant que)
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-050`
+- **Goal (Can-Do):** se renseigner sur un échange universitaire
+- **Notes:**
+  - hw: "Écris une demande de renseignements."
+
+## Unit 11: Relations, famille et vie sociale
+
+### Lesson 1: Décrire sa famille et ses liens
+
+**Grammar Focus Points:**
+- Les verbes pronominaux réciproques
+- Les adjectifs possessifs et démonstratifs
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-051`
+- **Goal (Can-Do):** présenter sa famille
+- **Notes:**
+  - hw: "Présente ta famille."
+
+### Lesson 2: Inviter et répondre à une invitation
+
+**Grammar Focus Points:**
+- Les formules d'invitation
+- Le conditionnel de politesse
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-052`
+- **Goal (Can-Do):** inviter et répondre à une invitation
+- **Notes:**
+  - hw: "Rédige une invitation."
+
+### Lesson 3: Gérer un désaccord
+
+**Grammar Focus Points:**
+- Le subjonctif après vouloir que et préférer que
+- Les connecteurs d'opposition
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-053`
+- **Goal (Can-Do):** gérer un désaccord
+- **Notes:**
+  - hw: "Écris un message d'excuse."
+
+### Lesson 4: Raconter une rencontre
+
+**Grammar Focus Points:**
+- Le passé composé et l'imparfait
+- Les indicateurs de succession
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-054`
+- **Goal (Can-Do):** raconter une rencontre
+- **Notes:**
+  - hw: "Raconte une rencontre."
+
+### Lesson 5: Voisinage et vie de quartier
+
+**Grammar Focus Points:**
+- Les pronoms en et y
+- Les prépositions de lieu
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-055`
+- **Goal (Can-Do):** parler de son voisinage
+- **Notes:**
+  - hw: "Décris ton voisinage."
+
+## Unit 12: Démarches, sécurité et urgences
+
+### Lesson 1: Les démarches administratives
+
+**Grammar Focus Points:**
+- Le présent de l'indicatif à valeur de consigne
+- Les pronoms compléments avec l'impératif
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-056`
+- **Goal (Can-Do):** accomplir une démarche administrative
+- **Notes:**
+  - hw: "Rédige la liste des documents nécessaires."
+
+### Lesson 2: En cas d'urgence
+
+**Grammar Focus Points:**
+- L'impératif pour donner l'alerte
+- Il faut + infinitif
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-057`
+- **Goal (Can-Do):** réagir à une urgence
+- **Notes:**
+  - hw: "Écris un message d'alerte."
+
+### Lesson 3: Sécurité et prévention
+
+**Grammar Focus Points:**
+- La forme passive simple
+- L'obligation et l'interdiction
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-058`
+- **Goal (Can-Do):** parler des règles de sécurité
+- **Notes:**
+  - hw: "Rédige trois consignes de sécurité."
+
+### Lesson 4: Signaler un problème
+
+**Grammar Focus Points:**
+- Le discours indirect au présent
+- Les connecteurs de cause
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-059`
+- **Goal (Can-Do):** signaler un problème
+- **Notes:**
+  - hw: "Rédige une réclamation."
+
+### Lesson 5: Objets perdus et documents volés
+
+**Grammar Focus Points:**
+- Le passé composé avec être
+- Les questions indirectes
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-A2-060`
+- **Goal (Can-Do):** déclarer une perte ou un vol
+- **Notes:**
+  - hw: "Rédige une déclaration de perte."
+
+## Unit 13: Environnement, climat et bilan A2
 
 ### Lesson 1: Exprimer des hypothèses simples avec Si + Imparfait
 
@@ -482,7 +668,7 @@
 - Imaginaires écologiques (Si tout le monde recyclait, la planète serait...)
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-A2-046`
+- **Lesson Code:** `FR-A2-061`
 - **Goal (Can-Do):** Peut formuler des idées et hypothèses simples sur la protection de l'environnement
 
 ### Lesson 2: Expression de la conséquence simple (donc, alors, c'est pourquoi)
@@ -492,7 +678,7 @@
 - Structure d'un court texte explicatif
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-A2-047`
+- **Lesson Code:** `FR-A2-062`
 - **Goal (Can-Do):** Peut expliquer les conséquences d'un comportement sur l'environnement
 
 ### Lesson 3: Gestes écoresponsables et développement durable
@@ -502,7 +688,7 @@
 - Structures avec 'au lieu de + infinitif'
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-A2-048`
+- **Lesson Code:** `FR-A2-063`
 - **Goal (Can-Do):** Peut décrire ses habitudes écologiques et proposer des gestes écoresponsables au quotidien
 
 ### Lesson 4: Synthèse des structures grammaticales du niveau A2
@@ -512,7 +698,7 @@
 - Autocorrection et fluidité de la phrase A2
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-A2-049`
+- **Lesson Code:** `FR-A2-064`
 - **Goal (Can-Do):** Peut réutiliser l'ensemble des règles grammaticales A2 de manière autonome dans des situations variées
 
 ### Lesson 5: Examen bilan et consolidation du niveau A2
@@ -521,5 +707,5 @@
 - Évaluation globale de la compétence A2 : compréhension et production orale/écrite intégrées
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-A2-050`
+- **Lesson Code:** `FR-A2-065`
 - **Goal (Can-Do):** Démontre une maîtrise complète du niveau A2 élémentaire en français dans des contextes personnels, sociaux et professionnels de base

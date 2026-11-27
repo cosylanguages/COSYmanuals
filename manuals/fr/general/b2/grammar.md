@@ -2,7 +2,7 @@
 
 > **Derived Manual Document**: Extracted automatically from COSYplatform curriculum source dataset. Do not hand-edit directly.
 
-## Unit 1: Unité 1 : Argumentation avancée et débat d'idées
+## Unit 1: Argumentation avancée et débat d'idées
 
 ### Lesson 1: Le subjonctif passé et les nuances de réserve
 
@@ -55,7 +55,7 @@
 - **Lesson Code:** `FR-B2-005`
 - **Goal (Can-Do):** Peut rédiger des synthèses d'information denses et adopter un style formel ou journalistique
 
-## Unit 2: Unité 2 : Géopolitique, mondialisation et institutions
+## Unit 2: Géopolitique, mondialisation et institutions
 
 ### Lesson 1: Relations internationales et traités
 
@@ -107,7 +107,7 @@
 - **Lesson Code:** `FR-B2-010`
 - **Goal (Can-Do):** Peut commenter des arrêts de justice internationale et discuter de la protection des libertés fondamentales
 
-## Unit 3: Unité 3 : Économie, marché du travail et mutations
+## Unit 3: Économie, marché du travail et mutations
 
 ### Lesson 1: Macroéconomie, marchés financiers et régulation
 
@@ -159,7 +159,7 @@
 - **Lesson Code:** `FR-B2-015`
 - **Goal (Can-Do):** Peut comprendre et délivrer un pitch d'entreprise persuasive auprès d'investisseurs potentiel
 
-## Unit 4: Unité 4 : Culture, médias et critique artistique
+## Unit 4: Culture, médias et critique artistique
 
 ### Lesson 1: Critique littéraire et analyse stylistique
 
@@ -211,7 +211,7 @@
 - **Lesson Code:** `FR-B2-020`
 - **Goal (Can-Do):** Peut évaluer la transformation des modes de consommation culturelle liée aux géants du numérique
 
-## Unit 5: Unité 5 : Sciences, éthique et biotechnologies
+## Unit 5: Sciences, éthique et biotechnologies
 
 ### Lesson 1: Bioéthique, clonage et édition génomique
 
@@ -263,7 +263,7 @@
 - **Lesson Code:** `FR-B2-025`
 - **Goal (Can-Do):** Peut évaluer la neutralité des publications scientifiques et débattre des conflits d'intérêts
 
-## Unit 6: Unité 6 : Éducation, jeunesse et mutations sociétales
+## Unit 6: Éducation, jeunesse et mutations sociétales
 
 ### Lesson 1: L'Université de demain et la mobilité internationale
 
@@ -315,7 +315,7 @@
 - **Lesson Code:** `FR-B2-030`
 - **Goal (Can-Do):** Peut sensibiliser aux problèmes de santé mentale chez les jeunes et évaluer l'efficacité des dispositifs d'aide
 
-## Unit 7: Unité 7 : Justice, système pénal et libertés publiques
+## Unit 7: Justice, système pénal et libertés publiques
 
 ### Lesson 1: Le fonctionnement de la justice et les institutions judiciaires
 
@@ -367,7 +367,7 @@
 - **Lesson Code:** `FR-B2-035`
 - **Goal (Can-Do):** Peut confronter les notions de légalité et de légitimité à travers le statut des lanceurs d'alerte
 
-## Unit 8: Unité 8 : Urbanisme, architecture et aménagement du territoire
+## Unit 8: Urbanisme, architecture et aménagement du territoire
 
 ### Lesson 1: La métropolisation et la désertification rurale
 
@@ -419,7 +419,7 @@
 - **Lesson Code:** `FR-B2-040`
 - **Goal (Can-Do):** Peut confronter les partisans de la conservation stricte aux architectes contemporains lors d'un projet de rénovation
 
-## Unit 9: Unité 9 : Langue française, linguistique et mondialisation
+## Unit 9: Langue française, linguistique et mondialisation
 
 ### Lesson 1: L'Académie française, la norme et la réforme de l'orthographe
 
@@ -471,7 +471,193 @@
 - **Lesson Code:** `FR-B2-045`
 - **Goal (Can-Do):** Peut argumenter en faveur du plurilinguisme et présenter la stratégie linguistique de l'OIF
 
-## Unit 10: Unité 10 : Synthèse B2, essai argumentatif et certification
+## Unit 10: Politique, élections et opinion publique
+
+### Lesson 1: Les institutions politiques
+
+**Grammar Focus Points:**
+- La forme passive et les tournures impersonnelles
+- Le subjonctif dans les subordonnées de but
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-046`
+- **Goal (Can-Do):** expliquer le fonctionnement des institutions
+- **Notes:**
+  - hw: "Explique un mode de scrutin."
+
+### Lesson 2: Campagnes et communication politique
+
+**Grammar Focus Points:**
+- Les connecteurs de concession
+- L'expression de la modalisation
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-047`
+- **Goal (Can-Do):** analyser une campagne électorale
+- **Notes:**
+  - hw: "Analyse un slogan politique."
+
+### Lesson 3: Opinion publique et sondages
+
+**Grammar Focus Points:**
+- Les structures d'atténuation
+- La nominalisation
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-048`
+- **Goal (Can-Do):** interpréter un sondage
+- **Notes:**
+  - hw: "Interprète un sondage."
+
+### Lesson 4: Démocratie et participation
+
+**Grammar Focus Points:**
+- Le conditionnel d'hypothèse
+- Les connecteurs de conséquence
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-049`
+- **Goal (Can-Do):** débattre de la participation démocratique
+- **Notes:**
+  - hw: "Rédige un argumentaire sur l'abstention."
+
+### Lesson 5: Politique et éthique
+
+**Grammar Focus Points:**
+- Le subjonctif passé
+- Les tournures de mise en garde
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-050`
+- **Goal (Can-Do):** débattre de l'éthique politique
+- **Notes:**
+  - hw: "Rédige une tribune courte."
+
+## Unit 11: Économie de l'attention et influence
+
+### Lesson 1: Plateformes et modèles économiques
+
+**Grammar Focus Points:**
+- La forme passive et l'agent effacé
+- Les connecteurs d'addition et de contraste
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-051`
+- **Goal (Can-Do):** analyser un modèle de plateforme
+- **Notes:**
+  - hw: "Analyse une plateforme."
+
+### Lesson 2: Influenceurs et marketing
+
+**Grammar Focus Points:**
+- Le discours rapporté et la distanciation
+- Les modalisateurs
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-052`
+- **Goal (Can-Do):** décrypter une publicité
+- **Notes:**
+  - hw: "Décrypte un contenu sponsorisé."
+
+### Lesson 3: Économie de l'attention
+
+**Grammar Focus Points:**
+- La nominalisation et le style soutenu
+- Les connecteurs de conséquence
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-053`
+- **Goal (Can-Do):** analyser l'économie de l'attention
+- **Notes:**
+  - hw: "Rédige une analyse courte."
+
+### Lesson 4: Données personnelles et vie privée
+
+**Grammar Focus Points:**
+- Les tournures impersonnelles
+- Le subjonctif après il est essentiel que
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-054`
+- **Goal (Can-Do):** argumenter sur la protection des données
+- **Notes:**
+  - hw: "Rédige un argumentaire sur les données."
+
+### Lesson 5: Information et vérification
+
+**Grammar Focus Points:**
+- Les structures de réfutation
+- Le conditionnel de rumeur
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-055`
+- **Goal (Can-Do):** vérifier une information
+- **Notes:**
+  - hw: "Vérifie une information et rédige ta conclusion."
+
+## Unit 12: Histoire, mémoire et société
+
+### Lesson 1: Mémoire collective
+
+**Grammar Focus Points:**
+- Le passé simple et ses valeurs
+- Les connecteurs temporels
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-056`
+- **Goal (Can-Do):** parler de la mémoire collective
+- **Notes:**
+  - hw: "Présente un lieu de mémoire."
+
+### Lesson 2: Commémorations et débats publics
+
+**Grammar Focus Points:**
+- Le subjonctif dans les subordonnées relatives
+- La mise en relief
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-057`
+- **Goal (Can-Do):** débattre d'une commémoration
+- **Notes:**
+  - hw: "Rédige une tribune sur un monument contesté."
+
+### Lesson 3: Archives et sources historiques
+
+**Grammar Focus Points:**
+- La forme passive et la nominalisation
+- Les connecteurs de cause
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-058`
+- **Goal (Can-Do):** analyser une source historique
+- **Notes:**
+  - hw: "Analyse une source historique."
+
+### Lesson 4: Histoire et fiction
+
+**Grammar Focus Points:**
+- Le conditionnel passé et l'irréel
+- Les connecteurs d'hypothèse
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-059`
+- **Goal (Can-Do):** comparer l'histoire et la fiction
+- **Notes:**
+  - hw: "Compare un film à sa source."
+
+### Lesson 5: Transmission et éducation
+
+**Grammar Focus Points:**
+- Le subjonctif après il importe que
+- Les tournures de conséquence
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B2-060`
+- **Goal (Can-Do):** proposer un projet de transmission
+- **Notes:**
+  - hw: "Propose un projet pédagogique."
+
+## Unit 13: Synthèse B2, essai argumentatif et certification
 
 ### Lesson 1: Méthodologie de l'essai argumentatif du DELF B2
 
@@ -480,7 +666,7 @@
 - Connecteurs de transition avancés
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B2-046`
+- **Lesson Code:** `FR-B2-061`
 - **Goal (Can-Do):** Peut rédiger un essai argumentatif fluide et problématisé de 250 mots répondant exactement aux exigences du DELF B2
 
 ### Lesson 2: Méthodologie de la compréhension écrite et orale B2
@@ -490,7 +676,7 @@
 - Techniques de prise de notes rapides
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B2-047`
+- **Lesson Code:** `FR-B2-062`
 - **Goal (Can-Do):** Peut dégager l'attitude, l'humeur et l'implicite d'un locuteur dans un document audio ou écrit complexe
 
 ### Lesson 3: Préparation à l'épreuve de production orale du DELF B2
@@ -500,7 +686,7 @@
 - Débat d'idées avec l'examinateur : défendre son point de vue et réagir
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B2-048`
+- **Lesson Code:** `FR-B2-063`
 - **Goal (Can-Do):** Peut soutenir un exposé oral structuré de 10 minutes et soutenir un débat contradictoire avec aisance
 
 ### Lesson 4: Perfectionnement grammatical et pièges de la langue B2
@@ -510,7 +696,7 @@
 - Autocorrection rapide
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B2-049`
+- **Lesson Code:** `FR-B2-064`
 - **Goal (Can-Do):** Peut repérer et corriger ses propres erreurs grammaticales pour atteindre une grande exactitude linguistique
 
 ### Lesson 5: Examen bilan et certification du niveau B2 (DELF B2)
@@ -519,5 +705,5 @@
 - Évaluation globale de toutes les compétences du niveau B2 (Indépendance et utilisateur avancé)
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B2-050`
+- **Lesson Code:** `FR-B2-065`
 - **Goal (Can-Do):** Démontre une indépendance linguistique complète (niveau B2 / DELF B2) permettant d'étudier, travailler et débattre avec aisance dans tout le monde francophone

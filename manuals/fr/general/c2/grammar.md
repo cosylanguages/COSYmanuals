@@ -2,7 +2,7 @@
 
 > **Derived Manual Document**: Extracted automatically from COSYplatform curriculum source dataset. Do not hand-edit directly.
 
-## Unit 1: Unité 1 : Poétique, critique littéraire et herméneutique
+## Unit 1: Poétique, critique littéraire et herméneutique
 
 ### Lesson 1: Rhétorique et subtilités sociolinguistiques
 
@@ -23,7 +23,7 @@
 - **Lesson Code:** `FR-C2-002`
 - **Goal (Can-Do):** Peut composer une prose littéraire très élaborée en utilisant le chiasme, le parallélisme et l'inversion stylistique
 
-## Unit 2: Unité 2 : Éloquence, art oratoire et persuasion
+## Unit 2: Éloquence, art oratoire et persuasion
 
 ### Lesson 1: Art oratoire classique, Éthos et discours politique
 
@@ -44,7 +44,7 @@
 - **Lesson Code:** `FR-C2-004`
 - **Goal (Can-Do):** Peut exécuter des changements de registre sans effort pour s'adapter à tout contexte de communication à haut enjeu
 
-## Unit 3: Unité 3 : Herméneutique philosophique et critique épistémologique
+## Unit 3: Herméneutique philosophique et critique épistémologique
 
 ### Lesson 1: Herméneutique, Ontologie et discours philosophique
 
@@ -62,7 +62,7 @@
 - **Lesson Code:** `FR-C2-006`
 - **Goal (Can-Do):** Peut véhiculer une ironie subtile, utiliser la litote et exprimer des réserves épistémiques délicates dans un commentaire érudit
 
-## Unit 4: Unité 4 : Direction stratégique et négociations de haut niveau
+## Unit 4: Direction stratégique et négociations de haut niveau
 
 ### Lesson 1: Stratégie d'entreprise, gouvernance et leadership
 
@@ -80,7 +80,7 @@
 - **Lesson Code:** `FR-C2-008`
 - **Goal (Can-Do):** Peut débloquer des situations de crise, médiatiser des conflits exécutifs et rédiger des conventions d'entreprise de haut niveau
 
-## Unit 5: Unité 5 : Doctrine juridique, jurisprudence constitutionnelle et gouvernance
+## Unit 5: Doctrine juridique, jurisprudence constitutionnelle et gouvernance
 
 ### Lesson 1: Avis juridiques, cours d'appel et interprétation de la loi
 
@@ -98,7 +98,7 @@
 - **Lesson Code:** `FR-C2-010`
 - **Goal (Can-Do):** Peut analyser et rédiger une syntaxe juridique formelle, des clauses statutaires et des arguments de cassation
 
-## Unit 6: Unité 6 : Érudition culturelle, allusions et réseaux métaphoriques
+## Unit 6: Érudition culturelle, allusions et réseaux métaphoriques
 
 ### Lesson 1: Allusions littéraires, emprunts classiques et métaphores complexes
 
@@ -116,7 +116,7 @@
 - **Lesson Code:** `FR-C2-012`
 - **Goal (Can-Do):** Peut transformer des arguments sémantiques complexes sans perte de sens à travers six registres stylistiques distincts
 
-## Unit 7: Unité 7 : Précision et nuance (Micro-distinctions sémantiques et posture)
+## Unit 7: Précision et nuance (Micro-distinctions sémantiques et posture)
 
 ### Lesson 1: Précision lexicale, connotation et micro-distinctions sémantiques
 
@@ -137,7 +137,7 @@
 - **Lesson Code:** `FR-C2-014`
 - **Goal (Can-Do):** Peut affiner la portée syntaxique au moyen d'adverbes de précision et du placement des adjectifs sans introduire d'ambiguïté
 
-## Unit 8: Unité 8 : Produits dérivés macroéconomiques, théorie des jeux et haute finance
+## Unit 8: Produits dérivés macroéconomiques, théorie des jeux et haute finance
 
 ### Lesson 1: Finance quantitative, produits dérivés et théorie des jeux
 
@@ -155,7 +155,7 @@
 - **Lesson Code:** `FR-C2-016`
 - **Goal (Can-Do):** Peut modéliser des contingences économiques complexes et rédiger des rapports économétriques avec inversions et incises
 
-## Unit 9: Unité 9 : Cybernétique avancée, informatique quantique et gouvernance numérique
+## Unit 9: Cybernétique avancée, informatique quantique et gouvernance numérique
 
 ### Lesson 1: Informatique quantique, cybernétique et éthique des algorithmes
 
@@ -173,7 +173,7 @@
 - **Lesson Code:** `FR-C2-018`
 - **Goal (Can-Do):** Peut structurer des analyses techniques et cybernétiques denses en appliquant le poids final, le focus final et l'extraposition
 
-## Unit 10: Unité 10 : Synthèse, rhétorique magistrale et intégration C2
+## Unit 10: Synthèse, rhétorique magistrale et intégration C2
 
 ### Lesson 1: Locutions latines et expressions soutenues du discours érudit
 

@@ -2,7 +2,7 @@
 
 > **Derived Manual Document**: Extracted automatically from COSYplatform curriculum source dataset. Do not hand-edit directly.
 
-## Unit 1: Unité 1 : Nuancer sa pensée et exprimer des opinions
+## Unit 1: Nuancer sa pensée et exprimer des opinions
 
 ### Lesson 1: Le subjonctif présent — Nécessité et volonté
 
@@ -58,7 +58,7 @@
 - **Lesson Code:** `FR-B1-005`
 - **Goal (Can-Do):** Peut formuler des hypothèses sur le présent et donner des conseils nuancés
 
-## Unit 2: Unité 2 : Modulateurs de discours et débat d'idées
+## Unit 2: Modulateurs de discours et débat d'idées
 
 ### Lesson 1: Le subjonctif d'opinion et de doute
 
@@ -111,7 +111,7 @@
 - **Lesson Code:** `FR-B1-010`
 - **Goal (Can-Do):** Peut rendre compte fidèlement de propos entendus lors d'une réunion ou conférence
 
-## Unit 3: Unité 3 : Travail, recrutement et monde professionnel
+## Unit 3: Travail, recrutement et monde professionnel
 
 ### Lesson 1: Rédiger un CV et une lettre de motivation
 
@@ -163,7 +163,7 @@
 - **Lesson Code:** `FR-B1-015`
 - **Goal (Can-Do):** Peut débattre des nouveaux modes de travail et exprimer ses besoins d'organisation
 
-## Unit 4: Unité 4 : Médias, société de l'information et réseaux
+## Unit 4: Médias, société de l'information et réseaux
 
 ### Lesson 1: Analyser un article de presse et déceler le parti pris
 
@@ -215,7 +215,7 @@
 - **Lesson Code:** `FR-B1-020`
 - **Goal (Can-Do):** Peut rédiger une critique de film ou de série nuancée et la partager dans un club de discussion
 
-## Unit 5: Unité 5 : Écologie, transition énergétique et planète
+## Unit 5: Écologie, transition énergétique et planète
 
 ### Lesson 1: Le changement climatique et les enjeux mondiaux
 
@@ -267,7 +267,7 @@
 - **Lesson Code:** `FR-B1-025`
 - **Goal (Can-Do):** Peut débattre des choix d'aménagement urbain et de la réduction de la voiture en ville
 
-## Unit 6: Unité 6 : Société, vivre-ensemble et citoyenneté
+## Unit 6: Société, vivre-ensemble et citoyenneté
 
 ### Lesson 1: Égalité homme-femme et parité dans la société
 
@@ -319,7 +319,7 @@
 - **Lesson Code:** `FR-B1-030`
 - **Goal (Can-Do):** Peut valoriser l'apport des différentes cultures dans la société et discuter du vivre-ensemble
 
-## Unit 7: Unité 7 : Art, patrimoine et créativité
+## Unit 7: Art, patrimoine et créativité
 
 ### Lesson 1: Décrire une œuvre d'art et exprimer son émotion esthétique
 
@@ -371,7 +371,7 @@
 - **Lesson Code:** `FR-B1-035`
 - **Goal (Can-Do):** Peut expliquer la fabrication d'un objet artisanal et valoriser les métiers d'art
 
-## Unit 8: Unité 8 : Économie, argent et modes de consommation
+## Unit 8: Économie, argent et modes de consommation
 
 ### Lesson 1: Pouvoir d'achat, inflation et budget familial
 
@@ -423,7 +423,7 @@
 - **Lesson Code:** `FR-B1-040`
 - **Goal (Can-Do):** Peut défendre l'importance du commerce équitable et lire les labels éthiques
 
-## Unit 9: Unité 9 : Sciences, innovations et futur
+## Unit 9: Sciences, innovations et futur
 
 ### Lesson 1: Intelligence artificielle et robotique au quotidien
 
@@ -475,7 +475,193 @@
 - **Lesson Code:** `FR-B1-045`
 - **Goal (Can-Do):** Peut défendre le droit à la confidentialité numérique et argumenter en faveur d'une régulation
 
-## Unit 10: Unité 10 : Francophonie, voyages et synthèse B1
+## Unit 10: Santé publique et bien-être
+
+### Lesson 1: Le système de santé
+
+**Grammar Focus Points:**
+- Le subjonctif après il est important que
+- La forme passive au présent
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-046`
+- **Goal (Can-Do):** comprendre le système de santé
+- **Notes:**
+  - hw: "Explique le parcours de soins."
+
+### Lesson 2: Santé mentale et gestion du stress
+
+**Grammar Focus Points:**
+- Les verbes d'état et de changement
+- Le gérondif
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-047`
+- **Goal (Can-Do):** parler de sa santé mentale
+- **Notes:**
+  - hw: "Décris trois habitudes de récupération."
+
+### Lesson 3: Sport et activité physique
+
+**Grammar Focus Points:**
+- La comparaison et le superlatif
+- Les adverbes de fréquence
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-048`
+- **Goal (Can-Do):** parler de sa pratique sportive
+- **Notes:**
+  - hw: "Présente ton programme sportif."
+
+### Lesson 4: Alimentation et santé
+
+**Grammar Focus Points:**
+- L'expression de la quantité
+- Les pronoms en et y
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-049`
+- **Goal (Can-Do):** conseiller une alimentation équilibrée
+- **Notes:**
+  - hw: "Rédige cinq conseils alimentaires."
+
+### Lesson 5: Prévention et dépistage
+
+**Grammar Focus Points:**
+- L'obligation et le conseil (il faudrait, tu devrais)
+- Les connecteurs de but
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-050`
+- **Goal (Can-Do):** sensibiliser à la prévention
+- **Notes:**
+  - hw: "Rédige un message de sensibilisation."
+
+## Unit 11: Droits, consommation et vie citoyenne
+
+### Lesson 1: Les droits du consommateur
+
+**Grammar Focus Points:**
+- Le subjonctif après exiger que
+- Les pronoms relatifs composés
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-051`
+- **Goal (Can-Do):** faire valoir ses droits de consommateur
+- **Notes:**
+  - hw: "Rédige une lettre de réclamation."
+
+### Lesson 2: Logement et contrat de location
+
+**Grammar Focus Points:**
+- Les connecteurs de condition
+- La forme passive
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-052`
+- **Goal (Can-Do):** comprendre un contrat de location
+- **Notes:**
+  - hw: "Explique trois clauses du bail."
+
+### Lesson 3: Impôts et services publics
+
+**Grammar Focus Points:**
+- L'expression de la quantité et des proportions
+- Le subjonctif après bien que
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-053`
+- **Goal (Can-Do):** comprendre une démarche fiscale
+- **Notes:**
+  - hw: "Explique une déclaration de revenus."
+
+### Lesson 4: Engagement citoyen
+
+**Grammar Focus Points:**
+- Le but (afin que + subjonctif)
+- La mise en relief
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-054`
+- **Goal (Can-Do):** présenter un engagement citoyen
+- **Notes:**
+  - hw: "Présente une association locale."
+
+### Lesson 5: Environnement et responsabilité
+
+**Grammar Focus Points:**
+- La cause et la conséquence
+- Le conditionnel
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-055`
+- **Goal (Can-Do):** argumenter sur la responsabilité écologique
+- **Notes:**
+  - hw: "Rédige un argumentaire écologique."
+
+## Unit 12: Mobilité, expatriation et interculturalité
+
+### Lesson 1: Partir à l'étranger
+
+**Grammar Focus Points:**
+- Le futur antérieur
+- Les indicateurs de temps
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-056`
+- **Goal (Can-Do):** planifier une expatriation
+- **Notes:**
+  - hw: "Présente un projet d'expatriation."
+
+### Lesson 2: S'adapter à une nouvelle culture
+
+**Grammar Focus Points:**
+- Les verbes de perception et de sentiment
+- Le subjonctif après il est normal que
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-057`
+- **Goal (Can-Do):** raconter une adaptation culturelle
+- **Notes:**
+  - hw: "Raconte une adaptation culturelle."
+
+### Lesson 3: Travailler à l'international
+
+**Grammar Focus Points:**
+- Le discours rapporté au passé
+- Les connecteurs de concession
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-058`
+- **Goal (Can-Do):** parler du travail à l'étranger
+- **Notes:**
+  - hw: "Décris un contexte de travail international."
+
+### Lesson 4: Étudier dans une autre langue
+
+**Grammar Focus Points:**
+- La nominalisation
+- Les connecteurs de reformulation
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-059`
+- **Goal (Can-Do):** suivre des études en langue étrangère
+- **Notes:**
+  - hw: "Explique ta méthode de prise de notes."
+
+### Lesson 5: Tourisme et découverte culturelle
+
+**Grammar Focus Points:**
+- Le conditionnel passé
+- Les connecteurs de but
+
+**Teaching Notes & Rules:**
+- **Lesson Code:** `FR-B1-060`
+- **Goal (Can-Do):** organiser un séjour culturel
+- **Notes:**
+  - hw: "Propose un itinéraire culturel."
+
+## Unit 13: Francophonie, voyages et synthèse B1
 
 ### Lesson 1: La diversité de la Francophonie dans le monde
 
@@ -484,7 +670,7 @@
 - Expressions de fierté et de diversité linguistique
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B1-046`
+- **Lesson Code:** `FR-B1-061`
 - **Goal (Can-Do):** Peut apprécier la richesse de la langue française à travers ses espaces francophones (Québec, Afrique, Suisse, Belgique...)
 
 ### Lesson 2: Voyages immersifs et tourisme responsable
@@ -494,7 +680,7 @@
 - Gerondif pour raconter des rencontres en cours de route
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B1-047`
+- **Lesson Code:** `FR-B1-062`
 - **Goal (Can-Do):** Peut concevoir un projet de voyage immersif et responsable en zone francophone
 
 ### Lesson 3: Rédaction d'un essai argumentatif structuré
@@ -504,7 +690,7 @@
 - Structuring introduction, development and conclusion
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B1-048`
+- **Lesson Code:** `FR-B1-063`
 - **Goal (Can-Do):** Peut rédiger un texte argumentatif clair et structuré en suivant les méthodologies d'examen du DELF B1
 
 ### Lesson 4: Préparation à l'épreuve orale du DELF B1
@@ -514,7 +700,7 @@
 - Emploi spontané du subjonctif et du conditionnel
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B1-049`
+- **Lesson Code:** `FR-B1-064`
 - **Goal (Can-Do):** Peut présenter un exposé clair de 3 minutes et défendre sa position face aux questions d'un examinateur
 
 ### Lesson 5: Examen bilan et certification du niveau B1
@@ -523,5 +709,5 @@
 - Évaluation globale de toutes les structures B1 (Subjonctif, Conditionnel, Discours rapporté, Pronoms complexes, Connecteurs)
 
 **Teaching Notes & Rules:**
-- **Lesson Code:** `FR-B1-050`
+- **Lesson Code:** `FR-B1-065`
 - **Goal (Can-Do):** Démontre une autonomie linguistique complète du niveau B1 intermédiaire (DELF B1) dans les contextes personnels, sociaux, professionnels et académiques
