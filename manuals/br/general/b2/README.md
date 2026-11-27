@@ -1,6 +1,6 @@
-# TT General Manual (C1)
+# BR General Manual (B2)
 
-This folder contains derived lesson manuals for **TT - General - C1**.
+This folder contains derived lesson manuals for **BR - General - B2**.
 
 ## Available Manual Documents
 - 📖 [`grammar.html`](./grammar.html) / [`grammar.md`](./grammar.md) - Grammar rules, explanations, and structures.
