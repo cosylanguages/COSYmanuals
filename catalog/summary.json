@@ -38,13 +38,13 @@
   },
   "de": {
    "english_leak_pages": 0,
-   "hub": 11,
+   "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 97,
+   "pages": 101,
    "topic_real": 62,
    "topic_stub": 0,
-   "track_manual": 6,
+   "track_manual": 9,
    "unit": 15,
    "visual_pages": 5
   },
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4069
+ "total_pages": 4073
 }
