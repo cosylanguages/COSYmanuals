@@ -38,13 +38,13 @@
   },
   "de": {
    "english_leak_pages": 0,
-   "hub": 13,
+   "hub": 14,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 105,
+   "pages": 109,
    "topic_real": 62,
    "topic_stub": 0,
-   "track_manual": 12,
+   "track_manual": 15,
    "unit": 15,
    "visual_pages": 5
   },
@@ -74,13 +74,13 @@
   },
   "es": {
    "english_leak_pages": 0,
-   "hub": 13,
+   "hub": 14,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 110,
+   "pages": 114,
    "topic_real": 66,
    "topic_stub": 0,
-   "track_manual": 12,
+   "track_manual": 15,
    "unit": 16,
    "visual_pages": 11
   },
@@ -134,13 +134,13 @@
   },
   "pt": {
    "english_leak_pages": 0,
-   "hub": 13,
+   "hub": 14,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 108,
+   "pages": 112,
    "topic_real": 64,
    "topic_stub": 0,
-   "track_manual": 12,
+   "track_manual": 15,
    "unit": 16,
    "visual_pages": 10
   },
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4093
+ "total_pages": 4105
 }
