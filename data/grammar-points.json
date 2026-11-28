@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T13:20:01Z",
+  "generated": "2026-11-28T13:25:15Z",
   "count": 2145,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -18309,8 +18309,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "dni-nedeli-i-mesyatsy",
-      "title": "Дни недели, месяца и времена года с предлогами",
-      "subtitle": "Days of the week, months, and seasons",
+      "title": "Дни недели, месяца и времена года",
+      "subtitle": "В понедельник, в январе, зимой.",
       "path": "manuals/ru/grammar/a1/topics/dni-nedeli-i-mesyatsy.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/dni-nedeli-i-mesyatsy.html"
     },
@@ -18369,8 +18369,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "glagoly-dvizheniya-idti-ekhat",
-      "title": "Глаголы движения без приставок: «идти» vs «ехать»",
-      "subtitle": "Unprefixed verbs of motion: walking vs vehicle",
+      "title": "Глаголы движения: «идти» и «ехать»",
+      "subtitle": "Я иду пешком, я еду на автобусе.",
       "path": "manuals/ru/grammar/a1/topics/glagoly-dvizheniya-idti-ekhat.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/glagoly-dvizheniya-idti-ekhat.html"
     },
@@ -18379,8 +18379,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "glagoly-dvizheniya-khodit-ezdit",
-      "title": "Глаголы движения: многонаправленные «ходить» и «ездить»",
-      "subtitle": "Multidirectional verbs of motion",
+      "title": "Глаголы движения: «ходить» и «ездить»",
+      "subtitle": "Я хожу в бассейн, я езжу на работу.",
       "path": "manuals/ru/grammar/a1/topics/glagoly-dvizheniya-khodit-ezdit.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/glagoly-dvizheniya-khodit-ezdit.html"
     },
@@ -18420,7 +18420,7 @@
       "level": "a1",
       "slug": "kolichestvennye-chislitelnye-1-100",
       "title": "Количественные числительные (1–100)",
-      "subtitle": "Cardinal numbers 1 to 100",
+      "subtitle": "Один, два, пять, десять, двадцать, сто.",
       "path": "manuals/ru/grammar/a1/topics/kolichestvennye-chislitelnye-1-100.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/kolichestvennye-chislitelnye-1-100.html"
     },
@@ -18619,8 +18619,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "narechiya-mesta-i-napravleniya",
-      "title": "Наречия места и направления (здесь/сюда, там/туда, дома/домой)",
-      "subtitle": "Adverbs of place vs direction",
+      "title": "Наречия места и направления",
+      "subtitle": "Здесь и сюда, там и туда, дома и домой.",
       "path": "manuals/ru/grammar/a1/topics/narechiya-mesta-i-napravleniya.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/narechiya-mesta-i-napravleniya.html"
     },
@@ -18695,14 +18695,14 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/osobyy-glagol-khotet.html"
     },
     {
-      "id": "ru-a1-otnegative-mestoimeniya-nikto-nishto",
+      "id": "ru-a1-otritsatelnye-mestoimeniya-nikto-nishto",
       "lang": "ru",
       "level": "a1",
-      "slug": "otNegative-mestoimeniya-nikto-nishto",
-      "title": "Отрицательные местоимения и наречия (никто, ничто, никогда)",
-      "subtitle": "Negative pronouns and double negation",
-      "path": "manuals/ru/grammar/a1/topics/otNegative-mestoimeniya-nikto-nishto.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/otNegative-mestoimeniya-nikto-nishto.html"
+      "slug": "otritsatelnye-mestoimeniya-nikto-nishto",
+      "title": "Отрицательные местоимения и наречия",
+      "subtitle": "Никто, ничто, никогда, нигде.",
+      "path": "manuals/ru/grammar/a1/topics/otritsatelnye-mestoimeniya-nikto-nishto.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/otritsatelnye-mestoimeniya-nikto-nishto.html"
     },
     {
       "id": "ru-a1-part-1-building-blocks",
@@ -18740,7 +18740,7 @@
       "level": "a1",
       "slug": "poryadkovye-chislitelnye-1-10",
       "title": "Порядковые числительные (1–10)",
-      "subtitle": "Ordinal numbers 1 to 10",
+      "subtitle": "Первый, второй, третий — как прилагательные.",
       "path": "manuals/ru/grammar/a1/topics/poryadkovye-chislitelnye-1-10.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/poryadkovye-chislitelnye-1-10.html"
     },
@@ -18759,8 +18759,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "poryadok-slov-v-predlozhenii",
-      "title": "Порядок слов в русском предложении и логическое ударение",
-      "subtitle": "Word order and logical emphasis",
+      "title": "Порядок слов и логическое ударение",
+      "subtitle": "Порядок слов свободный, но не случайный.",
       "path": "manuals/ru/grammar/a1/topics/poryadok-slov-v-predlozhenii.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/poryadok-slov-v-predlozhenii.html"
     },
@@ -18779,8 +18779,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "povelitelnoe-naklonenie-imperativ",
-      "title": "Повелительное наклонение (Императив: читай! читайте!)",
-      "subtitle": "Imperative mood",
+      "title": "Повелительное наклонение",
+      "subtitle": "Читай! Читайте! Идём!",
       "path": "manuals/ru/grammar/a1/topics/povelitelnoe-naklonenie-imperativ.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/povelitelnoe-naklonenie-imperativ.html"
     },
@@ -18819,8 +18819,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "predlozhnyy-padezh-mesto",
-      "title": "Предложный падеж: местоположение (где? в/на)",
-      "subtitle": "Prepositional case for location",
+      "title": "Предложный падеж: местоположение",
+      "subtitle": "В школе, на работе, в Москве.",
       "path": "manuals/ru/grammar/a1/topics/predlozhnyy-padezh-mesto.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/predlozhnyy-padezh-mesto.html"
     },
@@ -18829,8 +18829,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "predlozhnyy-padezh-o-kom-o-chem",
-      "title": "Предложный падеж: объект мысли и речи (о ком? о чём?)",
-      "subtitle": "Prepositional case for topic of speech/thought",
+      "title": "Предложный падеж: объект мысли и речи",
+      "subtitle": "Думаю о тебе, говорю о работе.",
       "path": "manuals/ru/grammar/a1/topics/predlozhnyy-padezh-o-kom-o-chem.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/predlozhnyy-padezh-o-kom-o-chem.html"
     },
@@ -18849,8 +18849,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "prevoskhodnaya-stepen-samyy",
-      "title": "Превосходная степень прилагательных (самый + прилагательное)",
-      "subtitle": "Superlative adjectives with самый",
+      "title": "Превосходная степень прилагательных",
+      "subtitle": "Самый интересный, наиболее важный.",
       "path": "manuals/ru/grammar/a1/topics/prevoskhodnaya-stepen-samyy.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/prevoskhodnaya-stepen-samyy.html"
     },
@@ -18949,8 +18949,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "roditelnyy-padezh-chislitelnye",
-      "title": "Согласование существительных с числительными (1, 2-4, 5-20)",
-      "subtitle": "Nouns with numerals in Genitive case",
+      "title": "Согласование существительных с числительными",
+      "subtitle": "Один брат, два брата, пять братьев.",
       "path": "manuals/ru/grammar/a1/topics/roditelnyy-padezh-chislitelnye.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/roditelnyy-padezh-chislitelnye.html"
     },
@@ -19059,8 +19059,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "soyuzy-i-a-no",
-      "title": "Соединительные и противительные союз (и, а, но)",
-      "subtitle": "Conjunctions и, а, но",
+      "title": "Союзы «и», «а», «но»",
+      "subtitle": "И — добавление, а — сравнение, но — контраст.",
       "path": "manuals/ru/grammar/a1/topics/soyuzy-i-a-no.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/soyuzy-i-a-no.html"
     },
@@ -19069,8 +19069,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "soyuzy-prichiny-potomu-chto-tak-kak",
-      "title": "Союзы причины: «потому что» и «так как»",
-      "subtitle": "Causal conjunctions because / as",
+      "title": "Союзы причины",
+      "subtitle": "Потому что — ответ, так как — объяснение.",
       "path": "manuals/ru/grammar/a1/topics/soyuzy-prichiny-potomu-chto-tak-kak.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/soyuzy-prichiny-potomu-chto-tak-kak.html"
     },
@@ -19079,8 +19079,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "soyuzy-tseli-chtoby",
-      "title": "Союз цели «чтобы» + инфинитив",
-      "subtitle": "Purpose conjunction щоб / ताकि / in order to",
+      "title": "Союз цели «чтобы»",
+      "subtitle": "Я пришёл, чтобы учиться.",
       "path": "manuals/ru/grammar/a1/topics/soyuzy-tseli-chtoby.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/soyuzy-tseli-chtoby.html"
     },
@@ -19099,8 +19099,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "sravnitelnaya-stepen-bolee-i-sufiks-ee",
-      "title": "Сравнительная степень прилагательных (более... / -ее)",
-      "subtitle": "Comparative adjectives",
+      "title": "Сравнительная степень прилагательных",
+      "subtitle": "Более интересный, интереснее, лучше.",
       "path": "manuals/ru/grammar/a1/topics/sravnitelnaya-stepen-bolee-i-sufiks-ee.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/sravnitelnaya-stepen-bolee-i-sufiks-ee.html"
     },
@@ -19149,8 +19149,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "tvoritelnyy-padezh-professii",
-      "title": "Творительный падеж: профессии и интересы (быть/работать/заниматься)",
-      "subtitle": "Instrumental case for professions and hobbies",
+      "title": "Творительный падеж: профессии и интересы",
+      "subtitle": "Я работаю врачом, занимаюсь спортом.",
       "path": "manuals/ru/grammar/a1/topics/tvoritelnyy-padezh-professii.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/tvoritelnyy-padezh-professii.html"
     },
@@ -19159,8 +19159,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "tvoritelnyy-padezh-sovmestnost",
-      "title": "Творительный падеж: совместность действий (с кем? с чем?)",
-      "subtitle": "Instrumental case with prepositions 'с'",
+      "title": "Творительный падеж: совместность",
+      "subtitle": "С другом, с мамой, с интересом.",
       "path": "manuals/ru/grammar/a1/topics/tvoritelnyy-padezh-sovmestnost.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/tvoritelnyy-padezh-sovmestnost.html"
     },
@@ -19229,8 +19229,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "vezhlivye-prosby-i-poveleniya",
-      "title": "Формулы вежливости и просьбы (Скажите, пожалуйста / Будьте добры)",
-      "subtitle": "Polite requests and social formulas",
+      "title": "Формулы вежливости и просьбы",
+      "subtitle": "Скажите, пожалуйста. Будьте добры. Извините.",
       "path": "manuals/ru/grammar/a1/topics/vezhlivye-prosby-i-poveleniya.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/vezhlivye-prosby-i-poveleniya.html"
     },
@@ -19249,8 +19249,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "vinitelnyy-padezh-napravlenie",
-      "title": "Винительный падеж направления (куда? в/на)",
-      "subtitle": "Accusative case for direction and motion",
+      "title": "Винительный падеж направления",
+      "subtitle": "Иду в школу, еду на работу, к врачу.",
       "path": "manuals/ru/grammar/a1/topics/vinitelnyy-padezh-napravlenie.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/vinitelnyy-padezh-napravlenie.html"
     },
@@ -19289,8 +19289,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "voprositelnye-slova-kto-chto-gde-kuda",
-      "title": "Вопросительные слова (Кто, Что, Где, Куда, Откуда)",
-      "subtitle": "Question words",
+      "title": "Вопросительные слова",
+      "subtitle": "Кто, что, где, куда, откуда, когда, почему, сколько.",
       "path": "manuals/ru/grammar/a1/topics/voprositelnye-slova-kto-chto-gde-kuda.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/voprositelnye-slova-kto-chto-gde-kuda.html"
     },
@@ -19299,8 +19299,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "vremya-i-chasy",
-      "title": "Обозначение времени и часов (Который час? Во сколько?)",
-      "subtitle": "Telling the time and schedule",
+      "title": "Обозначение времени и часов",
+      "subtitle": "Который час? Сейчас два часа. Встречаемся в пять.",
       "path": "manuals/ru/grammar/a1/topics/vremya-i-chasy.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/vremya-i-chasy.html"
     },
@@ -19309,8 +19309,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "vvodnye-slova-kazhetsya-po-moemu",
-      "title": "Вводные слова мнения (по-моему, кажется, конечно)",
-      "subtitle": "Introductory words expressing opinion",
+      "title": "Вводные слова мнения",
+      "subtitle": "По-моему, кажется, конечно, наверное.",
       "path": "manuals/ru/grammar/a1/topics/vvodnye-slova-kazhetsya-po-moemu.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/vvodnye-slova-kazhetsya-po-moemu.html"
     },
