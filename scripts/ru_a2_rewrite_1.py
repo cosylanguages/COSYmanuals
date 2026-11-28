@@ -369,7 +369,7 @@ T['tvoritelnyy-padezh-prilagatelnykh-i-mestoimeniy'] = spec(
  [("Я иду с новый друг (нет творительного)", "Я иду с новым другом"),
   ("Над старый мост (нужен творительный)", "Над старым мостом")],
  [("Творительный падеж: совместность", A1 + "tvoritelnyy-padezh-sovmestnost.html"),
-  ("Пространственные предлоги творительного падежа", "tvoritelnyy-padezh-predlogi-za-pod-nad-pered.html")],
+  ("Пространственные предлоги творительного падежа", "tvoritelnyy-padezh-predlogi-za-pod-nad-peryed.html")],
  ["Склоняю прилагательные.",
   "Склоняю местоимения.",
   "Использую после «с»."],
@@ -383,7 +383,7 @@ T['tvoritelnyy-padezh-prilagatelnykh-i-mestoimeniy'] = spec(
        options=["старым", "старый", "старого"], correct=0,
        explain="Творительный: -ым.")])
 
-T['tvoritelnyy-padezh-predlogi-za-pod-nad-pered'] = spec(
+T['tvoritelnyy-padezh-predlogi-za-pod-nad-peryed'] = spec(
  "Пространственные предлоги творительного падежа",
  "За домом, под столом, над кроватью, перед школой.",
  "Описываю положение предмета в пространстве.",
