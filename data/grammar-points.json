@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T12:59:08Z",
+  "generated": "2026-11-28T13:01:06Z",
   "count": 2140,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -1089,8 +1089,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "aftos-ekeinos",
-      "title": "Αυτός, Εκείνος",
-      "subtitle": "Δεικτικές αντωνυμίες που συμφωνούν σε γένος & αριθμό",
+      "title": "Αυτός, Αυτή, Αυτό και Εκείνος",
+      "subtitle": "Αυτό εδώ, εκείνο εκεί.",
       "path": "manuals/el/grammar/a1/topics/aftos-ekeinos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/aftos-ekeinos.html"
     },
@@ -1179,8 +1179,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "arthra-oristiko-kai-aoristo",
-      "title": "Άρθρα: Οριστικό & Αόριστο",
-      "subtitle": "Ο / Η / Το και ένας / μία / ένα",
+      "title": "Το Οριστικό και το Αόριστο Άρθρο",
+      "subtitle": "Ο, η, το · ένας, μια, ένα.",
       "path": "manuals/el/grammar/a1/topics/arthra-oristiko-kai-aoristo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/arthra-oristiko-kai-aoristo.html"
     },
@@ -1249,8 +1249,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "epitheta-kai-symfonia",
-      "title": "Επίθετα & Συμφωνία",
-      "subtitle": "Καταλήξεις που ταιριάζουν σε γένος, αριθμό & πτώση",
+      "title": "Επίθετα και Συμφωνία",
+      "subtitle": "Ένας μεγάλος δρόμος, μια μεγάλη πόλη.",
       "path": "manuals/el/grammar/a1/topics/epitheta-kai-symfonia.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/epitheta-kai-symfonia.html"
     },
@@ -1259,8 +1259,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "erotimatikes-lexeis",
-      "title": "Ερωτηματικές Λέξεις",
-      "subtitle": "Πώς ζητάμε πληροφορία",
+      "title": "Οι Ερωτηματικές Λέξεις",
+      "subtitle": "Τι, ποιος, πού, πότε, πόσο, γιατί.",
       "path": "manuals/el/grammar/a1/topics/erotimatikes-lexeis.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/erotimatikes-lexeis.html"
     },
@@ -1389,8 +1389,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "pliris-klisi-ousiastikou",
-      "title": "Πλήρης Κλίση Ουσιαστικού",
-      "subtitle": "Ένα παράδειγμα ανά γένος, σε όλες τις πτώσεις",
+      "title": "Η Κλίση του Ουσιαστικού",
+      "subtitle": "Ονομαστική, γενική, αιτιατική, κλητική.",
       "path": "manuals/el/grammar/a1/topics/pliris-klisi-ousiastikou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/pliris-klisi-ousiastikou.html"
     },
@@ -1399,8 +1399,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "plithyntikos-arithmos",
-      "title": "Πληθυντικός Αριθμός",
-      "subtitle": "Πώς αλλάζουν οι καταλήξεις — και τα άρθρα",
+      "title": "Ο Πληθυντικός Αριθμός",
+      "subtitle": "Ένας δρόμος, δύο δρόμοι.",
       "path": "manuals/el/grammar/a1/topics/plithyntikos-arithmos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/plithyntikos-arithmos.html"
     },
@@ -1449,8 +1449,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "prosopikes-antonymies",
-      "title": "Προσωπικές Αντωνυμίες",
-      "subtitle": "Αντωνυμίες υποκειμένου & κτητικές λέξεις",
+      "title": "Οι Προσωπικές Αντωνυμίες",
+      "subtitle": "Εγώ, εσύ, αυτός.",
       "path": "manuals/el/grammar/a1/topics/prosopikes-antonymies.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/prosopikes-antonymies.html"
     },
@@ -1509,8 +1509,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "synkritikos-vathmos",
-      "title": "Συγκριτικός Βαθμός",
-      "subtitle": "Πιο + επίθετο, ή -ότερος",
+      "title": "Ο Συγκριτικός Βαθμός",
+      "subtitle": "Πιο μεγάλος από, τόσο μεγάλος όσο.",
       "path": "manuals/el/grammar/a1/topics/synkritikos-vathmos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/synkritikos-vathmos.html"
     },
@@ -1529,8 +1529,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "tinos-i-ktitiki-ptosi",
-      "title": "Τίνος; Η Κτητική Πτώση",
-      "subtitle": "Πώς δείχνουμε την κτήση με τη γενική",
+      "title": "Τίνος; Η Κτητική",
+      "subtitle": "Δικός μου, δικός σου, του Γιώργου.",
       "path": "manuals/el/grammar/a1/topics/tinos-i-ktitiki-ptosi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/tinos-i-ktitiki-ptosi.html"
     },
@@ -1550,7 +1550,7 @@
       "level": "a1",
       "slug": "to-genos-ton-ousiastikon",
       "title": "Το Γένος των Ουσιαστικών",
-      "subtitle": "Ο / Η / Το — αρσενικό, θηλυκό, ουδέτερο",
+      "subtitle": "Αρσενικό, θηλυκό, ουδέτερο.",
       "path": "manuals/el/grammar/a1/topics/to-genos-ton-ousiastikon.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/to-genos-ton-ousiastikon.html"
     },
@@ -1580,7 +1580,7 @@
       "level": "a1",
       "slug": "to-systima-ton-ptoseon",
       "title": "Το Σύστημα των Πτώσεων",
-      "subtitle": "Ονομαστική · Αιτιατική · Γενική · Κλητική",
+      "subtitle": "Γιατί αλλάζουν οι καταλήξεις.",
       "path": "manuals/el/grammar/a1/topics/to-systima-ton-ptoseon.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/to-systima-ton-ptoseon.html"
     },
@@ -1629,8 +1629,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "yperthetikos-vathmos",
-      "title": "Υπερθετικός Βαθμός",
-      "subtitle": "Ο/Η/Το πιο + επίθετο",
+      "title": "Ο Υπερθετικός Βαθμός",
+      "subtitle": "Πολύ μεγάλος, ο πιο μεγάλος.",
       "path": "manuals/el/grammar/a1/topics/yperthetikos-vathmos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/yperthetikos-vathmos.html"
     },
