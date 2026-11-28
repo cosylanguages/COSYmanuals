@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:28:50Z",
+  "generated": "2026-11-28T11:32:23Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -2769,8 +2769,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "infinitives-and-gerunds",
-      "title": "Infinitives & Gerunds",
-      "subtitle": "Verbs followed by to + verb vs verbs followed by verb-ing",
+      "title": "Infinitives and Gerunds",
+      "subtitle": "Choose between to + verb and the -ing form.",
       "path": "manuals/en/grammar/a2/topics/infinitives-and-gerunds.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/infinitives-and-gerunds.html"
     },
@@ -3029,8 +3029,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "so-neither",
-      "title": "So Neither",
-      "subtitle": "Mastering So Neither",
+      "title": "So and Neither",
+      "subtitle": "Agree with someone in one short sentence.",
       "path": "manuals/en/grammar/a2/topics/so-neither.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/so-neither.html"
     },
