@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:05:39Z",
+  "generated": "2026-11-28T11:10:40Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -3589,28 +3589,18 @@
       "lang": "en",
       "level": "b2",
       "slug": "alternatives-to-if",
-      "title": "Alternatives To If",
-      "subtitle": "Mastering Alternatives To If",
+      "title": "Alternatives to If",
+      "subtitle": "Make a condition sound formal, tentative or hypothetical.",
       "path": "manuals/en/grammar/b2/topics/alternatives-to-if.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/alternatives-to-if.html"
-    },
-    {
-      "id": "en-b2-b2-master-review-and-examination",
-      "lang": "en",
-      "level": "b2",
-      "slug": "b2-master-review-and-examination",
-      "title": "B2 Master Review",
-      "subtitle": "The whole B2 system on one page, in the order the exam tests it.",
-      "path": "manuals/en/grammar/b2/topics/b2-master-review-and-examination.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/b2-master-review-and-examination.html"
     },
     {
       "id": "en-b2-clauses-of-contrast-purpose-reason-and-result",
       "lang": "en",
       "level": "b2",
       "slug": "clauses-of-contrast-purpose-reason-and-result",
-      "title": "Clauses Of Contrast Purpose Reason And Result",
-      "subtitle": "Mastering Clauses Of Contrast Purpose Reason And Result",
+      "title": "Clauses of Contrast, Purpose, Reason and Result",
+      "subtitle": "Link two ideas with the relation the argument needs.",
       "path": "manuals/en/grammar/b2/topics/clauses-of-contrast-purpose-reason-and-result.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/clauses-of-contrast-purpose-reason-and-result.html"
     },
@@ -3619,8 +3609,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "cleft-sentences-and-emphasis",
-      "title": "Cleft Sentences And Emphasis",
-      "subtitle": "Mastering Cleft Sentences And Emphasis",
+      "title": "Cleft Sentences and Emphasis",
+      "subtitle": "Put the important element in its own clause.",
       "path": "manuals/en/grammar/b2/topics/cleft-sentences-and-emphasis.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/cleft-sentences-and-emphasis.html"
     },
@@ -3630,7 +3620,7 @@
       "level": "b2",
       "slug": "compound-nouns",
       "title": "Compound Nouns",
-      "subtitle": "Mastering Compound Nouns",
+      "subtitle": "Join two words into the noun the language has settled on.",
       "path": "manuals/en/grammar/b2/topics/compound-nouns.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/compound-nouns.html"
     },
@@ -3670,7 +3660,7 @@
       "level": "b2",
       "slug": "discourse-markers",
       "title": "Discourse Markers",
-      "subtitle": "Mastering Discourse Markers",
+      "subtitle": "Show the reader how each sentence relates to the last.",
       "path": "manuals/en/grammar/b2/topics/discourse-markers.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/discourse-markers.html"
     },
@@ -3680,7 +3670,7 @@
       "level": "b2",
       "slug": "distancing-passive-reporting",
       "title": "Distancing Passive Reporting",
-      "subtitle": "Mastering Distancing Passive Reporting",
+      "subtitle": "Report a claim without naming who made it.",
       "path": "manuals/en/grammar/b2/topics/distancing-passive-reporting.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/distancing-passive-reporting.html"
     },
@@ -3699,8 +3689,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "formal-vs-informal-register",
-      "title": "Formal Vs Informal Register",
-      "subtitle": "Mastering Formal Vs Informal Register",
+      "title": "Formal and Informal Register",
+      "subtitle": "Choose the wording the situation expects.",
       "path": "manuals/en/grammar/b2/topics/formal-vs-informal-register.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/formal-vs-informal-register.html"
     },
@@ -3719,8 +3709,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "future-forms-expressing-future-time",
-      "title": "Future Forms Expressing Future Time",
-      "subtitle": "Mastering Future Forms Expressing Future Time",
+      "title": "Future Forms",
+      "subtitle": "Pick the future form by what the speaker knows, not by the clock.",
       "path": "manuals/en/grammar/b2/topics/future-forms-expressing-future-time.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/future-forms-expressing-future-time.html"
     },
@@ -3789,8 +3779,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "inversion-after-negative-adverbials",
-      "title": "Inversion After Negative Adverbials",
-      "subtitle": "Mastering Inversion After Negative Adverbials",
+      "title": "Inversion after Negative Adverbials",
+      "subtitle": "Front a negative adverbial, then invert the verb.",
       "path": "manuals/en/grammar/b2/topics/inversion-after-negative-adverbials.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/inversion-after-negative-adverbials.html"
     },
@@ -3815,12 +3805,22 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/mandative-subjunctive.html"
     },
     {
+      "id": "en-b2-master-review-and-examination",
+      "lang": "en",
+      "level": "b2",
+      "slug": "master-review-and-examination",
+      "title": "B2 Master Review",
+      "subtitle": "The whole B2 system on one page, in the order the exam tests it.",
+      "path": "manuals/en/grammar/b2/topics/master-review-and-examination.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/master-review-and-examination.html"
+    },
+    {
       "id": "en-b2-mixed-conditionals",
       "lang": "en",
       "level": "b2",
       "slug": "mixed-conditionals",
       "title": "Mixed Conditionals",
-      "subtitle": "Mastering Mixed Conditionals",
+      "subtitle": "Match the condition's time to the result's time.",
       "path": "manuals/en/grammar/b2/topics/mixed-conditionals.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/mixed-conditionals.html"
     },
@@ -3830,7 +3830,7 @@
       "level": "b2",
       "slug": "narrative-tenses",
       "title": "Narrative Tenses",
-      "subtitle": "Mastering Narrative Tenses",
+      "subtitle": "Tell a story with the tenses that order it.",
       "path": "manuals/en/grammar/b2/topics/narrative-tenses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/narrative-tenses.html"
     },
@@ -3849,8 +3849,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "order-of-adjectives",
-      "title": "Order Of Adjectives",
-      "subtitle": "Mastering Order Of Adjectives",
+      "title": "Order of Adjectives",
+      "subtitle": "Put several adjectives in the order English expects.",
       "path": "manuals/en/grammar/b2/topics/order-of-adjectives.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/order-of-adjectives.html"
     },
@@ -3870,7 +3870,7 @@
       "level": "b2",
       "slug": "participle-clauses",
       "title": "Participle Clauses",
-      "subtitle": "Mastering Participle Clauses",
+      "subtitle": "Compress a second clause into a participle.",
       "path": "manuals/en/grammar/b2/topics/participle-clauses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/participle-clauses.html"
     },
@@ -3899,8 +3899,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "permission-obligation-and-prohibition",
-      "title": "Permission Obligation And Prohibition",
-      "subtitle": "Mastering Permission Obligation And Prohibition",
+      "title": "Permission, Obligation and Prohibition",
+      "subtitle": "Say what is allowed, required and forbidden, and who decided it.",
       "path": "manuals/en/grammar/b2/topics/permission-obligation-and-prohibition.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/permission-obligation-and-prohibition.html"
     },
@@ -3959,8 +3959,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "relative-clauses-review-and-deepening",
-      "title": "Relative Clauses Review And Deepening",
-      "subtitle": "Mastering Relative Clauses Review And Deepening",
+      "title": "Relative Clauses: Review and Deepening",
+      "subtitle": "Attach a clause to a noun without breaking the sentence.",
       "path": "manuals/en/grammar/b2/topics/relative-clauses-review-and-deepening.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/relative-clauses-review-and-deepening.html"
     },
@@ -3989,8 +3989,8 @@
       "lang": "en",
       "level": "b2",
       "slug": "speculation-and-deduction-deepening",
-      "title": "Speculation And Deduction Deepening",
-      "subtitle": "Mastering Speculation And Deduction Deepening",
+      "title": "Speculation and Deduction",
+      "subtitle": "Say how certain you are about the past and the present.",
       "path": "manuals/en/grammar/b2/topics/speculation-and-deduction-deepening.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/speculation-and-deduction-deepening.html"
     },

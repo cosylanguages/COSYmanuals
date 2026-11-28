@@ -270,7 +270,7 @@ T['rhetorical-questioning-and-parallelism'] = spec(
        options=["A second rhetorical question.", "A balanced statement of the point."],
        correct=1, explain="The question opens; the balanced statement closes.")])
 
-T['b2-master-review-and-examination'] = spec(
+T['master-review-and-examination'] = spec(
  "B2 Master Review",
  "The whole B2 system on one page, in the order the exam tests it.",
  "You can select, combine and correct the B2 structures under exam conditions.",
