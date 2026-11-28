@@ -113,12 +113,12 @@
    "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 193,
-   "topic_real": 136,
+   "pages": 218,
+   "topic_real": 160,
    "topic_stub": 0,
    "track_manual": 3,
-   "unit": 39,
-   "visual_pages": 50
+   "unit": 40,
+   "visual_pages": 74
   },
   "ka": {
    "english_leak_pages": 11,
@@ -443,7 +443,7 @@
    0
   ],
   "it/grammar/b1": [
-   17,
+   41,
    0
   ],
   "it/vocabulary/a1": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4129
+ "total_pages": 4154
 }

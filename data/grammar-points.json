@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T12:33:01Z",
-  "count": 2102,
+  "generated": "2026-11-28T12:38:59Z",
+  "count": 2126,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -17035,6 +17035,26 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/aggettivi-e-pronomi-indefiniti.html"
     },
     {
+      "id": "it-b1-ambiente-e-clima",
+      "lang": "it",
+      "level": "b1",
+      "slug": "ambiente-e-clima",
+      "title": "Ambiente e Clima",
+      "subtitle": "Descrivere un problema ambientale e le sue cause.",
+      "path": "manuals/it/grammar/b1/topics/ambiente-e-clima.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/ambiente-e-clima.html"
+    },
+    {
+      "id": "it-b1-argomentare-un-opinione",
+      "lang": "it",
+      "level": "b1",
+      "slug": "argomentare-un-opinione",
+      "title": "Argomentare un'Opinione",
+      "subtitle": "Dire che cosa pensi e perché.",
+      "path": "manuals/it/grammar/b1/topics/argomentare-un-opinione.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/argomentare-un-opinione.html"
+    },
+    {
       "id": "it-b1-avverbi-in-mente",
       "lang": "it",
       "level": "b1",
@@ -17045,6 +17065,26 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/avverbi-in-mente.html"
     },
     {
+      "id": "it-b1-cercare-lavoro",
+      "lang": "it",
+      "level": "b1",
+      "slug": "cercare-lavoro",
+      "title": "Cercare Lavoro: l'Annuncio",
+      "subtitle": "Leggere un annuncio e capire che cosa chiede.",
+      "path": "manuals/it/grammar/b1/topics/cercare-lavoro.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/cercare-lavoro.html"
+    },
+    {
+      "id": "it-b1-colloquio-di-lavoro",
+      "lang": "it",
+      "level": "b1",
+      "slug": "colloquio-di-lavoro",
+      "title": "Il Colloquio di Lavoro",
+      "subtitle": "Rispondere alle domande tipiche.",
+      "path": "manuals/it/grammar/b1/topics/colloquio-di-lavoro.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/colloquio-di-lavoro.html"
+    },
+    {
       "id": "it-b1-comparativi-e-superlativi-irregolari",
       "lang": "it",
       "level": "b1",
@@ -17053,6 +17093,26 @@
       "subtitle": "Dire migliore, peggiore, maggiore, ottimo.",
       "path": "manuals/it/grammar/b1/topics/comparativi-e-superlativi-irregolari.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/comparativi-e-superlativi-irregolari.html"
+    },
+    {
+      "id": "it-b1-competenze-e-formazione",
+      "lang": "it",
+      "level": "b1",
+      "slug": "competenze-e-formazione",
+      "title": "Competenze e Formazione Continua",
+      "subtitle": "Parlare di ciò che sai fare e di ciò che vuoi imparare.",
+      "path": "manuals/it/grammar/b1/topics/competenze-e-formazione.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/competenze-e-formazione.html"
+    },
+    {
+      "id": "it-b1-concordanza-dei-tempi",
+      "lang": "it",
+      "level": "b1",
+      "slug": "concordanza-dei-tempi",
+      "title": "La Concordanza dei Tempi",
+      "subtitle": "Scegliere il tempo giusto nella subordinata.",
+      "path": "manuals/it/grammar/b1/topics/concordanza-dei-tempi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/concordanza-dei-tempi.html"
     },
     {
       "id": "it-b1-condizionale-passato",
@@ -17075,6 +17135,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiuntivo-imperfetto.html"
     },
     {
+      "id": "it-b1-congiuntivo-nelle-relative",
+      "lang": "it",
+      "level": "b1",
+      "slug": "congiuntivo-nelle-relative",
+      "title": "Il Congiuntivo nelle Frasi Relative",
+      "subtitle": "Distinguere «cerco una casa che ha» da «che abbia».",
+      "path": "manuals/it/grammar/b1/topics/congiuntivo-nelle-relative.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiuntivo-nelle-relative.html"
+    },
+    {
       "id": "it-b1-congiuntivo-passato",
       "lang": "it",
       "level": "b1",
@@ -17095,6 +17165,26 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiuntivo-presente.html"
     },
     {
+      "id": "it-b1-congiuntivo-trapassato",
+      "lang": "it",
+      "level": "b1",
+      "slug": "congiuntivo-trapassato",
+      "title": "Il Congiuntivo Trapassato",
+      "subtitle": "Dire «avessi saputo», «fosse partito».",
+      "path": "manuals/it/grammar/b1/topics/congiuntivo-trapassato.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiuntivo-trapassato.html"
+    },
+    {
+      "id": "it-b1-congiunzioni-con-congiuntivo",
+      "lang": "it",
+      "level": "b1",
+      "slug": "congiunzioni-con-congiuntivo",
+      "title": "Le Congiunzioni che Vogliono il Congiuntivo",
+      "subtitle": "Dire «benché sia tardi», «purché tu venga».",
+      "path": "manuals/it/grammar/b1/topics/congiunzioni-con-congiuntivo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiunzioni-con-congiuntivo.html"
+    },
+    {
       "id": "it-b1-connettivi-testuali",
       "lang": "it",
       "level": "b1",
@@ -17105,6 +17195,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/connettivi-testuali.html"
     },
     {
+      "id": "it-b1-cultura-e-patrimonio",
+      "lang": "it",
+      "level": "b1",
+      "slug": "cultura-e-patrimonio",
+      "title": "Cultura e Patrimonio",
+      "subtitle": "Descrivere un bene culturale e la sua tutela.",
+      "path": "manuals/it/grammar/b1/topics/cultura-e-patrimonio.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/cultura-e-patrimonio.html"
+    },
+    {
       "id": "it-b1-discorso-indiretto",
       "lang": "it",
       "level": "b1",
@@ -17113,6 +17213,16 @@
       "subtitle": "Riferire le parole altrui e regolare la concordanza dei tempi",
       "path": "manuals/it/grammar/b1/topics/discorso-indiretto.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/discorso-indiretto.html"
+    },
+    {
+      "id": "it-b1-esortativo-che-congiuntivo",
+      "lang": "it",
+      "level": "b1",
+      "slug": "esortativo-che-congiuntivo",
+      "title": "L'Esortativo: «Che Venga»",
+      "subtitle": "Dare ordini e auguri in terza persona.",
+      "path": "manuals/it/grammar/b1/topics/esortativo-che-congiuntivo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/esortativo-che-congiuntivo.html"
     },
     {
       "id": "it-b1-forma-passiva-avanzata",
@@ -17145,6 +17255,46 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/gerundio-e-participio.html"
     },
     {
+      "id": "it-b1-lettera-di-presentazione",
+      "lang": "it",
+      "level": "b1",
+      "slug": "lettera-di-presentazione",
+      "title": "La Lettera di Presentazione",
+      "subtitle": "Scrivere una candidatura breve e pertinente.",
+      "path": "manuals/it/grammar/b1/topics/lettera-di-presentazione.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/lettera-di-presentazione.html"
+    },
+    {
+      "id": "it-b1-media-e-informazione",
+      "lang": "it",
+      "level": "b1",
+      "slug": "media-e-informazione",
+      "title": "Media e Informazione",
+      "subtitle": "Parlare dei media e capire un titolo.",
+      "path": "manuals/it/grammar/b1/topics/media-e-informazione.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/media-e-informazione.html"
+    },
+    {
+      "id": "it-b1-nomi-alterati",
+      "lang": "it",
+      "level": "b1",
+      "slug": "nomi-alterati",
+      "title": "I Nomi Alterati",
+      "subtitle": "Dire «casetta», «librone», «cattivone».",
+      "path": "manuals/it/grammar/b1/topics/nomi-alterati.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/nomi-alterati.html"
+    },
+    {
+      "id": "it-b1-ordine-delle-parole-e-enfasi",
+      "lang": "it",
+      "level": "b1",
+      "slug": "ordine-delle-parole-e-enfasi",
+      "title": "Ordine delle Parole ed Enfasi",
+      "subtitle": "Mettere in rilievo un elemento della frase.",
+      "path": "manuals/it/grammar/b1/topics/ordine-delle-parole-e-enfasi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/ordine-delle-parole-e-enfasi.html"
+    },
+    {
       "id": "it-b1-periodo-ipotetico-3",
       "lang": "it",
       "level": "b1",
@@ -17153,6 +17303,26 @@
       "subtitle": "Se + Congiuntivo Trapassato → Condizionale Composto",
       "path": "manuals/it/grammar/b1/topics/periodo-ipotetico-3.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/periodo-ipotetico-3.html"
+    },
+    {
+      "id": "it-b1-periodo-ipotetico-misto",
+      "lang": "it",
+      "level": "b1",
+      "slug": "periodo-ipotetico-misto",
+      "title": "Il Periodo Ipotetico Misto",
+      "subtitle": "Dire «se avessi studiato, ora sarei…».",
+      "path": "manuals/it/grammar/b1/topics/periodo-ipotetico-misto.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/periodo-ipotetico-misto.html"
+    },
+    {
+      "id": "it-b1-preposizioni-con-i-verbi",
+      "lang": "it",
+      "level": "b1",
+      "slug": "preposizioni-con-i-verbi",
+      "title": "Le Preposizioni con i Verbi",
+      "subtitle": "Sapere se un verbo vuole di, a o niente.",
+      "path": "manuals/it/grammar/b1/topics/preposizioni-con-i-verbi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/preposizioni-con-i-verbi.html"
     },
     {
       "id": "it-b1-pronomi-combinati",
@@ -17175,6 +17345,36 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/pronomi-relativi-cui-chi.html"
     },
     {
+      "id": "it-b1-raccontare-un-libro",
+      "lang": "it",
+      "level": "b1",
+      "slug": "raccontare-un-libro",
+      "title": "Raccontare un Libro o un Film",
+      "subtitle": "Raccontare una trama senza svelare il finale.",
+      "path": "manuals/it/grammar/b1/topics/raccontare-un-libro.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/raccontare-un-libro.html"
+    },
+    {
+      "id": "it-b1-riassumere-un-testo",
+      "lang": "it",
+      "level": "b1",
+      "slug": "riassumere-un-testo",
+      "title": "Riassumere un Testo",
+      "subtitle": "Ridurre un testo alle informazioni essenziali.",
+      "path": "manuals/it/grammar/b1/topics/riassumere-un-testo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/riassumere-un-testo.html"
+    },
+    {
+      "id": "it-b1-scrivere-una-recensione",
+      "lang": "it",
+      "level": "b1",
+      "slug": "scrivere-una-recensione",
+      "title": "Scrivere una Recensione",
+      "subtitle": "Dare un giudizio motivato su un'opera.",
+      "path": "manuals/it/grammar/b1/topics/scrivere-una-recensione.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/scrivere-una-recensione.html"
+    },
+    {
       "id": "it-b1-si-impersonale-e-passivante",
       "lang": "it",
       "level": "b1",
@@ -17183,6 +17383,46 @@
       "subtitle": "Parlare in generale senza dire chi.",
       "path": "manuals/it/grammar/b1/topics/si-impersonale-e-passivante.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/si-impersonale-e-passivante.html"
+    },
+    {
+      "id": "it-b1-societa-e-cittadinanza",
+      "lang": "it",
+      "level": "b1",
+      "slug": "societa-e-cittadinanza",
+      "title": "Società e Cittadinanza",
+      "subtitle": "Parlare di istituzioni e partecipazione.",
+      "path": "manuals/it/grammar/b1/topics/societa-e-cittadinanza.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/societa-e-cittadinanza.html"
+    },
+    {
+      "id": "it-b1-sostenibilita-e-consumi",
+      "lang": "it",
+      "level": "b1",
+      "slug": "sostenibilita-e-consumi",
+      "title": "Consumi e Sostenibilità",
+      "subtitle": "Parlare di scelte di consumo responsabile.",
+      "path": "manuals/it/grammar/b1/topics/sostenibilita-e-consumi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/sostenibilita-e-consumi.html"
+    },
+    {
+      "id": "it-b1-turismo-sostenibile",
+      "lang": "it",
+      "level": "b1",
+      "slug": "turismo-sostenibile",
+      "title": "Turismo Sostenibile",
+      "subtitle": "Discutere vantaggi e costi del turismo.",
+      "path": "manuals/it/grammar/b1/topics/turismo-sostenibile.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/turismo-sostenibile.html"
+    },
+    {
+      "id": "it-b1-verbi-che-reggono-il-congiuntivo",
+      "lang": "it",
+      "level": "b1",
+      "slug": "verbi-che-reggono-il-congiuntivo",
+      "title": "I Verbi che Reggono il Congiuntivo",
+      "subtitle": "Dire «penso che sia», «spero che venga».",
+      "path": "manuals/it/grammar/b1/topics/verbi-che-reggono-il-congiuntivo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/verbi-che-reggono-il-congiuntivo.html"
     },
     {
       "id": "it-b1-verbi-pronominali",
