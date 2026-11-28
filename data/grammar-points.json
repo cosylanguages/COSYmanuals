@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:35:53Z",
+  "generated": "2026-11-28T11:38:05Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -2629,8 +2629,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "as-as",
-      "title": "As As",
-      "subtitle": "Mastering As As",
+      "title": "As ... as",
+      "subtitle": "Compare two things that are equal.",
       "path": "manuals/en/grammar/a2/topics/as-as.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/as-as.html"
     },
@@ -2639,8 +2639,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "comparatives-and-superlatives",
-      "title": "Comparatives And Superlatives",
-      "subtitle": "Mastering Comparatives And Superlatives",
+      "title": "Comparatives and Superlatives",
+      "subtitle": "Compare two things, or one against all.",
       "path": "manuals/en/grammar/a2/topics/comparatives-and-superlatives.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/comparatives-and-superlatives.html"
     },
@@ -2670,7 +2670,7 @@
       "level": "a2",
       "slug": "defining-relative-clauses",
       "title": "Defining Relative Clauses",
-      "subtitle": "Mastering Defining Relative Clauses",
+      "subtitle": "Identify which person or thing you mean.",
       "path": "manuals/en/grammar/a2/topics/defining-relative-clauses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/defining-relative-clauses.html"
     },
@@ -2689,8 +2689,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "either-or-neither-nor-both-and",
-      "title": "Either Or Neither Nor Both And",
-      "subtitle": "Mastering Either Or Neither Nor Both And",
+      "title": "Either, Neither, Both and And",
+      "subtitle": "Choose between two, or take all two.",
       "path": "manuals/en/grammar/a2/topics/either-or-neither-nor-both-and.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/either-or-neither-nor-both-and.html"
     },
@@ -2740,7 +2740,7 @@
       "level": "a2",
       "slug": "how-questions",
       "title": "How Questions",
-      "subtitle": "Mastering How Questions",
+      "subtitle": "Ask about manner, quantity, age and frequency.",
       "path": "manuals/en/grammar/a2/topics/how-questions.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/how-questions.html"
     },
@@ -2749,8 +2749,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "however-although-because-so",
-      "title": "However Although Because So",
-      "subtitle": "Mastering However Although Because So",
+      "title": "However, Although, Because and So",
+      "subtitle": "Link a reason, a contrast and a result.",
       "path": "manuals/en/grammar/a2/topics/however-although-because-so.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/however-although-because-so.html"
     },
@@ -2760,7 +2760,7 @@
       "level": "a2",
       "slug": "indefinite-pronouns",
       "title": "Indefinite Pronouns",
-      "subtitle": "Mastering Indefinite Pronouns",
+      "subtitle": "Talk about people and things without naming them.",
       "path": "manuals/en/grammar/a2/topics/indefinite-pronouns.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/indefinite-pronouns.html"
     },
@@ -2789,8 +2789,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "most-most-of-the-most",
-      "title": "Most Most Of The Most",
-      "subtitle": "Mastering Most Most Of The Most",
+      "title": "Most, Most of, The Most",
+      "subtitle": "Talk about the majority, and about the maximum.",
       "path": "manuals/en/grammar/a2/topics/most-most-of-the-most.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/most-most-of-the-most.html"
     },
@@ -2799,8 +2799,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "much-many-little-few",
-      "title": "Much Many Little Few",
-      "subtitle": "Mastering Much Many Little Few",
+      "title": "Much, Many, Little, Few",
+      "subtitle": "Talk about quantity with uncountable and countable nouns.",
       "path": "manuals/en/grammar/a2/topics/much-many-little-few.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/much-many-little-few.html"
     },
@@ -2819,8 +2819,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "on-time-in-time-at-the-end-in-the-end",
-      "title": "On Time In Time At The End In The End",
-      "subtitle": "Mastering On Time In Time At The End In The End",
+      "title": "On Time, In Time, At the End, In the End",
+      "subtitle": "Choose the right time phrase.",
       "path": "manuals/en/grammar/a2/topics/on-time-in-time-at-the-end-in-the-end.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/on-time-in-time-at-the-end-in-the-end.html"
     },
@@ -2840,7 +2840,7 @@
       "level": "a2",
       "slug": "past-participles-1",
       "title": "Past Participles 1",
-      "subtitle": "Mastering Past Participles 1",
+      "subtitle": "Build the third form of common verbs.",
       "path": "manuals/en/grammar/a2/topics/past-participles-1.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/past-participles-1.html"
     },
@@ -2850,7 +2850,7 @@
       "level": "a2",
       "slug": "past-participles-2",
       "title": "Past Participles 2",
-      "subtitle": "Mastering Past Participles 2",
+      "subtitle": "Handle the irregular forms that catch learners out.",
       "path": "manuals/en/grammar/a2/topics/past-participles-2.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/past-participles-2.html"
     },
@@ -2889,8 +2889,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "prepositions-of-movement",
-      "title": "Prepositions Of Movement",
-      "subtitle": "Mastering Prepositions Of Movement",
+      "title": "Prepositions of Movement",
+      "subtitle": "Say where somebody moves to.",
       "path": "manuals/en/grammar/a2/topics/prepositions-of-movement.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/prepositions-of-movement.html"
     },
@@ -2980,7 +2980,7 @@
       "level": "a2",
       "slug": "question-forms",
       "title": "Question Forms",
-      "subtitle": "Mastering Question Forms",
+      "subtitle": "Build questions in every tense.",
       "path": "manuals/en/grammar/a2/topics/question-forms.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/question-forms.html"
     },
@@ -2990,7 +2990,7 @@
       "level": "a2",
       "slug": "reported-speech",
       "title": "Reported Speech",
-      "subtitle": "Mastering Reported Speech",
+      "subtitle": "Repeat what somebody said.",
       "path": "manuals/en/grammar/a2/topics/reported-speech.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/reported-speech.html"
     },
@@ -3039,8 +3039,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "too-and-enough",
-      "title": "Too And Enough",
-      "subtitle": "Mastering Too And Enough",
+      "title": "Too and Enough",
+      "subtitle": "Say something is more than you want, or as much as you need.",
       "path": "manuals/en/grammar/a2/topics/too-and-enough.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/too-and-enough.html"
     },
@@ -3059,8 +3059,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "uses-of-get",
-      "title": "Uses Of Get",
-      "subtitle": "Mastering Uses Of Get",
+      "title": "Uses of Get",
+      "subtitle": "Use one verb for obtaining, becoming and arriving.",
       "path": "manuals/en/grammar/a2/topics/uses-of-get.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/uses-of-get.html"
     },
@@ -3069,8 +3069,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "uses-of-go",
-      "title": "Uses Of Go",
-      "subtitle": "Mastering Uses Of Go",
+      "title": "Uses of Go",
+      "subtitle": "Use go for movement, activities and change.",
       "path": "manuals/en/grammar/a2/topics/uses-of-go.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/uses-of-go.html"
     },
