@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T13:04:30Z",
+  "generated": "2026-11-28T13:06:16Z",
   "count": 2140,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -1139,8 +1139,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "aoristos-anomala-rimata",
-      "title": "Αόριστος: Ανώμαλα Ρήματα",
-      "subtitle": "Ρίζες που δεν ακολουθούν τον κανόνα",
+      "title": "Ο Αόριστος των Ανώμαλων Ρημάτων",
+      "subtitle": "Πήγα, είδα, ήρθα.",
       "path": "manuals/el/grammar/a1/topics/aoristos-anomala-rimata.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/aoristos-anomala-rimata.html"
     },
@@ -1149,8 +1149,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "aoristos-kanonika-rimata",
-      "title": "Αόριστος: Κανονικά Ρήματα",
-      "subtitle": "Καταλήξεις & αλλαγή τόνου",
+      "title": "Ο Αόριστος των Κανονικών Ρημάτων",
+      "subtitle": "Έγραψα, διάβασα, δούλεψα.",
       "path": "manuals/el/grammar/a1/topics/aoristos-kanonika-rimata.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/aoristos-kanonika-rimata.html"
     },
@@ -1220,7 +1220,7 @@
       "level": "a1",
       "slug": "epirrimata-sychnotitas",
       "title": "Επιρρήματα Συχνότητας",
-      "subtitle": "Πόσο συχνά γίνεται κάτι",
+      "subtitle": "Πάντα, συχνά, σπάνια, ποτέ.",
       "path": "manuals/el/grammar/a1/topics/epirrimata-sychnotitas.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/epirrimata-sychnotitas.html"
     },
@@ -1230,7 +1230,7 @@
       "level": "a1",
       "slug": "epirrimata-tropou",
       "title": "Επιρρήματα Τρόπου",
-      "subtitle": "Πώς γίνεται μια ενέργεια",
+      "subtitle": "Γρήγορα, αργά, καλά, εύκολα.",
       "path": "manuals/el/grammar/a1/topics/epirrimata-tropou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/epirrimata-tropou.html"
     },
@@ -1299,8 +1299,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "mellontas-tha",
-      "title": "Μέλλοντας: Θα",
-      "subtitle": "Προβλέψεις, υποσχέσεις & προσφορές",
+      "title": "Ο Μέλλοντας με Θα",
+      "subtitle": "Θα πάω, θα δω, θα κάνω.",
       "path": "manuals/el/grammar/a1/topics/mellontas-tha.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/mellontas-tha.html"
     },
@@ -1309,8 +1309,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "merikos-katholou-polys",
-      "title": "Μερικός / Καθόλου / Πολύς",
-      "subtitle": "Πώς μιλάμε για ποσότητα",
+      "title": "Μερικοί, Καθόλου, Πολύς",
+      "subtitle": "Μερικοί φίλοι, καθόλου ζάχαρη, πολύς κόσμος.",
       "path": "manuals/el/grammar/a1/topics/merikos-katholou-polys.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/merikos-katholou-polys.html"
     },
@@ -1319,8 +1319,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "metrisima-kai-ametrita-ousiastika",
-      "title": "Μετρήσιμα & Αμέτρητα Ουσιαστικά",
-      "subtitle": "Πράγματα που μετριούνται και πράγματα που δεν μετριούνται",
+      "title": "Μετρήσιμα και Αμέτρητα Ουσιαστικά",
+      "subtitle": "Ένα μήλο, λίγο νερό.",
       "path": "manuals/el/grammar/a1/topics/metrisima-kai-ametrita-ousiastika.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/metrisima-kai-ametrita-ousiastika.html"
     },
@@ -1329,8 +1329,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "mou-aresei-na",
-      "title": "Μου Αρέσει Να...",
-      "subtitle": "Πώς μιλάμε για προτιμήσεις",
+      "title": "Μου Αρέσει Να",
+      "subtitle": "Μου αρέσει η μουσική, μου αρέσει να χορεύω.",
       "path": "manuals/el/grammar/a1/topics/mou-aresei-na.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/mou-aresei-na.html"
     },
@@ -1350,7 +1350,7 @@
       "level": "a1",
       "slug": "o-kairos",
       "title": "Ο Καιρός",
-      "subtitle": "Κάνει κρύο, βρέχει, χιονίζει…",
+      "subtitle": "Κάνει κρύο, βρέχει, έχει ήλιο.",
       "path": "manuals/el/grammar/a1/topics/o-kairos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/o-kairos.html"
     },
@@ -1369,8 +1369,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "parelthontikos-tou-eimai",
-      "title": "Παρελθοντικός του 'Είμαι'",
-      "subtitle": "Ήμουν, ήσουν, ήταν…",
+      "title": "Ο Παρατατικός του Είμαι",
+      "subtitle": "Ήμουν, ήσουν, ήταν.",
       "path": "manuals/el/grammar/a1/topics/parelthontikos-tou-eimai.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/parelthontikos-tou-eimai.html"
     },
@@ -1619,8 +1619,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "yparchei-yparchoun",
-      "title": "Υπάρχει / Υπάρχουν",
-      "subtitle": "Πώς μιλάμε για αυτό που υπάρχει",
+      "title": "Υπάρχει και Υπάρχουν",
+      "subtitle": "Υπάρχει ένα τραπέζι, υπάρχουν δύο καρέκλες.",
       "path": "manuals/el/grammar/a1/topics/yparchei-yparchoun.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/yparchei-yparchoun.html"
     },
@@ -1639,8 +1639,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "ypotaktiki-me-na",
-      "title": "Υποτακτική με «να»",
-      "subtitle": "Πώς συνδέουμε δύο ρήματα για να εκφράσουμε θέληση, σκοπό ή επιθυμία",
+      "title": "Η Υποτακτική με Να",
+      "subtitle": "Θέλω να πάω, μπορώ να δω.",
       "path": "manuals/el/grammar/a1/topics/ypotaktiki-me-na.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/ypotaktiki-me-na.html"
     },
