@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:26:00Z",
+  "generated": "2026-11-28T11:28:50Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -3099,8 +3099,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "adjective-preposition",
-      "title": "Adjective Preposition",
-      "subtitle": "Mastering Adjective Preposition",
+      "title": "Adjective + Preposition",
+      "subtitle": "Keep the preposition the adjective requires.",
       "path": "manuals/en/grammar/b1/topics/adjective-preposition.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/adjective-preposition.html"
     },
@@ -3129,8 +3129,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "articles-deeper-rules",
-      "title": "Articles Deeper Rules",
-      "subtitle": "Mastering Articles Deeper Rules",
+      "title": "Articles: Deeper Rules",
+      "subtitle": "Choose a, the or nothing in the harder cases.",
       "path": "manuals/en/grammar/b1/topics/articles-deeper-rules.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/articles-deeper-rules.html"
     },
@@ -3149,8 +3149,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "can-could-be-able-to",
-      "title": "Can Could Be Able To",
-      "subtitle": "Mastering Can Could Be Able To",
+      "title": "Can, Could, Be Able To",
+      "subtitle": "Express ability across tenses and situations.",
       "path": "manuals/en/grammar/b1/topics/can-could-be-able-to.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/can-could-be-able-to.html"
     },
@@ -3199,8 +3199,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "during-for-while",
-      "title": "During For While",
-      "subtitle": "Mastering During For While",
+      "title": "During, For, While",
+      "subtitle": "Separate a period, a length and a background action.",
       "path": "manuals/en/grammar/b1/topics/during-for-while.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/during-for-while.html"
     },
@@ -3229,8 +3229,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "for-since-from",
-      "title": "For Since From",
-      "subtitle": "Mastering For Since From",
+      "title": "For, Since, From",
+      "subtitle": "Mark a length, a starting point and a range.",
       "path": "manuals/en/grammar/b1/topics/for-since-from.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/for-since-from.html"
     },
@@ -3280,7 +3280,7 @@
       "level": "b1",
       "slug": "it-is-said-that",
       "title": "It Is Said That",
-      "subtitle": "Mastering It Is Said That",
+      "subtitle": "Report general opinion without naming the source.",
       "path": "manuals/en/grammar/b1/topics/it-is-said-that.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/it-is-said-that.html"
     },
@@ -3349,8 +3349,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "neednt-didnt-need-to-neednt-have",
-      "title": "Neednt Didnt Need To Neednt Have",
-      "subtitle": "Mastering Neednt Didnt Need To Neednt Have",
+      "title": "Needn't, Didn't Need To, Needn't Have",
+      "subtitle": "Separate no obligation from unnecessary action.",
       "path": "manuals/en/grammar/b1/topics/neednt-didnt-need-to-neednt-have.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/neednt-didnt-need-to-neednt-have.html"
     },
@@ -3359,8 +3359,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "passive-continuous-and-perfect-tenses",
-      "title": "Passive Continuous And Perfect Tenses",
-      "subtitle": "Mastering Passive Continuous And Perfect Tenses",
+      "title": "Passive: Continuous and Perfect",
+      "subtitle": "Put an ongoing or completed action in the passive.",
       "path": "manuals/en/grammar/b1/topics/passive-continuous-and-perfect-tenses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/passive-continuous-and-perfect-tenses.html"
     },
@@ -3419,8 +3419,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "phrasal-verbs-grammar-patterns",
-      "title": "Phrasal Verbs Grammar Patterns",
-      "subtitle": "Mastering Phrasal Verbs Grammar Patterns",
+      "title": "Phrasal Verbs: Grammar Patterns",
+      "subtitle": "Know whether the object goes before or after the particle.",
       "path": "manuals/en/grammar/b1/topics/phrasal-verbs-grammar-patterns.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/phrasal-verbs-grammar-patterns.html"
     },
@@ -3460,7 +3460,7 @@
       "level": "b1",
       "slug": "reflexive-pronouns",
       "title": "Reflexive Pronouns",
-      "subtitle": "Mastering Reflexive Pronouns",
+      "subtitle": "Use myself, yourself and themselves where they belong.",
       "path": "manuals/en/grammar/b1/topics/reflexive-pronouns.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/reflexive-pronouns.html"
     },
@@ -3469,8 +3469,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "reported-questions-and-commands",
-      "title": "Reported Questions And Commands",
-      "subtitle": "Mastering Reported Questions And Commands",
+      "title": "Reported Questions and Commands",
+      "subtitle": "Report what was asked or ordered, without the question form.",
       "path": "manuals/en/grammar/b1/topics/reported-questions-and-commands.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/reported-questions-and-commands.html"
     },
@@ -3529,8 +3529,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "verb-preposition",
-      "title": "Verb Preposition",
-      "subtitle": "Mastering Verb Preposition",
+      "title": "Verb + Preposition",
+      "subtitle": "Keep the preposition that belongs to the verb.",
       "path": "manuals/en/grammar/b1/topics/verb-preposition.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/verb-preposition.html"
     },
@@ -3539,8 +3539,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "verbs-of-the-senses",
-      "title": "Verbs Of The Senses",
-      "subtitle": "Mastering Verbs Of The Senses",
+      "title": "Verbs of the Senses",
+      "subtitle": "Describe what you see, hear and feel precisely.",
       "path": "manuals/en/grammar/b1/topics/verbs-of-the-senses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/verbs-of-the-senses.html"
     },
@@ -3549,8 +3549,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "wh-questions-in-the-past",
-      "title": "Wh Questions In The Past",
-      "subtitle": "Mastering Wh Questions In The Past",
+      "title": "Wh-Questions in the Past",
+      "subtitle": "Ask about the past with the right auxiliary.",
       "path": "manuals/en/grammar/b1/topics/wh-questions-in-the-past.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/wh-questions-in-the-past.html"
     },
@@ -3569,8 +3569,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "would-rather-would-sooner",
-      "title": "Would Rather Would Sooner",
-      "subtitle": "Mastering Would Rather Would Sooner",
+      "title": "Would Rather and Would Sooner",
+      "subtitle": "Express a preference, with one subject or two.",
       "path": "manuals/en/grammar/b1/topics/would-rather-would-sooner.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/would-rather-would-sooner.html"
     },
