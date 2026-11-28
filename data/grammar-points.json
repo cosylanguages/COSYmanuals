@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:23:24Z",
+  "generated": "2026-11-28T11:26:00Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -3119,8 +3119,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "another-other-others-the-other",
-      "title": "Another Other Others The Other",
-      "subtitle": "Mastering Another Other Others The Other",
+      "title": "Another, Other, Others, The Other",
+      "subtitle": "Choose the form that fits the noun that follows.",
       "path": "manuals/en/grammar/b1/topics/another-other-others-the-other.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/another-other-others-the-other.html"
     },
@@ -3140,7 +3140,7 @@
       "level": "b1",
       "slug": "broader-intensifiers",
       "title": "Broader Intensifiers",
-      "subtitle": "Mastering Broader Intensifiers",
+      "subtitle": "Grade adjectives without repeating very.",
       "path": "manuals/en/grammar/b1/topics/broader-intensifiers.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/broader-intensifiers.html"
     },
@@ -3179,8 +3179,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "connectors-and-linking-words",
-      "title": "Connectors And Linking Words",
-      "subtitle": "Mastering Connectors And Linking Words",
+      "title": "Connectors and Linking Words",
+      "subtitle": "Link sentences and paragraphs, not only clauses.",
       "path": "manuals/en/grammar/b1/topics/connectors-and-linking-words.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/connectors-and-linking-words.html"
     },
@@ -3209,8 +3209,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "ed-ing-adjectives",
-      "title": "Ed Ing Adjectives",
-      "subtitle": "Mastering Ed Ing Adjectives",
+      "title": "-ed and -ing Adjectives",
+      "subtitle": "Match the adjective to who feels and who causes.",
       "path": "manuals/en/grammar/b1/topics/ed-ing-adjectives.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/ed-ing-adjectives.html"
     },
@@ -3309,8 +3309,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "modals-of-deduction-past",
-      "title": "Modals Of Deduction Past",
-      "subtitle": "Mastering Modals Of Deduction Past",
+      "title": "Modals of Deduction: Past",
+      "subtitle": "Say how certain a past event is.",
       "path": "manuals/en/grammar/b1/topics/modals-of-deduction-past.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/modals-of-deduction-past.html"
     },
@@ -3379,8 +3379,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "passive-with-modals",
-      "title": "Passive With Modals",
-      "subtitle": "Mastering Passive With Modals",
+      "title": "Passive with Modals",
+      "subtitle": "Keep the modal and put the verb in the passive.",
       "path": "manuals/en/grammar/b1/topics/passive-with-modals.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/passive-with-modals.html"
     },
@@ -3400,7 +3400,7 @@
       "level": "b1",
       "slug": "past-perfect-continuous",
       "title": "Past Perfect Continuous",
-      "subtitle": "Mastering Past Perfect Continuous",
+      "subtitle": "Say how long something had been going on before a past event.",
       "path": "manuals/en/grammar/b1/topics/past-perfect-continuous.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/past-perfect-continuous.html"
     },
@@ -3490,7 +3490,7 @@
       "level": "b1",
       "slug": "reporting-verbs",
       "title": "Reporting Verbs",
-      "subtitle": "Mastering Reporting Verbs",
+      "subtitle": "Report what was said with a verb that carries the attitude.",
       "path": "manuals/en/grammar/b1/topics/reporting-verbs.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/reporting-verbs.html"
     },
@@ -3520,7 +3520,7 @@
       "level": "b1",
       "slug": "third-conditional",
       "title": "Third Conditional",
-      "subtitle": "Mastering Third Conditional",
+      "subtitle": "Talk about a past that did not happen.",
       "path": "manuals/en/grammar/b1/topics/third-conditional.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/third-conditional.html"
     },
