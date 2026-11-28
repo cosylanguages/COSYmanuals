@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T13:03:22Z",
+  "generated": "2026-11-28T13:04:30Z",
   "count": 2140,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -1190,7 +1190,7 @@
       "level": "a1",
       "slug": "chronika-epirrimata",
       "title": "Χρονικά Επιρρήματα",
-      "subtitle": "Σήμερα, χθες, αύριο, τώρα, πριν, μετά",
+      "subtitle": "Τώρα, μετά, χθες, αύριο.",
       "path": "manuals/el/grammar/a1/topics/chronika-epirrimata.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/chronika-epirrimata.html"
     },
@@ -1290,7 +1290,7 @@
       "level": "a1",
       "slug": "i-ora",
       "title": "Η Ώρα",
-      "subtitle": "Ρολόι, ώρες & η ημέρα",
+      "subtitle": "Τι ώρα είναι; Στις οκτώ και μισή.",
       "path": "manuals/el/grammar/a1/topics/i-ora.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/i-ora.html"
     },
@@ -1470,7 +1470,7 @@
       "level": "a1",
       "slug": "protheseis-chronou",
       "title": "Προθέσεις Χρόνου",
-      "subtitle": "Πώς μιλάμε για το πότε",
+      "subtitle": "Στις οκτώ, από το πρωί, μέχρι αύριο.",
       "path": "manuals/el/grammar/a1/topics/protheseis-chronou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/protheseis-chronou.html"
     },
@@ -1480,7 +1480,7 @@
       "level": "a1",
       "slug": "protheseis-topou",
       "title": "Προθέσεις Τόπου",
-      "subtitle": "Πού βρίσκονται τα πράγματα",
+      "subtitle": "Πάνω, κάτω, δίπλα, ανάμεσα.",
       "path": "manuals/el/grammar/a1/topics/protheseis-topou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/protheseis-topou.html"
     },
@@ -1589,8 +1589,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "tora-i-synitheia",
-      "title": "Τώρα ή Συνήθεια;",
-      "subtitle": "Ένας ενεστώτας, δύο πιθανές σημασίες",
+      "title": "Τώρα και η Συνήθεια",
+      "subtitle": "Κάθε μέρα, συνήθως, μερικές φορές.",
       "path": "manuals/el/grammar/a1/topics/tora-i-synitheia.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/tora-i-synitheia.html"
     },
@@ -1599,8 +1599,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "vasikes-protheseis",
-      "title": "Βασικές Προθέσεις",
-      "subtitle": "Με, Από, Για, Χωρίς",
+      "title": "Οι Βασικές Προθέσεις",
+      "subtitle": "Σε, με, από, για, χωρίς.",
       "path": "manuals/el/grammar/a1/topics/vasikes-protheseis.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/vasikes-protheseis.html"
     },
