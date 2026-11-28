@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T13:06:16Z",
+  "generated": "2026-11-28T13:07:47Z",
   "count": 2140,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -1130,7 +1130,7 @@
       "level": "a1",
       "slug": "antonymies-antikeimenou",
       "title": "Αντωνυμίες Αντικειμένου",
-      "subtitle": "Άμεσο & έμμεσο αντικείμενο — πριν από το ρήμα",
+      "subtitle": "Με βλέπει, του λέω, το θέλω.",
       "path": "manuals/el/grammar/a1/topics/antonymies-antikeimenou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/antonymies-antikeimenou.html"
     },
@@ -1269,8 +1269,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "i-elliniki-ston-kosmo-1",
-      "title": "Η Ελληνική στον Κόσμο (1/2)",
-      "subtitle": "Κοινή νέα ελληνική & κυπριακά ελληνικά",
+      "title": "Η Ελληνική στον Κόσμο 1",
+      "subtitle": "Πού μιλιέται η ελληνική.",
       "path": "manuals/el/grammar/a1/topics/i-elliniki-ston-kosmo-1.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/i-elliniki-ston-kosmo-1.html"
     },
@@ -1279,8 +1279,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "i-elliniki-ston-kosmo-2",
-      "title": "Η Ελληνική στον Κόσμο (2/2)",
-      "subtitle": "Καθημερινό λεξιλόγιο & προφορά",
+      "title": "Η Ελληνική στον Κόσμο 2",
+      "subtitle": "Η ελληνική στη διασπορά.",
       "path": "manuals/el/grammar/a1/topics/i-elliniki-ston-kosmo-2.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/i-elliniki-ston-kosmo-2.html"
     },
@@ -1340,7 +1340,7 @@
       "level": "a1",
       "slug": "mporo",
       "title": "Μπορώ",
-      "subtitle": "Ικανότητα, άδεια & πιθανότητα",
+      "subtitle": "Μπορώ να έρθω, δεν μπορώ σήμερα.",
       "path": "manuals/el/grammar/a1/topics/mporo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/mporo.html"
     },
@@ -1379,8 +1379,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "part-1-building-blocks",
-      "title": "Τα Θεμέλια των Ελληνικών",
-      "subtitle": "Αλφάβητο, δίψηφα φωνήεντα και σύμφωνα, και ο κανόνας του τόνου.",
+      "title": "Μιλάω για τον Εαυτό μου",
+      "subtitle": "Παρουσιάζομαι σε δέκα φράσεις.",
       "path": "manuals/el/grammar/a1/topics/part-1-building-blocks.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/part-1-building-blocks.html"
     },
@@ -1410,7 +1410,7 @@
       "level": "a1",
       "slug": "pos-leitourgei-afto-to-egcheiridio",
       "title": "Πώς Λειτουργεί Αυτό το Εγχειρίδιο",
-      "subtitle": "Μερικά οπτικά σημάδια που θα σε βοηθήσουν να καταλάβεις τη γραμματική",
+      "subtitle": "Κάθε θέμα έχει κανόνα, παραδείγματα και ασκήσεις.",
       "path": "manuals/el/grammar/a1/topics/pos-leitourgei-afto-to-egcheiridio.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/pos-leitourgei-afto-to-egcheiridio.html"
     },
@@ -1430,7 +1430,7 @@
       "level": "a1",
       "slug": "prepei",
       "title": "Πρέπει",
-      "subtitle": "Υποχρέωση & σύσταση",
+      "subtitle": "Πρέπει να φύγω, δεν πρέπει να αργήσεις.",
       "path": "manuals/el/grammar/a1/topics/prepei.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/prepei.html"
     },
@@ -1519,8 +1519,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "tha-ithela",
-      "title": "Θα Ήθελα...",
-      "subtitle": "Ευγενικά αιτήματα & προσφορές",
+      "title": "Θα Ήθελα",
+      "subtitle": "Θα ήθελα έναν καφέ, παρακαλώ.",
       "path": "manuals/el/grammar/a1/topics/tha-ithela.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/tha-ithela.html"
     },
