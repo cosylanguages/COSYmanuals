@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T13:01:06Z",
+  "generated": "2026-11-28T13:03:22Z",
   "count": 2140,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -1099,8 +1099,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "aitiologikoi-apotelesmatikoi-syndesmoi",
-      "title": "Αιτιολογικοί & Αποτελεσματικοί Σύνδεσμοι",
-      "subtitle": "Γιατί, επειδή, γι' αυτό: σύνδεση αιτίας και αποτελέσματος",
+      "title": "Αιτία και Αποτέλεσμα",
+      "subtitle": "Γιατί, επειδή, γι' αυτό.",
       "path": "manuals/el/grammar/a1/topics/aitiologikoi-apotelesmatikoi-syndesmoi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/aitiologikoi-apotelesmatikoi-syndesmoi.html"
     },
@@ -1109,8 +1109,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "anomala-rimata-1",
-      "title": "Ανώμαλα Ρήματα (1/2)",
-      "subtitle": "Ομάδα 1: αύξηση · Ομάδα 2: αλλαγή ρίζας",
+      "title": "Ανώμαλα Ρήματα 1",
+      "subtitle": "Πηγαίνω, λέω, κάνω, βλέπω.",
       "path": "manuals/el/grammar/a1/topics/anomala-rimata-1.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/anomala-rimata-1.html"
     },
@@ -1119,8 +1119,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "anomala-rimata-2",
-      "title": "Ανώμαλα Ρήματα (2/2)",
-      "subtitle": "Ομάδα 3: αποθετικά · Ομάδα 4: άλλα συχνά ρήματα",
+      "title": "Ανώμαλα Ρήματα 2",
+      "subtitle": "Έρχομαι, φεύγω, βγαίνω, μπαίνω.",
       "path": "manuals/el/grammar/a1/topics/anomala-rimata-2.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/anomala-rimata-2.html"
     },
@@ -1159,8 +1159,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "arithmoi-meres-kai-mines",
-      "title": "Αριθμοί, Μέρες & Μήνες",
-      "subtitle": "Πώς μετράμε & μιλάμε για ημερομηνίες",
+      "title": "Αριθμοί, Μέρες και Μήνες",
+      "subtitle": "Ένα, δύο, τρία... Δευτέρα, Ιανουάριος.",
       "path": "manuals/el/grammar/a1/topics/arithmoi-meres-kai-mines.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/arithmoi-meres-kai-mines.html"
     },
@@ -1169,8 +1169,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "arnitikes-protaseis-den-vs-min",
-      "title": "Αρνητικές Προτάσεις: «Δεν» vs «Μην»",
-      "subtitle": "Πότε χρησιμοποιούμε «δεν» και πότε «μην» για την άρνηση",
+      "title": "Αρνητικές Προτάσεις: Δεν ή Μην",
+      "subtitle": "Δεν θέλω, μη μιλάς.",
       "path": "manuals/el/grammar/a1/topics/arnitikes-protaseis-den-vs-min.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/arnitikes-protaseis-den-vs-min.html"
     },
@@ -1199,8 +1199,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "enestotas-omada-a",
-      "title": "Ενεστώτας — Ομάδα Α",
-      "subtitle": "Ρήματα σαν το Διαβάζω (-ω)",
+      "title": "Ενεστώτας, Ομάδα Α",
+      "subtitle": "Δουλεύω, δουλεύεις, δουλεύει.",
       "path": "manuals/el/grammar/a1/topics/enestotas-omada-a.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/enestotas-omada-a.html"
     },
@@ -1209,8 +1209,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "enestotas-omada-v",
-      "title": "Ενεστώτας — Ομάδα Β",
-      "subtitle": "Ρήματα σαν το Μιλάω/Μιλώ (-άω/-ώ)",
+      "title": "Ενεστώτας, Ομάδα Β",
+      "subtitle": "Μιλάω, μιλάς, μιλάει.",
       "path": "manuals/el/grammar/a1/topics/enestotas-omada-v.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/enestotas-omada-v.html"
     },
@@ -1240,7 +1240,7 @@
       "level": "a1",
       "slug": "epitatika-moria",
       "title": "Επιτατικά Μόρια",
-      "subtitle": "Πολύ, πάρα πολύ & αρκετά",
+      "subtitle": "Να, ας, θα.",
       "path": "manuals/el/grammar/a1/topics/epitatika-moria.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/epitatika-moria.html"
     },
@@ -1360,7 +1360,7 @@
       "level": "a1",
       "slug": "oi-oikogeneies-ton-rimaton",
       "title": "Οι Οικογένειες των Ρημάτων",
-      "subtitle": "Ένας χάρτης για όλα τα ρήματα του επιπέδου Α0–Α1",
+      "subtitle": "Δύο μεγάλες ομάδες ρημάτων.",
       "path": "manuals/el/grammar/a1/topics/oi-oikogeneies-ton-rimaton.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/oi-oikogeneies-ton-rimaton.html"
     },
@@ -1459,8 +1459,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "prostaktiki",
-      "title": "Προστακτική",
-      "subtitle": "Οδηγίες, κανόνες & κατευθύνσεις",
+      "title": "Η Προστακτική",
+      "subtitle": "Έλα, πήγαινε, άκου.",
       "path": "manuals/el/grammar/a1/topics/prostaktiki.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/prostaktiki.html"
     },
@@ -1490,7 +1490,7 @@
       "level": "a1",
       "slug": "rimata-se-amai",
       "title": "Ρήματα σε -άμαι",
-      "subtitle": "Κοιμάμαι, θυμάμαι, λυπάμαι, φοβάμαι",
+      "subtitle": "Θυμάμαι, κοιμάμαι, λυπάμαι.",
       "path": "manuals/el/grammar/a1/topics/rimata-se-amai.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/rimata-se-amai.html"
     },
@@ -1499,8 +1499,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "syndesmoi",
-      "title": "Σύνδεσμοι",
-      "subtitle": "Και, αλλά, ή, επειδή, έτσι",
+      "title": "Οι Σύνδεσμοι",
+      "subtitle": "Και, ή, αλλά, όμως.",
       "path": "manuals/el/grammar/a1/topics/syndesmoi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/syndesmoi.html"
     },
