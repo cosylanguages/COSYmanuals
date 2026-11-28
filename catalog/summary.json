@@ -65,12 +65,12 @@
    "hub": 55,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 905,
-   "topic_real": 547,
+   "pages": 915,
+   "topic_real": 557,
    "topic_stub": 0,
    "track_manual": 81,
    "unit": 208,
-   "visual_pages": 150
+   "visual_pages": 160
   },
   "es": {
    "english_leak_pages": 0,
@@ -291,7 +291,7 @@
    0
   ],
   "en/grammar/b2": [
-   37,
+   47,
    0
   ],
   "en/grammar/c1": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4080
+ "total_pages": 4090
 }

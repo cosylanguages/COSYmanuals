@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T10:59:02Z",
-  "count": 2056,
+  "generated": "2026-11-28T11:05:39Z",
+  "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -3595,6 +3595,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/alternatives-to-if.html"
     },
     {
+      "id": "en-b2-b2-master-review-and-examination",
+      "lang": "en",
+      "level": "b2",
+      "slug": "b2-master-review-and-examination",
+      "title": "B2 Master Review",
+      "subtitle": "The whole B2 system on one page, in the order the exam tests it.",
+      "path": "manuals/en/grammar/b2/topics/b2-master-review-and-examination.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/b2-master-review-and-examination.html"
+    },
+    {
       "id": "en-b2-clauses-of-contrast-purpose-reason-and-result",
       "lang": "en",
       "level": "b2",
@@ -3675,6 +3685,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/distancing-passive-reporting.html"
     },
     {
+      "id": "en-b2-ellipsis-and-substitution",
+      "lang": "en",
+      "level": "b2",
+      "slug": "ellipsis-and-substitution",
+      "title": "Ellipsis & Substitution",
+      "subtitle": "Leave out what the reader can recover, and replace what cannot be dropped.",
+      "path": "manuals/en/grammar/b2/topics/ellipsis-and-substitution.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/ellipsis-and-substitution.html"
+    },
+    {
       "id": "en-b2-formal-vs-informal-register",
       "lang": "en",
       "level": "b2",
@@ -3683,6 +3703,16 @@
       "subtitle": "Mastering Formal Vs Informal Register",
       "path": "manuals/en/grammar/b2/topics/formal-vs-informal-register.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/formal-vs-informal-register.html"
+    },
+    {
+      "id": "en-b2-fronting-for-focus",
+      "lang": "en",
+      "level": "b2",
+      "slug": "fronting-for-focus",
+      "title": "Fronting for Focus",
+      "subtitle": "Move an element to the front when the reader needs it first.",
+      "path": "manuals/en/grammar/b2/topics/fronting-for-focus.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/fronting-for-focus.html"
     },
     {
       "id": "en-b2-future-forms-expressing-future-time",
@@ -3745,6 +3775,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/gradable-vs-extreme-adjectives.html"
     },
     {
+      "id": "en-b2-hedging-and-diplomatic-stance",
+      "lang": "en",
+      "level": "b2",
+      "slug": "hedging-and-diplomatic-stance",
+      "title": "Hedging & Diplomatic Stance",
+      "subtitle": "Say something contestable without picking a fight.",
+      "path": "manuals/en/grammar/b2/topics/hedging-and-diplomatic-stance.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/hedging-and-diplomatic-stance.html"
+    },
+    {
       "id": "en-b2-inversion-after-negative-adverbials",
       "lang": "en",
       "level": "b2",
@@ -3793,6 +3833,16 @@
       "subtitle": "Mastering Narrative Tenses",
       "path": "manuals/en/grammar/b2/topics/narrative-tenses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/narrative-tenses.html"
+    },
+    {
+      "id": "en-b2-nominalisation-and-register",
+      "lang": "en",
+      "level": "b2",
+      "slug": "nominalisation-and-register",
+      "title": "Nominalisation & Register",
+      "subtitle": "Turn a clause into a noun when the text has to sound formal.",
+      "path": "manuals/en/grammar/b2/topics/nominalisation-and-register.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/nominalisation-and-register.html"
     },
     {
       "id": "en-b2-order-of-adjectives",
@@ -3875,6 +3925,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/possessive-s-with-time-expressions.html"
     },
     {
+      "id": "en-b2-prefixes-and-negative-forms",
+      "lang": "en",
+      "level": "b2",
+      "slug": "prefixes-and-negative-forms",
+      "title": "Prefixes & Negative Forms",
+      "subtitle": "Negate a word without changing its class.",
+      "path": "manuals/en/grammar/b2/topics/prefixes-and-negative-forms.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/prefixes-and-negative-forms.html"
+    },
+    {
       "id": "en-b2-present-tenses-review",
       "lang": "en",
       "level": "b2",
@@ -3905,6 +3965,26 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/relative-clauses-review-and-deepening.html"
     },
     {
+      "id": "en-b2-reporting-verbs-with-prepositions",
+      "lang": "en",
+      "level": "b2",
+      "slug": "reporting-verbs-with-prepositions",
+      "title": "Reporting Verbs with Prepositions",
+      "subtitle": "Report what someone said with the preposition the verb demands.",
+      "path": "manuals/en/grammar/b2/topics/reporting-verbs-with-prepositions.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/reporting-verbs-with-prepositions.html"
+    },
+    {
+      "id": "en-b2-rhetorical-questioning-and-parallelism",
+      "lang": "en",
+      "level": "b2",
+      "slug": "rhetorical-questioning-and-parallelism",
+      "title": "Rhetorical Questions & Parallelism",
+      "subtitle": "Ask a question you will answer, and line up structures that match.",
+      "path": "manuals/en/grammar/b2/topics/rhetorical-questioning-and-parallelism.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/rhetorical-questioning-and-parallelism.html"
+    },
+    {
       "id": "en-b2-speculation-and-deduction-deepening",
       "lang": "en",
       "level": "b2",
@@ -3913,6 +3993,26 @@
       "subtitle": "Mastering Speculation And Deduction Deepening",
       "path": "manuals/en/grammar/b2/topics/speculation-and-deduction-deepening.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/speculation-and-deduction-deepening.html"
+    },
+    {
+      "id": "en-b2-subject-predicate-agreement",
+      "lang": "en",
+      "level": "b2",
+      "slug": "subject-predicate-agreement",
+      "title": "Subject-Predicate Agreement",
+      "subtitle": "Make the verb agree with the real subject, not the nearest noun.",
+      "path": "manuals/en/grammar/b2/topics/subject-predicate-agreement.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/subject-predicate-agreement.html"
+    },
+    {
+      "id": "en-b2-suffixes-and-word-formation",
+      "lang": "en",
+      "level": "b2",
+      "slug": "suffixes-and-word-formation",
+      "title": "Suffixes & Word Formation",
+      "subtitle": "Build the word class you need from the word you have.",
+      "path": "manuals/en/grammar/b2/topics/suffixes-and-word-formation.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b2/topics/suffixes-and-word-formation.html"
     },
     {
       "id": "en-b2-used-to-vs-would",
