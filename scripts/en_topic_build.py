@@ -193,6 +193,18 @@ def body(spec, slug):
 """
 
 
+def prune_nav(fragment, level):
+    """Drop navigation links whose target does not exist for this level."""
+    import os
+
+    def keep(m):
+        target = os.path.normpath(os.path.join(ROOT, level, m.group(1)))
+        return m.group(0) if os.path.exists(target) else ""
+
+    fragment = re.sub(r'\s*<a class="sd-jump-link[^"]*" href="\.\./([^"]+)">[^<]*</a>', keep, fragment)
+    return re.sub(r"<nav[^>]*>\s*</nav>\n?", "", fragment)
+
+
 def build(level, slug, spec):
     src = open(SHELL, encoding="utf-8").read()
     head_end = src.index("<main ")
@@ -209,7 +221,7 @@ def build(level, slug, spec):
     head = re.sub(r'<meta name="description" content="[^"]*">',
                   f'<meta name="description" content="Complete English grammar guide to {esc(title)} at level {level.upper()}. Rule, examples, CCQs and interactive practice.">',
                   head, count=1)
-    out = head + main_open + "\n" + body(spec, slug) + "\n" + tail
+    out = prune_nav(head, level) + main_open + "\n" + body(spec, slug) + "\n" + tail
     path = f"{ROOT}/{level}/topics/{slug}.html"
     open(path, "w", encoding="utf-8").write(out)
     return path

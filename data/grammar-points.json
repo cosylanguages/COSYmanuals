@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:17:49Z",
+  "generated": "2026-11-28T11:23:24Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -3189,8 +3189,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "defining-vs-non-defining-relative-clauses",
-      "title": "Defining Vs Non Defining Relative Clauses",
-      "subtitle": "Mastering Defining Vs Non Defining Relative Clauses",
+      "title": "Defining and Non-Defining Relative Clauses",
+      "subtitle": "Decide whether the clause identifies or merely adds.",
       "path": "manuals/en/grammar/b1/topics/defining-vs-non-defining-relative-clauses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/defining-vs-non-defining-relative-clauses.html"
     },
@@ -3219,8 +3219,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "embedded-indirect-questions",
-      "title": "Embedded Indirect Questions",
-      "subtitle": "Mastering Embedded Indirect Questions",
+      "title": "Embedded and Indirect Questions",
+      "subtitle": "Put a question inside a sentence without inverting it.",
       "path": "manuals/en/grammar/b1/topics/embedded-indirect-questions.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/embedded-indirect-questions.html"
     },
@@ -3240,7 +3240,7 @@
       "level": "b1",
       "slug": "future-continuous",
       "title": "Future Continuous",
-      "subtitle": "Mastering Future Continuous",
+      "subtitle": "Say what will be happening at a future moment.",
       "path": "manuals/en/grammar/b1/topics/future-continuous.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/future-continuous.html"
     },
@@ -3250,7 +3250,7 @@
       "level": "b1",
       "slug": "future-forms-review",
       "title": "Future Forms Review",
-      "subtitle": "Mastering Future Forms Review",
+      "subtitle": "Choose will, going to, the present continuous or the present simple.",
       "path": "manuals/en/grammar/b1/topics/future-forms-review.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/future-forms-review.html"
     },
@@ -3260,7 +3260,7 @@
       "level": "b1",
       "slug": "future-perfect",
       "title": "Future Perfect",
-      "subtitle": "Mastering Future Perfect",
+      "subtitle": "Say what will be finished by a future point.",
       "path": "manuals/en/grammar/b1/topics/future-perfect.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/future-perfect.html"
     },
@@ -3290,7 +3290,7 @@
       "level": "b1",
       "slug": "linking-words",
       "title": "Linking Words",
-      "subtitle": "Mastering Linking Words",
+      "subtitle": "Connect ideas and show the relation between them.",
       "path": "manuals/en/grammar/b1/topics/linking-words.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/linking-words.html"
     },
@@ -3369,8 +3369,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "passive-simple-and-future-tenses",
-      "title": "Passive Simple And Future Tenses",
-      "subtitle": "Mastering Passive Simple And Future Tenses",
+      "title": "Passive: Simple and Future Tenses",
+      "subtitle": "Put the object first in the present, past and future.",
       "path": "manuals/en/grammar/b1/topics/passive-simple-and-future-tenses.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/passive-simple-and-future-tenses.html"
     },
@@ -3389,8 +3389,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "past-perfect",
-      "title": "Past Perfect",
-      "subtitle": "Mastering Past Perfect",
+      "title": "Past Perfect: Had + Past Participle",
+      "subtitle": "Show which of two past events happened first.",
       "path": "manuals/en/grammar/b1/topics/past-perfect.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/past-perfect.html"
     },
@@ -3450,7 +3450,7 @@
       "level": "b1",
       "slug": "question-tags",
       "title": "Question Tags",
-      "subtitle": "Mastering Question Tags",
+      "subtitle": "Add a short question to check or invite agreement.",
       "path": "manuals/en/grammar/b1/topics/question-tags.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/question-tags.html"
     },
@@ -3509,8 +3509,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "so-such-so-much-so-many",
-      "title": "So Such So Much So Many",
-      "subtitle": "Mastering So Such So Much So Many",
+      "title": "So, Such, So Much, So Many",
+      "subtitle": "Intensify an adjective, a noun or a quantity.",
       "path": "manuals/en/grammar/b1/topics/so-such-so-much-so-many.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/so-such-so-much-so-many.html"
     },
