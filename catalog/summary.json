@@ -89,8 +89,8 @@
    "hub": 48,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 1458,
-   "topic_real": 1268,
+   "pages": 1465,
+   "topic_real": 1275,
    "topic_stub": 0,
    "track_manual": 57,
    "unit": 82,
@@ -379,7 +379,7 @@
    0
   ],
   "fr/grammar/b2": [
-   202,
+   209,
    0
   ],
   "fr/grammar/c1": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4073
+ "total_pages": 4080
 }
