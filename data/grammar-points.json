@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T14:04:22Z",
-  "count": 2145,
+  "generated": "2026-11-28T14:07:15Z",
+  "count": 2137,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -5775,86 +5775,6 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/formules-de-politesse-sociales.html"
     },
     {
-      "id": "fr-a1-fr",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr",
-      "title": "Grammaire Française 🇫🇷",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr.html"
-    },
-    {
-      "id": "fr-a1-fr-articles",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-articles",
-      "title": "Les Articles · French Articles",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-articles.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-articles.html"
-    },
-    {
-      "id": "fr-a1-fr-articles-partitifs",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-articles-partitifs",
-      "title": "Les Articles Partitifs",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-articles-partitifs.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-articles-partitifs.html"
-    },
-    {
-      "id": "fr-a1-fr-avoir",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-avoir",
-      "title": "Le verbe AVOIR",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-avoir.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-avoir.html"
-    },
-    {
-      "id": "fr-a1-fr-etre",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-etre",
-      "title": "Le verbe ÊTRE",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-etre.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-etre.html"
-    },
-    {
-      "id": "fr-a1-fr-negation",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-negation",
-      "title": "Négation",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-negation.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-negation.html"
-    },
-    {
-      "id": "fr-a1-fr-pronoms",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-pronoms",
-      "title": "Les Pronoms",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-pronoms.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-pronoms.html"
-    },
-    {
-      "id": "fr-a1-fr-verbes-er",
-      "lang": "fr",
-      "level": "a1",
-      "slug": "fr-verbes-er",
-      "title": "Verbes en -ER",
-      "subtitle": "",
-      "path": "manuals/fr/grammar/a1/topics/fr-verbes-er.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a1/topics/fr-verbes-er.html"
-    },
-    {
       "id": "fr-a1-francais-monde-1",
       "lang": "fr",
       "level": "a1",
@@ -8079,8 +7999,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "l-hypothese-au-present",
-      "title": "L'Hypothèse au Présent (Si...)",
-      "subtitle": "Exprimer une condition et sa conséquence",
+      "title": "L'hypothèse au présent",
+      "subtitle": "Si + présent, présent ou futur",
       "path": "manuals/fr/grammar/a2/topics/l-hypothese-au-present.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/l-hypothese-au-present.html"
     },
@@ -8089,8 +8009,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "la-comparaison-et-le-superlatif",
-      "title": "La Comparaison et le Superlatif",
-      "subtitle": "Comparer des qualités, des quantités et exprimer l'excellence",
+      "title": "La comparaison et le superlatif",
+      "subtitle": "Plus, moins, aussi, le plus",
       "path": "manuals/fr/grammar/a2/topics/la-comparaison-et-le-superlatif.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/la-comparaison-et-le-superlatif.html"
     },
@@ -8109,7 +8029,7 @@
       "lang": "fr",
       "level": "a2",
       "slug": "le-conditionnel-present",
-      "title": "Le Conditionnel Présent",
+      "title": "Le conditionnel présent",
       "subtitle": "La politesse, les souhaits et le conseil",
       "path": "manuals/fr/grammar/a2/topics/le-conditionnel-present.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/le-conditionnel-present.html"
@@ -8119,8 +8039,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "le-futur-simple",
-      "title": "Le Futur Simple",
-      "subtitle": "Exprimer ses projets, ses prédictions et son avenir",
+      "title": "Le futur simple",
+      "subtitle": "Parler de l'avenir et des projets",
       "path": "manuals/fr/grammar/a2/topics/le-futur-simple.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/le-futur-simple.html"
     },
@@ -8169,8 +8089,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "les-pronoms-cod-et-coi",
-      "title": "Les Pronoms COD et COI",
-      "subtitle": "Remplacer les compléments directs et indirects (me, te, le, la, lui, nous, vous, les, leur)",
+      "title": "Les pronoms COD et COI",
+      "subtitle": "Remplacer le complément pour alléger la phrase",
       "path": "manuals/fr/grammar/a2/topics/les-pronoms-cod-et-coi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/les-pronoms-cod-et-coi.html"
     },
@@ -8179,8 +8099,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "les-pronoms-en-et-y",
-      "title": "Les Pronoms EN et Y",
-      "subtitle": "Remplacer des lieux, des quantités et des compléments introduits par De et À",
+      "title": "Les pronoms en et y",
+      "subtitle": "Remplacer « de … » et « à … / dans … »",
       "path": "manuals/fr/grammar/a2/topics/les-pronoms-en-et-y.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/les-pronoms-en-et-y.html"
     },
@@ -8209,8 +8129,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "limparfait-de-lindicatif",
-      "title": "L'Imparfait de l'Indicatif",
-      "subtitle": "Décrire les habitudes, les décors et les états passés",
+      "title": "L'imparfait de l'indicatif",
+      "subtitle": "Décrire le passé et les habitudes",
       "path": "manuals/fr/grammar/a2/topics/limparfait-de-lindicatif.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/limparfait-de-lindicatif.html"
     },
@@ -8229,8 +8149,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "lobligation-et-linterdiction",
-      "title": "L'Obligation et l'Interdiction",
-      "subtitle": "Falloir, devoir et les structures d'interdiction",
+      "title": "L'obligation et l'interdiction",
+      "subtitle": "Devoir, falloir, il est interdit de",
       "path": "manuals/fr/grammar/a2/topics/lobligation-et-linterdiction.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/lobligation-et-linterdiction.html"
     },
@@ -8339,8 +8259,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "passe-compose-avoir-etre",
-      "title": "Le Passé Composé avec Avoir et Être",
-      "subtitle": "L'accord du participe passé et le choix de l'auxiliaire",
+      "title": "Le passé composé avec avoir et être",
+      "subtitle": "Choisir l'auxiliaire et accorder le participe",
       "path": "manuals/fr/grammar/a2/topics/passe-compose-avoir-etre.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/passe-compose-avoir-etre.html"
     },
@@ -8359,8 +8279,8 @@
       "lang": "fr",
       "level": "a2",
       "slug": "passe-compose-vs-imparfait",
-      "title": "Passé Composé vs Imparfait",
-      "subtitle": "Articuler l'action ponctuelle et la toile de fond",
+      "title": "Passé composé et imparfait",
+      "subtitle": "L'événement et le décor",
       "path": "manuals/fr/grammar/a2/topics/passe-compose-vs-imparfait.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/fr/grammar/a2/topics/passe-compose-vs-imparfait.html"
     },

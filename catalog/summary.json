@@ -89,12 +89,12 @@
    "hub": 48,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 1465,
-   "topic_real": 1275,
+   "pages": 1457,
+   "topic_real": 1267,
    "topic_stub": 0,
    "track_manual": 57,
    "unit": 82,
-   "visual_pages": 28
+   "visual_pages": 24
   },
   "hy": {
    "english_leak_pages": 11,
@@ -367,7 +367,7 @@
    0
   ],
   "fr/grammar/a1": [
-   202,
+   194,
    0
   ],
   "fr/grammar/a2": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4174
+ "total_pages": 4166
 }
