@@ -57,8 +57,20 @@ def esc(text):
 def spec(title, subtitle, objective, opener_theme, open_lines, formula, examples,
          observe, ccq, table, rule, why, native, pron, bank, mistakes, links,
          checklist, quiz):
+    # An opener is written as (prefix, verb, suffix), but a call may split the sentence differently.
+    # Treat the first item as the prefix, the last as the suffix and everything between as the verb,
+    # so a two-part sentence ("Vorrei", " un caffè") and a two-verb one both render.
+    openers = []
+    for line in open_lines:
+        line = tuple(line)
+        if len(line) == 1:
+            openers.append((line[0], '', ''))
+        elif len(line) == 2:
+            openers.append((line[0], '', line[1]))
+        else:
+            openers.append((line[0], ''.join(line[1:-1]), line[-1]))
     return dict(title=title, subtitle=subtitle, objective=objective,
-                theme=opener_theme, open_lines=open_lines, formula=formula,
+                theme=opener_theme, open_lines=openers, formula=formula,
                 examples=examples, observe=observe, ccq=ccq, table=table, rule=rule,
                 why=why, native=native, pron=pron, bank=bank, mistakes=mistakes,
                 links=links, checklist=checklist, quiz=quiz)

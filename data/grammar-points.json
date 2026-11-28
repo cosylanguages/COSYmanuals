@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:45:00Z",
-  "count": 2081,
+  "generated": "2026-11-28T12:29:59Z",
+  "count": 2091,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -16665,12 +16665,52 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/verbi-riflessivi.html"
     },
     {
+      "id": "it-a2-dare-consigli",
+      "lang": "it",
+      "level": "a2",
+      "slug": "dare-consigli",
+      "title": "Dare Consigli",
+      "subtitle": "Dire «dovresti», «ti consiglio di», «è meglio che».",
+      "path": "manuals/it/grammar/a2/topics/dare-consigli.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/dare-consigli.html"
+    },
+    {
+      "id": "it-a2-emozioni-al-passato",
+      "lang": "it",
+      "level": "a2",
+      "slug": "emozioni-al-passato",
+      "title": "Le Emozioni al Passato",
+      "subtitle": "Raccontare come ci si sentiva.",
+      "path": "manuals/it/grammar/a2/topics/emozioni-al-passato.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/emozioni-al-passato.html"
+    },
+    {
+      "id": "it-a2-esprimere-desideri-e-speranze",
+      "lang": "it",
+      "level": "a2",
+      "slug": "esprimere-desideri-e-speranze",
+      "title": "Esprimere Desideri e Speranze",
+      "subtitle": "Dire «spero che», «magari», «vorrei tanto».",
+      "path": "manuals/it/grammar/a2/topics/esprimere-desideri-e-speranze.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/esprimere-desideri-e-speranze.html"
+    },
+    {
+      "id": "it-a2-fare-previsioni",
+      "lang": "it",
+      "level": "a2",
+      "slug": "fare-previsioni",
+      "title": "Fare Previsioni",
+      "subtitle": "Dire che cosa probabilmente accadrà.",
+      "path": "manuals/it/grammar/a2/topics/fare-previsioni.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/fare-previsioni.html"
+    },
+    {
       "id": "it-a2-forma-passiva-base",
       "lang": "it",
       "level": "a2",
       "slug": "forma-passiva-base",
-      "title": "La Forma Passiva Base",
-      "subtitle": "Essere / Venire + Participio Passato (Il libro è scritto da...)",
+      "title": "La Forma Passiva",
+      "subtitle": "Dire «la casa è costruita» invece di «qualcuno costruisce».",
       "path": "manuals/it/grammar/a2/topics/forma-passiva-base.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/forma-passiva-base.html"
     },
@@ -16679,8 +16719,8 @@
       "lang": "it",
       "level": "a2",
       "slug": "i-pronomi-ci-e-ne",
-      "title": "I Pronomei CI e NE",
-      "subtitle": "Sostituire luoghi, argomenti e quantità",
+      "title": "I Pronomi Ci e Ne",
+      "subtitle": "Dire «ci vado», «ne parlo».",
       "path": "manuals/it/grammar/a2/topics/i-pronomi-ci-e-ne.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/i-pronomi-ci-e-ne.html"
     },
@@ -16690,7 +16730,7 @@
       "level": "a2",
       "slug": "il-comparativo-e-il-superlativo",
       "title": "Il Comparativo e il Superlativo",
-      "subtitle": "Confrontare qualità e fare graduatoria di eccellenza",
+      "subtitle": "Confrontare due cose e indicare il massimo.",
       "path": "manuals/it/grammar/a2/topics/il-comparativo-e-il-superlativo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/il-comparativo-e-il-superlativo.html"
     },
@@ -16700,9 +16740,19 @@
       "level": "a2",
       "slug": "il-condizionale-presente",
       "title": "Il Condizionale Presente",
-      "subtitle": "La cortesia, i desideri ed i consigli",
+      "subtitle": "Fare richieste cortesi e parlare di possibilità.",
       "path": "manuals/it/grammar/a2/topics/il-condizionale-presente.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/il-condizionale-presente.html"
+    },
+    {
+      "id": "it-a2-il-futuro-irregolare",
+      "lang": "it",
+      "level": "a2",
+      "slug": "il-futuro-irregolare",
+      "title": "Il Futuro Irregolare",
+      "subtitle": "Usare sarò, avrò, andrò, verrò senza esitare.",
+      "path": "manuals/it/grammar/a2/topics/il-futuro-irregolare.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/il-futuro-irregolare.html"
     },
     {
       "id": "it-a2-il-futuro-semplice",
@@ -16710,19 +16760,39 @@
       "level": "a2",
       "slug": "il-futuro-semplice",
       "title": "Il Futuro Semplice",
-      "subtitle": "Pianificare il futuro, fare previsioni ed esprimere ipotesi",
+      "subtitle": "Parlare di ciò che accadrà.",
       "path": "manuals/it/grammar/a2/topics/il-futuro-semplice.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/il-futuro-semplice.html"
+    },
+    {
+      "id": "it-a2-il-tempo-atmosferico",
+      "lang": "it",
+      "level": "a2",
+      "slug": "il-tempo-atmosferico",
+      "title": "Il Tempo Atmosferico",
+      "subtitle": "Commentare il tempo e capire le previsioni.",
+      "path": "manuals/it/grammar/a2/topics/il-tempo-atmosferico.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/il-tempo-atmosferico.html"
     },
     {
       "id": "it-a2-imperativo-con-pronomi",
       "lang": "it",
       "level": "a2",
       "slug": "imperativo-con-pronomi",
-      "title": "L'Imperativo con Pronomi",
-      "subtitle": "Mangialo! Dimmelo! Non lo fare! Posizione dei pronomi con i comandi",
+      "title": "L'Imperativo con i Pronomi",
+      "subtitle": "Dire «dammi», «fallo», «portamelo».",
       "path": "manuals/it/grammar/a2/topics/imperativo-con-pronomi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/imperativo-con-pronomi.html"
+    },
+    {
+      "id": "it-a2-l-articolo-partitivo",
+      "lang": "it",
+      "level": "a2",
+      "slug": "l-articolo-partitivo",
+      "title": "L'Articolo Partitivo",
+      "subtitle": "Dire «del pane», «dei libri», una quantità non precisata.",
+      "path": "manuals/it/grammar/a2/topics/l-articolo-partitivo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/l-articolo-partitivo.html"
     },
     {
       "id": "it-a2-limperfetto-indicativo",
@@ -16730,17 +16800,27 @@
       "level": "a2",
       "slug": "limperfetto-indicativo",
       "title": "L'Imperfetto Indicativo",
-      "subtitle": "Descrivere abitudini, stati d'animo e contesti del passato",
+      "subtitle": "Descrivere il passato che durava.",
       "path": "manuals/it/grammar/a2/topics/limperfetto-indicativo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/limperfetto-indicativo.html"
+    },
+    {
+      "id": "it-a2-molto-poco-troppo",
+      "lang": "it",
+      "level": "a2",
+      "slug": "molto-poco-troppo",
+      "title": "Molto, Poco e Troppo",
+      "subtitle": "Graduare la quantità.",
+      "path": "manuals/it/grammar/a2/topics/molto-poco-troppo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/molto-poco-troppo.html"
     },
     {
       "id": "it-a2-obbligo-dovere-bisogna",
       "lang": "it",
       "level": "a2",
       "slug": "obbligo-dovere-bisogna",
-      "title": "L'Obbligo e la Necessità: Dovere e Bisogna",
-      "subtitle": "Esprimere regole, doveri personali e necessità generali",
+      "title": "Obbligo: Dovere e Bisogna",
+      "subtitle": "Dire «devo», «bisogna», «è necessario».",
       "path": "manuals/it/grammar/a2/topics/obbligo-dovere-bisogna.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/obbligo-dovere-bisogna.html"
     },
@@ -16749,8 +16829,8 @@
       "lang": "it",
       "level": "a2",
       "slug": "passato-prossimo-essere-avere",
-      "title": "Passato Prossimo con Avere ed Essere",
-      "subtitle": "Scelta dell'ausiliare e accordo del participio passato",
+      "title": "Passato Prossimo con Essere e Avere",
+      "subtitle": "Scegliere l'ausiliare giusto.",
       "path": "manuals/it/grammar/a2/topics/passato-prossimo-essere-avere.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/passato-prossimo-essere-avere.html"
     },
@@ -16759,8 +16839,8 @@
       "lang": "it",
       "level": "a2",
       "slug": "passato-prossimo-vs-imperfetto",
-      "title": "Passato Prossimo vs Imperfetto",
-      "subtitle": "L'alternanza tra sfondo narrativo ed evento interruttivo",
+      "title": "Passato Prossimo o Imperfetto",
+      "subtitle": "Scegliere il tempo giusto nel racconto.",
       "path": "manuals/it/grammar/a2/topics/passato-prossimo-vs-imperfetto.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/passato-prossimo-vs-imperfetto.html"
     },
@@ -16769,8 +16849,8 @@
       "lang": "it",
       "level": "a2",
       "slug": "periodo-ipotetico-2",
-      "title": "Il Periodo Ipotetico della Possibilità (2° Tipo)",
-      "subtitle": "Se + Congiuntivo Imperfetto → Condizionale Presente (Se avessi tempo, uscirei)",
+      "title": "Il Periodo Ipotetico del Secondo Tipo",
+      "subtitle": "Dire «se potessi, verrei».",
       "path": "manuals/it/grammar/a2/topics/periodo-ipotetico-2.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/periodo-ipotetico-2.html"
     },
@@ -16779,8 +16859,8 @@
       "lang": "it",
       "level": "a2",
       "slug": "pronomi-combinati",
-      "title": "I Pronomi Combinati",
-      "subtitle": "Unire pronomi indiretti e pronomi diretti (Me lo, te la, glielo...)",
+      "title": "I Pronomi Combinati (base)",
+      "subtitle": "Dire «me lo dai», «gliela mando».",
       "path": "manuals/it/grammar/a2/topics/pronomi-combinati.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/pronomi-combinati.html"
     },
@@ -16789,20 +16869,40 @@
       "lang": "it",
       "level": "a2",
       "slug": "pronomi-diretti-e-indiretti",
-      "title": "I Pronomei Diretti e Indiretti",
-      "subtitle": "Sostituire oggetti e persone (mi, ti, lo, la, ci, vi, li, le / gli, le)",
+      "title": "Pronomi Diretti e Indiretti",
+      "subtitle": "Distinguere «lo vedo» da «gli parlo».",
       "path": "manuals/it/grammar/a2/topics/pronomi-diretti-e-indiretti.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/pronomi-diretti-e-indiretti.html"
+    },
+    {
+      "id": "it-a2-pronomi-indiretti",
+      "lang": "it",
+      "level": "a2",
+      "slug": "pronomi-indiretti",
+      "title": "I Pronomi Indiretti",
+      "subtitle": "Sostituire «a me», «a lui», «a loro» con mi, gli, le.",
+      "path": "manuals/it/grammar/a2/topics/pronomi-indiretti.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/pronomi-indiretti.html"
     },
     {
       "id": "it-a2-se-presente-futuro",
       "lang": "it",
       "level": "a2",
       "slug": "se-presente-futuro",
-      "title": "L'Ipotesi al Presente (Se + Presente...)",
-      "subtitle": "Esprimere condizioni reali e le loro conseguenze",
+      "title": "Se, Presente e Futuro",
+      "subtitle": "Formulare un'ipotesi reale.",
       "path": "manuals/it/grammar/a2/topics/se-presente-futuro.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/se-presente-futuro.html"
+    },
+    {
+      "id": "it-a2-stare-per-e-intenzioni",
+      "lang": "it",
+      "level": "a2",
+      "slug": "stare-per-e-intenzioni",
+      "title": "Stare per e le Intenzioni",
+      "subtitle": "Dire che qualcosa accadrà tra poco.",
+      "path": "manuals/it/grammar/a2/topics/stare-per-e-intenzioni.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/stare-per-e-intenzioni.html"
     },
     {
       "id": "it-a2-trapassato-prossimo",
@@ -16810,7 +16910,7 @@
       "level": "a2",
       "slug": "trapassato-prossimo",
       "title": "Il Trapassato Prossimo",
-      "subtitle": "Esprimere azioni avvenute prima di un'altra azione passata",
+      "subtitle": "Dire «avevo già mangiato».",
       "path": "manuals/it/grammar/a2/topics/trapassato-prossimo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/trapassato-prossimo.html"
     },
