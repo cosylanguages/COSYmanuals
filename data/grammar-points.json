@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:13:17Z",
+  "generated": "2026-11-28T11:17:49Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -3109,8 +3109,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "all-both-either-neither-none",
-      "title": "All Both Either Neither None",
-      "subtitle": "Mastering All Both Either Neither None",
+      "title": "All, Both, Either, Neither, None",
+      "subtitle": "Talk about two things, several things, or none of them.",
       "path": "manuals/en/grammar/b1/topics/all-both-either-neither-none.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/all-both-either-neither-none.html"
     },
@@ -3159,8 +3159,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "causative-have-get-something-done",
-      "title": "Causative Have Get Something Done",
-      "subtitle": "Mastering Causative Have Get Something Done",
+      "title": "Causative: Have and Get Something Done",
+      "subtitle": "Say that someone else did the work for you.",
       "path": "manuals/en/grammar/b1/topics/causative-have-get-something-done.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/causative-have-get-something-done.html"
     },
@@ -3269,8 +3269,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "have-to-must-should-had-better",
-      "title": "Have To Must Should Had Better",
-      "subtitle": "Mastering Have To Must Should Had Better",
+      "title": "Have To, Must, Should, Had Better",
+      "subtitle": "Grade the pressure from a rule to a piece of advice.",
       "path": "manuals/en/grammar/b1/topics/have-to-must-should-had-better.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/have-to-must-should-had-better.html"
     },
@@ -3300,7 +3300,7 @@
       "level": "b1",
       "slug": "mixed-conditionals",
       "title": "Mixed Conditionals",
-      "subtitle": "Mastering Mixed Conditionals",
+      "subtitle": "Join a condition in one time to a result in another.",
       "path": "manuals/en/grammar/b1/topics/mixed-conditionals.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/mixed-conditionals.html"
     },
@@ -3330,7 +3330,7 @@
       "level": "b1",
       "slug": "modifying-comparatives",
       "title": "Modifying Comparatives",
-      "subtitle": "Mastering Modifying Comparatives",
+      "subtitle": "Say how much bigger, how much better, how much less.",
       "path": "manuals/en/grammar/b1/topics/modifying-comparatives.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/modifying-comparatives.html"
     },
@@ -3429,8 +3429,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "present-perfect-simple-vs-continuous",
-      "title": "Present Perfect Simple Vs Continuous",
-      "subtitle": "Mastering Present Perfect Simple Vs Continuous",
+      "title": "Present Perfect Simple vs Continuous",
+      "subtitle": "Choose between the result and the activity.",
       "path": "manuals/en/grammar/b1/topics/present-perfect-simple-vs-continuous.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/present-perfect-simple-vs-continuous.html"
     },
@@ -3479,8 +3479,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "reported-speech-statements",
-      "title": "Reported Speech Statements",
-      "subtitle": "Mastering Reported Speech Statements",
+      "title": "Reported Speech: Statements",
+      "subtitle": "Report what someone said and shift the tense back.",
       "path": "manuals/en/grammar/b1/topics/reported-speech-statements.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/reported-speech-statements.html"
     },
@@ -3500,7 +3500,7 @@
       "level": "b1",
       "slug": "second-conditional",
       "title": "Second Conditional",
-      "subtitle": "Mastering Second Conditional",
+      "subtitle": "Talk about an unreal present or an unlikely future.",
       "path": "manuals/en/grammar/b1/topics/second-conditional.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/second-conditional.html"
     },
@@ -3559,8 +3559,8 @@
       "lang": "en",
       "level": "b1",
       "slug": "wish-if-only",
-      "title": "Wish If Only",
-      "subtitle": "Mastering Wish If Only",
+      "title": "Wish and If Only",
+      "subtitle": "Express regret about the present, the past and other people.",
       "path": "manuals/en/grammar/b1/topics/wish-if-only.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/b1/topics/wish-if-only.html"
     },
