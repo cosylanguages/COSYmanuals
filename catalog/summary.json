@@ -149,12 +149,12 @@
    "hub": 43,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 608,
-   "topic_real": 422,
+   "pages": 613,
+   "topic_real": 427,
    "topic_stub": 0,
    "track_manual": 57,
    "unit": 80,
-   "visual_pages": 37
+   "visual_pages": 42
   },
   "tt": {
    "english_leak_pages": 14,
@@ -515,15 +515,15 @@
    3
   ],
   "ru/grammar/a2": [
-   54,
+   55,
    0
   ],
   "ru/grammar/b1": [
-   45,
+   47,
    0
   ],
   "ru/grammar/b2": [
-   34,
+   36,
    0
   ],
   "ru/grammar/c1": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4169
+ "total_pages": 4174
 }
