@@ -81,7 +81,7 @@ def opener(spec, slug):
 </section>"""
 
 
-def body(spec, slug):
+def body(spec, slug, level):
     title = esc(spec["title"])
     ex = "\n".join(
         f'  <li><span class="key-subject key-blue">{esc(k)}</span> <span class="key-verb key-green">'
@@ -105,7 +105,7 @@ def body(spec, slug):
     return f"""{opener(spec, slug)}
 
 <div class="page-head">
- <span class="eyebrow">Level B2 Grammar</span>
+ <span class="eyebrow">Level {level.upper()} Grammar</span>
  <h1>{title}</h1>
  <p class="subtitle">{esc(spec['subtitle'])}</p>
  <hr class="rule">
@@ -210,10 +210,14 @@ def build(level, slug, spec):
     head_end = src.index("<main ")
     tail_start = src.index("</main>")
     head, tail = src[:head_end], src[tail_start:]
+    # The shell carries its own quiz between </header> and <main>; drop it, the body supplies both.
+    if "</header>" in head:
+        head = head[:head.index("</header>") + len("</header>")] + "\n"
     main_open = src[head_end:src.index(">", head_end) + 1]
     gid = f"en-{level}-{slug}"
     main_open = re.sub(r'id="[^"]*"', f'id="{gid}"', main_open, count=1)
     main_open = re.sub(r'data-grammar-point="[^"]*"', f'data-grammar-point="{gid}"', main_open, count=1)
+    main_open = re.sub(r'data-level="[^"]*"', f'data-level="{level.upper()}"', main_open, count=1)
     title = spec["title"]
     head = re.sub(r"<title>.*?</title>",
                   f"<title>{esc(title)} · English Grammar {level.upper()} · COSYlanguages</title>",
@@ -221,7 +225,7 @@ def build(level, slug, spec):
     head = re.sub(r'<meta name="description" content="[^"]*">',
                   f'<meta name="description" content="Complete English grammar guide to {esc(title)} at level {level.upper()}. Rule, examples, CCQs and interactive practice.">',
                   head, count=1)
-    out = prune_nav(head, level) + main_open + "\n" + body(spec, slug) + "\n" + tail
+    out = prune_nav(head, level) + main_open + "\n" + body(spec, slug, level) + "\n" + tail
     path = f"{ROOT}/{level}/topics/{slug}.html"
     open(path, "w", encoding="utf-8").write(out)
     return path
