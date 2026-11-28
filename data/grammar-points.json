@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T12:29:59Z",
-  "count": 2091,
+  "generated": "2026-11-28T12:33:01Z",
+  "count": 2102,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -16665,6 +16665,26 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/verbi-riflessivi.html"
     },
     {
+      "id": "it-a2-curriculum-e-colloquio",
+      "lang": "it",
+      "level": "a2",
+      "slug": "curriculum-e-colloquio",
+      "title": "Il Curriculum e il Colloquio",
+      "subtitle": "Presentarsi a un colloquio di lavoro.",
+      "path": "manuals/it/grammar/a2/topics/curriculum-e-colloquio.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/curriculum-e-colloquio.html"
+    },
+    {
+      "id": "it-a2-dal-medico",
+      "lang": "it",
+      "level": "a2",
+      "slug": "dal-medico",
+      "title": "Dal Medico",
+      "subtitle": "Descrivere sintomi e capire le indicazioni.",
+      "path": "manuals/it/grammar/a2/topics/dal-medico.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/dal-medico.html"
+    },
+    {
       "id": "it-a2-dare-consigli",
       "lang": "it",
       "level": "a2",
@@ -16703,6 +16723,16 @@
       "subtitle": "Dire che cosa probabilmente accadrà.",
       "path": "manuals/it/grammar/a2/topics/fare-previsioni.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/fare-previsioni.html"
+    },
+    {
+      "id": "it-a2-farsi-fare-qualcosa",
+      "lang": "it",
+      "level": "a2",
+      "slug": "farsi-fare-qualcosa",
+      "title": "Farsi Fare Qualcosa",
+      "subtitle": "Dire «mi taglio i capelli», «faccio riparare la bici».",
+      "path": "manuals/it/grammar/a2/topics/farsi-fare-qualcosa.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/farsi-fare-qualcosa.html"
     },
     {
       "id": "it-a2-forma-passiva-base",
@@ -16785,6 +16815,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/imperativo-con-pronomi.html"
     },
     {
+      "id": "it-a2-in-albergo",
+      "lang": "it",
+      "level": "a2",
+      "slug": "in-albergo",
+      "title": "In Albergo",
+      "subtitle": "Prenotare, chiedere e risolvere problemi.",
+      "path": "manuals/it/grammar/a2/topics/in-albergo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/in-albergo.html"
+    },
+    {
       "id": "it-a2-l-articolo-partitivo",
       "lang": "it",
       "level": "a2",
@@ -16805,6 +16845,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/limperfetto-indicativo.html"
     },
     {
+      "id": "it-a2-media-e-tecnologia",
+      "lang": "it",
+      "level": "a2",
+      "slug": "media-e-tecnologia",
+      "title": "Media e Tecnologia",
+      "subtitle": "Parlare di abitudini digitali.",
+      "path": "manuals/it/grammar/a2/topics/media-e-tecnologia.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/media-e-tecnologia.html"
+    },
+    {
       "id": "it-a2-molto-poco-troppo",
       "lang": "it",
       "level": "a2",
@@ -16823,6 +16873,16 @@
       "subtitle": "Dire «devo», «bisogna», «è necessario».",
       "path": "manuals/it/grammar/a2/topics/obbligo-dovere-bisogna.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/obbligo-dovere-bisogna.html"
+    },
+    {
+      "id": "it-a2-parlare-del-proprio-lavoro",
+      "lang": "it",
+      "level": "a2",
+      "slug": "parlare-del-proprio-lavoro",
+      "title": "Parlare del Proprio Lavoro",
+      "subtitle": "Descrivere mansioni, orari e ambiente.",
+      "path": "manuals/it/grammar/a2/topics/parlare-del-proprio-lavoro.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/parlare-del-proprio-lavoro.html"
     },
     {
       "id": "it-a2-passato-prossimo-essere-avere",
@@ -16855,6 +16915,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/periodo-ipotetico-2.html"
     },
     {
+      "id": "it-a2-prenotare-e-disdire",
+      "lang": "it",
+      "level": "a2",
+      "slug": "prenotare-e-disdire",
+      "title": "Prenotare e Disdire",
+      "subtitle": "Gestire un appuntamento al telefono.",
+      "path": "manuals/it/grammar/a2/topics/prenotare-e-disdire.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/prenotare-e-disdire.html"
+    },
+    {
       "id": "it-a2-pronomi-combinati",
       "lang": "it",
       "level": "a2",
@@ -16885,6 +16955,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/pronomi-indiretti.html"
     },
     {
+      "id": "it-a2-scrivere-un-email-formale",
+      "lang": "it",
+      "level": "a2",
+      "slug": "scrivere-un-email-formale",
+      "title": "Scrivere un'Email Formale",
+      "subtitle": "Aprire, chiedere e chiudere una mail di lavoro.",
+      "path": "manuals/it/grammar/a2/topics/scrivere-un-email-formale.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/scrivere-un-email-formale.html"
+    },
+    {
       "id": "it-a2-se-presente-futuro",
       "lang": "it",
       "level": "a2",
@@ -16895,6 +16975,26 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/se-presente-futuro.html"
     },
     {
+      "id": "it-a2-servizi-pubblici-e-moduli",
+      "lang": "it",
+      "level": "a2",
+      "slug": "servizi-pubblici-e-moduli",
+      "title": "Servizi Pubblici e Moduli",
+      "subtitle": "Chiedere informazioni e compilare un modulo.",
+      "path": "manuals/it/grammar/a2/topics/servizi-pubblici-e-moduli.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/servizi-pubblici-e-moduli.html"
+    },
+    {
+      "id": "it-a2-sport-e-tempo-libero",
+      "lang": "it",
+      "level": "a2",
+      "slug": "sport-e-tempo-libero",
+      "title": "Sport e Tempo Libero",
+      "subtitle": "Parlare di hobby e frequenza.",
+      "path": "manuals/it/grammar/a2/topics/sport-e-tempo-libero.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/sport-e-tempo-libero.html"
+    },
+    {
       "id": "it-a2-stare-per-e-intenzioni",
       "lang": "it",
       "level": "a2",
@@ -16903,6 +17003,16 @@
       "subtitle": "Dire che qualcosa accadrà tra poco.",
       "path": "manuals/it/grammar/a2/topics/stare-per-e-intenzioni.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/stare-per-e-intenzioni.html"
+    },
+    {
+      "id": "it-a2-studi-e-formazione",
+      "lang": "it",
+      "level": "a2",
+      "slug": "studi-e-formazione",
+      "title": "Studi e Formazione",
+      "subtitle": "Raccontare il proprio percorso scolastico.",
+      "path": "manuals/it/grammar/a2/topics/studi-e-formazione.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/studi-e-formazione.html"
     },
     {
       "id": "it-a2-trapassato-prossimo",

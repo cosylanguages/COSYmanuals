@@ -40,7 +40,20 @@ NEW = {
     ],
 }
 
-PART4 = [('il-tempo-atmosferico', 'Il Tempo Atmosferico', 'Fa caldo, c\'è vento, piove, previsioni')]
+PART4 = [
+    ('il-tempo-atmosferico', 'Il Tempo Atmosferico', 'Fa caldo, c\'è vento, piove, previsioni'),
+    ('dal-medico', 'Dal Medico', 'Sintomi, dolore e indicazioni del medico'),
+    ('farsi-fare-qualcosa', 'Farsi Fare Qualcosa', 'Mi faccio tagliare i capelli, faccio riparare'),
+    ('prenotare-e-disdire', 'Prenotare e Disdire', 'Formule al telefono, conferme e disdette'),
+    ('sport-e-tempo-libero', 'Sport e Tempo Libero', 'Giocare a, fare, frequenza'),
+    ('in-albergo', 'In Albergo', 'Prenotazione, servizi e reclami'),
+    ('parlare-del-proprio-lavoro', 'Parlare del Proprio Lavoro', 'Mansioni, orari e modalità'),
+    ('curriculum-e-colloquio', 'Il Curriculum e il Colloquio', 'Presentarsi, esperienza, competenze'),
+    ('studi-e-formazione', 'Studi e Formazione', 'Percorso, titoli e materie'),
+    ('scrivere-un-email-formale', 'Scrivere un\'Email Formale', 'Apertura, richiesta, chiusura'),
+    ('servizi-pubblici-e-moduli', 'Servizi Pubblici e Moduli', 'Obblighi, regole e passivo burocratico'),
+    ('media-e-tecnologia', 'Media e Tecnologia', 'Abitudini digitali e difficoltà tecniche'),
+]
 
 
 def cards(items):
@@ -61,10 +74,10 @@ def add_cards(path, items):
 
 def build_part4():
     tpl = open(os.path.join(BASE, 'part-3.html'), encoding='utf-8').read()
-    page = re.sub(r'<title>.*?</title>', '<title>Parte 4: Tempo e Descrizione · Grammatica Italiana A2</title>', tpl, count=1, flags=re.S)
-    page = re.sub(r'<h1>.*?</h1>', '<h1>Parte 4 · Tempo e Descrizione</h1>', page, count=1, flags=re.S)
+    page = re.sub(r'<title>.*?</title>', '<title>Parte 4: Descrizione, Salute e Lavoro · Grammatica Italiana A2</title>', tpl, count=1, flags=re.S)
+    page = re.sub(r'<h1>.*?</h1>', '<h1>Parte 4 · Descrizione, Salute e Lavoro</h1>', page, count=1, flags=re.S)
     page = re.sub(r'<p class="subtitle">.*?</p>',
-                  '<p class="subtitle">Parlare del tempo atmosferico e descrivere l\'ambiente</p>',
+                  '<p class="subtitle">Tempo atmosferico, salute, servizi, viaggi e lavoro</p>',
                   page, count=1, flags=re.S)
     page = re.sub(r'<div class="topic-grid">.*?</div>\s*</main>',
                   '<div class="topic-grid">' + cards(PART4) + '</div>\n</main>', page, count=1, flags=re.S)
