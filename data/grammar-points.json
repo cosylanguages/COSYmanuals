@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T12:38:59Z",
+  "generated": "2026-11-28T12:41:17Z",
   "count": 2126,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -16309,8 +16309,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "articoli-determinativi",
-      "title": "Articoli determinativi",
-      "subtitle": "Il, lo, la, l', i, gli, le",
+      "title": "Gli Articoli Determinativi",
+      "subtitle": "Il, lo, la, i, gli, le.",
       "path": "manuals/it/grammar/a1/topics/articoli-determinativi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/articoli-determinativi.html"
     },
@@ -16319,8 +16319,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "articoli-indeterminativi",
-      "title": "Articoli indeterminativi",
-      "subtitle": "Un, uno, una, un'",
+      "title": "Gli Articoli Indeterminativi",
+      "subtitle": "Un, uno, una: parlare di qualcosa di nuovo.",
       "path": "manuals/it/grammar/a1/topics/articoli-indeterminativi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/articoli-indeterminativi.html"
     },
@@ -16379,8 +16379,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "essere-avere",
-      "title": "Verbi essere e avere",
-      "subtitle": "I due verbi ausiliari fondamentali",
+      "title": "Essere e Avere",
+      "subtitle": "I due verbi che servono per tutto.",
       "path": "manuals/it/grammar/a1/topics/essere-avere.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/essere-avere.html"
     },
@@ -16389,8 +16389,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "genere-nomi",
-      "title": "Genere dei nomi",
-      "subtitle": "Maschile e femminile in italiano",
+      "title": "Il Genere dei Nomi",
+      "subtitle": "Maschile o femminile?",
       "path": "manuals/it/grammar/a1/topics/genere-nomi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/genere-nomi.html"
     },
@@ -16559,8 +16559,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "preposizioni-luogo",
-      "title": "Preposizioni di luogo",
-      "subtitle": "A, in, da, su, sotto, sopra, tra/fra",
+      "title": "Le Preposizioni di Luogo",
+      "subtitle": "Dove? Sopra, sotto, dentro, davanti.",
       "path": "manuals/it/grammar/a1/topics/preposizioni-luogo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/preposizioni-luogo.html"
     },
@@ -16569,8 +16569,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "preposizioni-semplici",
-      "title": "Preposizioni semplici e articolate",
-      "subtitle": "Di, a, da, in, con, su, per, tra, fra",
+      "title": "Le Preposizioni Semplici",
+      "subtitle": "Di, a, da, in, con, su, per, tra.",
       "path": "manuals/it/grammar/a1/topics/preposizioni-semplici.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/preposizioni-semplici.html"
     },
@@ -16589,8 +16589,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "presente-regolare",
-      "title": "Presente indicativo regolare",
-      "subtitle": "Coniugazione delle tre coniugazioni -are, -ere, -ire",
+      "title": "Il Presente dei Verbi Regolari",
+      "subtitle": "Parlare di ciò che faccio ogni giorno.",
       "path": "manuals/it/grammar/a1/topics/presente-regolare.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/presente-regolare.html"
     },
@@ -16629,8 +16629,8 @@
       "lang": "it",
       "level": "a1",
       "slug": "singolare-plurale",
-      "title": "Singolare e plurale",
-      "subtitle": "Regole di trasformazione dei sostantivi",
+      "title": "Dal Singolare al Plurale",
+      "subtitle": "Da «libro» a «libri», da «casa» a «case».",
       "path": "manuals/it/grammar/a1/topics/singolare-plurale.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a1/topics/singolare-plurale.html"
     },
