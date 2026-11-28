@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T14:02:00Z",
+  "generated": "2026-11-28T14:04:22Z",
   "count": 2145,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -20999,8 +20999,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "absolutnyy-c2-sintez-vsekh-sintaksicheskikh-struktur",
-      "title": "Абсолютный C2 синтез всех устных и письменных синтаксических структур",
-      "subtitle": "Mastery of all C2 syntactic structures",
+      "title": "Абсолютный синтез синтаксических структур",
+      "subtitle": "Простое, сложное, причастное, деепричастное — в одном абзаце.",
       "path": "manuals/ru/grammar/c2/topics/absolutnyy-c2-sintez-vsekh-sintaksicheskikh-struktur.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/absolutnyy-c2-sintez-vsekh-sintaksicheskikh-struktur.html"
     },
@@ -21010,7 +21010,7 @@
       "level": "c2",
       "slug": "deonticheskaya-modalnost-ustavnykh-dokumentov",
       "title": "Деонтическая модальность уставных документов",
-      "subtitle": "Deontic modality in statutory drafting",
+      "subtitle": "Вправе, обязан, не допускается, возлагается.",
       "path": "manuals/ru/grammar/c2/topics/deonticheskaya-modalnost-ustavnykh-dokumentov.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/deonticheskaya-modalnost-ustavnykh-dokumentov.html"
     },
@@ -21020,7 +21020,7 @@
       "level": "c2",
       "slug": "epistemicheskaya-modalnost-filosofskogo-diskursa",
       "title": "Эпистемическая модальность философского дискурса",
-      "subtitle": "Epistemic modality in philosophical prose",
+      "subtitle": "Коль скоро…, постольку…; если допустить, что…",
       "path": "manuals/ru/grammar/c2/topics/epistemicheskaya-modalnost-filosofskogo-diskursa.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/epistemicheskaya-modalnost-filosofskogo-diskursa.html"
     },
@@ -21029,8 +21029,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "extrapozitsiya-pridatochnykh-izyasnitelnykh",
-      "title": "Экстрапозиция придаточных изъяснительных и относных",
-      "subtitle": "Extraposition of noun clauses",
+      "title": "Экстрапозиция придаточных",
+      "subtitle": "Что он придёт, я знал. Я знал, что он придёт.",
       "path": "manuals/ru/grammar/c2/topics/extrapozitsiya-pridatochnykh-izyasnitelnykh.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/extrapozitsiya-pridatochnykh-izyasnitelnykh.html"
     },
@@ -21040,7 +21040,7 @@
       "level": "c2",
       "slug": "inversiya-soslagatelnogo-nakloneniya-v-makroekonomike",
       "title": "Инверсия сослагательного наклонения в моделировании",
-      "subtitle": "Subjunctive inversion in economic modeling",
+      "subtitle": "Будь ставка ниже, спрос вырос бы.",
       "path": "manuals/ru/grammar/c2/topics/inversiya-soslagatelnogo-nakloneniya-v-makroekonomike.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/inversiya-soslagatelnogo-nakloneniya-v-makroekonomike.html"
     },
@@ -21049,8 +21049,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "literaturnye-allyuzii-i-podtekstovaya-podrazumevaemost",
-      "title": "Литературные аллюзии и подтекстовая подразумеваемость",
-      "subtitle": "Literary allusions and implicit subtext",
+      "title": "Литературные аллюзии и подтекст",
+      "subtitle": "Как у Чехова: люди молчат, а всё сказано.",
       "path": "manuals/ru/grammar/c2/topics/literaturnye-allyuzii-i-podtekstovaya-podrazumevaemost.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/literaturnye-allyuzii-i-podtekstovaya-podrazumevaemost.html"
     },
@@ -21060,7 +21060,7 @@
       "level": "c2",
       "slug": "litota-dvoynoe-otritsanie-i-knizhnye-soyuzy",
       "title": "Литота, двойное отрицание и книжные союзы",
-      "subtitle": "Litotes, double negation, and archaic conjunctions",
+      "subtitle": "Не без основания, нельзя не признать.",
       "path": "manuals/ru/grammar/c2/topics/litota-dvoynoe-otritsanie-i-knizhnye-soyuzy.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/litota-dvoynoe-otritsanie-i-knizhnye-soyuzy.html"
     },
@@ -21069,8 +21069,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "morfosintaksicheskie-varianty-vysshego-registra",
-      "title": "Морфосинтаксические варианты высшего книжного регистра",
-      "subtitle": "High-register morphosyntactic variants",
+      "title": "Морфосинтаксические варианты высшего регистра",
+      "subtitle": "Каковой, оный, в каковом, вышеозначенный.",
       "path": "manuals/ru/grammar/c2/topics/morfosintaksicheskie-varianty-vysshego-registra.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/morfosintaksicheskie-varianty-vysshego-registra.html"
     },
@@ -21079,8 +21079,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "parallelizm-hiasm-i-ritm-mnogosostavnogo-predlozheniya",
-      "title": "Параллелизм, хиазм и ритмика многосоставного периода",
-      "subtitle": "Parallelism, chiasmus, and period cadence",
+      "title": "Параллелизм, хиазм и ритмика периода",
+      "subtitle": "Мы работаем, чтобы жить, а не живём, чтобы работать.",
       "path": "manuals/ru/grammar/c2/topics/parallelizm-hiasm-i-ritm-mnogosostavnogo-predlozheniya.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/parallelizm-hiasm-i-ritm-mnogosostavnogo-predlozheniya.html"
     },
@@ -21090,7 +21090,7 @@
       "level": "c2",
       "slug": "plotnaya-administrativno-pravovaya-nominalizatsiya",
       "title": "Плотная административно-правовая номинализация",
-      "subtitle": "Dense administrative nominalization",
+      "subtitle": "Осуществление контроля за исполнением обязательств.",
       "path": "manuals/ru/grammar/c2/topics/plotnaya-administrativno-pravovaya-nominalizatsiya.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/plotnaya-administrativno-pravovaya-nominalizatsiya.html"
     },
@@ -21099,8 +21099,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "prosodicheskie-intonatsionnye-konstruktsii-ik-6-ik-7",
-      "title": "Интонационные конструкции ИК-6, ИК-7 и подтекст",
-      "subtitle": "Prosodic IK-6 and IK-7 intonation contours",
+      "title": "Интонационные конструкции ИК-6 и ИК-7",
+      "subtitle": "Какой сегодня день! А он-то не знал.",
       "path": "manuals/ru/grammar/c2/topics/prosodicheskie-intonatsionnye-konstruktsii-ik-6-ik-7.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/prosodicheskie-intonatsionnye-konstruktsii-ik-6-ik-7.html"
     },
@@ -21110,7 +21110,7 @@
       "level": "c2",
       "slug": "sintaksis-ofitsialno-delovogo-i-yuridicheskogo-stilya",
       "title": "Синтаксис официально-делового и юридического стиля",
-      "subtitle": "Statutory, legal, and administrative syntax",
+      "subtitle": "Настоящий договор вступает в силу с момента подписания.",
       "path": "manuals/ru/grammar/c2/topics/sintaksis-ofitsialno-delovogo-i-yuridicheskogo-stilya.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/sintaksis-ofitsialno-delovogo-i-yuridicheskogo-stilya.html"
     },
@@ -21120,7 +21120,7 @@
       "level": "c2",
       "slug": "sintaksis-sokraticheskogo-dialoga-i-dekonstruktsii",
       "title": "Синтаксис сократического диалога и деконструкции",
-      "subtitle": "Socratic dialogue and conceptual deconstruction",
+      "subtitle": "А что если…? Но разве это так? Тогда что остаётся?",
       "path": "manuals/ru/grammar/c2/topics/sintaksis-sokraticheskogo-dialoga-i-dekonstruktsii.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/sintaksis-sokraticheskogo-dialoga-i-dekonstruktsii.html"
     },
@@ -21129,8 +21129,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "sintaksis-takticheskogo-rychaga-v-peregovorakh",
-      "title": "Синтаксис тактического рычага давления и деэскалации",
-      "subtitle": "Tactical leverage and de-escalation syntax",
+      "title": "Синтаксис тактического рычага и деэскалации",
+      "subtitle": "Мы готовы рассмотреть, если…; в противном случае…",
       "path": "manuals/ru/grammar/c2/topics/sintaksis-takticheskogo-rychaga-v-peregovorakh.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/sintaksis-takticheskogo-rychaga-v-peregovorakh.html"
     },
@@ -21139,8 +21139,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "slozhnye-gipoteticheskie-sintaksicheskie-seti",
-      "title": "Сложные гипотетические синтаксические сети",
-      "subtitle": "Multi-tiered hypothetical syntactic networks",
+      "title": "Сложные гипотетические сети",
+      "subtitle": "Если бы A, то при условии B…, а в случае C…",
       "path": "manuals/ru/grammar/c2/topics/slozhnye-gipoteticheskie-sintaksicheskie-seti.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/slozhnye-gipoteticheskie-sintaksicheskie-seti.html"
     },
@@ -21149,8 +21149,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "smyslovye-sdvigi-poryadka-slov",
-      "title": "Смысловые сдвиги порядка слов и тончайшие акценты",
-      "subtitle": "Word order semantic nuance and emphasis",
+      "title": "Смысловые сдвиги порядка слов",
+      "subtitle": "Он не сказал ничего. Ничего он не сказал.",
       "path": "manuals/ru/grammar/c2/topics/smyslovye-sdvigi-poryadka-slov.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/smyslovye-sdvigi-poryadka-slov.html"
     },
@@ -21159,8 +21159,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "stilisticheskaya-inversiya-hudozhestvennoy-prozy",
-      "title": "Стилистическая инверсия подлежащего и сказуемого в прозе",
-      "subtitle": "Stylistic inversion in literary prose",
+      "title": "Стилистическая инверсия в прозы",
+      "subtitle": "Тишина стояла в доме. Пришла она поздно.",
       "path": "manuals/ru/grammar/c2/topics/stilisticheskaya-inversiya-hudozhestvennoy-prozy.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/stilisticheskaya-inversiya-hudozhestvennoy-prozy.html"
     },
@@ -21170,7 +21170,7 @@
       "level": "c2",
       "slug": "subversivnaya-inversiya-i-ironicheskiy-freming",
       "title": "Субверсивная инверсия и ироническое фреймирование",
-      "subtitle": "Subversive inversion and ironic framing",
+      "subtitle": "«Великий» план провалился. Как же, поможет.",
       "path": "manuals/ru/grammar/c2/topics/subversivnaya-inversiya-i-ironicheskiy-freming.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/subversivnaya-inversiya-i-ironicheskiy-freming.html"
     },
@@ -21179,8 +21179,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "tochnyy-kontrol-sfery-deystviya-chastits",
-      "title": "Точный контроль сферы действия с помощью частиц (именно, едва ли)",
-      "subtitle": "Focus scope control with particles",
+      "title": "Сфера действия частиц",
+      "subtitle": "Даже он не пришёл. Он даже не пришёл.",
       "path": "manuals/ru/grammar/c2/topics/tochnyy-kontrol-sfery-deystviya-chastits.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/tochnyy-kontrol-sfery-deystviya-chastits.html"
     },
@@ -21189,8 +21189,8 @@
       "lang": "ru",
       "level": "c2",
       "slug": "transformatsiya-stilisticheskikh-registrov",
-      "title": "Мгновенная трансформация стилистических регистров",
-      "subtitle": "Fluid register shifting from formal to oral",
+      "title": "Мгновенная трансформация регистров",
+      "subtitle": "Одна мысль — три регистра.",
       "path": "manuals/ru/grammar/c2/topics/transformatsiya-stilisticheskikh-registrov.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/c2/topics/transformatsiya-stilisticheskikh-registrov.html"
     },
