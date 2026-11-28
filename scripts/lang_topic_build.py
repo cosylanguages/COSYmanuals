@@ -130,7 +130,8 @@ def main_sections(s, slug, t):
         f'<li>{esc(a)} <em>{esc(b)}</em> — {esc(c)}</li>' for a, b, c in s['examples'])
     rows = '\n'.join(f'<tr><td>{esc(a)}</td><td>{esc(b)}</td><td>{esc(c)}</td>'
                      for a, b, c in s['table'])
-    bank = '\n'.join(f'<li><strong>{esc(a)}</strong> {esc(b)}</li>' for a, b in s['bank'])
+    bank = '\n'.join(
+        f'<li><strong>{esc(r[0])}</strong> {esc(" — ".join(r[1:]))}</li>' for r in s['bank'])
     mistakes = '\n'.join(
         f'<div class="mflip"><div class="wrong-line">❌ <span class="wrong-text">{esc(w)}</span></div>'
         f'<div class="right-line">✅ <span>{esc(r)}</span></div></div>' for w, r in s['mistakes'])
