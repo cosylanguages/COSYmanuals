@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:34:57Z",
+  "generated": "2026-11-28T11:35:53Z",
   "count": 2066,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
@@ -2710,7 +2710,7 @@
       "level": "a2",
       "slug": "first-conditional",
       "title": "First Conditional",
-      "subtitle": "Mastering First Conditional",
+      "subtitle": "Talk about a real future possibility.",
       "path": "manuals/en/grammar/a2/topics/first-conditional.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/first-conditional.html"
     },
@@ -2899,8 +2899,8 @@
       "lang": "en",
       "level": "a2",
       "slug": "present-and-past-simple-passive",
-      "title": "Present And Past Simple Passive",
-      "subtitle": "Mastering Present And Past Simple Passive",
+      "title": "Present and Past Simple Passive",
+      "subtitle": "Say what happens to something, not who does it.",
       "path": "manuals/en/grammar/a2/topics/present-and-past-simple-passive.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/present-and-past-simple-passive.html"
     },
@@ -3010,7 +3010,7 @@
       "level": "a2",
       "slug": "second-conditional",
       "title": "Second Conditional",
-      "subtitle": "Mastering Second Conditional",
+      "subtitle": "Talk about imaginary situations.",
       "path": "manuals/en/grammar/a2/topics/second-conditional.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/second-conditional.html"
     },
@@ -3090,7 +3090,7 @@
       "level": "a2",
       "slug": "zero-conditional",
       "title": "Zero Conditional",
-      "subtitle": "Mastering Zero Conditional",
+      "subtitle": "State what always happens.",
       "path": "manuals/en/grammar/a2/topics/zero-conditional.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/en/grammar/a2/topics/zero-conditional.html"
     },
