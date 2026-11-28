@@ -87,7 +87,7 @@ T['morfologicheskaya-stilistika-sushchestvitelnyh'] = spec(
  [("В отпуску (разговорно в деловом тексте)", "В отпуске"),
   ("Опытные инженера (нелитературная форма)", "Опытные инженеры")],
  [("Нормы согласования и синтаксические ошибки", "itogovaya-sintaksicheskaya-norma-b2.html"),
-  ("Стилистические варианты прилагательных", "morfologicheskaya-stilistika-prilagatelynh.html")],
+  ("Стилистические варианты прилагательных", "morfologicheskaya-stilistika-prilagatelnyh.html")],
  ["Выбираю литературную форму.",
   "Различаю смысловые пары.",
   "Учитываю стиль."],
@@ -101,7 +101,7 @@ T['morfologicheskaya-stilistika-sushchestvitelnyh'] = spec(
        options=["Документы.", "Пробелы."], correct=0,
        explain="Пропуска на вход.")])
 
-T['morfologicheskaya-stilistika-prilagatelynh'] = spec(
+T['morfologicheskaya-stilistika-prilagatelnyh'] = spec(
  "Полные и краткие формы прилагательных",
  "Он болен и он больной. Свойствен и свойственный.",
  "Выбираю форму по стилю и функции.",
