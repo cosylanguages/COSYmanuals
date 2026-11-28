@@ -53,12 +53,12 @@
    "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 173,
-   "topic_real": 117,
+   "pages": 180,
+   "topic_real": 123,
    "topic_stub": 0,
    "track_manual": 6,
-   "unit": 35,
-   "visual_pages": 13
+   "unit": 36,
+   "visual_pages": 19
   },
   "en": {
    "english_leak_pages": 0,
@@ -113,12 +113,12 @@
    "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 161,
-   "topic_real": 106,
+   "pages": 171,
+   "topic_real": 115,
    "topic_stub": 0,
    "track_manual": 3,
-   "unit": 37,
-   "visual_pages": 10
+   "unit": 38,
+   "visual_pages": 19
   },
   "ka": {
    "english_leak_pages": 11,
@@ -243,7 +243,7 @@
    0
   ],
   "el/grammar/a2": [
-   13,
+   19,
    0
   ],
   "el/vocabulary/a1": [
@@ -443,7 +443,7 @@
    0
   ],
   "it/grammar/b1": [
-   8,
+   17,
    0
   ],
   "it/vocabulary/a1": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4090
+ "total_pages": 4107
 }

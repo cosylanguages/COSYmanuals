@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T11:38:05Z",
-  "count": 2066,
+  "generated": "2026-11-28T11:45:00Z",
+  "count": 2081,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -1695,6 +1695,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/adynatoi-typoi-antonymion.html"
     },
     {
+      "id": "el-a2-anaforikes-protaseis-pou",
+      "lang": "el",
+      "level": "a2",
+      "slug": "anaforikes-protaseis-pou",
+      "title": "Αναφορικές Προτάσεις με «που»",
+      "subtitle": "Περιγράφω πρόσωπα και πράγματα με «που».",
+      "path": "manuals/el/grammar/a2/topics/anaforikes-protaseis-pou.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/anaforikes-protaseis-pou.html"
+    },
+    {
       "id": "el-a2-aoristos",
       "lang": "el",
       "level": "a2",
@@ -1713,6 +1723,36 @@
       "subtitle": "Στιγμιαία δράση στο παρελθόν έναντι διάρκειας ή επανάληψης",
       "path": "manuals/el/grammar/a2/topics/aoristos-paratatikos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/aoristos-paratatikos.html"
+    },
+    {
+      "id": "el-a2-epirrimata-apo-epitheta",
+      "lang": "el",
+      "level": "a2",
+      "slug": "epirrimata-apo-epitheta",
+      "title": "Επιρρήματα από Επίθετα",
+      "subtitle": "Λέω «μιλάει καλά», «τρέχει γρήγορα».",
+      "path": "manuals/el/grammar/a2/topics/epirrimata-apo-epitheta.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/epirrimata-apo-epitheta.html"
+    },
+    {
+      "id": "el-a2-klitika-antikeimena",
+      "lang": "el",
+      "level": "a2",
+      "slug": "klitika-antikeimena",
+      "title": "Οι Αδύνατοι Τύποι Αντικειμένου",
+      "subtitle": "Λέω «τον βλέπω», «μου το έδωσε».",
+      "path": "manuals/el/grammar/a2/topics/klitika-antikeimena.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/klitika-antikeimena.html"
+    },
+    {
+      "id": "el-a2-klitika-kai-prostaktiki",
+      "lang": "el",
+      "level": "a2",
+      "slug": "klitika-kai-prostaktiki",
+      "title": "Αδύνατοι Τύποι με Προστακτική",
+      "subtitle": "Λέω «δώσε μου το», «μη μου το πεις».",
+      "path": "manuals/el/grammar/a2/topics/klitika-kai-prostaktiki.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/klitika-kai-prostaktiki.html"
     },
     {
       "id": "el-a2-mellochrons-exakolouthitikos-stigmiaiou",
@@ -1745,6 +1785,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/paratatikos.html"
     },
     {
+      "id": "el-a2-paratatikos-eimai-echo",
+      "lang": "el",
+      "level": "a2",
+      "slug": "paratatikos-eimai-echo",
+      "title": "Παρατατικός του «είμαι» και του «έχω»",
+      "subtitle": "Λέω «ήμουν», «είχα».",
+      "path": "manuals/el/grammar/a2/topics/paratatikos-eimai-echo.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/paratatikos-eimai-echo.html"
+    },
+    {
       "id": "el-a2-pathetiki-foni",
       "lang": "el",
       "level": "a2",
@@ -1753,6 +1803,16 @@
       "subtitle": "Ρήματα σε -ομαι (έρχομαι, σκέφτομαι, λέγομαι)",
       "path": "manuals/el/grammar/a2/topics/pathetiki-foni.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/pathetiki-foni.html"
+    },
+    {
+      "id": "el-a2-plagiakos-logos",
+      "lang": "el",
+      "level": "a2",
+      "slug": "plagiakos-logos",
+      "title": "Ο Πλάγιος Λόγος",
+      "subtitle": "Μεταφέρω τι είπε κάποιος.",
+      "path": "manuals/el/grammar/a2/topics/plagiakos-logos.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/plagiakos-logos.html"
     },
     {
       "id": "el-a2-prostatiki-aoristou",
@@ -16755,6 +16815,46 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/a2/topics/trapassato-prossimo.html"
     },
     {
+      "id": "it-b1-aggettivi-e-pronomi-indefiniti",
+      "lang": "it",
+      "level": "b1",
+      "slug": "aggettivi-e-pronomi-indefiniti",
+      "title": "Aggettivi e Pronomi Indefiniti",
+      "subtitle": "Parlare di quantità e persone in modo vago.",
+      "path": "manuals/it/grammar/b1/topics/aggettivi-e-pronomi-indefiniti.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/aggettivi-e-pronomi-indefiniti.html"
+    },
+    {
+      "id": "it-b1-avverbi-in-mente",
+      "lang": "it",
+      "level": "b1",
+      "slug": "avverbi-in-mente",
+      "title": "Gli Avverbi in -mente",
+      "subtitle": "Trasformare un aggettivo in un avverbio.",
+      "path": "manuals/it/grammar/b1/topics/avverbi-in-mente.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/avverbi-in-mente.html"
+    },
+    {
+      "id": "it-b1-comparativi-e-superlativi-irregolari",
+      "lang": "it",
+      "level": "b1",
+      "slug": "comparativi-e-superlativi-irregolari",
+      "title": "Comparativi e Superlativi Irregolari",
+      "subtitle": "Dire migliore, peggiore, maggiore, ottimo.",
+      "path": "manuals/it/grammar/b1/topics/comparativi-e-superlativi-irregolari.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/comparativi-e-superlativi-irregolari.html"
+    },
+    {
+      "id": "it-b1-condizionale-passato",
+      "lang": "it",
+      "level": "b1",
+      "slug": "condizionale-passato",
+      "title": "Il Condizionale Passato",
+      "subtitle": "Esprimere un desiderio o un rimpianto sul passato.",
+      "path": "manuals/it/grammar/b1/topics/condizionale-passato.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/condizionale-passato.html"
+    },
+    {
       "id": "it-b1-congiuntivo-imperfetto",
       "lang": "it",
       "level": "b1",
@@ -16763,6 +16863,16 @@
       "subtitle": "La concordanza dei tempi nel passato e le ipotesi ipotetiche",
       "path": "manuals/it/grammar/b1/topics/congiuntivo-imperfetto.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiuntivo-imperfetto.html"
+    },
+    {
+      "id": "it-b1-congiuntivo-passato",
+      "lang": "it",
+      "level": "b1",
+      "slug": "congiuntivo-passato",
+      "title": "Il Congiuntivo Passato",
+      "subtitle": "Esprimere un'opinione su ciò che è già accaduto.",
+      "path": "manuals/it/grammar/b1/topics/congiuntivo-passato.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/congiuntivo-passato.html"
     },
     {
       "id": "it-b1-congiuntivo-presente",
@@ -16805,6 +16915,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/forma-passiva-avanzata.html"
     },
     {
+      "id": "it-b1-futuro-anteriore",
+      "lang": "it",
+      "level": "b1",
+      "slug": "futuro-anteriore",
+      "title": "Il Futuro Anteriore",
+      "subtitle": "Parlare di ciò che sarà già successo.",
+      "path": "manuals/it/grammar/b1/topics/futuro-anteriore.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/futuro-anteriore.html"
+    },
+    {
       "id": "it-b1-gerundio-e-participio",
       "lang": "it",
       "level": "b1",
@@ -16825,6 +16945,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/periodo-ipotetico-3.html"
     },
     {
+      "id": "it-b1-pronomi-combinati",
+      "lang": "it",
+      "level": "b1",
+      "slug": "pronomi-combinati",
+      "title": "I Pronomi Combinati",
+      "subtitle": "Dire «me lo», «gliela», «te ne» in una parola sola.",
+      "path": "manuals/it/grammar/b1/topics/pronomi-combinati.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/pronomi-combinati.html"
+    },
+    {
       "id": "it-b1-pronomi-relativi-cui-chi",
       "lang": "it",
       "level": "b1",
@@ -16833,6 +16963,26 @@
       "subtitle": "Sostituire nomi con preposizioni e pronomi doppi",
       "path": "manuals/it/grammar/b1/topics/pronomi-relativi-cui-chi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/pronomi-relativi-cui-chi.html"
+    },
+    {
+      "id": "it-b1-si-impersonale-e-passivante",
+      "lang": "it",
+      "level": "b1",
+      "slug": "si-impersonale-e-passivante",
+      "title": "Il Si Impersonale e Passivante",
+      "subtitle": "Parlare in generale senza dire chi.",
+      "path": "manuals/it/grammar/b1/topics/si-impersonale-e-passivante.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/si-impersonale-e-passivante.html"
+    },
+    {
+      "id": "it-b1-verbi-pronominali",
+      "lang": "it",
+      "level": "b1",
+      "slug": "verbi-pronominali",
+      "title": "I Verbi Pronominali",
+      "subtitle": "Usare andarsene, farcela, cavarsela, prendersela.",
+      "path": "manuals/it/grammar/b1/topics/verbi-pronominali.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/it/grammar/b1/topics/verbi-pronominali.html"
     },
     {
       "id": "ka-a1-akvs-hkavs",
