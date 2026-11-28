@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T12:48:20Z",
-  "count": 2118,
+  "generated": "2026-11-28T12:52:36Z",
+  "count": 2144,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -1695,6 +1695,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/adynatoi-typoi-antonymion.html"
     },
     {
+      "id": "el-a2-agores-kai-epistrofes",
+      "lang": "el",
+      "level": "a2",
+      "slug": "agores-kai-epistrofes",
+      "title": "Αγορές και Επιστροφές",
+      "subtitle": "Πόσο κάνει; Θέλω να το επιστρέψω.",
+      "path": "manuals/el/grammar/a2/topics/agores-kai-epistrofes.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/agores-kai-epistrofes.html"
+    },
+    {
       "id": "el-a2-anaforikes-protaseis-pou",
       "lang": "el",
       "level": "a2",
@@ -1703,6 +1713,16 @@
       "subtitle": "Περιγράφω πρόσωπα και πράγματα με «που».",
       "path": "manuals/el/grammar/a2/topics/anaforikes-protaseis-pou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/anaforikes-protaseis-pou.html"
+    },
+    {
+      "id": "el-a2-angelies-ergasias",
+      "lang": "el",
+      "level": "a2",
+      "slug": "angelies-ergasias",
+      "title": "Αγγελίες Εργασίας",
+      "subtitle": "Διαβάζω μια αγγελία και βρίσκω τις απαιτήσεις.",
+      "path": "manuals/el/grammar/a2/topics/angelies-ergasias.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/angelies-ergasias.html"
     },
     {
       "id": "el-a2-aoristos",
@@ -1725,6 +1745,46 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/aoristos-paratatikos.html"
     },
     {
+      "id": "el-a2-dexiotites",
+      "lang": "el",
+      "level": "a2",
+      "slug": "dexiotites",
+      "title": "Δεξιότητες",
+      "subtitle": "Ξέρω να, μπορώ να, έχω γνώση.",
+      "path": "manuals/el/grammar/a2/topics/dexiotites.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/dexiotites.html"
+    },
+    {
+      "id": "el-a2-diapragmatefsi",
+      "lang": "el",
+      "level": "a2",
+      "slug": "diapragmatefsi",
+      "title": "Διαπραγμάτευση",
+      "subtitle": "Θα μπορούσαμε, τι θα λέγατε.",
+      "path": "manuals/el/grammar/a2/topics/diapragmatefsi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/diapragmatefsi.html"
+    },
+    {
+      "id": "el-a2-dimosies-ypiresies",
+      "lang": "el",
+      "level": "a2",
+      "slug": "dimosies-ypiresies",
+      "title": "Δημόσιες Υπηρεσίες",
+      "subtitle": "Παίρνω αριθμό, συμπληρώνω αίτηση.",
+      "path": "manuals/el/grammar/a2/topics/dimosies-ypiresies.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/dimosies-ypiresies.html"
+    },
+    {
+      "id": "el-a2-epaggelmatiki-epikoinonia",
+      "lang": "el",
+      "level": "a2",
+      "slug": "epaggelmatiki-epikoinonia",
+      "title": "Επαγγελματική Επικοινωνία",
+      "subtitle": "Αξιότιμε κύριε, σχετικά με, με εκτίμηση.",
+      "path": "manuals/el/grammar/a2/topics/epaggelmatiki-epikoinonia.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/epaggelmatiki-epikoinonia.html"
+    },
+    {
       "id": "el-a2-epirrimata-apo-epitheta",
       "lang": "el",
       "level": "a2",
@@ -1733,6 +1793,56 @@
       "subtitle": "Λέω «μιλάει καλά», «τρέχει γρήγορα».",
       "path": "manuals/el/grammar/a2/topics/epirrimata-apo-epitheta.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/epirrimata-apo-epitheta.html"
+    },
+    {
+      "id": "el-a2-farmakeio",
+      "lang": "el",
+      "level": "a2",
+      "slug": "farmakeio",
+      "title": "Το Φαρμακείο",
+      "subtitle": "Έχετε κάτι για τον βήχα;",
+      "path": "manuals/el/grammar/a2/topics/farmakeio.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/farmakeio.html"
+    },
+    {
+      "id": "el-a2-geitonia",
+      "lang": "el",
+      "level": "a2",
+      "slug": "geitonia",
+      "title": "Η Γειτονιά",
+      "subtitle": "Έχει φούρνο, φαρμακείο, στάση.",
+      "path": "manuals/el/grammar/a2/topics/geitonia.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/geitonia.html"
+    },
+    {
+      "id": "el-a2-giortes-kai-ethima",
+      "lang": "el",
+      "level": "a2",
+      "slug": "giortes-kai-ethima",
+      "title": "Γιορτές και Έθιμα",
+      "subtitle": "Πάσχα, Χριστούγεννα, Πρωτοχρονιά.",
+      "path": "manuals/el/grammar/a2/topics/giortes-kai-ethima.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/giortes-kai-ethima.html"
+    },
+    {
+      "id": "el-a2-ilefonikes-synennoiseis",
+      "lang": "el",
+      "level": "a2",
+      "slug": "ilefonikes-synennoiseis",
+      "title": "Τηλεφωνικές Συνεννοήσεις",
+      "subtitle": "Παρακαλώ, ποιος μιλάει;",
+      "path": "manuals/el/grammar/a2/topics/ilefonikes-synennoiseis.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/ilefonikes-synennoiseis.html"
+    },
+    {
+      "id": "el-a2-kathimerina-provlimata",
+      "lang": "el",
+      "level": "a2",
+      "slug": "kathimerina-provlimata",
+      "title": "Καθημερινά Προβλήματα",
+      "subtitle": "Έχει διαρροή, κάνει θόρυβο.",
+      "path": "manuals/el/grammar/a2/topics/kathimerina-provlimata.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/kathimerina-provlimata.html"
     },
     {
       "id": "el-a2-klitika-antikeimena",
@@ -1765,6 +1875,36 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/mellochrons-exakolouthitikos-stigmiaiou.html"
     },
     {
+      "id": "el-a2-mesa-enimerosis",
+      "lang": "el",
+      "level": "a2",
+      "slug": "mesa-enimerosis",
+      "title": "Μέσα Ενημέρωσης",
+      "subtitle": "Εφημερίδα, είδηση, τίτλος, πηγή.",
+      "path": "manuals/el/grammar/a2/topics/mesa-enimerosis.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/mesa-enimerosis.html"
+    },
+    {
+      "id": "el-a2-mousiki-kai-paradoseis",
+      "lang": "el",
+      "level": "a2",
+      "slug": "mousiki-kai-paradoseis",
+      "title": "Μουσική και Παραδόσεις",
+      "subtitle": "Τραγούδι, χορός, έθιμο.",
+      "path": "manuals/el/grammar/a2/topics/mousiki-kai-paradoseis.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/mousiki-kai-paradoseis.html"
+    },
+    {
+      "id": "el-a2-odigies",
+      "lang": "el",
+      "level": "a2",
+      "slug": "odigies",
+      "title": "Οδηγίες",
+      "subtitle": "Πρώτα, μετά, τέλος.",
+      "path": "manuals/el/grammar/a2/topics/odigies.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/odigies.html"
+    },
+    {
       "id": "el-a2-parakeimenos",
       "lang": "el",
       "level": "a2",
@@ -1795,6 +1935,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/paratatikos-eimai-echo.html"
     },
     {
+      "id": "el-a2-parousiasi",
+      "lang": "el",
+      "level": "a2",
+      "slug": "parousiasi",
+      "title": "Προφορική Παραγωγή",
+      "subtitle": "Παρουσιάζω ένα θέμα με δομή.",
+      "path": "manuals/el/grammar/a2/topics/parousiasi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/parousiasi.html"
+    },
+    {
       "id": "el-a2-pathetiki-foni",
       "lang": "el",
       "level": "a2",
@@ -1815,6 +1965,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/plagiakos-logos.html"
     },
     {
+      "id": "el-a2-plagies-erotiseis",
+      "lang": "el",
+      "level": "a2",
+      "slug": "plagies-erotiseis",
+      "title": "Πλάγιες Ερωτήσεις",
+      "subtitle": "Ρώτησε αν, δεν ξέρω αν.",
+      "path": "manuals/el/grammar/a2/topics/plagies-erotiseis.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/plagies-erotiseis.html"
+    },
+    {
       "id": "el-a2-prostatiki-aoristou",
       "lang": "el",
       "level": "a2",
@@ -1823,6 +1983,76 @@
       "subtitle": "Πες μου, δώσε μου, γράψε το.",
       "path": "manuals/el/grammar/a2/topics/prostatiki-aoristou.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/prostatiki-aoristou.html"
+    },
+    {
+      "id": "el-a2-protaseis-kai-symvoules",
+      "lang": "el",
+      "level": "a2",
+      "slug": "protaseis-kai-symvoules",
+      "title": "Προτάσεις και Συμβουλές",
+      "subtitle": "Σου προτείνω να, θα έπρεπε να, καλύτερα να.",
+      "path": "manuals/el/grammar/a2/topics/protaseis-kai-symvoules.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/protaseis-kai-symvoules.html"
+    },
+    {
+      "id": "el-a2-provlepseis",
+      "lang": "el",
+      "level": "a2",
+      "slug": "provlepseis",
+      "title": "Προβλέψεις",
+      "subtitle": "Θα βρέξει αύριο, μάλλον θα αργήσουμε.",
+      "path": "manuals/el/grammar/a2/topics/provlepseis.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/provlepseis.html"
+    },
+    {
+      "id": "el-a2-schedia-kai-yposcheseis",
+      "lang": "el",
+      "level": "a2",
+      "slug": "schedia-kai-yposcheseis",
+      "title": "Σχέδια και Υποσχέσεις",
+      "subtitle": "Θα πάω, σκοπεύω να πάω, υπόσχομαι.",
+      "path": "manuals/el/grammar/a2/topics/schedia-kai-yposcheseis.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/schedia-kai-yposcheseis.html"
+    },
+    {
+      "id": "el-a2-stegasi-enoikio",
+      "lang": "el",
+      "level": "a2",
+      "slug": "stegasi-enoikio",
+      "title": "Στέγαση και Ενοίκιο",
+      "subtitle": "Ψάχνω διαμέρισμα, πόσο είναι το ενοίκιο;",
+      "path": "manuals/el/grammar/a2/topics/stegasi-enoikio.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/stegasi-enoikio.html"
+    },
+    {
+      "id": "el-a2-ston-giatro",
+      "lang": "el",
+      "level": "a2",
+      "slug": "ston-giatro",
+      "title": "Στον Γιατρό",
+      "subtitle": "Πονάει ο λαιμός μου, έχω πυρετό.",
+      "path": "manuals/el/grammar/a2/topics/ston-giatro.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/ston-giatro.html"
+    },
+    {
+      "id": "el-a2-synentefxi",
+      "lang": "el",
+      "level": "a2",
+      "slug": "synentefxi",
+      "title": "Η Συνέντευξη",
+      "subtitle": "Μιλήστε μου για τον εαυτό σας.",
+      "path": "manuals/el/grammar/a2/topics/synentefxi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/synentefxi.html"
+    },
+    {
+      "id": "el-a2-synthesi",
+      "lang": "el",
+      "level": "a2",
+      "slug": "synthesi",
+      "title": "Γραπτή Παραγωγή",
+      "subtitle": "Γράφω ένα σύντομο κείμενο με δομή.",
+      "path": "manuals/el/grammar/a2/topics/synthesi.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/synthesi.html"
     },
     {
       "id": "el-a2-syntomos-mellontas",
@@ -1843,6 +2073,36 @@
       "subtitle": "Πιο μεγάλος, ο πιο μεγάλος, πολύ μεγάλος.",
       "path": "manuals/el/grammar/a2/topics/syxronoi-sygkritikoi-vathmoi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/syxronoi-sygkritikoi-vathmoi.html"
+    },
+    {
+      "id": "el-a2-tainies-kai-vivlia",
+      "lang": "el",
+      "level": "a2",
+      "slug": "tainies-kai-vivlia",
+      "title": "Ταινίες και Βιβλία",
+      "subtitle": "Η πλοκή, ο ήρωας, το τέλος.",
+      "path": "manuals/el/grammar/a2/topics/tainies-kai-vivlia.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/tainies-kai-vivlia.html"
+    },
+    {
+      "id": "el-a2-typologies-evgeneias",
+      "lang": "el",
+      "level": "a2",
+      "slug": "typologies-evgeneias",
+      "title": "Διατυπώσεις Ευγένειας",
+      "subtitle": "Θα μπορούσατε, μήπως, λυπάμαι.",
+      "path": "manuals/el/grammar/a2/topics/typologies-evgeneias.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/typologies-evgeneias.html"
+    },
+    {
+      "id": "el-a2-viografiko",
+      "lang": "el",
+      "level": "a2",
+      "slug": "viografiko",
+      "title": "Βιογραφικό και Επιστολή",
+      "subtitle": "Γράφω μια σύντομη επιστολή για μια θέση.",
+      "path": "manuals/el/grammar/a2/topics/viografiko.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a2/topics/viografiko.html"
     },
     {
       "id": "el-a2-ypotaktiki-aoristou",

@@ -53,12 +53,12 @@
    "hub": 12,
    "lang_wrong": 0,
    "other_stub": 0,
-   "pages": 180,
-   "topic_real": 123,
+   "pages": 206,
+   "topic_real": 149,
    "topic_stub": 0,
    "track_manual": 6,
    "unit": 36,
-   "visual_pages": 26
+   "visual_pages": 52
   },
   "en": {
    "english_leak_pages": 0,
@@ -243,7 +243,7 @@
    0
   ],
   "el/grammar/a2": [
-   19,
+   45,
    0
   ],
   "el/vocabulary/a1": [
@@ -575,5 +575,5 @@
    0
   ]
  },
- "total_pages": 4146
+ "total_pages": 4172
 }
