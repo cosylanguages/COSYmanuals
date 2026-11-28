@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T12:52:36Z",
-  "count": 2144,
+  "generated": "2026-11-28T12:59:08Z",
+  "count": 2140,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -1195,46 +1195,6 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/chronika-epirrimata.html"
     },
     {
-      "id": "el-a1-el",
-      "lang": "el",
-      "level": "a1",
-      "slug": "el",
-      "title": "Ελληνική Γραμματική 🇬🇷",
-      "subtitle": "",
-      "path": "manuals/el/grammar/a1/topics/el.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/el.html"
-    },
-    {
-      "id": "el-a1-el-articles",
-      "lang": "el",
-      "level": "a1",
-      "slug": "el-articles",
-      "title": "Οριστικό άρθρο · Greek Definite Article",
-      "subtitle": "",
-      "path": "manuals/el/grammar/a1/topics/el-articles.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/el-articles.html"
-    },
-    {
-      "id": "el-a1-el-be",
-      "lang": "el",
-      "level": "a1",
-      "slug": "el-be",
-      "title": "Verb 'To Be' · Greek Grammar",
-      "subtitle": "",
-      "path": "manuals/el/grammar/a1/topics/el-be.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/el-be.html"
-    },
-    {
-      "id": "el-a1-el-pronouns",
-      "lang": "el",
-      "level": "a1",
-      "slug": "el-pronouns",
-      "title": "Προσωπικές αντωνυμίες · Greek Pronouns",
-      "subtitle": "",
-      "path": "manuals/el/grammar/a1/topics/el-pronouns.html",
-      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/el-pronouns.html"
-    },
-    {
       "id": "el-a1-enestotas-omada-a",
       "lang": "el",
       "level": "a1",
@@ -1460,7 +1420,7 @@
       "level": "a1",
       "slug": "pos-se-lene",
       "title": "Πώς σε Λένε;",
-      "subtitle": "Το ρήμα Λέγομαι — ρήματα σε -ομαι",
+      "subtitle": "Συστήνομαι και ρωτώ το όνομα.",
       "path": "manuals/el/grammar/a1/topics/pos-se-lene.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/pos-se-lene.html"
     },
@@ -1479,8 +1439,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "profora-kai-tonos",
-      "title": "Προφορά & Τόνος",
-      "subtitle": "Πώς διαβάζουμε τα ελληνικά δυνατά",
+      "title": "Προφορά και Τόνος",
+      "subtitle": "Μία λέξη, ένας τόνος.",
       "path": "manuals/el/grammar/a1/topics/profora-kai-tonos.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/profora-kai-tonos.html"
     },
@@ -1580,7 +1540,7 @@
       "level": "a1",
       "slug": "to-elliniko-alfavito",
       "title": "Το Ελληνικό Αλφάβητο",
-      "subtitle": "24 γράμματα, 7 ήχοι φωνηέντων",
+      "subtitle": "Είκοσι τέσσερα γράμματα, μία νέα γραφή.",
       "path": "manuals/el/grammar/a1/topics/to-elliniko-alfavito.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/to-elliniko-alfavito.html"
     },
@@ -1599,8 +1559,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "to-rima-echo",
-      "title": "Το Ρήμα 'Έχω'",
-      "subtitle": "Έχω, έχεις, έχει…",
+      "title": "Το Ρήμα Έχω",
+      "subtitle": "Έχω, έχεις, έχει.",
       "path": "manuals/el/grammar/a1/topics/to-rima-echo.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/to-rima-echo.html"
     },
@@ -1609,8 +1569,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "to-rima-eimai",
-      "title": "Το Ρήμα 'Είμαι'",
-      "subtitle": "Είμαι, είσαι, είναι…",
+      "title": "Το Ρήμα Είμαι",
+      "subtitle": "Είμαι, είσαι, είναι.",
       "path": "manuals/el/grammar/a1/topics/to-rima-eimai.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/to-rima-eimai.html"
     },
@@ -1649,8 +1609,8 @@
       "lang": "el",
       "level": "a1",
       "slug": "vasiki-seira-lexeon",
-      "title": "Βασική Σειρά Λέξεων",
-      "subtitle": "Υποκείμενο + Ρήμα + Αντικείμενο — και πότε παραλείπουμε το υποκείμενο",
+      "title": "Η Σειρά των Λέξεων",
+      "subtitle": "Ποιος κάνει τι.",
       "path": "manuals/el/grammar/a1/topics/vasiki-seira-lexeon.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/el/grammar/a1/topics/vasiki-seira-lexeon.html"
     },
