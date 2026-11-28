@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-11-28T13:07:47Z",
-  "count": 2140,
+  "generated": "2026-11-28T13:17:04Z",
+  "count": 2145,
   "id_format": "<lang>-<level>-<slug>",
   "points": [
     {
@@ -18200,7 +18200,7 @@
       "level": "a1",
       "slug": "alfavit-i-zvuki",
       "title": "Алфавит, буквы и гласные звуки",
-      "subtitle": "Alphabet, letters, and vowel sounds in Russian",
+      "subtitle": "33 буквы: 10 гласных, 21 согласная, два знака.",
       "path": "manuals/ru/grammar/a1/topics/alfavit-i-zvuki.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/alfavit-i-zvuki.html"
     },
@@ -18469,8 +18469,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "konstruktsiya-u-menya-est",
-      "title": "Конструкция «У меня есть...» и её отрицание «У меня нет...»",
-      "subtitle": "Expressing possession and absence",
+      "title": "Конструкция «У меня есть…» и её отрицание",
+      "subtitle": "У меня есть брат — у меня нет брата.",
       "path": "manuals/ru/grammar/a1/topics/konstruktsiya-u-menya-est.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/konstruktsiya-u-menya-est.html"
     },
@@ -18520,7 +18520,7 @@
       "level": "a1",
       "slug": "lichnye-mestoimeniya-i-nulevaya-svyazka",
       "title": "Личные местоимения и нулевая связка",
-      "subtitle": "Personal pronouns and present zero copula",
+      "subtitle": "Я студент — без глагола «быть».",
       "path": "manuals/ru/grammar/a1/topics/lichnye-mestoimeniya-i-nulevaya-svyazka.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/lichnye-mestoimeniya-i-nulevaya-svyazka.html"
     },
@@ -18570,7 +18570,7 @@
       "level": "a1",
       "slug": "mnozhestvennoe-chislo-sushchestvitelnykh",
       "title": "Множественное число существительных",
-      "subtitle": "Plural formation of nouns",
+      "subtitle": "Стол — столы, книга — книги, дом — дома.",
       "path": "manuals/ru/grammar/a1/topics/mnozhestvennoe-chislo-sushchestvitelnykh.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/mnozhestvennoe-chislo-sushchestvitelnykh.html"
     },
@@ -18920,7 +18920,7 @@
       "level": "a1",
       "slug": "reduktsiya-glasnykh",
       "title": "Редукция гласных и свободное ударение",
-      "subtitle": "Vowel reduction and free stress in Russian",
+      "subtitle": "Пишем «молоко», слышим [малако].",
       "path": "manuals/ru/grammar/a1/topics/reduktsiya-glasnykh.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/reduktsiya-glasnykh.html"
     },
@@ -18929,8 +18929,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "rod-imyen-sushchestvitelnykh",
-      "title": "Род имён существительных (мужской, женский, средний)",
-      "subtitle": "Grammatical gender of nouns",
+      "title": "Род имён существительных",
+      "subtitle": "Мужской, женский, средний — по окончанию.",
       "path": "manuals/ru/grammar/a1/topics/rod-imyen-sushchestvitelnykh.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/rod-imyen-sushchestvitelnykh.html"
     },
@@ -19030,7 +19030,7 @@
       "level": "a1",
       "slug": "soglasovanie-prilagatelnykh",
       "title": "Согласование прилагательных в роде и числе",
-      "subtitle": "Adjective agreement in gender and number",
+      "subtitle": "Новый дом, новая книга, новое окно, новые дома.",
       "path": "manuals/ru/grammar/a1/topics/soglasovanie-prilagatelnykh.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/soglasovanie-prilagatelnykh.html"
     },
@@ -19199,8 +19199,8 @@
       "lang": "ru",
       "level": "a1",
       "slug": "ukazatelnye-mestoimeniya-etot-eta-eto-eti",
-      "title": "Указательные местоимения (этот, эта, это, эти)",
-      "subtitle": "Demonstrative pronouns",
+      "title": "Указательные местоимения",
+      "subtitle": "Этот дом, эта книга, это окно, эти дома.",
       "path": "manuals/ru/grammar/a1/topics/ukazatelnye-mestoimeniya-etot-eta-eto-eti.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a1/topics/ukazatelnye-mestoimeniya-etot-eta-eto-eti.html"
     },
@@ -19533,6 +19533,16 @@
       "subtitle": "Definite pronouns весь, каждый, любой, сам",
       "path": "manuals/ru/grammar/a2/topics/mestoimeniya-ves-kazhdyy-lyuboy-sam.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a2/topics/mestoimeniya-ves-kazhdyy-lyuboy-sam.html"
+    },
+    {
+      "id": "ru-a2-ot-otritsatelnye-mestoimeniya-s-predlogami",
+      "lang": "ru",
+      "level": "a2",
+      "slug": "ot-otritsatelnye-mestoimeniya-s-predlogami",
+      "title": "Отрицательные местоимения с предлогами",
+      "subtitle": "Ни у кого, ни с кем, ни о чём.",
+      "path": "manuals/ru/grammar/a2/topics/ot-otritsatelnye-mestoimeniya-s-predlogami.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/a2/topics/ot-otritsatelnye-mestoimeniya-s-predlogami.html"
     },
     {
       "id": "ru-a2-poryadok-slov-tema-rema-a2",
@@ -19955,6 +19965,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b1/topics/deeprichastnyy-oborot-i-ego-normy.html"
     },
     {
+      "id": "ru-b1-deystvitelnye-prichastiya-nastoyashchego-i-proshedshego",
+      "lang": "ru",
+      "level": "b1",
+      "slug": "deystvitelnye-prichastiya-nastoyashchego-i-proshedshego",
+      "title": "Действительные причастия настоящего и прошедшего времени",
+      "subtitle": "Человек, читающий книгу; человек, прочитавший книгу.",
+      "path": "manuals/ru/grammar/b1/topics/deystvitelnye-prichastiya-nastoyashchego-i-proshedshego.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b1/topics/deystvitelnye-prichastiya-nastoyashchego-i-proshedshego.html"
+    },
+    {
       "id": "ru-b1-drobnye-i-drobno-kolichestvennye-chislitelnye",
       "lang": "ru",
       "level": "b1",
@@ -20285,6 +20305,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b1/topics/tvoritelnyy-padezh-vremeni-i-mesta.html"
     },
     {
+      "id": "ru-b1-vidy-glagola-povtoryayushchiesya-deystviya",
+      "lang": "ru",
+      "level": "b1",
+      "slug": "vidy-glagola-povtoryayushchiesya-deystviya",
+      "title": "Виды глагола: повторяющиеся действия",
+      "subtitle": "Раньше я ходил, теперь хожу.",
+      "path": "manuals/ru/grammar/b1/topics/vidy-glagola-povtoryayushchiesya-deystviya.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b1/topics/vidy-glagola-povtoryayushchiesya-deystviya.html"
+    },
+    {
       "id": "ru-b1-vidy-glagola-v-infinitive",
       "lang": "ru",
       "level": "b1",
@@ -20425,6 +20455,16 @@
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b2/topics/lexicheskaya-i-sintaksicheskaya-izbytochnost.html"
     },
     {
+      "id": "ru-b2-metaforicheskiy-perenos-v-grammatike",
+      "lang": "ru",
+      "level": "b2",
+      "slug": "metaforicheskiy-perenos-v-grammatike",
+      "title": "Метафорический перенос в грамматике",
+      "subtitle": "Время идёт, часы стоят, цены растут.",
+      "path": "manuals/ru/grammar/b2/topics/metaforicheskiy-perenos-v-grammatike.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b2/topics/metaforicheskiy-perenos-v-grammatike.html"
+    },
+    {
       "id": "ru-b2-modalnye-slova-i-glagoly-dovoda",
       "lang": "ru",
       "level": "b2",
@@ -20483,6 +20523,16 @@
       "subtitle": "Numerals in legal and economic syntax",
       "path": "manuals/ru/grammar/b2/topics/poryadkovye-i-kolichestvennye-chislitelnye-v-delovoy-rechi.html",
       "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b2/topics/poryadkovye-i-kolichestvennye-chislitelnye-v-delovoy-rechi.html"
+    },
+    {
+      "id": "ru-b2-poryadok-slov-smyslovoy-tsentr",
+      "lang": "ru",
+      "level": "b2",
+      "slug": "poryadok-slov-smyslovoy-tsentr",
+      "title": "Порядок слов и смысловой центр",
+      "subtitle": "Не слова меняются — меняется центр сообщения.",
+      "path": "manuals/ru/grammar/b2/topics/poryadok-slov-smyslovoy-tsentr.html",
+      "url": "https://cosylanguages.github.io/COSYmanuals/manuals/ru/grammar/b2/topics/poryadok-slov-smyslovoy-tsentr.html"
     },
     {
       "id": "ru-b2-poyasnitelnye-i-vstavnye-konstruktsii",
